@@ -1006,6 +1006,7 @@
     "area_toast": "Delivering to {{ area }}",
     "contact_us": "Contact us",
     "clear_search": "Clear search",
-    "loading_products": "Loading products"
+    "loading_products": "Loading products",
+    "help": "Help"
   }
 }

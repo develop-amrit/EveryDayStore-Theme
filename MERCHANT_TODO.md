@@ -43,3 +43,6 @@ Performance/LCP and interactive Admin editor checks were outstanding at the prev
 
 ## Menu ordering
 In Admin → Content → Menus, move Baby Products and Gifting above Grocery in the catalogue/Shop menu and Trending searches Categories menu. Theme configuration reorders tabs and category groups; it does not mutate Admin menus.
+
+## Footer policy and Help setup
+Fill missing policies in Admin → Settings → Policies. The homepage policy row now uses only nonempty shop.policies URLs. Create Help with Delivery areas, Order cut-off, FAQs, Returns, Contact and select it in Footer → Help menu. Use actual published policy/page destinations; avoid the missing /pages/terms-conditions, /pages/refund-policy and /pages/shipping-policy. Set social URLs in Theme settings → Social media.
