@@ -321,3 +321,7 @@ Shared tiny image initializer checks complete, handles load/error, and watches A
 ## Polish 7: Polish press, cart and reveal feedback
 
 Added card/tile press states, stepper expansion and directional quantity changes, single count pops, saved-heart pop, sticky shadow fade, once-only section reveals excluding first two sections. Back-to-top now moves focus after smooth scroll reaches the top. Motion styles use ep-ease and requested durations (explicit press exception 120ms); all animations/transitions disabled under reduced motion.
+
+## Polish 8: Open area sheet without the phone keyboard
+
+Title receives initial focus; input focuses on tap. Selection tick displays for 250ms after successful save before closing. Search-filter height transitions for 200ms, rounded brand focus ring, and reverse slide/fade on close, with Esc/backdrop and focus trap preserved. Reduced motion skips timed movement. Storage/cart-attribute save flow unchanged.
