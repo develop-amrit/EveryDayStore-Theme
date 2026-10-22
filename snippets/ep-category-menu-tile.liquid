@@ -1,0 +1,7 @@
+{% doc %}A menu collection tile including empty collections and merchant image overrides.
+@param {link} link - Menu link.
+@param {section} section - Category section.
+@param {string} group_heading - Group label.
+@param {boolean} [wide] - Wide first tile.
+{% enddoc %}
+{% assign tile_image = link.object.featured_image %}{% for override in section.blocks %}{% if override.type == 'image_override' and override.settings.link == link.url %}{% if override.settings.group_heading == blank or override.settings.group_heading == group_heading %}{% assign tile_image = override.settings.image %}{% endif %}{% endif %}{% endfor %}{% assign coming_soon = false %}{% if section.settings.show_coming_soon and link.type == 'collection_link' and link.object.all_products_count == 0 %}{% assign coming_soon = true %}{% endif %}{% render 'ep-tile', title: link.title, image: tile_image, link: link.url, wide: wide, allow_placeholder: true, coming_soon: coming_soon %}

@@ -1,4 +1,4 @@
-{% capture groups_markup %}{% for block in section.blocks %}{% if block.type == 'group' %}{% assign group_links = block.settings.menu.links %}{% if block.settings.department != blank %}{% assign group_links = blank %}{% for parent_link in block.settings.menu.links %}{% if parent_link.object.id == block.settings.department.id %}{% assign group_links = parent_link.links %}{% break %}{% endif %}{% endfor %}{% endif %}{% assign shown = 0 %}{% capture tiles %}{% for link in group_links %}{% if shown >= block.settings.max_tiles %}{% break %}{% endif %}{% assign tile_image = blank %}{% if link.type == 'collection_link' %}{% assign tile_image = link.object.featured_image %}{% endif %}{% for override in section.blocks %}{% if override.type == 'image_override' and override.settings.group_heading == block.settings.heading and override.settings.link == link.url %}{% assign tile_image = override.settings.image %}{% endif %}{% endfor %}{% if tile_image != blank or request.design_mode %}{% assign wide = false %}{% if shown == 0 and block.settings.first_wide %}{% assign wide = true %}{% endif %}{% render 'ep-tile', title: link.title, image: tile_image, link: link.url, wide: wide %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}{% endcapture %}{% assign tiles = tiles | strip %}{% if tiles != blank %}<div class="ep-grid-group" data-ep-department="{{ block.settings.department.handle }}" {{ block.shopify_attributes }}>{% capture group_id %}ep-group-{{ block.id }}{% endcapture %}{% render 'ep-section-header', title: block.settings.heading, link_url: block.settings.link, heading_id: group_id %}<div class="ep-tiles">{{ tiles }}</div></div>{% endif %}{% endif %}{% endfor %}{% endcapture %}{% assign groups_markup = groups_markup | strip %}{% if groups_markup != blank or request.design_mode %}<section class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="ep-heading-{{ section.id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap"><h2 id="ep-heading-{{ section.id }}" class="visually-hidden">{{ section.settings.title | escape }}</h2>{{ groups_markup }}</div></section>{% endif %}
+<section id="shop-by-category" class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="ep-heading-{{ section.id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap"><h2 id="ep-heading-{{ section.id }}" tabindex="-1">{{ section.settings.title | escape }}</h2>{% if section.settings.subtitle != blank %}<p class="ep-category-subtitle">{{ section.settings.subtitle | escape }}</p>{% endif %}{% for block in section.blocks %}{% if block.type == 'group' %}{% assign group_links = block.settings.menu.links %}{% if block.settings.department != blank %}{% assign group_links = blank %}{% for parent_link in block.settings.menu.links %}{% if parent_link.object.id == block.settings.department.id %}{% assign group_links = parent_link.links %}{% break %}{% endif %}{% endfor %}{% endif %}{% if group_links != blank %}<div class="ep-grid-group" data-ep-department="{{ block.settings.department.handle }}" {{ block.shopify_attributes }}>{% capture group_id %}ep-group-{{ block.id }}{% endcapture %}{% render 'ep-section-header', title: block.settings.heading, link_url: block.settings.link, heading_id: group_id %}<div class="ep-tiles">{% for link in group_links %}{% assign wide = false %}{% if forloop.first and block.settings.first_wide %}{% assign wide = true %}{% endif %}{% render 'ep-category-menu-tile', link: link, section: section, group_heading: block.settings.heading, wide: wide %}{% for leaf in link.links %}{% render 'ep-category-menu-tile', link: leaf, section: section, group_heading: block.settings.heading %}{% endfor %}{% endfor %}</div></div>{% endif %}{% endif %}{% endfor %}</div></section>
 {% schema %}
 {
   "name": "t:ep.everyday_category_grids",
@@ -34,6 +34,17 @@
       "max": 48,
       "step": 4,
       "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "show_coming_soon",
+      "label": "Show Coming soon for empty collections",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
     }
   ],
   "blocks": [
@@ -56,15 +67,6 @@
           "type": "collection",
           "id": "department",
           "label": "t:ep.department_source"
-        },
-        {
-          "type": "range",
-          "id": "max_tiles",
-          "label": "t:ep.maximum_tiles",
-          "min": 4,
-          "max": 16,
-          "step": 1,
-          "default": 8
         },
         {
           "type": "checkbox",

@@ -241,3 +241,7 @@ Homepage now uses the existing Dawn predictive-search custom element and stock e
 ## Final Fix 6: Use real policy links and configurable Help footer
 
 Homepage policy row comes only from nonempty shop.policies. Added footer Help menu setting, no column until selected. Captured social markup suppresses empty container entirely. Back to top is a button with reduced-motion-aware scroll and focus on the logo. Other page policy output is preserved. Merchant policy/menu/social tasks documented.
+
+## Final Fix 7: Keep the full catalogue visible in category grids
+
+Removed image and maximum-tile filtering. Every group child and leaf link now renders regardless of product count; parent department remains linked by its heading. Neutral SVG placeholder for missing images, collection image wins when present, checkbox controls empty-collection Coming soon labels. Existing override block now works by URL without requiring a heading. Added shop-by-category anchor. Header/drawer Admin links unchanged.

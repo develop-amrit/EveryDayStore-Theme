@@ -46,3 +46,6 @@ In Admin → Content → Menus, move Baby Products and Gifting above Grocery in 
 
 ## Footer policy and Help setup
 Fill missing policies in Admin → Settings → Policies. The homepage policy row now uses only nonempty shop.policies URLs. Create Help with Delivery areas, Order cut-off, FAQs, Returns, Contact and select it in Footer → Help menu. Use actual published policy/page destinations; avoid the missing /pages/terms-conditions, /pages/refund-policy and /pages/shipping-policy. Set social URLs in Theme settings → Social media.
+
+## Collection image correction
+Replace the Pantry Staples collection image in Admin → Products → Collections; its current clothing photo is incorrect. Category image override blocks can target any link URL, with an optional group heading. Empty collections remain linked with neutral placeholders and the optional Coming soon label.

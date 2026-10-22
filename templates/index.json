@@ -162,7 +162,8 @@
     "categories": {
       "type": "ep-category-grid",
       "settings": {
-        "title": "Shop by category"
+        "title": "Shop by category",
+        "show_coming_soon": true
       },
       "blocks": {
         "group0": {
@@ -171,7 +172,6 @@
             "heading": "Grocery",
             "menu": "catalogue",
             "department": "grocery",
-            "max_tiles": 8,
             "first_wide": false,
             "link": "/collections/grocery"
           }
@@ -182,7 +182,6 @@
             "heading": "Baby Products",
             "menu": "catalogue",
             "department": "baby-products",
-            "max_tiles": 8,
             "first_wide": false,
             "link": "/collections/baby-products"
           }
@@ -193,7 +192,6 @@
             "heading": "Gifting",
             "menu": "catalogue",
             "department": "gifting",
-            "max_tiles": 8,
             "first_wide": false,
             "link": "/collections/gifting"
           }
@@ -204,7 +202,6 @@
             "heading": "Bath & Body",
             "menu": "catalogue",
             "department": "bath-and-body",
-            "max_tiles": 8,
             "first_wide": false,
             "link": "/collections/bath-and-body"
           }
@@ -215,7 +212,6 @@
             "heading": "Home",
             "menu": "catalogue",
             "department": "home",
-            "max_tiles": 8,
             "first_wide": false,
             "link": "/collections/home"
           }
@@ -226,7 +222,6 @@
             "heading": "Pet",
             "menu": "catalogue",
             "department": "pet",
-            "max_tiles": 8,
             "first_wide": false,
             "link": "/collections/pet"
           }
@@ -237,7 +232,6 @@
             "heading": "Office Supplies",
             "menu": "catalogue",
             "department": "office-supplies",
-            "max_tiles": 8,
             "first_wide": false,
             "link": "/collections/office-supplies"
           }
