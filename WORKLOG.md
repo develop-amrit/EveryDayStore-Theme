@@ -297,3 +297,7 @@ Screenshots: qa/final-home-375.png, qa/final-home-1280.png, qa/final-area-375.pn
 ## Polish 1: Finish and collapse category groups
 
 Second-level tiles only, populated collections first preserving menu order within both groups; child/leaf menu links untouched and still available through full catalogue navigation. Explicit collection image → first product with an image → designed tint/parent icon/Soon pill. No Shopify placeholder SVG in category tiles. First 8 visible below desktop/16 at desktop with accessible expand/collapse; no-JS shows all second-level tiles.
+
+## Polish 2: Refine festive tile proportions
+
+Seasonal tiles retain all six links, use the designed empty state via shared auto image fallback, larger square image areas and compact two-line titles. Six desktop columns capped at about 220px. Strip arrow has a 44px hit area and shared press feedback.
