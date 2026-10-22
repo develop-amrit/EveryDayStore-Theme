@@ -970,5 +970,29 @@
     "filter_sort": "Filter & sort",
     "change_department": "Change department",
     "next_day_promise": "Order today, delivered next day"
+  },
+  "ep": {
+    "see_all": "See all",
+    "regular_price": "Regular price",
+    "discount": "{{ amount }}% OFF",
+    "add": "ADD",
+    "choose": "Choose",
+    "sold_out": "Out of stock",
+    "add_product": "Add {{ title }} to cart",
+    "choose_product": "Choose options for {{ title }}",
+    "increase_product": "Increase quantity of {{ title }}",
+    "decrease_product": "Decrease quantity of {{ title }}",
+    "wishlist_product": "Save {{ title }} to wishlist",
+    "rating_label": "{{ rating }} stars from {{ count }} reviews",
+    "search_for": "Search for \"{{ term }}\"",
+    "search_products": "Search products",
+    "error": "We could not update your basket. Please try again.",
+    "page_title": "EverydayyPlus — everyday essentials delivered next day in Dubai",
+    "go_slide": "Go to slide {{ number }}",
+    "ad": "Ad",
+    "deals": "Deals",
+    "all": "All",
+    "powered_by": "Powered by",
+    "whatsapp": "WhatsApp"
   }
 }

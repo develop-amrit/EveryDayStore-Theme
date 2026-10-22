@@ -1,0 +1,7 @@
+{% doc %}
+Price from the selected Shopify variant.
+@param {variant} item - Variant.
+@param {boolean} [badge] - Render only the discount badge.
+{% enddoc %}
+{% assign discount = 0 %}{% if item.compare_at_price > item.price %}{% assign discount = item.compare_at_price | minus: item.price | times: 100.0 | divided_by: item.compare_at_price | floor %}{% endif %}
+{% if badge %}{% if discount >= 5 %}<span class="ep-discount">{{ 'ep.discount' | t: amount: discount }}</span>{% endif %}{% else %}<div class="ep-price">{% if item.compare_at_price > item.price %}<strong class="ep-sale">{{ item.price | money }}</strong><s><span class="visually-hidden">{{ 'ep.regular_price' | t }} </span>{{ item.compare_at_price | money }}</s>{% else %}<strong>{{ item.price | money }}</strong>{% endif %}</div>{% endif %}

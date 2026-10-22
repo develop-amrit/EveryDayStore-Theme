@@ -80,6 +80,7 @@
     cart=nextCart;
     $$('[data-cart-host]').forEach(host=>host.replaceChildren(rendered.cloneNode(true)));
     document.dispatchEvent(new CustomEvent('qc:cart-updated',{detail:{cart}}));
+    if(typeof publish==='function'&&typeof PUB_SUB_EVENTS!=='undefined')publish(PUB_SUB_EVENTS.cartUpdate,{source:'qc-cart',cartData:cart});
     syncCards();
     if(key && cartDialog.open){const replacement=$$('[data-line-key]',cartDialog).find(n=>n.dataset.lineKey===key);(replacement||$('[data-dialog-close]',cartDialog)).focus();}
   }
@@ -190,12 +191,12 @@
   function deduplicate(){const seen=new Set();$$('[data-product-section]').forEach(panel=>{const cards=$$('[data-product-id]',panel);cards.forEach(card=>{card.hidden=seen.has(card.dataset.productId);seen.add(card.dataset.productId);});let empty=$('[data-duplicate-empty]',panel);if(!empty&&cards.length){empty=document.createElement('p');empty.className='qc-empty';empty.dataset.duplicateEmpty='';empty.textContent=labels.overlap;panel.append(empty);}if(empty)empty.hidden=cards.some(c=>!c.hidden);});}
   function updateRails(){$$('.qc-section').forEach(section=>{const rail=$('.qc-rail',section),controls=$('.qc-rail-controls',section);if(rail&&controls)controls.hidden=rail.scrollWidth<=rail.clientWidth+2;});}window.addEventListener('resize',updateRails,{passive:true});
   let scrollQueued=false;
-  window.addEventListener('scroll',()=>{if(!scrollQueued){scrollQueued=true;requestAnimationFrame(()=>{const header=$('.qc-header');header?.classList.toggle('qc-scrolled',scrollY>12);if(scrollY>220)header?.classList.add('qc-compact');else if(scrollY<40)header?.classList.remove('qc-compact');scrollQueued=false;});}},{passive:true});
+  window.addEventListener('scroll',()=>{if(!scrollQueued){scrollQueued=true;requestAnimationFrame(()=>{const header=$('.qc-header:not(.ep-header)');header?.classList.toggle('qc-scrolled',scrollY>12);if(scrollY>220)header?.classList.add('qc-compact');else if(scrollY<40)header?.classList.remove('qc-compact');scrollQueued=false;});}},{passive:true});
   const countdownTimer=setInterval(()=>{
     $$('[data-countdown]').forEach(node=>{const end=Date.parse(node.dataset.countdown);if(!Number.isFinite(end)){node.hidden=true;return;}let remaining=Math.max(0,Math.floor((end-Date.now())/1000));const span=$('span',node);if(!remaining){span.textContent=labels.ended;return;}const d=Math.floor(remaining/86400),h=Math.floor(remaining%86400/3600),m=Math.floor(remaining%3600/60),s=remaining%60;span.textContent=`${d}${labels.days} ${h}${labels.hours} ${m}${labels.time_minutes} ${s}${labels.seconds}`;});
   },1000);
   window.QCDialogs={open,close};
-  window.QCCart={get:()=>cart,add:(items,options={})=>mutate('cart/add.js',{items},options),refresh,open:trigger=>open(cartDialog,trigger)};
+  window.QCCart={change:(id,quantity,options={})=>mutate('cart/change.js',{id,quantity},options),get:()=>cart,add:(items,options={})=>mutate('cart/add.js',{items},options),refresh,open:trigger=>open(cartDialog,trigger)};
   document.addEventListener('qc:content',e=>init(e.detail?.scope||document));
   document.addEventListener('shopify:section:load',e=>init(e.target));
   document.addEventListener('shopify:section:unload',e=>observers.get(e.target)?.disconnect());

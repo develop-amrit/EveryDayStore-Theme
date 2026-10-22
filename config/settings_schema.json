@@ -1653,5 +1653,21 @@
         "default": "draft"
       }
     ]
+  },
+  {
+    "name": "Homepage cart",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "ep_open_cart",
+        "label": "Open basket after adding a product",
+        "default": false
+      },
+      {
+        "type": "url",
+        "id": "social_whatsapp_link",
+        "label": "WhatsApp URL"
+      }
+    ]
   }
 ]

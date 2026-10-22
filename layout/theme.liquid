@@ -305,6 +305,7 @@
 {{ 'qc-storefront.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'qc-home.js' | asset_url }}" defer></script><script src="{{ 'qc-storefront.js' | asset_url }}" defer></script><script src="{{ 'qc-catalog.js' | asset_url }}" defer></script><script src="{{ 'qc-delivery.js' | asset_url }}" defer></script><script src="{{ 'qc-account.js' | asset_url }}" defer></script><script src="{{ 'qc-assistant.js' | asset_url }}" defer></script><script src="{{ 'qc-privacy.js' | asset_url }}" defer></script>
 {{ 'ep-mobile.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'ep-mobile.js' | asset_url }}" defer></script>
 </head>
 
   <body class="qc-home ep-page gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
