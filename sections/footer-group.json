@@ -59,10 +59,10 @@
         "promo": {
           "type": "promo_bubble",
           "settings": {
-            "label": "Deals",
-            "link": "/collections/all?view=ep-deals",
-            "collection": "all",
-            "alt": "See today's deals",
+            "label": "Festive",
+            "link": "/#festive",
+            "collection": "gifting-chocolates-and-treats",
+            "alt": "Explore festive gifts",
             "pulse": false
           }
         }

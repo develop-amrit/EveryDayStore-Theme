@@ -305,3 +305,7 @@ Seasonal tiles retain all six links, use the designed empty state via shared aut
 ## Polish 3: Use Baby Products for hero auto artwork
 
 Selected the owner-offered static Baby Products option instead of a rotating image. Merchant-uploaded art still wins, no invented imagery and no autoplay needed.
+
+## Polish 4: Promote Festive in the raised nav bubble
+
+Bubble uses Chocolates & Treats, Festive label and #festive anchor; Deals remains once as a tab. Positioned above the inline-end edge with reserved bar space; label hidden below 380px but accessible name retained. IntersectionObserver switches Home/Categories active state when category grid enters/leaves the viewport.
