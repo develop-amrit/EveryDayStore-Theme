@@ -97,3 +97,12 @@ Set social links/WhatsApp in Theme settings; optional cart auto-open defaults of
 ## Help menu — required after correction 4
 
 No Help menu exists (confirmed from current Shopify menus). Create a menu and assign it to the footer Help block: Delivery areas → /pages/shipping-policy; Order cut-off → /pages/shipping-policy (existing delivery information); FAQs → /#ep-home-faq; Returns → /pages/refund-policy; Contact → /pages/contact. The unrelated main-menu is no longer labelled Help. Social URLs are currently blank; icons hide until configured in Theme settings, including new LinkedIn and existing WhatsApp settings.
+
+## Images still needed
+
+- Seasonal grid: upload six tile images and optional artwork/background; image-less tiles stay hidden.
+- Campaign: upload offer images and optional partner logo/heading art, then enable the section.
+- Brand tiles: upload portrait brand/ad images, links and alt text, then enable either row.
+- Promo bubble: add an image, link and optional label in Bottom navigation.
+- Shop by Store: upload each store icon/illustration; image-less store blocks remain hidden.
+- Collection category tiles: upload collection images or configure image overrides for any child collections without a product-image fallback; these tiles now hide rather than show generic icons.
