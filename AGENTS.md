@@ -1,5 +1,7 @@
 ﻿# Shopify theme publication status
 
+Active task exception, 2026-10-22: owner explicitly requested a new unpublished homepage restructure theme. WORK_THEME_ID is 189582049393 (everyday-homepage-review); read WORKLOG.md before every deployment. Deploy this restructure only to that ID after verifying it remains unpublished. Do not sync the restructure to either codex-edits theme. Never publish.
+
 Current two-theme workflow, explicitly requested on 2026-10-21 and verified on 2026-10-22:
 - `codex-edits`, ID `189489545329`: currently MAIN.
 - `codex-edits2`, ID `189518545009`: currently UNPUBLISHED; formerly named codex-catalogue-navigation.
