@@ -3473,6 +3473,14 @@
     "fallback_collection_image": "Fallback collection image",
     "add_alternative_text_describing_the_banner": "Add alternative text describing the banner.",
     "heading": "Heading",
-    "supporting_text": "Supporting text"
+    "supporting_text": "Supporting text",
+    "everyday_category_grids": "Everyday category grids",
+    "category_group": "Category group",
+    "category_menu": "Category menu",
+    "maximum_tiles": "Maximum tiles",
+    "make_first_tile_wide": "Make first tile wide",
+    "tile_image_override": "Tile image override",
+    "target_group_heading": "Target group heading",
+    "target_link_url": "Target link URL"
   }
 }
