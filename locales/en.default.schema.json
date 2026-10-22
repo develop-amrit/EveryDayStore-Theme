@@ -3399,6 +3399,8 @@
     }
   },
   "ep": {
+    "2": "2",
+    "3": "3",
     "everyday_mobile_header": "Everyday mobile header",
     "existing_wordmark": "Existing wordmark",
     "delivery_text": "Delivery text",
@@ -3449,6 +3451,9 @@
     "show_see_all_button": "Show See all button",
     "none": "none",
     "soft": "soft",
-    "deals_rail": "Deals rail"
+    "deals_rail": "Deals rail",
+    "everyday_product_grid": "Everyday product grid",
+    "rows": "Rows",
+    "mobile_columns": "Mobile columns"
   }
 }
