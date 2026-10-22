@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "ep-deals",
+      "settings": {
+        "title": "Best deals",
+        "collection": "all"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

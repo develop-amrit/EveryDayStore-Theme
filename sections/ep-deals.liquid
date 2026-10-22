@@ -1,0 +1,48 @@
+{% assign source = section.settings.collection | default: collection %}<section class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="ep-deals-title" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap"><h1 id="ep-deals-title">{{ section.settings.title | escape }}</h1>{% paginate source.products by 50 %}{% assign sale_count = 0 %}<div class="ep-products-grid" style="--ep-columns:3">{% for product in source.products %}{% assign item = product.selected_or_first_available_variant %}{% if product.available and item.compare_at_price > item.price %}{% render 'ep-card', product: product, variant: 'grid' %}{% assign sale_count = sale_count | plus: 1 %}{% endif %}{% endfor %}</div>{% if sale_count == 0 %}<p>{{ 'ep.deals_empty' | t }}</p>{% endif %}<nav class="ep-deals-pagination" aria-label="{{ 'general.pagination.label' | t }}">{% if paginate.previous %}<a href="{{ paginate.previous.url }}">{{ 'qc.previous' | t }}</a>{% endif %}{% if paginate.next %}<a href="{{ paginate.next.url }}">{{ 'qc.next' | t }}</a>{% endif %}</nav>{% endpaginate %}<a class="ep-see-all" href="{{ source.url }}">{{ 'ep.all_products' | t }}</a></div></section>
+{% schema %}
+{
+  "name": "t:ep.deals_view",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:ep.title",
+      "default": "Best deals"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:ep.collection"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:ep.colour_scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "t:ep.top_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "t:ep.bottom_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:ep.deals_view"
+    }
+  ]
+}
+{% endschema %}

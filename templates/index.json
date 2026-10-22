@@ -118,7 +118,10 @@
         "title": "Best deals",
         "limit": 10,
         "card_variant": "compact",
-        "show_button": true
+        "show_button": true,
+        "collection": "all",
+        "discounted_only": true,
+        "see_all_link": "/collections/all?view=ep-deals"
       }
     },
     "promos": {

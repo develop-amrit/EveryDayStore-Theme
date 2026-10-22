@@ -334,3 +334,5 @@ ep-header{display:block}.ep-header,.ep-bottom-nav{background:rgb(var(--color-bac
 .ep-faq-chevron{display:grid;place-items:center;width:24px;height:24px;flex-shrink:0;transform:rotate(0deg)}.ep-faq-chevron svg{display:block;width:12px;height:8px}.ep-page .qc-faq[open] .ep-faq-chevron{transform:rotate(180deg)}
 
 .ep-search-terms{display:block;overflow:hidden;line-height:44px}.ep-search-terms a{display:inline-block;position:relative;min-height:44px;line-height:44px;margin-inline-start:-1px;padding-inline:12px;border-inline-start:1px solid var(--ep-border);vertical-align:middle}.ep-search-terms a:after{display:none!important}.ep-search-terms a{border-image:linear-gradient(transparent 16px,var(--ep-border) 16px,var(--ep-border) 28px,transparent 28px) 1}.ep-search-terms{margin-inline-start:-12px}
+
+.ep-deals-pagination{display:flex;justify-content:space-between;gap:16px;margin-block:24px}.ep-deals-pagination a{display:flex;align-items:center;min-height:44px;padding-inline:16px;border:1px solid var(--ep-border);border-radius:12px}

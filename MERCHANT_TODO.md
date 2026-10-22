@@ -106,3 +106,7 @@ No Help menu exists (confirmed from current Shopify menus). Create a menu and as
 - Promo bubble: add an image, link and optional label in Bottom navigation.
 - Shop by Store: upload each store icon/illustration; image-less store blocks remain hidden.
 - Collection category tiles: upload collection images or configure image overrides for any child collections without a product-image fallback; these tiles now hide rather than show generic icons.
+
+## Deals resolution
+
+Owner chose the theme-only discounted All products view because no sale/offers collection exists. Deals is now connected and renders real discounted products; creating a separate offers collection is optional, not required for this draft.

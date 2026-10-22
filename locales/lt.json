@@ -1018,6 +1018,8 @@
     "all": "All",
     "powered_by": "Powered by",
     "whatsapp": "WhatsApp",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "deals_empty": "No discounted products on this page. Browse another page or explore all products.",
+    "all_products": "All products"
   }
 }

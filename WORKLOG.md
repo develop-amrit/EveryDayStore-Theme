@@ -199,3 +199,7 @@ Replace FAQ text chevrons with the existing theme caret SVG and rotate it on ope
 ## Homepage correction 8
 
 Put search-link dividers before items using CSS inline borders, with each row’s leading border clipped. Wrapped lines never end with a trailing separator.
+
+## Homepage correction 2
+
+Re-audited all 133 collections: no sale/offers collection exists. Owner explicitly selected the theme-only discounted view of the real All products collection. Deals nav and rail both link to /collections/all?view=ep-deals; rail collection is all with discounted_only enabled. The new collection view paginates real products and shows only available selected variants whose compare-at price exceeds price. No collection/product/store data was created or modified.
