@@ -1023,6 +1023,9 @@
     "coming_soon": "Coming soon",
     "from_price": "From {{ price }}",
     "today_deals": "See today’s deals",
-    "save": "Save"
+    "save": "Save",
+    "soon": "Soon",
+    "show_all_count": "Show all {{ count }}",
+    "show_less": "Show less"
   }
 }

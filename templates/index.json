@@ -258,7 +258,9 @@
             "menu": "catalogue",
             "department": "grocery",
             "first_wide": false,
-            "link": "/collections/grocery"
+            "link": "/collections/grocery",
+            "icon": "basket",
+            "tint": "green"
           }
         },
         "group1": {
@@ -268,7 +270,9 @@
             "menu": "catalogue",
             "department": "baby-products",
             "first_wide": false,
-            "link": "/collections/baby-products"
+            "link": "/collections/baby-products",
+            "icon": "bottle",
+            "tint": "blue"
           }
         },
         "group2": {
@@ -278,7 +282,9 @@
             "menu": "catalogue",
             "department": "gifting",
             "first_wide": false,
-            "link": "/collections/gifting"
+            "link": "/collections/gifting",
+            "icon": "gift",
+            "tint": "cream"
           }
         },
         "group3": {
@@ -288,7 +294,9 @@
             "menu": "catalogue",
             "department": "bath-and-body",
             "first_wide": false,
-            "link": "/collections/bath-and-body"
+            "link": "/collections/bath-and-body",
+            "icon": "soap",
+            "tint": "pink"
           }
         },
         "group4": {
@@ -298,7 +306,9 @@
             "menu": "catalogue",
             "department": "home",
             "first_wide": false,
-            "link": "/collections/home"
+            "link": "/collections/home",
+            "icon": "home",
+            "tint": "lilac"
           }
         },
         "group5": {
@@ -308,7 +318,9 @@
             "menu": "catalogue",
             "department": "pet",
             "first_wide": false,
-            "link": "/collections/pet"
+            "link": "/collections/pet",
+            "icon": "paw",
+            "tint": "peach"
           }
         },
         "group6": {
@@ -318,7 +330,9 @@
             "menu": "catalogue",
             "department": "office-supplies",
             "first_wide": false,
-            "link": "/collections/office-supplies"
+            "link": "/collections/office-supplies",
+            "icon": "pencil",
+            "tint": "cream"
           }
         }
       },

@@ -1,7 +1,9 @@
-{% doc %}A menu collection tile including empty collections and merchant image overrides.
-@param {link} link - Menu link.
-@param {section} section - Category section.
-@param {string} group_heading - Group label.
-@param {boolean} [wide] - Wide first tile.
+{% doc %}Collection tile with explicit collection image, real product fallback and designed empty state.
+@param {link} link - Second-level menu link.
+@param {section} section - Category grid section.
+@param {string} group_heading - Group heading.
+@param {string} icon - Parent outline icon.
+@param {string} tint - Tint token suffix.
 {% enddoc %}
-{% assign tile_image = link.object.featured_image %}{% for override in section.blocks %}{% if override.type == 'image_override' and override.settings.link == link.url %}{% if override.settings.group_heading == blank or override.settings.group_heading == group_heading %}{% assign tile_image = override.settings.image %}{% endif %}{% endif %}{% endfor %}{% assign coming_soon = false %}{% if section.settings.show_coming_soon and link.type == 'collection_link' and link.object.all_products_count == 0 %}{% assign coming_soon = true %}{% endif %}{% render 'ep-tile', title: link.title, image: tile_image, link: link.url, wide: wide, allow_placeholder: true, coming_soon: coming_soon %}
+{% assign tile_image = link.object.image %}{% if tile_image == blank %}{% for candidate in link.object.products %}{% if candidate.featured_image != blank %}{% assign tile_image = candidate.featured_image %}{% break %}{% endif %}{% endfor %}{% endif %}{% for override in section.blocks %}{% if override.type == 'image_override' and override.settings.link == link.url %}{% if override.settings.group_heading == blank or override.settings.group_heading == group_heading %}{% assign tile_image = override.settings.image %}{% endif %}{% endif %}{% endfor %}<a class="ep-tile ep-tint-{{ tint }}{% if tile_image == blank %} ep-tile--soon{% endif %}" href="{{ link.url }}"><span class="ep-tile-art">{% if tile_image %}{% assign alt = tile_image.alt | default: link.title %}{{ tile_image | image_url: width: 270 | image_tag: loading: 'lazy', widths: '90, 180, 270', sizes: '(min-width:990px) 120px, 23vw', alt: alt }}{% else %}{% render 'ep-soon', icon: icon %}{% endif %}</span><span class="ep-tile-label">{{ link.title | escape }}</span></a>
+}

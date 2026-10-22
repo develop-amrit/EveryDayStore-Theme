@@ -1,0 +1,3 @@
+{% doc %}Designed parent-category illustration for an empty collection.
+@param {string} [icon] - Parent outline icon.
+{% enddoc %}<span class="ep-soon-art" aria-hidden="true">{% assign category_icon = icon | default: 'basket' %}{% render 'ep-icon', name: category_icon %}</span><span class="ep-soon-pill">{{ 'ep.soon' | t }}</span>
