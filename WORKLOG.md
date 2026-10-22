@@ -84,3 +84,7 @@ Added sections/ep-store-grid.liquid with editable schema/preset, shared spacing/
 ## Phase 4 — Everyday brand tiles
 
 Added sections/ep-brand-tiles.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.
+
+## Phase 4 — Everyday search links
+
+Added sections/ep-search-links.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.

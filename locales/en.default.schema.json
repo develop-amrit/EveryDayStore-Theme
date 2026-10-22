@@ -3487,6 +3487,10 @@
     "tile_background": "Tile background",
     "everyday_brand_tiles": "Everyday brand tiles",
     "brand_tile": "Brand tile",
-    "show_ad_label": "Show Ad label"
+    "show_ad_label": "Show Ad label",
+    "everyday_search_links": "Everyday search links",
+    "search_group": "Search group",
+    "menu": "Menu",
+    "search_terms_one_per_line": "Search terms, one per line"
   }
 }
