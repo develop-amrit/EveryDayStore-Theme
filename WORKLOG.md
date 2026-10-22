@@ -203,3 +203,7 @@ Put search-link dividers before items using CSS inline borders, with each row’
 ## Homepage correction 2
 
 Re-audited all 133 collections: no sale/offers collection exists. Owner explicitly selected the theme-only discounted view of the real All products collection. Deals nav and rail both link to /collections/all?view=ep-deals; rail collection is all with discounted_only enabled. The new collection view paginates real products and shows only available selected variants whose compare-at price exceeds price. No collection/product/store data was created or modified.
+
+## Correction integration review
+
+Kept Deals view through pagination, removed an unused rail assignment, hid unmatched department selections, and moved new social URL settings alongside existing Social media settings. Rewrote MERCHANT_TODO.md to remove resolved menu/Deals tasks and list only current image, Help-menu, social and release requirements.

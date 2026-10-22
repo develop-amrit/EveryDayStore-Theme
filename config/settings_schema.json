@@ -1356,6 +1356,16 @@
         "id": "social_vimeo_link",
         "label": "t:settings_schema.social-media.settings.social_vimeo_link.label",
         "placeholder": "t:settings_schema.social-media.settings.social_vimeo_link.info"
+      },
+      {
+        "type": "url",
+        "id": "social_whatsapp_link",
+        "label": "t:ep.whatsapp_url"
+      },
+      {
+        "type": "url",
+        "id": "social_linkedin_link",
+        "label": "t:ep.linkedin_url"
       }
     ]
   },
@@ -1662,16 +1672,6 @@
         "id": "ep_open_cart",
         "label": "t:ep.open_basket",
         "default": false
-      },
-      {
-        "type": "url",
-        "id": "social_whatsapp_link",
-        "label": "t:ep.whatsapp_url"
-      },
-      {
-        "type": "url",
-        "id": "social_linkedin_link",
-        "label": "t:ep.linkedin_url"
       }
     ]
   }
