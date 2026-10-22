@@ -115,9 +115,9 @@
       },
       "block_order": [
         "all",
-        "tab0",
         "tab1",
         "tab2",
+        "tab0",
         "tab3",
         "tab4",
         "tab5",

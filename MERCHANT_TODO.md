@@ -40,3 +40,6 @@ There is no sale/offers collection among the 133 audited collections. Owner appr
 No standard reviews.rating or reviews.rating_count data was found. Rated cards hide stars until a configured integration supplies genuine values.
 
 Performance/LCP and interactive Admin editor checks were outstanding at the previous handoff; see the latest QA results in WORKLOG.md. Existing sample catalogue and backend shipping/policy limitations remain in docs/ORDERING_POLISH.md. Publication is manual after review.
+
+## Menu ordering
+In Admin → Content → Menus, move Baby Products and Gifting above Grocery in the catalogue/Shop menu and Trending searches Categories menu. Theme configuration reorders tabs and category groups; it does not mutate Admin menus.

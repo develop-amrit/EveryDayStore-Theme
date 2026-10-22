@@ -244,9 +244,9 @@
         }
       },
       "block_order": [
-        "group0",
         "group1",
         "group2",
+        "group0",
         "group3",
         "group4",
         "group5",
@@ -365,15 +365,14 @@
       "disabled": true
     },
     "gifts": {
-      "type": "ep-product-grid",
+      "type": "ep-product-rail",
       "settings": {
         "title": "Gifts to brighten their day",
-        "subtitle": "Chocolate boxes and treats for an easy, thoughtful gesture.",
+        "subtitle": "Chocolates and treats, delivered tomorrow",
         "collection": "gifting",
-        "rows": 2,
-        "columns_mobile": "3",
-        "card_variant": "rated",
-        "show_button": true
+        "limit": 10,
+        "card_variant": "compact",
+        "show_button": false
       }
     },
     "pets": {
@@ -548,9 +547,10 @@
   },
   "order": [
     "hero",
+    "baby",
+    "gifts",
     "grocery",
     "seasonal",
-    "baby",
     "campaign",
     "deals",
     "promos",
@@ -560,7 +560,6 @@
     "essentials",
     "care",
     "brands2",
-    "gifts",
     "pets",
     "office",
     "trust",

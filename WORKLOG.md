@@ -221,3 +221,7 @@ MERCHANT_TODO.md lists Help menu creation/assignment, social URLs, seasonal/camp
 ## Final Fix 1: Use active currency codes on homepage prices
 
 Audited homepage ep/qc prices and JS: no hardcoded AED label introduced. Added ep-money using money_without_currency and localization currency, stripping decimals on the number only. Admin formats are currently Dhs. {{amount}} / Dhs. {{amount}} AED, so with-currency alone cannot fix this. Theme setting currency_code_enabled is off. Existing non-home ep prices retain their output. Client prices come from server Liquid; basket formatter will use the shared theme money helper in Fix 5. Currency formatting is the first merchant task.
+
+## Final Fix 2: Order Baby Products, Gifting and Grocery first
+
+Reordered header tabs, moved the existing Gifts section as a compact product rail immediately after Baby care, then Grocery. Every other section retains its relative order; no duplicate Gifts grid remains. Category groups have the same department order.
