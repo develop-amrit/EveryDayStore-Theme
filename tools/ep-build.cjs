@@ -22,4 +22,8 @@ if(phase==='1'){
  let layout=read('layout/theme.liquid').replace("{% unless template.name == 'index' %}{% sections 'header-group' %}{% endunless %}","{% sections 'header-group' %}").replace("{% unless template.name == 'index' %}{% sections 'footer-group' %}{% endunless %}","{% sections 'footer-group' %}");write('layout/theme.liquid',layout);
  log('## Phase 1 — Global chrome\n\nMoved homepage announcement/header/footer values verbatim into section groups, replacing earlier group instances. Groups now render on every template once. Bottom navigation extraction follows with its configurable section.');commit('Phase 1: header/footer moved to section groups');
 }
+if(phase==='2'){
+ let s=read('layout/theme.liquid').replace('</head>',"{{ 'ep-mobile.css' | asset_url | stylesheet_tag }}\n</head>").replace('class="qc-home gradient','class="qc-home ep-page gradient');write('layout/theme.liquid',s);
+ log('## Phase 2 — Tokens\n\nAdded ep-mobile.css after existing CSS. Brand variables, shared spacing/type/image wells, responsive rails/grids and reduced-motion controls; effective fonts preserved.');commit('Phase 2: design tokens');
+}
 module.exports={read,json,write,save,commit,log};

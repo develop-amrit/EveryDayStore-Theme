@@ -32,3 +32,7 @@ Wrote AUDIT.md and captured MCP menu/collection/review findings. Semantic live/l
 ## Phase 1 — Global chrome
 
 Moved homepage announcement/header/footer values verbatim into section groups, replacing earlier group instances. Groups now render on every template once. Bottom navigation extraction follows with its configurable section.
+
+## Phase 2 — Tokens
+
+Added ep-mobile.css after existing CSS. Brand variables, shared spacing/type/image wells, responsive rails/grids and reduced-motion controls; effective fonts preserved.

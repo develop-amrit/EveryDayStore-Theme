@@ -304,9 +304,10 @@
   {{ 'qc-home.css' | asset_url | stylesheet_tag }}
 {{ 'qc-storefront.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'qc-home.js' | asset_url }}" defer></script><script src="{{ 'qc-storefront.js' | asset_url }}" defer></script><script src="{{ 'qc-catalog.js' | asset_url }}" defer></script><script src="{{ 'qc-delivery.js' | asset_url }}" defer></script><script src="{{ 'qc-account.js' | asset_url }}" defer></script><script src="{{ 'qc-assistant.js' | asset_url }}" defer></script><script src="{{ 'qc-privacy.js' | asset_url }}" defer></script>
+{{ 'ep-mobile.css' | asset_url | stylesheet_tag }}
 </head>
 
-  <body class="qc-home gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="qc-home ep-page gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
