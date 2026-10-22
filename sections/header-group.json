@@ -45,7 +45,8 @@
       "settings": {
         "delivery_text": "Delivery tomorrow",
         "wishlist_link": "/pages/wishlist",
-        "rotating_terms": "Milk\nDiapers\nChocolates\nShampoo\nFlowers\nCoffee"
+        "rotating_terms": "Milk\nDiapers\nChocolates\nShampoo\nFlowers\nCoffee",
+        "areas": "Dubai Marina\nJLT\nDowntown\nBusiness Bay\nJumeirah\nAl Barsha\nDeira\nDubai Hills\nMirdif\nJVC"
       },
       "blocks": {
         "all": {

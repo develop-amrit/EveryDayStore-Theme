@@ -996,6 +996,14 @@
     "whatsapp": "WhatsApp",
     "linkedin": "LinkedIn",
     "deals_empty": "No discounted products on this page. Browse another page or explore all products.",
-    "all_products": "All products"
+    "all_products": "All products",
+    "choose_area": "Choose your area",
+    "delivering_to": "Delivering to:",
+    "area_title": "Where should we deliver?",
+    "area_search": "Search your area",
+    "area_note": "Next-day delivery to these Dubai areas.",
+    "area_no_match": "We don’t deliver to “{{ query }}” yet",
+    "area_toast": "Delivering to {{ area }}",
+    "contact_us": "Contact us"
   }
 }

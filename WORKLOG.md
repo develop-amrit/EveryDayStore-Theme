@@ -225,3 +225,7 @@ Audited homepage ep/qc prices and JS: no hardcoded AED label introduced. Added e
 ## Final Fix 2: Order Baby Products, Gifting and Grocery first
 
 Reordered header tabs, moved the existing Gifts section as a compact product rail immediately after Baby care, then Grocery. Every other section retains its relative order; no duplicate Gifts grid remains. Category groups have the same department order.
+
+## Final Fix 3: Replace delivery dropdown with searchable area sheet
+
+Native modal dialog, keyboard focus wrap, backdrop/Esc, body lock, 16px search, radio-style rows, no-match contact link only when WhatsApp exists, saved toast. Areas are editable in header textarea. Cart attribute wins on load, then try/catch localStorage qc-dubai-area; saves POST cart/update.js delivery_zone and invalidates existing booking exactly like the prior integration. Header/shared area picker is the intentional cross-page change.
