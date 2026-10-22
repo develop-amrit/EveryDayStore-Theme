@@ -93,3 +93,7 @@ No standard reviews.rating or reviews.rating_count data found in audited active 
 Original trust/FAQ claims are preserved; owner should approve quality/returns wording and final shipping/payment policies. The custom checkout/delivery backend limitations documented in docs/ORDERING_POLISH.md still apply. No UI change enforces shipping eligibility.
 
 Set social links/WhatsApp in Theme settings; optional cart auto-open defaults off. Configure collection tile image overrides for any categories without a real featured image.
+
+## Help menu — required after correction 4
+
+No Help menu exists (confirmed from current Shopify menus). Create a menu and assign it to the footer Help block: Delivery areas → /pages/shipping-policy; Order cut-off → /pages/shipping-policy (existing delivery information); FAQs → /#ep-home-faq; Returns → /pages/refund-policy; Contact → /pages/contact. The unrelated main-menu is no longer labelled Help. Social URLs are currently blank; icons hide until configured in Theme settings, including new LinkedIn and existing WhatsApp settings.

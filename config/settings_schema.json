@@ -1667,6 +1667,11 @@
         "type": "url",
         "id": "social_whatsapp_link",
         "label": "t:ep.whatsapp_url"
+      },
+      {
+        "type": "url",
+        "id": "social_linkedin_link",
+        "label": "t:ep.linkedin_url"
       }
     ]
   }

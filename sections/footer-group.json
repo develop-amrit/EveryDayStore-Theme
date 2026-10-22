@@ -15,8 +15,7 @@
         "help": {
           "type": "links",
           "settings": {
-            "heading": "Help",
-            "menu": "main-menu"
+            "heading": "Help"
           }
         }
       },

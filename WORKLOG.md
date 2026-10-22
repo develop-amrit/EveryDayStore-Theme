@@ -183,3 +183,7 @@ Reserve a compare-at line on every price block so product names align. Use a lig
 ## Build helper correction
 
 Importing the shared build helper with a numeric correction argument accidentally ran its old phase-1 CLI branch locally. Restored header/footer group JSON from the just-verified remote snapshot and guarded CLI phases with require.main === module. No deployment occurred during this local-only error.
+
+## Homepage correction 4
+
+Render footer social icons only for configured URLs. Add LinkedIn and WhatsApp icon support; remove the unrelated main-menu from Help and document the exact missing Help menu links in MERCHANT_TODO.md.
