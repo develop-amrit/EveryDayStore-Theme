@@ -191,3 +191,7 @@ Render footer social icons only for configured URLs. Add LinkedIn and WhatsApp i
 ## Homepage correction 6
 
 Give department tabs distinct basket, bottle, gift, soap, home, paw and pencil outline icons. Preserve icon-image overrides and editor-selectable choices.
+
+## Homepage correction 7
+
+Replace FAQ text chevrons with the existing theme caret SVG and rotate it on open.
