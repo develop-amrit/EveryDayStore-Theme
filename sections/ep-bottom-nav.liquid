@@ -1,0 +1,141 @@
+{% assign has_promo = false %}{% for block in section.blocks %}{% if block.type == 'promo_bubble' and block.settings.image != blank %}{% assign has_promo = true %}{% endif %}{% endfor %}{% assign item_limit = 5 %}{% if has_promo %}{% assign item_limit = 4 %}{% endif %}<nav class="ep-bottom-nav color-{{ section.settings.color_scheme }}" aria-label="{{ 'commerce.mobile_nav' | t }}">{% assign rendered = 0 %}{% for block in section.blocks %}{% if block.type == 'item' and block.settings.link != blank and rendered < item_limit %}{% assign rendered = rendered | plus: 1 %}<a class="ep-bottom-item" href="{{ block.settings.link }}"{% if block.settings.icon == 'cart' %} data-cart-open{% elsif block.settings.icon == 'grid' %} data-categories-open{% elsif block.settings.icon == 'search' %} data-search-focus{% endif %}{% if request.path == block.settings.link %} aria-current="page"{% endif %} {{ block.shopify_attributes }}>{% if block.settings.image %}{% assign alt = block.settings.image.alt | default: block.settings.label %}{{ block.settings.image | image_url: width: 48 | image_tag: loading: 'lazy', widths: '24, 48', sizes: '24px', alt: alt }}{% else %}{% render 'ep-icon', name: block.settings.icon %}{% endif %}<span>{{ block.settings.label | escape }}</span>{% if block.settings.icon == 'cart' %}<span data-cart-count>{{ cart.item_count }}</span>{% endif %}</a>{% endif %}{% endfor %}{% if has_promo %}{% for block in section.blocks %}{% if block.type == 'promo_bubble' and block.settings.image %}<a class="ep-bottom-promo" href="{{ block.settings.link }}" data-pulse="{{ block.settings.pulse }}" {{ block.shopify_attributes }}>{% assign alt = block.settings.alt | default: block.settings.image.alt | default: block.settings.label %}{{ block.settings.image | image_url: width: 104 | image_tag: loading: 'lazy', widths: '52, 104', sizes: '52px', alt: alt }}{{ block.settings.label | escape }}</a>{% endif %}{% endfor %}{% endif %}</nav>
+{% schema %}
+{
+  "name": "t:ep.everyday_bottom_navigation",
+  "tag": "div",
+  "class": "ep-section-wrapper",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:ep.colour_scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "t:ep.top_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "t:ep.bottom_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "t:ep.navigation_item",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:ep.icon",
+          "options": [
+            {
+              "value": "home",
+              "label": "t:ep.home"
+            },
+            {
+              "value": "grid",
+              "label": "t:ep.grid"
+            },
+            {
+              "value": "tag",
+              "label": "t:ep.tag"
+            },
+            {
+              "value": "search",
+              "label": "t:ep.search"
+            },
+            {
+              "value": "cart",
+              "label": "t:ep.cart"
+            },
+            {
+              "value": "user",
+              "label": "t:ep.user"
+            },
+            {
+              "value": "heart",
+              "label": "t:ep.heart"
+            },
+            {
+              "value": "gift",
+              "label": "t:ep.gift"
+            }
+          ],
+          "default": "home"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:ep.image"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "t:ep.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:ep.link"
+        }
+      ]
+    },
+    {
+      "type": "promo_bubble",
+      "name": "t:ep.promo_bubble",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:ep.image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:ep.link"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "t:ep.alternative_text"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "t:ep.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "pulse",
+          "label": "t:ep.pulse_once",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:ep.everyday_bottom_navigation"
+    }
+  ],
+  "enabled_on": {
+    "groups": [
+      "footer"
+    ]
+  }
+}
+{% endschema %}

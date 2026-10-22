@@ -44,3 +44,7 @@ Added ep-section-header, ep-see-all-button, ep-price, ep-add-button, ep-card and
 ## Phase 4 — Everyday mobile header
 
 Added sections/qc-header.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.
+
+## Phase 4 — Everyday bottom navigation
+
+Added sections/ep-bottom-nav.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.

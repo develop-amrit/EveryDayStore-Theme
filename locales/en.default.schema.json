@@ -3417,6 +3417,16 @@
     "bag": "bag",
     "leaf": "leaf",
     "heart": "heart",
-    "truck": "truck"
+    "truck": "truck",
+    "everyday_bottom_navigation": "Everyday bottom navigation",
+    "navigation_item": "Navigation item",
+    "tag": "tag",
+    "search": "search",
+    "cart": "cart",
+    "user": "user",
+    "gift": "gift",
+    "promo_bubble": "Promo bubble",
+    "alternative_text": "Alternative text",
+    "pulse_once": "Pulse once"
   }
 }
