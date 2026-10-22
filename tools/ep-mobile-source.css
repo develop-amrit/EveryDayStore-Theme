@@ -25,3 +25,5 @@ ep-header{display:block}.ep-header,.ep-bottom-nav{background:rgb(var(--color-bac
 .ep-social:has(.ep-social-list:empty){display:none}.ep-social-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}.ep-social-list a{display:grid!important;place-items:center;width:44px;height:44px;min-height:44px}.ep-social-list svg{width:22px;height:22px;fill:currentColor}.ep-social-list .qc-icon{fill:none}
 
 .ep-faq-chevron{display:grid;place-items:center;width:24px;height:24px;flex-shrink:0;transform:rotate(0deg)}.ep-faq-chevron svg{display:block;width:12px;height:8px}.ep-page .qc-faq[open] .ep-faq-chevron{transform:rotate(180deg)}
+
+.ep-search-terms{display:block;overflow:hidden;line-height:44px}.ep-search-terms a{display:inline-block;position:relative;min-height:44px;line-height:44px;margin-inline-start:-1px;padding-inline:12px;border-inline-start:1px solid var(--ep-border);vertical-align:middle}.ep-search-terms a:after{display:none!important}.ep-search-terms a{border-image:linear-gradient(transparent 16px,var(--ep-border) 16px,var(--ep-border) 28px,transparent 28px) 1}.ep-search-terms{margin-inline-start:-12px}

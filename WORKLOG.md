@@ -195,3 +195,7 @@ Give department tabs distinct basket, bottle, gift, soap, home, paw and pencil o
 ## Homepage correction 7
 
 Replace FAQ text chevrons with the existing theme caret SVG and rotate it on open.
+
+## Homepage correction 8
+
+Put search-link dividers before items using CSS inline borders, with each row’s leading border clipped. Wrapped lines never end with a trailing separator.
