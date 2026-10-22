@@ -1,4 +1,4 @@
-<div class="qc-announcement" data-announcement><div class="qc-wrap">{% for block in section.blocks %}<span data-message{% unless forloop.first %} hidden{% endunless %} {{ block.shopify_attributes }}>{% if block.settings.fees %}{% assign lower = settings.qc_mid_threshold | default: 49 | times: 100 | money_without_currency | prepend: ' ' | prepend: shop.currency %}{% assign upper = settings.qc_free_delivery | default: 99 | times: 100 | money_without_currency | prepend: ' ' | prepend: shop.currency %}{% assign low_fee = settings.qc_fee_low | default: '5.99' | times: 100 | round | money_without_currency | prepend: ' ' | prepend: shop.currency %}{% assign mid_fee = settings.qc_fee_mid | default: '3.99' | times: 100 | round | money_without_currency | prepend: ' ' | prepend: shop.currency %}{{ 'qc.delivery_below' | t: threshold: lower, fee: low_fee }} · {{ 'qc.delivery_middle' | t: threshold: lower, fee: mid_fee }} · {{ 'qc.delivery_free' | t: threshold: upper }}{% else %}{{ block.settings.text | escape }}{% if block.settings.threshold %} {{ settings.qc_free_delivery | default: 50 | times: 100 | money_without_currency | prepend: ' ' | prepend: shop.currency }}{% endif %}{% endif %}</span>{% endfor %}<button type="button" data-dismiss aria-label="{{ 'qc.close' | t }}">×</button></div></div>
+<ep-announcement class="qc-announcement" data-announcement><div class="qc-wrap">{% for block in section.blocks %}<span data-ep-message{% unless forloop.first %} hidden{% endunless %} {{ block.shopify_attributes }}>{% if block.settings.link != blank %}<a href="{{ block.settings.link }}">{% endif %}{{ block.settings.text | escape }}{% if block.settings.threshold %} {% assign threshold = settings.qc_free_delivery | times: 100 %}{% render 'ep-money', value: threshold %}{% endif %}{% if block.settings.link != blank %}</a>{% endif %}</span>{% endfor %}<button type="button" data-dismiss aria-label="{{ 'qc.close' | t }}">×</button></div></ep-announcement>
 {% schema %}
 {
   "name": "Announcement bar",
@@ -25,6 +25,11 @@
           "id": "fees",
           "label": "Show all delivery fee tiers",
           "default": false
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Optional link"
         }
       ]
     }

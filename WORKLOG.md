@@ -229,3 +229,7 @@ Reordered header tabs, moved the existing Gifts section as a compact product rai
 ## Final Fix 3: Replace delivery dropdown with searchable area sheet
 
 Native modal dialog, keyboard focus wrap, backdrop/Esc, body lock, 16px search, radio-style rows, no-match contact link only when WhatsApp exists, saved toast. Areas are editable in header textarea. Cart attribute wins on load, then try/catch localStorage qc-dubai-area; saves POST cart/update.js delivery_zone and invalidates existing booking exactly like the prior integration. Header/shared area picker is the intentional cross-page change.
+
+## Final Fix 4: Rotate concise single-line announcements
+
+Four editable messages, optional links, real configured threshold formatted through ep-money, fixed 32px bar and 44px dismiss hit area. Four-second rotation pauses on hover/focus/touch, hidden tabs and reduced motion; session dismissal preserved. Old fee-tier message no longer appears in the announcement.

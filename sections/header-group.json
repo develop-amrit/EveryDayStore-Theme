@@ -5,38 +5,44 @@
     "announcement": {
       "type": "qc-announcement",
       "blocks": {
-        "b0": {
+        "message0": {
           "type": "message",
           "settings": {
-            "text": "Dubai essentials, delivered next day."
+            "text": "Next-day delivery across Dubai",
+            "threshold": false,
+            "fees": false
           }
         },
-        "b1": {
+        "message1": {
           "type": "message",
           "settings": {
-            "text": "Free delivery on orders from",
-            "threshold": true
+            "text": "Free delivery on orders over",
+            "threshold": true,
+            "fees": false
           }
         },
-        "b2": {
+        "message2": {
           "type": "message",
           "settings": {
-            "text": "One useful basket. So many everyday favourites."
+            "text": "Order today, delivered tomorrow",
+            "threshold": false,
+            "fees": false
           }
         },
-        "fees": {
+        "message3": {
           "type": "message",
           "settings": {
-            "text": "Delivery fee tiers",
-            "fees": true
+            "text": "Cash on Delivery available",
+            "threshold": false,
+            "fees": false
           }
         }
       },
       "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "fees"
+        "message0",
+        "message1",
+        "message2",
+        "message3"
       ],
       "settings": {}
     },
