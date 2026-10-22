@@ -15,5 +15,21 @@
   "published": false,
   "worklog": "WORKLOG.md",
   "merchant_todo": "MERCHANT_TODO.md",
-  "next_work": "Interactive editor review and performance/LCP remediation; merchant images/menu/offers configuration. Use the existing work theme only."
+  "next_work": "Owner design review; merchant Help menu/social URLs/images; interactive editor QA and performance/LCP remediation. Use only theme 189582049393.",
+  "latest_batch": "Eight homepage corrections",
+  "latest_code_readback_files": 14,
+  "latest_json_readback_files": 7,
+  "lighthouse": {
+    "scores": {
+      "performance": 60,
+      "accessibility": 100,
+      "best-practices": 75,
+      "seo": 92
+    },
+    "lcp_ms": 3956.1134999999995,
+    "cls": 0,
+    "new_javascript_bytes": 8365
+  },
+  "deals_url": "/collections/all?view=ep-deals",
+  "help_menu_pending": true
 }

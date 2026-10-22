@@ -207,3 +207,13 @@ Re-audited all 133 collections: no sale/offers collection exists. Owner explicit
 ## Correction integration review
 
 Kept Deals view through pagination, removed an unused rail assignment, hid unmatched department selections, and moved new social URL settings alongside existing Social media settings. Rewrote MERCHANT_TODO.md to remove resolved menu/Deals tasks and list only current image, Help-menu, social and release requirements.
+
+## Homepage corrections — final QA and read-back
+
+All eight requested code corrections are committed separately and deployed only to WORK_THEME_ID 189582049393. Final remote read-back confirms UNPUBLISHED and matches 14 code files by MD5 plus 7 JSON files semantically. The final WhatsApp icon class preserves the existing outline icon style. No theme was created or published.
+
+Official Shopify CLI Theme Check: 0 errors, 13 previously justified warnings. Structural/UX/cart checks pass. Full browser rerun: widths 360,375,390,414,430,768,1280 have no horizontal page overflow; desktop 990/1280 has one category row and no delivery/icon overlap; seven department groups render 26 real collection-image tiles; card name/price baselines align. Deals rail shows 10 real discounted products and the owner-approved discounted All-products view shows 25 on its first page with view-preserving pagination. Single-variant cart add/increase/decrease/remove, duplicate card quantities, header/nav counts, drawer/checkout, predictive search, location, wishlist, privacy, FAQ and reduced motion pass. Product/collection/search/cart/contact/404 have one global header/footer; account redirects to hosted Shopify authentication. No public multi-variant/sold-out fixture was available, so these branches remain statically checked only.
+
+Isolated Lighthouse: Performance 60, Accessibility 100, Best Practices 75, SEO 92; LCP 3.96s, CLS 0. Performance >=80 and LCP <2.5s remain unmet. New ep-mobile.js is 8365 bytes before minification. Interactive theme-editor Add/reorder/settings QA remains unverified because the computer-use runtime failed to initialize. The skill bundled full-theme validator failed due to missing @shopify/theme-check-common; official CLI Theme Check is the successful fallback.
+
+MERCHANT_TODO.md lists Help menu creation/assignment, social URLs, seasonal/campaign/brand/promo-bubble/Shop-by-Store imagery and optional collection-image overrides. Help menu does not yet exist; all social URLs are blank and icons correctly hide. No fake sale collection or commerce data was created. Preview: https://3djevx-mu.myshopify.com/?preview_theme_id=189582049393 . Ready for owner design review in Admin → Online Store → Themes → everyday-homepage-review, with the QA gates above explicitly open.

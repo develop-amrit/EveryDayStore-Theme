@@ -1,0 +1,93 @@
+{
+  "themeId": "189582049393",
+  "role": "UNPUBLISHED",
+  "hashes": [
+    {
+      "filename": "assets/ep-mobile.css",
+      "matched": true
+    },
+    {
+      "filename": "assets/ep-mobile.js",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-category-grid.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-deals.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-product-rail.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-search-links.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-faq.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-footer.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-header.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-department-icon.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-icon.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-price.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-social-icons.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-tile.liquid",
+      "matched": true
+    }
+  ],
+  "json": [
+    {
+      "filename": "config/settings_schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/en.default.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/en.default.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "sections/footer-group.json",
+      "matched": true
+    },
+    {
+      "filename": "sections/header-group.json",
+      "matched": true
+    },
+    {
+      "filename": "templates/collection.ep-deals.json",
+      "matched": true
+    },
+    {
+      "filename": "templates/index.json",
+      "matched": true
+    }
+  ],
+  "published": false
+}

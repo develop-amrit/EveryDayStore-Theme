@@ -1,0 +1,238 @@
+{
+  "errors": [],
+  "desktop": [
+    {
+      "width": 990,
+      "oldRows": 0,
+      "newRows": 1,
+      "overlap": 0,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "oldRows": 0,
+      "newRows": 1,
+      "overlap": 0,
+      "overflow": false
+    }
+  ],
+  "categoryGroups": [
+    {
+      "department": "grocery",
+      "tiles": 6,
+      "images": 6,
+      "icons": 0
+    },
+    {
+      "department": "baby-products",
+      "tiles": 2,
+      "images": 2,
+      "icons": 0
+    },
+    {
+      "department": "gifting",
+      "tiles": 1,
+      "images": 1,
+      "icons": 0
+    },
+    {
+      "department": "bath-and-body",
+      "tiles": 7,
+      "images": 7,
+      "icons": 0
+    },
+    {
+      "department": "home",
+      "tiles": 5,
+      "images": 5,
+      "icons": 0
+    },
+    {
+      "department": "pet",
+      "tiles": 2,
+      "images": 2,
+      "icons": 0
+    },
+    {
+      "department": "office-supplies",
+      "tiles": 3,
+      "images": 3,
+      "icons": 0
+    }
+  ],
+  "distinctIcons": 8,
+  "dealsRail": 10,
+  "dealLink": "/collections/all?view=ep-deals",
+  "priceAlignment": [
+    {
+      "offsets": [
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3
+      ],
+      "compareSpace": true
+    },
+    {
+      "offsets": [
+        244.3,
+        244.3,
+        244.3,
+        244.3
+      ],
+      "compareSpace": true
+    },
+    {
+      "offsets": [
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3,
+        244.3
+      ],
+      "compareSpace": true
+    }
+  ],
+  "trailingZeros": false,
+  "salePill": {
+    "background": "color(srgb 0.915686 0.921176 0.909412)",
+    "text": "rgb(40, 54, 24)"
+  },
+  "faq": {
+    "svg": true,
+    "transform": "matrix(-1, 0, 0, -1, 0, 0)"
+  },
+  "socialLinks": 0,
+  "bottomNav": [
+    "\n\n\n\nHome",
+    "\n\n\n\nCategories",
+    "\n\nDeals",
+    "\n\n\n\nCart0"
+  ],
+  "searchDividers": [
+    {
+      "rows": 2,
+      "noTextPipes": true,
+      "noTrailingDividers": true,
+      "leadingClipped": true
+    },
+    {
+      "rows": 3,
+      "noTextPipes": true,
+      "noTrailingDividers": true,
+      "leadingClipped": true
+    }
+  ],
+  "dealsView": [
+    {
+      "price": 47,
+      "compare": 55
+    },
+    {
+      "price": 42.33,
+      "compare": 65
+    },
+    {
+      "price": 27.33,
+      "compare": 45
+    },
+    {
+      "price": 37,
+      "compare": 45
+    },
+    {
+      "price": 40,
+      "compare": 50
+    },
+    {
+      "price": 119.37,
+      "compare": 185
+    },
+    {
+      "price": 23.7,
+      "compare": 37.99
+    },
+    {
+      "price": 55,
+      "compare": 85
+    },
+    {
+      "price": 39.17,
+      "compare": 50
+    },
+    {
+      "price": 37.13,
+      "compare": 44
+    },
+    {
+      "price": 30.7,
+      "compare": 38
+    },
+    {
+      "price": 16.7,
+      "compare": 19
+    },
+    {
+      "price": 95,
+      "compare": 120
+    },
+    {
+      "price": 100,
+      "compare": 120
+    },
+    {
+      "price": 37,
+      "compare": 44.5
+    },
+    {
+      "price": 47.3,
+      "compare": 65
+    },
+    {
+      "price": 24.7,
+      "compare": 28
+    },
+    {
+      "price": 57,
+      "compare": 70
+    },
+    {
+      "price": 50,
+      "compare": 78
+    },
+    {
+      "price": 43.17,
+      "compare": 69
+    },
+    {
+      "price": 137,
+      "compare": 170
+    },
+    {
+      "price": 40.27,
+      "compare": 55
+    },
+    {
+      "price": 53.17,
+      "compare": 65
+    },
+    {
+      "price": 50,
+      "compare": 70
+    },
+    {
+      "price": 33.17,
+      "compare": 55
+    }
+  ],
+  "next": "/collections/all?page=2&view=ep-deals"
+}
