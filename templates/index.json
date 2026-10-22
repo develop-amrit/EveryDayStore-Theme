@@ -165,42 +165,78 @@
         "group0": {
           "type": "group",
           "settings": {
-            "heading": "Grocery & Kitchen",
+            "heading": "Grocery",
+            "menu": "catalogue",
+            "department": "grocery",
             "max_tiles": 8,
-            "first_wide": false
+            "first_wide": false,
+            "link": "/collections/grocery"
           }
         },
         "group1": {
           "type": "group",
           "settings": {
-            "heading": "Baby",
+            "heading": "Baby Products",
+            "menu": "catalogue",
+            "department": "baby-products",
             "max_tiles": 8,
             "first_wide": false,
-            "menu": "sample-baby-care"
+            "link": "/collections/baby-products"
           }
         },
         "group2": {
           "type": "group",
           "settings": {
             "heading": "Gifting",
+            "menu": "catalogue",
+            "department": "gifting",
             "max_tiles": 8,
-            "first_wide": false
+            "first_wide": false,
+            "link": "/collections/gifting"
           }
         },
         "group3": {
           "type": "group",
           "settings": {
             "heading": "Bath & Body",
+            "menu": "catalogue",
+            "department": "bath-and-body",
             "max_tiles": 8,
-            "first_wide": false
+            "first_wide": false,
+            "link": "/collections/bath-and-body"
           }
         },
         "group4": {
           "type": "group",
           "settings": {
-            "heading": "Home & Cleaning",
+            "heading": "Home",
+            "menu": "catalogue",
+            "department": "home",
             "max_tiles": 8,
-            "first_wide": false
+            "first_wide": false,
+            "link": "/collections/home"
+          }
+        },
+        "group5": {
+          "type": "group",
+          "settings": {
+            "heading": "Pet",
+            "menu": "catalogue",
+            "department": "pet",
+            "max_tiles": 8,
+            "first_wide": false,
+            "link": "/collections/pet"
+          }
+        },
+        "group6": {
+          "type": "group",
+          "settings": {
+            "heading": "Office Supplies",
+            "menu": "catalogue",
+            "department": "office-supplies",
+            "max_tiles": 8,
+            "first_wide": false,
+            "link": "/collections/office-supplies"
           }
         }
       },
@@ -209,7 +245,9 @@
         "group1",
         "group2",
         "group3",
-        "group4"
+        "group4",
+        "group5",
+        "group6"
       ]
     },
     "stores": {

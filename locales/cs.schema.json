@@ -3494,6 +3494,7 @@
     "search_terms_one_per_line": "Search terms, one per line",
     "homepage_cart": "Homepage cart",
     "open_basket": "Open basket after adding a product",
-    "whatsapp_url": "WhatsApp URL"
+    "whatsapp_url": "WhatsApp URL",
+    "department_source": "Department within menu"
   }
 }

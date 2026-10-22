@@ -171,3 +171,7 @@ Moved homepage announcement/header/footer values verbatim into section groups, r
 ## Homepage correction 1
 
 Keep one desktop category tab row and place delivery on a separate line. Hide the old pills when new tab blocks render; header actions retain their own logo row.
+
+## Homepage correction 3
+
+Render all seven department groups from the existing catalogue menu tree. A merchant-editable department collection selects that parent’s child links; collection featured_image and explicit overrides supply imagery. Image-less tiles hide on storefront instead of showing a generic bag icon.
