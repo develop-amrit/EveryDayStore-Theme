@@ -14,4 +14,5 @@ class EPAnnouncement extends HTMLElement {
  disconnectedCallback(){clearInterval(this.timer);}
 }
 customElements.define('ep-announcement',EPAnnouncement);
+if(home){window.theme=window.theme||{};window.theme.formatMoney=(cents)=>{const number=(Number(cents)/100).toLocaleString(document.documentElement.lang||'en',{minimumFractionDigits:Number(cents)%100?2:0,maximumFractionDigits:2});return window.theme.moneyFormat.replace('__AMOUNT__',number);};document.addEventListener('click',e=>{const clear=e.target.closest('.ep-search-clear');if(clear){const input=clear.form.querySelector('input[type=search]');input.value='';input.dispatchEvent(new Event('input',{bubbles:true}));input.focus();}});}
 })();

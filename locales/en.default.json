@@ -1004,6 +1004,8 @@
     "area_note": "Next-day delivery to these Dubai areas.",
     "area_no_match": "We don’t deliver to “{{ query }}” yet",
     "area_toast": "Delivering to {{ area }}",
-    "contact_us": "Contact us"
+    "contact_us": "Contact us",
+    "clear_search": "Clear search",
+    "loading_products": "Loading products"
   }
 }
