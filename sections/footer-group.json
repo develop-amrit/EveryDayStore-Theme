@@ -4,20 +4,9 @@
   "sections": {
     "footer": {
       "type": "qc-footer",
-      "settings": {
-        "wordmark": "everyday"
-      },
-      "blocks": {
-        "help": {
-          "type": "links",
-          "settings": {
-            "heading": "Here to help"
-          }
-        }
-      },
-      "block_order": [
-        "help"
-      ]
+      "blocks": {},
+      "block_order": [],
+      "settings": {}
     }
   },
   "order": [

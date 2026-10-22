@@ -1,47 +1,5 @@
 {
   "sections": {
-    "announcement": {
-      "type": "qc-announcement",
-      "blocks": {
-        "b0": {
-          "type": "message",
-          "settings": {
-            "text": "Dubai essentials, delivered next day."
-          }
-        },
-        "b1": {
-          "type": "message",
-          "settings": {
-            "text": "Free delivery on orders from",
-            "threshold": true
-          }
-        },
-        "b2": {
-          "type": "message",
-          "settings": {
-            "text": "One useful basket. So many everyday favourites."
-          }
-        },
-        "fees": {
-          "type": "message",
-          "settings": {
-            "text": "Delivery fee tiers",
-            "fees": true
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "fees"
-      ],
-      "settings": {}
-    },
-    "header": {
-      "type": "qc-header",
-      "settings": {}
-    },
     "hero": {
       "type": "qc-hero",
       "blocks": {
@@ -264,12 +222,6 @@
       ],
       "settings": {}
     },
-    "footer": {
-      "type": "qc-footer",
-      "blocks": {},
-      "block_order": [],
-      "settings": {}
-    },
     "import_baby": {
       "type": "qc-products",
       "settings": {
@@ -308,8 +260,6 @@
     }
   },
   "order": [
-    "announcement",
-    "header",
     "hero",
     "favourites",
     "import_baby",
@@ -321,7 +271,6 @@
     "import_office",
     "steps",
     "trust",
-    "faq",
-    "footer"
+    "faq"
   ]
 }

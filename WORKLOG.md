@@ -28,3 +28,7 @@ In progress. Theme editor, browser, cart and Lighthouse results will be recorded
 ## Phase 0 — Audit
 
 Wrote AUDIT.md and captured MCP menu/collection/review findings. Semantic live/local differences: templates/index.json. Preserve local baseline per owner instruction.
+
+## Phase 1 — Global chrome
+
+Moved homepage announcement/header/footer values verbatim into section groups, replacing earlier group instances. Groups now render on every template once. Bottom navigation extraction follows with its configurable section.
