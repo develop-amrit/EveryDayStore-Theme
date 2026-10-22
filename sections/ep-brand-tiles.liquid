@@ -1,0 +1,80 @@
+{% assign configured = false %}{% for block in section.blocks %}{% if block.settings.image != blank and block.settings.link != blank %}{% assign configured = true %}{% endif %}{% endfor %}{% if configured or request.design_mode %}{% capture heading_id %}ep-heading-{{ section.id }}{% endcapture %}<section class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="{{ heading_id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap"><div{% if section.settings.title == blank %} class="visually-hidden"{% endif %}>{% assign title = section.settings.title | default: section.settings.accessible_title %}{% render 'ep-section-header', title: title, heading_id: heading_id %}</div><div class="ep-ads ep-rail">{% for block in section.blocks %}{% if block.settings.image != blank and block.settings.link != blank %}<a class="ep-ad" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{% assign alt = block.settings.alt | default: block.settings.image.alt | default: section.settings.accessible_title %}{{ block.settings.image | image_url: width: 750 | image_tag: loading: 'lazy', widths: '180, 360, 540, 750', sizes: '(min-width:990px) 220px, 42vw', alt: alt }}{% if block.settings.ad %}<small>{{ 'ep.ad' | t }}</small>{% endif %}</a>{% endif %}{% endfor %}</div></div></section>{% endif %}
+{% schema %}
+{
+  "name": "t:ep.everyday_brand_tiles",
+  "tag": "div",
+  "class": "ep-section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:ep.title"
+    },
+    {
+      "type": "text",
+      "id": "accessible_title",
+      "label": "t:ep.accessible_title",
+      "default": "Featured brands"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:ep.colour_scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "t:ep.top_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "t:ep.bottom_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tile",
+      "name": "t:ep.brand_tile",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:ep.image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:ep.link"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "t:ep.alternative_text"
+        },
+        {
+          "type": "checkbox",
+          "id": "ad",
+          "label": "t:ep.show_ad_label",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:ep.everyday_brand_tiles"
+    }
+  ]
+}
+{% endschema %}

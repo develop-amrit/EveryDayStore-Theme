@@ -3484,6 +3484,9 @@
     "target_link_url": "Target link URL",
     "everyday_store_grid": "Everyday store grid",
     "store": "Store",
-    "tile_background": "Tile background"
+    "tile_background": "Tile background",
+    "everyday_brand_tiles": "Everyday brand tiles",
+    "brand_tile": "Brand tile",
+    "show_ad_label": "Show Ad label"
   }
 }
