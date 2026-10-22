@@ -3426,7 +3426,7 @@
     "search": "search",
     "cart": "cart",
     "user": "user",
-    "gift": "gift",
+    "gift": "Gift",
     "promo_bubble": "Promo bubble",
     "alternative_text": "Alternative text",
     "pulse_once": "Pulse once",
@@ -3496,6 +3496,11 @@
     "open_basket": "Open basket after adding a product",
     "whatsapp_url": "WhatsApp URL",
     "department_source": "Department within menu",
-    "linkedin_url": "LinkedIn URL"
+    "linkedin_url": "LinkedIn URL",
+    "basket": "Basket",
+    "bottle": "Bottle",
+    "soap": "Soap",
+    "paw": "Paw",
+    "pencil": "Pencil"
   }
 }

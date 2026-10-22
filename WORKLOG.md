@@ -187,3 +187,7 @@ Importing the shared build helper with a numeric correction argument accidentall
 ## Homepage correction 4
 
 Render footer social icons only for configured URLs. Add LinkedIn and WhatsApp icon support; remove the unrelated main-menu from Help and document the exact missing Help menu links in MERCHANT_TODO.md.
+
+## Homepage correction 6
+
+Give department tabs distinct basket, bottle, gift, soap, home, paw and pencil outline icons. Preserve icon-image overrides and editor-selectable choices.
