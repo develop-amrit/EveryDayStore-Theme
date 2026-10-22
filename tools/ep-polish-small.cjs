@@ -1,0 +1,3 @@
+const b=require('./ep-build.cjs');let p='tools/ep-src/ep-mobile.js';b.write(p,b.read(p).split('\n').filter(line=>!line.trim().startsWith('const root=')).join('\n'));
+p='tools/ep-src/ep-polish.js';let s=b.read(p).replace('const images=scope=>','const readyImages=new WeakSet();const images=scope=>').replace("if(img.dataset.epImageReady)continue;img.dataset.epImageReady='true';","if(readyImages.has(img))continue;readyImages.add(img);");b.write(p,s);
+const test='tools/ep-polish-string-test.cjs';b.write(test,b.read(test).replace('node.value.length>=8','node.value.length>=3').replace('value.length*(nodes.length-1)<18','(value.length+2)*(nodes.length-1)<12'));

@@ -1,0 +1,4 @@
+{% doc %}Keep real image markup and a no-JS fallback; fetch below-fold imagery close to the viewport.
+@param {string} image_markup - Shopify image_tag output.
+{% enddoc %}
+{% if request.page_type == 'index' %}<noscript>{{ image_markup }}</noscript>{{ image_markup | replace: ' src=', ' data-ep-src=' | replace: ' srcset=', ' data-ep-srcset=' }}{% else %}{{ image_markup }}{% endif %}

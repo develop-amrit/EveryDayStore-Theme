@@ -1,0 +1,407 @@
+{
+  "errors": [],
+  "widths": [
+    {
+      "width": 360,
+      "pageWidth": 360,
+      "categoryHeight": 2119,
+      "tabCount": 0,
+      "columns": "102.656px 102.672px 102.656px",
+      "seasonalColumns": "96px 96px 96px",
+      "panelHeight": 422,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "inert": 1,
+          "button": true
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "inert": 2,
+          "button": true
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "inert": 1,
+          "button": true
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "inert": 0,
+          "button": false
+        }
+      ],
+      "bubble": {
+        "font": "0px",
+        "name": "Explore festive gifts"
+      },
+      "outlinePlaceholders": 0
+    },
+    {
+      "width": 375,
+      "pageWidth": 375,
+      "categoryHeight": 2119,
+      "tabCount": 0,
+      "columns": "107.656px 107.672px 107.656px",
+      "seasonalColumns": "101px 101px 101px",
+      "panelHeight": 432,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "inert": 1,
+          "button": true
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "inert": 2,
+          "button": true
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "inert": 1,
+          "button": true
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "inert": 0,
+          "button": false
+        }
+      ],
+      "bubble": {
+        "font": "0px",
+        "name": "Explore festive gifts"
+      },
+      "outlinePlaceholders": 0
+    },
+    {
+      "width": 414,
+      "pageWidth": 414,
+      "categoryHeight": 2119,
+      "tabCount": 0,
+      "columns": "120.656px 120.672px 120.656px",
+      "seasonalColumns": "114px 114px 114px",
+      "panelHeight": 459,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "inert": 1,
+          "button": true
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "inert": 2,
+          "button": true
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "inert": 1,
+          "button": true
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "inert": 0,
+          "button": false
+        }
+      ],
+      "bubble": {
+        "font": "10px",
+        "name": "Explore festive gifts"
+      },
+      "outlinePlaceholders": 0
+    },
+    {
+      "width": 768,
+      "pageWidth": 768,
+      "categoryHeight": 2009,
+      "tabCount": 0,
+      "columns": "233.328px 233.328px 233.328px",
+      "seasonalColumns": "226.656px 226.672px 226.672px",
+      "panelHeight": 696,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "inert": 1,
+          "button": true
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "inert": 2,
+          "button": true
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "inert": 1,
+          "button": true
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "inert": 0,
+          "button": false
+        }
+      ],
+      "bubble": {
+        "font": "10px",
+        "name": "Explore festive gifts"
+      },
+      "outlinePlaceholders": 0
+    },
+    {
+      "width": 1280,
+      "pageWidth": 1280,
+      "categoryHeight": 1621,
+      "tabCount": 0,
+      "columns": "245.781px 245.781px 245.781px",
+      "seasonalColumns": "181.328px 181.328px 181.328px 181.344px 181.328px 181.328px",
+      "panelHeight": 397,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "inert": 0,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "inert": 0,
+          "button": false
+        }
+      ],
+      "bubble": {
+        "font": "10px",
+        "name": "Explore festive gifts"
+      },
+      "outlinePlaceholders": 0
+    }
+  ],
+  "expand": {
+    "before": 210,
+    "after": 320,
+    "expanded": "true",
+    "inert": 0,
+    "collapsed": 210
+  },
+  "categoryActive": "page",
+  "homeActive": "page",
+  "catalogue": {
+    "expected": 123,
+    "missing": []
+  },
+  "area": {
+    "initialFocus": "H2",
+    "searchFont": "16px",
+    "filtered": 1,
+    "height": 261,
+    "tickWhileOpen": true,
+    "saved": {
+      "zone": "Dubai Marina",
+      "local": "Dubai Marina"
+    }
+  },
+  "cart": {
+    "qty": "1",
+    "badgeAnimation": "ep-badge-pop",
+    "direction": "up",
+    "removed": true
+  },
+  "heart": {
+    "changed": true,
+    "animation": "ep-heart-pop"
+  },
+  "sticky": {
+    "pinned": true,
+    "background": "rgb(255, 255, 255)",
+    "searchTop": 6,
+    "transition": "0.15s, 0.15s"
+  },
+  "content": {
+    "panelLinks": [
+      {
+        "label": "Gifting",
+        "url": "/collections/gifting",
+        "images": 2
+      },
+      {
+        "label": "Grocery",
+        "url": "/collections/grocery",
+        "images": 2
+      },
+      {
+        "label": "Bath & Body",
+        "url": "/collections/bath-and-body",
+        "images": 2
+      },
+      {
+        "label": "Home",
+        "url": "/collections/home",
+        "images": 2
+      },
+      {
+        "label": "Pet",
+        "url": "/collections/pet",
+        "images": 2
+      },
+      {
+        "label": "Office Supplies",
+        "url": "/collections/office-supplies",
+        "images": 2
+      }
+    ],
+    "babyImages": 3,
+    "hero": "//3djevx-mu.myshopify.com/cdn/shop/files/B00BN7ZZ8Q_01.jpg?v=1792581549&width=600",
+    "seasonalTiles": 6,
+    "campaignImages": 2,
+    "campaignSoon": 1,
+    "campaignTags": [
+      {
+        "text": "From \nAED 35.29",
+        "height": 26,
+        "lineHeight": "18px",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "text": "From \nAED 117",
+        "height": 26,
+        "lineHeight": "18px",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "text": "From \nAED 20.17",
+        "height": 26,
+        "lineHeight": "18px",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "revealFirstTwo": false
+  },
+  "exclusions": {
+    "tagged": 0,
+    "violations": []
+  },
+  "reduced": {
+    "animated": 0,
+    "revealHidden": 0
+  },
+  "backTop": {
+    "scroll": 0,
+    "focus": "qc-logo"
+  }
+}

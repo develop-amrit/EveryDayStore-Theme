@@ -12,7 +12,7 @@
 
 ## Optional replacement images — auto mode is active now
 
-Uploaded images win over real product auto images. Empty collections keep neutral placeholders and Coming soon; no fake artwork or prices are used.
+Uploaded images win over real product auto images. Empty collections keep the designed tinted category icon and Soon pill; no fake artwork or prices are used.
 
 | Placement | Brief | Size |
 |---|---|---|
@@ -31,3 +31,6 @@ Tag intimate and sexual-wellness products `homepage-hide` in Admin, or reorder t
 
 ## Category panel and menu cleanup
 The new panel uses Baby Products plus Gifting, Grocery, Bath & Body, Home, Pet and Office Supplies. Upload transparent product clusters to replace auto images if desired. To remove All Products from footer Shop and Trending searches, delete it in Admin → Content → Menus. Theme code preserves menu links and does not edit Admin menus.
+
+## Image-less published Diapers & Wipes products
+The collection currently has 34 published products without images and three draft products with images. Theme auto mode does not expose draft products. Upload a collection image or set the category/campaign image override; the designed Soon tile remains in place until then. No collection is hidden or unlinked.

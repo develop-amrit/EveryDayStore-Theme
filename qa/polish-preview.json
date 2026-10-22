@@ -1,0 +1,386 @@
+{
+  "errors": [
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')",
+    "Cannot read properties of undefined (reading 'bind')"
+  ],
+  "widths": [
+    {
+      "width": 360,
+      "pageWidth": 360,
+      "categoryHeight": 2352,
+      "panelHeight": 422,
+      "tabCount": 0,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "height": 240,
+          "button": true
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "height": 240,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "height": 240,
+          "button": true
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "height": 240,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "height": 240,
+          "button": true
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "height": 115,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "height": 240,
+          "button": false
+        }
+      ],
+      "missingImages": [
+        {
+          "src": "https://3djevx-mu.myshopify.com/cdn/shop/files/B0CVND16K9_01.jpg?v=1792581465&width=180",
+          "complete": true,
+          "w": 108
+        },
+        {
+          "src": "https://3djevx-mu.myshopify.com/cdn/shop/files/B00ATZXD5U_01.jpg?v=1792581817&width=180",
+          "complete": true,
+          "w": 108
+        }
+      ],
+      "tint": "rgb(255, 251, 237)"
+    },
+    {
+      "width": 375,
+      "pageWidth": 375,
+      "categoryHeight": 2391,
+      "panelHeight": 432,
+      "tabCount": 0,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "height": 246,
+          "button": true
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "height": 246,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "height": 246,
+          "button": true
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "height": 246,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "height": 246,
+          "button": true
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "height": 118,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "height": 246,
+          "button": false
+        }
+      ],
+      "missingImages": [
+        {
+          "src": "https://3djevx-mu.myshopify.com/cdn/shop/files/B0CVND16K9_01.jpg?v=1792581465&width=180",
+          "complete": true,
+          "w": 112
+        },
+        {
+          "src": "https://3djevx-mu.myshopify.com/cdn/shop/files/B00ATZXD5U_01.jpg?v=1792581817&width=180",
+          "complete": true,
+          "w": 112
+        }
+      ],
+      "tint": "rgb(255, 251, 237)"
+    },
+    {
+      "width": 414,
+      "pageWidth": 414,
+      "categoryHeight": 2521,
+      "panelHeight": 459,
+      "tabCount": 0,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "height": 266,
+          "button": true
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "height": 266,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "height": 266,
+          "button": true
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "height": 266,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "height": 266,
+          "button": true
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "height": 128,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "height": 266,
+          "button": false
+        }
+      ],
+      "missingImages": [
+        {
+          "src": "https://3djevx-mu.myshopify.com/cdn/shop/files/B0CVND16K9_01.jpg?v=1792581465&width=180",
+          "complete": true,
+          "w": 124
+        },
+        {
+          "src": "https://3djevx-mu.myshopify.com/cdn/shop/files/B00ATZXD5U_01.jpg?v=1792581817&width=180",
+          "complete": true,
+          "w": 124
+        }
+      ],
+      "tint": "rgb(255, 251, 237)"
+    },
+    {
+      "width": 768,
+      "pageWidth": 768,
+      "categoryHeight": 2527,
+      "panelHeight": 696,
+      "tabCount": 0,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "height": 290,
+          "button": true
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "height": 290,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "height": 290,
+          "button": true
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "height": 290,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "height": 290,
+          "button": true
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "height": 140,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "height": 140,
+          "button": false
+        }
+      ],
+      "missingImages": [
+        {
+          "src": "",
+          "complete": false,
+          "w": 0
+        },
+        {
+          "src": "",
+          "complete": false,
+          "w": 0
+        }
+      ],
+      "tint": "rgb(255, 251, 237)"
+    },
+    {
+      "width": 1280,
+      "pageWidth": 1280,
+      "categoryHeight": 2059,
+      "panelHeight": 397,
+      "tabCount": 0,
+      "groups": [
+        {
+          "name": "Baby Products",
+          "count": 9,
+          "height": 290,
+          "button": false
+        },
+        {
+          "name": "Gifting",
+          "count": 7,
+          "height": 140,
+          "button": false
+        },
+        {
+          "name": "Grocery",
+          "count": 10,
+          "height": 290,
+          "button": false
+        },
+        {
+          "name": "Bath & Body",
+          "count": 8,
+          "height": 140,
+          "button": false
+        },
+        {
+          "name": "Home",
+          "count": 9,
+          "height": 290,
+          "button": false
+        },
+        {
+          "name": "Pet",
+          "count": 3,
+          "height": 140,
+          "button": false
+        },
+        {
+          "name": "Office Supplies",
+          "count": 6,
+          "height": 140,
+          "button": false
+        }
+      ],
+      "missingImages": [
+        {
+          "src": "",
+          "complete": false,
+          "w": 0
+        },
+        {
+          "src": "",
+          "complete": false,
+          "w": 0
+        }
+      ],
+      "tint": "rgb(255, 251, 237)"
+    }
+  ]
+}

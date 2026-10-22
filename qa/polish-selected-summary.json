@@ -1,0 +1,41 @@
+{
+  "method": "Selected unpublished theme cookie retained; HTTP cache and local/session storage cleared before timed storefront navigation, toolbar off (pb=0). Fresh browser for every run.",
+  "results": [
+    {
+      "run": 1,
+      "themeId": 189582049393,
+      "scores": {
+        "performance": 80,
+        "accessibility": 100,
+        "best-practices": 79,
+        "seo": 92
+      },
+      "lcp": 2035.5284999999994,
+      "cls": 0.002919581276072303
+    },
+    {
+      "run": 2,
+      "themeId": 189582049393,
+      "scores": {
+        "performance": 81,
+        "accessibility": 100,
+        "best-practices": 79,
+        "seo": 92
+      },
+      "lcp": 2131.6335,
+      "cls": 0.021053685645617114
+    },
+    {
+      "run": 3,
+      "themeId": 189582049393,
+      "scores": {
+        "performance": 85,
+        "accessibility": 100,
+        "best-practices": 79,
+        "seo": 92
+      },
+      "lcp": 1857.7741999999998,
+      "cls": 0.021053685645617114
+    }
+  ]
+}

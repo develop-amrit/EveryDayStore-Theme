@@ -1,0 +1,1 @@
+const b=require('./ep-build.cjs');let p='tools/ep-polish-critical.cjs',s=b.read(p);s=s.replace("querySelectorAll('body,body *')","querySelectorAll('html,body,body *')");s=s.replace("b.save('qa/polish-critical-summary.json'","require('./ep-polish-critical-layout.cjs')();b.save('qa/polish-critical-summary.json'");b.write(p,s);

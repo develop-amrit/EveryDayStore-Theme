@@ -1,0 +1,40 @@
+{
+  "errors": [],
+  "areaTabFocus": true,
+  "closeAnimation": {
+    "open": true,
+    "closing": true
+  },
+  "escClosed": true,
+  "backdropAnimation": {
+    "open": true,
+    "closing": true
+  },
+  "backdropClosed": true,
+  "search": {
+    "priced": "SUGGESTIONS\n\npampers baby dry taped diapers\n\nsensitive skin pampers\n\ntest pampers baby dry pants\n\npampers\n\nprotectioncomfort pampers\n\nPampers\n\nPRODUCTS\n\n[TEST] Pampers Ultimate Comfort Taped Diapers, Size 6, 13kg, Lotion infused with Aloe Vera and Vitamin E, x1000 Leak Locks Technology for Leakage Protection, 144 Count\n\nAED 287\nAED 350\n\n[TEST] Pampers Rash Protection Taped Diapers, Size 1, 2-5kg,50% Aloe Vera Lotion for Rash Protection, 3x Fortified Layers for Leakage Protection, Jumbo Box, 136 Count\n\nAED 195\n\n[TEST] Pampers Ultimate Comfort Premium Taped Diapers 2-5kg Size 1 Giant 108 Count\n\nAED 187\nAED 250\n\n[TEST] Pampers Ultimate Comfort Taped Diapers, Size 3, 6-10kg, Lotion infused with Aloe Vera and Vitamin E, x1000 Leak Locks Technology for Leakage Protection, 248 Count\n\nAED 287.30\nAED 350\nSee all results",
+    "clearVisible": true,
+    "cleared": true
+  },
+  "dismissedForSession": true,
+  "sharedPages": [
+    {
+      "path": "/collections/baby-products",
+      "tabs": 0,
+      "headers": 1,
+      "footers": 1
+    },
+    {
+      "path": "/products/diapers-size-3-144-count-pampers-baby-dry-disposable-baby-diapers-giant-pack-b00ddmizp4",
+      "tabs": 0,
+      "headers": 1,
+      "footers": 1
+    }
+  ],
+  "nojs": {
+    "tileCount": 52,
+    "hiddenTiles": 0,
+    "sourceImages": 131,
+    "areaSelect": 1
+  }
+}

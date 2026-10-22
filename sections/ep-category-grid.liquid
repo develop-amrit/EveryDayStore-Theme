@@ -1,4 +1,4 @@
-<section id="shop-by-category" class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="ep-heading-{{ section.id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap"><h2 id="ep-heading-{{ section.id }}" tabindex="-1">{{ section.settings.title | escape }}</h2><p class="ep-category-subtitle">{{ section.settings.subtitle | escape }}</p><button class="ep-catalogue-button" type="button" data-categories-open>{{ 'ep.browse_catalogue' | t }} ›</button>{% for block in section.blocks %}{% if block.type == 'group' %}{% assign group_links = block.settings.menu.links %}{% if block.settings.department != blank %}{% assign group_links = blank %}{% for parent_link in block.settings.menu.links %}{% if parent_link.object.id == block.settings.department.id %}{% assign group_links = parent_link.links %}{% break %}{% endif %}{% endfor %}{% endif %}{% if group_links != blank %}<ep-category-group class="ep-grid-group" data-ep-department="{{ block.settings.department.handle }}" {{ block.shopify_attributes }}>{% capture group_id %}ep-group-{{ block.id }}{% endcapture %}{% render 'ep-section-header', title: block.settings.heading, link_url: block.settings.link, heading_id: group_id %}<div class="ep-group-clip" id="ep-tiles-{{ block.id }}"><div class="ep-tiles">{% for pass in (1..2) %}{% for link in group_links %}{% assign has_products = false %}{% if link.object.all_products_count > 0 %}{% assign has_products = true %}{% endif %}{% if pass == 1 and has_products or pass == 2 and has_products == false %}{% render 'ep-category-menu-tile', link: link, section: section, group_heading: block.settings.heading, icon: block.settings.icon, tint: block.settings.tint %}{% endif %}{% endfor %}{% endfor %}</div></div><button class="ep-group-toggle" type="button" aria-expanded="false" aria-controls="ep-tiles-{{ block.id }}" data-less="{{ 'ep.show_less' | t }}" hidden>{{ 'ep.show_all_count' | t: count: group_links.size }}</button></ep-category-group>{% endif %}{% endif %}{% endfor %}</div></section>
+<section id="shop-by-category" class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="ep-heading-{{ section.id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap"><h2 id="ep-heading-{{ section.id }}" tabindex="-1">{{ section.settings.title | escape }}</h2><p class="ep-category-subtitle">{{ section.settings.subtitle | escape }}</p><button class="ep-catalogue-button" type="button" data-categories-open>{{ 'ep.browse_catalogue' | t }} ›</button>{% for block in section.blocks %}{% if block.type == 'group' %}{% assign group_links = block.settings.menu.links %}{% if block.settings.department != blank %}{% assign group_links = blank %}{% for parent_link in block.settings.menu.links %}{% if parent_link.object.id == block.settings.department.id %}{% assign group_links = parent_link.links %}{% break %}{% endif %}{% endfor %}{% endif %}{% if group_links != blank %}<ep-category-group class="ep-grid-group" data-ep-department="{{ block.settings.department.handle }}" {{ block.shopify_attributes }}>{% capture group_id %}ep-group-{{ block.id }}{% endcapture %}{% render 'ep-section-header', title: block.settings.heading, link_url: block.settings.link, heading_id: group_id %}<div class="ep-group-clip" id="ep-tiles-{{ block.id }}"><div class="ep-tiles">{% for pass in (1..2) %}{% for link in group_links %}{% assign has_products = false %}{% if link.object.all_products_count > 0 %}{% assign has_products = true %}{% endif %}{% assign show_tile = false %}{% if pass == 1 %}{% if has_products %}{% assign show_tile = true %}{% endif %}{% else %}{% unless has_products %}{% assign show_tile = true %}{% endunless %}{% endif %}{% if show_tile %}{% render 'ep-category-menu-tile', link: link, section: section, group_heading: block.settings.heading, icon: block.settings.icon, tint: block.settings.tint %}{% endif %}{% endfor %}{% endfor %}</div></div><button class="ep-group-toggle" type="button" aria-expanded="false" aria-controls="ep-tiles-{{ block.id }}" data-less="{{ 'ep.show_less' | t }}" hidden>{{ 'ep.show_all_count' | t: count: group_links.size }}</button></ep-category-group>{% endif %}{% endif %}{% endfor %}</div></section>
 {% schema %}
 {
   "name": "t:ep.everyday_category_grids",
@@ -45,6 +45,12 @@
       "type": "text",
       "id": "subtitle",
       "label": "t:ep.final_subtitle"
+    },
+    {
+      "type": "text",
+      "id": "exclude_tags",
+      "label": "t:ep.polish_exclude_products_tagged",
+      "default": "homepage-hide"
     }
   ],
   "blocks": [
@@ -69,12 +75,6 @@
           "label": "t:ep.department_source"
         },
         {
-          "type": "checkbox",
-          "id": "first_wide",
-          "label": "t:ep.make_first_tile_wide",
-          "default": false
-        },
-        {
           "type": "url",
           "id": "link",
           "label": "t:ep.see_all_link"
@@ -82,35 +82,35 @@
         {
           "type": "select",
           "id": "icon",
-          "label": "Parent category icon",
+          "label": "t:ep.polish_parent_category_icon",
           "options": [
             {
               "value": "basket",
-              "label": "basket"
+              "label": "t:ep.polish_basket"
             },
             {
               "value": "bottle",
-              "label": "bottle"
+              "label": "t:ep.polish_bottle"
             },
             {
               "value": "gift",
-              "label": "gift"
+              "label": "t:ep.polish_gift"
             },
             {
               "value": "soap",
-              "label": "soap"
+              "label": "t:ep.polish_soap"
             },
             {
               "value": "home",
-              "label": "home"
+              "label": "t:ep.polish_home"
             },
             {
               "value": "paw",
-              "label": "paw"
+              "label": "t:ep.polish_paw"
             },
             {
               "value": "pencil",
-              "label": "pencil"
+              "label": "t:ep.polish_pencil"
             }
           ],
           "default": "basket"
@@ -118,31 +118,31 @@
         {
           "type": "select",
           "id": "tint",
-          "label": "Coming soon tint",
+          "label": "t:ep.polish_coming_soon_tint",
           "options": [
             {
               "value": "blue",
-              "label": "blue"
+              "label": "t:ep.polish_blue"
             },
             {
               "value": "cream",
-              "label": "cream"
+              "label": "t:ep.polish_cream"
             },
             {
               "value": "green",
-              "label": "green"
+              "label": "t:ep.polish_green"
             },
             {
               "value": "pink",
-              "label": "pink"
+              "label": "t:ep.polish_pink"
             },
             {
               "value": "lilac",
-              "label": "lilac"
+              "label": "t:ep.polish_lilac"
             },
             {
               "value": "peach",
-              "label": "peach"
+              "label": "t:ep.polish_peach"
             }
           ],
           "default": "cream"

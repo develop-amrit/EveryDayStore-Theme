@@ -8,6 +8,7 @@
     <link rel="canonical" href="{{ canonical_url }}">
     {% if template.name == 'page' and page.handle == 'product-preview' %}<meta name="robots" content="noindex,follow">{% endif %}
 
+    {%- if settings.favicon == blank and request.page_type == 'index' -%}<link rel="icon" type="image/svg+xml" href="{{ 'ep-favicon.svg' | asset_url }}">{%- endif -%}
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -29,7 +30,7 @@
 
     {% render 'meta-tags' %}
 
-<script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
+{% if request.page_type == 'index' %}<script src="{{ 'ep-home-core.js' | asset_url }}" defer></script>{% else %}<script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'cart-disclosure-modal.js' | asset_url }}" defer="defer"></script>
@@ -37,7 +38,7 @@
     <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'standard-actions-override.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'standard-actions-override.js' | asset_url }}" defer="defer"></script>{% endif %}
 
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
@@ -258,7 +259,7 @@
       }
     {% endstyle %}
 
-    {% if request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'base.css' | asset_url }}">{% else %}{{ 'base.css' | asset_url | stylesheet_tag }}{% endif %}
+{% if request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'base.css' | asset_url }}" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="{{ 'base.css' | asset_url }}"></noscript>{% else %}{{ 'base.css' | asset_url | stylesheet_tag }}{% endif %}
     {% unless request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">{% endunless %}
 
     {%- if false -%}
@@ -303,8 +304,8 @@
   
   
 
-<script src="{{ 'qc-home.js' | asset_url }}" defer></script><script src="{{ 'qc-storefront.js' | asset_url }}" defer></script><script src="{{ 'qc-catalog.js' | asset_url }}" defer></script><script src="{{ 'qc-delivery.js' | asset_url }}" defer></script><script src="{{ 'qc-account.js' | asset_url }}" defer></script><script src="{{ 'qc-assistant.js' | asset_url }}" defer></script><script src="{{ 'qc-privacy.js' | asset_url }}" defer></script>
-{% if request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'ep-mobile.css' | asset_url }}">{% else %}{{ 'ep-mobile.css' | asset_url | stylesheet_tag }}{% endif %}
+{% if request.page_type == 'index' %}<script src="{{ 'ep-home-commerce.js' | asset_url }}" defer></script>{% else %}<script src="{{ 'qc-home.js' | asset_url }}" defer></script><script src="{{ 'qc-storefront.js' | asset_url }}" defer></script><script src="{{ 'qc-catalog.js' | asset_url }}" defer></script><script src="{{ 'qc-delivery.js' | asset_url }}" defer></script><script src="{{ 'qc-account.js' | asset_url }}" defer></script><script src="{{ 'qc-assistant.js' | asset_url }}" defer></script><script src="{{ 'qc-privacy.js' | asset_url }}" defer></script>{% endif %}
+{% if request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'ep-mobile.css' | asset_url }}" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="{{ 'ep-mobile.css' | asset_url }}"></noscript>{% render 'ep-critical-css' %}{% else %}{{ 'ep-mobile.css' | asset_url | stylesheet_tag }}{% endif %}
 <script src="{{ 'ep-mobile.js' | asset_url }}" defer></script>
     {{ content_for_header }}
 </head>

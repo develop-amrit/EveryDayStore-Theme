@@ -1,60 +1,60 @@
-<script src="{{ 'ep-polish.js' | asset_url }}" defer></script><section class="ep-category-panel" aria-labelledby="ep-panel-title-{{ section.id }}" style="--ep-panel-background:{{ section.settings.background }}"><div class="ep-panel-layout ep-wrap"><a class="ep-baby-tile" href="{{ section.settings.collection.url }}" style="--ep-baby-background:{{ section.settings.baby_background }}"><div class="ep-baby-copy"><h2 id="ep-panel-title-{{ section.id }}">{{ section.settings.title | escape }}</h2><p>{{ section.settings.subtitle | escape }}</p><span class="ep-cta">{{ section.settings.button_label | escape }}</span></div><span class="ep-product-cluster ep-cluster--baby">{% render 'ep-product-cluster', collection: section.settings.collection, image: section.settings.image, count: 3, exclude_tags: section.settings.exclude_tags, title: section.settings.title, icon: 'bottle', eager: true %}</span></a><div class="ep-panel-categories">{% for block in section.blocks %}<a class="ep-panel-category ep-tint-{{ block.settings.tint }}" href="{{ block.settings.collection.url }}" {{ block.shopify_attributes }}><strong>{{ block.settings.title | escape }}</strong><span class="ep-product-cluster">{% render 'ep-product-cluster', collection: block.settings.collection, image: block.settings.image, count: 2, exclude_tags: section.settings.exclude_tags, title: block.settings.title, icon: block.settings.icon %}</span></a>{% endfor %}</div></div></section>
+<script src="{{ 'ep-polish.js' | asset_url }}" defer></script><section class="ep-category-panel color-{{ section.settings.color_scheme }}" aria-labelledby="ep-panel-title-{{ section.id }}" style="--ep-panel-background:{{ section.settings.background }};--ep-panel-top:{{ section.settings.padding_top }}px;--ep-panel-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-panel-layout ep-wrap"><a class="ep-baby-tile" href="{{ section.settings.collection.url }}" style="--ep-baby-background:{{ section.settings.baby_background }}"><div class="ep-baby-copy"><h2 id="ep-panel-title-{{ section.id }}">{{ section.settings.title | escape }}</h2><p>{{ section.settings.subtitle | escape }}</p><span class="ep-cta">{{ section.settings.button_label | escape }}</span></div><span class="ep-product-cluster ep-cluster--baby">{% render 'ep-product-cluster', collection: section.settings.collection, image: section.settings.image, count: 3, exclude_tags: section.settings.exclude_tags, title: section.settings.title, icon: 'bottle', eager: true, high_priority: true %}</span></a><div class="ep-panel-categories">{% for block in section.blocks %}<a class="ep-panel-category ep-tint-{{ block.settings.tint }}" href="{{ block.settings.collection.url }}" {{ block.shopify_attributes }}><strong>{{ block.settings.title | escape }}</strong><span class="ep-product-cluster">{% assign cluster_eager = false %}{% if forloop.index <= 6 %}{% assign cluster_eager = true %}{% endif %}{% render 'ep-product-cluster', collection: block.settings.collection, image: block.settings.image, count: 2, exclude_tags: section.settings.exclude_tags, title: block.settings.title, icon: block.settings.icon, eager: cluster_eager %}</span></a>{% endfor %}</div></div></section>
 {% schema %}
 {
-  "name": "Everyday category panel",
+  "name": "t:ep.polish_everyday_category_panel",
   "tag": "div",
   "class": "ep-section-wrapper ep-category-panel-wrapper",
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Baby tile title",
+      "label": "t:ep.polish_baby_tile_title",
       "default": "Baby Products"
     },
     {
       "type": "text",
       "id": "subtitle",
-      "label": "Baby tile subtitle",
+      "label": "t:ep.polish_baby_tile_subtitle",
       "default": "Diapers, formula, bath time & more"
     },
     {
       "type": "text",
       "id": "button_label",
-      "label": "Button label",
+      "label": "t:ep.polish_button_label",
       "default": "Shop now →"
     },
     {
       "type": "collection",
       "id": "collection",
-      "label": "Baby collection"
+      "label": "t:ep.polish_baby_collection"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Baby image override"
+      "label": "t:ep.polish_baby_image_override"
     },
     {
       "type": "color",
       "id": "background",
-      "label": "Panel background",
+      "label": "t:ep.polish_panel_background",
       "default": "#fffbed"
     },
     {
       "type": "color",
       "id": "baby_background",
-      "label": "Baby tile background",
+      "label": "t:ep.polish_baby_tile_background",
       "default": "#f9edc8"
     },
     {
       "type": "text",
       "id": "exclude_tags",
-      "label": "Exclude products tagged",
+      "label": "t:ep.polish_exclude_products_tagged",
       "default": "homepage-hide"
     },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Top padding",
+      "label": "t:ep.polish_top_padding",
       "min": 0,
       "max": 48,
       "step": 4,
@@ -63,7 +63,7 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Bottom padding",
+      "label": "t:ep.polish_bottom_padding",
       "min": 0,
       "max": 48,
       "step": 4,
@@ -72,58 +72,58 @@
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "Colour scheme",
+      "label": "t:ep.polish_colour_scheme",
       "default": "scheme-1"
     }
   ],
   "blocks": [
     {
       "type": "category",
-      "name": "Category",
+      "name": "t:ep.polish_category",
       "settings": [
         {
           "type": "text",
           "id": "title",
-          "label": "Title"
+          "label": "t:ep.polish_title"
         },
         {
           "type": "collection",
           "id": "collection",
-          "label": "Collection"
+          "label": "t:ep.polish_collection"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image override"
+          "label": "t:ep.polish_image_override"
         },
         {
           "type": "select",
           "id": "tint",
-          "label": "Tint",
+          "label": "t:ep.polish_tint",
           "options": [
             {
               "value": "blue",
-              "label": "blue"
+              "label": "t:ep.polish_blue"
             },
             {
               "value": "cream",
-              "label": "cream"
+              "label": "t:ep.polish_cream"
             },
             {
               "value": "green",
-              "label": "green"
+              "label": "t:ep.polish_green"
             },
             {
               "value": "pink",
-              "label": "pink"
+              "label": "t:ep.polish_pink"
             },
             {
               "value": "lilac",
-              "label": "lilac"
+              "label": "t:ep.polish_lilac"
             },
             {
               "value": "peach",
-              "label": "peach"
+              "label": "t:ep.polish_peach"
             }
           ],
           "default": "cream"
@@ -131,31 +131,31 @@
         {
           "type": "select",
           "id": "icon",
-          "label": "Empty category icon",
+          "label": "t:ep.polish_empty_category_icon",
           "options": [
             {
               "value": "gift",
-              "label": "gift"
+              "label": "t:ep.polish_gift"
             },
             {
               "value": "basket",
-              "label": "basket"
+              "label": "t:ep.polish_basket"
             },
             {
               "value": "soap",
-              "label": "soap"
+              "label": "t:ep.polish_soap"
             },
             {
               "value": "home",
-              "label": "home"
+              "label": "t:ep.polish_home"
             },
             {
               "value": "paw",
-              "label": "paw"
+              "label": "t:ep.polish_paw"
             },
             {
               "value": "pencil",
-              "label": "pencil"
+              "label": "t:ep.polish_pencil"
             }
           ],
           "default": "gift"
@@ -165,27 +165,72 @@
   ],
   "presets": [
     {
-      "name": "Everyday category panel",
+      "name": "t:ep.polish_everyday_category_panel",
       "blocks": [
         {
-          "type": "category"
+          "type": "category",
+          "settings": {
+            "title": "Gifting",
+            "collection": "gifting",
+            "tint": "cream",
+            "icon": "gift"
+          }
         },
         {
-          "type": "category"
+          "type": "category",
+          "settings": {
+            "title": "Grocery",
+            "collection": "grocery",
+            "tint": "green",
+            "icon": "basket"
+          }
         },
         {
-          "type": "category"
+          "type": "category",
+          "settings": {
+            "title": "Bath & Body",
+            "collection": "bath-and-body",
+            "tint": "pink",
+            "icon": "soap"
+          }
         },
         {
-          "type": "category"
+          "type": "category",
+          "settings": {
+            "title": "Home",
+            "collection": "home",
+            "tint": "lilac",
+            "icon": "home"
+          }
         },
         {
-          "type": "category"
+          "type": "category",
+          "settings": {
+            "title": "Pet",
+            "collection": "pet",
+            "tint": "peach",
+            "icon": "paw"
+          }
         },
         {
-          "type": "category"
+          "type": "category",
+          "settings": {
+            "title": "Office Supplies",
+            "collection": "office-supplies",
+            "tint": "cream",
+            "icon": "pencil"
+          }
         }
-      ]
+      ],
+      "settings": {
+        "title": "Baby Products",
+        "subtitle": "Diapers, formula, bath time & more",
+        "button_label": "Shop now →",
+        "collection": "baby-products",
+        "exclude_tags": "homepage-hide",
+        "background": "#fffbed",
+        "baby_background": "#f9edc8"
+      }
     }
   ]
 }

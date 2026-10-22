@@ -2,5 +2,9 @@
   "dependencies": {
     "lighthouse": "^12.8.2",
     "playwright": "^1.64.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "terser": "^5.51.2"
   }
 }
