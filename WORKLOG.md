@@ -333,3 +333,9 @@ Every rail/grid/auto-image section gets Exclude products tagged (default homepag
 ## Polish 10: Prioritize missing checkout policies
 
 Moved exact policy creation instruction to the top of MERCHANT_TODO.md; no empty or invented policy links added.
+
+## Polish 11: Replace header tabs with the category panel
+
+Removed horizontal tab markup, authored CSS and header tab blocks on every page. Search-only pinning retains ResizeObserver measurement of the upper rows. Homepage uses one continuous butter-cream surface behind header/search and the new first section, rounded at its bottom; pinned header changes to white. New merchant-editable ep-category-panel has full-width Baby Products tile with three real product images, then six category blocks with two-image clusters, uploaded overrides and exclusion tags. Desktop places Baby at the left third and a 3×2 grid at right. Hero follows unchanged except the owner-requested Baby image source. Shared section headings gain dashed rules.
+
+The shortened category grid adds Browse full catalogue, opening the existing complete menu drawer so all 123 configured destinations remain directly reachable from home without third-level tiles. No menu entries or collection links removed. Merchant menu cleanup is documented, not performed.

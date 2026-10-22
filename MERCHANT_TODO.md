@@ -28,3 +28,6 @@ Ferrero Rocher was skipped because that exact vendor is absent; the catalogue us
 
 ## Homepage merchandising
 Tag intimate and sexual-wellness products `homepage-hide` in Admin, or reorder the Care/Bath & Body collection so these products are not first. Homepage rails, grids and auto-image collections skip the configured tags; collection/search pages keep all products. The theme does not tag catalogue products automatically.
+
+## Category panel and menu cleanup
+The new panel uses Baby Products plus Gifting, Grocery, Bath & Body, Home, Pet and Office Supplies. Upload transparent product clusters to replace auto images if desired. To remove All Products from footer Shop and Trending searches, delete it in Admin → Content → Menus. Theme code preserves menu links and does not edit Admin menus.

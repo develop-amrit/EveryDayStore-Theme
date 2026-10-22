@@ -1,0 +1,192 @@
+<script src="{{ 'ep-polish.js' | asset_url }}" defer></script><section class="ep-category-panel" aria-labelledby="ep-panel-title-{{ section.id }}" style="--ep-panel-background:{{ section.settings.background }}"><div class="ep-panel-layout ep-wrap"><a class="ep-baby-tile" href="{{ section.settings.collection.url }}" style="--ep-baby-background:{{ section.settings.baby_background }}"><div class="ep-baby-copy"><h2 id="ep-panel-title-{{ section.id }}">{{ section.settings.title | escape }}</h2><p>{{ section.settings.subtitle | escape }}</p><span class="ep-cta">{{ section.settings.button_label | escape }}</span></div><span class="ep-product-cluster ep-cluster--baby">{% render 'ep-product-cluster', collection: section.settings.collection, image: section.settings.image, count: 3, exclude_tags: section.settings.exclude_tags, title: section.settings.title, icon: 'bottle', eager: true %}</span></a><div class="ep-panel-categories">{% for block in section.blocks %}<a class="ep-panel-category ep-tint-{{ block.settings.tint }}" href="{{ block.settings.collection.url }}" {{ block.shopify_attributes }}><strong>{{ block.settings.title | escape }}</strong><span class="ep-product-cluster">{% render 'ep-product-cluster', collection: block.settings.collection, image: block.settings.image, count: 2, exclude_tags: section.settings.exclude_tags, title: block.settings.title, icon: block.settings.icon %}</span></a>{% endfor %}</div></div></section>
+{% schema %}
+{
+  "name": "Everyday category panel",
+  "tag": "div",
+  "class": "ep-section-wrapper ep-category-panel-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Baby tile title",
+      "default": "Baby Products"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Baby tile subtitle",
+      "default": "Diapers, formula, bath time & more"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop now →"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Baby collection"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Baby image override"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Panel background",
+      "default": "#fffbed"
+    },
+    {
+      "type": "color",
+      "id": "baby_background",
+      "label": "Baby tile background",
+      "default": "#f9edc8"
+    },
+    {
+      "type": "text",
+      "id": "exclude_tags",
+      "label": "Exclude products tagged",
+      "default": "homepage-hide"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 20
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Colour scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image override"
+        },
+        {
+          "type": "select",
+          "id": "tint",
+          "label": "Tint",
+          "options": [
+            {
+              "value": "blue",
+              "label": "blue"
+            },
+            {
+              "value": "cream",
+              "label": "cream"
+            },
+            {
+              "value": "green",
+              "label": "green"
+            },
+            {
+              "value": "pink",
+              "label": "pink"
+            },
+            {
+              "value": "lilac",
+              "label": "lilac"
+            },
+            {
+              "value": "peach",
+              "label": "peach"
+            }
+          ],
+          "default": "cream"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Empty category icon",
+          "options": [
+            {
+              "value": "gift",
+              "label": "gift"
+            },
+            {
+              "value": "basket",
+              "label": "basket"
+            },
+            {
+              "value": "soap",
+              "label": "soap"
+            },
+            {
+              "value": "home",
+              "label": "home"
+            },
+            {
+              "value": "paw",
+              "label": "paw"
+            },
+            {
+              "value": "pencil",
+              "label": "pencil"
+            }
+          ],
+          "default": "gift"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Everyday category panel",
+      "blocks": [
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

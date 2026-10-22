@@ -1,4 +1,4 @@
-{% if request.page_type == 'index' %}<script>window.theme=window.theme||{};window.theme.moneyFormat={{ localization.country.currency.iso_code | default: shop.currency | append: ' __AMOUNT__' | json }};</script>{% endif %}<script src="{{ 'ep-final.js' | asset_url }}" defer></script><ep-header class="qc-header ep-header color-{{ section.settings.color_scheme }}" style="padding-block:{{ section.settings.padding_top }}px {{ section.settings.padding_bottom }}px" data-terms="{{ section.settings.rotating_terms | escape }}"><div class="ep-header-sentinel" aria-hidden="true"></div><div class="ep-upper"><div class="qc-wrap qc-header-row"><a class="qc-logo" href="{{ routes.root_url }}">{% render 'qc-logo', wordmark: section.settings.wordmark %}</a><div class="qc-header-actions"><a href="{{ section.settings.wishlist_link }}" aria-label="{{ 'qc.wishlist' | t }}">{% render 'qc-icon', name: 'heart' %}</a>{% if shop.customer_accounts_enabled %}<a href="{{ routes.account_url }}" aria-label="{{ 'qc.account' | t }}">{% render 'qc-icon', name: 'account' %}</a>{% endif %}<a href="{{ routes.cart_url }}" data-cart-open aria-label="{{ 'qc.cart' | t }} {{ cart.item_count }}" data-ep-cart-label="{{ 'qc.cart' | t }}">{% render 'qc-icon', name: 'cart' %}<span data-cart-count>{{ cart.item_count }}</span></a></div></div><div class="ep-delivery qc-wrap">{% render 'ep-area-picker', areas: section.settings.areas, delivery_text: section.settings.delivery_text, picker_id: section.id %}</div></div><div class="ep-search-zone qc-wrap">{% if request.page_type == 'index' %}<predictive-search class="ep-native-search" data-loading-text="{{ 'ep.loading_products' | t }}">{% endif %}<form class="qc-search" action="{{ routes.search_url }}" role="search"><label class="visually-hidden" for="qc-search">{{ 'ep.search_products' | t }}</label>{% render 'qc-icon', name: 'search' %}<input type="search" id="qc-search" name="q" role="combobox" aria-autocomplete="list" placeholder=" " autocomplete="off" aria-expanded="false" aria-controls="qc-suggestions" {% if request.page_type == 'index' %}data-ep-search{% else %}data-search{% endif %}><span class="ep-search-placeholder" aria-hidden="true">{{ 'ep.search_products' | t }}</span><input type="hidden" name="type" value="product">{% if request.page_type == 'index' %}<button type="reset" class="ep-search-clear hidden" aria-label="{{ 'ep.clear_search' | t }}">×</button>{% endif %}<button type="submit" aria-label="{{ 'qc.search' | t }}">{% render 'qc-icon', name: 'search' %}</button>{% if request.page_type == 'index' %}<div class="ep-predictive-panel" data-predictive-search tabindex="-1"></div><div class="ep-search-skeleton" aria-hidden="true"><span></span><span></span><span></span></div><span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>{% else %}<div id="qc-suggestions" role="listbox" class="qc-suggestions" hidden></div>{% endif %}</form>{% if request.page_type == 'index' %}</predictive-search>{% endif %}</div><div class="qc-wrap"><nav class="ep-tabs" aria-label="{{ 'qc.categories' | t }}">{% for block in section.blocks %}{% if block.settings.link != blank %}<a class="ep-tab" href="{{ block.settings.link }}"{% if request.path == block.settings.link %} aria-current="page"{% endif %} {{ block.shopify_attributes }}>{% if block.settings.image %}{% assign alt = block.settings.image.alt | default: block.settings.label %}{{ block.settings.image | image_url: width: 48 | image_tag: loading: 'lazy', widths: '24, 48', sizes: '24px', alt: alt }}{% else %}{% render 'ep-icon', name: block.settings.icon %}{% endif %}<span>{{ block.settings.label | escape }}</span></a>{% endif %}{% endfor %}</nav><div class="ep-desktop-menu">{% render 'qc-menu' %}</div></div></ep-header>
+{% if request.page_type == 'index' %}<script>window.theme=window.theme||{};window.theme.moneyFormat={{ localization.country.currency.iso_code | default: shop.currency | append: ' __AMOUNT__' | json }};</script>{% endif %}<script src="{{ 'ep-final.js' | asset_url }}" defer></script><ep-header class="qc-header ep-header color-{{ section.settings.color_scheme }}" style="padding-block:{{ section.settings.padding_top }}px {{ section.settings.padding_bottom }}px" data-terms="{{ section.settings.rotating_terms | escape }}"><div class="ep-header-sentinel" aria-hidden="true"></div><div class="ep-upper"><div class="qc-wrap qc-header-row"><a class="qc-logo" href="{{ routes.root_url }}">{% render 'qc-logo', wordmark: section.settings.wordmark %}</a><div class="qc-header-actions"><a href="{{ section.settings.wishlist_link }}" aria-label="{{ 'qc.wishlist' | t }}">{% render 'qc-icon', name: 'heart' %}</a>{% if shop.customer_accounts_enabled %}<a href="{{ routes.account_url }}" aria-label="{{ 'qc.account' | t }}">{% render 'qc-icon', name: 'account' %}</a>{% endif %}<a href="{{ routes.cart_url }}" data-cart-open aria-label="{{ 'qc.cart' | t }} {{ cart.item_count }}" data-ep-cart-label="{{ 'qc.cart' | t }}">{% render 'qc-icon', name: 'cart' %}<span data-cart-count>{{ cart.item_count }}</span></a></div></div><div class="ep-delivery qc-wrap">{% render 'ep-area-picker', areas: section.settings.areas, delivery_text: section.settings.delivery_text, picker_id: section.id %}</div></div><div class="ep-search-zone qc-wrap">{% if request.page_type == 'index' %}<predictive-search class="ep-native-search" data-loading-text="{{ 'ep.loading_products' | t }}">{% endif %}<form class="qc-search" action="{{ routes.search_url }}" role="search"><label class="visually-hidden" for="qc-search">{{ 'ep.search_products' | t }}</label>{% render 'qc-icon', name: 'search' %}<input type="search" id="qc-search" name="q" role="combobox" aria-autocomplete="list" placeholder=" " autocomplete="off" aria-expanded="false" aria-controls="qc-suggestions" {% if request.page_type == 'index' %}data-ep-search{% else %}data-search{% endif %}><span class="ep-search-placeholder" aria-hidden="true">{{ 'ep.search_products' | t }}</span><input type="hidden" name="type" value="product">{% if request.page_type == 'index' %}<button type="reset" class="ep-search-clear hidden" aria-label="{{ 'ep.clear_search' | t }}">×</button>{% endif %}<button type="submit" aria-label="{{ 'qc.search' | t }}">{% render 'qc-icon', name: 'search' %}</button>{% if request.page_type == 'index' %}<div class="ep-predictive-panel" data-predictive-search tabindex="-1"></div><div class="ep-search-skeleton" aria-hidden="true"><span></span><span></span><span></span></div><span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>{% else %}<div id="qc-suggestions" role="listbox" class="qc-suggestions" hidden></div>{% endif %}</form>{% if request.page_type == 'index' %}</predictive-search>{% endif %}</div></ep-header>
 {% schema %}
 {
   "name": "t:ep.everyday_mobile_header",
@@ -59,90 +59,11 @@
       "default": "Dubai Marina\nJLT\nDowntown\nBusiness Bay\nJumeirah\nAl Barsha\nDeira\nDubai Hills\nMirdif\nJVC"
     }
   ],
-  "blocks": [
-    {
-      "type": "tab",
-      "name": "t:ep.category_tab",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:ep.image"
-        },
-        {
-          "type": "text",
-          "id": "label",
-          "label": "t:ep.label"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "t:ep.link"
-        },
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "t:ep.icon",
-          "options": [
-            {
-              "value": "home",
-              "label": "t:ep.home"
-            },
-            {
-              "value": "grid",
-              "label": "t:ep.grid"
-            },
-            {
-              "value": "bag",
-              "label": "t:ep.bag"
-            },
-            {
-              "value": "leaf",
-              "label": "t:ep.leaf"
-            },
-            {
-              "value": "heart",
-              "label": "t:ep.heart"
-            },
-            {
-              "value": "truck",
-              "label": "t:ep.truck"
-            },
-            {
-              "value": "basket",
-              "label": "t:ep.basket"
-            },
-            {
-              "value": "bottle",
-              "label": "t:ep.bottle"
-            },
-            {
-              "value": "gift",
-              "label": "t:ep.gift"
-            },
-            {
-              "value": "soap",
-              "label": "t:ep.soap"
-            },
-            {
-              "value": "paw",
-              "label": "t:ep.paw"
-            },
-            {
-              "value": "pencil",
-              "label": "t:ep.pencil"
-            }
-          ],
-          "default": "grid"
-        }
-      ]
-    }
-  ],
+  "blocks": [],
   "presets": [
     {
       "name": "t:ep.everyday_mobile_header"
     }
-  ],
-  "max_blocks": 12
+  ]
 }
 {% endschema %}

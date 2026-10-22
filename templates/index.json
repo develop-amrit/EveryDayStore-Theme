@@ -834,9 +834,86 @@
         "strip"
       ],
       "disabled": true
+    },
+    "category_panel": {
+      "type": "ep-category-panel",
+      "settings": {
+        "title": "Baby Products",
+        "subtitle": "Diapers, formula, bath time & more",
+        "button_label": "Shop now →",
+        "collection": "baby-products",
+        "exclude_tags": "homepage-hide",
+        "background": "#fffbed",
+        "baby_background": "#f9edc8"
+      },
+      "blocks": {
+        "category0": {
+          "type": "category",
+          "settings": {
+            "title": "Gifting",
+            "collection": "gifting",
+            "tint": "cream",
+            "icon": "gift"
+          }
+        },
+        "category1": {
+          "type": "category",
+          "settings": {
+            "title": "Grocery",
+            "collection": "grocery",
+            "tint": "green",
+            "icon": "basket"
+          }
+        },
+        "category2": {
+          "type": "category",
+          "settings": {
+            "title": "Bath & Body",
+            "collection": "bath-and-body",
+            "tint": "pink",
+            "icon": "soap"
+          }
+        },
+        "category3": {
+          "type": "category",
+          "settings": {
+            "title": "Home",
+            "collection": "home",
+            "tint": "lilac",
+            "icon": "home"
+          }
+        },
+        "category4": {
+          "type": "category",
+          "settings": {
+            "title": "Pet",
+            "collection": "pet",
+            "tint": "peach",
+            "icon": "paw"
+          }
+        },
+        "category5": {
+          "type": "category",
+          "settings": {
+            "title": "Office Supplies",
+            "collection": "office-supplies",
+            "tint": "cream",
+            "icon": "pencil"
+          }
+        }
+      },
+      "block_order": [
+        "category0",
+        "category1",
+        "category2",
+        "category3",
+        "category4",
+        "category5"
+      ]
     }
   },
   "order": [
+    "category_panel",
     "hero",
     "baby",
     "gifts",
