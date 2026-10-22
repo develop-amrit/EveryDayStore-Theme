@@ -3454,6 +3454,11 @@
     "deals_rail": "Deals rail",
     "everyday_product_grid": "Everyday product grid",
     "rows": "Rows",
-    "mobile_columns": "Mobile columns"
+    "mobile_columns": "Mobile columns",
+    "everyday_themed_grid": "Everyday themed grid",
+    "background_image": "Background image",
+    "decorative_artwork": "Decorative artwork",
+    "seasonal_tile": "Seasonal tile",
+    "feature_strip": "Feature strip"
   }
 }
