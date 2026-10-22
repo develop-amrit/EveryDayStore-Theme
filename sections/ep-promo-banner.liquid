@@ -1,0 +1,101 @@
+{% capture heading_id %}ep-heading-{{ section.id }}{% endcapture %}<section class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="{{ heading_id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap"><a class="ep-banner"{% if section.settings.link != blank %} href="{{ section.settings.link }}"{% endif %} style="--ep-banner-bg:{{ section.settings.background }};--ep-banner-text:{{ section.settings.text_color }}"><div class="ep-banner-copy">{% if section.settings.eyebrow != blank %}<span class="ep-eyebrow">{{ section.settings.eyebrow | escape }}</span>{% endif %}<h1 id="{{ heading_id }}">{{ section.settings.title | escape }}</h1>{% if section.settings.highlight != blank %}<span class="ep-chip">{{ section.settings.highlight | escape }}</span>{% endif %}<p>{{ section.settings.subtitle | escape }}</p>{% if section.settings.button_label != blank %}<span class="ep-cta">{{ section.settings.button_label | escape }}</span>{% endif %}{% if section.settings.badge != blank %}<span class="ep-banner-note">{{ section.settings.badge | escape }}</span>{% endif %}</div>{% if section.settings.image != blank %}<picture class="ep-banner-art">{% if section.settings.image_mobile %}<source media="(max-width:749px)" srcset="{{ section.settings.image_mobile | image_url: width: 600 }}">{% endif %}{% assign alt = section.settings.image.alt | default: section.settings.art_text | default: section.settings.title %}{{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '240, 480, 750, 1000', sizes: '(min-width:990px) 420px, 40vw', alt: alt }}</picture>{% endif %}</a></div></section>
+{% schema %}
+{
+  "name": "t:ep.everyday_promo_banner",
+  "tag": "div",
+  "class": "ep-section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:ep.title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "t:ep.subtitle"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "t:ep.eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "highlight",
+      "label": "t:ep.highlight_chip"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:ep.button_label"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "t:ep.link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:ep.image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "t:ep.mobile_image"
+    },
+    {
+      "type": "text",
+      "id": "art_text",
+      "label": "t:ep.image_description"
+    },
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "t:ep.supporting_note"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "t:ep.background",
+      "default": "#FEFAE0"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:ep.text_colour",
+      "default": "#283618"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:ep.colour_scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "t:ep.top_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "t:ep.bottom_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:ep.everyday_promo_banner"
+    }
+  ]
+}
+{% endschema %}

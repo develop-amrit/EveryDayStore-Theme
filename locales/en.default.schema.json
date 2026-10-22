@@ -3427,6 +3427,17 @@
     "gift": "gift",
     "promo_bubble": "Promo bubble",
     "alternative_text": "Alternative text",
-    "pulse_once": "Pulse once"
+    "pulse_once": "Pulse once",
+    "everyday_promo_banner": "Everyday promo banner",
+    "title": "Title",
+    "subtitle": "Subtitle",
+    "eyebrow": "Eyebrow",
+    "highlight_chip": "Highlight chip",
+    "button_label": "Button label",
+    "mobile_image": "Mobile image",
+    "image_description": "Image description",
+    "supporting_note": "Supporting note",
+    "background": "Background",
+    "text_colour": "Text colour"
   }
 }
