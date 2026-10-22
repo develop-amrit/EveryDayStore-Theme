@@ -385,9 +385,7 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {%- if settings.cart_type == 'drawer' and template.name != 'index' -%}
-      <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
+    {% if false %}<script src="{{ 'cart-drawer.js' | asset_url }}" defer></script>{% endif %}
     {% render 'qc-runtime' %}
 {% render 'qc-storefront-runtime' %}
   </body>

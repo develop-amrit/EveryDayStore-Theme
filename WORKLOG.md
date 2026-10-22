@@ -100,3 +100,7 @@ Theme Check initially scanned backup/snapshot/helper copies. Added .theme-check.
 ## Locale validation
 
 Theme Check found 9,938 missing translations, mostly pre-existing QC keys in bundled non-English locales. Filled only missing keys with the English default fallback, preserving existing translations. These are explicit English fallbacks, not claimed translations. Added 79 missing branches/keys. Replaced FAQ literal block-ID check with an editable Show current delivery fee tiers checkbox, preserving the current fee display.
+
+## Browser polish corrections
+
+First preview has no page overflow at 360/375/390/414/430/768/1280; sticky search stays 4–6px from top on mobile/tablet and unsticks on desktop. Fixed intrinsic portrait supplier image sizing by absolutely positioning the image link within a square well. Fixed search placeholder selector accidentally matching the hidden type input. Removed the unused Dawn drawer script that raised CartItems undefined on off-home templates. Added combobox semantics and a count-aware header cart name. Cookie banner now paints immediately while Shopify Privacy API resolves consent, preventing a late 7-second LCP paint; API remains the only consent authority. Stepper expands to fit two 44px targets.

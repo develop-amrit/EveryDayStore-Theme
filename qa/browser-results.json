@@ -1,0 +1,209 @@
+{
+  "errors": [
+    "CartItems is not defined",
+    "CartItems is not defined",
+    "CartItems is not defined",
+    "CartItems is not defined",
+    "CartItems is not defined",
+    "CartItems is not defined"
+  ],
+  "breakpoints": [
+    {
+      "width": 360,
+      "viewport": 360,
+      "pageWidth": 360,
+      "search": {
+        "top": 163,
+        "bottom": 207
+      },
+      "bottomVisible": true,
+      "leaks": [],
+      "stickySearch": {
+        "top": 6,
+        "bottom": 50
+      }
+    },
+    {
+      "width": 375,
+      "viewport": 375,
+      "pageWidth": 375,
+      "search": {
+        "top": 163,
+        "bottom": 207
+      },
+      "bottomVisible": true,
+      "leaks": [],
+      "stickySearch": {
+        "top": 6,
+        "bottom": 50
+      }
+    },
+    {
+      "width": 390,
+      "viewport": 390,
+      "pageWidth": 390,
+      "search": {
+        "top": 163,
+        "bottom": 207
+      },
+      "bottomVisible": true,
+      "leaks": [],
+      "stickySearch": {
+        "top": 6,
+        "bottom": 50
+      }
+    },
+    {
+      "width": 414,
+      "viewport": 414,
+      "pageWidth": 414,
+      "search": {
+        "top": 163,
+        "bottom": 207
+      },
+      "bottomVisible": true,
+      "leaks": [],
+      "stickySearch": {
+        "top": 6,
+        "bottom": 50
+      }
+    },
+    {
+      "width": 430,
+      "viewport": 430,
+      "pageWidth": 430,
+      "search": {
+        "top": 163,
+        "bottom": 207
+      },
+      "bottomVisible": true,
+      "leaks": [],
+      "stickySearch": {
+        "top": 6,
+        "bottom": 50
+      }
+    },
+    {
+      "width": 768,
+      "viewport": 768,
+      "pageWidth": 768,
+      "search": {
+        "top": 161,
+        "bottom": 205
+      },
+      "bottomVisible": true,
+      "leaks": [],
+      "stickySearch": {
+        "top": 4,
+        "bottom": 48
+      }
+    },
+    {
+      "width": 1280,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "search": {
+        "top": 104,
+        "bottom": 148
+      },
+      "bottomVisible": false,
+      "leaks": [],
+      "stickySearch": {
+        "top": -496,
+        "bottom": -452
+      }
+    }
+  ],
+  "templates": [
+    {
+      "path": "/products/nestle-cerelac-for-kids-tin-in-multicereals-fruits-with-no-added-sugar-400g-b0ck7zzzrj",
+      "url": "https://3djevx-mu.myshopify.com/products/nestle-cerelac-for-kids-tin-in-multicereals-fruits-with-no-added-sugar-400g-b0ck7zzzrj",
+      "headers": 1,
+      "footers": 1,
+      "bottom": 1,
+      "overflow": false,
+      "liquidError": false
+    },
+    {
+      "path": "/collections/grocery",
+      "url": "https://3djevx-mu.myshopify.com/collections/grocery",
+      "headers": 1,
+      "footers": 1,
+      "bottom": 1,
+      "overflow": false,
+      "liquidError": false
+    },
+    {
+      "path": "/search?q=pampers",
+      "url": "https://3djevx-mu.myshopify.com/search?q=pampers",
+      "headers": 1,
+      "footers": 1,
+      "bottom": 1,
+      "overflow": false,
+      "liquidError": false
+    },
+    {
+      "path": "/cart",
+      "url": "https://3djevx-mu.myshopify.com/cart",
+      "headers": 1,
+      "footers": 1,
+      "bottom": 1,
+      "overflow": false,
+      "liquidError": false
+    },
+    {
+      "path": "/pages/contact",
+      "url": "https://3djevx-mu.myshopify.com/pages/contact",
+      "headers": 1,
+      "footers": 1,
+      "bottom": 1,
+      "overflow": false,
+      "liquidError": false
+    },
+    {
+      "path": "/account",
+      "url": "https://shopify.com/authentication/78456225905/login?analytics_trace_id=3fa97f6a-e99d-40ea-afdc-7f529b199d22&client_id=b6b63221-1844-457e-a7af-9f66a1aacfdf&locale=en-AE&redirect_uri=%2Fauthentication%2F78456225905%2Foauth%2Fauthorize%3Fanalytics_trace_id%3D3fa97f6a-e99d-40ea-afdc-7f529b199d22%26buyer_flags%3DeyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIzZGpldngtbXUubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkzMjc2Mjk0LCJuYmYiOjE3OTI2NzE0OTR9.oGWPZRkgWuMdX-WsHckquuxS8mEDVed_hlW0ffMQhb4%26client_id%3Db6b63221-1844-457e-a7af-9f66a1aacfdf%26locale%3Den-AE%26nonce%3D838020a5-be4c-4288-9298-79e2fbb1d3e8%26redirect_uri%3Dhttps%253A%252F%252Fshopify.com%252F78456225905%252Faccount%252Fcallback%26region_country%3DAE%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bcustomer-account-api%253Afull%26state%3DhWNIGQyhYjhY3di2Qvi17ELS&region_country=AE",
+      "headers": 0,
+      "footers": 0,
+      "bottom": 0,
+      "overflow": false,
+      "liquidError": false
+    },
+    {
+      "path": "/not-a-real-everyday-page",
+      "url": "https://3djevx-mu.myshopify.com/not-a-real-everyday-page",
+      "headers": 1,
+      "footers": 1,
+      "bottom": 1,
+      "overflow": false,
+      "liquidError": false
+    }
+  ],
+  "cart": {
+    "before": [],
+    "error": "locator.textContent: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('ep-add-button:has([data-ep-add])').first().locator('output')\u001b[22m\n",
+    "after": []
+  },
+  "search": {
+    "rotates": true,
+    "pausesOnFocus": true,
+    "suggestions": 6
+  },
+  "location": {
+    "saved": "Dubai Marina"
+  },
+  "body": "Skip to content\nFree delivery on orders from AED 99.00\n×\neveryday\n0\nDelivery tomorrow\nDelivering to:\nChoose your Dubai area\nDubai Marina\nJLT\nDowntown\nBusiness Bay\nJumeirah\nAl Barsha\nDeira\nDubai Hills\nMirdif\nJVC\nSearch products\nAll\nGrocery\nBaby Products\nGifting\nBath & Body\nHome\nPet\nOffice Supplies\nYOUR DUBAI EVERYDAY, SORTED\nEveryday essentials. Delivered next day.\n\nGroceries, care and home essentials in one basket, delivered across supported Dubai areas.\n\nExplore products\nSelected with care\nGrocery essentials\n\nCupboard staples, favourite snacks and everyday drinks.\n\nSee all\n ›\n28% OFF\n+\nDhs. 50.00\nRegular price\nDhs. 70.00\nNestle Cerelac for Kids\n\n400g\n\n35% OFF\n+\nDhs. 119.37\nRegular price\nDhs. 185.00\nBrooke Bond Red Label Black Loose Tea\n\n5Kg\n\n19% OFF\n+\nDhs. 137.00\nRegular price\nDhs. 170.00\nLipton Yellow Label Black Loose Tea\n\n5KG\n\n18% OFF\n+\nDhs. 53.17\nRegular price\nDhs. 65.00\nNescafe Classic Instant Coffee Jar 190g\n\n190g\n\n26% OFF\n+\nDhs. 40.27\nRegular price\nDhs. 55.00\nNescafe 3in1 Insta",
+  "sectionCounts": {
+    "headers": 1,
+    "footers": 1,
+    "bottom": 1,
+    "h1": 1,
+    "cards": 50,
+    "liquidErrors": false
+  },
+  "multiVariantLinks": 0,
+  "soldOut": 0,
+  "reducedMotion": {
+    "rotationStopped": true
+  }
+}

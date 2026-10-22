@@ -46,7 +46,7 @@
   function syncCards() {
     const focused = document.activeElement, focusedCard = focused?.closest('.qc-card');
     const focusLabel = focused?.getAttribute('aria-label');
-    $$('[data-cart-count]').forEach(n=>n.textContent=cart.item_count);
+    $('[data-cart-count]').forEach(n=>{n.textContent=cart.item_count;const link=n.closest('[data-ep-cart-label]');if(link)link.setAttribute('aria-label',link.dataset.epCartLabel+' '+cart.item_count);});
     $$('[data-basket-count]').forEach(n=>{n.textContent=cart.item_count+' '+(cart.item_count===1?n.dataset.one:n.dataset.other);});
     $$('[data-basket-total]').forEach(n=>{n.textContent=new Intl.NumberFormat('en-AE',{style:'currency',currency:cart.currency,currencyDisplay:'code'}).format(cart.total_price/100);});
     $$('[data-basket-summary]').forEach(n=>n.hidden=cart.item_count===0);
@@ -152,7 +152,7 @@
           html=await fallback.text();if(seq!==searchSequence)return;
           parsed=new DOMParser().parseFromString(html,'text/html');content=parsed.querySelector('[data-predictive-results]');
         }
-        if(!content)throw new Error(labels.error);results.replaceChildren(...content.childNodes);
+        if(!content)throw new Error(labels.error);results.replaceChildren(...content.childNodes);results.querySelectorAll('a').forEach(a=>{a.setAttribute('role','option');a.setAttribute('aria-selected','false');});
       }catch(error){if(error.name!=='AbortError' && seq===searchSequence)results.textContent=labels.error;}
       finally{if(seq===searchSequence)results.classList.remove('qc-search-loading');}
     },250);
