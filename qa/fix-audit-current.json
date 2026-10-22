@@ -1,0 +1,1158 @@
+{
+  "theme": {
+    "id": "gid://shopify/OnlineStoreTheme/189582049393",
+    "name": "everyday-homepage-review",
+    "role": "UNPUBLISHED",
+    "files": {
+      "nodes": [
+        {
+          "filename": "assets/ep-mobile.css",
+          "checksumMd5": "374f28cfbc9ba71838daaff3fd48037d"
+        },
+        {
+          "filename": "assets/ep-mobile.js",
+          "checksumMd5": "9deebb5c8bcb426d6ba2a68735c42f5c"
+        },
+        {
+          "filename": "sections/ep-category-grid.liquid",
+          "checksumMd5": "75a99e406aa899b8ad983e7431d41299"
+        },
+        {
+          "filename": "sections/ep-search-links.liquid",
+          "checksumMd5": "c86cda756a4436f089424a38e5885f5c"
+        },
+        {
+          "filename": "sections/qc-faq.liquid",
+          "checksumMd5": "2542e90d80ecca03e060c753e6ab3f46"
+        },
+        {
+          "filename": "sections/qc-footer.liquid",
+          "checksumMd5": "a23a5595be7ce9f1b740b387670040f1"
+        },
+        {
+          "filename": "sections/qc-header.liquid",
+          "checksumMd5": "88ce34e3d70b5aca7d0695cd8e739a0a"
+        },
+        {
+          "filename": "snippets/ep-icon.liquid",
+          "checksumMd5": "e0be353280cf1281f1d72fe387f01e8a"
+        },
+        {
+          "filename": "snippets/ep-price.liquid",
+          "checksumMd5": "401465a0a231d979021d2a8d32abb4e2"
+        },
+        {
+          "filename": "snippets/ep-tile.liquid",
+          "checksumMd5": "6ab8012dc5f0a62cd220737a10c982e5"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "InNuaXBwZXRzXC9lcC10aWxlLmxpcXVpZCI="
+      }
+    },
+    "json": {
+      "nodes": [
+        {
+          "filename": "config/settings_data.json",
+          "body": {
+            "content": "/*\n * ------------------------------------------------------------\n * IMPORTANT: The contents of this file are auto-generated.\n *\n * This file may be updated by the Shopify admin theme editor\n * or related systems. Please exercise caution as any changes\n * made to this file may be overwritten.\n * ------------------------------------------------------------\n */\n{\n  \"current\": {\n    \"logo_width\": 90,\n    \"customer_account_menu\": \"customer-account-main-menu\",\n    \"color_schemes\": {\n      \"scheme-1\": {\n        \"settings\": {\n          \"background\": \"#FFFFFF\",\n          \"background_gradient\": \"\",\n          \"text\": \"#283618\",\n          \"button\": \"#283618\",\n          \"button_label\": \"#FEFAE0\",\n          \"secondary_button_label\": \"#283618\",\n          \"shadow\": \"#283618\"\n        }\n      },\n      \"scheme-2\": {\n        \"settings\": {\n          \"background\": \"#FEFAE0\",\n          \"background_gradient\": \"\",\n          \"text\": \"#283618\",\n          \"button\": \"#283618\",\n          \"button_label\": \"#FEFAE0\",\n          \"secondary_button_label\": \"#283618\",\n          \"shadow\": \"#283618\"\n        }\n      },\n      \"scheme-3\": {\n        \"settings\": {\n          \"background\": \"#FEFAE0\",\n          \"background_gradient\": \"\",\n          \"text\": \"#283618\",\n          \"button\": \"#283618\",\n          \"button_label\": \"#FEFAE0\",\n          \"secondary_button_label\": \"#283618\",\n          \"shadow\": \"#283618\"\n        }\n      },\n      \"scheme-4\": {\n        \"settings\": {\n          \"background\": \"#FEFAE0\",\n          \"background_gradient\": \"\",\n          \"text\": \"#283618\",\n          \"button\": \"#283618\",\n          \"button_label\": \"#FEFAE0\",\n          \"secondary_button_label\": \"#283618\",\n          \"shadow\": \"#283618\"\n        }\n      },\n      \"scheme-5\": {\n        \"settings\": {\n          \"background\": \"#FEFAE0\",\n          \"background_gradient\": \"\",\n          \"text\": \"#283618\",\n          \"button\": \"#283618\",\n          \"button_label\": \"#FEFAE0\",\n          \"secondary_button_label\": \"#283618\",\n          \"shadow\": \"#283618\"\n        }\n      }\n    },\n    \"type_header_font\": \"assistant_n4\",\n    \"heading_scale\": 100,\n    \"type_body_font\": \"assistant_n4\",\n    \"body_scale\": 100,\n    \"page_width\": 1200,\n    \"spacing_sections\": 0,\n    \"spacing_grid_horizontal\": 8,\n    \"spacing_grid_vertical\": 8,\n    \"animations_reveal_on_scroll\": true,\n    \"animations_hover_elements\": \"none\",\n    \"buttons_border_thickness\": 1,\n    \"buttons_border_opacity\": 100,\n    \"buttons_radius\": 8,\n    \"buttons_shadow_opacity\": 0,\n    \"buttons_shadow_horizontal_offset\": 0,\n    \"buttons_shadow_vertical_offset\": 4,\n    \"buttons_shadow_blur\": 5,\n    \"variant_pills_border_thickness\": 1,\n    \"variant_pills_border_opacity\": 55,\n    \"variant_pills_radius\": 40,\n    \"variant_pills_shadow_opacity\": 0,\n    \"variant_pills_shadow_horizontal_offset\": 0,\n    \"variant_pills_shadow_vertical_offset\": 4,\n    \"variant_pills_shadow_blur\": 5,\n    \"inputs_border_thickness\": 1,\n    \"inputs_border_opacity\": 55,\n    \"inputs_radius\": 8,\n    \"inputs_shadow_opacity\": 0,\n    \"inputs_shadow_horizontal_offset\": 0,\n    \"inputs_shadow_vertical_offset\": 4,\n    \"inputs_shadow_blur\": 5,\n    \"card_style\": \"standard\",\n    \"card_image_padding\": 0,\n    \"card_text_alignment\": \"left\",\n    \"card_color_scheme\": \"scheme-2\",\n    \"card_border_thickness\": 0,\n    \"card_border_opacity\": 10,\n    \"card_corner_radius\": 10,\n    \"card_shadow_opacity\": 0,\n    \"card_shadow_horizontal_offset\": 0,\n    \"card_shadow_vertical_offset\": 4,\n    \"card_shadow_blur\": 5,\n    \"collection_card_style\": \"standard\",\n    \"collection_card_image_padding\": 0,\n    \"collection_card_text_alignment\": \"left\",\n    \"collection_card_color_scheme\": \"scheme-2\",\n    \"collection_card_border_thickness\": 0,\n    \"collection_card_border_opacity\": 10,\n    \"collection_card_corner_radius\": 0,\n    \"collection_card_shadow_opacity\": 0,\n    \"collection_card_shadow_horizontal_offset\": 0,\n    \"collection_card_shadow_vertical_offset\": 4,\n    \"collection_card_shadow_blur\": 5,\n    \"blog_card_style\": \"standard\",\n    \"blog_card_image_padding\": 0,\n    \"blog_card_text_alignment\": \"left\",\n    \"blog_card_color_scheme\": \"scheme-2\",\n    \"blog_card_border_thickness\": 0,\n    \"blog_card_border_opacity\": 10,\n    \"blog_card_corner_radius\": 0,\n    \"blog_card_shadow_opacity\": 0,\n    \"blog_card_shadow_horizontal_offset\": 0,\n    \"blog_card_shadow_vertical_offset\": 4,\n    \"blog_card_shadow_blur\": 5,\n    \"text_boxes_border_thickness\": 0,\n    \"text_boxes_border_opacity\": 10,\n    \"text_boxes_radius\": 0,\n    \"text_boxes_shadow_opacity\": 0,\n    \"text_boxes_shadow_horizontal_offset\": 0,\n    \"text_boxes_shadow_vertical_offset\": 4,\n    \"text_boxes_shadow_blur\": 5,\n    \"media_border_thickness\": 1,\n    \"media_border_opacity\": 5,\n    \"media_radius\": 0,\n    \"media_shadow_opacity\": 0,\n    \"media_shadow_horizontal_offset\": 0,\n    \"media_shadow_vertical_offset\": 4,\n    \"media_shadow_blur\": 5,\n    \"popup_border_thickness\": 1,\n    \"popup_border_opacity\": 10,\n    \"popup_corner_radius\": 0,\n    \"popup_shadow_opacity\": 5,\n    \"popup_shadow_horizontal_offset\": 0,\n    \"popup_shadow_vertical_offset\": 4,\n    \"popup_shadow_blur\": 5,\n    \"drawer_border_thickness\": 1,\n    \"drawer_border_opacity\": 10,\n    \"drawer_shadow_opacity\": 0,\n    \"drawer_shadow_horizontal_offset\": 0,\n    \"drawer_shadow_vertical_offset\": 4,\n    \"drawer_shadow_blur\": 5,\n    \"badge_position\": \"bottom left\",\n    \"badge_corner_radius\": 40,\n    \"sale_badge_color_scheme\": \"scheme-4\",\n    \"sold_out_badge_color_scheme\": \"scheme-3\",\n    \"brand_headline\": \"\",\n    \"brand_description\": \"<p></p>\",\n    \"brand_image_width\": 100,\n    \"social_twitter_link\": \"\",\n    \"social_facebook_link\": \"\",\n    \"social_pinterest_link\": \"\",\n    \"social_instagram_link\": \"\",\n    \"social_tiktok_link\": \"\",\n    \"social_tumblr_link\": \"\",\n    \"social_snapchat_link\": \"\",\n    \"social_youtube_link\": \"\",\n    \"social_vimeo_link\": \"\",\n    \"predictive_search_enabled\": true,\n    \"predictive_search_show_vendor\": false,\n    \"predictive_search_show_price\": false,\n    \"currency_code_enabled\": true,\n    \"cart_type\": \"drawer\",\n    \"show_vendor\": false,\n    \"show_cart_note\": false,\n    \"cart_drawer_collection\": \"\",\n    \"cart_color_scheme\": \"scheme-1\",\n    \"sections\": {\n      \"main-password-header\": {\n        \"type\": \"main-password-header\",\n        \"settings\": {\n          \"color_scheme\": \"scheme-1\"\n        }\n      },\n      \"main-password-footer\": {\n        \"type\": \"main-password-footer\",\n        \"settings\": {\n          \"color_scheme\": \"scheme-1\"\n        }\n      }\n    },\n    \"qc_free_delivery\": 99,\n    \"qc_mid_threshold\": 49,\n    \"qc_fee_low\": \"5.99\",\n    \"qc_fee_mid\": \"3.99\",\n    \"qc_account_mode\": \"new\",\n    \"qc_catalog_menu\": \"catalogue\",\n    \"qc_cod\": true\n  },\n  \"presets\": {\n    \"Dawn\": {\n      \"logo_width\": 90,\n      \"customer_account_menu\": \"customer-account-main-menu\",\n      \"color_schemes\": {\n        \"scheme-1\": {\n          \"settings\": {\n            \"background\": \"#FFFFFF\",\n            \"background_gradient\": \"\",\n            \"text\": \"#283618\",\n            \"button\": \"#283618\",\n            \"button_label\": \"#FEFAE0\",\n            \"secondary_button_label\": \"#283618\",\n            \"shadow\": \"#283618\"\n          }\n        },\n        \"scheme-2\": {\n          \"settings\": {\n            \"background\": \"#FEFAE0\",\n            \"background_gradient\": \"\",\n            \"text\": \"#283618\",\n            \"button\": \"#283618\",\n            \"button_label\": \"#FEFAE0\",\n            \"secondary_button_label\": \"#283618\",\n            \"shadow\": \"#283618\"\n          }\n        },\n        \"scheme-3\": {\n          \"settings\": {\n            \"background\": \"#FEFAE0\",\n            \"background_gradient\": \"\",\n            \"text\": \"#283618\",\n            \"button\": \"#283618\",\n            \"button_label\": \"#FEFAE0\",\n            \"secondary_button_label\": \"#283618\",\n            \"shadow\": \"#283618\"\n          }\n        },\n        \"scheme-4\": {\n          \"settings\": {\n            \"background\": \"#FEFAE0\",\n            \"background_gradient\": \"\",\n            \"text\": \"#283618\",\n            \"button\": \"#283618\",\n            \"button_label\": \"#FEFAE0\",\n            \"secondary_button_label\": \"#283618\",\n            \"shadow\": \"#283618\"\n          }\n        },\n        \"scheme-5\": {\n          \"settings\": {\n            \"background\": \"#FEFAE0\",\n            \"background_gradient\": \"\",\n            \"text\": \"#283618\",\n            \"button\": \"#283618\",\n            \"button_label\": \"#FEFAE0\",\n            \"secondary_button_label\": \"#283618\",\n            \"shadow\": \"#283618\"\n          }\n        }\n      },\n      \"type_header_font\": \"assistant_n4\",\n      \"heading_scale\": 100,\n      \"type_body_font\": \"assistant_n4\",\n      \"body_scale\": 100,\n      \"page_width\": 1200,\n      \"spacing_sections\": 0,\n      \"spacing_grid_horizontal\": 8,\n      \"spacing_grid_vertical\": 8,\n      \"animations_reveal_on_scroll\": true,\n      \"animations_hover_elements\": \"none\",\n      \"buttons_border_thickness\": 1,\n      \"buttons_border_opacity\": 100,\n      \"buttons_radius\": 0,\n      \"buttons_shadow_opacity\": 0,\n      \"buttons_shadow_horizontal_offset\": 0,\n      \"buttons_shadow_vertical_offset\": 4,\n      \"buttons_shadow_blur\": 5,\n      \"variant_pills_border_thickness\": 1,\n      \"variant_pills_border_opacity\": 55,\n      \"variant_pills_radius\": 40,\n      \"variant_pills_shadow_opacity\": 0,\n      \"variant_pills_shadow_horizontal_offset\": 0,\n      \"variant_pills_shadow_vertical_offset\": 4,\n      \"variant_pills_shadow_blur\": 5,\n      \"inputs_border_thickness\": 1,\n      \"inputs_border_opacity\": 55,\n      \"inputs_radius\": 0,\n      \"inputs_shadow_opacity\": 0,\n      \"inputs_shadow_horizontal_offset\": 0,\n      \"inputs_shadow_vertical_offset\": 4,\n      \"inputs_shadow_blur\": 5,\n      \"card_style\": \"standard\",\n      \"card_image_padding\": 0,\n      \"card_text_alignment\": \"left\",\n      \"card_color_scheme\": \"scheme-2\",\n      \"card_border_thickness\": 0,\n      \"card_border_opacity\": 10,\n      \"card_corner_radius\": 0,\n      \"card_shadow_opacity\": 0,\n      \"card_shadow_horizontal_offset\": 0,\n      \"card_shadow_vertical_offset\": 4,\n      \"card_shadow_blur\": 5,\n      \"collection_card_style\": \"standard\",\n      \"collection_card_image_padding\": 0,\n      \"collection_card_text_alignment\": \"left\",\n      \"collection_card_color_scheme\": \"scheme-2\",\n      \"collection_card_border_thickness\": 0,\n      \"collection_card_border_opacity\": 10,\n      \"collection_card_corner_radius\": 0,\n      \"collection_card_shadow_opacity\": 0,\n      \"collection_card_shadow_horizontal_offset\": 0,\n      \"collection_card_shadow_vertical_offset\": 4,\n      \"collection_card_shadow_blur\": 5,\n      \"blog_card_style\": \"standard\",\n      \"blog_card_image_padding\": 0,\n      \"blog_card_text_alignment\": \"left\",\n      \"blog_card_color_scheme\": \"scheme-2\",\n      \"blog_card_border_thickness\": 0,\n      \"blog_card_border_opacity\": 10,\n      \"blog_card_corner_radius\": 0,\n      \"blog_card_shadow_opacity\": 0,\n      \"blog_card_shadow_horizontal_offset\": 0,\n      \"blog_card_shadow_vertical_offset\": 4,\n      \"blog_card_shadow_blur\": 5,\n      \"text_boxes_border_thickness\": 0,\n      \"text_boxes_border_opacity\": 10,\n      \"text_boxes_radius\": 0,\n      \"text_boxes_shadow_opacity\": 0,\n      \"text_boxes_shadow_horizontal_offset\": 0,\n      \"text_boxes_shadow_vertical_offset\": 4,\n      \"text_boxes_shadow_blur\": 5,\n      \"media_border_thickness\": 1,\n      \"media_border_opacity\": 5,\n      \"media_radius\": 0,\n      \"media_shadow_opacity\": 0,\n      \"media_shadow_horizontal_offset\": 0,\n      \"media_shadow_vertical_offset\": 4,\n      \"media_shadow_blur\": 5,\n      \"popup_border_thickness\": 1,\n      \"popup_border_opacity\": 10,\n      \"popup_corner_radius\": 0,\n      \"popup_shadow_opacity\": 5,\n      \"popup_shadow_horizontal_offset\": 0,\n      \"popup_shadow_vertical_offset\": 4,\n      \"popup_shadow_blur\": 5,\n      \"drawer_border_thickness\": 1,\n      \"drawer_border_opacity\": 10,\n      \"drawer_shadow_opacity\": 0,\n      \"drawer_shadow_horizontal_offset\": 0,\n      \"drawer_shadow_vertical_offset\": 4,\n      \"drawer_shadow_blur\": 5,\n      \"badge_position\": \"bottom left\",\n      \"badge_corner_radius\": 40,\n      \"sale_badge_color_scheme\": \"scheme-4\",\n      \"sold_out_badge_color_scheme\": \"scheme-3\",\n      \"brand_headline\": \"\",\n      \"brand_description\": \"<p></p>\",\n      \"brand_image_width\": 100,\n      \"social_twitter_link\": \"\",\n      \"social_facebook_link\": \"\",\n      \"social_pinterest_link\": \"\",\n      \"social_instagram_link\": \"\",\n      \"social_tiktok_link\": \"\",\n      \"social_tumblr_link\": \"\",\n      \"social_snapchat_link\": \"\",\n      \"social_youtube_link\": \"\",\n      \"social_vimeo_link\": \"\",\n      \"predictive_search_enabled\": true,\n      \"predictive_search_show_vendor\": false,\n      \"predictive_search_show_price\": false,\n      \"currency_code_enabled\": true,\n      \"cart_type\": \"notification\",\n      \"show_vendor\": false,\n      \"show_cart_note\": false,\n      \"cart_drawer_collection\": \"\",\n      \"cart_color_scheme\": \"scheme-1\",\n      \"sections\": {\n        \"main-password-header\": {\n          \"type\": \"main-password-header\",\n          \"settings\": {\n            \"color_scheme\": \"scheme-1\"\n          }\n        },\n        \"main-password-footer\": {\n          \"type\": \"main-password-footer\",\n          \"settings\": {\n            \"color_scheme\": \"scheme-1\"\n          }\n        }\n      }\n    }\n  }\n}\n"
+          }
+        },
+        {
+          "filename": "sections/footer-group.json",
+          "body": {
+            "content": "/*\n * ------------------------------------------------------------\n * IMPORTANT: The contents of this file are auto-generated.\n *\n * This file may be updated by the Shopify admin theme editor\n * or related systems. Please exercise caution as any changes\n * made to this file may be overwritten.\n * ------------------------------------------------------------\n */\n{\n  \"name\": \"Footer\",\n  \"type\": \"footer\",\n  \"sections\": {\n    \"footer\": {\n      \"type\": \"qc-footer\",\n      \"blocks\": {\n        \"shop\": {\n          \"type\": \"links\",\n          \"settings\": {\n            \"heading\": \"Shop\",\n            \"menu\": \"catalogue\"\n          }\n        },\n        \"help\": {\n          \"type\": \"links\",\n          \"settings\": {\n            \"heading\": \"Help\",\n            \"menu\": \"main-menu\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"shop\",\n        \"help\"\n      ],\n      \"settings\": {}\n    },\n    \"bottom_nav\": {\n      \"type\": \"ep-bottom-nav\",\n      \"settings\": {},\n      \"blocks\": {\n        \"home\": {\n          \"type\": \"item\",\n          \"settings\": {\n            \"icon\": \"home\",\n            \"label\": \"Home\",\n            \"link\": \"/\"\n          }\n        },\n        \"categories\": {\n          \"type\": \"item\",\n          \"settings\": {\n            \"icon\": \"grid\",\n            \"label\": \"Categories\",\n            \"link\": \"/collections\"\n          }\n        },\n        \"cart\": {\n          \"type\": \"item\",\n          \"settings\": {\n            \"icon\": \"cart\",\n            \"label\": \"Cart\",\n            \"link\": \"/cart\"\n          }\n        },\n        \"deals\": {\n          \"type\": \"item\",\n          \"settings\": {\n            \"icon\": \"tag\",\n            \"label\": \"Deals\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"home\",\n        \"categories\",\n        \"deals\",\n        \"cart\"\n      ]\n    }\n  },\n  \"order\": [\n    \"footer\",\n    \"bottom_nav\"\n  ]\n}\n"
+          }
+        },
+        {
+          "filename": "sections/header-group.json",
+          "body": {
+            "content": "/*\n * ------------------------------------------------------------\n * IMPORTANT: The contents of this file are auto-generated.\n *\n * This file may be updated by the Shopify admin theme editor\n * or related systems. Please exercise caution as any changes\n * made to this file may be overwritten.\n * ------------------------------------------------------------\n */\n{\n  \"name\": \"Header\",\n  \"type\": \"header\",\n  \"sections\": {\n    \"announcement\": {\n      \"type\": \"qc-announcement\",\n      \"blocks\": {\n        \"b0\": {\n          \"type\": \"message\",\n          \"settings\": {\n            \"text\": \"Dubai essentials, delivered next day.\"\n          }\n        },\n        \"b1\": {\n          \"type\": \"message\",\n          \"settings\": {\n            \"text\": \"Free delivery on orders from\",\n            \"threshold\": true\n          }\n        },\n        \"b2\": {\n          \"type\": \"message\",\n          \"settings\": {\n            \"text\": \"One useful basket. So many everyday favourites.\"\n          }\n        },\n        \"fees\": {\n          \"type\": \"message\",\n          \"settings\": {\n            \"text\": \"Delivery fee tiers\",\n            \"fees\": true\n          }\n        }\n      },\n      \"block_order\": [\n        \"b0\",\n        \"b1\",\n        \"b2\",\n        \"fees\"\n      ],\n      \"settings\": {}\n    },\n    \"header\": {\n      \"type\": \"qc-header\",\n      \"settings\": {\n        \"delivery_text\": \"Delivery tomorrow\",\n        \"wishlist_link\": \"/pages/wishlist\",\n        \"rotating_terms\": \"Milk\\nDiapers\\nChocolates\\nShampoo\\nFlowers\\nCoffee\"\n      },\n      \"blocks\": {\n        \"all\": {\n          \"type\": \"tab\",\n          \"settings\": {\n            \"label\": \"All\",\n            \"link\": \"/\",\n            \"icon\": \"grid\"\n          }\n        },\n        \"tab0\": {\n          \"type\": \"tab\",\n          \"settings\": {\n            \"label\": \"Grocery\",\n            \"link\": \"/collections/grocery\",\n            \"icon\": \"bag\"\n          }\n        },\n        \"tab1\": {\n          \"type\": \"tab\",\n          \"settings\": {\n            \"label\": \"Baby Products\",\n            \"link\": \"/collections/baby-products\",\n            \"icon\": \"heart\"\n          }\n        },\n        \"tab2\": {\n          \"type\": \"tab\",\n          \"settings\": {\n            \"label\": \"Gifting\",\n            \"link\": \"/collections/gifting\",\n            \"icon\": \"heart\"\n          }\n        },\n        \"tab3\": {\n          \"type\": \"tab\",\n          \"settings\": {\n            \"label\": \"Bath & Body\",\n            \"link\": \"/collections/bath-and-body\",\n            \"icon\": \"leaf\"\n          }\n        },\n        \"tab4\": {\n          \"type\": \"tab\",\n          \"settings\": {\n            \"label\": \"Home\",\n            \"link\": \"/collections/home\",\n            \"icon\": \"home\"\n          }\n        },\n        \"tab5\": {\n          \"type\": \"tab\",\n          \"settings\": {\n            \"label\": \"Pet\",\n            \"link\": \"/collections/pet\",\n            \"icon\": \"heart\"\n          }\n        },\n        \"tab6\": {\n          \"type\": \"tab\",\n          \"settings\": {\n            \"label\": \"Office Supplies\",\n            \"link\": \"/collections/office-supplies\",\n            \"icon\": \"bag\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"all\",\n        \"tab0\",\n        \"tab1\",\n        \"tab2\",\n        \"tab3\",\n        \"tab4\",\n        \"tab5\",\n        \"tab6\"\n      ]\n    }\n  },\n  \"order\": [\n    \"announcement\",\n    \"header\"\n  ]\n}\n"
+          }
+        },
+        {
+          "filename": "templates/index.json",
+          "body": {
+            "content": "/*\n * ------------------------------------------------------------\n * IMPORTANT: The contents of this file are auto-generated.\n *\n * This file may be updated by the Shopify admin theme editor\n * or related systems. Please exercise caution as any changes\n * made to this file may be overwritten.\n * ------------------------------------------------------------\n */\n{\n  \"sections\": {\n    \"hero\": {\n      \"type\": \"ep-promo-banner\",\n      \"settings\": {\n        \"title\": \"Everyday essentials. Delivered next day.\",\n        \"subtitle\": \"Groceries, care and home essentials in one basket, delivered across supported Dubai areas.\",\n        \"eyebrow\": \"YOUR DUBAI EVERYDAY, SORTED\",\n        \"button_label\": \"Explore products\",\n        \"link\": \"/collections/all\",\n        \"highlight\": \"\",\n        \"art_text\": \"The everyday basket\",\n        \"badge\": \"Selected with care\",\n        \"background\": \"#FEFAE0\",\n        \"text_color\": \"#283618\"\n      }\n    },\n    \"grocery\": {\n      \"type\": \"ep-product-rail\",\n      \"settings\": {\n        \"title\": \"Grocery essentials\",\n        \"subtitle\": \"Cupboard staples, favourite snacks and everyday drinks.\",\n        \"collection\": \"grocery\",\n        \"limit\": 8,\n        \"card_variant\": \"compact\",\n        \"show_button\": false\n      }\n    },\n    \"seasonal\": {\n      \"type\": \"ep-themed-grid\",\n      \"settings\": {\n        \"title\": \"For the moments at home\",\n        \"background\": \"#FEFAE0\"\n      },\n      \"blocks\": {\n        \"tile0\": {\n          \"type\": \"tile\",\n          \"settings\": {\n            \"title\": \"Cleaning & Laundry\",\n            \"link\": \"/collections/home-cleaning-and-laundry\"\n          }\n        },\n        \"tile1\": {\n          \"type\": \"tile\",\n          \"settings\": {\n            \"title\": \"Kitchen & Cookware\",\n            \"link\": \"/collections/home-kitchen-and-cookware\"\n          }\n        },\n        \"tile2\": {\n          \"type\": \"tile\",\n          \"settings\": {\n            \"title\": \"Home Fragrance\",\n            \"link\": \"/collections/home-home-fragrance\"\n          }\n        },\n        \"tile3\": {\n          \"type\": \"tile\",\n          \"settings\": {\n            \"title\": \"Storage & Organization\",\n            \"link\": \"/collections/home-storage-and-organization\"\n          }\n        },\n        \"tile4\": {\n          \"type\": \"tile\",\n          \"settings\": {\n            \"title\": \"Snacks & Confectionery\",\n            \"link\": \"/collections/grocery-snacks-and-confectionery\"\n          }\n        },\n        \"tile5\": {\n          \"type\": \"tile\",\n          \"settings\": {\n            \"title\": \"Gifting\",\n            \"link\": \"/collections/gifting\"\n          }\n        },\n        \"strip\": {\n          \"type\": \"strip\",\n          \"settings\": {\n            \"title\": \"The gifting edit\",\n            \"subtitle\": \"Thoughtful little gestures\",\n            \"link\": \"/collections/gifting\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"tile0\",\n        \"tile1\",\n        \"tile2\",\n        \"tile3\",\n        \"tile4\",\n        \"tile5\",\n        \"strip\"\n      ]\n    },\n    \"baby\": {\n      \"type\": \"ep-product-rail\",\n      \"settings\": {\n        \"title\": \"Baby care\",\n        \"subtitle\": \"Wipes, bath-time essentials and growing-up needs.\",\n        \"collection\": \"baby-products\",\n        \"limit\": 4,\n        \"card_variant\": \"compact\",\n        \"show_button\": false\n      }\n    },\n    \"campaign\": {\n      \"type\": \"ep-campaign\",\n      \"settings\": {\n        \"title\": \"Picked for your home\"\n      },\n      \"disabled\": true\n    },\n    \"deals\": {\n      \"type\": \"ep-product-rail\",\n      \"settings\": {\n        \"title\": \"Best deals\",\n        \"limit\": 10,\n        \"card_variant\": \"compact\",\n        \"show_button\": true\n      }\n    },\n    \"promos\": {\n      \"type\": \"ep-banner-carousel\",\n      \"settings\": {\n        \"accessible_title\": \"Featured collections\",\n        \"autoplay\": true\n      },\n      \"blocks\": {\n        \"slide0\": {\n          \"type\": \"slide\",\n          \"settings\": {\n            \"heading\": \"A little something to give.\",\n            \"text\": \"Chocolate favourites for small celebrations and thoughtful surprises.\",\n            \"button_label\": \"Explore gifting\",\n            \"collection\": \"gifting\",\n            \"link\": \"/collections/gifting\",\n            \"alt\": \"A little something to give.\"\n          }\n        },\n        \"slide1\": {\n          \"type\": \"slide\",\n          \"settings\": {\n            \"heading\": \"Make room for good ideas.\",\n            \"text\": \"Paper, stationery and useful desk essentials in one place.\",\n            \"button_label\": \"Browse office supplies\",\n            \"collection\": \"office-supplies\",\n            \"link\": \"/collections/office-supplies\",\n            \"alt\": \"Make room for good ideas.\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"slide0\",\n        \"slide1\"\n      ]\n    },\n    \"categories\": {\n      \"type\": \"ep-category-grid\",\n      \"settings\": {\n        \"title\": \"Shop by category\"\n      },\n      \"blocks\": {\n        \"group0\": {\n          \"type\": \"group\",\n          \"settings\": {\n            \"heading\": \"Grocery & Kitchen\",\n            \"max_tiles\": 8,\n            \"first_wide\": false\n          }\n        },\n        \"group1\": {\n          \"type\": \"group\",\n          \"settings\": {\n            \"heading\": \"Baby\",\n            \"max_tiles\": 8,\n            \"first_wide\": false,\n            \"menu\": \"sample-baby-care\"\n          }\n        },\n        \"group2\": {\n          \"type\": \"group\",\n          \"settings\": {\n            \"heading\": \"Gifting\",\n            \"max_tiles\": 8,\n            \"first_wide\": false\n          }\n        },\n        \"group3\": {\n          \"type\": \"group\",\n          \"settings\": {\n            \"heading\": \"Bath & Body\",\n            \"max_tiles\": 8,\n            \"first_wide\": false\n          }\n        },\n        \"group4\": {\n          \"type\": \"group\",\n          \"settings\": {\n            \"heading\": \"Home & Cleaning\",\n            \"max_tiles\": 8,\n            \"first_wide\": false\n          }\n        }\n      },\n      \"block_order\": [\n        \"group0\",\n        \"group1\",\n        \"group2\",\n        \"group3\",\n        \"group4\"\n      ]\n    },\n    \"stores\": {\n      \"type\": \"ep-store-grid\",\n      \"settings\": {\n        \"title\": \"Shop by store\"\n      },\n      \"blocks\": {\n        \"store0\": {\n          \"type\": \"store\",\n          \"settings\": {\n            \"label\": \"Grocery store\",\n            \"link\": \"/collections/grocery\",\n            \"background\": \"#FEFAE0\"\n          }\n        },\n        \"store1\": {\n          \"type\": \"store\",\n          \"settings\": {\n            \"label\": \"Baby Products store\",\n            \"link\": \"/collections/baby-products\",\n            \"background\": \"#FEFAE0\"\n          }\n        },\n        \"store2\": {\n          \"type\": \"store\",\n          \"settings\": {\n            \"label\": \"Gifting store\",\n            \"link\": \"/collections/gifting\",\n            \"background\": \"#FEFAE0\"\n          }\n        },\n        \"store3\": {\n          \"type\": \"store\",\n          \"settings\": {\n            \"label\": \"Bath & Body store\",\n            \"link\": \"/collections/bath-and-body\",\n            \"background\": \"#FEFAE0\"\n          }\n        },\n        \"store4\": {\n          \"type\": \"store\",\n          \"settings\": {\n            \"label\": \"Home store\",\n            \"link\": \"/collections/home\",\n            \"background\": \"#FEFAE0\"\n          }\n        },\n        \"store5\": {\n          \"type\": \"store\",\n          \"settings\": {\n            \"label\": \"Pet store\",\n            \"link\": \"/collections/pet\",\n            \"background\": \"#FEFAE0\"\n          }\n        },\n        \"store6\": {\n          \"type\": \"store\",\n          \"settings\": {\n            \"label\": \"Office Supplies store\",\n            \"link\": \"/collections/office-supplies\",\n            \"background\": \"#FEFAE0\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"store0\",\n        \"store1\",\n        \"store2\",\n        \"store3\",\n        \"store4\",\n        \"store5\",\n        \"store6\"\n      ]\n    },\n    \"brands1\": {\n      \"type\": \"ep-brand-tiles\",\n      \"settings\": {\n        \"accessible_title\": \"Featured brands\"\n      },\n      \"disabled\": true\n    },\n    \"essentials\": {\n      \"type\": \"ep-product-grid\",\n      \"settings\": {\n        \"title\": \"Home essentials, sorted\",\n        \"subtitle\": \"Cleaning, laundry and household supplies for a well-stocked home.\",\n        \"collection\": \"home\",\n        \"rows\": 2,\n        \"columns_mobile\": \"3\",\n        \"card_variant\": \"grid\",\n        \"show_button\": true\n      }\n    },\n    \"care\": {\n      \"type\": \"ep-product-grid\",\n      \"settings\": {\n        \"title\": \"Care for every day\",\n        \"subtitle\": \"Bath, hair and personal-care essentials for your daily routine.\",\n        \"collection\": \"bath-and-body\",\n        \"rows\": 2,\n        \"columns_mobile\": \"3\",\n        \"card_variant\": \"grid\",\n        \"show_button\": true\n      }\n    },\n    \"brands2\": {\n      \"type\": \"ep-brand-tiles\",\n      \"settings\": {\n        \"accessible_title\": \"Featured brands\"\n      },\n      \"disabled\": true\n    },\n    \"gifts\": {\n      \"type\": \"ep-product-grid\",\n      \"settings\": {\n        \"title\": \"Gifts to brighten their day\",\n        \"subtitle\": \"Chocolate boxes and treats for an easy, thoughtful gesture.\",\n        \"collection\": \"gifting\",\n        \"rows\": 2,\n        \"columns_mobile\": \"3\",\n        \"card_variant\": \"rated\",\n        \"show_button\": true\n      }\n    },\n    \"pets\": {\n      \"type\": \"ep-product-grid\",\n      \"settings\": {\n        \"title\": \"A little care for your pets\",\n        \"subtitle\": \"Food and playtime essentials for furry family members.\",\n        \"collection\": \"pet\",\n        \"rows\": 2,\n        \"columns_mobile\": \"3\",\n        \"card_variant\": \"grid\",\n        \"show_button\": true\n      }\n    },\n    \"office\": {\n      \"type\": \"ep-product-grid\",\n      \"settings\": {\n        \"title\": \"Desk and school essentials\",\n        \"subtitle\": \"Keep your workspace and school bag stocked.\",\n        \"collection\": \"office-supplies\",\n        \"rows\": 2,\n        \"columns_mobile\": \"3\",\n        \"card_variant\": \"grid\",\n        \"show_button\": true\n      }\n    },\n    \"trust\": {\n      \"type\": \"qc-trust\",\n      \"blocks\": {\n        \"b0\": {\n          \"type\": \"item\",\n          \"settings\": {\n            \"heading\": \"Next-day delivery\",\n            \"text\": \"Made for your Dubai routine\",\n            \"icon\": \"truck\"\n          }\n        },\n        \"b1\": {\n          \"type\": \"item\",\n          \"settings\": {\n            \"heading\": \"Quality guaranteed\",\n            \"text\": \"Carefully selected essentials\",\n            \"icon\": \"leaf\"\n          }\n        },\n        \"b2\": {\n          \"type\": \"item\",\n          \"settings\": {\n            \"heading\": \"Easy returns\",\n            \"text\": \"Support when you need it\",\n            \"icon\": \"check\"\n          }\n        },\n        \"b3\": {\n          \"type\": \"item\",\n          \"settings\": {\n            \"heading\": \"Secure payments\",\n            \"text\": \"Checkout with confidence\",\n            \"icon\": \"check\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"b0\",\n        \"b1\",\n        \"b2\",\n        \"b3\"\n      ],\n      \"settings\": {}\n    },\n    \"faq\": {\n      \"type\": \"qc-faq\",\n      \"blocks\": {\n        \"b0\": {\n          \"type\": \"question\",\n          \"settings\": {\n            \"question\": \"When will my order arrive?\",\n            \"answer\": \"<p>Order today for next-day delivery in supported Dubai areas. Your available delivery date is confirmed during checkout.</p>\"\n          }\n        },\n        \"b1\": {\n          \"type\": \"question\",\n          \"settings\": {\n            \"question\": \"What is the order cut-off time?\",\n            \"answer\": \"<p>Check the delivery information shown at checkout for the current cut-off. Orders received after the applicable cut-off move to the next available delivery day.</p>\"\n          }\n        },\n        \"b2\": {\n          \"type\": \"question\",\n          \"settings\": {\n            \"question\": \"Which areas of Dubai do you deliver to?\",\n            \"answer\": \"<p>Choose your area in the header. Final service availability is confirmed using your full delivery address at checkout.</p>\"\n          }\n        },\n        \"b3\": {\n          \"type\": \"question\",\n          \"settings\": {\n            \"question\": \"Is Cash on Delivery available?\",\n            \"answer\": \"<p>Cash on Delivery is available only when it is offered as a payment method at checkout. Otherwise, choose one of the secure online payment methods shown there.</p>\"\n          }\n        },\n        \"b4\": {\n          \"type\": \"question\",\n          \"settings\": {\n            \"question\": \"How much does delivery cost?\",\n            \"answer\": \"<p>Delivery fees depend on your basket total. See the current tiers below; your final fee is confirmed at checkout.</p>\",\n            \"show_fees\": true\n          }\n        },\n        \"b5\": {\n          \"type\": \"question\",\n          \"settings\": {\n            \"question\": \"What if something is not right with my order?\",\n            \"answer\": \"<p>Please contact our support team using the contact page with your order number and details. Our published returns policy explains eligibility and the next steps.</p>\"\n          }\n        },\n        \"bnpl\": {\n          \"type\": \"question\",\n          \"settings\": {\n            \"question\": \"Can I pay in instalments?\",\n            \"answer\": \"<p>Eligible instalment options are offered only if an approved provider is available at checkout. Provider eligibility and terms apply.</p>\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"b0\",\n        \"b1\",\n        \"b2\",\n        \"b3\",\n        \"b4\",\n        \"b5\",\n        \"bnpl\"\n      ],\n      \"settings\": {}\n    },\n    \"trending\": {\n      \"type\": \"ep-search-links\",\n      \"settings\": {\n        \"title\": \"Trending searches\"\n      },\n      \"blocks\": {\n        \"categories\": {\n          \"type\": \"group\",\n          \"settings\": {\n            \"heading\": \"Categories\",\n            \"menu\": \"catalogue\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"categories\"\n      ]\n    },\n    \"popular\": {\n      \"type\": \"ep-search-links\",\n      \"settings\": {\n        \"title\": \"Popular searches\"\n      },\n      \"blocks\": {\n        \"occasions\": {\n          \"type\": \"group\",\n          \"settings\": {\n            \"heading\": \"Occasions\",\n            \"terms\": \"Ramadan\\nEid al-Fitr\\nEid al-Adha\\nMother's Day\\nBack to School\\nDiwali\\nNational Day\\nChristmas\\nNew Year\"\n          }\n        }\n      },\n      \"block_order\": [\n        \"occasions\"\n      ]\n    }\n  },\n  \"order\": [\n    \"hero\",\n    \"grocery\",\n    \"seasonal\",\n    \"baby\",\n    \"campaign\",\n    \"deals\",\n    \"promos\",\n    \"categories\",\n    \"stores\",\n    \"brands1\",\n    \"essentials\",\n    \"care\",\n    \"brands2\",\n    \"gifts\",\n    \"pets\",\n    \"office\",\n    \"trust\",\n    \"faq\",\n    \"trending\",\n    \"popular\"\n  ]\n}\n"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "InRlbXBsYXRlc1wvaW5kZXguanNvbiI="
+      }
+    }
+  },
+  "collections": {
+    "nodes": [
+      {
+        "id": "gid://shopify/Collection/511674253425",
+        "handle": "frontpage",
+        "title": "Home page",
+        "productsCount": {
+          "count": 1
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/512292716657",
+        "handle": "pampers",
+        "title": "Pampers",
+        "productsCount": {
+          "count": 122
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/512974389361",
+        "handle": "ordering-test",
+        "title": "[TEST] Baby Products",
+        "productsCount": {
+          "count": 39
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/512974422129",
+        "handle": "ordering-test-in-stock",
+        "title": "[TEST] In stock",
+        "productsCount": {
+          "count": 9
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/512974454897",
+        "handle": "ordering-test-diapers",
+        "title": "[TEST] Baby Diapers",
+        "productsCount": {
+          "count": 22
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/512974487665",
+        "handle": "ordering-test-nappy-pants",
+        "title": "[TEST] Nappy Pants",
+        "productsCount": {
+          "count": 10
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/512974520433",
+        "handle": "ordering-test-training-pants",
+        "title": "[TEST] Training Pants",
+        "productsCount": {
+          "count": 2
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/512974553201",
+        "handle": "ordering-test-changing-mats",
+        "title": "[TEST] Changing & Bed Mats",
+        "productsCount": {
+          "count": 5
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513004503153",
+        "handle": "newborn-nappies",
+        "title": "Newborn nappies",
+        "productsCount": {
+          "count": 3
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513004535921",
+        "handle": "everyday-diaper-essentials",
+        "title": "Everyday diaper essentials",
+        "productsCount": {
+          "count": 5
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513004568689",
+        "handle": "nappy-pants",
+        "title": "Nappy pants",
+        "productsCount": {
+          "count": 1
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037369457",
+        "handle": "office-supplies",
+        "title": "Office Supplies",
+        "productsCount": {
+          "count": 10
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037402225",
+        "handle": "office-supplies-presentation-supplies",
+        "title": "Presentation Supplies",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037434993",
+        "handle": "office-supplies-mailing-and-packaging",
+        "title": "Mailing & Packaging",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037467761",
+        "handle": "office-supplies-mailing-and-packaging-envelopes-and-mailing",
+        "title": "Envelopes & Mailing",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037500529",
+        "handle": "office-supplies-desk-essentials",
+        "title": "Desk Essentials",
+        "productsCount": {
+          "count": 4
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037533297",
+        "handle": "office-supplies-desk-essentials-adhesives-and-tapes",
+        "title": "Adhesives & Tapes",
+        "productsCount": {
+          "count": 2
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037566065",
+        "handle": "office-supplies-desk-essentials-staplers-and-punches",
+        "title": "Staplers & Punches",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037598833",
+        "handle": "office-supplies-desk-essentials-desk-supplies",
+        "title": "Desk Supplies",
+        "productsCount": {
+          "count": 2
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037631601",
+        "handle": "office-supplies-filing-and-organization",
+        "title": "Filing & Organization",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037664369",
+        "handle": "office-supplies-filing-and-organization-labels-and-tags",
+        "title": "Labels & Tags",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037697137",
+        "handle": "office-supplies-filing-and-organization-files-and-folders",
+        "title": "Files & Folders",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037729905",
+        "handle": "office-supplies-writing-and-stationery",
+        "title": "Writing & Stationery",
+        "productsCount": {
+          "count": 3
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037762673",
+        "handle": "office-supplies-paper-and-notebooks",
+        "title": "Paper & Notebooks",
+        "productsCount": {
+          "count": 3
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037795441",
+        "handle": "pet",
+        "title": "Pet",
+        "productsCount": {
+          "count": 3
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037828209",
+        "handle": "pet-other-pets",
+        "title": "Other Pets",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037860977",
+        "handle": "pet-other-pets-small-animals",
+        "title": "Small Animals",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037893745",
+        "handle": "pet-other-pets-fish",
+        "title": "Fish",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037926513",
+        "handle": "pet-other-pets-birds",
+        "title": "Birds",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037959281",
+        "handle": "pet-cats",
+        "title": "Cats",
+        "productsCount": {
+          "count": 2
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513037992049",
+        "handle": "pet-dogs",
+        "title": "Dogs",
+        "productsCount": {
+          "count": 1
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038024817",
+        "handle": "home",
+        "title": "Home",
+        "productsCount": {
+          "count": 15
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038057585",
+        "handle": "home-home-fragrance",
+        "title": "Home Fragrance",
+        "productsCount": {
+          "count": 3
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038090353",
+        "handle": "home-home-fragrance-air-fresheners",
+        "title": "Air Fresheners",
+        "productsCount": {
+          "count": 3
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038123121",
+        "handle": "home-bathroom-essentials",
+        "title": "Bathroom Essentials",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038155889",
+        "handle": "home-disposables",
+        "title": "Disposables",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038188657",
+        "handle": "home-disposables-disposable-tableware",
+        "title": "Disposable Tableware",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038221425",
+        "handle": "home-food-storage-and-wraps",
+        "title": "Food Storage & Wraps",
+        "productsCount": {
+          "count": 3
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038254193",
+        "handle": "home-food-storage-and-wraps-cling-film",
+        "title": "Cling Film",
+        "productsCount": {
+          "count": 1
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038286961",
+        "handle": "home-food-storage-and-wraps-foil",
+        "title": "Foil",
+        "productsCount": {
+          "count": 1
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038319729",
+        "handle": "home-food-storage-and-wraps-containers",
+        "title": "Containers",
+        "productsCount": {
+          "count": 1
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038352497",
+        "handle": "home-kitchen-and-cookware",
+        "title": "Kitchen & Cookware",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038385265",
+        "handle": "home-kitchen-and-cookware-tools-and-utensils",
+        "title": "Tools & Utensils",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038418033",
+        "handle": "home-kitchen-and-cookware-kitchen-essentials",
+        "title": "Kitchen Essentials",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038450801",
+        "handle": "home-kitchen-and-cookware-cookware",
+        "title": "Cookware",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038483569",
+        "handle": "home-storage-and-organization",
+        "title": "Storage & Organization",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038516337",
+        "handle": "home-storage-and-organization-plasticware",
+        "title": "Plasticware",
+        "productsCount": {
+          "count": 0
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038549105",
+        "handle": "home-paper-and-household-essentials",
+        "title": "Paper & Household Essentials",
+        "productsCount": {
+          "count": 3
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038581873",
+        "handle": "home-cleaning-tools-and-pest-control",
+        "title": "Cleaning Tools & Pest Control",
+        "productsCount": {
+          "count": 3
+        }
+      },
+      {
+        "id": "gid://shopify/Collection/513038614641",
+        "handle": "home-cleaning-and-laundry",
+        "title": "Cleaning & Laundry",
+        "productsCount": {
+          "count": 3
+        }
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": true,
+      "endCursor": "eyJsYXN0X2lkIjo1MTMwMzg2MTQ2NDEsImxhc3RfdmFsdWUiOiI1MTMwMzg2MTQ2NDEifQ=="
+    }
+  },
+  "menus": {
+    "nodes": [
+      {
+        "handle": "main-menu",
+        "title": "Main menu",
+        "items": [
+          {
+            "title": "Home",
+            "url": "/",
+            "items": []
+          },
+          {
+            "title": "Catalog",
+            "url": "/collections/all",
+            "items": []
+          },
+          {
+            "title": "Contact",
+            "url": "/pages/contact",
+            "items": []
+          }
+        ]
+      },
+      {
+        "handle": "footer",
+        "title": "Footer menu",
+        "items": [
+          {
+            "title": "Search",
+            "url": "/search",
+            "items": []
+          }
+        ]
+      },
+      {
+        "handle": "customer-account-main-menu",
+        "title": "Customer account main menu",
+        "items": [
+          {
+            "title": "Orders",
+            "url": "https://shopify.com/78456225905/account/orders",
+            "items": []
+          },
+          {
+            "title": "Profile",
+            "url": "https://shopify.com/78456225905/account/profile",
+            "items": []
+          }
+        ]
+      },
+      {
+        "handle": "sample-baby-care",
+        "title": "Sample baby care",
+        "items": [
+          {
+            "title": "Newborn nappies",
+            "url": "/collections/newborn-nappies",
+            "items": []
+          },
+          {
+            "title": "Everyday diapers",
+            "url": "/collections/everyday-diaper-essentials",
+            "items": []
+          },
+          {
+            "title": "Nappy pants",
+            "url": "/collections/nappy-pants",
+            "items": []
+          }
+        ]
+      },
+      {
+        "handle": "catalogue",
+        "title": "Catalogue",
+        "items": [
+          {
+            "title": "All Products",
+            "url": "/collections/all",
+            "items": []
+          },
+          {
+            "title": "Grocery",
+            "url": "/collections/grocery",
+            "items": [
+              {
+                "title": "Pantry Staples",
+                "url": "/collections/grocery-pantry-staples",
+                "items": [
+                  {
+                    "title": "Rice",
+                    "url": "/collections/grocery-pantry-staples-rice"
+                  },
+                  {
+                    "title": "Pasta",
+                    "url": "/collections/grocery-pantry-staples-pasta"
+                  },
+                  {
+                    "title": "Noodles",
+                    "url": "/collections/grocery-pantry-staples-noodles"
+                  },
+                  {
+                    "title": "Flour",
+                    "url": "/collections/grocery-pantry-staples-flour"
+                  },
+                  {
+                    "title": "Pulses, Beans & Lentils",
+                    "url": "/collections/grocery-pantry-staples-pulses-beans-and-lentils"
+                  },
+                  {
+                    "title": "Oils & Ghee",
+                    "url": "/collections/grocery-pantry-staples-oils-and-ghee"
+                  },
+                  {
+                    "title": "Sugar & Sweeteners",
+                    "url": "/collections/grocery-pantry-staples-sugar-and-sweeteners"
+                  },
+                  {
+                    "title": "Salt, Spices & Seasonings",
+                    "url": "/collections/grocery-pantry-staples-salt-spices-and-seasonings"
+                  }
+                ]
+              },
+              {
+                "title": "Breakfast & Spreads",
+                "url": "/collections/grocery-breakfast-and-spreads",
+                "items": [
+                  {
+                    "title": "Cereals",
+                    "url": "/collections/grocery-breakfast-and-spreads-cereals"
+                  },
+                  {
+                    "title": "Breakfast Foods",
+                    "url": "/collections/grocery-breakfast-and-spreads-breakfast-foods"
+                  },
+                  {
+                    "title": "Jams",
+                    "url": "/collections/grocery-breakfast-and-spreads-jams"
+                  },
+                  {
+                    "title": "Honey",
+                    "url": "/collections/grocery-breakfast-and-spreads-honey"
+                  },
+                  {
+                    "title": "Spreads",
+                    "url": "/collections/grocery-breakfast-and-spreads-spreads"
+                  }
+                ]
+              },
+              {
+                "title": "Snacks & Confectionery",
+                "url": "/collections/grocery-snacks-and-confectionery",
+                "items": [
+                  {
+                    "title": "Chips & Snacks",
+                    "url": "/collections/grocery-snacks-and-confectionery-chips-and-snacks"
+                  },
+                  {
+                    "title": "Biscuits & Crackers",
+                    "url": "/collections/grocery-snacks-and-confectionery-biscuits-and-crackers"
+                  },
+                  {
+                    "title": "Chocolates & Confectionery",
+                    "url": "/collections/grocery-snacks-and-confectionery-chocolates-and-confectionery"
+                  },
+                  {
+                    "title": "Nuts, Seeds & Dried Fruits",
+                    "url": "/collections/grocery-snacks-and-confectionery-nuts-seeds-and-dried-fruits"
+                  }
+                ]
+              },
+              {
+                "title": "Canned, Packaged & Ready Foods",
+                "url": "/collections/grocery-canned-packaged-and-ready-foods",
+                "items": [
+                  {
+                    "title": "Canned & Jarred Foods",
+                    "url": "/collections/grocery-canned-packaged-and-ready-foods-canned-and-jarred-foods"
+                  },
+                  {
+                    "title": "Instant & Ready-to-Eat",
+                    "url": "/collections/grocery-canned-packaged-and-ready-foods-instant-and-ready-to-eat"
+                  },
+                  {
+                    "title": "Sauces, Condiments & Dressings",
+                    "url": "/collections/grocery-canned-packaged-and-ready-foods-sauces-condiments-and-dressings"
+                  }
+                ]
+              },
+              {
+                "title": "Beverages",
+                "url": "/collections/grocery-beverages",
+                "items": [
+                  {
+                    "title": "Water",
+                    "url": "/collections/grocery-beverages-water"
+                  },
+                  {
+                    "title": "Juices",
+                    "url": "/collections/grocery-beverages-juices"
+                  },
+                  {
+                    "title": "Soft Drinks",
+                    "url": "/collections/grocery-beverages-soft-drinks"
+                  },
+                  {
+                    "title": "Energy & Sports Drinks",
+                    "url": "/collections/grocery-beverages-energy-and-sports-drinks"
+                  },
+                  {
+                    "title": "Tea & Coffee",
+                    "url": "/collections/grocery-beverages-tea-and-coffee"
+                  },
+                  {
+                    "title": "Other Beverages",
+                    "url": "/collections/grocery-beverages-other-beverages"
+                  }
+                ]
+              },
+              {
+                "title": "Healthy & Specialty Foods",
+                "url": "/collections/grocery-healthy-and-specialty-foods",
+                "items": [
+                  {
+                    "title": "Organic",
+                    "url": "/collections/grocery-healthy-and-specialty-foods-organic"
+                  },
+                  {
+                    "title": "Health-Focused",
+                    "url": "/collections/grocery-healthy-and-specialty-foods-health-focused"
+                  },
+                  {
+                    "title": "International & Specialty",
+                    "url": "/collections/grocery-healthy-and-specialty-foods-international-and-specialty"
+                  }
+                ]
+              },
+              {
+                "title": "Dairy & Eggs",
+                "url": "/collections/grocery-dairy-and-eggs",
+                "items": []
+              },
+              {
+                "title": "Fresh Produce",
+                "url": "/collections/grocery-fresh-produce",
+                "items": []
+              },
+              {
+                "title": "Frozen Foods",
+                "url": "/collections/grocery-frozen-foods",
+                "items": []
+              },
+              {
+                "title": "Baby Food",
+                "url": "/collections/grocery-baby-food",
+                "items": []
+              }
+            ]
+          },
+          {
+            "title": "Baby Products",
+            "url": "/collections/baby-products",
+            "items": [
+              {
+                "title": "Diapers & Wipes",
+                "url": "/collections/baby-products-diapers-and-wipes",
+                "items": []
+              },
+              {
+                "title": "Feeding & Nursing",
+                "url": "/collections/baby-products-feeding-and-nursing",
+                "items": [
+                  {
+                    "title": "Bottles & Accessories",
+                    "url": "/collections/baby-products-feeding-and-nursing-bottles-and-accessories"
+                  },
+                  {
+                    "title": "Breastfeeding & Nursing",
+                    "url": "/collections/baby-products-feeding-and-nursing-breastfeeding-and-nursing"
+                  },
+                  {
+                    "title": "Pacifiers & Teethers",
+                    "url": "/collections/baby-products-feeding-and-nursing-pacifiers-and-teethers"
+                  }
+                ]
+              },
+              {
+                "title": "Baby Food & Formula",
+                "url": "/collections/baby-products-baby-food-and-formula",
+                "items": []
+              },
+              {
+                "title": "Bath, Skincare & Grooming",
+                "url": "/collections/baby-products-bath-skincare-and-grooming",
+                "items": []
+              },
+              {
+                "title": "Health & Safety",
+                "url": "/collections/baby-products-health-and-safety",
+                "items": []
+              },
+              {
+                "title": "Nursery & Bedding",
+                "url": "/collections/baby-products-nursery-and-bedding",
+                "items": []
+              },
+              {
+                "title": "Baby Gear & Travel",
+                "url": "/collections/baby-products-baby-gear-and-travel",
+                "items": []
+              },
+              {
+                "title": "Baby Toys",
+                "url": "/collections/baby-products-baby-toys",
+                "items": []
+              },
+              {
+                "title": "Maternity & Postpartum",
+                "url": "/collections/baby-products-maternity-and-postpartum",
+                "items": []
+              }
+            ]
+          },
+          {
+            "title": "Gifting",
+            "url": "/collections/gifting",
+            "items": [
+              {
+                "title": "Flowers & Bouquets",
+                "url": "/collections/gifting-flowers-and-bouquets",
+                "items": []
+              },
+              {
+                "title": "Chocolates & Treats",
+                "url": "/collections/gifting-chocolates-and-treats",
+                "items": [
+                  {
+                    "title": "Chocolates",
+                    "url": "/collections/gifting-chocolates-and-treats-chocolates"
+                  },
+                  {
+                    "title": "Cakes",
+                    "url": "/collections/gifting-chocolates-and-treats-cakes"
+                  },
+                  {
+                    "title": "Confectionery",
+                    "url": "/collections/gifting-chocolates-and-treats-confectionery"
+                  }
+                ]
+              },
+              {
+                "title": "Hampers & Gift Sets",
+                "url": "/collections/gifting-hampers-and-gift-sets",
+                "items": []
+              },
+              {
+                "title": "Soft Toys & Gifts",
+                "url": "/collections/gifting-soft-toys-and-gifts",
+                "items": []
+              },
+              {
+                "title": "Fragrances & Candles",
+                "url": "/collections/gifting-fragrances-and-candles",
+                "items": []
+              },
+              {
+                "title": "Gift Cards & Personalized Gifts",
+                "url": "/collections/gifting-gift-cards-and-personalized-gifts",
+                "items": []
+              },
+              {
+                "title": "Balloons & Decorations",
+                "url": "/collections/gifting-balloons-and-decorations",
+                "items": []
+              }
+            ]
+          },
+          {
+            "title": "Bath & Body",
+            "url": "/collections/bath-and-body",
+            "items": [
+              {
+                "title": "Bath & Body Care",
+                "url": "/collections/bath-and-body-bath-and-body-care",
+                "items": [
+                  {
+                    "title": "Bath & Shower",
+                    "url": "/collections/bath-and-body-bath-and-body-care-bath-and-shower"
+                  },
+                  {
+                    "title": "Body Care",
+                    "url": "/collections/bath-and-body-bath-and-body-care-body-care"
+                  },
+                  {
+                    "title": "Hand & Foot Care",
+                    "url": "/collections/bath-and-body-bath-and-body-care-hand-and-foot-care"
+                  }
+                ]
+              },
+              {
+                "title": "Skincare & Face Care",
+                "url": "/collections/bath-and-body-skincare-and-face-care",
+                "items": []
+              },
+              {
+                "title": "Hair Care",
+                "url": "/collections/bath-and-body-hair-care",
+                "items": []
+              },
+              {
+                "title": "Makeup & Cosmetics",
+                "url": "/collections/bath-and-body-makeup-and-cosmetics",
+                "items": []
+              },
+              {
+                "title": "Fragrances & Deodorants",
+                "url": "/collections/bath-and-body-fragrances-and-deodorants",
+                "items": []
+              },
+              {
+                "title": "Personal Hygiene",
+                "url": "/collections/bath-and-body-personal-hygiene",
+                "items": [
+                  {
+                    "title": "Oral Care",
+                    "url": "/collections/bath-and-body-personal-hygiene-oral-care"
+                  },
+                  {
+                    "title": "Feminine Hygiene",
+                    "url": "/collections/bath-and-body-personal-hygiene-feminine-hygiene"
+                  },
+                  {
+                    "title": "Everyday Hygiene",
+                    "url": "/collections/bath-and-body-personal-hygiene-everyday-hygiene"
+                  }
+                ]
+              },
+              {
+                "title": "Men’s Grooming & Shaving",
+                "url": "/collections/bath-and-body-mens-grooming-and-shaving",
+                "items": [
+                  {
+                    "title": "Shaving & Hair Removal",
+                    "url": "/collections/bath-and-body-mens-grooming-and-shaving-shaving-and-hair-removal"
+                  }
+                ]
+              },
+              {
+                "title": "Sexual Wellness",
+                "url": "/collections/bath-and-body-sexual-wellness",
+                "items": []
+              }
+            ]
+          },
+          {
+            "title": "Home",
+            "url": "/collections/home",
+            "items": [
+              {
+                "title": "Cleaning & Laundry",
+                "url": "/collections/home-cleaning-and-laundry",
+                "items": [
+                  {
+                    "title": "Household Cleaning",
+                    "url": "/collections/home-cleaning-and-laundry-household-cleaning"
+                  },
+                  {
+                    "title": "Laundry",
+                    "url": "/collections/home-cleaning-and-laundry-laundry"
+                  },
+                  {
+                    "title": "Dishwashing",
+                    "url": "/collections/home-cleaning-and-laundry-dishwashing"
+                  }
+                ]
+              },
+              {
+                "title": "Cleaning Tools & Pest Control",
+                "url": "/collections/home-cleaning-tools-and-pest-control",
+                "items": []
+              },
+              {
+                "title": "Paper & Household Essentials",
+                "url": "/collections/home-paper-and-household-essentials",
+                "items": []
+              },
+              {
+                "title": "Storage & Organization",
+                "url": "/collections/home-storage-and-organization",
+                "items": [
+                  {
+                    "title": "Plasticware",
+                    "url": "/collections/home-storage-and-organization-plasticware"
+                  }
+                ]
+              },
+              {
+                "title": "Kitchen & Cookware",
+                "url": "/collections/home-kitchen-and-cookware",
+                "items": [
+                  {
+                    "title": "Cookware",
+                    "url": "/collections/home-kitchen-and-cookware-cookware"
+                  },
+                  {
+                    "title": "Kitchen Essentials",
+                    "url": "/collections/home-kitchen-and-cookware-kitchen-essentials"
+                  },
+                  {
+                    "title": "Tools & Utensils",
+                    "url": "/collections/home-kitchen-and-cookware-tools-and-utensils"
+                  }
+                ]
+              },
+              {
+                "title": "Food Storage & Wraps",
+                "url": "/collections/home-food-storage-and-wraps",
+                "items": [
+                  {
+                    "title": "Containers",
+                    "url": "/collections/home-food-storage-and-wraps-containers"
+                  },
+                  {
+                    "title": "Foil",
+                    "url": "/collections/home-food-storage-and-wraps-foil"
+                  },
+                  {
+                    "title": "Cling Film",
+                    "url": "/collections/home-food-storage-and-wraps-cling-film"
+                  }
+                ]
+              },
+              {
+                "title": "Disposables",
+                "url": "/collections/home-disposables",
+                "items": [
+                  {
+                    "title": "Disposable Tableware",
+                    "url": "/collections/home-disposables-disposable-tableware"
+                  }
+                ]
+              },
+              {
+                "title": "Bathroom Essentials",
+                "url": "/collections/home-bathroom-essentials",
+                "items": []
+              },
+              {
+                "title": "Home Fragrance",
+                "url": "/collections/home-home-fragrance",
+                "items": [
+                  {
+                    "title": "Air Fresheners",
+                    "url": "/collections/home-home-fragrance-air-fresheners"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Pet",
+            "url": "/collections/pet",
+            "items": [
+              {
+                "title": "Dogs",
+                "url": "/collections/pet-dogs",
+                "items": []
+              },
+              {
+                "title": "Cats",
+                "url": "/collections/pet-cats",
+                "items": []
+              },
+              {
+                "title": "Other Pets",
+                "url": "/collections/pet-other-pets",
+                "items": [
+                  {
+                    "title": "Birds",
+                    "url": "/collections/pet-other-pets-birds"
+                  },
+                  {
+                    "title": "Fish",
+                    "url": "/collections/pet-other-pets-fish"
+                  },
+                  {
+                    "title": "Small Animals",
+                    "url": "/collections/pet-other-pets-small-animals"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Office Supplies",
+            "url": "/collections/office-supplies",
+            "items": [
+              {
+                "title": "Paper & Notebooks",
+                "url": "/collections/office-supplies-paper-and-notebooks",
+                "items": []
+              },
+              {
+                "title": "Writing & Stationery",
+                "url": "/collections/office-supplies-writing-and-stationery",
+                "items": []
+              },
+              {
+                "title": "Filing & Organization",
+                "url": "/collections/office-supplies-filing-and-organization",
+                "items": [
+                  {
+                    "title": "Files & Folders",
+                    "url": "/collections/office-supplies-filing-and-organization-files-and-folders"
+                  },
+                  {
+                    "title": "Labels & Tags",
+                    "url": "/collections/office-supplies-filing-and-organization-labels-and-tags"
+                  }
+                ]
+              },
+              {
+                "title": "Desk Essentials",
+                "url": "/collections/office-supplies-desk-essentials",
+                "items": [
+                  {
+                    "title": "Desk Supplies",
+                    "url": "/collections/office-supplies-desk-essentials-desk-supplies"
+                  },
+                  {
+                    "title": "Staplers & Punches",
+                    "url": "/collections/office-supplies-desk-essentials-staplers-and-punches"
+                  },
+                  {
+                    "title": "Adhesives & Tapes",
+                    "url": "/collections/office-supplies-desk-essentials-adhesives-and-tapes"
+                  }
+                ]
+              },
+              {
+                "title": "Mailing & Packaging",
+                "url": "/collections/office-supplies-mailing-and-packaging",
+                "items": [
+                  {
+                    "title": "Envelopes & Mailing",
+                    "url": "/collections/office-supplies-mailing-and-packaging-envelopes-and-mailing"
+                  }
+                ]
+              },
+              {
+                "title": "Presentation Supplies",
+                "url": "/collections/office-supplies-presentation-supplies",
+                "items": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": false,
+      "endCursor": "eyJsYXN0X2lkIjoyNTU1NzQ2Mzg3MDUsImxhc3RfdmFsdWUiOjI1NTU3NDYzODcwNX0="
+    }
+  }
+}

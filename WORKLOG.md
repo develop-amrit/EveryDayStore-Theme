@@ -163,3 +163,7 @@ Dawn hides empty divs by default; the header sentinel explicitly overrides that 
 Build CSS with `node tools/ep-bundle.cjs` after editing tools/ep-mobile-source.css or preserved legacy CSS. Deploy with `node tools/ep-push.cjs`; it runs regression checks, rereads WORK_THEME_ID and verifies the current role. `node tools/ep-push.cjs dev` uses that same guarded theme for local preview. Never use a live target or publish.
 
 Draft is ready for owner design review in Admin → Online Store → Themes → everyday-homepage-review. Release gates remain explicitly open in docs/EP_HOMEPAGE_STATE.json.
+
+## Phase 1 — Global chrome
+
+Moved homepage announcement/header/footer values verbatim into section groups, replacing earlier group instances. Groups now render on every template once. Bottom navigation extraction follows with its configurable section.

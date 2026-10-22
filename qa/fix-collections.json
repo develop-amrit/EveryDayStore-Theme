@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "gid://shopify/Collection/511674253425",
+    "handle": "frontpage",
+    "title": "Home page",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/512292716657",
+    "handle": "pampers",
+    "title": "Pampers",
+    "productsCount": {
+      "count": 122
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/512974389361",
+    "handle": "ordering-test",
+    "title": "[TEST] Baby Products",
+    "productsCount": {
+      "count": 39
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/512974422129",
+    "handle": "ordering-test-in-stock",
+    "title": "[TEST] In stock",
+    "productsCount": {
+      "count": 9
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/512974454897",
+    "handle": "ordering-test-diapers",
+    "title": "[TEST] Baby Diapers",
+    "productsCount": {
+      "count": 22
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/512974487665",
+    "handle": "ordering-test-nappy-pants",
+    "title": "[TEST] Nappy Pants",
+    "productsCount": {
+      "count": 10
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/512974520433",
+    "handle": "ordering-test-training-pants",
+    "title": "[TEST] Training Pants",
+    "productsCount": {
+      "count": 2
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/512974553201",
+    "handle": "ordering-test-changing-mats",
+    "title": "[TEST] Changing & Bed Mats",
+    "productsCount": {
+      "count": 5
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513004503153",
+    "handle": "newborn-nappies",
+    "title": "Newborn nappies",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513004535921",
+    "handle": "everyday-diaper-essentials",
+    "title": "Everyday diaper essentials",
+    "productsCount": {
+      "count": 5
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513004568689",
+    "handle": "nappy-pants",
+    "title": "Nappy pants",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037369457",
+    "handle": "office-supplies",
+    "title": "Office Supplies",
+    "productsCount": {
+      "count": 10
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037402225",
+    "handle": "office-supplies-presentation-supplies",
+    "title": "Presentation Supplies",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037434993",
+    "handle": "office-supplies-mailing-and-packaging",
+    "title": "Mailing & Packaging",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037467761",
+    "handle": "office-supplies-mailing-and-packaging-envelopes-and-mailing",
+    "title": "Envelopes & Mailing",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037500529",
+    "handle": "office-supplies-desk-essentials",
+    "title": "Desk Essentials",
+    "productsCount": {
+      "count": 4
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037533297",
+    "handle": "office-supplies-desk-essentials-adhesives-and-tapes",
+    "title": "Adhesives & Tapes",
+    "productsCount": {
+      "count": 2
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037566065",
+    "handle": "office-supplies-desk-essentials-staplers-and-punches",
+    "title": "Staplers & Punches",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037598833",
+    "handle": "office-supplies-desk-essentials-desk-supplies",
+    "title": "Desk Supplies",
+    "productsCount": {
+      "count": 2
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037631601",
+    "handle": "office-supplies-filing-and-organization",
+    "title": "Filing & Organization",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037664369",
+    "handle": "office-supplies-filing-and-organization-labels-and-tags",
+    "title": "Labels & Tags",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037697137",
+    "handle": "office-supplies-filing-and-organization-files-and-folders",
+    "title": "Files & Folders",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037729905",
+    "handle": "office-supplies-writing-and-stationery",
+    "title": "Writing & Stationery",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037762673",
+    "handle": "office-supplies-paper-and-notebooks",
+    "title": "Paper & Notebooks",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037795441",
+    "handle": "pet",
+    "title": "Pet",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037828209",
+    "handle": "pet-other-pets",
+    "title": "Other Pets",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037860977",
+    "handle": "pet-other-pets-small-animals",
+    "title": "Small Animals",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037893745",
+    "handle": "pet-other-pets-fish",
+    "title": "Fish",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037926513",
+    "handle": "pet-other-pets-birds",
+    "title": "Birds",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037959281",
+    "handle": "pet-cats",
+    "title": "Cats",
+    "productsCount": {
+      "count": 2
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513037992049",
+    "handle": "pet-dogs",
+    "title": "Dogs",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038024817",
+    "handle": "home",
+    "title": "Home",
+    "productsCount": {
+      "count": 15
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038057585",
+    "handle": "home-home-fragrance",
+    "title": "Home Fragrance",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038090353",
+    "handle": "home-home-fragrance-air-fresheners",
+    "title": "Air Fresheners",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038123121",
+    "handle": "home-bathroom-essentials",
+    "title": "Bathroom Essentials",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038155889",
+    "handle": "home-disposables",
+    "title": "Disposables",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038188657",
+    "handle": "home-disposables-disposable-tableware",
+    "title": "Disposable Tableware",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038221425",
+    "handle": "home-food-storage-and-wraps",
+    "title": "Food Storage & Wraps",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038254193",
+    "handle": "home-food-storage-and-wraps-cling-film",
+    "title": "Cling Film",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038286961",
+    "handle": "home-food-storage-and-wraps-foil",
+    "title": "Foil",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038319729",
+    "handle": "home-food-storage-and-wraps-containers",
+    "title": "Containers",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038352497",
+    "handle": "home-kitchen-and-cookware",
+    "title": "Kitchen & Cookware",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038385265",
+    "handle": "home-kitchen-and-cookware-tools-and-utensils",
+    "title": "Tools & Utensils",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038418033",
+    "handle": "home-kitchen-and-cookware-kitchen-essentials",
+    "title": "Kitchen Essentials",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038450801",
+    "handle": "home-kitchen-and-cookware-cookware",
+    "title": "Cookware",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038483569",
+    "handle": "home-storage-and-organization",
+    "title": "Storage & Organization",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038516337",
+    "handle": "home-storage-and-organization-plasticware",
+    "title": "Plasticware",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038549105",
+    "handle": "home-paper-and-household-essentials",
+    "title": "Paper & Household Essentials",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038581873",
+    "handle": "home-cleaning-tools-and-pest-control",
+    "title": "Cleaning Tools & Pest Control",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038614641",
+    "handle": "home-cleaning-and-laundry",
+    "title": "Cleaning & Laundry",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038647409",
+    "handle": "home-cleaning-and-laundry-dishwashing",
+    "title": "Dishwashing",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038680177",
+    "handle": "home-cleaning-and-laundry-laundry",
+    "title": "Laundry",
+    "productsCount": {
+      "count": 2
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038712945",
+    "handle": "home-cleaning-and-laundry-household-cleaning",
+    "title": "Household Cleaning",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038745713",
+    "handle": "bath-and-body",
+    "title": "Bath & Body",
+    "productsCount": {
+      "count": 24
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038778481",
+    "handle": "bath-and-body-sexual-wellness",
+    "title": "Sexual Wellness",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038811249",
+    "handle": "bath-and-body-mens-grooming-and-shaving",
+    "title": "Men’s Grooming & Shaving",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038844017",
+    "handle": "bath-and-body-mens-grooming-and-shaving-shaving-and-hair-removal",
+    "title": "Shaving & Hair Removal",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038876785",
+    "handle": "bath-and-body-personal-hygiene",
+    "title": "Personal Hygiene",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038909553",
+    "handle": "bath-and-body-personal-hygiene-everyday-hygiene",
+    "title": "Everyday Hygiene",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038942321",
+    "handle": "bath-and-body-personal-hygiene-feminine-hygiene",
+    "title": "Feminine Hygiene",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513038975089",
+    "handle": "bath-and-body-personal-hygiene-oral-care",
+    "title": "Oral Care",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039007857",
+    "handle": "bath-and-body-fragrances-and-deodorants",
+    "title": "Fragrances & Deodorants",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039040625",
+    "handle": "bath-and-body-makeup-and-cosmetics",
+    "title": "Makeup & Cosmetics",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039073393",
+    "handle": "bath-and-body-hair-care",
+    "title": "Hair Care",
+    "productsCount": {
+      "count": 6
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039106161",
+    "handle": "bath-and-body-skincare-and-face-care",
+    "title": "Skincare & Face Care",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039138929",
+    "handle": "bath-and-body-bath-and-body-care",
+    "title": "Bath & Body Care",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039171697",
+    "handle": "bath-and-body-bath-and-body-care-hand-and-foot-care",
+    "title": "Hand & Foot Care",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039204465",
+    "handle": "bath-and-body-bath-and-body-care-body-care",
+    "title": "Body Care",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039237233",
+    "handle": "bath-and-body-bath-and-body-care-bath-and-shower",
+    "title": "Bath & Shower",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039270001",
+    "handle": "gifting",
+    "title": "Gifting",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039302769",
+    "handle": "gifting-balloons-and-decorations",
+    "title": "Balloons & Decorations",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039335537",
+    "handle": "gifting-gift-cards-and-personalized-gifts",
+    "title": "Gift Cards & Personalized Gifts",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039368305",
+    "handle": "gifting-fragrances-and-candles",
+    "title": "Fragrances & Candles",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039401073",
+    "handle": "gifting-soft-toys-and-gifts",
+    "title": "Soft Toys & Gifts",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039433841",
+    "handle": "gifting-hampers-and-gift-sets",
+    "title": "Hampers & Gift Sets",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039466609",
+    "handle": "gifting-chocolates-and-treats",
+    "title": "Chocolates & Treats",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039499377",
+    "handle": "gifting-chocolates-and-treats-confectionery",
+    "title": "Confectionery",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039532145",
+    "handle": "gifting-chocolates-and-treats-cakes",
+    "title": "Cakes",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039564913",
+    "handle": "gifting-chocolates-and-treats-chocolates",
+    "title": "Chocolates",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039597681",
+    "handle": "gifting-flowers-and-bouquets",
+    "title": "Flowers & Bouquets",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039630449",
+    "handle": "baby-products",
+    "title": "Baby Products",
+    "productsCount": {
+      "count": 52
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039663217",
+    "handle": "baby-products-maternity-and-postpartum",
+    "title": "Maternity & Postpartum",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039695985",
+    "handle": "baby-products-baby-toys",
+    "title": "Baby Toys",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039728753",
+    "handle": "baby-products-baby-gear-and-travel",
+    "title": "Baby Gear & Travel",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039761521",
+    "handle": "baby-products-nursery-and-bedding",
+    "title": "Nursery & Bedding",
+    "productsCount": {
+      "count": 5
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039794289",
+    "handle": "baby-products-health-and-safety",
+    "title": "Health & Safety",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039827057",
+    "handle": "baby-products-bath-skincare-and-grooming",
+    "title": "Bath, Skincare & Grooming",
+    "productsCount": {
+      "count": 4
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039859825",
+    "handle": "baby-products-baby-food-and-formula",
+    "title": "Baby Food & Formula",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039892593",
+    "handle": "baby-products-feeding-and-nursing",
+    "title": "Feeding & Nursing",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039925361",
+    "handle": "baby-products-feeding-and-nursing-pacifiers-and-teethers",
+    "title": "Pacifiers & Teethers",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513039958129",
+    "handle": "baby-products-feeding-and-nursing-breastfeeding-and-nursing",
+    "title": "Breastfeeding & Nursing",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040023665",
+    "handle": "baby-products-feeding-and-nursing-bottles-and-accessories",
+    "title": "Bottles & Accessories",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040056433",
+    "handle": "baby-products-diapers-and-wipes",
+    "title": "Diapers & Wipes",
+    "productsCount": {
+      "count": 37
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040089201",
+    "handle": "grocery",
+    "title": "Grocery",
+    "productsCount": {
+      "count": 17
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040121969",
+    "handle": "grocery-baby-food",
+    "title": "Baby Food",
+    "productsCount": {
+      "count": 2
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040154737",
+    "handle": "grocery-frozen-foods",
+    "title": "Frozen Foods",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040187505",
+    "handle": "grocery-fresh-produce",
+    "title": "Fresh Produce",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040220273",
+    "handle": "grocery-dairy-and-eggs",
+    "title": "Dairy & Eggs",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040253041",
+    "handle": "grocery-healthy-and-specialty-foods",
+    "title": "Healthy & Specialty Foods",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040285809",
+    "handle": "grocery-healthy-and-specialty-foods-international-and-specialty",
+    "title": "International & Specialty",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040318577",
+    "handle": "grocery-healthy-and-specialty-foods-health-focused",
+    "title": "Health-Focused",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040351345",
+    "handle": "grocery-healthy-and-specialty-foods-organic",
+    "title": "Organic",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040384113",
+    "handle": "grocery-beverages",
+    "title": "Beverages",
+    "productsCount": {
+      "count": 4
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040416881",
+    "handle": "grocery-beverages-other-beverages",
+    "title": "Other Beverages",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040449649",
+    "handle": "grocery-beverages-tea-and-coffee",
+    "title": "Tea & Coffee",
+    "productsCount": {
+      "count": 4
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040482417",
+    "handle": "grocery-beverages-energy-and-sports-drinks",
+    "title": "Energy & Sports Drinks",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040515185",
+    "handle": "grocery-beverages-soft-drinks",
+    "title": "Soft Drinks",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040547953",
+    "handle": "grocery-beverages-juices",
+    "title": "Juices",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040580721",
+    "handle": "grocery-beverages-water",
+    "title": "Water",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040613489",
+    "handle": "grocery-canned-packaged-and-ready-foods",
+    "title": "Canned, Packaged & Ready Foods",
+    "productsCount": {
+      "count": 2
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040646257",
+    "handle": "grocery-canned-packaged-and-ready-foods-sauces-condiments-and-dressings",
+    "title": "Sauces, Condiments & Dressings",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040679025",
+    "handle": "grocery-canned-packaged-and-ready-foods-instant-and-ready-to-eat",
+    "title": "Instant & Ready-to-Eat",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040711793",
+    "handle": "grocery-canned-packaged-and-ready-foods-canned-and-jarred-foods",
+    "title": "Canned & Jarred Foods",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040744561",
+    "handle": "grocery-snacks-and-confectionery",
+    "title": "Snacks & Confectionery",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040777329",
+    "handle": "grocery-snacks-and-confectionery-nuts-seeds-and-dried-fruits",
+    "title": "Nuts, Seeds & Dried Fruits",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040810097",
+    "handle": "grocery-snacks-and-confectionery-chocolates-and-confectionery",
+    "title": "Chocolates & Confectionery",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040842865",
+    "handle": "grocery-snacks-and-confectionery-biscuits-and-crackers",
+    "title": "Biscuits & Crackers",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040875633",
+    "handle": "grocery-snacks-and-confectionery-chips-and-snacks",
+    "title": "Chips & Snacks",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040908401",
+    "handle": "grocery-breakfast-and-spreads",
+    "title": "Breakfast & Spreads",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040941169",
+    "handle": "grocery-breakfast-and-spreads-spreads",
+    "title": "Spreads",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513040973937",
+    "handle": "grocery-breakfast-and-spreads-honey",
+    "title": "Honey",
+    "productsCount": {
+      "count": 2
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041006705",
+    "handle": "grocery-breakfast-and-spreads-jams",
+    "title": "Jams",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041039473",
+    "handle": "grocery-breakfast-and-spreads-breakfast-foods",
+    "title": "Breakfast Foods",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041072241",
+    "handle": "grocery-breakfast-and-spreads-cereals",
+    "title": "Cereals",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041105009",
+    "handle": "grocery-pantry-staples",
+    "title": "Pantry Staples",
+    "productsCount": {
+      "count": 3
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041137777",
+    "handle": "grocery-pantry-staples-salt-spices-and-seasonings",
+    "title": "Salt, Spices & Seasonings",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041170545",
+    "handle": "grocery-pantry-staples-sugar-and-sweeteners",
+    "title": "Sugar & Sweeteners",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041203313",
+    "handle": "grocery-pantry-staples-oils-and-ghee",
+    "title": "Oils & Ghee",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041236081",
+    "handle": "grocery-pantry-staples-pulses-beans-and-lentils",
+    "title": "Pulses, Beans & Lentils",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041268849",
+    "handle": "grocery-pantry-staples-flour",
+    "title": "Flour",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041301617",
+    "handle": "grocery-pantry-staples-noodles",
+    "title": "Noodles",
+    "productsCount": {
+      "count": 1
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041334385",
+    "handle": "grocery-pantry-staples-pasta",
+    "title": "Pasta",
+    "productsCount": {
+      "count": 0
+    }
+  },
+  {
+    "id": "gid://shopify/Collection/513041367153",
+    "handle": "grocery-pantry-staples-rice",
+    "title": "Rice",
+    "productsCount": {
+      "count": 0
+    }
+  }
+]
