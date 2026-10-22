@@ -27,7 +27,9 @@
     },
     "bottom_nav": {
       "type": "ep-bottom-nav",
-      "settings": {},
+      "settings": {
+        "categories_link": "/#shop-by-category"
+      },
       "blocks": {
         "home": {
           "type": "item",
@@ -42,7 +44,7 @@
           "settings": {
             "icon": "grid",
             "label": "Categories",
-            "link": "/collections"
+            "link": "/#shop-by-category"
           }
         },
         "cart": {

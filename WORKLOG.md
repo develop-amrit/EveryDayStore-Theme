@@ -245,3 +245,7 @@ Homepage policy row comes only from nonempty shop.policies. Added footer Help me
 ## Final Fix 7: Keep the full catalogue visible in category grids
 
 Removed image and maximum-tile filtering. Every group child and leaf link now renders regardless of product count; parent department remains linked by its heading. Neutral SVG placeholder for missing images, collection image wins when present, checkbox controls empty-collection Coming soon labels. Existing override block now works by URL without requiring a heading. Added shop-by-category anchor. Header/drawer Admin links unchanged.
+
+## Final Fix 8: Link Categories to the homepage category grid
+
+Categories uses a section destination setting default /#shop-by-category. On home, preserves keyboard focus on the grid heading and scrolls with reduced-motion handling. On other pages the normal link leads to the homepage anchor. Home, Deals and Cart are unchanged.
