@@ -13,7 +13,8 @@
         "badge": "Order today, delivered tomorrow",
         "background": "#FEFAE0",
         "text_color": "#283618",
-        "collection": "baby-products"
+        "collection": "baby-products",
+        "exclude_tags": "homepage-hide"
       }
     },
     "grocery": {
@@ -24,7 +25,8 @@
         "collection": "grocery",
         "limit": 8,
         "card_variant": "compact",
-        "show_button": false
+        "show_button": false,
+        "exclude_tags": "homepage-hide"
       }
     },
     "seasonal": {
@@ -33,7 +35,8 @@
         "title": "Get festive-ready",
         "subtitle": "Gifts, treats and home touches for Diwali and the season ahead",
         "background": "#FFFFFF",
-        "anchor": "festive"
+        "anchor": "festive",
+        "exclude_tags": "homepage-hide"
       },
       "blocks": {
         "tile0": {
@@ -112,7 +115,8 @@
         "collection": "baby-products",
         "limit": 4,
         "card_variant": "compact",
-        "show_button": false
+        "show_button": false,
+        "exclude_tags": "homepage-hide"
       }
     },
     "campaign": {
@@ -121,7 +125,8 @@
         "title": "The Baby Basket",
         "subtitle": "Everything for the little one, in one order",
         "background": "#FFFFFF",
-        "powered_label": ""
+        "powered_label": "",
+        "exclude_tags": "homepage-hide"
       },
       "blocks": {
         "offer0": {
@@ -165,14 +170,16 @@
         "collection": "all",
         "discounted_only": true,
         "see_all_link": "/collections/all?view=ep-deals",
-        "subtitle": "Real savings on everyday favourites"
+        "subtitle": "Real savings on everyday favourites",
+        "exclude_tags": "homepage-hide"
       }
     },
     "promos": {
       "type": "ep-banner-carousel",
       "settings": {
         "accessible_title": "Featured collections",
-        "autoplay": true
+        "autoplay": true,
+        "exclude_tags": "homepage-hide"
       },
       "blocks": {
         "slide0": {
@@ -350,7 +357,8 @@
     "stores": {
       "type": "ep-store-grid",
       "settings": {
-        "title": "Shop by store"
+        "title": "Shop by store",
+        "exclude_tags": "homepage-hide"
       },
       "blocks": {
         "store0": {
@@ -440,7 +448,8 @@
     "brands1": {
       "type": "ep-brand-tiles",
       "settings": {
-        "accessible_title": "Featured brands"
+        "accessible_title": "Featured brands",
+        "exclude_tags": "homepage-hide"
       },
       "blocks": {
         "brand0": {
@@ -547,7 +556,8 @@
         "rows": 2,
         "columns_mobile": "3",
         "card_variant": "grid",
-        "show_button": true
+        "show_button": true,
+        "exclude_tags": "homepage-hide"
       }
     },
     "care": {
@@ -559,7 +569,8 @@
         "rows": 2,
         "columns_mobile": "3",
         "card_variant": "grid",
-        "show_button": true
+        "show_button": true,
+        "exclude_tags": "homepage-hide"
       }
     },
     "gifts": {
@@ -570,7 +581,8 @@
         "collection": "gifting",
         "limit": 10,
         "card_variant": "compact",
-        "show_button": false
+        "show_button": false,
+        "exclude_tags": "homepage-hide"
       }
     },
     "pets": {
@@ -582,7 +594,8 @@
         "rows": 2,
         "columns_mobile": "3",
         "card_variant": "grid",
-        "show_button": true
+        "show_button": true,
+        "exclude_tags": "homepage-hide"
       }
     },
     "office": {
@@ -594,7 +607,8 @@
         "rows": 2,
         "columns_mobile": "3",
         "card_variant": "grid",
-        "show_button": true
+        "show_button": true,
+        "exclude_tags": "homepage-hide"
       }
     },
     "trust": {
@@ -748,7 +762,8 @@
         "title": "Celebrate National Day",
         "subtitle": "Snacks, sweets and home essentials for the long weekend",
         "background": "#FFFFFF",
-        "anchor": "national-day"
+        "anchor": "national-day",
+        "exclude_tags": "homepage-hide"
       },
       "blocks": {
         "tile0": {

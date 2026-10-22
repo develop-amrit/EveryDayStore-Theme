@@ -23,3 +23,6 @@ Uploaded images win over real product auto images. Empty collections keep neutra
 | Promo bubble | Product/campaign image, 1:1 | 200×200 |
 
 Ferrero Rocher was skipped because that exact vendor is absent; the catalogue uses Ferrero. No substitute branded tile was invented. Standard review metafields remain optional for stars.
+
+## Homepage merchandising
+Tag intimate and sexual-wellness products `homepage-hide` in Admin, or reorder the Care/Bath & Body collection so these products are not first. Homepage rails, grids and auto-image collections skip the configured tags; collection/search pages keep all products. The theme does not tag catalogue products automatically.

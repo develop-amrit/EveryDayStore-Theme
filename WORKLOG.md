@@ -325,3 +325,7 @@ Added card/tile press states, stepper expansion and directional quantity changes
 ## Polish 8: Open area sheet without the phone keyboard
 
 Title receives initial focus; input focuses on tap. Selection tick displays for 250ms after successful save before closing. Search-filter height transitions for 200ms, rounded brand focus ring, and reverse slide/fade on close, with Esc/backdrop and focus trap preserved. Reduced motion skips timed movement. Storage/cart-attribute save flow unchanged.
+
+## Polish 9: Add merchant-controlled homepage product exclusions
+
+Every rail/grid/auto-image section gets Exclude products tagged (default homepage-hide). Homepage product loops scan up to 50 real candidates to fill requested count after exclusions; collections/search remain unchanged. Uploaded images remain explicit merchant overrides. No product tags or catalogue data were mutated. Merchant tagging task recorded.
