@@ -309,3 +309,7 @@ Selected the owner-offered static Baby Products option instead of a rotating ima
 ## Polish 4: Promote Festive in the raised nav bubble
 
 Bubble uses Chocolates & Treats, Festive label and #festive anchor; Deals remains once as a tab. Positioned above the inline-end edge with reserved bar space; label hidden below 380px but accessible name retained. IntersectionObserver switches Home/Categories active state when category grid enters/leaves the viewport.
+
+## Polish 5: Keep Baby Basket images and prices compact
+
+Auto images use the real first product-with-image fallback (shared implementation in Polish 6/9); designed parent-icon empty state replaces outlines. Price labels stay on a single 12px line; offer titles reduce first. Image wells join the shared loading skeleton.
