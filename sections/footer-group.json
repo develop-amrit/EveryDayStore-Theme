@@ -53,11 +53,19 @@
             "label": "Cart",
             "link": "/cart"
           }
+        },
+        "deals": {
+          "type": "item",
+          "settings": {
+            "icon": "tag",
+            "label": "Deals"
+          }
         }
       },
       "block_order": [
         "home",
         "categories",
+        "deals",
         "cart"
       ]
     }

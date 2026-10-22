@@ -319,3 +319,5 @@ ep-header{display:block}.ep-header,.ep-bottom-nav{background:rgb(var(--color-bac
 @media(max-width:989px){.ep-desktop-menu{display:none}}
 
 .ep-image-link{position:absolute;inset:0}.ep-image-well{flex-shrink:0}.ep-header .qc-search:has(input[type=search]:placeholder-shown):not(:focus-within) .ep-search-placeholder{visibility:visible}.ep-header .qc-search:has(input[type=search]:not(:placeholder-shown)) .ep-search-placeholder{visibility:hidden}.ep-controls:has(.ep-stepper){min-width:102px;max-width:none}.ep-controls .ep-stepper button{min-width:44px}.ep-controls .ep-stepper output{min-width:14px}.ep-controls[data-style=add]{max-width:calc(100% - 8px)}
+
+@media(max-width:989px){.ep-page{padding-bottom:var(--ep-nav-height,calc(64px + env(safe-area-inset-bottom)))!important}}.ep-seasonal{padding-block:calc(16px + var(--ep-top,0px)) calc(16px + var(--ep-bottom,0px))}.ep-seasonal .ep-panel{background:transparent}.ep-rail>.ep-card{align-self:stretch}

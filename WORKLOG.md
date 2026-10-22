@@ -108,3 +108,7 @@ First preview has no page overflow at 360/375/390/414/430/768/1280; sticky searc
 ## Performance optimisation
 
 First mobile Lighthouse: 54 performance, LCP 7.03s; after image/accessibility fixes: 69 performance, LCP 4.35s, CLS 0, accessibility 100. Remaining large costs include Shopify perf-kit, web pixels and preview redirects. Consolidated existing three custom CSS files plus new design CSS into ep-mobile.css to reduce blocking requests while preserving cascade; original CSS files remain. Editable design source is tools/ep-mobile-source.css. Moved required content_for_header after CSS discovery (still in head, unmodified), and stopped loading unused Dawn cart-drawer styles because the actual drawer is QC. Lowered campaign collection-image resolutions. Search quotes now use typographic quotes to avoid visible HTML entities.
+
+## Final integration refinements
+
+Cart subscriptions now reconcile external Dawn cart events through one shared QC refresh. Bottom padding follows the measured nav height, including optional editor padding and safe area. The unconfigured Deals navigation block is available in the editor but hidden until a real link is selected. Seasonal padding and background controls now affect the whole panel.
