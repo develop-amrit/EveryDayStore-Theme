@@ -317,3 +317,7 @@ Auto images use the real first product-with-image fallback (shared implementatio
 ## Polish 6: Add shared image skeleton and fade-in
 
 Shared tiny image initializer checks complete, handles load/error, and watches AJAX-inserted images. Loading wells shimmer then loaded images fade in 200ms; aspect ratios remain fixed. No-JS images have no hiding classes and display immediately. Empty auto images render the designed Soon state, never an outline placeholder. Shimmer duration follows the explicit 1.2s requirement; movement/fades are disabled for reduced motion.
+
+## Polish 7: Polish press, cart and reveal feedback
+
+Added card/tile press states, stepper expansion and directional quantity changes, single count pops, saved-heart pop, sticky shadow fade, once-only section reveals excluding first two sections. Back-to-top now moves focus after smooth scroll reaches the top. Motion styles use ep-ease and requested durations (explicit press exception 120ms); all animations/transitions disabled under reduced motion.
