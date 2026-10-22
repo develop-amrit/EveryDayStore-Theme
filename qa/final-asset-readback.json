@@ -1,0 +1,48 @@
+{
+  "work": {
+    "id": "gid://shopify/OnlineStoreTheme/189582049393",
+    "name": "everyday-homepage-review",
+    "role": "UNPUBLISHED",
+    "files": {
+      "nodes": [
+        {
+          "filename": "assets/ep-mobile.css",
+          "checksumMd5": "374f28cfbc9ba71838daaff3fd48037d"
+        },
+        {
+          "filename": "assets/ep-mobile.js",
+          "checksumMd5": "9deebb5c8bcb426d6ba2a68735c42f5c"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "ImFzc2V0c1wvZXAtbW9iaWxlLmpzIg=="
+      }
+    }
+  },
+  "live": {
+    "id": "gid://shopify/OnlineStoreTheme/189489545329",
+    "name": "codex-edits",
+    "role": "MAIN",
+    "files": {
+      "nodes": [
+        {
+          "filename": "layout/theme.liquid",
+          "checksumMd5": "f017be73fb4581400bc5f3ff3c67a320"
+        },
+        {
+          "filename": "sections/qc-header.liquid",
+          "checksumMd5": "c73a3de2ee01add99a07fe9227a97044"
+        },
+        {
+          "filename": "templates/index.json",
+          "checksumMd5": "5b924261c44ca4125e262d9b00e6ceab"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "InRlbXBsYXRlc1wvaW5kZXguanNvbiI="
+      }
+    }
+  }
+}

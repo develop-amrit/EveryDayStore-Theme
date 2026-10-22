@@ -1,0 +1,13 @@
+{
+  "verified_on": "2026-10-22",
+  "admin_active_products": 106,
+  "collections": 133,
+  "pagination_complete": true,
+  "standard_review_rating_found": 0,
+  "standard_review_count_found": 0,
+  "dedicated_collection_images_found": 0,
+  "storefront_products_checked": 106,
+  "multi_variant_storefront_products_found": 0,
+  "installed_apps_enumerated": false,
+  "note": "Collection featured_image may fall back to real product imagery. No installed-review-app claim is made; standard reviews metafields and active template app blocks were audited."
+}

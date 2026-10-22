@@ -114,4 +114,6 @@ See docs/ep-remote-audit.json for MCP results. Available menus: main-menu (Home/
 
 ## Reuse decision
 
+Final MCP pagination covered all 106 active products and 133 collections: no standard rating/count values and no dedicated collection image uploads. All 106 public storefront products also have one variant. See docs/ep-audit-coverage.json. Installed apps were not enumerated; absent rating data does not prove an app is uninstalled. Live/local baseline index semantic difference was only Shopify's removal of empty footer blocks/block_order; final live read-back is semantically identical to the original snapshot. Final working index, both groups and settings schema match local JSON semantically.
+
 Reuse logo/icons, live menu tree, area picker, predictive search, wishlist, privacy, custom cart and retained trust/FAQ/footer content. New ep-* snippets/sections share tokens and small vanilla custom elements. No section file deletion. Existing collection handles are transferred only through JSON editor settings.

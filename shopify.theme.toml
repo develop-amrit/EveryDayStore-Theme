@@ -13,3 +13,7 @@ theme = "189518545009"
 [environments.codex-edits2]
 store = "3djevx-mu.myshopify.com"
 theme = "189518545009"
+
+[environments.homepage-review]
+store = "3djevx-mu.myshopify.com"
+theme = "189582049393"

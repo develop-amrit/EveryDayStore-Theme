@@ -1,0 +1,19 @@
+{
+  "store": "3djevx-mu.myshopify.com",
+  "verified_on": "2026-10-22",
+  "work_theme_id": "189582049393",
+  "work_theme_name": "everyday-homepage-review",
+  "role": "UNPUBLISHED",
+  "live_theme_id": "189489545329",
+  "code_readback_files": 28,
+  "code_readback_passed": true,
+  "theme_check_errors": 0,
+  "theme_check_warnings": 13,
+  "performance_gate_passed": false,
+  "lcp_gate_passed": false,
+  "interactive_theme_editor_verified": false,
+  "published": false,
+  "worklog": "WORKLOG.md",
+  "merchant_todo": "MERCHANT_TODO.md",
+  "next_work": "Interactive editor review and performance/LCP remediation; merchant images/menu/offers configuration. Use the existing work theme only."
+}

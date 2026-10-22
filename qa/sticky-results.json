@@ -1,0 +1,47 @@
+[
+  {
+    "scroll": 0,
+    "shadow": false,
+    "searchTop": 159,
+    "sentinel": {
+      "x": 0,
+      "y": 151,
+      "w": 1,
+      "h": 1,
+      "display": "block",
+      "top": "119px",
+      "position": "absolute"
+    },
+    "parent": "shopify-section shopify-section-group-header-group ep-header-section"
+  },
+  {
+    "scroll": 80,
+    "shadow": false,
+    "searchTop": 79,
+    "sentinel": {
+      "x": 0,
+      "y": 71,
+      "w": 1,
+      "h": 1,
+      "display": "block",
+      "top": "119px",
+      "position": "absolute"
+    },
+    "parent": "shopify-section shopify-section-group-header-group ep-header-section"
+  },
+  {
+    "scroll": 220,
+    "shadow": true,
+    "searchTop": 6,
+    "sentinel": {
+      "x": 0,
+      "y": -2,
+      "w": 1,
+      "h": 1,
+      "display": "block",
+      "top": "119px",
+      "position": "absolute"
+    },
+    "parent": "shopify-section shopify-section-group-header-group ep-header-section"
+  }
+]

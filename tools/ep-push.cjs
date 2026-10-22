@@ -6,4 +6,5 @@ const list=JSON.parse(cp.execSync('shopify theme list --store 3djevx-mu.myshopif
 const target=(Array.isArray(list)?list:list.themes).find(t=>String(t.id)===match[1]);
 if(target?.role!=='unpublished')throw Error('Target is not verified unpublished');
 console.log('Verified WORK_THEME_ID '+match[1]+' is unpublished; live ID excluded.');
-cp.execSync('shopify theme push --store 3djevx-mu.myshopify.com --theme '+match[1]+' --nodelete --json --no-input',{stdio:'inherit'});
+const command=process.argv[2]==='dev'?'shopify theme dev --store 3djevx-mu.myshopify.com --theme '+match[1]+' --nodelete --no-input --live-reload off --port 9293':'shopify theme push --store 3djevx-mu.myshopify.com --theme '+match[1]+' --nodelete --json --no-input';
+cp.execSync(command,{stdio:'inherit'});

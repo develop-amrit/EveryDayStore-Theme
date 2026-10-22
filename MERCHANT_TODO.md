@@ -2,6 +2,8 @@
 
 Review unpublished theme 189582049393 in Admin → Online Store → Themes. Publish manually only after review.
 
+Outstanding release gates: Lighthouse performance/LCP targets are not met, and interactive Admin editor testing remains unverified because the connected browser runtime failed. See WORKLOG.md before publishing.
+
 - Upload hero product artwork (transparent PNG optional), seasonal six tile images/artwork, Shop by store icons, campaign images and brand ads. Campaign and both brand rows are disabled; image-less seasonal/store sections hide on storefront.
 - Configure optional bottom-nav promo bubble image/link/label; upload tab icons if desired (existing outline icons are supplied). Add a Deals navigation item only after selecting a verified offers collection.
 - Choose an actual sale/offers collection for Best deals. Recommend an automated collection whose compare-at price exceeds price, with discounts checked against Shopify variant data. No collection was invented.
@@ -86,7 +88,7 @@ Create Help menu: Delivery areas → existing shipping page; Order cut-off → a
 
 ## Reviews and copy
 
-No standard reviews.rating or reviews.rating_count data found in audited active products. Rated cards hide stars unless both values exist. If stars are wanted, configure a supported review integration that writes standard reviews.* metafields, such as Judge.me, and verify its data.
+No standard reviews.rating or reviews.rating_count data found in audited active products. Rated cards hide stars unless both values exist. If stars are wanted, configure a supported review integration that writes standard reviews.* metafields and verify its data.
 
 Original trust/FAQ claims are preserved; owner should approve quality/returns wording and final shipping/payment policies. The custom checkout/delivery backend limitations documented in docs/ORDERING_POLISH.md still apply. No UI change enforces shipping eligibility.
 

@@ -23,7 +23,7 @@ Created the working theme using `shopify theme push --store 3djevx-mu.myshopify.
 
 ## Validation
 
-In progress. Theme editor, browser, cart and Lighthouse results will be recorded after implementation. Do not treat this draft as ready until checks are complete.
+Implementation and browser verification are recorded below. Official Theme Check passes. Performance/LCP and interactive Admin editor gates remain open; this is a review draft, not a publication-ready sign-off.
 
 ## Phase 0 — Audit
 
@@ -153,3 +153,13 @@ See MERCHANT_TODO.md for images, seasonal/store tile artwork, dedicated departme
 ## Final spacing correction
 
 Homepage uses a single 28px flex gap between visible section wrappers; empty wrappers are removed from layout. This replaces doubled child margins. Delivery selector remains a 44px target. Safe Shopify initialisation guard handles scripts before platform global creation. CSS source and generated bundle both retained.
+
+## Final handoff verification
+
+CLI local preview ran with the guarded existing work-theme ID on port 9293, returned HTTP 200 with the new header/cards, and was stopped. No watcher remains intentionally active. Added homepage-review CLI environment alias. Complete catalogue audit: 106 active/public products and 133 collections; no standard reviews data, no dedicated collection image uploads, no multi-variant storefront fixture.
+
+Dawn hides empty divs by default; the header sentinel explicitly overrides that rule. Browser assertions: shadow off at scroll 0 and 80, on at scroll 220; pinned search remains 6px from top. Final 28 code-file hashes all match remote. Working theme remains UNPUBLISHED; live remains MAIN. Final official Theme Check: 0 errors, 13 previously justified warnings. Lighthouse report is the isolated measurement before the final sentinel-only CSS offset/display fix; performance/LCP gates remain unmet.
+
+Build CSS with `node tools/ep-bundle.cjs` after editing tools/ep-mobile-source.css or preserved legacy CSS. Deploy with `node tools/ep-push.cjs`; it runs regression checks, rereads WORK_THEME_ID and verifies the current role. `node tools/ep-push.cjs dev` uses that same guarded theme for local preview. Never use a live target or publish.
+
+Draft is ready for owner design review in Admin → Online Store → Themes → everyday-homepage-review. Release gates remain explicitly open in docs/EP_HOMEPAGE_STATE.json.
