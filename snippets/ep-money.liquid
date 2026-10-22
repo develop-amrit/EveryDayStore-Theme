@@ -1,0 +1,4 @@
+{% doc %}Shopify numeric money format with the active currency code; only whole-amount decimals are removed.
+@param {number} value - Price in cents.
+{% enddoc %}
+{%- assign amount = value | money_without_currency -%}{%- assign remainder = value | modulo: 100 -%}{%- if remainder == 0 -%}{%- assign amount = amount | remove: '.00' | remove: ',00' -%}{%- endif -%}{{- localization.country.currency.iso_code | default: shop.currency -}} {{ amount }}

@@ -1,5 +1,8 @@
 # Merchant setup — theme 189582049393
 
+1. **Currency formatting:** Admin → Settings → Store details → Store defaults → Currency display → Change currency formatting: set HTML with currency, HTML without currency, Email with currency and Email without currency to `AED {{amount}}`. Keep Theme settings → Show currency codes off.
+
+
 Review only everyday-homepage-review. No new theme or publication.
 
 ## Images still required
