@@ -313,3 +313,7 @@ Bubble uses Chocolates & Treats, Festive label and #festive anchor; Deals remain
 ## Polish 5: Keep Baby Basket images and prices compact
 
 Auto images use the real first product-with-image fallback (shared implementation in Polish 6/9); designed parent-icon empty state replaces outlines. Price labels stay on a single 12px line; offer titles reduce first. Image wells join the shared loading skeleton.
+
+## Polish 6: Add shared image skeleton and fade-in
+
+Shared tiny image initializer checks complete, handles load/error, and watches AJAX-inserted images. Loading wells shimmer then loaded images fade in 200ms; aspect ratios remain fixed. No-JS images have no hiding classes and display immediately. Empty auto images render the designed Soon state, never an outline placeholder. Shimmer duration follows the explicit 1.2s requirement; movement/fades are disabled for reduced motion.
