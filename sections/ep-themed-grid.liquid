@@ -1,4 +1,4 @@
-{% assign tile_count = 0 %}{% for block in section.blocks %}{% if block.type == 'tile' and block.settings.link != blank and block.settings.image != blank %}{% assign tile_count = tile_count | plus: 1 %}{% endif %}{% endfor %}{% if tile_count > 0 or request.design_mode %}<section class="ep-section ep-seasonal color-{{ section.settings.color_scheme }}" aria-labelledby="ep-heading-{{ section.id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px;--ep-panel-bg:{{ section.settings.background }};{% if section.settings.background_image %}background-image:url({{ section.settings.background_image | image_url: width: 1600 }}){% endif %}"><div class="ep-wrap"><div class="ep-panel">{% capture heading_id %}ep-heading-{{ section.id }}{% endcapture %}{% render 'ep-section-header', title: section.settings.title, subtitle: section.settings.subtitle, heading_id: heading_id %}{% if section.settings.artwork %}{{ section.settings.artwork | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '400, 750, 1200', sizes: '100vw', alt: '', class: 'ep-seasonal-art' }}{% endif %}<div class="ep-seasonal-tiles">{% for block in section.blocks %}{% if block.type == 'tile' %}{% if block.settings.image != blank and block.settings.link != blank or request.design_mode %}{% render 'ep-tile', title: block.settings.title, image: block.settings.image, link: block.settings.link, block: block %}{% endif %}{% endif %}{% endfor %}</div>{% for block in section.blocks %}{% if block.type == 'strip' and block.settings.link != blank %}<a class="ep-strip" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{% if block.settings.image %}{{ block.settings.image | image_url: width: 88 | image_tag: loading: 'lazy', widths: '44, 88', sizes: '44px', alt: '' }}{% endif %}<span><strong>{{ block.settings.title | escape }}</strong><small>{{ block.settings.subtitle | escape }}</small></span><i class="ep-arrow" aria-hidden="true">›</i></a>{% endif %}{% endfor %}</div></div></section>{% endif %}
+{% if section.blocks.size > 0 %}<section class="ep-section ep-seasonal color-{{ section.settings.color_scheme }}" aria-labelledby="ep-heading-{{ section.id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px;--ep-panel-bg:{{ section.settings.background }}"><div class="ep-wrap"><div class="ep-panel">{% capture heading_id %}ep-heading-{{ section.id }}{% endcapture %}{% render 'ep-section-header', title: section.settings.title, subtitle: section.settings.subtitle, heading_id: heading_id %}{% if section.settings.artwork %}{{ section.settings.artwork | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '400, 750, 1200', sizes: '100vw', alt: '', class: 'ep-seasonal-art' }}{% endif %}<div class="ep-seasonal-tiles">{% for block in section.blocks %}{% if block.type == 'tile' %}<a class="ep-seasonal-tile" href="{{ block.settings.link }}" {{ block.shopify_attributes }}><strong>{{ block.settings.title | escape }}</strong><span class="ep-auto-well">{% render 'ep-auto-image', image: block.settings.image, collection: block.settings.collection, title: block.settings.title %}</span>{% if block.settings.collection.all_products_count == 0 %}<small class="ep-coming-soon">{{ 'ep.coming_soon' | t }}</small>{% endif %}</a>{% endif %}{% endfor %}</div>{% for block in section.blocks %}{% if block.type == 'strip' %}<a class="ep-strip" href="{{ block.settings.link }}" {{ block.shopify_attributes }}><span class="ep-strip-art ep-auto-well">{% render 'ep-auto-image', image: block.settings.image, collection: block.settings.collection, title: block.settings.title %}</span><span><strong>{{ block.settings.title | escape }}</strong><small>{{ block.settings.subtitle | escape }}</small></span><i class="ep-arrow" aria-hidden="true">›</i></a>{% endif %}{% endfor %}</div></div></section>{% endif %}
 {% schema %}
 {
   "name": "t:ep.everyday_themed_grid",
@@ -76,6 +76,11 @@
           "type": "url",
           "id": "link",
           "label": "t:ep.link"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Auto image collection"
         }
       ]
     },
@@ -103,6 +108,11 @@
           "type": "text",
           "id": "subtitle",
           "label": "t:ep.subtitle"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Auto image collection"
         }
       ]
     }

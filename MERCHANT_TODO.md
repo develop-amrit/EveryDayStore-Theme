@@ -1,51 +1,25 @@
 # Merchant setup — theme 189582049393
 
-1. **Currency formatting:** Admin → Settings → Store details → Store defaults → Currency display → Change currency formatting: set HTML with currency, HTML without currency, Email with currency and Email without currency to `AED {{amount}}`. Keep Theme settings → Show currency codes off.
+1. **Currency formatting:** Admin → Settings → Store details → Store defaults → Currency display → Change currency formatting: set all four fields (HTML with currency, HTML without currency, Email with currency, Email without currency) to `AED {{amount}}`. Keep Show currency codes off. The homepage uses the active currency code with Shopify’s numeric money filter until these store formats are corrected.
 
+2. **Menus:** Admin → Content → Menus: move Baby Products and Gifting above Grocery in Shop/catalogue and Trending searches Categories menus. Create Help with Delivery areas, Order cut-off, FAQs (/#ep-home-faq), Returns and Contact (/pages/contact); create/publish delivery and cut-off content or select an existing real policy URL, then assign Footer → Help menu. Do not use missing /pages/* policy URLs.
+3. **Policies:** fill missing policies in Admin → Settings → Policies. Homepage displays only policies with content using their /policies/ URLs.
+4. **Social media:** add actual social URLs in Theme settings → Social media. The row hides while all are blank; WhatsApp also supplies the area-picker no-match contact link.
+5. **Pantry Staples:** replace the incorrect clothing collection image in Admin → Products → Collections, or add a Category grid image override targeting its collection URL. Every configured collection stays linked, including empty collections.
+6. **Seasonal change:** Get festive-ready is enabled for Diwali/the current season. Swap to the disabled Celebrate National Day section after mid-November, ahead of 2 December. This is a manual editor change, not an automatic scheduled publish.
 
-Review only everyday-homepage-review. No new theme or publication.
+## Optional replacement images — auto mode is active now
 
-## Images still required
+Uploaded images win over real product auto images. Empty collections keep neutral placeholders and Coming soon; no fake artwork or prices are used.
 
-- Seasonal grid: upload tile images and optional seasonal artwork/background. Image-less tiles stay hidden.
-- Campaign: upload offer-tile images and optional partner logo/heading artwork, then enable the section.
-- Brand tiles: upload portrait images, real links and alt text, then enable either row. Set the Ad label for sponsored placements.
-- Promo bubble: add image, link and optional label in Bottom navigation. It stays hidden without an image.
-- Shop by Store: upload store illustrations/icons; image-less store blocks remain hidden.
-- Category tiles: all seven groups now use child links from the existing catalogue menu and real collection featured_image. Upload collection images or section image overrides for empty child collections without a product-image fallback. Missing images no longer produce generic icons.
-- Hero artwork is optional; the existing copy is preserved without an image.
+| Placement | Brief | Size |
+|---|---|---|
+| Hero | Product cluster, transparent PNG | 800×800 |
+| Carousel | Lifestyle or product cluster, 4:3 | 1200×900 |
+| Seasonal tiles | Single product/small cluster, transparent PNG, 1:1 | 600×600 |
+| Campaign header | Product composition, 16:9 | 1200×675 |
+| Store tiles | Simple illustrated icon, transparent PNG, 1:1 | 300×300 |
+| Brand tiles | Product photo, 3:4; supplier permission needed for logos | 600×800 |
+| Promo bubble | Product/campaign image, 1:1 | 200×200 |
 
-## Help menu required
-
-No suitable Help menu exists. Create one and assign it to the existing footer Help block with these links:
-
-- Delivery areas → /pages/shipping-policy
-- Order cut-off → /pages/shipping-policy
-- FAQs → /#ep-home-faq
-- Returns → /pages/refund-policy
-- Contact → /pages/contact
-
-Confirm final policy/cut-off wording before publication. The unrelated main-menu was removed from Help. Shop continues to use catalogue.
-
-## Social links
-
-Configure Instagram, X/Twitter, Facebook, TikTok, LinkedIn and/or WhatsApp in Theme settings → Social media. No URLs were invented. Only configured networks render. Newsletter remains above link columns.
-
-## Deals — connected
-
-There is no sale/offers collection among the 133 audited collections. Owner approved the theme-only discounted view of the real All products collection: /collections/all?view=ep-deals. Bottom navigation and Best deals rail use the same destination. Only real available variants with compare-at price greater than price appear. No new collection is required.
-
-## Reviews and release checks
-
-No standard reviews.rating or reviews.rating_count data was found. Rated cards hide stars until a configured integration supplies genuine values.
-
-Performance/LCP and interactive Admin editor checks were outstanding at the previous handoff; see the latest QA results in WORKLOG.md. Existing sample catalogue and backend shipping/policy limitations remain in docs/ORDERING_POLISH.md. Publication is manual after review.
-
-## Menu ordering
-In Admin → Content → Menus, move Baby Products and Gifting above Grocery in the catalogue/Shop menu and Trending searches Categories menu. Theme configuration reorders tabs and category groups; it does not mutate Admin menus.
-
-## Footer policy and Help setup
-Fill missing policies in Admin → Settings → Policies. The homepage policy row now uses only nonempty shop.policies URLs. Create Help with Delivery areas, Order cut-off, FAQs, Returns, Contact and select it in Footer → Help menu. Use actual published policy/page destinations; avoid the missing /pages/terms-conditions, /pages/refund-policy and /pages/shipping-policy. Set social URLs in Theme settings → Social media.
-
-## Collection image correction
-Replace the Pantry Staples collection image in Admin → Products → Collections; its current clothing photo is incorrect. Category image override blocks can target any link URL, with an optional group heading. Empty collections remain linked with neutral placeholders and the optional Coming soon label.
+Ferrero Rocher was skipped because that exact vendor is absent; the catalogue uses Ferrero. No substitute branded tile was invented. Standard review metafields remain optional for stars.

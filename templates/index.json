@@ -4,22 +4,23 @@
       "type": "ep-promo-banner",
       "settings": {
         "title": "Everyday essentials. Delivered next day.",
-        "subtitle": "Groceries, care and home essentials in one basket, delivered across supported Dubai areas.",
+        "subtitle": "Baby care, gifts, groceries and home essentials in one basket.",
         "eyebrow": "YOUR DUBAI EVERYDAY, SORTED",
-        "button_label": "Explore products",
+        "button_label": "Start shopping",
         "link": "/collections/all",
-        "highlight": "",
+        "highlight": "Free delivery over AED 99",
         "art_text": "The everyday basket",
-        "badge": "Selected with care",
+        "badge": "Order today, delivered tomorrow",
         "background": "#FEFAE0",
-        "text_color": "#283618"
+        "text_color": "#283618",
+        "collection": "all"
       }
     },
     "grocery": {
       "type": "ep-product-rail",
       "settings": {
         "title": "Grocery essentials",
-        "subtitle": "Cupboard staples, favourite snacks and everyday drinks.",
+        "subtitle": "Cupboard staples, snacks and drinks",
         "collection": "grocery",
         "limit": 8,
         "card_variant": "compact",
@@ -29,57 +30,65 @@
     "seasonal": {
       "type": "ep-themed-grid",
       "settings": {
-        "title": "For the moments at home",
-        "background": "#FEFAE0"
+        "title": "Get festive-ready",
+        "subtitle": "Gifts, treats and home touches for Diwali and the season ahead",
+        "background": "#FFFFFF"
       },
       "blocks": {
         "tile0": {
           "type": "tile",
           "settings": {
-            "title": "Cleaning & Laundry",
-            "link": "/collections/home-cleaning-and-laundry"
+            "title": "Chocolates & treats",
+            "collection": "gifting-chocolates-and-treats",
+            "link": "/collections/gifting-chocolates-and-treats"
           }
         },
         "tile1": {
           "type": "tile",
           "settings": {
-            "title": "Kitchen & Cookware",
-            "link": "/collections/home-kitchen-and-cookware"
+            "title": "Gift hampers",
+            "collection": "gifting-hampers-and-gift-sets",
+            "link": "/collections/gifting-hampers-and-gift-sets"
           }
         },
         "tile2": {
           "type": "tile",
           "settings": {
-            "title": "Home Fragrance",
+            "title": "Home fragrance",
+            "collection": "home-home-fragrance",
             "link": "/collections/home-home-fragrance"
           }
         },
         "tile3": {
           "type": "tile",
           "settings": {
-            "title": "Storage & Organization",
-            "link": "/collections/home-storage-and-organization"
+            "title": "Cleaning before guests",
+            "collection": "home-cleaning-and-laundry",
+            "link": "/collections/home-cleaning-and-laundry"
           }
         },
         "tile4": {
           "type": "tile",
           "settings": {
-            "title": "Snacks & Confectionery",
+            "title": "Snacks for guests",
+            "collection": "grocery-snacks-and-confectionery",
             "link": "/collections/grocery-snacks-and-confectionery"
           }
         },
         "tile5": {
           "type": "tile",
           "settings": {
-            "title": "Gifting",
-            "link": "/collections/gifting"
+            "title": "Tea & coffee",
+            "collection": "grocery-beverages-tea-and-coffee",
+            "link": "/collections/grocery-beverages-tea-and-coffee"
           }
         },
         "strip": {
           "type": "strip",
           "settings": {
-            "title": "The gifting edit",
-            "subtitle": "Thoughtful little gestures",
+            "title": "Gifting edit",
+            "subtitle": "Treats and thoughtful finds, delivered tomorrow",
+            "collection": "gifting",
             "link": "/collections/gifting"
           }
         }
@@ -98,7 +107,7 @@
       "type": "ep-product-rail",
       "settings": {
         "title": "Baby care",
-        "subtitle": "Wipes, bath-time essentials and growing-up needs.",
+        "subtitle": "Wipes, bath-time and feeding essentials",
         "collection": "baby-products",
         "limit": 4,
         "card_variant": "compact",
@@ -108,9 +117,42 @@
     "campaign": {
       "type": "ep-campaign",
       "settings": {
-        "title": "Picked for your home"
+        "title": "The Baby Basket",
+        "subtitle": "Everything for the little one, in one order",
+        "background": "#FFFFFF",
+        "powered_label": ""
       },
-      "disabled": true
+      "blocks": {
+        "offer0": {
+          "type": "offer_tile",
+          "settings": {
+            "title": "Diapers & wipes",
+            "collection": "baby-products-diapers-and-wipes",
+            "link": "/collections/baby-products-diapers-and-wipes"
+          }
+        },
+        "offer1": {
+          "type": "offer_tile",
+          "settings": {
+            "title": "Baby food & formula",
+            "collection": "baby-products-baby-food-and-formula",
+            "link": "/collections/baby-products-baby-food-and-formula"
+          }
+        },
+        "offer2": {
+          "type": "offer_tile",
+          "settings": {
+            "title": "Bath & skincare",
+            "collection": "baby-products-bath-skincare-and-grooming",
+            "link": "/collections/baby-products-bath-skincare-and-grooming"
+          }
+        }
+      },
+      "block_order": [
+        "offer0",
+        "offer1",
+        "offer2"
+      ]
     },
     "deals": {
       "type": "ep-product-rail",
@@ -121,7 +163,8 @@
         "show_button": true,
         "collection": "all",
         "discounted_only": true,
-        "see_all_link": "/collections/all?view=ep-deals"
+        "see_all_link": "/collections/all?view=ep-deals",
+        "subtitle": "Real savings on everyday favourites"
       }
     },
     "promos": {
@@ -134,21 +177,59 @@
         "slide0": {
           "type": "slide",
           "settings": {
-            "heading": "A little something to give.",
-            "text": "Chocolate favourites for small celebrations and thoughtful surprises.",
-            "button_label": "Explore gifting",
-            "collection": "gifting",
-            "link": "/collections/gifting",
-            "alt": "A little something to give."
+            "heading": "Little ones, looked after",
+            "text": "Diapers, wipes, formula and baby bath care, delivered tomorrow.",
+            "button_label": "Shop baby care",
+            "collection": "baby-products",
+            "tint": "blue",
+            "link": "/collections/baby-products",
+            "alt": "Little ones, looked after"
           }
         },
         "slide1": {
           "type": "slide",
           "settings": {
+            "heading": "A little something to give.",
+            "text": "Chocolates and treats for every celebration.",
+            "button_label": "Explore gifting",
+            "collection": "gifting-chocolates-and-treats",
+            "tint": "accent",
+            "link": "/collections/gifting-chocolates-and-treats",
+            "alt": "A little something to give."
+          }
+        },
+        "slide2": {
+          "type": "slide",
+          "settings": {
+            "heading": "Pantry, restocked",
+            "text": "Tea, breakfast, snacks and cupboard staples in one basket.",
+            "button_label": "Shop grocery",
+            "collection": "grocery",
+            "tint": "green",
+            "link": "/collections/grocery",
+            "alt": "Pantry, restocked"
+          }
+        },
+        "slide3": {
+          "type": "slide",
+          "settings": {
+            "heading": "Fresh home, less effort",
+            "text": "Cleaning, laundry and kitchen essentials.",
+            "button_label": "Shop home",
+            "collection": "home",
+            "tint": "lilac",
+            "link": "/collections/home",
+            "alt": "Fresh home, less effort"
+          }
+        },
+        "slide4": {
+          "type": "slide",
+          "settings": {
             "heading": "Make room for good ideas.",
-            "text": "Paper, stationery and useful desk essentials in one place.",
-            "button_label": "Browse office supplies",
+            "text": "Paper, pens and desk essentials for work and school.",
+            "button_label": "Shop office",
             "collection": "office-supplies",
+            "tint": "cream",
             "link": "/collections/office-supplies",
             "alt": "Make room for good ideas."
           }
@@ -156,14 +237,18 @@
       },
       "block_order": [
         "slide0",
-        "slide1"
+        "slide1",
+        "slide2",
+        "slide3",
+        "slide4"
       ]
     },
     "categories": {
       "type": "ep-category-grid",
       "settings": {
         "title": "Shop by category",
-        "show_coming_soon": true
+        "show_coming_soon": true,
+        "subtitle": "Everything we stock, in one place"
       },
       "blocks": {
         "group0": {
@@ -256,57 +341,73 @@
         "store0": {
           "type": "store",
           "settings": {
-            "label": "Grocery store",
-            "link": "/collections/grocery",
-            "background": "#FEFAE0"
+            "label": "Baby Store",
+            "collection": "baby-products",
+            "tint": "blue",
+            "link": "/collections/baby-products"
           }
         },
         "store1": {
           "type": "store",
           "settings": {
-            "label": "Baby Products store",
-            "link": "/collections/baby-products",
-            "background": "#FEFAE0"
+            "label": "Gift Store",
+            "collection": "gifting",
+            "tint": "accent",
+            "link": "/collections/gifting"
           }
         },
         "store2": {
           "type": "store",
           "settings": {
-            "label": "Gifting store",
-            "link": "/collections/gifting",
-            "background": "#FEFAE0"
+            "label": "Pantry Store",
+            "collection": "grocery",
+            "tint": "green",
+            "link": "/collections/grocery"
           }
         },
         "store3": {
           "type": "store",
           "settings": {
-            "label": "Bath & Body store",
-            "link": "/collections/bath-and-body",
-            "background": "#FEFAE0"
+            "label": "Home Store",
+            "collection": "home",
+            "tint": "lilac",
+            "link": "/collections/home"
           }
         },
         "store4": {
           "type": "store",
           "settings": {
-            "label": "Home store",
-            "link": "/collections/home",
-            "background": "#FEFAE0"
+            "label": "Bath & Body",
+            "collection": "bath-and-body",
+            "tint": "pink",
+            "link": "/collections/bath-and-body"
           }
         },
         "store5": {
           "type": "store",
           "settings": {
-            "label": "Pet store",
-            "link": "/collections/pet",
-            "background": "#FEFAE0"
+            "label": "Pet Store",
+            "collection": "pet",
+            "tint": "peach",
+            "link": "/collections/pet"
           }
         },
         "store6": {
           "type": "store",
           "settings": {
-            "label": "Office Supplies store",
-            "link": "/collections/office-supplies",
-            "background": "#FEFAE0"
+            "label": "Office Store",
+            "collection": "office-supplies",
+            "tint": "cream",
+            "link": "/collections/office-supplies"
+          }
+        },
+        "store7": {
+          "type": "store",
+          "settings": {
+            "label": "Deals",
+            "collection": "all",
+            "tint": "brand",
+            "link": "/collections/all?view=ep-deals"
           }
         }
       },
@@ -317,7 +418,8 @@
         "store3",
         "store4",
         "store5",
-        "store6"
+        "store6",
+        "store7"
       ]
     },
     "brands1": {
@@ -325,13 +427,107 @@
       "settings": {
         "accessible_title": "Featured brands"
       },
-      "disabled": true
+      "blocks": {
+        "brand0": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Aptamil",
+            "caption": "Formula for every stage",
+            "product": "aptamil-advance-junior-3-growing-up-formula-milk-from-1-3-years-easy-to-use-pack-800g-b0cvn97jmp",
+            "collection": "all",
+            "ad": false,
+            "alt": "Aptamil",
+            "link": "/collections/vendors?q=Aptamil"
+          }
+        },
+        "brand1": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Johnson's Baby",
+            "caption": "Gentle bath time",
+            "product": "johnsons-2-in-1-kids-shampoo-and-conditioner-for-soft-hair-500ml",
+            "collection": "all",
+            "ad": false,
+            "alt": "Johnson's Baby",
+            "link": "/collections/vendors?q=Johnson's%20Baby"
+          }
+        },
+        "brand2": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Lindt",
+            "caption": "Chocolate for gifting",
+            "product": "lindt-lindor-milk-chocolate-assorted-with-melting-filling-200g-b0198hm8ic",
+            "collection": "all",
+            "ad": false,
+            "alt": "Lindt",
+            "link": "/collections/vendors?q=Lindt"
+          }
+        },
+        "brand3": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Brooke Bond",
+            "caption": "Your daily cup",
+            "product": "brooke-bond-red-label-black-loose-tea-5kg-b08l4p93ft",
+            "collection": "all",
+            "ad": false,
+            "alt": "Brooke Bond",
+            "link": "/collections/vendors?q=Brooke%20Bond"
+          }
+        },
+        "brand4": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Air Wick",
+            "caption": "A fresher home",
+            "product": "air-wick-freshener-aerosol-rose-300ml-pack-of-3-b07pbctbf1",
+            "collection": "all",
+            "ad": false,
+            "alt": "Air Wick",
+            "link": "/collections/vendors?q=Air%20Wick"
+          }
+        },
+        "brand5": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Whiskas",
+            "caption": "Dinner for the cat",
+            "product": "whiskas-grilled-salmon-dry-cat-food-bag-of-1-2kg",
+            "collection": "all",
+            "ad": false,
+            "alt": "Whiskas",
+            "link": "/collections/vendors?q=Whiskas"
+          }
+        },
+        "brand6": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Pilot",
+            "caption": "Pens that just write",
+            "product": "pilot-frixion-ball-0-7mm-erasable-gel-pens-fine-point-black-ink-pack-of-6-bc31582-b019ozvv6i",
+            "collection": "all",
+            "ad": false,
+            "alt": "Pilot",
+            "link": "/collections/vendors?q=Pilot"
+          }
+        }
+      },
+      "block_order": [
+        "brand0",
+        "brand1",
+        "brand2",
+        "brand3",
+        "brand4",
+        "brand5",
+        "brand6"
+      ]
     },
     "essentials": {
       "type": "ep-product-grid",
       "settings": {
         "title": "Home essentials, sorted",
-        "subtitle": "Cleaning, laundry and household supplies for a well-stocked home.",
+        "subtitle": "Cleaning, laundry and household supplies",
         "collection": "home",
         "rows": 2,
         "columns_mobile": "3",
@@ -343,20 +539,13 @@
       "type": "ep-product-grid",
       "settings": {
         "title": "Care for every day",
-        "subtitle": "Bath, hair and personal-care essentials for your daily routine.",
+        "subtitle": "Bath, hair and personal care",
         "collection": "bath-and-body",
         "rows": 2,
         "columns_mobile": "3",
         "card_variant": "grid",
         "show_button": true
       }
-    },
-    "brands2": {
-      "type": "ep-brand-tiles",
-      "settings": {
-        "accessible_title": "Featured brands"
-      },
-      "disabled": true
     },
     "gifts": {
       "type": "ep-product-rail",
@@ -373,7 +562,7 @@
       "type": "ep-product-grid",
       "settings": {
         "title": "A little care for your pets",
-        "subtitle": "Food and playtime essentials for furry family members.",
+        "subtitle": "Food and treats for cats and dogs",
         "collection": "pet",
         "rows": 2,
         "columns_mobile": "3",
@@ -385,7 +574,7 @@
       "type": "ep-product-grid",
       "settings": {
         "title": "Desk and school essentials",
-        "subtitle": "Keep your workspace and school bag stocked.",
+        "subtitle": "Paper, pens and desk supplies",
         "collection": "office-supplies",
         "rows": 2,
         "columns_mobile": "3",
@@ -537,6 +726,83 @@
       "block_order": [
         "occasions"
       ]
+    },
+    "national_day": {
+      "type": "ep-themed-grid",
+      "settings": {
+        "title": "Celebrate National Day",
+        "subtitle": "Snacks, sweets and home essentials for the long weekend",
+        "background": "#FFFFFF"
+      },
+      "blocks": {
+        "tile0": {
+          "type": "tile",
+          "settings": {
+            "title": "Snacks for gatherings",
+            "collection": "grocery-snacks-and-confectionery",
+            "link": "/collections/grocery-snacks-and-confectionery"
+          }
+        },
+        "tile1": {
+          "type": "tile",
+          "settings": {
+            "title": "Sweets & chocolates",
+            "collection": "gifting-chocolates-and-treats",
+            "link": "/collections/gifting-chocolates-and-treats"
+          }
+        },
+        "tile2": {
+          "type": "tile",
+          "settings": {
+            "title": "Drinks",
+            "collection": "grocery-beverages",
+            "link": "/collections/grocery-beverages"
+          }
+        },
+        "tile3": {
+          "type": "tile",
+          "settings": {
+            "title": "Disposable tableware",
+            "collection": "home-disposables-disposable-tableware",
+            "link": "/collections/home-disposables-disposable-tableware"
+          }
+        },
+        "tile4": {
+          "type": "tile",
+          "settings": {
+            "title": "Cleaning",
+            "collection": "home-cleaning-and-laundry",
+            "link": "/collections/home-cleaning-and-laundry"
+          }
+        },
+        "tile5": {
+          "type": "tile",
+          "settings": {
+            "title": "Home fragrance",
+            "collection": "home-home-fragrance",
+            "link": "/collections/home-home-fragrance"
+          }
+        },
+        "strip": {
+          "type": "strip",
+          "settings": {
+            "title": "Hosting made easy",
+            "subtitle": "Home essentials for the long weekend",
+            "collection": "home",
+            "link": "/collections/home"
+          }
+        }
+      },
+      "block_order": [
+        "tile0",
+        "tile1",
+        "tile2",
+        "tile3",
+        "tile4",
+        "tile5",
+        "strip"
+      ],
+      "disabled": true
     }
   },
   "order": [
@@ -545,17 +811,17 @@
     "gifts",
     "grocery",
     "seasonal",
-    "campaign",
+    "national_day",
     "deals",
-    "promos",
-    "categories",
-    "stores",
-    "brands1",
+    "campaign",
     "essentials",
+    "promos",
     "care",
-    "brands2",
+    "stores",
     "pets",
+    "brands1",
     "office",
+    "categories",
     "trust",
     "faq",
     "trending",

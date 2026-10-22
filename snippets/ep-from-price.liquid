@@ -1,0 +1,4 @@
+{% doc %}Compute a genuine starting price from the configured collection’s products.
+@param {collection} collection - Source collection.
+{% enddoc %}
+{% if collection.all_products_count > 0 %}{% assign minimum_price = blank %}{% for product in collection.products %}{% if minimum_price == blank or product.price_min < minimum_price %}{% assign minimum_price = product.price_min %}{% endif %}{% endfor %}{% if minimum_price != blank %}{% capture price %}{% render 'ep-money', value: minimum_price %}{% endcapture %}<span class="ep-from-price">{{ 'ep.from_price' | t: price: price }}</span>{% endif %}{% endif %}

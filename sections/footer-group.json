@@ -62,13 +62,24 @@
             "label": "Deals",
             "link": "/collections/all?view=ep-deals"
           }
+        },
+        "promo": {
+          "type": "promo_bubble",
+          "settings": {
+            "label": "Deals",
+            "link": "/collections/all?view=ep-deals",
+            "collection": "all",
+            "alt": "See today's deals",
+            "pulse": false
+          }
         }
       },
       "block_order": [
         "home",
         "categories",
         "deals",
-        "cart"
+        "cart",
+        "promo"
       ]
     }
   },

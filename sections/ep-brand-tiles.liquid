@@ -1,4 +1,4 @@
-{% assign configured = false %}{% for block in section.blocks %}{% if block.settings.image != blank and block.settings.link != blank %}{% assign configured = true %}{% endif %}{% endfor %}{% if configured or request.design_mode %}{% capture heading_id %}ep-heading-{{ section.id }}{% endcapture %}<section class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="{{ heading_id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap"><div{% if section.settings.title == blank %} class="visually-hidden"{% endif %}>{% assign title = section.settings.title | default: section.settings.accessible_title %}{% render 'ep-section-header', title: title, heading_id: heading_id %}</div><div class="ep-ads ep-rail">{% for block in section.blocks %}{% if block.settings.image != blank and block.settings.link != blank %}<a class="ep-ad" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{% assign alt = block.settings.alt | default: block.settings.image.alt | default: section.settings.accessible_title %}{{ block.settings.image | image_url: width: 750 | image_tag: loading: 'lazy', widths: '180, 360, 540, 750', sizes: '(min-width:990px) 220px, 42vw', alt: alt }}{% if block.settings.ad %}<small>{{ 'ep.ad' | t }}</small>{% endif %}</a>{% endif %}{% endfor %}</div></div></section>{% endif %}
+{% capture tiles %}{% for block in section.blocks %}{% if shop.vendors contains block.settings.vendor %}<a class="ep-brand-tile" href="{{ routes.collections_url }}/vendors?q={{ block.settings.vendor | url_encode }}" {{ block.shopify_attributes }}><span class="ep-ad ep-auto-well">{% render 'ep-auto-image', image: block.settings.image, collection: block.settings.collection, product: block.settings.product, title: block.settings.vendor %}{% if block.settings.ad %}<small>{{ 'ep.ad' | t }}</small>{% endif %}</span><strong>{{ block.settings.vendor | escape }}</strong><span>{{ block.settings.caption | escape }}</span></a>{% endif %}{% endfor %}{% endcapture %}{% assign tiles = tiles | strip %}{% if tiles != blank %}<section class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="ep-heading-{{ section.id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap"><h2 id="ep-heading-{{ section.id }}"{% if section.settings.title == blank %} class="visually-hidden"{% endif %}>{{ section.settings.title | default: section.settings.accessible_title | escape }}</h2></div><div class="ep-ads ep-rail">{{ tiles }}</div></section>{% endif %}
 {% schema %}
 {
   "name": "t:ep.everyday_brand_tiles",
@@ -67,6 +67,26 @@
           "id": "ad",
           "label": "t:ep.show_ad_label",
           "default": false
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Auto image collection"
+        },
+        {
+          "type": "text",
+          "id": "vendor",
+          "label": "Stocked vendor (exact name)"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Vendor product for auto image"
         }
       ]
     }

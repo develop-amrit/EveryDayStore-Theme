@@ -249,3 +249,11 @@ Removed image and maximum-tile filtering. Every group child and leaf link now re
 ## Final Fix 8: Link Categories to the homepage category grid
 
 Categories uses a section destination setting default /#shop-by-category. On home, preserves keyboard focus on the grid heading and scrolls with reduced-motion handling. On other pages the normal link leads to the homepage anchor. Home, Deals and Cart are unchanged.
+
+## Final Fix 9: Populate homepage campaigns with real catalogue data
+
+Enabled five carousel slides, festive six-tile grid, Baby Basket campaign, eight store tiles, one stocked-brand row and Deals bubble using uploaded-first auto images from actual products. Empty collections remain linked with placeholders/Coming soon and no price tag. Campaign From amounts are computed from real product.price_min values; Liquid collections do not expose collection.price_min, so use the minimum of their actual products (all configured campaign collections have fewer than 50 products). Hero and copy updated. Existing carousel images, if configured, preserved on slides 2/5; prior code had product fallbacks rather than uploaded photos. Exact requested handles found in catalogue audit; no fallback handle invented.
+
+Brand audit: all 106 active public products read. Aptamil, Johnson's Baby, Lindt, Brooke Bond, Air Wick, Whiskas and Pilot confirmed; each tile additionally checks shop.vendors at render. Ferrero Rocher is absent (vendor is Ferrero), so skipped as instructed. Caption/vendor product selected from actual catalogue, Ad off. Added collection and image pickers throughout auto-image placements. National Day copy is a disabled section included in order. Merchant image briefs and menu/policy/social tasks rewritten.
+
+Composition reconciles two instructions: first three rails remain Baby/Gifts/Grocery; later image-heavy modules are separated with existing product grids/rails. Existing seasonal/campaign wrappers stay white; tints are confined to cards, avoiding consecutive full-bleed panels.

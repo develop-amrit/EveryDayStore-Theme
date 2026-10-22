@@ -1,4 +1,4 @@
-{% if section.blocks.size > 0 or request.design_mode %}<section class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="ep-heading-{{ section.id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap">{% capture heading_id %}ep-heading-{{ section.id }}{% endcapture %}<div{% if section.settings.title == blank %} class="visually-hidden"{% endif %}>{% assign carousel_title = section.settings.title | default: section.settings.accessible_title %}{% render 'ep-section-header', title: carousel_title, heading_id: heading_id %}</div></div><ep-carousel class="ep-carousel" data-autoplay="{{ section.settings.autoplay }}"><div class="ep-rail">{% for block in section.blocks %}{% if block.settings.image != blank or block.settings.heading != blank %}<a class="ep-slide"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% endif %} {{ block.shopify_attributes }}>{% assign slide_image = block.settings.image | default: block.settings.collection.featured_image %}{% if slide_image %}<picture>{% if block.settings.image_mobile %}<source media="(max-width:749px)" srcset="{{ block.settings.image_mobile | image_url: width: 750 }}">{% endif %}{% assign alt = block.settings.alt | default: slide_image.alt | default: block.settings.heading %}{{ slide_image | image_url: width: 600, format: 'webp' | image_tag: loading: 'lazy', widths: '180, 240, 360, 480, 600', sizes: '(min-width:990px) 550px, 88vw', alt: alt }}</picture>{% endif %}{% if block.settings.heading != blank %}<div class="ep-slide-copy"><h3>{{ block.settings.heading | escape }}</h3><p>{{ block.settings.text | escape }}</p>{% if block.settings.button_label != blank %}<span class="ep-cta">{{ block.settings.button_label | escape }}</span>{% endif %}</div>{% endif %}</a>{% endif %}{% endfor %}</div><div class="ep-dots">{% for block in section.blocks %}{% if block.settings.image != blank or block.settings.heading != blank %}<button type="button" data-ep-slide aria-label="{{ 'ep.go_slide' | t: number: forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endif %}{% endfor %}</div></ep-carousel></section>{% endif %}
+{% if section.blocks.size > 0 or request.design_mode %}<section class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="ep-heading-{{ section.id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap">{% capture heading_id %}ep-heading-{{ section.id }}{% endcapture %}<div{% if section.settings.title == blank %} class="visually-hidden"{% endif %}>{% assign carousel_title = section.settings.title | default: section.settings.accessible_title %}{% render 'ep-section-header', title: carousel_title, heading_id: heading_id %}</div></div><ep-carousel class="ep-carousel" data-autoplay="{{ section.settings.autoplay }}"><div class="ep-rail">{% for block in section.blocks %}{% if block.settings.image != blank or block.settings.heading != blank %}<a class="ep-slide ep-tint-{{ block.settings.tint | default: 'cream' }}"{% if block.settings.link != blank %} href="{{ block.settings.link }}"{% endif %} {{ block.shopify_attributes }}><span class="ep-slide-art ep-auto-well">{% render 'ep-auto-image', image: block.settings.image, collection: block.settings.collection, title: block.settings.heading %}</span>{% if block.settings.heading != blank %}<div class="ep-slide-copy"><h3>{{ block.settings.heading | escape }}</h3><p>{{ block.settings.text | escape }}</p>{% if block.settings.button_label != blank %}<span class="ep-cta">{{ block.settings.button_label | escape }}</span>{% endif %}</div>{% endif %}</a>{% endif %}{% endfor %}</div><div class="ep-dots">{% for block in section.blocks %}{% if block.settings.image != blank or block.settings.heading != blank %}<button type="button" data-ep-slide aria-label="{{ 'ep.go_slide' | t: number: forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endif %}{% endfor %}</div></ep-carousel></section>{% endif %}
 {% schema %}
 {
   "name": "t:ep.everyday_banner_carousel",
@@ -93,6 +93,34 @@
           "type": "text",
           "id": "button_label",
           "label": "t:ep.button_label"
+        },
+        {
+          "type": "select",
+          "id": "tint",
+          "label": "Card tint",
+          "options": [
+            {
+              "value": "blue",
+              "label": "blue"
+            },
+            {
+              "value": "accent",
+              "label": "accent"
+            },
+            {
+              "value": "green",
+              "label": "green"
+            },
+            {
+              "value": "lilac",
+              "label": "lilac"
+            },
+            {
+              "value": "cream",
+              "label": "cream"
+            }
+          ],
+          "default": "cream"
         }
       ]
     }

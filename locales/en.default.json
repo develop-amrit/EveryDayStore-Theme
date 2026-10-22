@@ -1008,6 +1008,8 @@
     "clear_search": "Clear search",
     "loading_products": "Loading products",
     "help": "Help",
-    "coming_soon": "Coming soon"
+    "coming_soon": "Coming soon",
+    "from_price": "From {{ price }}",
+    "today_deals": "See today’s deals"
   }
 }
