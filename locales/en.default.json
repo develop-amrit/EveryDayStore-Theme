@@ -1010,6 +1010,7 @@
     "help": "Help",
     "coming_soon": "Coming soon",
     "from_price": "From {{ price }}",
-    "today_deals": "See today’s deals"
+    "today_deals": "See today’s deals",
+    "save": "Save"
   }
 }

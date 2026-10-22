@@ -1,0 +1,48 @@
+{
+  "catalogue": {
+    "expected": 123,
+    "missing": []
+  },
+  "backdropClosed": true,
+  "cartAreaFirst": "Downtown",
+  "layout": {
+    "hero": {
+      "font": "19px",
+      "width": 186.59375,
+      "height": 95,
+      "maxWidth": "none",
+      "wrap": "pretty"
+    },
+    "heartBadgeOverlap": 0,
+    "navHeight": 64,
+    "bodyBottomPadding": "64px"
+  },
+  "railScroll": true,
+  "carouselSwipe": true,
+  "fromPrices": [
+    {
+      "handle": "baby-products-diapers-and-wipes",
+      "products": 34,
+      "min": 6000,
+      "display": "From \nAED 60\n"
+    },
+    {
+      "handle": "baby-products-baby-food-and-formula",
+      "products": 3,
+      "min": 11700,
+      "display": "From \nAED 117\n"
+    },
+    {
+      "handle": "baby-products-bath-skincare-and-grooming",
+      "products": 3,
+      "min": 4317,
+      "display": "From \nAED 43.17\n"
+    }
+  ],
+  "footerStatus": [
+    {
+      "href": "/policies/privacy-policy",
+      "status": 200
+    }
+  ]
+}

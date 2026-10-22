@@ -1,0 +1,32 @@
+[
+  {
+    "width": 360,
+    "pageWidth": 360,
+    "heroLines": 3,
+    "h1Font": "18px"
+  },
+  {
+    "width": 375,
+    "pageWidth": 375,
+    "heroLines": 3,
+    "h1Font": "18px"
+  },
+  {
+    "width": 414,
+    "pageWidth": 414,
+    "heroLines": 2,
+    "h1Font": "19px"
+  },
+  {
+    "width": 768,
+    "pageWidth": 768,
+    "heroLines": 2,
+    "h1Font": "28px"
+  },
+  {
+    "width": 1280,
+    "pageWidth": 1280,
+    "heroLines": 1,
+    "h1Font": "28px"
+  }
+]

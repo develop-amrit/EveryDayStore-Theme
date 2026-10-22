@@ -1,0 +1,7 @@
+const b=require('./ep-build.cjs'),fs=require('fs'),cp=require('child_process');
+let q=fs.readFileSync('tools/ep-final-qa.cjs','utf8').replaceAll('context.emulateMedia','page.emulateMedia');fs.writeFileSync('tools/ep-final-qa.cjs',q);
+const menu='snippets/qc-menu.liquid';b.write(menu,b.read(menu).replaceAll("{% if link.url == routes.all_products_collection_url %}{% continue %}{% endif %}","{% if request.page_type != 'index' and link.url == routes.all_products_collection_url %}{% continue %}{% endif %}"));
+const p='sections/ep-bottom-nav.liquid';b.write(p,b.read(p).replace(/{% schema %}([\s\S]*?){% endschema %}/,(_,s)=>{let schema=JSON.parse(s),icons=schema.blocks.find(x=>x.type==='item').settings.find(x=>x.id==='icon');if(!icons.options.some(x=>x.value==='tag'))icons.options.push({value:'tag',label:'t:ep.deals'});return'{% schema %}\n'+JSON.stringify(schema,null,2)+'\n{% endschema %}';}));
+// Keep Dawn’s keyboard behavior and a stable bottom action while terms change.
+const pred='sections/predictive-search.liquid';b.write(pred,b.read(pred).replace('data-predictive-search-search-for-text','data-ep-see-results').replace("{{- 'templates.search.search_for' | t: terms: predictive_search.terms -}}","{{- 'qc.search_all' | t -}}"));
+fs.appendFileSync('tools/ep-mobile-source.css','\n.ep-page .ep-banner h1{font-size:19px;line-height:1.25}.ep-page .ep-banner-art{max-height:70%}@media(min-width:750px){.ep-page .ep-banner h1{font-size:28px}.ep-page .ep-banner-art{max-height:85%}}\n');cp.execFileSync(process.execPath,['tools/ep-bundle.cjs']);

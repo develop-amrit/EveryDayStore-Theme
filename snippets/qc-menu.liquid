@@ -1,9 +1,9 @@
-﻿{% doc %}Visible top-level categories with merchant-managed nested navigation.
+{% doc %}Visible top-level categories with merchant-managed nested navigation.
 @param {boolean} [mobile] - Render the full nested drawer navigation.{% enddoc %}
 {% if mobile %}
   <nav class="qc-menu-tree" aria-label="{{ 'qc.categories' | t }}">
     {% for link in settings.qc_catalog_menu.links %}
-      {% if link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
+      {% if request.page_type != 'index' and link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
       {% if link.links != blank %}
         <details><summary>{{ link.title | escape }}</summary><div class="qc-mega-panel">
           <a href="{{ link.url }}">{{ 'qc.view_all' | t }} {{ link.title | escape }}</a>
@@ -24,7 +24,7 @@
     </a>
     <div class="qc-category-items">
       {% for link in settings.qc_catalog_menu.links %}
-        {% if link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
+        {% if request.page_type != 'index' and link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
         {% if link.links != blank %}
           <details class="qc-category-node"{% if link.active or link.child_active %} data-current-department{% endif %}>
             <summary><span class="qc-nav-icon" aria-hidden="true">{% render 'qc-category-icon', handle: link.object.handle %}</span><span class="qc-category-name">{{ link.title | escape }}</span></summary>

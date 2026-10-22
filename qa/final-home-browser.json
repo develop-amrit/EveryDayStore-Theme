@@ -1,0 +1,511 @@
+{
+  "errors": [],
+  "consoleWarnings": [],
+  "breakpoints": [
+    {
+      "width": 360,
+      "pageWidth": 360,
+      "announcementHeight": 32,
+      "announcementLine": 32,
+      "oldCategoryRows": 0,
+      "deliveryOverlap": 0
+    },
+    {
+      "width": 375,
+      "pageWidth": 375,
+      "announcementHeight": 32,
+      "announcementLine": 32,
+      "oldCategoryRows": 0,
+      "deliveryOverlap": 0
+    },
+    {
+      "width": 414,
+      "pageWidth": 414,
+      "announcementHeight": 32,
+      "announcementLine": 32,
+      "oldCategoryRows": 0,
+      "deliveryOverlap": 0
+    },
+    {
+      "width": 768,
+      "pageWidth": 768,
+      "announcementHeight": 32,
+      "announcementLine": 32,
+      "oldCategoryRows": 0,
+      "deliveryOverlap": 0
+    },
+    {
+      "width": 1280,
+      "pageWidth": 1280,
+      "announcementHeight": 32,
+      "announcementLine": 32,
+      "oldCategoryRows": 0,
+      "deliveryOverlap": 0
+    }
+  ],
+  "currency": {
+    "dhs": false,
+    "double": false,
+    "prices": [
+      "AED 43.17\nRegular price\nAED 69",
+      "AED 125",
+      "AED 117",
+      "AED 129",
+      "AED 60",
+      "AED 37\nRegular price\nAED 44.50"
+    ],
+    "from": [
+      "From AED 60",
+      "From AED 117",
+      "From AED 43.17"
+    ],
+    "liquidErrors": null
+  },
+  "tabs": [
+    "\n\n\n\nAll",
+    "\n\n\n\nBaby Products",
+    "\n\nGifting",
+    "\n\n\n\nGrocery",
+    "\n\n\n\nBath & Body",
+    "\n\n\n\nHome",
+    "\n\n\n\nPet",
+    "\n\n\n\nOffice Supplies"
+  ],
+  "rails": [
+    "Everyday essentials. Delivered next day.",
+    "Baby care",
+    "Gifts to brighten their day",
+    "Grocery essentials"
+  ],
+  "announcement": {
+    "rotates": true,
+    "touchPaused": true,
+    "dismissed": true
+  },
+  "area": {
+    "open": true,
+    "fontSize": "16px",
+    "bodyLocked": true,
+    "filtered": 1,
+    "noMatch": "We don’t deliver to “Atlantis test” yet",
+    "saved": {
+      "local": "Dubai Marina",
+      "cart": "Dubai Marina",
+      "trigger": "Dubai Marina"
+    },
+    "keyboard": true,
+    "esc": true
+  },
+  "search": {
+    "focusRing": {
+      "outline": "rgb(40, 54, 24) solid 2px",
+      "inputOutline": "rgb(40, 54, 24) none 3px"
+    },
+    "skeleton": true,
+    "rows": 4,
+    "prices": [
+      "\nAED 287\n\nAED 350\n",
+      "\nAED 195\n",
+      "\nAED 187\n\nAED 250\n",
+      "\nAED 287.30\n\nAED 350\n"
+    ],
+    "visible": true,
+    "placeholder": "Search for “Flowers”",
+    "placeholderAnimation": "none"
+  },
+  "content": {
+    "slides": 5,
+    "seasonalTiles": 6,
+    "campaignTiles": 3,
+    "stores": 8,
+    "brands": [
+      "Aptamil",
+      "Johnson's Baby",
+      "Lindt",
+      "Brooke Bond",
+      "Air Wick",
+      "Whiskas",
+      "Pilot"
+    ],
+    "brandAds": 0,
+    "promo": "See today's deals",
+    "autoImages": [
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": false,
+        "placeholder": true
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": false,
+        "placeholder": true
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      },
+      {
+        "image": true,
+        "placeholder": false
+      }
+    ],
+    "groups": [
+      {
+        "handle": "baby-products",
+        "tiles": 12,
+        "coming": 8
+      },
+      {
+        "handle": "gifting",
+        "tiles": 10,
+        "coming": 8
+      },
+      {
+        "handle": "grocery",
+        "tiles": 39,
+        "coming": 25
+      },
+      {
+        "handle": "bath-and-body",
+        "tiles": 15,
+        "coming": 5
+      },
+      {
+        "handle": "home",
+        "tiles": 21,
+        "coming": 10
+      },
+      {
+        "handle": "pet",
+        "tiles": 6,
+        "coming": 4
+      },
+      {
+        "handle": "office-supplies",
+        "tiles": 12,
+        "coming": 7
+      }
+    ],
+    "categoryLinks": [
+      "/collections/baby-products",
+      "/collections/baby-products-diapers-and-wipes",
+      "/collections/baby-products-feeding-and-nursing",
+      "/collections/baby-products-feeding-and-nursing-bottles-and-accessories",
+      "/collections/baby-products-feeding-and-nursing-breastfeeding-and-nursing",
+      "/collections/baby-products-feeding-and-nursing-pacifiers-and-teethers",
+      "/collections/baby-products-baby-food-and-formula",
+      "/collections/baby-products-bath-skincare-and-grooming",
+      "/collections/baby-products-health-and-safety",
+      "/collections/baby-products-nursery-and-bedding",
+      "/collections/baby-products-baby-gear-and-travel",
+      "/collections/baby-products-baby-toys",
+      "/collections/baby-products-maternity-and-postpartum",
+      "/collections/gifting",
+      "/collections/gifting-flowers-and-bouquets",
+      "/collections/gifting-chocolates-and-treats",
+      "/collections/gifting-chocolates-and-treats-chocolates",
+      "/collections/gifting-chocolates-and-treats-cakes",
+      "/collections/gifting-chocolates-and-treats-confectionery",
+      "/collections/gifting-hampers-and-gift-sets",
+      "/collections/gifting-soft-toys-and-gifts",
+      "/collections/gifting-fragrances-and-candles",
+      "/collections/gifting-gift-cards-and-personalized-gifts",
+      "/collections/gifting-balloons-and-decorations",
+      "/collections/grocery",
+      "/collections/grocery-pantry-staples",
+      "/collections/grocery-pantry-staples-rice",
+      "/collections/grocery-pantry-staples-pasta",
+      "/collections/grocery-pantry-staples-noodles",
+      "/collections/grocery-pantry-staples-flour",
+      "/collections/grocery-pantry-staples-pulses-beans-and-lentils",
+      "/collections/grocery-pantry-staples-oils-and-ghee",
+      "/collections/grocery-pantry-staples-sugar-and-sweeteners",
+      "/collections/grocery-pantry-staples-salt-spices-and-seasonings",
+      "/collections/grocery-breakfast-and-spreads",
+      "/collections/grocery-breakfast-and-spreads-cereals",
+      "/collections/grocery-breakfast-and-spreads-breakfast-foods",
+      "/collections/grocery-breakfast-and-spreads-jams",
+      "/collections/grocery-breakfast-and-spreads-honey",
+      "/collections/grocery-breakfast-and-spreads-spreads",
+      "/collections/grocery-snacks-and-confectionery",
+      "/collections/grocery-snacks-and-confectionery-chips-and-snacks",
+      "/collections/grocery-snacks-and-confectionery-biscuits-and-crackers",
+      "/collections/grocery-snacks-and-confectionery-chocolates-and-confectionery",
+      "/collections/grocery-snacks-and-confectionery-nuts-seeds-and-dried-fruits",
+      "/collections/grocery-canned-packaged-and-ready-foods",
+      "/collections/grocery-canned-packaged-and-ready-foods-canned-and-jarred-foods",
+      "/collections/grocery-canned-packaged-and-ready-foods-instant-and-ready-to-eat",
+      "/collections/grocery-canned-packaged-and-ready-foods-sauces-condiments-and-dressings",
+      "/collections/grocery-beverages",
+      "/collections/grocery-beverages-water",
+      "/collections/grocery-beverages-juices",
+      "/collections/grocery-beverages-soft-drinks",
+      "/collections/grocery-beverages-energy-and-sports-drinks",
+      "/collections/grocery-beverages-tea-and-coffee",
+      "/collections/grocery-beverages-other-beverages",
+      "/collections/grocery-healthy-and-specialty-foods",
+      "/collections/grocery-healthy-and-specialty-foods-organic",
+      "/collections/grocery-healthy-and-specialty-foods-health-focused",
+      "/collections/grocery-healthy-and-specialty-foods-international-and-specialty",
+      "/collections/grocery-dairy-and-eggs",
+      "/collections/grocery-fresh-produce",
+      "/collections/grocery-frozen-foods",
+      "/collections/grocery-baby-food",
+      "/collections/bath-and-body",
+      "/collections/bath-and-body-bath-and-body-care",
+      "/collections/bath-and-body-bath-and-body-care-bath-and-shower",
+      "/collections/bath-and-body-bath-and-body-care-body-care",
+      "/collections/bath-and-body-bath-and-body-care-hand-and-foot-care",
+      "/collections/bath-and-body-skincare-and-face-care",
+      "/collections/bath-and-body-hair-care",
+      "/collections/bath-and-body-makeup-and-cosmetics",
+      "/collections/bath-and-body-fragrances-and-deodorants",
+      "/collections/bath-and-body-personal-hygiene",
+      "/collections/bath-and-body-personal-hygiene-oral-care",
+      "/collections/bath-and-body-personal-hygiene-feminine-hygiene",
+      "/collections/bath-and-body-personal-hygiene-everyday-hygiene",
+      "/collections/bath-and-body-mens-grooming-and-shaving",
+      "/collections/bath-and-body-mens-grooming-and-shaving-shaving-and-hair-removal",
+      "/collections/bath-and-body-sexual-wellness",
+      "/collections/home",
+      "/collections/home-cleaning-and-laundry",
+      "/collections/home-cleaning-and-laundry-household-cleaning",
+      "/collections/home-cleaning-and-laundry-laundry",
+      "/collections/home-cleaning-and-laundry-dishwashing",
+      "/collections/home-cleaning-tools-and-pest-control",
+      "/collections/home-paper-and-household-essentials",
+      "/collections/home-storage-and-organization",
+      "/collections/home-storage-and-organization-plasticware",
+      "/collections/home-kitchen-and-cookware",
+      "/collections/home-kitchen-and-cookware-cookware",
+      "/collections/home-kitchen-and-cookware-kitchen-essentials",
+      "/collections/home-kitchen-and-cookware-tools-and-utensils",
+      "/collections/home-food-storage-and-wraps",
+      "/collections/home-food-storage-and-wraps-containers",
+      "/collections/home-food-storage-and-wraps-foil",
+      "/collections/home-food-storage-and-wraps-cling-film",
+      "/collections/home-disposables",
+      "/collections/home-disposables-disposable-tableware",
+      "/collections/home-bathroom-essentials",
+      "/collections/home-home-fragrance",
+      "/collections/home-home-fragrance-air-fresheners",
+      "/collections/pet",
+      "/collections/pet-dogs",
+      "/collections/pet-cats",
+      "/collections/pet-other-pets",
+      "/collections/pet-other-pets-birds",
+      "/collections/pet-other-pets-fish",
+      "/collections/pet-other-pets-small-animals",
+      "/collections/office-supplies",
+      "/collections/office-supplies-paper-and-notebooks",
+      "/collections/office-supplies-writing-and-stationery",
+      "/collections/office-supplies-filing-and-organization",
+      "/collections/office-supplies-filing-and-organization-files-and-folders",
+      "/collections/office-supplies-filing-and-organization-labels-and-tags",
+      "/collections/office-supplies-desk-essentials",
+      "/collections/office-supplies-desk-essentials-desk-supplies",
+      "/collections/office-supplies-desk-essentials-staplers-and-punches",
+      "/collections/office-supplies-desk-essentials-adhesives-and-tapes",
+      "/collections/office-supplies-mailing-and-packaging",
+      "/collections/office-supplies-mailing-and-packaging-envelopes-and-mailing",
+      "/collections/office-supplies-presentation-supplies"
+    ],
+    "footerLinks": [
+      {
+        "text": "\neveryday\n",
+        "url": "/"
+      },
+      {
+        "text": "All Products",
+        "url": "/collections/all"
+      },
+      {
+        "text": "Grocery",
+        "url": "/collections/grocery"
+      },
+      {
+        "text": "Baby Products",
+        "url": "/collections/baby-products"
+      },
+      {
+        "text": "Gifting",
+        "url": "/collections/gifting"
+      },
+      {
+        "text": "Bath & Body",
+        "url": "/collections/bath-and-body"
+      },
+      {
+        "text": "Home",
+        "url": "/collections/home"
+      },
+      {
+        "text": "Pet",
+        "url": "/collections/pet"
+      },
+      {
+        "text": "Office Supplies",
+        "url": "/collections/office-supplies"
+      },
+      {
+        "text": "Privacy policy",
+        "url": "/policies/privacy-policy"
+      }
+    ],
+    "socialContainers": 0
+  },
+  "categoriesNav": {
+    "hash": "#shop-by-category",
+    "focus": "ep-heading-template--28116691484785__categories",
+    "top": 177.765625
+  },
+  "faq": {
+    "opens": true,
+    "chevron": "matrix(-1, 0, 0, -1, 0, 0)",
+    "closes": true
+  },
+  "cart": {
+    "stepper": "1",
+    "badges": [
+      "1",
+      "1"
+    ],
+    "removed": true,
+    "drawer": true
+  },
+  "wishlist": {
+    "toggle": true,
+    "hit": {
+      "w": 44,
+      "h": 44,
+      "before": ""
+    }
+  },
+  "backTop": {
+    "scroll": 1,
+    "focus": "qc-logo"
+  },
+  "carousel": {
+    "autoplay": true,
+    "touchPaused": true,
+    "dot": true,
+    "reducedStops": true
+  },
+  "css": {
+    "styles": [
+      "https://3djevx-mu.myshopify.com/cdn/shop/t/10/assets/base.css?v=177946997503462741151792670157",
+      "https://3djevx-mu.myshopify.com/cdn/shop/t/10/assets/ep-mobile.css?v=44835915065347323871792681088"
+    ],
+    "preloads": []
+  }
+}

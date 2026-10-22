@@ -1,0 +1,328 @@
+{
+  "themeId": "189582049393",
+  "role": "UNPUBLISHED",
+  "hashes": [
+    {
+      "filename": "assets/ep-final.js",
+      "matched": true
+    },
+    {
+      "filename": "assets/ep-mobile.css",
+      "matched": true
+    },
+    {
+      "filename": "assets/ep-mobile.js",
+      "matched": true
+    },
+    {
+      "filename": "assets/qc-home.js",
+      "matched": true
+    },
+    {
+      "filename": "layout/theme.liquid",
+      "matched": true
+    },
+    {
+      "filename": "locales/bg.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/cs.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/cs.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/da.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/da.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/de.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/de.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/el.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/en.default.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/en.default.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/es.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/es.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/fi.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/fi.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/fr.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/fr.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/hr.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/hu.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/id.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/it.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/it.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/ja.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/ja.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/ko.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/ko.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/lt.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/nb.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/nb.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/nl.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/nl.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/pl.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/pl.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/pt-BR.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/pt-BR.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/pt-PT.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/pt-PT.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/ro.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/ru.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/sk.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/sl.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/sv.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/sv.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/th.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/th.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/tr.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/tr.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/vi.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/zh-CN.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/zh-CN.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/zh-TW.json",
+      "matched": true
+    },
+    {
+      "filename": "locales/zh-TW.schema.json",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-banner-carousel.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-bottom-nav.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-brand-tiles.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-campaign.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-category-grid.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-promo-banner.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-store-grid.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-themed-grid.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/footer-group.json",
+      "matched": true
+    },
+    {
+      "filename": "sections/header-group.json",
+      "matched": true
+    },
+    {
+      "filename": "sections/predictive-search.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-announcement.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-footer.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-header.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-area-picker.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-auto-image.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-category-menu-tile.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-from-price.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-money.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-price.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-tile.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/qc-delivery-tiers.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/qc-menu.liquid",
+      "matched": true
+    },
+    {
+      "filename": "templates/index.json",
+      "matched": true
+    }
+  ],
+  "settingsSemanticMatch": true,
+  "published": false
+}

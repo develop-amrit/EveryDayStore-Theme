@@ -1,0 +1,135 @@
+{
+  "errors": [],
+  "warnings": [
+    {
+      "check": "OrphanedSnippet",
+      "severity": "warning",
+      "start_row": 0,
+      "start_column": 0,
+      "end_row": 0,
+      "end_column": 1,
+      "message": "This snippet is not referenced by any other files",
+      "file": "d:\\shopify-store-editor\\snippets\\commerce-runtime.liquid"
+    },
+    {
+      "check": "OrphanedSnippet",
+      "severity": "warning",
+      "start_row": 0,
+      "start_column": 0,
+      "end_row": 0,
+      "end_column": 1,
+      "message": "This snippet is not referenced by any other files",
+      "file": "d:\\shopify-store-editor\\snippets\\commerce-source-card.liquid"
+    },
+    {
+      "check": "OrphanedSnippet",
+      "severity": "warning",
+      "start_row": 0,
+      "start_column": 0,
+      "end_row": 0,
+      "end_column": 1,
+      "message": "This snippet is not referenced by any other files",
+      "file": "d:\\shopify-store-editor\\snippets\\quick-order-product-row.liquid"
+    },
+    {
+      "check": "VariableName",
+      "severity": "warning",
+      "start_row": 19,
+      "start_column": 11,
+      "end_row": 19,
+      "end_column": 71,
+      "message": "The variable 'moduloResult' uses wrong naming format",
+      "file": "d:\\shopify-store-editor\\sections\\main-list-collections.liquid"
+    },
+    {
+      "check": "VariableName",
+      "severity": "warning",
+      "start_row": 101,
+      "start_column": 21,
+      "end_row": 101,
+      "end_column": 66,
+      "message": "The variable 'anchorId' uses wrong naming format",
+      "file": "d:\\shopify-store-editor\\sections\\main-article.liquid"
+    },
+    {
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "start_row": 0,
+      "start_column": 174,
+      "end_row": 0,
+      "end_column": 248,
+      "message": "The variable 'current_variant' is assigned but not used",
+      "file": "d:\\shopify-store-editor\\sections\\qc-product.liquid"
+    },
+    {
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "start_row": 273,
+      "start_column": 24,
+      "end_row": 273,
+      "end_column": 56,
+      "message": "The variable 'product_settings' is assigned but not used",
+      "file": "d:\\shopify-store-editor\\sections\\main-search.liquid"
+    },
+    {
+      "check": "LiquidComplexity",
+      "severity": "warning",
+      "start_row": 864,
+      "start_column": 8,
+      "end_row": 864,
+      "end_column": 63,
+      "message": "Liquid complexity is 136, which exceeds the maximum of 120. The decision at line 865 pushed it over the limit. Consider simplifying conditional logic, or moving self-contained decision logic into snippets with the render tag.",
+      "file": "d:\\shopify-store-editor\\snippets\\facets.liquid"
+    },
+    {
+      "check": "UnusedAssign",
+      "severity": "warning",
+      "start_row": 744,
+      "start_column": 10,
+      "end_row": 744,
+      "end_column": 51,
+      "message": "The variable 'seo_media' is assigned but not used",
+      "file": "d:\\shopify-store-editor\\sections\\main-product.liquid"
+    },
+    {
+      "check": "UndefinedObject",
+      "severity": "warning",
+      "start_row": 600,
+      "start_column": 46,
+      "end_row": 600,
+      "end_column": 54,
+      "message": "Unknown object 'continue' used.",
+      "file": "d:\\shopify-store-editor\\sections\\main-product.liquid"
+    },
+    {
+      "check": "UndefinedObject",
+      "severity": "warning",
+      "start_row": 1,
+      "start_column": 205,
+      "end_row": 1,
+      "end_column": 213,
+      "message": "Unknown object 'wordmark' used.",
+      "file": "d:\\shopify-store-editor\\snippets\\qc-logo.liquid"
+    },
+    {
+      "check": "UndefinedObject",
+      "severity": "warning",
+      "start_row": 39,
+      "start_column": 35,
+      "end_row": 39,
+      "end_column": 49,
+      "message": "Unknown object 'scheme_classes' used.",
+      "file": "d:\\shopify-store-editor\\layout\\password.liquid"
+    },
+    {
+      "check": "UndefinedObject",
+      "severity": "warning",
+      "start_row": 61,
+      "start_column": 35,
+      "end_row": 61,
+      "end_column": 49,
+      "message": "Unknown object 'scheme_classes' used.",
+      "file": "d:\\shopify-store-editor\\layout\\theme.liquid"
+    }
+  ]
+}

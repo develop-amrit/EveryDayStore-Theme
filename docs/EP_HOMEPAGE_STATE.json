@@ -15,10 +15,10 @@
   "published": false,
   "worklog": "WORKLOG.md",
   "merchant_todo": "MERCHANT_TODO.md",
-  "next_work": "Owner design review; merchant Help menu/social URLs/images; interactive editor QA and performance/LCP remediation. Use only theme 189582049393.",
-  "latest_batch": "Eight homepage corrections",
-  "latest_code_readback_files": 14,
-  "latest_json_readback_files": 7,
+  "next_work": "Owner review of existing theme 189582049393; Admin currency formats, Help menu/policies/social URLs and optional replacement images. Prior Lighthouse performance/LCP and interactive editor review remain open.",
+  "latest_batch": "Final homepage fixes 1–11",
+  "latest_code_readback_files": 80,
+  "latest_json_readback_files": 1,
   "lighthouse": {
     "scores": {
       "performance": 60,
@@ -31,5 +31,13 @@
     "new_javascript_bytes": 8365
   },
   "deals_url": "/collections/all?view=ep-deals",
-  "help_menu_pending": true
+  "help_menu_pending": true,
+  "latest_readback_total": 81,
+  "homepage_qa_passed": true,
+  "homepage_qa_file": "qa/final-home-browser.json",
+  "full_catalogue_links_verified": 123,
+  "brand_tiles": 7,
+  "missing_requested_vendor": "Ferrero Rocher",
+  "new_homepage_js_raw_bytes": 14734,
+  "lighthouse_scope": "Previous batch result only; not rerun for this final homepage-only checklist."
 }

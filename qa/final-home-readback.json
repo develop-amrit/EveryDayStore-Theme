@@ -1,0 +1,345 @@
+{
+  "theme": {
+    "id": "gid://shopify/OnlineStoreTheme/189582049393",
+    "name": "everyday-homepage-review",
+    "role": "UNPUBLISHED",
+    "batch0": {
+      "nodes": [
+        {
+          "filename": "assets/ep-final.js",
+          "checksumMd5": "64a987339e042f7f9f572714778055fa"
+        },
+        {
+          "filename": "assets/ep-mobile.css",
+          "checksumMd5": "452e441cc8adcbf7c6225761abff9548"
+        },
+        {
+          "filename": "assets/ep-mobile.js",
+          "checksumMd5": "5c5411a45f5bcbd7bdb0261ef3cad40c"
+        },
+        {
+          "filename": "assets/qc-home.js",
+          "checksumMd5": "b458d2d7901f148ae53ece3c17f3d9fd"
+        },
+        {
+          "filename": "config/settings_data.json",
+          "checksumMd5": "7cc3b56412590dd4afa361c2147308cf"
+        },
+        {
+          "filename": "layout/theme.liquid",
+          "checksumMd5": "01e8c1da954ddc0545eebc5214f65f0d"
+        },
+        {
+          "filename": "locales/bg.json",
+          "checksumMd5": "eec4c395bcd4ecb5bc1ad4f05a42cd4b"
+        },
+        {
+          "filename": "locales/cs.json",
+          "checksumMd5": "e1445985f18ec19ec098f2a02996bd85"
+        },
+        {
+          "filename": "locales/cs.schema.json",
+          "checksumMd5": "9897892111176aafe34b80eb02ea1c4a"
+        },
+        {
+          "filename": "locales/da.json",
+          "checksumMd5": "05f052a7995f42ce2163821c9cee5df0"
+        },
+        {
+          "filename": "locales/da.schema.json",
+          "checksumMd5": "7488993d5edb70c38971d3ad65e2f8a1"
+        },
+        {
+          "filename": "locales/de.json",
+          "checksumMd5": "b61691fc56f46fa813ddb202f5b92971"
+        },
+        {
+          "filename": "locales/de.schema.json",
+          "checksumMd5": "ed2890fdf85ff36526fed40c777a5dd7"
+        },
+        {
+          "filename": "locales/el.json",
+          "checksumMd5": "8e10d90d84c1d30fad9c6183a2487ff2"
+        },
+        {
+          "filename": "locales/en.default.json",
+          "checksumMd5": "3acceb488e9db43e48b3b64a0d08e092"
+        },
+        {
+          "filename": "locales/en.default.schema.json",
+          "checksumMd5": "d44fc67f3a43ffaafed0da3639f789c7"
+        },
+        {
+          "filename": "locales/es.json",
+          "checksumMd5": "5d83844d2017f7028a669ab04f0a87de"
+        },
+        {
+          "filename": "locales/es.schema.json",
+          "checksumMd5": "63244d8ba02de516b630127952fbacdc"
+        },
+        {
+          "filename": "locales/fi.json",
+          "checksumMd5": "30cc6b7b5071076e7065c5ba84392e81"
+        },
+        {
+          "filename": "locales/fi.schema.json",
+          "checksumMd5": "892ef617845a33de634d1c460f94b368"
+        },
+        {
+          "filename": "locales/fr.json",
+          "checksumMd5": "60c20b4b1fb8920bd1be01b3df2cd3f6"
+        },
+        {
+          "filename": "locales/fr.schema.json",
+          "checksumMd5": "9b9dbd61f092898d5eed0124dca36e5c"
+        },
+        {
+          "filename": "locales/hr.json",
+          "checksumMd5": "05b8a1b57dc80c8282b5e47bd6b37e73"
+        },
+        {
+          "filename": "locales/hu.json",
+          "checksumMd5": "c9522ff3bbb452b8efb679528e75af39"
+        },
+        {
+          "filename": "locales/id.json",
+          "checksumMd5": "88a1f8e5077f74c1219c7ea307d0a779"
+        },
+        {
+          "filename": "locales/it.json",
+          "checksumMd5": "752e9e74103716dc6382dbf28bb156a4"
+        },
+        {
+          "filename": "locales/it.schema.json",
+          "checksumMd5": "f4147764c2dace90c726e02ae3edeb7e"
+        },
+        {
+          "filename": "locales/ja.json",
+          "checksumMd5": "467badc4d11a20f3f8e7dd9d446e8514"
+        },
+        {
+          "filename": "locales/ja.schema.json",
+          "checksumMd5": "0f8bb2cc3df02a843155169911cbccb5"
+        },
+        {
+          "filename": "locales/ko.json",
+          "checksumMd5": "cbcee5b7117e824af41e8f19a205cacf"
+        },
+        {
+          "filename": "locales/ko.schema.json",
+          "checksumMd5": "9a3fcc5f3ea8e20043eff0c85610d362"
+        },
+        {
+          "filename": "locales/lt.json",
+          "checksumMd5": "5ced89899a261b39129ecfd8b58e7817"
+        },
+        {
+          "filename": "locales/nb.json",
+          "checksumMd5": "f5642191ef4b13c57381cffb9baaab9e"
+        },
+        {
+          "filename": "locales/nb.schema.json",
+          "checksumMd5": "d5ff63488bb6e03092f8f70d34e73e60"
+        },
+        {
+          "filename": "locales/nl.json",
+          "checksumMd5": "bbac761e726d81cec0d7ab932168dfa4"
+        },
+        {
+          "filename": "locales/nl.schema.json",
+          "checksumMd5": "a2b2d2de71c802d0a910327dc30cee59"
+        },
+        {
+          "filename": "locales/pl.json",
+          "checksumMd5": "e65a06f49ea1afdf7e96e0bcf2825840"
+        },
+        {
+          "filename": "locales/pl.schema.json",
+          "checksumMd5": "4370fa1bc3ede00dc8da58d35d9019b9"
+        },
+        {
+          "filename": "locales/pt-BR.json",
+          "checksumMd5": "d6c6bd9921f1a55ade51d2604a7320b5"
+        },
+        {
+          "filename": "locales/pt-BR.schema.json",
+          "checksumMd5": "8886775666b5668f58f127d367b32250"
+        },
+        {
+          "filename": "locales/pt-PT.json",
+          "checksumMd5": "3ee91efe6cee77e2e62006b93a55e42d"
+        },
+        {
+          "filename": "locales/pt-PT.schema.json",
+          "checksumMd5": "114c9aa5fa95ba78e422e1120717fb9f"
+        },
+        {
+          "filename": "locales/ro.json",
+          "checksumMd5": "33cf3cbfd2a7b7f3065bf78ca488dc15"
+        },
+        {
+          "filename": "locales/ru.json",
+          "checksumMd5": "dec4504189691351cf14a545e6e8c078"
+        },
+        {
+          "filename": "locales/sk.json",
+          "checksumMd5": "266be7df8a4c096149ea1718c9a8546a"
+        },
+        {
+          "filename": "locales/sl.json",
+          "checksumMd5": "d162a7af850e59d1cbfc8cfe5a63a9e7"
+        },
+        {
+          "filename": "locales/sv.json",
+          "checksumMd5": "4515f49096da7cce21aab3d8091d6bdc"
+        },
+        {
+          "filename": "locales/sv.schema.json",
+          "checksumMd5": "70d93e173ef569e076380e952c3a96b3"
+        },
+        {
+          "filename": "locales/th.json",
+          "checksumMd5": "39ef00c5c9ad6c3b902bd2b891e18a92"
+        },
+        {
+          "filename": "locales/th.schema.json",
+          "checksumMd5": "20e6e0e0528d5f5fb767682d93d563be"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    },
+    "batch1": {
+      "nodes": [
+        {
+          "filename": "locales/tr.json",
+          "checksumMd5": "f77479222c483dd1dc9004944d1423a3"
+        },
+        {
+          "filename": "locales/tr.schema.json",
+          "checksumMd5": "7b92f514456e07325cb7344435d7b256"
+        },
+        {
+          "filename": "locales/vi.json",
+          "checksumMd5": "32e556772621d7125d43a5de83a6eb19"
+        },
+        {
+          "filename": "locales/zh-CN.json",
+          "checksumMd5": "bd998680d3c25d9c73613ccff1474763"
+        },
+        {
+          "filename": "locales/zh-CN.schema.json",
+          "checksumMd5": "94001357086a98ac193836c0ec96792f"
+        },
+        {
+          "filename": "locales/zh-TW.json",
+          "checksumMd5": "4fe74cec92723c407684eac5f713f6cd"
+        },
+        {
+          "filename": "locales/zh-TW.schema.json",
+          "checksumMd5": "2e246f3a6642f6973efcb867f4eb7a90"
+        },
+        {
+          "filename": "sections/ep-banner-carousel.liquid",
+          "checksumMd5": "585da53a2288c829afb97d96a46bc2d9"
+        },
+        {
+          "filename": "sections/ep-bottom-nav.liquid",
+          "checksumMd5": "61df832e9f70de7121a42f9e97bd5635"
+        },
+        {
+          "filename": "sections/ep-brand-tiles.liquid",
+          "checksumMd5": "bbfa74ad75ae0b0ccbbfd765608f3c33"
+        },
+        {
+          "filename": "sections/ep-campaign.liquid",
+          "checksumMd5": "40c0d7c5f200c6606343bb46a51a0582"
+        },
+        {
+          "filename": "sections/ep-category-grid.liquid",
+          "checksumMd5": "cb315917c56aa9d5ecdfbad6725e2ac6"
+        },
+        {
+          "filename": "sections/ep-promo-banner.liquid",
+          "checksumMd5": "6bade578198c8c8413ae5b42e069d3f3"
+        },
+        {
+          "filename": "sections/ep-store-grid.liquid",
+          "checksumMd5": "937510f4793cddbfd33f8db23d1fc9bf"
+        },
+        {
+          "filename": "sections/ep-themed-grid.liquid",
+          "checksumMd5": "4cb90acbed2e9a9b4de989fbec0ccdb3"
+        },
+        {
+          "filename": "sections/footer-group.json",
+          "checksumMd5": "c729f3dc3865c89e0adc25a14f600d82"
+        },
+        {
+          "filename": "sections/header-group.json",
+          "checksumMd5": "866ac7e2def0e240dcf360e9c8335d32"
+        },
+        {
+          "filename": "sections/predictive-search.liquid",
+          "checksumMd5": "3b9f581d739d37a2820ef360b8e8531a"
+        },
+        {
+          "filename": "sections/qc-announcement.liquid",
+          "checksumMd5": "364699c51ce645486489e56ebe3ed9b3"
+        },
+        {
+          "filename": "sections/qc-footer.liquid",
+          "checksumMd5": "52a37f2da880a1e1c62b0f510486b8fa"
+        },
+        {
+          "filename": "sections/qc-header.liquid",
+          "checksumMd5": "e1ac1a3490ccc5c463850bb1f3780407"
+        },
+        {
+          "filename": "snippets/ep-area-picker.liquid",
+          "checksumMd5": "8099b87d265c9847c05840d1bcc12de7"
+        },
+        {
+          "filename": "snippets/ep-auto-image.liquid",
+          "checksumMd5": "b1045039761d16a2ed21b89284db1eb1"
+        },
+        {
+          "filename": "snippets/ep-category-menu-tile.liquid",
+          "checksumMd5": "2d677f2c1bebe9005f6ff73c533da05e"
+        },
+        {
+          "filename": "snippets/ep-from-price.liquid",
+          "checksumMd5": "9a981de5e24d2451ce59ef7fb979db67"
+        },
+        {
+          "filename": "snippets/ep-money.liquid",
+          "checksumMd5": "a9b2312d63d1c19e496debe665460d07"
+        },
+        {
+          "filename": "snippets/ep-price.liquid",
+          "checksumMd5": "114b5e2759f4b37cc6cca03d3bddc5f1"
+        },
+        {
+          "filename": "snippets/ep-tile.liquid",
+          "checksumMd5": "10deddc68e42b06dd565318f22630bea"
+        },
+        {
+          "filename": "snippets/qc-delivery-tiers.liquid",
+          "checksumMd5": "7df1d8535bd1e15dc531a99c1f5220ae"
+        },
+        {
+          "filename": "snippets/qc-menu.liquid",
+          "checksumMd5": "fdb4a38a90b3f0d7e9eeba2b91801609"
+        },
+        {
+          "filename": "templates/index.json",
+          "checksumMd5": "5aae23801a920bb85c773ee643b7de89"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false
+      }
+    }
+  }
+}

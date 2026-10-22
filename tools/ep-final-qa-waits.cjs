@@ -1,0 +1,3 @@
+const fs=require('fs');const p='tools/ep-final-qa.cjs';let s=fs.readFileSync(p,'utf8');s=s.replace("await controls.locator('[data-ep-action=minus]').click();await page.waitForTimeout(800);", "await controls.locator('[data-ep-action=minus]').click();await page.waitForFunction(id=>!window.QCCart.get().items.some(i=>i.variant_id===id),id);await controls.locator('[data-ep-add]').waitFor();");
+s=s.replace("await page.waitForTimeout(800);result.backTop=", "await page.waitForFunction(()=>scrollY<2);result.backTop=");s=s.replace("await page.waitForTimeout(800);result.categoriesNav=", "await page.waitForFunction(()=>{const top=document.querySelector('#shop-by-category')?.getBoundingClientRect().top;return top>0&&top<180;});result.categoriesNav=");
+fs.writeFileSync(p,s);

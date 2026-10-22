@@ -1,4 +1,4 @@
 {% doc %}Shopify numeric money format with the active currency code; only whole-amount decimals are removed.
 @param {number} value - Price in cents.
 {% enddoc %}
-{%- assign amount = value | money_without_currency -%}{%- assign remainder = value | modulo: 100 -%}{%- if remainder == 0 -%}{%- assign tail = amount | slice: -3, 3 -%}{%- if tail == '.00' or tail == ',00' -%}{%- assign length = amount.size | minus: 3 -%}{%- assign amount = amount | slice: 0, length -%}{%- endif -%}{%- endif -%}{{- localization.country.currency.iso_code | default: shop.currency -}} {{ amount }}
+{%- assign amount = value | money_without_currency -%}{%- assign remainder = value | modulo: 100 -%}{%- if remainder == 0 -%}{%- assign tail = amount | slice: -3, 3 -%}{%- if tail == '.00' or tail == ',00' -%}{%- assign length = amount.size | minus: 3 -%}{%- assign amount = amount | slice: 0, length -%}{%- endif -%}{%- endif -%}{{- localization.country.currency.iso_code | default: shop.currency }} {{ amount }}

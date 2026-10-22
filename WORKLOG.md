@@ -261,3 +261,35 @@ Composition reconciles two instructions: first three rails remain Baby/Gifts/Gro
 ## Final Fix 10: Homepage stylesheet and composition cleanup
 
 Homepage loads base.css and the existing consolidated ep-mobile.css once via explicit stylesheet links. Removed unused stock cart-items/predictive styles and unused font preloads from homepage only; non-home layout paths retain prior assets. commerce/qc-home/qc-storefront styles including the active custom QC cart drawer are bundled into ep-mobile.css and ready before opening. Disabled Dawn drawer assets remain unloaded. No old section files deleted. All 20 index sections are in order, including the disabled National Day section; no orphan Gifts/steps/brand-row section. Corrected whole-money decimal trimming to remove only a terminal decimal suffix, preserving thousands separators. Theme Check and browser results will be recorded under Fix 11.
+
+## Final Fix 11: Homepage QA and handoff
+
+Final deployment remains only theme 189582049393, verified UNPUBLISHED before every push and by final API read-back. No creation, publication or writes to either codex-edits theme. 80 changed files match remote byte-for-byte and settings_data.json matches semantically (81 total). Only templates/index.json changed among page templates; existing collection/product/cart/other templates are untouched. Every numbered implementation fix 1–10 has its own Fix N commit, with integration findings and this QA committed as Fix 11.
+
+### Homepage checklist results
+
+| Component | Result |
+|---|---|
+| Currency | PASS: rails/grids/Deals/predictive rows and real campaign tags use AED; no Dhs, duplicate currency code or .00 whole amounts. From values AED 60 / AED 117 / AED 43.17 independently match actual collection variant minima. Currency codes setting off; four store-format Admin fields remain the first merchant task. |
+| Announcement | PASS: 32px, one line at 360px, four-second rotation, touch pause, session dismissal. No animation/rotation under reduced motion in implementation. |
+| Area picker | PASS: modal sheet, 16px filter, one Marina match, no-match copy, body lock, keyboard, Esc and backdrop close. Saves qc-dubai-area + cart delivery_zone and updates trigger. Separate reload test confirms cart Downtown beats stale local Dubai Marina. Test area restored. |
+| Search | PASS: full-bar brand focus ring, no inner outline, three skeleton rows, four priced Pampers suggestions, no blank opacity animation in rotating placeholder. Uses Dawn predictive-search component. |
+| Tabs/rails | PASS: All/Baby/Gifting/Grocery first, All active; hero/Baby/Gifts/Grocery first in index; native rails scroll. |
+| Cart/wishlist | PASS: add → quantity 1 → minus removes, header/nav badges 1/1, drawer works, test cart restored. Heart toggles at 44×44px with zero discount overlap. |
+| Carousel | PASS: five slides, scroll/swipe and dots, autoplay, touch pause, reduced-motion stop. |
+| Content | PASS: 6 seasonal tiles, 3 Baby Basket offers, 8 store tiles, 7 verified vendor tiles with Ad off and auto images, Deals bubble with accessible name. Empty collection keeps placeholder/Coming soon; no invented price. National Day instance disabled. |
+| Categories | PASS: all 123 catalogue destinations present. 115 child/leaf tiles plus department heading links; original All Products link retained in homepage menu/drawer. Actual empty tile labels total 67 in the rendered child/leaf grid. |
+| FAQ | PASS: Enter opens/closes, actual caret rotates 180°. |
+| Footer | PASS: existing Privacy policy URL returns 200; absent policies hidden; Help absent until menu selected; social container absent with no URLs. Back-to-top button focuses logo and reaches scroll 0 (within 1px). |
+| Bottom nav | PASS: Categories scrolls to grid and focuses heading; Deals route preserved, Cart opens drawer. 64px nav, 64px body padding at 375px; safe-area handling retained. |
+| Responsive/rhythm | PASS: 360,375,414,768,1280 have no page overflow and no delivery/icon overlap. One category tab strip; image modules interleaved with rails/grids and outer panels mostly white. Hero uses 18px at <=390px to keep merchant’s exact copy within three lines, 19px above that mobile width and 28px tablet/desktop. No heading text clipped. |
+| Console/styles | PASS: zero page errors and no unused stylesheet preload warnings. Only base.css and consolidated ep-mobile.css stylesheet links; no homepage preload links. Custom drawer CSS is in the already-loaded bundle. |
+| Theme Check | PASS: 0 errors, 13 retained pre-existing warnings. |
+
+Warnings retained: three unreferenced Dawn/legacy snippets kept per file-preservation rule; old variable naming/unused assigns in non-home article/list/search/product files; existing facets complexity; existing qc-logo parameter inference and scheme_classes warnings. No new homepage warnings. Locale keys and editor labels propagated with English fallback to existing locale files; merchant translation review remains optional. New ep-mobile.js + ep-final.js total 14734 bytes before minification, below 15KB.
+
+During QA integration, fixed Shopify’s unsupported /# URL schema default (the real section setting holds the anchor), missing locale fallbacks, currency/number whitespace and header initializer timing. Two test failures were automation issues: an outside click hit the linked hero and navigated away, and an Add-button selector changed after stepper morph; corrected the test to use a non-link blur and stable variant selector. Smooth scroll/cart assertions now wait for the actual resulting state.
+
+The bundled Shopify skill validator still cannot load @shopify/theme-check-common; official CLI Theme Check is the successful fallback. Interactive theme-editor add/reorder/all-settings QA is not rerun because the computer-use runtime was unavailable in the earlier session; no claim of a fresh editor pass. Lighthouse was not part of this final homepage-only checklist; earlier 60 performance / 3.96s LCP release gates remain open, not re-certified by these fixes.
+
+Screenshots: qa/final-home-375.png, qa/final-home-1280.png, qa/final-area-375.png, qa/final-search-375.png, qa/final-seasonal-375.png and qa/final-carousel-375.png. MERCHANT_TODO.md contains currency formatting first, menu order/Help/policies/social, Pantry Staples image, seasonal switch and sized image briefs. No required campaign artwork blocks the configured auto-image page. Ready for owner review in Admin → Online Store → Themes → everyday-homepage-review. Preview: https://3djevx-mu.myshopify.com/?preview_theme_id=189582049393 . Do not publish automatically.

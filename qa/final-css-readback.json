@@ -1,0 +1,14 @@
+{
+  "theme": {
+    "id": "gid://shopify/OnlineStoreTheme/189582049393",
+    "role": "UNPUBLISHED",
+    "files": {
+      "nodes": [
+        {
+          "filename": "assets/ep-mobile.css",
+          "checksumMd5": "73192b66d96195c5cbabd384f96f2112"
+        }
+      ]
+    }
+  }
+}

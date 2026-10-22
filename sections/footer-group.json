@@ -11,17 +11,10 @@
             "heading": "Shop",
             "menu": "catalogue"
           }
-        },
-        "help": {
-          "type": "links",
-          "settings": {
-            "heading": "Help"
-          }
         }
       },
       "block_order": [
-        "shop",
-        "help"
+        "shop"
       ],
       "settings": {}
     },
