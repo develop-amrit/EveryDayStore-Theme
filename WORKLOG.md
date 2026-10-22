@@ -64,3 +64,7 @@ Added sections/ep-product-grid.liquid with editable schema/preset, shared spacin
 ## Phase 4 — Everyday themed grid
 
 Added sections/ep-themed-grid.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.
+
+## Phase 4 — Everyday campaign
+
+Added sections/ep-campaign.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.

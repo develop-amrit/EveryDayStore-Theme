@@ -3459,6 +3459,12 @@
     "background_image": "Background image",
     "decorative_artwork": "Decorative artwork",
     "seasonal_tile": "Seasonal tile",
-    "feature_strip": "Feature strip"
+    "feature_strip": "Feature strip",
+    "everyday_campaign": "Everyday campaign",
+    "heading_image": "Heading image",
+    "powered_by_label": "Powered by label",
+    "partner_logo": "Partner logo",
+    "offer_tile": "Offer tile",
+    "price_tag": "Price tag"
   }
 }
