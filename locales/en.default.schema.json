@@ -3465,6 +3465,14 @@
     "powered_by_label": "Powered by label",
     "partner_logo": "Partner logo",
     "offer_tile": "Offer tile",
-    "price_tag": "Price tag"
+    "price_tag": "Price tag",
+    "everyday_banner_carousel": "Everyday banner carousel",
+    "accessible_title": "Accessible title",
+    "autoplay": "Autoplay",
+    "slide": "Slide",
+    "fallback_collection_image": "Fallback collection image",
+    "add_alternative_text_describing_the_banner": "Add alternative text describing the banner.",
+    "heading": "Heading",
+    "supporting_text": "Supporting text"
   }
 }
