@@ -1,5 +1,7 @@
 # Merchant setup — theme 189582049393
 
+**First: Add Terms of service, Refund policy and Shipping policy in Admin → Settings → Policies.** The cart’s terms checkbox depends on the Terms of service policy. Homepage policy row correctly shows existing policies only.
+
 1. **Currency formatting:** Admin → Settings → Store details → Store defaults → Currency display → Change currency formatting: set all four fields (HTML with currency, HTML without currency, Email with currency, Email without currency) to `AED {{amount}}`. Keep Show currency codes off. The homepage uses the active currency code with Shopify’s numeric money filter until these store formats are corrected.
 
 2. **Menus:** Admin → Content → Menus: move Baby Products and Gifting above Grocery in Shop/catalogue and Trending searches Categories menus. Create Help with Delivery areas, Order cut-off, FAQs (/#ep-home-faq), Returns and Contact (/pages/contact); create/publish delivery and cut-off content or select an existing real policy URL, then assign Footer → Help menu. Do not use missing /pages/* policy URLs.

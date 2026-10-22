@@ -329,3 +329,7 @@ Title receives initial focus; input focuses on tap. Selection tick displays for 
 ## Polish 9: Add merchant-controlled homepage product exclusions
 
 Every rail/grid/auto-image section gets Exclude products tagged (default homepage-hide). Homepage product loops scan up to 50 real candidates to fill requested count after exclusions; collections/search remain unchanged. Uploaded images remain explicit merchant overrides. No product tags or catalogue data were mutated. Merchant tagging task recorded.
+
+## Polish 10: Prioritize missing checkout policies
+
+Moved exact policy creation instruction to the top of MERCHANT_TODO.md; no empty or invented policy links added.
