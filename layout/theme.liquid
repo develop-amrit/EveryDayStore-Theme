@@ -43,7 +43,7 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {{ content_for_header }}
+
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -261,7 +261,7 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
-    {%- if settings.cart_type == 'drawer' -%}
+    {%- if false -%}
       {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
       {{ 'component-cart.css' | asset_url | stylesheet_tag }}
       {{ 'component-totals.css' | asset_url | stylesheet_tag }}
@@ -299,13 +299,14 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  {{ 'commerce.css' | asset_url | stylesheet_tag }}
   
-  {{ 'qc-home.css' | asset_url | stylesheet_tag }}
-{{ 'qc-storefront.css' | asset_url | stylesheet_tag }}
+  
+  
+
 <script src="{{ 'qc-home.js' | asset_url }}" defer></script><script src="{{ 'qc-storefront.js' | asset_url }}" defer></script><script src="{{ 'qc-catalog.js' | asset_url }}" defer></script><script src="{{ 'qc-delivery.js' | asset_url }}" defer></script><script src="{{ 'qc-account.js' | asset_url }}" defer></script><script src="{{ 'qc-assistant.js' | asset_url }}" defer></script><script src="{{ 'qc-privacy.js' | asset_url }}" defer></script>
 {{ 'ep-mobile.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'ep-mobile.js' | asset_url }}" defer></script>
+    {{ content_for_header }}
 </head>
 
   <body class="qc-home ep-page gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

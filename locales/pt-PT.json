@@ -996,7 +996,7 @@
     "decrease_product": "Decrease quantity of {{ title }}",
     "wishlist_product": "Save {{ title }} to wishlist",
     "rating_label": "{{ rating }} stars from {{ count }} reviews",
-    "search_for": "Search for \"{{ term }}\"",
+    "search_for": "Search for “{{ term }}”",
     "search_products": "Search products",
     "error": "We could not update your basket. Please try again.",
     "page_title": "EverydayyPlus — everyday essentials delivered next day in Dubai",

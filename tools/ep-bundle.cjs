@@ -1,0 +1,1 @@
+const fs=require('fs');fs.writeFileSync('assets/ep-mobile.css',['assets/commerce.css','assets/qc-home.css','assets/qc-storefront.css','tools/ep-mobile-source.css'].map(f=>fs.readFileSync(f,'utf8')).join('\n'));

@@ -104,3 +104,7 @@ Theme Check found 9,938 missing translations, mostly pre-existing QC keys in bun
 ## Browser polish corrections
 
 First preview has no page overflow at 360/375/390/414/430/768/1280; sticky search stays 4–6px from top on mobile/tablet and unsticks on desktop. Fixed intrinsic portrait supplier image sizing by absolutely positioning the image link within a square well. Fixed search placeholder selector accidentally matching the hidden type input. Removed the unused Dawn drawer script that raised CartItems undefined on off-home templates. Added combobox semantics and a count-aware header cart name. Cookie banner now paints immediately while Shopify Privacy API resolves consent, preventing a late 7-second LCP paint; API remains the only consent authority. Stepper expands to fit two 44px targets.
+
+## Performance optimisation
+
+First mobile Lighthouse: 54 performance, LCP 7.03s; after image/accessibility fixes: 69 performance, LCP 4.35s, CLS 0, accessibility 100. Remaining large costs include Shopify perf-kit, web pixels and preview redirects. Consolidated existing three custom CSS files plus new design CSS into ep-mobile.css to reduce blocking requests while preserving cascade; original CSS files remain. Editable design source is tools/ep-mobile-source.css. Moved required content_for_header after CSS discovery (still in head, unmodified), and stopped loading unused Dawn cart-drawer styles because the actual drawer is QC. Lowered campaign collection-image resolutions. Search quotes now use typographic quotes to avoid visible HTML entities.

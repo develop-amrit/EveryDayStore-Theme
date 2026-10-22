@@ -3491,6 +3491,9 @@
     "everyday_search_links": "Everyday search links",
     "search_group": "Search group",
     "menu": "Menu",
-    "search_terms_one_per_line": "Search terms, one per line"
+    "search_terms_one_per_line": "Search terms, one per line",
+    "homepage_cart": "Homepage cart",
+    "open_basket": "Open basket after adding a product",
+    "whatsapp_url": "WhatsApp URL"
   }
 }

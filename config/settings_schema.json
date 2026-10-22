@@ -1655,18 +1655,18 @@
     ]
   },
   {
-    "name": "Homepage cart",
+    "name": "t:ep.homepage_cart",
     "settings": [
       {
         "type": "checkbox",
         "id": "ep_open_cart",
-        "label": "Open basket after adding a product",
+        "label": "t:ep.open_basket",
         "default": false
       },
       {
         "type": "url",
         "id": "social_whatsapp_link",
-        "label": "WhatsApp URL"
+        "label": "t:ep.whatsapp_url"
       }
     ]
   }
