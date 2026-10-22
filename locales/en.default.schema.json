@@ -3438,6 +3438,17 @@
     "image_description": "Image description",
     "supporting_note": "Supporting note",
     "background": "Background",
-    "text_colour": "Text colour"
+    "text_colour": "Text colour",
+    "everyday_product_rail": "Everyday product rail",
+    "collection": "Collection",
+    "products_to_show": "Products to show",
+    "see_all_link": "See all link",
+    "card_variant": "Card variant",
+    "compact": "compact",
+    "rated": "rated",
+    "show_see_all_button": "Show See all button",
+    "none": "none",
+    "soft": "soft",
+    "deals_rail": "Deals rail"
   }
 }

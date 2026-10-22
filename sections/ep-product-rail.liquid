@@ -1,0 +1,114 @@
+{% assign chosen = section.settings.collection %}{% assign limit = section.settings.limit %}{% assign dest = section.settings.see_all_link | default: chosen.url %}{% if chosen.products_count > 0 or request.design_mode %}{% capture heading_id %}ep-heading-{{ section.id }}{% endcapture %}<section class="ep-section color-{{ section.settings.color_scheme }}" aria-labelledby="{{ heading_id }}" style="--ep-top:{{ section.settings.padding_top }}px;--ep-bottom:{{ section.settings.padding_bottom }}px"><div class="ep-wrap">{% render 'ep-section-header', title: section.settings.title, subtitle: section.settings.subtitle, link_url: dest, heading_id: heading_id %}<div class="ep-rail-arrows"><button type="button" data-ep-arrow="prev" data-rail="ep-rail-{{ section.id }}" aria-label="{{ 'qc.previous' | t }}">‹</button><button type="button" data-ep-arrow="next" data-rail="ep-rail-{{ section.id }}" aria-label="{{ 'qc.next' | t }}">›</button></div><div class="{% if section.settings.background == 'soft' %}ep-panel {% endif %}ep-rail" id="ep-rail-{{ section.id }}" style="--ep-columns:{{ section.settings.columns_mobile }};--ep-rows:{{ section.settings.rows }}">{% for product in chosen.products limit: limit %}{% render 'ep-card', product: product, variant: section.settings.card_variant %}{% else %}{% if request.design_mode %}{% for i in (1..4) %}<div class="ep-card"><div class="ep-image-well">{{ 'product-1' | placeholder_svg_tag }}</div></div>{% endfor %}{% endif %}{% endfor %}</div>{% if section.settings.show_button %}{% render 'ep-see-all-button', link_url: dest %}{% endif %}</div></section>{% endif %}
+{% schema %}
+{
+  "name": "t:ep.everyday_product_rail",
+  "tag": "div",
+  "class": "ep-section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:ep.title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "t:ep.subtitle"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:ep.collection"
+    },
+    {
+      "type": "range",
+      "id": "limit",
+      "label": "t:ep.products_to_show",
+      "min": 4,
+      "max": 20,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "url",
+      "id": "see_all_link",
+      "label": "t:ep.see_all_link"
+    },
+    {
+      "type": "select",
+      "id": "card_variant",
+      "label": "t:ep.card_variant",
+      "options": [
+        {
+          "value": "compact",
+          "label": "t:ep.compact"
+        },
+        {
+          "value": "rated",
+          "label": "t:ep.rated"
+        }
+      ],
+      "default": "compact"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "t:ep.show_see_all_button",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "background",
+      "label": "t:ep.background",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:ep.none"
+        },
+        {
+          "value": "soft",
+          "label": "t:ep.soft"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:ep.colour_scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "t:ep.top_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "t:ep.bottom_padding",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:ep.everyday_product_rail"
+    },
+    {
+      "name": "t:ep.deals_rail",
+      "settings": {
+        "title": "Best deals",
+        "card_variant": "compact",
+        "show_button": true
+      }
+    }
+  ]
+}
+{% endschema %}

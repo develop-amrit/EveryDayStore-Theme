@@ -52,3 +52,7 @@ Added sections/ep-bottom-nav.liquid with editable schema/preset, shared spacing/
 ## Phase 4 — Everyday promo banner
 
 Added sections/ep-promo-banner.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.
+
+## Phase 4 — Everyday product rail
+
+Added sections/ep-product-rail.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.
