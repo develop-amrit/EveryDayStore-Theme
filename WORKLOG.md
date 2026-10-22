@@ -88,3 +88,7 @@ Added sections/ep-brand-tiles.liquid with editable schema/preset, shared spacing
 ## Phase 4 — Everyday search links
 
 Added sections/ep-search-links.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.
+
+## Phase 5 — Homepage composition
+
+Composed 20 homepage sections; transferred original hero copy and real rail collections. Steps file retained but unused. Seasonal/store tiles hide without merchant images; campaign and brand rows disabled. Offers collection left unassigned (hidden) rather than claiming fabricated deals. Category groups without dedicated menus remain hidden. Sample baby menu reused. Gift/office promotional copy migrated to carousel with actual collection image fallback. Footer Shop uses catalogue; Help uses existing main-menu as a temporary honest fallback.

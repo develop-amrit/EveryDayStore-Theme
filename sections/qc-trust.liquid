@@ -1,4 +1,4 @@
-<section class="qc-section qc-wrap qc-reveal"><div class="qc-trust">{% for block in section.blocks %}<div {{ block.shopify_attributes }}>{% render 'qc-icon', name: block.settings.icon %}<span><strong>{{ block.settings.heading | escape }}</strong><small>{{ block.settings.text | escape }}</small></span></div>{% endfor %}{% if settings.qc_cod %}<div>{% render 'qc-icon', name: 'check' %}<strong>{{ section.settings.cod_text | escape }}</strong></div>{% endif %}</div></section>
+<section class="qc-section qc-wrap" aria-label="{{ section.settings.accessible_title | escape }}"><div class="qc-trust">{% for block in section.blocks %}<div {{ block.shopify_attributes }}>{% render 'qc-icon', name: block.settings.icon %}<span><strong>{{ block.settings.heading | escape }}</strong><small>{{ block.settings.text | escape }}</small></span></div>{% endfor %}{% if settings.qc_cod and section.blocks.size < 4 %}<div>{% render 'qc-icon', name: 'check' %}<strong>{{ section.settings.cod_text | escape }}</strong></div>{% endif %}</div></section>
 {% schema %}
 {
   "name": "Trust strip",
@@ -8,6 +8,12 @@
       "id": "cod_text",
       "label": "Cash on Delivery label",
       "default": "Cash on Delivery available"
+    },
+    {
+      "type": "text",
+      "id": "accessible_title",
+      "label": "Accessible title",
+      "default": "Shopping with EverydayyPlus"
     }
   ],
   "blocks": [

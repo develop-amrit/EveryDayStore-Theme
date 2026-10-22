@@ -42,7 +42,87 @@
     },
     "header": {
       "type": "qc-header",
-      "settings": {}
+      "settings": {
+        "delivery_text": "Delivery tomorrow",
+        "wishlist_link": "/pages/wishlist",
+        "rotating_terms": "Milk\nDiapers\nChocolates\nShampoo\nFlowers\nCoffee"
+      },
+      "blocks": {
+        "all": {
+          "type": "tab",
+          "settings": {
+            "label": "All",
+            "link": "/",
+            "icon": "grid"
+          }
+        },
+        "tab0": {
+          "type": "tab",
+          "settings": {
+            "label": "Grocery",
+            "link": "/collections/grocery",
+            "icon": "bag"
+          }
+        },
+        "tab1": {
+          "type": "tab",
+          "settings": {
+            "label": "Baby Products",
+            "link": "/collections/baby-products",
+            "icon": "heart"
+          }
+        },
+        "tab2": {
+          "type": "tab",
+          "settings": {
+            "label": "Gifting",
+            "link": "/collections/gifting",
+            "icon": "heart"
+          }
+        },
+        "tab3": {
+          "type": "tab",
+          "settings": {
+            "label": "Bath & Body",
+            "link": "/collections/bath-and-body",
+            "icon": "leaf"
+          }
+        },
+        "tab4": {
+          "type": "tab",
+          "settings": {
+            "label": "Home",
+            "link": "/collections/home",
+            "icon": "home"
+          }
+        },
+        "tab5": {
+          "type": "tab",
+          "settings": {
+            "label": "Pet",
+            "link": "/collections/pet",
+            "icon": "heart"
+          }
+        },
+        "tab6": {
+          "type": "tab",
+          "settings": {
+            "label": "Office Supplies",
+            "link": "/collections/office-supplies",
+            "icon": "bag"
+          }
+        }
+      },
+      "block_order": [
+        "all",
+        "tab0",
+        "tab1",
+        "tab2",
+        "tab3",
+        "tab4",
+        "tab5",
+        "tab6"
+      ]
     }
   },
   "order": [
