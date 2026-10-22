@@ -301,3 +301,7 @@ Second-level tiles only, populated collections first preserving menu order withi
 ## Polish 2: Refine festive tile proportions
 
 Seasonal tiles retain all six links, use the designed empty state via shared auto image fallback, larger square image areas and compact two-line titles. Six desktop columns capped at about 220px. Strip arrow has a 44px hit area and shared press feedback.
+
+## Polish 3: Use Baby Products for hero auto artwork
+
+Selected the owner-offered static Baby Products option instead of a rotating image. Merchant-uploaded art still wins, no invented imagery and no autoplay needed.
