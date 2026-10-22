@@ -3481,6 +3481,9 @@
     "make_first_tile_wide": "Make first tile wide",
     "tile_image_override": "Tile image override",
     "target_group_heading": "Target group heading",
-    "target_link_url": "Target link URL"
+    "target_link_url": "Target link URL",
+    "everyday_store_grid": "Everyday store grid",
+    "store": "Store",
+    "tile_background": "Tile background"
   }
 }

@@ -76,3 +76,7 @@ Added sections/ep-banner-carousel.liquid with editable schema/preset, shared spa
 ## Phase 4 — Everyday category grids
 
 Added sections/ep-category-grid.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.
+
+## Phase 4 — Everyday store grid
+
+Added sections/ep-store-grid.liquid with editable schema/preset, shared spacing/colour scheme, responsive layout and hidden storefront empty state.
