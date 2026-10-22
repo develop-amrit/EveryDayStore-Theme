@@ -1,4 +1,4 @@
-<section class="qc-section qc-wrap" aria-labelledby="ep-faq-{{ section.id }}"><div class="qc-faq-layout"><div><span class="qc-eyebrow">{{ section.settings.eyebrow | escape }}</span><h2 id="ep-faq-{{ section.id }}">{{ section.settings.heading | escape }}</h2><p>{{ section.settings.text | escape }}</p></div><div>{% for block in section.blocks %}<details class="qc-faq" {{ block.shopify_attributes }}><summary>{{ block.settings.question | escape }}<span class="ep-faq-chevron" aria-hidden="true">⌄</span></summary><div>{{ block.settings.answer }}</div>{% if block.id == 'b4' %}{% render 'qc-delivery-tiers' %}{% endif %}</details>{% endfor %}</div></div></section>
+<section class="qc-section qc-wrap" aria-labelledby="ep-faq-{{ section.id }}"><div class="qc-faq-layout"><div><span class="qc-eyebrow">{{ section.settings.eyebrow | escape }}</span><h2 id="ep-faq-{{ section.id }}">{{ section.settings.heading | escape }}</h2><p>{{ section.settings.text | escape }}</p></div><div>{% for block in section.blocks %}<details class="qc-faq" {{ block.shopify_attributes }}><summary>{{ block.settings.question | escape }}<span class="ep-faq-chevron" aria-hidden="true">⌄</span></summary><div>{{ block.settings.answer }}</div>{% if block.settings.show_fees %}{% render 'qc-delivery-tiers' %}{% endif %}</details>{% endfor %}</div></div></section>
 {% schema %}
 {
   "name": "Delivery and payment FAQ",
@@ -36,6 +36,12 @@
           "type": "richtext",
           "id": "answer",
           "label": "Answer"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_fees",
+          "label": "Show current delivery fee tiers",
+          "default": false
         }
       ]
     }

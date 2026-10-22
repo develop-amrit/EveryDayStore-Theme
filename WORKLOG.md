@@ -92,3 +92,11 @@ Added sections/ep-search-links.liquid with editable schema/preset, shared spacin
 ## Phase 5 — Homepage composition
 
 Composed 20 homepage sections; transferred original hero copy and real rail collections. Steps file retained but unused. Seasonal/store tiles hide without merchant images; campaign and brand rows disabled. Offers collection left unassigned (hidden) rather than claiming fabricated deals. Category groups without dedicated menus remain hidden. Sample baby menu reused. Gift/office promotional copy migrated to carousel with actual collection image fallback. Footer Shop uses catalogue; Help uses existing main-menu as a temporary honest fallback.
+
+## Validation corrections
+
+Theme Check initially scanned backup/snapshot/helper copies. Added .theme-check.yml excluding non-theme directories only. Shared JSON/name checker now accepts Shopify translated schema names. Product grid shows configured mobile rows while retaining six-column desktop capacity. Placeholder translation uses a safe interpolation token.
+
+## Locale validation
+
+Theme Check found 9,938 missing translations, mostly pre-existing QC keys in bundled non-English locales. Filled only missing keys with the English default fallback, preserving existing translations. These are explicit English fallbacks, not claimed translations. Added 79 missing branches/keys. Replaced FAQ literal block-ID check with an editable Show current delivery fee tiers checkbox, preserving the current fee display.

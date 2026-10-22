@@ -438,7 +438,8 @@
           "type": "question",
           "settings": {
             "question": "How much does delivery cost?",
-            "answer": "<p>Delivery fees depend on your basket total. See the current tiers below; your final fee is confirmed at checkout.</p>"
+            "answer": "<p>Delivery fees depend on your basket total. See the current tiers below; your final fee is confirmed at checkout.</p>",
+            "show_fees": true
           }
         },
         "b5": {

@@ -6,4 +6,4 @@ Shared section heading.
 @param {string} [link_label] - Optional label.
 @param {string} [heading_id] - Accessible heading ID.
 {% enddoc %}
-<div class="ep-heading"><div><h2 id="{{ heading_id }}">{{ title | escape }}</h2>{% if subtitle != blank %}<p>{{ subtitle | escape }}</p>{% endif %}</div>{% if link_url != blank %}<a href="{{ link_url }}">{{ link_label | default: ' ' | strip | default: blank }}{% if link_label == blank %}{{ 'ep.see_all' | t }}{% endif %}<span aria-hidden="true">&nbsp;›</span></a>{% endif %}</div>
+<div class="ep-heading"><div><h2 id="{{ heading_id }}">{{ title | escape }}</h2>{% if subtitle != blank %}<p>{{ subtitle | escape }}</p>{% endif %}</div>{% if link_url != blank %}<a href="{{ link_url }}">{% if link_label != blank %}{{ link_label | escape }}{% else %}{{ 'ep.see_all' | t }}{% endif %}<span aria-hidden="true">&nbsp;›</span></a>{% endif %}</div>
