@@ -167,3 +167,7 @@ Draft is ready for owner design review in Admin → Online Store → Themes → 
 ## Phase 1 — Global chrome
 
 Moved homepage announcement/header/footer values verbatim into section groups, replacing earlier group instances. Groups now render on every template once. Bottom navigation extraction follows with its configurable section.
+
+## Homepage correction 1
+
+Keep one desktop category tab row and place delivery on a separate line. Hide the old pills when new tab blocks render; header actions retain their own logo row.
