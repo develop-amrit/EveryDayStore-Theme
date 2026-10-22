@@ -1,4 +1,5 @@
 (() => {
+  if(window.Shopify?.designMode)document.documentElement.classList.add('shopify-design-mode');
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   const root=window.routes?.cart_url?.replace(/cart\/?$/,'')||'/';
   const text=JSON.parse(document.querySelector('#ep-labels')?.textContent||'{}');

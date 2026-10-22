@@ -6,8 +6,8 @@
       "viewport": 360,
       "pageWidth": 360,
       "search": {
-        "top": 163,
-        "bottom": 207
+        "top": 159,
+        "bottom": 203
       },
       "bottomVisible": true,
       "leaks": [],
@@ -21,8 +21,8 @@
       "viewport": 375,
       "pageWidth": 375,
       "search": {
-        "top": 163,
-        "bottom": 207
+        "top": 159,
+        "bottom": 203
       },
       "bottomVisible": true,
       "leaks": [],
@@ -36,8 +36,8 @@
       "viewport": 390,
       "pageWidth": 390,
       "search": {
-        "top": 163,
-        "bottom": 207
+        "top": 159,
+        "bottom": 203
       },
       "bottomVisible": true,
       "leaks": [],
@@ -51,8 +51,8 @@
       "viewport": 414,
       "pageWidth": 414,
       "search": {
-        "top": 163,
-        "bottom": 207
+        "top": 159,
+        "bottom": 203
       },
       "bottomVisible": true,
       "leaks": [],
@@ -66,8 +66,8 @@
       "viewport": 430,
       "pageWidth": 430,
       "search": {
-        "top": 163,
-        "bottom": 207
+        "top": 159,
+        "bottom": 203
       },
       "bottomVisible": true,
       "leaks": [],
@@ -81,8 +81,8 @@
       "viewport": 768,
       "pageWidth": 768,
       "search": {
-        "top": 161,
-        "bottom": 205
+        "top": 157,
+        "bottom": 201
       },
       "bottomVisible": true,
       "leaks": [],
@@ -128,7 +128,7 @@
     },
     {
       "path": "/search?q=pampers",
-      "url": "https://3djevx-mu.myshopify.com/search?q=pampers",
+      "url": "https://3djevx-mu.myshopify.com/search",
       "headers": 1,
       "footers": 1,
       "bottom": 1,
@@ -155,7 +155,7 @@
     },
     {
       "path": "/account",
-      "url": "https://shopify.com/authentication/78456225905/login?analytics_trace_id=0132eaf2-2a54-4e64-a6ec-aa6a70c135b6&client_id=b6b63221-1844-457e-a7af-9f66a1aacfdf&locale=en-AE&redirect_uri=%2Fauthentication%2F78456225905%2Foauth%2Fauthorize%3Fanalytics_trace_id%3D0132eaf2-2a54-4e64-a6ec-aa6a70c135b6%26buyer_flags%3DeyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIzZGpldngtbXUubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkzMjc2NTYyLCJuYmYiOjE3OTI2NzE3NjJ9.Li6i-mxz--40zmxM20e2ADUziozb4AMIzulU514dH18%26client_id%3Db6b63221-1844-457e-a7af-9f66a1aacfdf%26locale%3Den-AE%26nonce%3Dbfa9beb4-937d-4ac0-97de-829368bab15f%26redirect_uri%3Dhttps%253A%252F%252Fshopify.com%252F78456225905%252Faccount%252Fcallback%26region_country%3DAE%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bcustomer-account-api%253Afull%26state%3DhWNIGRQp1jPqgwsV88Tw5z50&region_country=AE",
+      "url": "https://shopify.com/authentication/78456225905/login",
       "headers": 0,
       "footers": 0,
       "bottom": 0,
@@ -175,14 +175,23 @@
   "cart": {
     "before": [],
     "added": "1",
+    "duplicateSynced": [
+      "1",
+      "1"
+    ],
     "increased": "2",
+    "countsWhileAdded": [
+      "2",
+      "2"
+    ],
+    "checkoutWhileAdded": 1,
     "removed": true,
     "counts": [
       "0",
       "0"
     ],
     "noAutoOpen": true,
-    "duplicateCards": 1,
+    "duplicateCards": 2,
     "drawer": true,
     "checkout": 0,
     "after": []
@@ -195,7 +204,7 @@
   "location": {
     "saved": "Dubai Marina"
   },
-  "body": "Skip to content\nFree delivery on orders from AED 99.00\n×\neveryday\n0\nDelivery tomorrow\nDelivering to:\nChoose your Dubai area\nDubai Marina\nJLT\nDowntown\nBusiness Bay\nJumeirah\nAl Barsha\nDeira\nDubai Hills\nMirdif\nJVC\nSearch products\nSearch for &quot;Flowers&quot;\nAll\nGrocery\nBaby Products\nGifting\nBath & Body\nHome\nPet\nOffice Supplies\nYOUR DUBAI EVERYDAY, SORTED\nEveryday essentials. Delivered next day.\n\nGroceries, care and home essentials in one basket, delivered across supported Dubai areas.\n\nExplore products\nSelected with care\nGrocery essentials\n\nCupboard staples, favourite snacks and everyday drinks.\n\nSee all\n ›\n28% OFF\n+\nDhs. 50.00\nRegular price\nDhs. 70.00\nNestle Cerelac for Kids\n\n400g\n\n35% OFF\n+\nDhs. 119.37\nRegular price\nDhs. 185.00\nBrooke Bond Red Label Black Loose Tea\n\n5Kg\n\n19% OFF\n+\nDhs. 137.00\nRegular price\nDhs. 170.00\nLipton Yellow Label Black Loose Tea\n\n5KG\n\n18% OFF\n+\nDhs. 53.17\nRegular price\nDhs. 65.00\nNescafe Classic Instant Coffee Jar 190g\n\n190g\n\n26% OFF\n+\nDhs. 40.27\nRegular pric",
+  "body": "Skip to content\nFree delivery on orders from AED 99.00\n×\neveryday\n0\nDelivery tomorrow\nDelivering to:\nChoose your Dubai area\nDubai Marina\nJLT\nDowntown\nBusiness Bay\nJumeirah\nAl Barsha\nDeira\nDubai Hills\nMirdif\nJVC\nSearch products\nSearch for “Shampoo”\nAll\nGrocery\nBaby Products\nGifting\nBath & Body\nHome\nPet\nOffice Supplies\nYOUR DUBAI EVERYDAY, SORTED\nEveryday essentials. Delivered next day.\n\nGroceries, care and home essentials in one basket, delivered across supported Dubai areas.\n\nExplore products\nSelected with care\nGrocery essentials\n\nCupboard staples, favourite snacks and everyday drinks.\n\nSee all\n ›\n28% OFF\n+\nDhs. 50.00\nRegular price\nDhs. 70.00\nNestle Cerelac for Kids\n\n400g\n\n35% OFF\n+\nDhs. 119.37\nRegular price\nDhs. 185.00\nBrooke Bond Red Label Black Loose Tea\n\n5Kg\n\n19% OFF\n+\nDhs. 137.00\nRegular price\nDhs. 170.00\nLipton Yellow Label Black Loose Tea\n\n5KG\n\n18% OFF\n+\nDhs. 53.17\nRegular price\nDhs. 65.00\nNescafe Classic Instant Coffee Jar 190g\n\n190g\n\n26% OFF\n+\nDhs. 40.27\nRegular price\nDhs. 55.",
   "sectionCounts": {
     "headers": 1,
     "footers": 1,

@@ -1,0 +1,16 @@
+{
+  "cookieReject": true,
+  "wishlistToggled": true,
+  "wishlistRestored": true,
+  "categoryDrawer": true,
+  "categoryEscape": true,
+  "inventoryError": "Inventory limit (isolated QA response)",
+  "cartAfterError": 0,
+  "carouselAutoplay": true,
+  "carouselFocusPause": true,
+  "carouselDot": "true",
+  "carouselReducedMotion": true,
+  "storefrontProducts": 106,
+  "multiVariantProducts": [],
+  "baselineUsesOriginalHeader": true
+}

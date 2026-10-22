@@ -1,0 +1,12 @@
+{
+  "scores": {
+    "performance": 67,
+    "accessibility": 100,
+    "best-practices": 75,
+    "seo": 92
+  },
+  "lcp_ms": 5958.445,
+  "cls": 0,
+  "tbt_ms": 316.5,
+  "new_js_bytes": 8365
+}

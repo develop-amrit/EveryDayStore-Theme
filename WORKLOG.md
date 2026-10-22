@@ -112,3 +112,44 @@ First mobile Lighthouse: 54 performance, LCP 7.03s; after image/accessibility fi
 ## Final integration refinements
 
 Cart subscriptions now reconcile external Dawn cart events through one shared QC refresh. Bottom padding follows the measured nav height, including optional editor padding and safe area. The unconfigured Deals navigation block is available in the editor but hidden until a real link is selected. Seasonal padding and background controls now affect the whole panel.
+
+## Phase 6 — QA and review handoff
+
+Working theme: 189582049393 remains UNPUBLISHED; codex-edits 189489545329 remains MAIN. No publication or role switch. All 28 changed code assets/Liquid files match API read-back byte for byte. JSON read-back details: qa/readback-verification.json. Initial live layout/header hashes match the untouched snapshot; live index comparison is recorded separately because Shopify normalises generated JSON. No live writes were issued.
+
+Official Shopify Theme Check: 0 errors, 13 warnings. Structural/JSON/schema/reference/JS checks, predictive-search fallback and simulated QC cart regression tests pass. The skill's separate Liquid validator could not load @shopify/theme-check-common; official CLI Theme Check provided validation instead.
+
+Browser QA: 360, 375, 390, 414, 430, 768 and 1280px have no horizontal page overflow or detected main-content overflow. Search pins at 4–6px on mobile/tablet, desktop is unstuck. Shared header/footer appear exactly once on product, collection, search, cart, contact and 404 pages. Account redirects to Shopify-hosted customer authentication, which intentionally has no theme chrome. No authentication or checkout was completed. One homepage H1; no Liquid errors or browser JS exceptions.
+
+Cart: real single-variant Add 1 → increase 2 → decrease 1 → remove; duplicate-card copies both show 1, header/bottom counts both show 2, drawer opens, checkout button exists while an item is present, no default auto-open, starting cart restored empty. Isolated 422 route response verifies visible inventory-error handling with no real inventory mutation. All 106 storefront products currently have one variant, so a real multi-variant browser fixture was unavailable; the safe product-options link branch is implemented and statically checked. Sold-out markup is conditional/disabled but no sold-out homepage fixture was available. No fake product records created.
+
+Wishlist toggle/restoration, category drawer/Escape, cookie rejection via Shopify Privacy API, location save/restore, predictive search (6 links for pampers), rotation/focus pause, carousel autoplay/dots/focus pause, and reduced-motion rotation/carousel stopping pass. Newsletter structure retained; no signup submitted. Screenshots: qa/before-375.png (original baseline), qa/before-375-clean.png (original live theme, consent dismissed), qa/after-375.png, qa/after-375-top.png and qa/after-1280.png. Preview-toolbar overlay is hidden only in QA screenshots, not storefront code.
+
+Final isolated mobile Lighthouse (preview URL with pb=0): Performance 67, Accessibility 100, Best practices 75, SEO 92; LCP 5.96s, CLS 0, TBT 316.5ms. New JS 8365 bytes unminified, below the 15KB minified budget. Raw reports retained in qa/. Performance >=80 and LCP <2.5s are NOT met. Shopify perf-kit/web-pixel/checkout scripts and preview redirects appear among the measured costs; platform scripts were preserved. Do not call the draft publication-ready.
+
+Interactive Admin theme-editor QA could not run: the connected browser runtime exited unexpectedly on both inventory attempts. Schema/presets were accepted by Shopify upload, but adding/reordering blocks and exercising every setting in Admin remain owner review checks. No skill approval rule caused this limitation; it is a tool-runtime failure.
+
+### Warning justification
+
+- snippets\commerce-runtime.liquid — OrphanedSnippet: This snippet is not referenced by any other files Existing optional Dawn/commerce integration retained; no section/snippet deletion requested.
+- snippets\commerce-source-card.liquid — OrphanedSnippet: This snippet is not referenced by any other files Existing optional Dawn/commerce integration retained; no section/snippet deletion requested.
+- snippets\quick-order-product-row.liquid — OrphanedSnippet: This snippet is not referenced by any other files Existing optional Dawn/commerce integration retained; no section/snippet deletion requested.
+- sections\main-list-collections.liquid — VariableName: The variable 'moduloResult' uses wrong naming format Existing Dawn variable naming only; changing unrelated modules would add regression risk.
+- sections\main-article.liquid — VariableName: The variable 'anchorId' uses wrong naming format Existing Dawn variable naming only; changing unrelated modules would add regression risk.
+- sections\qc-product.liquid — UnusedAssign: The variable 'current_variant' is assigned but not used Existing inactive/optional Dawn or QC assignments; no runtime effect.
+- sections\main-search.liquid — UnusedAssign: The variable 'product_settings' is assigned but not used Existing inactive/optional Dawn or QC assignments; no runtime effect.
+- snippets\facets.liquid — LiquidComplexity: Liquid complexity is 136, which exceeds the maximum of 120. The decision at line 865 pushed it over the limit. Consider simplifying conditional logic, or moving self-contained decision logic into snippets with the render tag. Existing Dawn facets module; collection filtering preserved.
+- sections\main-product.liquid — UnusedAssign: The variable 'seo_media' is assigned but not used Existing inactive/optional Dawn or QC assignments; no runtime effect.
+- sections\main-product.liquid — UndefinedObject: Unknown object 'continue' used. Existing Liquid defaults/render parameters (wordmark, scheme_classes) or inactive Dawn product code; unchanged by this restructure.
+- snippets\qc-logo.liquid — UndefinedObject: Unknown object 'wordmark' used. Existing Liquid defaults/render parameters (wordmark, scheme_classes) or inactive Dawn product code; unchanged by this restructure.
+- layout\password.liquid — UndefinedObject: Unknown object 'scheme_classes' used. Existing Liquid defaults/render parameters (wordmark, scheme_classes) or inactive Dawn product code; unchanged by this restructure.
+- layout\theme.liquid — UndefinedObject: Unknown object 'scheme_classes' used. Existing Liquid defaults/render parameters (wordmark, scheme_classes) or inactive Dawn product code; unchanged by this restructure.
+
+### Remaining owner work
+
+See MERCHANT_TODO.md for images, seasonal/store tile artwork, dedicated department menus, Help menu, verified deals collection/link and optional review data. Empty configurations hide; campaign/brand rows are disabled. Publication remains manual after review and outstanding QA/performance gates.
+
+
+## Final spacing correction
+
+Homepage uses a single 28px flex gap between visible section wrappers; empty wrappers are removed from layout. This replaces doubled child margins. Delivery selector remains a 44px target. Safe Shopify initialisation guard handles scripts before platform global creation. CSS source and generated bundle both retained.

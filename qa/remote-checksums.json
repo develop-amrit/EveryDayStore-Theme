@@ -1,0 +1,152 @@
+{
+  "work": {
+    "id": "gid://shopify/OnlineStoreTheme/189582049393",
+    "name": "everyday-homepage-review",
+    "role": "UNPUBLISHED",
+    "files": {
+      "nodes": [
+        {
+          "filename": "assets/ep-mobile.css",
+          "checksumMd5": "477eee9e37fe816b62bce83c4b6f9d43"
+        },
+        {
+          "filename": "assets/ep-mobile.js",
+          "checksumMd5": "9deebb5c8bcb426d6ba2a68735c42f5c"
+        },
+        {
+          "filename": "assets/qc-home.js",
+          "checksumMd5": "981b720bc5c6ba1b758c6ea24eba8d85"
+        },
+        {
+          "filename": "layout/theme.liquid",
+          "checksumMd5": "450b2022630f44bcfa4d3e08b47e755e"
+        },
+        {
+          "filename": "sections/ep-banner-carousel.liquid",
+          "checksumMd5": "7a79dbd38e63582361197e26bc8ed990"
+        },
+        {
+          "filename": "sections/ep-bottom-nav.liquid",
+          "checksumMd5": "b9f822e790bb11b16e97b9b9331e0dff"
+        },
+        {
+          "filename": "sections/ep-brand-tiles.liquid",
+          "checksumMd5": "4b866f633945a8e3c7dd00455ce41f40"
+        },
+        {
+          "filename": "sections/ep-campaign.liquid",
+          "checksumMd5": "e50e090ed2e4b952961174704d3114a4"
+        },
+        {
+          "filename": "sections/ep-category-grid.liquid",
+          "checksumMd5": "75a99e406aa899b8ad983e7431d41299"
+        },
+        {
+          "filename": "sections/ep-product-grid.liquid",
+          "checksumMd5": "193193072da29633d1c67d3b0251cb31"
+        },
+        {
+          "filename": "sections/ep-product-rail.liquid",
+          "checksumMd5": "c8911e293f256fa84e4783772f0963de"
+        },
+        {
+          "filename": "sections/ep-promo-banner.liquid",
+          "checksumMd5": "ec4765302d5c890ad0ce01f7e83cd9db"
+        },
+        {
+          "filename": "sections/ep-search-links.liquid",
+          "checksumMd5": "c86cda756a4436f089424a38e5885f5c"
+        },
+        {
+          "filename": "sections/ep-store-grid.liquid",
+          "checksumMd5": "403eb930370499a118d9d1e7ff965149"
+        },
+        {
+          "filename": "sections/ep-themed-grid.liquid",
+          "checksumMd5": "cc85372882f6f524663cf4766ded764c"
+        },
+        {
+          "filename": "sections/qc-faq.liquid",
+          "checksumMd5": "2542e90d80ecca03e060c753e6ab3f46"
+        },
+        {
+          "filename": "sections/qc-footer.liquid",
+          "checksumMd5": "a23a5595be7ce9f1b740b387670040f1"
+        },
+        {
+          "filename": "sections/qc-header.liquid",
+          "checksumMd5": "88ce34e3d70b5aca7d0695cd8e739a0a"
+        },
+        {
+          "filename": "sections/qc-trust.liquid",
+          "checksumMd5": "8fc8e0ac3b306d00c0bcc0fcba9d3d8f"
+        },
+        {
+          "filename": "snippets/ep-add-button.liquid",
+          "checksumMd5": "f5412c075164b8108b8460b7fa1e9dcc"
+        },
+        {
+          "filename": "snippets/ep-card.liquid",
+          "checksumMd5": "8e160a716b6513d8a8c003c3b9381ad6"
+        },
+        {
+          "filename": "snippets/ep-icon.liquid",
+          "checksumMd5": "e0be353280cf1281f1d72fe387f01e8a"
+        },
+        {
+          "filename": "snippets/ep-price.liquid",
+          "checksumMd5": "401465a0a231d979021d2a8d32abb4e2"
+        },
+        {
+          "filename": "snippets/ep-section-header.liquid",
+          "checksumMd5": "fb520895bd9341cbd9b182d3bf205d9c"
+        },
+        {
+          "filename": "snippets/ep-see-all-button.liquid",
+          "checksumMd5": "f6b788df4a5a0f0ef00a6dcb9d6f65f0"
+        },
+        {
+          "filename": "snippets/ep-tile.liquid",
+          "checksumMd5": "6ab8012dc5f0a62cd220737a10c982e5"
+        },
+        {
+          "filename": "snippets/qc-privacy.liquid",
+          "checksumMd5": "40f95a42657e6e18d5f31ac96f6835a3"
+        },
+        {
+          "filename": "snippets/qc-runtime.liquid",
+          "checksumMd5": "531ca85eab778e1d97f067a805e655bf"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "InNuaXBwZXRzXC9xYy1ydW50aW1lLmxpcXVpZCI="
+      }
+    }
+  },
+  "live": {
+    "id": "gid://shopify/OnlineStoreTheme/189489545329",
+    "name": "codex-edits",
+    "role": "MAIN",
+    "files": {
+      "nodes": [
+        {
+          "filename": "layout/theme.liquid",
+          "checksumMd5": "f017be73fb4581400bc5f3ff3c67a320"
+        },
+        {
+          "filename": "sections/qc-header.liquid",
+          "checksumMd5": "c73a3de2ee01add99a07fe9227a97044"
+        },
+        {
+          "filename": "templates/index.json",
+          "checksumMd5": "5b924261c44ca4125e262d9b00e6ceab"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "InRlbXBsYXRlc1wvaW5kZXguanNvbiI="
+      }
+    }
+  }
+}

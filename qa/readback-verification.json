@@ -1,0 +1,140 @@
+{
+  "live": [
+    {
+      "filename": "templates/index.json",
+      "differences": []
+    }
+  ],
+  "work": [
+    {
+      "filename": "config/settings_schema.json",
+      "differences": []
+    },
+    {
+      "filename": "sections/footer-group.json",
+      "differences": []
+    },
+    {
+      "filename": "sections/header-group.json",
+      "differences": []
+    },
+    {
+      "filename": "templates/index.json",
+      "differences": []
+    }
+  ],
+  "hashes": [
+    {
+      "filename": "assets/ep-mobile.css",
+      "matched": true
+    },
+    {
+      "filename": "assets/ep-mobile.js",
+      "matched": true
+    },
+    {
+      "filename": "assets/qc-home.js",
+      "matched": true
+    },
+    {
+      "filename": "layout/theme.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-banner-carousel.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-bottom-nav.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-brand-tiles.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-campaign.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-category-grid.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-product-grid.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-product-rail.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-promo-banner.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-search-links.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-store-grid.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/ep-themed-grid.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-faq.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-footer.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-header.liquid",
+      "matched": true
+    },
+    {
+      "filename": "sections/qc-trust.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-add-button.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-card.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-icon.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-price.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-section-header.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-see-all-button.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/ep-tile.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/qc-privacy.liquid",
+      "matched": true
+    },
+    {
+      "filename": "snippets/qc-runtime.liquid",
+      "matched": true
+    }
+  ]
+}
