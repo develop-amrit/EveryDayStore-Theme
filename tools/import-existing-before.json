@@ -1,0 +1,518 @@
+[
+  {
+    "id": "gid://shopify/Product/15411749879921",
+    "title": "Nestle Cerelac No Added Sugar Wheat Infant Cereals with Milk Tin, from 6 Months, 400g",
+    "handle": "nestle-cerelac-no-added-sugar-wheat-infant-cereals-with-milk-tin-from-6-months-400g",
+    "descriptionHtml": "<p>Nestle Cerelac No Added Sugar Wheat Infant Cereals with Milk Tin, from 6 months, 400 g.</p>",
+    "vendor": "Nestle Cerelac",
+    "productType": "Flours-Cereals,Rice,Other",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1136416333",
+      "source-product-8445291537101",
+      "source-row-1403"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675672117361",
+          "sku": "MF-2217472",
+          "barcode": null,
+          "price": "50.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660615802993",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTY3MjExNzM2MSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411748569201",
+    "title": "Aveeno Baby Calming Comfort Bath & Lotion Set, Baby Skin Care Products With Natural Oat Extract, Lavender & Vanilla, 2 Items",
+    "handle": "aveeno-baby-calming-comfort-bath-lotion-set-baby-skin-care-products-with-natural-oat-extract-lavender-vanilla-2-items",
+    "descriptionHtml": "<p>Aveeno Baby Calming Comfort Bath and Lotion set with natural oat extract, lavender and vanilla; 2 items.</p>",
+    "vendor": "Aveeno Baby",
+    "productType": "Baby Refresh Toiletries",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1139216333",
+      "source-product-381371164042",
+      "source-row-1376"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675667955825",
+          "sku": "MF-381371164042",
+          "barcode": null,
+          "price": "105.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660611608689",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTY2Nzk1NTgyNSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411749126257",
+    "title": "Chicco Talcum Powder, 150Gr",
+    "handle": "chicco-talcum-powder-150gr",
+    "descriptionHtml": "<p>Chicco Talcum Powder, 150 g.</p>",
+    "vendor": "Chicco",
+    "productType": "Other Babys Toys",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1138116333",
+      "source-product-8058664101511",
+      "source-row-1386"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675668840561",
+          "sku": "MF-8058664101511",
+          "barcode": null,
+          "price": "45.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660612526193",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTY2ODg0MDU2MSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411678249073",
+    "title": "Johnson's  2-In-1 Kids Shampoo & Conditioner, No More Tears, 200ml",
+    "handle": "johnsons-2-in-1-kids-shampoo-conditioner-no-more-tears-200ml",
+    "descriptionHtml": "<p>Johnson's 2-In-1 Kids Shampoo &amp; Conditioner, No More Tears, 200ml</p>",
+    "vendor": "Johnson's",
+    "productType": "Kids Beauty w/o Character",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1126816333",
+      "source-product-3574669907965",
+      "source-row-1497"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675148976241",
+          "sku": "MF-1635315",
+          "barcode": null,
+          "price": "30.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660092039281",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTE0ODk3NjI0MSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411677921393",
+    "title": "Johnson's 2-in-1 Kids Shampoo and Conditioner for Soft Hair, 500ml",
+    "handle": "johnsons-2-in-1-kids-shampoo-and-conditioner-for-soft-hair-500ml",
+    "descriptionHtml": "<p>Johnson&amp;#39;s 2-in-1 Kids Shampoo and Conditioner for Soft Hair, 500ml</p>",
+    "vendor": "Johnson's",
+    "productType": "Kids Beauty w/o Character",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1169416333",
+      "source-product-3574669907347",
+      "source-row-1076"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675148648561",
+          "sku": "MF-1635316",
+          "barcode": null,
+          "price": "59.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660091711601",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTE0ODY0ODU2MSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411702366321",
+    "title": "Durex Play Sweet Strawberry Lube Gel 50ml",
+    "handle": "durex-play-sweet-strawberry-lube-gel-50ml",
+    "descriptionHtml": "<p>Durex Play Sweet Strawberry Lube Gel 50ml</p>",
+    "vendor": "Durex",
+    "productType": "Lubricants",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1114316333",
+      "source-product-5052197043105",
+      "source-row-1615"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675311505521",
+          "sku": "MF-5052197043105",
+          "barcode": null,
+          "price": "50.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660254175345",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTMxMTUwNTUyMSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411677429873",
+    "title": "Selpak Comfort Facial Tissue 150 Sheets 2 Ply, Pack Of 4",
+    "handle": "selpak-comfort-facial-tissue-150-sheets-2-ply-pack-of-4",
+    "descriptionHtml": "<p>2-ply facial tissue; 150 sheets per pack; pack of 4.</p>",
+    "vendor": "Selpak",
+    "productType": "Facial Tissues",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1019216333",
+      "source-product-6291109985297",
+      "source-row-2542"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675147993201",
+          "sku": "JJ-TCXT-27OV",
+          "barcode": null,
+          "price": "33.99",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660091056241",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTE0Nzk5MzIwMSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411668156529",
+    "title": "Whiskas Grilled Salmon Dry Cat Food, Bag of 1.2Kg",
+    "handle": "whiskas-grilled-salmon-dry-cat-food-bag-of-1-2kg",
+    "descriptionHtml": "<p>Dry cat food; grilled salmon; 1.2 kg.</p>",
+    "vendor": "Whiskas",
+    "productType": "DryCatFood",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1158516333",
+      "source-product-8853301015097",
+      "source-row-1184"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675129905265",
+          "sku": "MF-2163533",
+          "barcode": null,
+          "price": "42.17",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660072607857",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTEyOTkwNTI2NSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411668254833",
+    "title": "Whiskas Chicken Dry Cat Food, Bag of 3Kg",
+    "handle": "whiskas-chicken-dry-cat-food-bag-of-3kg",
+    "descriptionHtml": "<p>Dry cat food; chicken; 3 kg.</p>",
+    "vendor": "Whiskas",
+    "productType": "DryCatFood",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1158216333",
+      "source-product-8853301000017",
+      "source-row-1187"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675130003569",
+          "sku": "MF-1409839",
+          "barcode": null,
+          "price": "73.70",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660072706161",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTEzMDAwMzU2OSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411677560945",
+    "title": "Double A Everyday A4 Printing Paper White 80GSM 500 PCS",
+    "handle": "double-a-everyday-a4-printing-paper-white-80gsm-500-pcs",
+    "descriptionHtml": "<p>Double A Everyday A4 Printing Paper 80GSM 500 PCS</p>",
+    "vendor": "Double A",
+    "productType": "Photocopy Paper And Faxes",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1154516333",
+      "source-product-8856976000016",
+      "source-row-1224"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675148124273",
+          "sku": "MF-325273",
+          "barcode": null,
+          "price": "30.70",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660091187313",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTE0ODEyNDI3MywibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411664715889",
+    "title": "Double A Premium A4 Printing Paper White 80GSM 100 PCS",
+    "handle": "double-a-premium-a4-printing-paper-white-80gsm-100-pcs",
+    "descriptionHtml": "<p>A4 paper; 80 GSM; 100 sheets.</p>",
+    "vendor": "Double A",
+    "productType": "Photocopy Paper And Faxes",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1159116333",
+      "source-product-8856976000597",
+      "source-row-1178"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675126300785",
+          "sku": "FBC-1683472",
+          "barcode": null,
+          "price": "16.70",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660069003377",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTEyNjMwMDc4NSwibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  },
+  {
+    "id": "gid://shopify/Product/15411677397105",
+    "title": "Post-It 655-5Uc Ultra Colors Notes, Mixed Colors. 3X5in (76mmx127mm), Pastel Colors - Sticky Notes For Note Taking, To Do Lists & Reminders. Clean Removal, Recyclable. 100 Sheets/Pad, 5 Pads/Pack",
+    "handle": "post-it-655-5uc-ultra-colors-notes-mixed-colors-3x5in-76mmx127mm-pastel-colors-sticky-notes-for-note-taking-to-do-lists-reminders-clean-removal-recyclable-100-sheets-pad-5-pads-pack",
+    "descriptionHtml": "<p>Mixed-colour sticky notes; 3 × 5 in; 5 pads, 100 sheets per pad.</p>",
+    "vendor": "Post-It",
+    "productType": "Labels And Post-it",
+    "tags": [
+      "carrefour-draft-import-2026-10-14",
+      "carrefour-source",
+      "source-offer-1048516333",
+      "source-product-21200716737",
+      "source-row-2259"
+    ],
+    "status": "DRAFT",
+    "media": {
+      "nodes": [],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": null
+      }
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/67675147960433",
+          "sku": "LQ-YTCP-29D7",
+          "barcode": null,
+          "price": "150.00",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/69660091023473",
+            "tracked": true
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo2NzY3NTE0Nzk2MDQzMywibGFzdF92YWx1ZSI6MX0="
+      }
+    }
+  }
+]

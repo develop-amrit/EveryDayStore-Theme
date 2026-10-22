@@ -1,0 +1,25 @@
+{% liquid
+  assign show_recovery = false
+  if template.name == 'cart' and cart.item_count == 0
+    assign show_recovery = true
+  elsif template.name == 'search' and search.results_count == 0
+    assign show_recovery = true
+  elsif template.name == '404'
+    assign show_recovery = true
+  endif
+%}
+{% if show_recovery %}
+<section class="page-width dc-section dc-recovery" aria-labelledby="Recovery-{{ section.id }}">
+  <div class="dc-intro">
+    <div><h2 id="Recovery-{{ section.id }}">{{ section.settings.heading | escape }}</h2><p>{{ section.settings.text | escape }}</p></div>
+    <a class="button button--secondary" href="{{ pages['departments'].url }}">{{ 'commerce.browse_departments' | t }}</a>
+  </div>
+  {% if template.name == 'search' and search.performed %}<p class="dc-recovery__hint">{{ section.settings.search_hint | escape }}</p>{% endif %}
+  <ul class="dc-recovery__links" role="list">
+    {% for block in section.blocks %}<li {{ block.shopify_attributes }}><a href="{{ block.settings.link }}"><strong>{{ block.settings.title | escape }}</strong><span>{{ block.settings.description | escape }}</span></a></li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% schema %}
+{"name":"Commerce empty-state help","settings":[{"type":"text","id":"heading","label":"Heading","default":"Start with your everyday list."},{"type":"textarea","id":"text","label":"Description","default":"Explore the planned departments and find a starting point for your next shop."},{"type":"text","id":"search_hint","label":"Search advice","default":"Try a product name, brand or shorter phrase. Illustrated samples are not searchable stock."}],"blocks":[{"type":"department","name":"Department shortcut","settings":[{"type":"text","id":"title","label":"Department"},{"type":"text","id":"description","label":"Description"},{"type":"url","id":"link","label":"Link"}]}],"max_blocks":8,"presets":[{"name":"Commerce empty-state help"}]}
+{% endschema %}

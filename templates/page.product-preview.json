@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-essentials",
+      "settings": {
+        "heading": "Explore the selection",
+        "limit": 8
+      }
+    },
+    "related": {
+      "type": "qc-essentials",
+      "settings": {
+        "heading": "Explore the selection",
+        "limit": 8
+      }
+    },
+    "shopping_guides": {
+      "type": "commerce-stories",
+      "settings": {
+        "heading": "A little thought before you add.",
+        "layout": "guides"
+      },
+      "blocks": {
+        "s0": {
+          "type": "story",
+          "settings": {
+            "title": "A little order for your desk.",
+            "copy": "Stationery, paper and practical supplies for the working day.",
+            "label": "Explore office supplies",
+            "link": "/pages/departments#office-supplies",
+            "art": "office",
+            "tone": "olive"
+          }
+        },
+        "s1": {
+          "type": "story",
+          "settings": {
+            "title": "Make room for the routine.",
+            "copy": "Compare pack sizes and storage space. The right everyday staple is one that fits your home.",
+            "label": "Explore Home",
+            "link": "/pages/departments#home",
+            "art": "towels",
+            "tone": "cream"
+          }
+        },
+        "s2": {
+          "type": "story",
+          "settings": {
+            "title": "Pack the small things.",
+            "copy": "Keep everyday essentials organised with a useful pouch and a place for the small things.",
+            "label": "Explore home essentials",
+            "link": "/pages/departments#home",
+            "art": "pouch",
+            "tone": "sand"
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1",
+        "s2"
+      ]
+    },
+    "buying_notes": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "A closer look at baby care.",
+        "intro": "Use the final pack information to compare."
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "What should I check on the pack?",
+            "answer": "<p>Check the manufacturer’s ingredients, age guidance, fragrance information, pack count and storage instructions.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Does the sample confirm suitability?",
+            "answer": "<p>No. The illustration and sample title are for layout review. Suitability and any product claims must come from the approved manufacturer information.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "What about storage?",
+            "answer": "<p>Follow the final pack instructions for sealing, storage and use after opening.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "related",
+    "shopping_guides",
+    "buying_notes"
+  ]
+}

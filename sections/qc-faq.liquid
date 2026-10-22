@@ -1,0 +1,95 @@
+<section class="qc-section qc-wrap qc-reveal"><div class="qc-faq-layout"><div><span class="qc-eyebrow">{{ section.settings.eyebrow | escape }}</span><h2>{{ section.settings.heading | escape }}</h2><p>{{ section.settings.text | escape }}</p></div><div>{% for block in section.blocks %}<details class="qc-faq" {{ block.shopify_attributes }}><summary>{{ block.settings.question | escape }}<span aria-hidden="true">+</span></summary><div>{{ block.settings.answer }}</div>{% if block.id == 'b4' %}{% render 'qc-delivery-tiers' %}{% endif %}</details>{% endfor %}</div></div></section>
+{% schema %}
+{
+  "name": "Delivery and payment FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A few useful answers."
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "BEFORE YOUR FIRST BASKET"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Introduction",
+      "default": "A little clarity for a smoother shop."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Delivery and payment FAQ",
+      "blocks": [
+        {
+          "type": "question",
+          "settings": {
+            "question": "When will my order arrive?",
+            "answer": "<p>Order today for next-day delivery in supported Dubai areas. Your available delivery date is confirmed during checkout.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "What is the order cut-off time?",
+            "answer": "<p>Check the delivery information shown at checkout for the current cut-off. Orders received after the applicable cut-off move to the next available delivery day.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "Which areas of Dubai do you deliver to?",
+            "answer": "<p>Choose your area in the header. Final service availability is confirmed using your full delivery address at checkout.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "Is Cash on Delivery available?",
+            "answer": "<p>Cash on Delivery is available only when it is offered as a payment method at checkout. Otherwise, choose one of the secure online payment methods shown there.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "How much does delivery cost?",
+            "answer": "<p>Your delivery fee and eligibility for free delivery are shown before payment. Any applicable delivery conditions are listed at checkout.</p>"
+          }
+        },
+        {
+          "type": "question",
+          "settings": {
+            "question": "What if something is not right with my order?",
+            "answer": "<p>Please contact our support team using the contact page with your order number and details. Our published returns policy explains eligibility and the next steps.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

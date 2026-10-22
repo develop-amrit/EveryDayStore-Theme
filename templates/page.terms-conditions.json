@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-policy",
+      "settings": {
+        "heading": "Terms & Conditions",
+        "content": "<p>FINAL WORDING REQUIRED. Confirm seller identity, Dubai service scope, ordering, payment, delivery, cancellations, returns, liability and governing terms.</p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

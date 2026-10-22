@@ -1,0 +1,1245 @@
+{
+  "store": "3djevx-mu.myshopify.com",
+  "date": "2026-10-21",
+  "publicationId": "gid://shopify/Publication/221399023729",
+  "collections": [
+    {
+      "title": "Office Supplies",
+      "handle": "office-supplies",
+      "path": "Office Supplies",
+      "id": "gid://shopify/Collection/513037369457",
+      "published": true,
+      "tag": "catalogue:office-supplies"
+    },
+    {
+      "title": "Presentation Supplies",
+      "handle": "office-supplies-presentation-supplies",
+      "path": "Office Supplies > Presentation Supplies",
+      "id": "gid://shopify/Collection/513037402225",
+      "published": true,
+      "tag": "catalogue:office-supplies-presentation-supplies"
+    },
+    {
+      "title": "Mailing & Packaging",
+      "handle": "office-supplies-mailing-and-packaging",
+      "path": "Office Supplies > Mailing & Packaging",
+      "id": "gid://shopify/Collection/513037434993",
+      "published": true,
+      "tag": "catalogue:office-supplies-mailing-and-packaging"
+    },
+    {
+      "title": "Envelopes & Mailing",
+      "handle": "office-supplies-mailing-and-packaging-envelopes-and-mailing",
+      "path": "Office Supplies > Mailing & Packaging > Envelopes & Mailing",
+      "id": "gid://shopify/Collection/513037467761",
+      "published": true,
+      "tag": "catalogue:office-supplies-mailing-and-packaging-envelopes-and-mailing"
+    },
+    {
+      "title": "Desk Essentials",
+      "handle": "office-supplies-desk-essentials",
+      "path": "Office Supplies > Desk Essentials",
+      "id": "gid://shopify/Collection/513037500529",
+      "published": true,
+      "tag": "catalogue:office-supplies-desk-essentials"
+    },
+    {
+      "title": "Adhesives & Tapes",
+      "handle": "office-supplies-desk-essentials-adhesives-and-tapes",
+      "path": "Office Supplies > Desk Essentials > Adhesives & Tapes",
+      "id": "gid://shopify/Collection/513037533297",
+      "published": true,
+      "tag": "catalogue:office-supplies-desk-essentials-adhesives-and-tapes"
+    },
+    {
+      "title": "Staplers & Punches",
+      "handle": "office-supplies-desk-essentials-staplers-and-punches",
+      "path": "Office Supplies > Desk Essentials > Staplers & Punches",
+      "id": "gid://shopify/Collection/513037566065",
+      "published": true,
+      "tag": "catalogue:office-supplies-desk-essentials-staplers-and-punches"
+    },
+    {
+      "title": "Desk Supplies",
+      "handle": "office-supplies-desk-essentials-desk-supplies",
+      "path": "Office Supplies > Desk Essentials > Desk Supplies",
+      "id": "gid://shopify/Collection/513037598833",
+      "published": true,
+      "tag": "catalogue:office-supplies-desk-essentials-desk-supplies"
+    },
+    {
+      "title": "Filing & Organization",
+      "handle": "office-supplies-filing-and-organization",
+      "path": "Office Supplies > Filing & Organization",
+      "id": "gid://shopify/Collection/513037631601",
+      "published": true,
+      "tag": "catalogue:office-supplies-filing-and-organization"
+    },
+    {
+      "title": "Labels & Tags",
+      "handle": "office-supplies-filing-and-organization-labels-and-tags",
+      "path": "Office Supplies > Filing & Organization > Labels & Tags",
+      "id": "gid://shopify/Collection/513037664369",
+      "published": true,
+      "tag": "catalogue:office-supplies-filing-and-organization-labels-and-tags"
+    },
+    {
+      "title": "Files & Folders",
+      "handle": "office-supplies-filing-and-organization-files-and-folders",
+      "path": "Office Supplies > Filing & Organization > Files & Folders",
+      "id": "gid://shopify/Collection/513037697137",
+      "published": true,
+      "tag": "catalogue:office-supplies-filing-and-organization-files-and-folders"
+    },
+    {
+      "title": "Writing & Stationery",
+      "handle": "office-supplies-writing-and-stationery",
+      "path": "Office Supplies > Writing & Stationery",
+      "id": "gid://shopify/Collection/513037729905",
+      "published": true,
+      "tag": "catalogue:office-supplies-writing-and-stationery"
+    },
+    {
+      "title": "Paper & Notebooks",
+      "handle": "office-supplies-paper-and-notebooks",
+      "path": "Office Supplies > Paper & Notebooks",
+      "id": "gid://shopify/Collection/513037762673",
+      "published": true,
+      "tag": "catalogue:office-supplies-paper-and-notebooks"
+    },
+    {
+      "title": "Pet",
+      "handle": "pet",
+      "path": "Pet",
+      "id": "gid://shopify/Collection/513037795441",
+      "published": true,
+      "tag": "catalogue:pet"
+    },
+    {
+      "title": "Other Pets",
+      "handle": "pet-other-pets",
+      "path": "Pet > Other Pets",
+      "id": "gid://shopify/Collection/513037828209",
+      "published": true,
+      "tag": "catalogue:pet-other-pets"
+    },
+    {
+      "title": "Small Animals",
+      "handle": "pet-other-pets-small-animals",
+      "path": "Pet > Other Pets > Small Animals",
+      "id": "gid://shopify/Collection/513037860977",
+      "published": true,
+      "tag": "catalogue:pet-other-pets-small-animals"
+    },
+    {
+      "title": "Fish",
+      "handle": "pet-other-pets-fish",
+      "path": "Pet > Other Pets > Fish",
+      "id": "gid://shopify/Collection/513037893745",
+      "published": true,
+      "tag": "catalogue:pet-other-pets-fish"
+    },
+    {
+      "title": "Birds",
+      "handle": "pet-other-pets-birds",
+      "path": "Pet > Other Pets > Birds",
+      "id": "gid://shopify/Collection/513037926513",
+      "published": true,
+      "tag": "catalogue:pet-other-pets-birds"
+    },
+    {
+      "title": "Cats",
+      "handle": "pet-cats",
+      "path": "Pet > Cats",
+      "id": "gid://shopify/Collection/513037959281",
+      "published": true,
+      "tag": "catalogue:pet-cats"
+    },
+    {
+      "title": "Dogs",
+      "handle": "pet-dogs",
+      "path": "Pet > Dogs",
+      "id": "gid://shopify/Collection/513037992049",
+      "published": true,
+      "tag": "catalogue:pet-dogs"
+    },
+    {
+      "title": "Home",
+      "handle": "home",
+      "path": "Home",
+      "id": "gid://shopify/Collection/513038024817",
+      "published": true,
+      "tag": "catalogue:home"
+    },
+    {
+      "title": "Home Fragrance",
+      "handle": "home-home-fragrance",
+      "path": "Home > Home Fragrance",
+      "id": "gid://shopify/Collection/513038057585",
+      "published": true,
+      "tag": "catalogue:home-home-fragrance"
+    },
+    {
+      "title": "Air Fresheners",
+      "handle": "home-home-fragrance-air-fresheners",
+      "path": "Home > Home Fragrance > Air Fresheners",
+      "id": "gid://shopify/Collection/513038090353",
+      "published": true,
+      "tag": "catalogue:home-home-fragrance-air-fresheners"
+    },
+    {
+      "title": "Bathroom Essentials",
+      "handle": "home-bathroom-essentials",
+      "path": "Home > Bathroom Essentials",
+      "id": "gid://shopify/Collection/513038123121",
+      "published": true,
+      "tag": "catalogue:home-bathroom-essentials"
+    },
+    {
+      "title": "Disposables",
+      "handle": "home-disposables",
+      "path": "Home > Disposables",
+      "id": "gid://shopify/Collection/513038155889",
+      "published": true,
+      "tag": "catalogue:home-disposables"
+    },
+    {
+      "title": "Disposable Tableware",
+      "handle": "home-disposables-disposable-tableware",
+      "path": "Home > Disposables > Disposable Tableware",
+      "id": "gid://shopify/Collection/513038188657",
+      "published": true,
+      "tag": "catalogue:home-disposables-disposable-tableware"
+    },
+    {
+      "title": "Food Storage & Wraps",
+      "handle": "home-food-storage-and-wraps",
+      "path": "Home > Food Storage & Wraps",
+      "id": "gid://shopify/Collection/513038221425",
+      "published": true,
+      "tag": "catalogue:home-food-storage-and-wraps"
+    },
+    {
+      "title": "Cling Film",
+      "handle": "home-food-storage-and-wraps-cling-film",
+      "path": "Home > Food Storage & Wraps > Cling Film",
+      "id": "gid://shopify/Collection/513038254193",
+      "published": true,
+      "tag": "catalogue:home-food-storage-and-wraps-cling-film"
+    },
+    {
+      "title": "Foil",
+      "handle": "home-food-storage-and-wraps-foil",
+      "path": "Home > Food Storage & Wraps > Foil",
+      "id": "gid://shopify/Collection/513038286961",
+      "published": true,
+      "tag": "catalogue:home-food-storage-and-wraps-foil"
+    },
+    {
+      "title": "Containers",
+      "handle": "home-food-storage-and-wraps-containers",
+      "path": "Home > Food Storage & Wraps > Containers",
+      "id": "gid://shopify/Collection/513038319729",
+      "published": true,
+      "tag": "catalogue:home-food-storage-and-wraps-containers"
+    },
+    {
+      "title": "Kitchen & Cookware",
+      "handle": "home-kitchen-and-cookware",
+      "path": "Home > Kitchen & Cookware",
+      "id": "gid://shopify/Collection/513038352497",
+      "published": true,
+      "tag": "catalogue:home-kitchen-and-cookware"
+    },
+    {
+      "title": "Tools & Utensils",
+      "handle": "home-kitchen-and-cookware-tools-and-utensils",
+      "path": "Home > Kitchen & Cookware > Tools & Utensils",
+      "id": "gid://shopify/Collection/513038385265",
+      "published": true,
+      "tag": "catalogue:home-kitchen-and-cookware-tools-and-utensils"
+    },
+    {
+      "title": "Kitchen Essentials",
+      "handle": "home-kitchen-and-cookware-kitchen-essentials",
+      "path": "Home > Kitchen & Cookware > Kitchen Essentials",
+      "id": "gid://shopify/Collection/513038418033",
+      "published": true,
+      "tag": "catalogue:home-kitchen-and-cookware-kitchen-essentials"
+    },
+    {
+      "title": "Cookware",
+      "handle": "home-kitchen-and-cookware-cookware",
+      "path": "Home > Kitchen & Cookware > Cookware",
+      "id": "gid://shopify/Collection/513038450801",
+      "published": true,
+      "tag": "catalogue:home-kitchen-and-cookware-cookware"
+    },
+    {
+      "title": "Storage & Organization",
+      "handle": "home-storage-and-organization",
+      "path": "Home > Storage & Organization",
+      "id": "gid://shopify/Collection/513038483569",
+      "published": true,
+      "tag": "catalogue:home-storage-and-organization"
+    },
+    {
+      "title": "Plasticware",
+      "handle": "home-storage-and-organization-plasticware",
+      "path": "Home > Storage & Organization > Plasticware",
+      "id": "gid://shopify/Collection/513038516337",
+      "published": true,
+      "tag": "catalogue:home-storage-and-organization-plasticware"
+    },
+    {
+      "title": "Paper & Household Essentials",
+      "handle": "home-paper-and-household-essentials",
+      "path": "Home > Paper & Household Essentials",
+      "id": "gid://shopify/Collection/513038549105",
+      "published": true,
+      "tag": "catalogue:home-paper-and-household-essentials"
+    },
+    {
+      "title": "Cleaning Tools & Pest Control",
+      "handle": "home-cleaning-tools-and-pest-control",
+      "path": "Home > Cleaning Tools & Pest Control",
+      "id": "gid://shopify/Collection/513038581873",
+      "published": true,
+      "tag": "catalogue:home-cleaning-tools-and-pest-control"
+    },
+    {
+      "title": "Cleaning & Laundry",
+      "handle": "home-cleaning-and-laundry",
+      "path": "Home > Cleaning & Laundry",
+      "id": "gid://shopify/Collection/513038614641",
+      "published": true,
+      "tag": "catalogue:home-cleaning-and-laundry"
+    },
+    {
+      "title": "Dishwashing",
+      "handle": "home-cleaning-and-laundry-dishwashing",
+      "path": "Home > Cleaning & Laundry > Dishwashing",
+      "id": "gid://shopify/Collection/513038647409",
+      "published": true,
+      "tag": "catalogue:home-cleaning-and-laundry-dishwashing"
+    },
+    {
+      "title": "Laundry",
+      "handle": "home-cleaning-and-laundry-laundry",
+      "path": "Home > Cleaning & Laundry > Laundry",
+      "id": "gid://shopify/Collection/513038680177",
+      "published": true,
+      "tag": "catalogue:home-cleaning-and-laundry-laundry"
+    },
+    {
+      "title": "Household Cleaning",
+      "handle": "home-cleaning-and-laundry-household-cleaning",
+      "path": "Home > Cleaning & Laundry > Household Cleaning",
+      "id": "gid://shopify/Collection/513038712945",
+      "published": true,
+      "tag": "catalogue:home-cleaning-and-laundry-household-cleaning"
+    },
+    {
+      "title": "Bath & Body",
+      "handle": "bath-and-body",
+      "path": "Bath & Body",
+      "id": "gid://shopify/Collection/513038745713",
+      "published": true,
+      "tag": "catalogue:bath-and-body"
+    },
+    {
+      "title": "Sexual Wellness",
+      "handle": "bath-and-body-sexual-wellness",
+      "path": "Bath & Body > Sexual Wellness",
+      "id": "gid://shopify/Collection/513038778481",
+      "published": true,
+      "tag": "catalogue:bath-and-body-sexual-wellness"
+    },
+    {
+      "title": "Men’s Grooming & Shaving",
+      "handle": "bath-and-body-mens-grooming-and-shaving",
+      "path": "Bath & Body > Men’s Grooming & Shaving",
+      "id": "gid://shopify/Collection/513038811249",
+      "published": true,
+      "tag": "catalogue:bath-and-body-mens-grooming-and-shaving"
+    },
+    {
+      "title": "Shaving & Hair Removal",
+      "handle": "bath-and-body-mens-grooming-and-shaving-shaving-and-hair-removal",
+      "path": "Bath & Body > Men’s Grooming & Shaving > Shaving & Hair Removal",
+      "id": "gid://shopify/Collection/513038844017",
+      "published": true,
+      "tag": "catalogue:bath-and-body-mens-grooming-and-shaving-shaving-and-hair-removal"
+    },
+    {
+      "title": "Personal Hygiene",
+      "handle": "bath-and-body-personal-hygiene",
+      "path": "Bath & Body > Personal Hygiene",
+      "id": "gid://shopify/Collection/513038876785",
+      "published": true,
+      "tag": "catalogue:bath-and-body-personal-hygiene"
+    },
+    {
+      "title": "Everyday Hygiene",
+      "handle": "bath-and-body-personal-hygiene-everyday-hygiene",
+      "path": "Bath & Body > Personal Hygiene > Everyday Hygiene",
+      "id": "gid://shopify/Collection/513038909553",
+      "published": true,
+      "tag": "catalogue:bath-and-body-personal-hygiene-everyday-hygiene"
+    },
+    {
+      "title": "Feminine Hygiene",
+      "handle": "bath-and-body-personal-hygiene-feminine-hygiene",
+      "path": "Bath & Body > Personal Hygiene > Feminine Hygiene",
+      "id": "gid://shopify/Collection/513038942321",
+      "published": true,
+      "tag": "catalogue:bath-and-body-personal-hygiene-feminine-hygiene"
+    },
+    {
+      "title": "Oral Care",
+      "handle": "bath-and-body-personal-hygiene-oral-care",
+      "path": "Bath & Body > Personal Hygiene > Oral Care",
+      "id": "gid://shopify/Collection/513038975089",
+      "published": true,
+      "tag": "catalogue:bath-and-body-personal-hygiene-oral-care"
+    },
+    {
+      "title": "Fragrances & Deodorants",
+      "handle": "bath-and-body-fragrances-and-deodorants",
+      "path": "Bath & Body > Fragrances & Deodorants",
+      "id": "gid://shopify/Collection/513039007857",
+      "published": true,
+      "tag": "catalogue:bath-and-body-fragrances-and-deodorants"
+    },
+    {
+      "title": "Makeup & Cosmetics",
+      "handle": "bath-and-body-makeup-and-cosmetics",
+      "path": "Bath & Body > Makeup & Cosmetics",
+      "id": "gid://shopify/Collection/513039040625",
+      "published": true,
+      "tag": "catalogue:bath-and-body-makeup-and-cosmetics"
+    },
+    {
+      "title": "Hair Care",
+      "handle": "bath-and-body-hair-care",
+      "path": "Bath & Body > Hair Care",
+      "id": "gid://shopify/Collection/513039073393",
+      "published": true,
+      "tag": "catalogue:bath-and-body-hair-care"
+    },
+    {
+      "title": "Skincare & Face Care",
+      "handle": "bath-and-body-skincare-and-face-care",
+      "path": "Bath & Body > Skincare & Face Care",
+      "id": "gid://shopify/Collection/513039106161",
+      "published": true,
+      "tag": "catalogue:bath-and-body-skincare-and-face-care"
+    },
+    {
+      "title": "Bath & Body Care",
+      "handle": "bath-and-body-bath-and-body-care",
+      "path": "Bath & Body > Bath & Body Care",
+      "id": "gid://shopify/Collection/513039138929",
+      "published": true,
+      "tag": "catalogue:bath-and-body-bath-and-body-care"
+    },
+    {
+      "title": "Hand & Foot Care",
+      "handle": "bath-and-body-bath-and-body-care-hand-and-foot-care",
+      "path": "Bath & Body > Bath & Body Care > Hand & Foot Care",
+      "id": "gid://shopify/Collection/513039171697",
+      "published": true,
+      "tag": "catalogue:bath-and-body-bath-and-body-care-hand-and-foot-care"
+    },
+    {
+      "title": "Body Care",
+      "handle": "bath-and-body-bath-and-body-care-body-care",
+      "path": "Bath & Body > Bath & Body Care > Body Care",
+      "id": "gid://shopify/Collection/513039204465",
+      "published": true,
+      "tag": "catalogue:bath-and-body-bath-and-body-care-body-care"
+    },
+    {
+      "title": "Bath & Shower",
+      "handle": "bath-and-body-bath-and-body-care-bath-and-shower",
+      "path": "Bath & Body > Bath & Body Care > Bath & Shower",
+      "id": "gid://shopify/Collection/513039237233",
+      "published": true,
+      "tag": "catalogue:bath-and-body-bath-and-body-care-bath-and-shower"
+    },
+    {
+      "title": "Gifting",
+      "handle": "gifting",
+      "path": "Gifting",
+      "id": "gid://shopify/Collection/513039270001",
+      "published": true,
+      "tag": "catalogue:gifting"
+    },
+    {
+      "title": "Balloons & Decorations",
+      "handle": "gifting-balloons-and-decorations",
+      "path": "Gifting > Balloons & Decorations",
+      "id": "gid://shopify/Collection/513039302769",
+      "published": true,
+      "tag": "catalogue:gifting-balloons-and-decorations"
+    },
+    {
+      "title": "Gift Cards & Personalized Gifts",
+      "handle": "gifting-gift-cards-and-personalized-gifts",
+      "path": "Gifting > Gift Cards & Personalized Gifts",
+      "id": "gid://shopify/Collection/513039335537",
+      "published": true,
+      "tag": "catalogue:gifting-gift-cards-and-personalized-gifts"
+    },
+    {
+      "title": "Fragrances & Candles",
+      "handle": "gifting-fragrances-and-candles",
+      "path": "Gifting > Fragrances & Candles",
+      "id": "gid://shopify/Collection/513039368305",
+      "published": true,
+      "tag": "catalogue:gifting-fragrances-and-candles"
+    },
+    {
+      "title": "Soft Toys & Gifts",
+      "handle": "gifting-soft-toys-and-gifts",
+      "path": "Gifting > Soft Toys & Gifts",
+      "id": "gid://shopify/Collection/513039401073",
+      "published": true,
+      "tag": "catalogue:gifting-soft-toys-and-gifts"
+    },
+    {
+      "title": "Hampers & Gift Sets",
+      "handle": "gifting-hampers-and-gift-sets",
+      "path": "Gifting > Hampers & Gift Sets",
+      "id": "gid://shopify/Collection/513039433841",
+      "published": true,
+      "tag": "catalogue:gifting-hampers-and-gift-sets"
+    },
+    {
+      "title": "Chocolates & Treats",
+      "handle": "gifting-chocolates-and-treats",
+      "path": "Gifting > Chocolates & Treats",
+      "id": "gid://shopify/Collection/513039466609",
+      "published": true,
+      "tag": "catalogue:gifting-chocolates-and-treats"
+    },
+    {
+      "title": "Confectionery",
+      "handle": "gifting-chocolates-and-treats-confectionery",
+      "path": "Gifting > Chocolates & Treats > Confectionery",
+      "id": "gid://shopify/Collection/513039499377",
+      "published": true,
+      "tag": "catalogue:gifting-chocolates-and-treats-confectionery"
+    },
+    {
+      "title": "Cakes",
+      "handle": "gifting-chocolates-and-treats-cakes",
+      "path": "Gifting > Chocolates & Treats > Cakes",
+      "id": "gid://shopify/Collection/513039532145",
+      "published": true,
+      "tag": "catalogue:gifting-chocolates-and-treats-cakes"
+    },
+    {
+      "title": "Chocolates",
+      "handle": "gifting-chocolates-and-treats-chocolates",
+      "path": "Gifting > Chocolates & Treats > Chocolates",
+      "id": "gid://shopify/Collection/513039564913",
+      "published": true,
+      "tag": "catalogue:gifting-chocolates-and-treats-chocolates"
+    },
+    {
+      "title": "Flowers & Bouquets",
+      "handle": "gifting-flowers-and-bouquets",
+      "path": "Gifting > Flowers & Bouquets",
+      "id": "gid://shopify/Collection/513039597681",
+      "published": true,
+      "tag": "catalogue:gifting-flowers-and-bouquets"
+    },
+    {
+      "title": "Baby Products",
+      "handle": "baby-products",
+      "path": "Baby Products",
+      "id": "gid://shopify/Collection/513039630449",
+      "published": true,
+      "tag": "catalogue:baby-products"
+    },
+    {
+      "title": "Maternity & Postpartum",
+      "handle": "baby-products-maternity-and-postpartum",
+      "path": "Baby Products > Maternity & Postpartum",
+      "id": "gid://shopify/Collection/513039663217",
+      "published": true,
+      "tag": "catalogue:baby-products-maternity-and-postpartum"
+    },
+    {
+      "title": "Baby Toys",
+      "handle": "baby-products-baby-toys",
+      "path": "Baby Products > Baby Toys",
+      "id": "gid://shopify/Collection/513039695985",
+      "published": true,
+      "tag": "catalogue:baby-products-baby-toys"
+    },
+    {
+      "title": "Baby Gear & Travel",
+      "handle": "baby-products-baby-gear-and-travel",
+      "path": "Baby Products > Baby Gear & Travel",
+      "id": "gid://shopify/Collection/513039728753",
+      "published": true,
+      "tag": "catalogue:baby-products-baby-gear-and-travel"
+    },
+    {
+      "title": "Nursery & Bedding",
+      "handle": "baby-products-nursery-and-bedding",
+      "path": "Baby Products > Nursery & Bedding",
+      "id": "gid://shopify/Collection/513039761521",
+      "published": true,
+      "tag": "catalogue:baby-products-nursery-and-bedding"
+    },
+    {
+      "title": "Health & Safety",
+      "handle": "baby-products-health-and-safety",
+      "path": "Baby Products > Health & Safety",
+      "id": "gid://shopify/Collection/513039794289",
+      "published": true,
+      "tag": "catalogue:baby-products-health-and-safety"
+    },
+    {
+      "title": "Bath, Skincare & Grooming",
+      "handle": "baby-products-bath-skincare-and-grooming",
+      "path": "Baby Products > Bath, Skincare & Grooming",
+      "id": "gid://shopify/Collection/513039827057",
+      "published": true,
+      "tag": "catalogue:baby-products-bath-skincare-and-grooming"
+    },
+    {
+      "title": "Baby Food & Formula",
+      "handle": "baby-products-baby-food-and-formula",
+      "path": "Baby Products > Baby Food & Formula",
+      "id": "gid://shopify/Collection/513039859825",
+      "published": true,
+      "tag": "catalogue:baby-products-baby-food-and-formula"
+    },
+    {
+      "title": "Feeding & Nursing",
+      "handle": "baby-products-feeding-and-nursing",
+      "path": "Baby Products > Feeding & Nursing",
+      "id": "gid://shopify/Collection/513039892593",
+      "published": true,
+      "tag": "catalogue:baby-products-feeding-and-nursing"
+    },
+    {
+      "title": "Pacifiers & Teethers",
+      "handle": "baby-products-feeding-and-nursing-pacifiers-and-teethers",
+      "path": "Baby Products > Feeding & Nursing > Pacifiers & Teethers",
+      "id": "gid://shopify/Collection/513039925361",
+      "published": true,
+      "tag": "catalogue:baby-products-feeding-and-nursing-pacifiers-and-teethers"
+    },
+    {
+      "title": "Breastfeeding & Nursing",
+      "handle": "baby-products-feeding-and-nursing-breastfeeding-and-nursing",
+      "path": "Baby Products > Feeding & Nursing > Breastfeeding & Nursing",
+      "id": "gid://shopify/Collection/513039958129",
+      "published": true,
+      "tag": "catalogue:baby-products-feeding-and-nursing-breastfeeding-and-nursing"
+    },
+    {
+      "title": "Bottles & Accessories",
+      "handle": "baby-products-feeding-and-nursing-bottles-and-accessories",
+      "path": "Baby Products > Feeding & Nursing > Bottles & Accessories",
+      "id": "gid://shopify/Collection/513040023665",
+      "published": true,
+      "tag": "catalogue:baby-products-feeding-and-nursing-bottles-and-accessories"
+    },
+    {
+      "title": "Diapers & Wipes",
+      "handle": "baby-products-diapers-and-wipes",
+      "path": "Baby Products > Diapers & Wipes",
+      "id": "gid://shopify/Collection/513040056433",
+      "published": true,
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "title": "Grocery",
+      "handle": "grocery",
+      "path": "Grocery",
+      "id": "gid://shopify/Collection/513040089201",
+      "published": true,
+      "tag": "catalogue:grocery"
+    },
+    {
+      "title": "Baby Food",
+      "handle": "grocery-baby-food",
+      "path": "Grocery > Baby Food",
+      "id": "gid://shopify/Collection/513040121969",
+      "published": true,
+      "tag": "catalogue:grocery-baby-food"
+    },
+    {
+      "title": "Frozen Foods",
+      "handle": "grocery-frozen-foods",
+      "path": "Grocery > Frozen Foods",
+      "id": "gid://shopify/Collection/513040154737",
+      "published": true,
+      "tag": "catalogue:grocery-frozen-foods"
+    },
+    {
+      "title": "Fresh Produce",
+      "handle": "grocery-fresh-produce",
+      "path": "Grocery > Fresh Produce",
+      "id": "gid://shopify/Collection/513040187505",
+      "published": true,
+      "tag": "catalogue:grocery-fresh-produce"
+    },
+    {
+      "title": "Dairy & Eggs",
+      "handle": "grocery-dairy-and-eggs",
+      "path": "Grocery > Dairy & Eggs",
+      "id": "gid://shopify/Collection/513040220273",
+      "published": true,
+      "tag": "catalogue:grocery-dairy-and-eggs"
+    },
+    {
+      "title": "Healthy & Specialty Foods",
+      "handle": "grocery-healthy-and-specialty-foods",
+      "path": "Grocery > Healthy & Specialty Foods",
+      "id": "gid://shopify/Collection/513040253041",
+      "published": true,
+      "tag": "catalogue:grocery-healthy-and-specialty-foods"
+    },
+    {
+      "title": "International & Specialty",
+      "handle": "grocery-healthy-and-specialty-foods-international-and-specialty",
+      "path": "Grocery > Healthy & Specialty Foods > International & Specialty",
+      "id": "gid://shopify/Collection/513040285809",
+      "published": true,
+      "tag": "catalogue:grocery-healthy-and-specialty-foods-international-and-specialty"
+    },
+    {
+      "title": "Health-Focused",
+      "handle": "grocery-healthy-and-specialty-foods-health-focused",
+      "path": "Grocery > Healthy & Specialty Foods > Health-Focused",
+      "id": "gid://shopify/Collection/513040318577",
+      "published": true,
+      "tag": "catalogue:grocery-healthy-and-specialty-foods-health-focused"
+    },
+    {
+      "title": "Organic",
+      "handle": "grocery-healthy-and-specialty-foods-organic",
+      "path": "Grocery > Healthy & Specialty Foods > Organic",
+      "id": "gid://shopify/Collection/513040351345",
+      "published": true,
+      "tag": "catalogue:grocery-healthy-and-specialty-foods-organic"
+    },
+    {
+      "title": "Beverages",
+      "handle": "grocery-beverages",
+      "path": "Grocery > Beverages",
+      "id": "gid://shopify/Collection/513040384113",
+      "published": true,
+      "tag": "catalogue:grocery-beverages"
+    },
+    {
+      "title": "Other Beverages",
+      "handle": "grocery-beverages-other-beverages",
+      "path": "Grocery > Beverages > Other Beverages",
+      "id": "gid://shopify/Collection/513040416881",
+      "published": true,
+      "tag": "catalogue:grocery-beverages-other-beverages"
+    },
+    {
+      "title": "Tea & Coffee",
+      "handle": "grocery-beverages-tea-and-coffee",
+      "path": "Grocery > Beverages > Tea & Coffee",
+      "id": "gid://shopify/Collection/513040449649",
+      "published": true,
+      "tag": "catalogue:grocery-beverages-tea-and-coffee"
+    },
+    {
+      "title": "Energy & Sports Drinks",
+      "handle": "grocery-beverages-energy-and-sports-drinks",
+      "path": "Grocery > Beverages > Energy & Sports Drinks",
+      "id": "gid://shopify/Collection/513040482417",
+      "published": true,
+      "tag": "catalogue:grocery-beverages-energy-and-sports-drinks"
+    },
+    {
+      "title": "Soft Drinks",
+      "handle": "grocery-beverages-soft-drinks",
+      "path": "Grocery > Beverages > Soft Drinks",
+      "id": "gid://shopify/Collection/513040515185",
+      "published": true,
+      "tag": "catalogue:grocery-beverages-soft-drinks"
+    },
+    {
+      "title": "Juices",
+      "handle": "grocery-beverages-juices",
+      "path": "Grocery > Beverages > Juices",
+      "id": "gid://shopify/Collection/513040547953",
+      "published": true,
+      "tag": "catalogue:grocery-beverages-juices"
+    },
+    {
+      "title": "Water",
+      "handle": "grocery-beverages-water",
+      "path": "Grocery > Beverages > Water",
+      "id": "gid://shopify/Collection/513040580721",
+      "published": true,
+      "tag": "catalogue:grocery-beverages-water"
+    },
+    {
+      "title": "Canned, Packaged & Ready Foods",
+      "handle": "grocery-canned-packaged-and-ready-foods",
+      "path": "Grocery > Canned, Packaged & Ready Foods",
+      "id": "gid://shopify/Collection/513040613489",
+      "published": true,
+      "tag": "catalogue:grocery-canned-packaged-and-ready-foods"
+    },
+    {
+      "title": "Sauces, Condiments & Dressings",
+      "handle": "grocery-canned-packaged-and-ready-foods-sauces-condiments-and-dressings",
+      "path": "Grocery > Canned, Packaged & Ready Foods > Sauces, Condiments & Dressings",
+      "id": "gid://shopify/Collection/513040646257",
+      "published": true,
+      "tag": "catalogue:grocery-canned-packaged-and-ready-foods-sauces-condiments-and-dressings"
+    },
+    {
+      "title": "Instant & Ready-to-Eat",
+      "handle": "grocery-canned-packaged-and-ready-foods-instant-and-ready-to-eat",
+      "path": "Grocery > Canned, Packaged & Ready Foods > Instant & Ready-to-Eat",
+      "id": "gid://shopify/Collection/513040679025",
+      "published": true,
+      "tag": "catalogue:grocery-canned-packaged-and-ready-foods-instant-and-ready-to-eat"
+    },
+    {
+      "title": "Canned & Jarred Foods",
+      "handle": "grocery-canned-packaged-and-ready-foods-canned-and-jarred-foods",
+      "path": "Grocery > Canned, Packaged & Ready Foods > Canned & Jarred Foods",
+      "id": "gid://shopify/Collection/513040711793",
+      "published": true,
+      "tag": "catalogue:grocery-canned-packaged-and-ready-foods-canned-and-jarred-foods"
+    },
+    {
+      "title": "Snacks & Confectionery",
+      "handle": "grocery-snacks-and-confectionery",
+      "path": "Grocery > Snacks & Confectionery",
+      "id": "gid://shopify/Collection/513040744561",
+      "published": true,
+      "tag": "catalogue:grocery-snacks-and-confectionery"
+    },
+    {
+      "title": "Nuts, Seeds & Dried Fruits",
+      "handle": "grocery-snacks-and-confectionery-nuts-seeds-and-dried-fruits",
+      "path": "Grocery > Snacks & Confectionery > Nuts, Seeds & Dried Fruits",
+      "id": "gid://shopify/Collection/513040777329",
+      "published": true,
+      "tag": "catalogue:grocery-snacks-and-confectionery-nuts-seeds-and-dried-fruits"
+    },
+    {
+      "title": "Chocolates & Confectionery",
+      "handle": "grocery-snacks-and-confectionery-chocolates-and-confectionery",
+      "path": "Grocery > Snacks & Confectionery > Chocolates & Confectionery",
+      "id": "gid://shopify/Collection/513040810097",
+      "published": true,
+      "tag": "catalogue:grocery-snacks-and-confectionery-chocolates-and-confectionery"
+    },
+    {
+      "title": "Biscuits & Crackers",
+      "handle": "grocery-snacks-and-confectionery-biscuits-and-crackers",
+      "path": "Grocery > Snacks & Confectionery > Biscuits & Crackers",
+      "id": "gid://shopify/Collection/513040842865",
+      "published": true,
+      "tag": "catalogue:grocery-snacks-and-confectionery-biscuits-and-crackers"
+    },
+    {
+      "title": "Chips & Snacks",
+      "handle": "grocery-snacks-and-confectionery-chips-and-snacks",
+      "path": "Grocery > Snacks & Confectionery > Chips & Snacks",
+      "id": "gid://shopify/Collection/513040875633",
+      "published": true,
+      "tag": "catalogue:grocery-snacks-and-confectionery-chips-and-snacks"
+    },
+    {
+      "title": "Breakfast & Spreads",
+      "handle": "grocery-breakfast-and-spreads",
+      "path": "Grocery > Breakfast & Spreads",
+      "id": "gid://shopify/Collection/513040908401",
+      "published": true,
+      "tag": "catalogue:grocery-breakfast-and-spreads"
+    },
+    {
+      "title": "Spreads",
+      "handle": "grocery-breakfast-and-spreads-spreads",
+      "path": "Grocery > Breakfast & Spreads > Spreads",
+      "id": "gid://shopify/Collection/513040941169",
+      "published": true,
+      "tag": "catalogue:grocery-breakfast-and-spreads-spreads"
+    },
+    {
+      "title": "Honey",
+      "handle": "grocery-breakfast-and-spreads-honey",
+      "path": "Grocery > Breakfast & Spreads > Honey",
+      "id": "gid://shopify/Collection/513040973937",
+      "published": true,
+      "tag": "catalogue:grocery-breakfast-and-spreads-honey"
+    },
+    {
+      "title": "Jams",
+      "handle": "grocery-breakfast-and-spreads-jams",
+      "path": "Grocery > Breakfast & Spreads > Jams",
+      "id": "gid://shopify/Collection/513041006705",
+      "published": true,
+      "tag": "catalogue:grocery-breakfast-and-spreads-jams"
+    },
+    {
+      "title": "Breakfast Foods",
+      "handle": "grocery-breakfast-and-spreads-breakfast-foods",
+      "path": "Grocery > Breakfast & Spreads > Breakfast Foods",
+      "id": "gid://shopify/Collection/513041039473",
+      "published": true,
+      "tag": "catalogue:grocery-breakfast-and-spreads-breakfast-foods"
+    },
+    {
+      "title": "Cereals",
+      "handle": "grocery-breakfast-and-spreads-cereals",
+      "path": "Grocery > Breakfast & Spreads > Cereals",
+      "id": "gid://shopify/Collection/513041072241",
+      "published": true,
+      "tag": "catalogue:grocery-breakfast-and-spreads-cereals"
+    },
+    {
+      "title": "Pantry Staples",
+      "handle": "grocery-pantry-staples",
+      "path": "Grocery > Pantry Staples",
+      "id": "gid://shopify/Collection/513041105009",
+      "published": true,
+      "tag": "catalogue:grocery-pantry-staples"
+    },
+    {
+      "title": "Salt, Spices & Seasonings",
+      "handle": "grocery-pantry-staples-salt-spices-and-seasonings",
+      "path": "Grocery > Pantry Staples > Salt, Spices & Seasonings",
+      "id": "gid://shopify/Collection/513041137777",
+      "published": true,
+      "tag": "catalogue:grocery-pantry-staples-salt-spices-and-seasonings"
+    },
+    {
+      "title": "Sugar & Sweeteners",
+      "handle": "grocery-pantry-staples-sugar-and-sweeteners",
+      "path": "Grocery > Pantry Staples > Sugar & Sweeteners",
+      "id": "gid://shopify/Collection/513041170545",
+      "published": true,
+      "tag": "catalogue:grocery-pantry-staples-sugar-and-sweeteners"
+    },
+    {
+      "title": "Oils & Ghee",
+      "handle": "grocery-pantry-staples-oils-and-ghee",
+      "path": "Grocery > Pantry Staples > Oils & Ghee",
+      "id": "gid://shopify/Collection/513041203313",
+      "published": true,
+      "tag": "catalogue:grocery-pantry-staples-oils-and-ghee"
+    },
+    {
+      "title": "Pulses, Beans & Lentils",
+      "handle": "grocery-pantry-staples-pulses-beans-and-lentils",
+      "path": "Grocery > Pantry Staples > Pulses, Beans & Lentils",
+      "id": "gid://shopify/Collection/513041236081",
+      "published": true,
+      "tag": "catalogue:grocery-pantry-staples-pulses-beans-and-lentils"
+    },
+    {
+      "title": "Flour",
+      "handle": "grocery-pantry-staples-flour",
+      "path": "Grocery > Pantry Staples > Flour",
+      "id": "gid://shopify/Collection/513041268849",
+      "published": true,
+      "tag": "catalogue:grocery-pantry-staples-flour"
+    },
+    {
+      "title": "Noodles",
+      "handle": "grocery-pantry-staples-noodles",
+      "path": "Grocery > Pantry Staples > Noodles",
+      "id": "gid://shopify/Collection/513041301617",
+      "published": true,
+      "tag": "catalogue:grocery-pantry-staples-noodles"
+    },
+    {
+      "title": "Pasta",
+      "handle": "grocery-pantry-staples-pasta",
+      "path": "Grocery > Pantry Staples > Pasta",
+      "id": "gid://shopify/Collection/513041334385",
+      "published": true,
+      "tag": "catalogue:grocery-pantry-staples-pasta"
+    },
+    {
+      "title": "Rice",
+      "handle": "grocery-pantry-staples-rice",
+      "path": "Grocery > Pantry Staples > Rice",
+      "id": "gid://shopify/Collection/513041367153",
+      "published": true,
+      "tag": "catalogue:grocery-pantry-staples-rice"
+    }
+  ],
+  "menu": {
+    "id": "gid://shopify/Menu/255574638705",
+    "title": "Catalogue",
+    "handle": "catalogue"
+  },
+  "reviewTheme": {
+    "id": "gid://shopify/OnlineStoreTheme/189518545009",
+    "name": "codex-catalogue-navigation",
+    "role": "UNPUBLISHED"
+  },
+  "taggedProducts": [
+    {
+      "id": "gid://shopify/Product/15425364820081",
+      "title": "[TEST] Sanita Bambi Baby Diapers Size 5 XLarge 12 - 22kg White Giant Pack of 42",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425366392945",
+      "title": "[TEST] Pampers Rash Protection Pants Diapers, Size 7, 17kg,50% Aloe Vera Lotion, 360° Leak-Free Fit for up to 100% Leakage Protection, Super Saver Box, 38 Free Diapers, 114 Count",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425366458481",
+      "title": "[TEST] Pampers Ultimate Comfort Taped Diapers, Size 6, 13kg, Lotion infused with Aloe Vera and Vitamin E, x1000 Leak Locks Technology for Leakage Protection, 144 Count",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425366524017",
+      "title": "[TEST] Pampers Ultimate Comfort Taped Diapers, Size 3, 6-10kg, Lotion infused with Aloe Vera and Vitamin E, x1000 Leak Locks Technology for Leakage Protection, 248 Count",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425366556785",
+      "title": "[TEST] Pampers Rash Protection Taped Diapers, Size 1, 2-5kg,50% Aloe Vera Lotion for Rash Protection, 3x Fortified Layers for Leakage Protection, Jumbo Box, 136 Count",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425366622321",
+      "title": "[TEST] Pampers Rash Protection Aloe Taped Diapers 11-16kg Size 5 GigaBox 228 Count",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425366655089",
+      "title": "[TEST] Pampers Baby Dry Maxi Size 4-58 Piece,Set of 3",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425366884465",
+      "title": "[TEST] Pampers Ultimate Comfort Premium Taped Diapers 2-5kg Size 1 Giant 108 Count",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425366982769",
+      "title": "[TEST] Pampers Luxurious Skin Touch Premium Diapers 3-8kg, Size 2, 120 for Infants",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425367015537",
+      "title": "[TEST] Baby Joy Compressed Diamond Diapers Large Size 4 10-18kg Value Pack 32 Diapers",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425367048305",
+      "title": "[TEST] Huggies Extra Care Diapers Size 3 15-25kg 42 Diapers Pack of 2",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425367113841",
+      "title": "[TEST] Huggies DrynitesBed Mats 7Pack - Pack of 2",
+      "productType": "Changing & Bed Mats",
+      "tag": "catalogue:baby-products-nursery-and-bedding"
+    },
+    {
+      "id": "gid://shopify/Product/15425367146609",
+      "title": "[TEST] Pampers Baby Change Mats",
+      "productType": "Changing & Bed Mats",
+      "tag": "catalogue:baby-products-nursery-and-bedding"
+    },
+    {
+      "id": "gid://shopify/Product/15425367375985",
+      "title": "[TEST] Huggies Dry Nites Drynites Bedmats 7 Ultra Absorbent Sheets",
+      "productType": "Changing & Bed Mats",
+      "tag": "catalogue:baby-products-nursery-and-bedding"
+    },
+    {
+      "id": "gid://shopify/Product/15425367441521",
+      "title": "[TEST] Huggies DryNites Bed Mats (7 Pack",
+      "productType": "Changing & Bed Mats",
+      "tag": "catalogue:baby-products-nursery-and-bedding"
+    },
+    {
+      "id": "gid://shopify/Product/15425367507057",
+      "title": "[TEST] Huggies DryNites Bed Mats 88x78 cm 7 per pack White",
+      "productType": "Changing & Bed Mats",
+      "tag": "catalogue:baby-products-nursery-and-bedding"
+    },
+    {
+      "id": "gid://shopify/Product/15425367572593",
+      "title": "[TEST] Easy Ups Training Underwear Comfy FitunderwearUnisex-Babies",
+      "productType": "Training Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425367736433",
+      "title": "[TEST] Pampers Active Baby Diapers, Large (78 Count",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425367834737",
+      "title": "[TEST] Pampers Baby-Dry Diapers, Size 6, 16-21 kg, The Softest Diaper And The Best Skin Protection, 186 Baby Diapers (3X62",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425369210993",
+      "title": "[TEST] Pampers Jumbo Diapers Size 8, 96 pcs, 19 kg",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425369309297",
+      "title": "[TEST] Pampers Baby Dry Pants with Aloe Vera, Size Medium 7-12, (76 Counts)",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425369407601",
+      "title": "[TEST] Pampers Nappies Size 1 (2-5 kgPremium Care Nappies, Pack of 26, Best Comfort and Protection for Sensitive Skin Pampers",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425369440369",
+      "title": "[TEST] Pampers New Diapers Pants with Aloe Vera, Small, (58 Count",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425369538673",
+      "title": "[TEST] Pampers Pure Protection Diapers Size 5, 19 count - Disposable Diapers",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425369636977",
+      "title": "[TEST] Pampers Pants Nappy Surplus 3 (6-11 kg, Premium Care, Pack of 48, ProtectionComfort Pampers in Easy to Fit Nappies",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425369964657",
+      "title": "[TEST] Diapers Newborn/Size 1 (8-14 lb- Pampers Swaddlers Disposable Baby Diapers, Enormous Pack, Size 1, 164 Count (Pack of 1",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370062961",
+      "title": "[TEST] Pampers Diapers Size 4, 21 Count - Pull On Cruisers 360 Fit Disposable Baby Diapers with Stretchy Waistband, Jumbo Pack (Packaging May Vary",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370128497",
+      "title": "[TEST] Pampers Premium Care Pants, Small size baby diapers (, 46 Count, Softest ever Pampers pants",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370194033",
+      "title": "[TEST] Pampers Premium Protection Nappy Pants Size 6, 25kg",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370259569",
+      "title": "[TEST] Pampers Premium Care Pants Diapers, Size 6, 16kg, Unique Softest Absorption for Ultimate Skin Protection, 144 Count",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370292337",
+      "title": "[TEST] Pampers Baby Dry Pants,Size 6 (76 Pants",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370685553",
+      "title": "[TEST] Pampers Premium Care Size 2, Pack of 23, 4 kg - 8 kg, Top Comfort and Protection of Sensitive Skin Pampers",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370718321",
+      "title": "[TEST] Pampers Baby Dry Diapers Gr. 6 (13-18 kg, for breathable dryness, jumbopack",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370816625",
+      "title": "[TEST] Pampers DayNight Baby-Dry Pants Diaper Bundle for All Around Leakage Protection, Size 3, 6-11 kg, 144 Baby Diapers",
+      "productType": "Nappy Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370914929",
+      "title": "[TEST] Pampers Easy Ups Training Pants Boys and Girls, 3T-4T, 124 Count",
+      "productType": "Training Pants",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425370947697",
+      "title": "[TEST] Pampers Baby-Dry Taped Diapers with Aloe Vera Lotion, up to 100% Leakage Protection, Size 6, 13kg, 62 Count",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425371046001",
+      "title": "[TEST] Pampers Baby-Dry Taped Diapers with Aloe Vera Lotion, up to 100% Leakage Protection, Size 4, 10-15kg, 296 Count",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425371471985",
+      "title": "[TEST] Pampers Swaddlers Diapers - Size 6, One Month Supply (108 Count, Ultra Soft Disposable Baby Diapers",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    },
+    {
+      "id": "gid://shopify/Product/15425371504753",
+      "title": "[TEST] Pampers Diapers Size 1/Newborn, 82 Count - Pure Protection Disposable Baby Diapers, Hypoallergenic and Unscented Protection, Super Pack (PackagingPrints May Vary",
+      "productType": "Baby Diapers",
+      "tag": "catalogue:baby-products-diapers-and-wipes"
+    }
+  ],
+  "categoriesPage": {
+    "id": "gid://shopify/Page/162767175793",
+    "title": "Categories",
+    "handle": "categories",
+    "templateSuffix": "categories"
+  },
+  "verification": {
+    "collections": 122,
+    "collectionErrors": [],
+    "menu": {
+      "count": 123,
+      "maxDepth": 3,
+      "problems": []
+    },
+    "browserVerified": false
+  }
+}

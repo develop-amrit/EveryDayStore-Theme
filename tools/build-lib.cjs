@@ -1,0 +1,11 @@
+const fs=require('fs');
+const read=p=>fs.readFileSync(p,'utf8');
+const write=(p,s)=>{fs.mkdirSync(require('path').dirname(p),{recursive:true});fs.writeFileSync(p,s+'\n');};
+const parse=p=>JSON.parse(read(p).replace(/^\s*\/\*[\s\S]*?\*\/\s*/,''));
+const save=(p,o)=>write(p,JSON.stringify(o,null,2));
+const set=(type,id,label,def)=>({type,id,label,...(def===undefined?{}:{default:def})});
+const section=(name,markup,settings=[],extra={})=>write(`sections/${name}.liquid`,markup+'\n{% schema %}\n'+JSON.stringify({name:name.replace('qc-','').replaceAll('-',' ').slice(0,25),settings,presets:[{name:name.replace('qc-','').replaceAll('-',' ').slice(0,25)}],...extra},null,2)+'\n{% endschema %}');
+const template=(name,type,settings={})=>save(`templates/${name}.json`,{sections:{main:{type,settings}},order:['main']});
+const strings=values=>{const data=parse('locales/en.default.json');Object.assign(data.qc,values);save('locales/en.default.json',data);};
+const edit=(p,fn)=>write(p,fn(read(p)));
+module.exports={fs,read,write,parse,save,set,section,template,strings,edit};

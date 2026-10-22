@@ -1,0 +1,39 @@
+<section class="page-width dc-section"><commerce-directory><div class="dc-directory__tools" hidden><label for="DepartmentSearch-{{ section.id }}">{{ 'commerce.find_department' | t }}</label><div class="dc-directory__search"><input type="search" name="department" id="DepartmentSearch-{{ section.id }}" autocomplete="off" aria-controls="DepartmentGrid-{{ section.id }}"><button type="button">{{ 'general.search.reset' | t }}</button></div><p role="status" class="dc-caption" data-directory-status data-count-label="{{ 'commerce.department_count' | t | escape }}"></p></div><div id="DepartmentGrid-{{ section.id }}" class="dc-directory">{% for block in section.blocks %}<article id="{{ block.settings.anchor | escape }}" class="dc-directory__item" {{ block.shopify_attributes }}><div class="dc-directory__art" aria-hidden="true">{% render 'commerce-art', kind:block.settings.art %}</div><div class="dc-directory__copy"><h2>{{ block.settings.title | escape }}</h2><p>{{ block.settings.text | escape }}</p><p class="dc-directory__list">{{ block.settings.examples | escape }}</p>{% if block.settings.collection != blank %}<a href="{{ block.settings.collection.url }}">{{ 'commerce.view_all' | t }}</a>{% else %}<a href="{{ block.settings.link }}">{{ block.settings.label | escape }}</a>{% endif %}</div></article>{% endfor %}</div><p class="dc-directory__empty" hidden>{{ 'commerce.no_department' | t }}</p></commerce-directory></section>
+{% stylesheet %}
+
+.dc-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}.dc-directory__item{display:flex;align-items:center;gap:2rem;border:1px solid var(--dc-line);border-radius:1.4rem;padding:2.5rem;scroll-margin-top:2rem;min-width:0}.dc-directory__art{width:28%;flex-shrink:0;background:var(--dc-cream);border-radius:1.2rem}.dc-directory__copy{min-width:0}.dc-directory h2{font-size:2.5rem;margin:0 0 1rem}.dc-directory p{font-size:1.4rem;line-height:1.65;margin:0 0 1rem}.dc-directory .dc-directory__list{font-size:1.2rem;color:var(--dc-muted)}.dc-directory a{color:var(--dc-forest);font-size:1.3rem;min-height:4.4rem;display:inline-flex;align-items:center;font-weight:700;text-underline-offset:.4rem}@media(max-width:749px){.dc-directory{grid-template-columns:1fr;gap:1.2rem}.dc-directory__item{padding:1.8rem;gap:1.5rem}.dc-directory h2{font-size:2.2rem}.dc-directory p{font-size:1.3rem}}
+
+
+.dc-directory__tools{margin:0 0 2rem;max-width:55rem}.dc-directory__tools label{display:block;font-size:1.4rem;font-weight:700;margin-bottom:.8rem}.dc-directory__search{display:flex;border:1px solid var(--dc-line);border-radius:.8rem;padding:.3rem;background:var(--dc-paper)}.dc-directory__search input{min-width:0;flex:1;border:0;background:transparent;font:inherit;color:var(--dc-forest);padding:1rem}.dc-directory__search button{border:0;background:var(--dc-cream);color:var(--dc-forest);border-radius:.6rem;min-height:4.4rem;padding:1rem;font:inherit;cursor:pointer}.dc-directory__item[hidden],.dc-directory__empty[hidden],.dc-directory__tools[hidden]{display:none}.dc-directory__empty{padding:2rem;background:var(--dc-cream);border-radius:1rem}
+{% endstylesheet %}
+{% javascript %}
+if (!customElements.get('commerce-directory')) {
+  customElements.define('commerce-directory', class extends HTMLElement {
+    connectedCallback() {
+      this.controller?.abort();
+      this.controller = new AbortController();
+      const options = { signal: this.controller.signal };
+      this.input = this.querySelector('input');
+      this.cards = [...this.querySelectorAll('.dc-directory__item')];
+      this.status = this.querySelector('[data-directory-status]');
+      this.empty = this.querySelector('.dc-directory__empty');
+      this.querySelector('.dc-directory__tools').hidden = false;
+      this.input.addEventListener('input', () => this.filter(), options);
+      this.querySelector('button').addEventListener('click', () => { this.input.value = ''; this.filter(); this.input.focus(); }, options);
+      window.addEventListener('hashchange', () => { this.input.value = ''; this.filter(); document.getElementById(location.hash.slice(1))?.scrollIntoView(); }, options);
+      this.filter();
+    }
+    filter() {
+      const term = this.input.value.trim().toLocaleLowerCase();
+      let count = 0;
+      for (const card of this.cards) { card.hidden = !card.textContent.toLocaleLowerCase().includes(term); if (!card.hidden) count++; }
+      this.status.textContent = this.status.dataset.countLabel.replace('[count]', count).replace('[total]', this.cards.length);
+      this.empty.hidden = count > 0;
+    }
+    disconnectedCallback() { this.controller?.abort(); }
+  });
+}
+{% endjavascript %}
+{% schema %}
+{"name": "Commerce directory", "settings": [], "blocks": [{"type": "department", "name": "Department", "settings": [{"type": "text", "id": "title", "label": "Title"}, {"type": "text", "id": "anchor", "label": "Navigation anchor"}, {"type": "textarea", "id": "text", "label": "Description"}, {"type": "text", "id": "examples", "label": "Example categories"}, {"type": "select", "id": "art", "label": "Illustration", "options": [{"value": "wipes", "label": "Baby care"}, {"value": "towels", "label": "Home care"}, {"value": "wash", "label": "Personal care"}, {"value": "cable", "label": "Tech"}, {"value": "oats", "label": "Pantry"}, {"value": "pouch", "label": "On the go"}], "default": "pouch"}, {"type": "collection", "id": "collection", "label": "Live collection"}, {"type": "url", "id": "link", "label": "Preview link"}, {"type": "text", "id": "label", "label": "Preview link label"}]}], "presets": [{"name": "Commerce directory"}]}
+{% endschema %}

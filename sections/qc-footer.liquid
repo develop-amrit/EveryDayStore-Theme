@@ -1,0 +1,60 @@
+<footer class="qc-footer"><div class="qc-wrap"><div class="qc-footer-top"><div><a class="qc-logo" href="{{ routes.root_url }}">{% render 'qc-logo', wordmark: section.settings.wordmark %}</a><p>{{ section.settings.text | escape }}</p></div><div><h2>{{ 'qc.newsletter' | t }}</h2>{% form 'customer', id: 'qc-newsletter' %}<input type="hidden" name="contact[tags]" value="newsletter">{% if form.posted_successfully? %}<p role="status">{{ 'qc.subscribed' | t }}</p>{% else %}<label class="visually-hidden" for="qc-email">{{ 'qc.email' | t }}</label><div class="qc-newsletter"><input id="qc-email" type="email" name="contact[email]" autocomplete="email" placeholder="{{ 'qc.email' | t }}" required><button>{{ 'qc.subscribe' | t }} ↗</button></div>{{ form.errors | default_errors }}{% endif %}{% endform %}<small>{{ 'qc.newsletter_hint' | t }}</small></div></div><div class="qc-footer-links">{% for block in section.blocks %}{% if block.settings.menu.links != blank %}<div {{ block.shopify_attributes }}><h2>{{ block.settings.heading | escape }}</h2>{% for link in block.settings.menu.links %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endfor %}</div>{% endif %}{% endfor %}<div>{% render 'social-icons' %}</div></div><div class="qc-policy-links">{% render 'qc-policy-links' %}<button type="button" data-cookie-manage>{{ 'qc.cookie_manage' | t }}</button></div><div class="qc-footer-base"><span>© {{ 'now' | date: '%Y' }} {{ shop.name | escape }}</span><ul class="qc-payment" role="list" aria-label="{{ 'qc.payment' | t }}">{% for type in shop.enabled_payment_types %}<li>{{ type | payment_type_svg_tag }}</li>{% endfor %}</ul><a href="#" data-top>{{ 'qc.top' | t }} ↑</a></div></div></footer>
+{% schema %}
+{
+  "name": "Quick commerce footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "wordmark",
+      "label": "Existing wordmark",
+      "default": "everyday"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Description",
+      "default": "Everyday essentials. Thoughtfully selected for life in Dubai."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "links",
+      "name": "Footer menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Here to help"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Footer menu"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Quick commerce footer",
+      "blocks": [
+        {
+          "type": "links",
+          "settings": {
+            "heading": "Here to help"
+          }
+        },
+        {
+          "type": "links",
+          "settings": {
+            "heading": "Good to know"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

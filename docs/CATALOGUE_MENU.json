@@ -1,0 +1,681 @@
+{
+  "handle": "catalogue",
+  "title": "Catalogue",
+  "items": [
+    {
+      "title": "All Products",
+      "collection_handle": "all",
+      "url": "/collections/all"
+    },
+    {
+      "title": "Grocery",
+      "collection_handle": "grocery",
+      "url": "/collections/grocery",
+      "children": [
+        {
+          "title": "Pantry Staples",
+          "collection_handle": "grocery-pantry-staples",
+          "url": "/collections/grocery-pantry-staples",
+          "children": [
+            {
+              "title": "Rice",
+              "collection_handle": "grocery-pantry-staples-rice",
+              "url": "/collections/grocery-pantry-staples-rice"
+            },
+            {
+              "title": "Pasta",
+              "collection_handle": "grocery-pantry-staples-pasta",
+              "url": "/collections/grocery-pantry-staples-pasta"
+            },
+            {
+              "title": "Noodles",
+              "collection_handle": "grocery-pantry-staples-noodles",
+              "url": "/collections/grocery-pantry-staples-noodles"
+            },
+            {
+              "title": "Flour",
+              "collection_handle": "grocery-pantry-staples-flour",
+              "url": "/collections/grocery-pantry-staples-flour"
+            },
+            {
+              "title": "Pulses, Beans & Lentils",
+              "collection_handle": "grocery-pantry-staples-pulses-beans-and-lentils",
+              "url": "/collections/grocery-pantry-staples-pulses-beans-and-lentils"
+            },
+            {
+              "title": "Oils & Ghee",
+              "collection_handle": "grocery-pantry-staples-oils-and-ghee",
+              "url": "/collections/grocery-pantry-staples-oils-and-ghee"
+            },
+            {
+              "title": "Sugar & Sweeteners",
+              "collection_handle": "grocery-pantry-staples-sugar-and-sweeteners",
+              "url": "/collections/grocery-pantry-staples-sugar-and-sweeteners"
+            },
+            {
+              "title": "Salt, Spices & Seasonings",
+              "collection_handle": "grocery-pantry-staples-salt-spices-and-seasonings",
+              "url": "/collections/grocery-pantry-staples-salt-spices-and-seasonings"
+            }
+          ]
+        },
+        {
+          "title": "Breakfast & Spreads",
+          "collection_handle": "grocery-breakfast-and-spreads",
+          "url": "/collections/grocery-breakfast-and-spreads",
+          "children": [
+            {
+              "title": "Cereals",
+              "collection_handle": "grocery-breakfast-and-spreads-cereals",
+              "url": "/collections/grocery-breakfast-and-spreads-cereals"
+            },
+            {
+              "title": "Breakfast Foods",
+              "collection_handle": "grocery-breakfast-and-spreads-breakfast-foods",
+              "url": "/collections/grocery-breakfast-and-spreads-breakfast-foods"
+            },
+            {
+              "title": "Jams",
+              "collection_handle": "grocery-breakfast-and-spreads-jams",
+              "url": "/collections/grocery-breakfast-and-spreads-jams"
+            },
+            {
+              "title": "Honey",
+              "collection_handle": "grocery-breakfast-and-spreads-honey",
+              "url": "/collections/grocery-breakfast-and-spreads-honey"
+            },
+            {
+              "title": "Spreads",
+              "collection_handle": "grocery-breakfast-and-spreads-spreads",
+              "url": "/collections/grocery-breakfast-and-spreads-spreads"
+            }
+          ]
+        },
+        {
+          "title": "Snacks & Confectionery",
+          "collection_handle": "grocery-snacks-and-confectionery",
+          "url": "/collections/grocery-snacks-and-confectionery",
+          "children": [
+            {
+              "title": "Chips & Snacks",
+              "collection_handle": "grocery-snacks-and-confectionery-chips-and-snacks",
+              "url": "/collections/grocery-snacks-and-confectionery-chips-and-snacks"
+            },
+            {
+              "title": "Biscuits & Crackers",
+              "collection_handle": "grocery-snacks-and-confectionery-biscuits-and-crackers",
+              "url": "/collections/grocery-snacks-and-confectionery-biscuits-and-crackers"
+            },
+            {
+              "title": "Chocolates & Confectionery",
+              "collection_handle": "grocery-snacks-and-confectionery-chocolates-and-confectionery",
+              "url": "/collections/grocery-snacks-and-confectionery-chocolates-and-confectionery"
+            },
+            {
+              "title": "Nuts, Seeds & Dried Fruits",
+              "collection_handle": "grocery-snacks-and-confectionery-nuts-seeds-and-dried-fruits",
+              "url": "/collections/grocery-snacks-and-confectionery-nuts-seeds-and-dried-fruits"
+            }
+          ]
+        },
+        {
+          "title": "Canned, Packaged & Ready Foods",
+          "collection_handle": "grocery-canned-packaged-and-ready-foods",
+          "url": "/collections/grocery-canned-packaged-and-ready-foods",
+          "children": [
+            {
+              "title": "Canned & Jarred Foods",
+              "collection_handle": "grocery-canned-packaged-and-ready-foods-canned-and-jarred-foods",
+              "url": "/collections/grocery-canned-packaged-and-ready-foods-canned-and-jarred-foods"
+            },
+            {
+              "title": "Instant & Ready-to-Eat",
+              "collection_handle": "grocery-canned-packaged-and-ready-foods-instant-and-ready-to-eat",
+              "url": "/collections/grocery-canned-packaged-and-ready-foods-instant-and-ready-to-eat"
+            },
+            {
+              "title": "Sauces, Condiments & Dressings",
+              "collection_handle": "grocery-canned-packaged-and-ready-foods-sauces-condiments-and-dressings",
+              "url": "/collections/grocery-canned-packaged-and-ready-foods-sauces-condiments-and-dressings"
+            }
+          ]
+        },
+        {
+          "title": "Beverages",
+          "collection_handle": "grocery-beverages",
+          "url": "/collections/grocery-beverages",
+          "children": [
+            {
+              "title": "Water",
+              "collection_handle": "grocery-beverages-water",
+              "url": "/collections/grocery-beverages-water"
+            },
+            {
+              "title": "Juices",
+              "collection_handle": "grocery-beverages-juices",
+              "url": "/collections/grocery-beverages-juices"
+            },
+            {
+              "title": "Soft Drinks",
+              "collection_handle": "grocery-beverages-soft-drinks",
+              "url": "/collections/grocery-beverages-soft-drinks"
+            },
+            {
+              "title": "Energy & Sports Drinks",
+              "collection_handle": "grocery-beverages-energy-and-sports-drinks",
+              "url": "/collections/grocery-beverages-energy-and-sports-drinks"
+            },
+            {
+              "title": "Tea & Coffee",
+              "collection_handle": "grocery-beverages-tea-and-coffee",
+              "url": "/collections/grocery-beverages-tea-and-coffee"
+            },
+            {
+              "title": "Other Beverages",
+              "collection_handle": "grocery-beverages-other-beverages",
+              "url": "/collections/grocery-beverages-other-beverages"
+            }
+          ]
+        },
+        {
+          "title": "Healthy & Specialty Foods",
+          "collection_handle": "grocery-healthy-and-specialty-foods",
+          "url": "/collections/grocery-healthy-and-specialty-foods",
+          "children": [
+            {
+              "title": "Organic",
+              "collection_handle": "grocery-healthy-and-specialty-foods-organic",
+              "url": "/collections/grocery-healthy-and-specialty-foods-organic"
+            },
+            {
+              "title": "Health-Focused",
+              "collection_handle": "grocery-healthy-and-specialty-foods-health-focused",
+              "url": "/collections/grocery-healthy-and-specialty-foods-health-focused"
+            },
+            {
+              "title": "International & Specialty",
+              "collection_handle": "grocery-healthy-and-specialty-foods-international-and-specialty",
+              "url": "/collections/grocery-healthy-and-specialty-foods-international-and-specialty"
+            }
+          ]
+        },
+        {
+          "title": "Dairy & Eggs",
+          "collection_handle": "grocery-dairy-and-eggs",
+          "url": "/collections/grocery-dairy-and-eggs"
+        },
+        {
+          "title": "Fresh Produce",
+          "collection_handle": "grocery-fresh-produce",
+          "url": "/collections/grocery-fresh-produce"
+        },
+        {
+          "title": "Frozen Foods",
+          "collection_handle": "grocery-frozen-foods",
+          "url": "/collections/grocery-frozen-foods"
+        },
+        {
+          "title": "Baby Food",
+          "collection_handle": "grocery-baby-food",
+          "url": "/collections/grocery-baby-food"
+        }
+      ]
+    },
+    {
+      "title": "Baby Products",
+      "collection_handle": "baby-products",
+      "url": "/collections/baby-products",
+      "children": [
+        {
+          "title": "Diapers & Wipes",
+          "collection_handle": "baby-products-diapers-and-wipes",
+          "url": "/collections/baby-products-diapers-and-wipes"
+        },
+        {
+          "title": "Feeding & Nursing",
+          "collection_handle": "baby-products-feeding-and-nursing",
+          "url": "/collections/baby-products-feeding-and-nursing",
+          "children": [
+            {
+              "title": "Bottles & Accessories",
+              "collection_handle": "baby-products-feeding-and-nursing-bottles-and-accessories",
+              "url": "/collections/baby-products-feeding-and-nursing-bottles-and-accessories"
+            },
+            {
+              "title": "Breastfeeding & Nursing",
+              "collection_handle": "baby-products-feeding-and-nursing-breastfeeding-and-nursing",
+              "url": "/collections/baby-products-feeding-and-nursing-breastfeeding-and-nursing"
+            },
+            {
+              "title": "Pacifiers & Teethers",
+              "collection_handle": "baby-products-feeding-and-nursing-pacifiers-and-teethers",
+              "url": "/collections/baby-products-feeding-and-nursing-pacifiers-and-teethers"
+            }
+          ]
+        },
+        {
+          "title": "Baby Food & Formula",
+          "collection_handle": "baby-products-baby-food-and-formula",
+          "url": "/collections/baby-products-baby-food-and-formula"
+        },
+        {
+          "title": "Bath, Skincare & Grooming",
+          "collection_handle": "baby-products-bath-skincare-and-grooming",
+          "url": "/collections/baby-products-bath-skincare-and-grooming"
+        },
+        {
+          "title": "Health & Safety",
+          "collection_handle": "baby-products-health-and-safety",
+          "url": "/collections/baby-products-health-and-safety"
+        },
+        {
+          "title": "Nursery & Bedding",
+          "collection_handle": "baby-products-nursery-and-bedding",
+          "url": "/collections/baby-products-nursery-and-bedding"
+        },
+        {
+          "title": "Baby Gear & Travel",
+          "collection_handle": "baby-products-baby-gear-and-travel",
+          "url": "/collections/baby-products-baby-gear-and-travel"
+        },
+        {
+          "title": "Baby Toys",
+          "collection_handle": "baby-products-baby-toys",
+          "url": "/collections/baby-products-baby-toys"
+        },
+        {
+          "title": "Maternity & Postpartum",
+          "collection_handle": "baby-products-maternity-and-postpartum",
+          "url": "/collections/baby-products-maternity-and-postpartum"
+        }
+      ]
+    },
+    {
+      "title": "Gifting",
+      "collection_handle": "gifting",
+      "url": "/collections/gifting",
+      "children": [
+        {
+          "title": "Flowers & Bouquets",
+          "collection_handle": "gifting-flowers-and-bouquets",
+          "url": "/collections/gifting-flowers-and-bouquets"
+        },
+        {
+          "title": "Chocolates & Treats",
+          "collection_handle": "gifting-chocolates-and-treats",
+          "url": "/collections/gifting-chocolates-and-treats",
+          "children": [
+            {
+              "title": "Chocolates",
+              "collection_handle": "gifting-chocolates-and-treats-chocolates",
+              "url": "/collections/gifting-chocolates-and-treats-chocolates"
+            },
+            {
+              "title": "Cakes",
+              "collection_handle": "gifting-chocolates-and-treats-cakes",
+              "url": "/collections/gifting-chocolates-and-treats-cakes"
+            },
+            {
+              "title": "Confectionery",
+              "collection_handle": "gifting-chocolates-and-treats-confectionery",
+              "url": "/collections/gifting-chocolates-and-treats-confectionery"
+            }
+          ]
+        },
+        {
+          "title": "Hampers & Gift Sets",
+          "collection_handle": "gifting-hampers-and-gift-sets",
+          "url": "/collections/gifting-hampers-and-gift-sets"
+        },
+        {
+          "title": "Soft Toys & Gifts",
+          "collection_handle": "gifting-soft-toys-and-gifts",
+          "url": "/collections/gifting-soft-toys-and-gifts"
+        },
+        {
+          "title": "Fragrances & Candles",
+          "collection_handle": "gifting-fragrances-and-candles",
+          "url": "/collections/gifting-fragrances-and-candles"
+        },
+        {
+          "title": "Gift Cards & Personalized Gifts",
+          "collection_handle": "gifting-gift-cards-and-personalized-gifts",
+          "url": "/collections/gifting-gift-cards-and-personalized-gifts"
+        },
+        {
+          "title": "Balloons & Decorations",
+          "collection_handle": "gifting-balloons-and-decorations",
+          "url": "/collections/gifting-balloons-and-decorations"
+        }
+      ]
+    },
+    {
+      "title": "Bath & Body",
+      "collection_handle": "bath-and-body",
+      "url": "/collections/bath-and-body",
+      "children": [
+        {
+          "title": "Bath & Body Care",
+          "collection_handle": "bath-and-body-bath-and-body-care",
+          "url": "/collections/bath-and-body-bath-and-body-care",
+          "children": [
+            {
+              "title": "Bath & Shower",
+              "collection_handle": "bath-and-body-bath-and-body-care-bath-and-shower",
+              "url": "/collections/bath-and-body-bath-and-body-care-bath-and-shower"
+            },
+            {
+              "title": "Body Care",
+              "collection_handle": "bath-and-body-bath-and-body-care-body-care",
+              "url": "/collections/bath-and-body-bath-and-body-care-body-care"
+            },
+            {
+              "title": "Hand & Foot Care",
+              "collection_handle": "bath-and-body-bath-and-body-care-hand-and-foot-care",
+              "url": "/collections/bath-and-body-bath-and-body-care-hand-and-foot-care"
+            }
+          ]
+        },
+        {
+          "title": "Skincare & Face Care",
+          "collection_handle": "bath-and-body-skincare-and-face-care",
+          "url": "/collections/bath-and-body-skincare-and-face-care"
+        },
+        {
+          "title": "Hair Care",
+          "collection_handle": "bath-and-body-hair-care",
+          "url": "/collections/bath-and-body-hair-care"
+        },
+        {
+          "title": "Makeup & Cosmetics",
+          "collection_handle": "bath-and-body-makeup-and-cosmetics",
+          "url": "/collections/bath-and-body-makeup-and-cosmetics"
+        },
+        {
+          "title": "Fragrances & Deodorants",
+          "collection_handle": "bath-and-body-fragrances-and-deodorants",
+          "url": "/collections/bath-and-body-fragrances-and-deodorants"
+        },
+        {
+          "title": "Personal Hygiene",
+          "collection_handle": "bath-and-body-personal-hygiene",
+          "url": "/collections/bath-and-body-personal-hygiene",
+          "children": [
+            {
+              "title": "Oral Care",
+              "collection_handle": "bath-and-body-personal-hygiene-oral-care",
+              "url": "/collections/bath-and-body-personal-hygiene-oral-care"
+            },
+            {
+              "title": "Feminine Hygiene",
+              "collection_handle": "bath-and-body-personal-hygiene-feminine-hygiene",
+              "url": "/collections/bath-and-body-personal-hygiene-feminine-hygiene"
+            },
+            {
+              "title": "Everyday Hygiene",
+              "collection_handle": "bath-and-body-personal-hygiene-everyday-hygiene",
+              "url": "/collections/bath-and-body-personal-hygiene-everyday-hygiene"
+            }
+          ]
+        },
+        {
+          "title": "Men’s Grooming & Shaving",
+          "collection_handle": "bath-and-body-mens-grooming-and-shaving",
+          "url": "/collections/bath-and-body-mens-grooming-and-shaving",
+          "children": [
+            {
+              "title": "Shaving & Hair Removal",
+              "collection_handle": "bath-and-body-mens-grooming-and-shaving-shaving-and-hair-removal",
+              "url": "/collections/bath-and-body-mens-grooming-and-shaving-shaving-and-hair-removal"
+            }
+          ]
+        },
+        {
+          "title": "Sexual Wellness",
+          "collection_handle": "bath-and-body-sexual-wellness",
+          "url": "/collections/bath-and-body-sexual-wellness"
+        }
+      ]
+    },
+    {
+      "title": "Home",
+      "collection_handle": "home",
+      "url": "/collections/home",
+      "children": [
+        {
+          "title": "Cleaning & Laundry",
+          "collection_handle": "home-cleaning-and-laundry",
+          "url": "/collections/home-cleaning-and-laundry",
+          "children": [
+            {
+              "title": "Household Cleaning",
+              "collection_handle": "home-cleaning-and-laundry-household-cleaning",
+              "url": "/collections/home-cleaning-and-laundry-household-cleaning"
+            },
+            {
+              "title": "Laundry",
+              "collection_handle": "home-cleaning-and-laundry-laundry",
+              "url": "/collections/home-cleaning-and-laundry-laundry"
+            },
+            {
+              "title": "Dishwashing",
+              "collection_handle": "home-cleaning-and-laundry-dishwashing",
+              "url": "/collections/home-cleaning-and-laundry-dishwashing"
+            }
+          ]
+        },
+        {
+          "title": "Cleaning Tools & Pest Control",
+          "collection_handle": "home-cleaning-tools-and-pest-control",
+          "url": "/collections/home-cleaning-tools-and-pest-control"
+        },
+        {
+          "title": "Paper & Household Essentials",
+          "collection_handle": "home-paper-and-household-essentials",
+          "url": "/collections/home-paper-and-household-essentials"
+        },
+        {
+          "title": "Storage & Organization",
+          "collection_handle": "home-storage-and-organization",
+          "url": "/collections/home-storage-and-organization",
+          "children": [
+            {
+              "title": "Plasticware",
+              "collection_handle": "home-storage-and-organization-plasticware",
+              "url": "/collections/home-storage-and-organization-plasticware"
+            }
+          ]
+        },
+        {
+          "title": "Kitchen & Cookware",
+          "collection_handle": "home-kitchen-and-cookware",
+          "url": "/collections/home-kitchen-and-cookware",
+          "children": [
+            {
+              "title": "Cookware",
+              "collection_handle": "home-kitchen-and-cookware-cookware",
+              "url": "/collections/home-kitchen-and-cookware-cookware"
+            },
+            {
+              "title": "Kitchen Essentials",
+              "collection_handle": "home-kitchen-and-cookware-kitchen-essentials",
+              "url": "/collections/home-kitchen-and-cookware-kitchen-essentials"
+            },
+            {
+              "title": "Tools & Utensils",
+              "collection_handle": "home-kitchen-and-cookware-tools-and-utensils",
+              "url": "/collections/home-kitchen-and-cookware-tools-and-utensils"
+            }
+          ]
+        },
+        {
+          "title": "Food Storage & Wraps",
+          "collection_handle": "home-food-storage-and-wraps",
+          "url": "/collections/home-food-storage-and-wraps",
+          "children": [
+            {
+              "title": "Containers",
+              "collection_handle": "home-food-storage-and-wraps-containers",
+              "url": "/collections/home-food-storage-and-wraps-containers"
+            },
+            {
+              "title": "Foil",
+              "collection_handle": "home-food-storage-and-wraps-foil",
+              "url": "/collections/home-food-storage-and-wraps-foil"
+            },
+            {
+              "title": "Cling Film",
+              "collection_handle": "home-food-storage-and-wraps-cling-film",
+              "url": "/collections/home-food-storage-and-wraps-cling-film"
+            }
+          ]
+        },
+        {
+          "title": "Disposables",
+          "collection_handle": "home-disposables",
+          "url": "/collections/home-disposables",
+          "children": [
+            {
+              "title": "Disposable Tableware",
+              "collection_handle": "home-disposables-disposable-tableware",
+              "url": "/collections/home-disposables-disposable-tableware"
+            }
+          ]
+        },
+        {
+          "title": "Bathroom Essentials",
+          "collection_handle": "home-bathroom-essentials",
+          "url": "/collections/home-bathroom-essentials"
+        },
+        {
+          "title": "Home Fragrance",
+          "collection_handle": "home-home-fragrance",
+          "url": "/collections/home-home-fragrance",
+          "children": [
+            {
+              "title": "Air Fresheners",
+              "collection_handle": "home-home-fragrance-air-fresheners",
+              "url": "/collections/home-home-fragrance-air-fresheners"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pet",
+      "collection_handle": "pet",
+      "url": "/collections/pet",
+      "children": [
+        {
+          "title": "Dogs",
+          "collection_handle": "pet-dogs",
+          "url": "/collections/pet-dogs"
+        },
+        {
+          "title": "Cats",
+          "collection_handle": "pet-cats",
+          "url": "/collections/pet-cats"
+        },
+        {
+          "title": "Other Pets",
+          "collection_handle": "pet-other-pets",
+          "url": "/collections/pet-other-pets",
+          "children": [
+            {
+              "title": "Birds",
+              "collection_handle": "pet-other-pets-birds",
+              "url": "/collections/pet-other-pets-birds"
+            },
+            {
+              "title": "Fish",
+              "collection_handle": "pet-other-pets-fish",
+              "url": "/collections/pet-other-pets-fish"
+            },
+            {
+              "title": "Small Animals",
+              "collection_handle": "pet-other-pets-small-animals",
+              "url": "/collections/pet-other-pets-small-animals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Office Supplies",
+      "collection_handle": "office-supplies",
+      "url": "/collections/office-supplies",
+      "children": [
+        {
+          "title": "Paper & Notebooks",
+          "collection_handle": "office-supplies-paper-and-notebooks",
+          "url": "/collections/office-supplies-paper-and-notebooks"
+        },
+        {
+          "title": "Writing & Stationery",
+          "collection_handle": "office-supplies-writing-and-stationery",
+          "url": "/collections/office-supplies-writing-and-stationery"
+        },
+        {
+          "title": "Filing & Organization",
+          "collection_handle": "office-supplies-filing-and-organization",
+          "url": "/collections/office-supplies-filing-and-organization",
+          "children": [
+            {
+              "title": "Files & Folders",
+              "collection_handle": "office-supplies-filing-and-organization-files-and-folders",
+              "url": "/collections/office-supplies-filing-and-organization-files-and-folders"
+            },
+            {
+              "title": "Labels & Tags",
+              "collection_handle": "office-supplies-filing-and-organization-labels-and-tags",
+              "url": "/collections/office-supplies-filing-and-organization-labels-and-tags"
+            }
+          ]
+        },
+        {
+          "title": "Desk Essentials",
+          "collection_handle": "office-supplies-desk-essentials",
+          "url": "/collections/office-supplies-desk-essentials",
+          "children": [
+            {
+              "title": "Desk Supplies",
+              "collection_handle": "office-supplies-desk-essentials-desk-supplies",
+              "url": "/collections/office-supplies-desk-essentials-desk-supplies"
+            },
+            {
+              "title": "Staplers & Punches",
+              "collection_handle": "office-supplies-desk-essentials-staplers-and-punches",
+              "url": "/collections/office-supplies-desk-essentials-staplers-and-punches"
+            },
+            {
+              "title": "Adhesives & Tapes",
+              "collection_handle": "office-supplies-desk-essentials-adhesives-and-tapes",
+              "url": "/collections/office-supplies-desk-essentials-adhesives-and-tapes"
+            }
+          ]
+        },
+        {
+          "title": "Mailing & Packaging",
+          "collection_handle": "office-supplies-mailing-and-packaging",
+          "url": "/collections/office-supplies-mailing-and-packaging",
+          "children": [
+            {
+              "title": "Envelopes & Mailing",
+              "collection_handle": "office-supplies-mailing-and-packaging-envelopes-and-mailing",
+              "url": "/collections/office-supplies-mailing-and-packaging-envelopes-and-mailing"
+            }
+          ]
+        },
+        {
+          "title": "Presentation Supplies",
+          "collection_handle": "office-supplies-presentation-supplies",
+          "url": "/collections/office-supplies-presentation-supplies"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Create collections before menu links. No products are created by this manifest.",
+    "Baby Food mapping is provisional until the merchant confirms sharing with Baby Food & Formula."
+  ]
+}

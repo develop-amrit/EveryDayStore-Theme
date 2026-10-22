@@ -1,0 +1,56 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "commerce-page",
+      "settings": {}
+    },
+    "browse_more": {
+      "type": "commerce-stories",
+      "settings": {
+        "heading": "There\u2019s more to the everyday.",
+        "layout": "banners"
+      },
+      "blocks": {
+        "s0": {
+          "type": "story",
+          "settings": {
+            "title": "One list. More of your day.",
+            "copy": "Explore the departments taking shape, from the kitchen cupboard to the work bag.",
+            "label": "Explore departments",
+            "link": "/pages/departments",
+            "art": "pouch",
+            "tone": "olive"
+          }
+        },
+        "s1": {
+          "type": "story",
+          "settings": {
+            "title": "Get to know the idea.",
+            "copy": "Useful essentials, clear choices and a store built around everyday shopping.",
+            "label": "Our idea",
+            "link": "/pages/about",
+            "art": "towels",
+            "tone": "cream"
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "browse_more"
+  ]
+}

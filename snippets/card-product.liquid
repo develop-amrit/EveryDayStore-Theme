@@ -1,0 +1,3 @@
+{% doc %}Compatibility entry point: all real product cards use the same implementation.
+@param {product} card_product - The product supplied by existing Dawn sections.{% enddoc %}
+{% if card_product != blank %}{% render 'qc-product-card', product: card_product %}{% endif %}

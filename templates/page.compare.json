@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-saved",
+      "settings": {
+        "kind": "compare"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

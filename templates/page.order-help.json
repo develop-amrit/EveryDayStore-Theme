@@ -1,0 +1,110 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "commerce-editorial",
+      "settings": {
+        "heading": "Your order, one step at a time.",
+        "primary": true,
+        "text": "<p>Once orders open, your confirmation email will be the starting point for following your purchase. Keep the order-status link handy.</p>",
+        "art": "parcel",
+        "kicker": "Order help",
+        "note": "There are no live order-tracking integrations in this preview.",
+        "link": "/pages/contact",
+        "label": "Get help with an order",
+        "tone": "cream"
+      }
+    },
+    "steps": {
+      "type": "commerce-steps",
+      "settings": {
+        "heading": "Where to look for an update.",
+        "intro": ""
+      },
+      "blocks": {
+        "s0": {
+          "type": "step",
+          "settings": {
+            "title": "Open your confirmation",
+            "text": "Look for the confirmation sent to the email used at checkout. Check spam or promotions folders if necessary."
+          }
+        },
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Use the order-status link",
+            "text": "It shows the available order information. Shipment tracking appears only when tracking data has been added."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "Ask for help",
+            "text": "If you cannot find the order, contact support with the order number and checkout email. Do not send your password."
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1",
+        "s2"
+      ]
+    },
+    "questions": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "When the update isn’t clear.",
+        "intro": ""
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "Is this a live tracking map?",
+            "answer": "<p>No. This page previews where order information will be available. Delivery is planned through our own fleet. Dispatch updates still need to be connected and tested; live driver location is not currently available.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "What if an item becomes unavailable?",
+            "answer": "<p>The planned process is to contact you about an alternative or refund; items should not be substituted without your agreement. Stock is planned to come from one Dubai warehouse. The response window and final exception process are still being confirmed.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "What if my order says delivered but I cannot find it?",
+            "answer": "<p>Check with your household or building reception, then contact support with the order details. The final escalation process is still being prepared.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2"
+      ]
+    },
+    "tracking": {
+      "type": "commerce-feature-page",
+      "settings": {
+        "feature": "tracking",
+        "heading": "Track your order"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "tracking",
+    "steps",
+    "questions"
+  ]
+}

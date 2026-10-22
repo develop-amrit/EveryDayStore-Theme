@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-cart-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

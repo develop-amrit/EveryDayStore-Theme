@@ -1,0 +1,887 @@
+[
+  {
+    "asin": "B07NF7KB5Y",
+    "barcode": "5285000391043",
+    "sku": "MF-1421613",
+    "stock": "12",
+    "price": "28.00",
+    "discount": "24.70",
+    "products": []
+  },
+  {
+    "asin": "B019A9WEN2",
+    "barcode": "759500308801",
+    "sku": "MF-2146778",
+    "stock": "19",
+    "price": "30.00",
+    "discount": "23.97",
+    "products": []
+  },
+  {
+    "asin": "B07PKTSGS4",
+    "barcode": "8420701103053",
+    "sku": "MF-9604",
+    "stock": "3",
+    "price": "28.00",
+    "discount": "19.97",
+    "products": []
+  },
+  {
+    "asin": "B07NF7BFSG",
+    "barcode": "641995008109",
+    "sku": "MF-1411149",
+    "stock": "12",
+    "price": "45.00",
+    "discount": "27.33",
+    "products": []
+  },
+  {
+    "asin": "B000FQVQYS",
+    "barcode": "7610184007806",
+    "sku": "MF-139354",
+    "stock": "3",
+    "price": "35.00",
+    "products": []
+  },
+  {
+    "asin": "B07P67R5B4",
+    "barcode": "7610184004614",
+    "sku": "MF-866612",
+    "stock": "2",
+    "price": "39.00",
+    "products": []
+  },
+  {
+    "asin": "B0F61WZYWJ",
+    "barcode": "5000396018608",
+    "sku": "FBC-5662",
+    "stock": "0",
+    "price": "22.00",
+    "products": []
+  },
+  {
+    "asin": "B0BQ77LN5D",
+    "barcode": "6294001802068",
+    "sku": "MF-1628915",
+    "stock": "3",
+    "price": "50.00",
+    "discount": "40.00",
+    "products": []
+  },
+  {
+    "asin": "B01COTTTYM",
+    "barcode": "8901207900839",
+    "sku": "MF-8901207900839",
+    "stock": "12",
+    "price": "35.00",
+    "discount": "17.00",
+    "products": []
+  },
+  {
+    "asin": "B01MG3FCVJ",
+    "barcode": "6291100001460",
+    "sku": "MF-1489771",
+    "stock": "3",
+    "price": "65.00",
+    "discount": "42.33",
+    "products": []
+  },
+  {
+    "asin": "B0CTZXD8XH",
+    "barcode": "717273504516",
+    "sku": "MF-9976",
+    "stock": "3",
+    "price": "45.00",
+    "discount": "37.00",
+    "products": []
+  },
+  {
+    "asin": "B07MVCPPL2",
+    "barcode": "6294017144244",
+    "sku": "MF-1266403",
+    "stock": "16",
+    "price": "55.00",
+    "discount": "40.27",
+    "products": []
+  },
+  {
+    "asin": "B0BLVX8HV7",
+    "barcode": "7891000361917",
+    "sku": "MF-2145136",
+    "stock": "20",
+    "price": "65.00",
+    "discount": "53.17",
+    "products": []
+  },
+  {
+    "asin": "B08L892L6C",
+    "barcode": "8720608616640",
+    "sku": "MF-1608902",
+    "stock": "9",
+    "price": "170.00",
+    "discount": "137.00",
+    "products": []
+  },
+  {
+    "asin": "B08L4P93FT",
+    "barcode": "6281006702240",
+    "sku": "MF-1923806",
+    "stock": "9",
+    "price": "185.00",
+    "discount": "119.37",
+    "products": []
+  },
+  {
+    "asin": "B0CK7ZZZRJ",
+    "barcode": "8445290846570",
+    "sku": "MF-2217933",
+    "stock": "11",
+    "price": "70.00",
+    "discount": "50.00",
+    "products": []
+  },
+  {
+    "asin": "B0DJT4X1PM",
+    "barcode": "8445291537101",
+    "sku": "MF-2217472",
+    "stock": "15",
+    "price": "50.00",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411749879921",
+        "title": "Nestle Cerelac No Added Sugar Wheat Infant Cereals with Milk Tin, from 6 Months, 400g",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675672117361",
+            "sku": "MF-2217472",
+            "barcode": null,
+            "price": "50.00",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B00EVIS0CW",
+    "barcode": "36000318906",
+    "sku": "B00EVIS0CW",
+    "stock": "0",
+    "price": "1000.00",
+    "products": []
+  },
+  {
+    "asin": "B07DP24NSR",
+    "barcode": "4902430814881",
+    "sku": "B07DP24NSR",
+    "stock": "0",
+    "price": "1000.00",
+    "products": []
+  },
+  {
+    "asin": "B083JDBXHV",
+    "barcode": "8001841331942",
+    "sku": "B09841TPC1",
+    "stock": "0",
+    "price": "1000.00",
+    "products": []
+  },
+  {
+    "asin": "B0CVN97JMP",
+    "barcode": "5391522476226",
+    "sku": "FBC-2150761",
+    "stock": "10",
+    "price": "132.00",
+    "products": []
+  },
+  {
+    "asin": "B07PT5PCM1",
+    "barcode": "8712400794657",
+    "sku": "MF-992305_FBC",
+    "stock": "0",
+    "price": "129.00",
+    "discount": "89.17",
+    "products": []
+  },
+  {
+    "asin": "B0CVND16K9",
+    "barcode": "5391522476202",
+    "sku": "FBC-2150759",
+    "stock": "6",
+    "price": "155.00",
+    "products": []
+  },
+  {
+    "asin": "B01C8BR0CO",
+    "barcode": "381371164042",
+    "sku": "MF-381371164042",
+    "stock": "3",
+    "price": "105.00",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411748569201",
+        "title": "Aveeno Baby Calming Comfort Bath & Lotion Set, Baby Skin Care Products With Natural Oat Extract, Lavender & Vanilla, 2 Items",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675667955825",
+            "sku": "MF-381371164042",
+            "barcode": null,
+            "price": "105.00",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B00BN7ZZ8Q",
+    "barcode": "792486749077",
+    "sku": "U5-3Q3J-4LUX",
+    "stock": "11",
+    "price": "69.00",
+    "discount": "43.17",
+    "products": []
+  },
+  {
+    "asin": "B09X19QQG6",
+    "barcode": "4902508793834",
+    "sku": "MF-1946491",
+    "stock": "3",
+    "price": "75.00",
+    "products": []
+  },
+  {
+    "asin": "B0FHW2GLMK",
+    "barcode": "196923714268",
+    "sku": "B0D8CVL2GJ",
+    "stock": "0",
+    "price": "1000.00",
+    "products": []
+  },
+  {
+    "asin": "B0FMYL2WLB",
+    "barcode": "196923688460",
+    "sku": "B0D8CPR47V",
+    "stock": "0",
+    "price": "1000.00",
+    "products": []
+  },
+  {
+    "asin": "B0DDC5SK52",
+    "barcode": "196923714305",
+    "sku": "B0D8CRMJHN",
+    "stock": "0",
+    "price": "1000.00",
+    "products": []
+  },
+  {
+    "asin": "B00ATZXD5U",
+    "barcode": "8058664101511",
+    "sku": "MF-8058664101511",
+    "stock": "3",
+    "price": "45.00",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411749126257",
+        "title": "Chicco Talcum Powder, 150Gr",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675668840561",
+            "sku": "MF-8058664101511",
+            "barcode": null,
+            "price": "45.00",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B00471P9EA",
+    "barcode": "8000500037874",
+    "sku": "MF-5490",
+    "stock": "5",
+    "price": "44.00",
+    "products": []
+  },
+  {
+    "asin": "B0H467CS2V",
+    "barcode": "6221134031478",
+    "sku": "MF-2310758",
+    "stock": "12",
+    "price": "44.50",
+    "discount": "37.00",
+    "products": []
+  },
+  {
+    "asin": "B0198HM8IC",
+    "barcode": "7610400068529",
+    "sku": "MF-611287",
+    "stock": "11",
+    "price": "60.00",
+    "products": []
+  },
+  {
+    "asin": "B07QCTP83C",
+    "barcode": "3574661465883",
+    "sku": "MF-1605962",
+    "stock": "1",
+    "price": "78.00",
+    "discount": "50.00",
+    "products": []
+  },
+  {
+    "asin": "B01L98PSXU",
+    "barcode": "3504105028268",
+    "sku": "MF-3504105028268",
+    "stock": "3",
+    "price": "99.00",
+    "products": []
+  },
+  {
+    "asin": "B09LCNYKH5",
+    "barcode": "6295120046890",
+    "sku": "MF-1767750",
+    "stock": "3",
+    "price": "44.00",
+    "discount": "37.13",
+    "products": []
+  },
+  {
+    "asin": "B07N7TJQXR",
+    "barcode": "6290362050353",
+    "sku": "MF-2166149",
+    "stock": "2",
+    "price": "70.00",
+    "discount": "57.00",
+    "products": []
+  },
+  {
+    "asin": "B0FX418XT8",
+    "barcode": "8809562192770",
+    "sku": "MF-8809562192770",
+    "stock": "0",
+    "price": "49.99",
+    "products": []
+  },
+  {
+    "asin": "B0CKX7GPYS",
+    "barcode": "6291107225951",
+    "sku": "MF-2143687",
+    "stock": "3",
+    "price": "28.00",
+    "products": []
+  },
+  {
+    "asin": "B0999ZV9N9",
+    "barcode": "6281006096394",
+    "sku": "MF-1856481",
+    "stock": "1",
+    "price": "37.99",
+    "discount": "23.70",
+    "products": []
+  },
+  {
+    "asin": "B07FZLZRJP",
+    "barcode": "8001090862273",
+    "sku": "MF-1505609",
+    "stock": "2",
+    "price": "65.00",
+    "discount": "47.30",
+    "products": []
+  },
+  {
+    "asin": "B0GJSZCHG8",
+    "barcode": "8700216978040",
+    "sku": "MF-2242407",
+    "stock": "3",
+    "price": "55.00",
+    "discount": "33.17",
+    "products": []
+  },
+  {
+    "asin": "B07T3FDN3Q",
+    "barcode": "3574669907262",
+    "sku": "MF-1635307",
+    "stock": "0",
+    "price": "50.00",
+    "products": []
+  },
+  {
+    "asin": "B07T4JJ7G6",
+    "barcode": "3574669907965",
+    "sku": "MF-1635315",
+    "stock": "3",
+    "price": "30.00",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411678249073",
+        "title": "Johnson's  2-In-1 Kids Shampoo & Conditioner, No More Tears, 200ml",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675148976241",
+            "sku": "MF-1635315",
+            "barcode": null,
+            "price": "30.00",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B07T5MS8TK",
+    "barcode": "3574669907347",
+    "sku": "MF-1635316",
+    "stock": "3",
+    "price": "59.00",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411677921393",
+        "title": "Johnson's 2-in-1 Kids Shampoo and Conditioner for Soft Hair, 500ml",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675148648561",
+            "sku": "MF-1635316",
+            "barcode": null,
+            "price": "59.00",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B08M4159K6",
+    "barcode": "6295124022661",
+    "sku": "GR-EOPO-5NER",
+    "stock": "12",
+    "price": "85.00",
+    "discount": "66.17",
+    "products": []
+  },
+  {
+    "asin": "B0CKXV3FPS",
+    "barcode": "6281006612570",
+    "sku": "MF-2141565",
+    "stock": "11",
+    "price": "40.00",
+    "products": []
+  },
+  {
+    "asin": "B0DHGYP9MN",
+    "barcode": "6281006619494",
+    "sku": "MF-2236552",
+    "stock": "3",
+    "price": "45.00",
+    "products": []
+  },
+  {
+    "asin": "B07ZG884R1",
+    "barcode": "5060058590385",
+    "sku": "KC-ALAV-4TWH",
+    "stock": "12",
+    "price": "60.00",
+    "products": []
+  },
+  {
+    "asin": "B0HJFR16ZP",
+    "barcode": "6281006620216",
+    "sku": "MF-2204018",
+    "stock": "5",
+    "price": "55.00",
+    "discount": "44.17",
+    "products": []
+  },
+  {
+    "asin": "B0FX55KHSS",
+    "barcode": "8718951751606",
+    "sku": "MF-2242329",
+    "stock": "8",
+    "price": "85.00",
+    "discount": "55.00",
+    "products": []
+  },
+  {
+    "asin": "B01ED2X73C",
+    "barcode": "7702018070732",
+    "sku": "5N-YQEQ-GJ35",
+    "stock": "11",
+    "price": "60.00",
+    "products": []
+  },
+  {
+    "asin": "B07PM2PZF8",
+    "barcode": "2200001284845",
+    "sku": "YZ-I2B6-GEKR",
+    "stock": "12",
+    "price": "80.00",
+    "products": []
+  },
+  {
+    "asin": "B07MM6B6M5",
+    "barcode": "6295120026618",
+    "sku": "FlexVeetCream100g*2",
+    "stock": "12",
+    "price": "59.00",
+    "products": []
+  },
+  {
+    "asin": "B0156Z6XZO",
+    "barcode": "5052197043105",
+    "sku": "MF-5052197043105",
+    "stock": "3",
+    "price": "110.00",
+    "discount": "50.00",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411702366321",
+        "title": "Durex Play Sweet Strawberry Lube Gel 50ml",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675311505521",
+            "sku": "MF-5052197043105",
+            "barcode": null,
+            "price": "50.00",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B077SMGWJM",
+    "barcode": "6295120046203",
+    "sku": "MF-1786078",
+    "stock": "3",
+    "price": "120.00",
+    "discount": "100.00",
+    "products": []
+  },
+  {
+    "asin": "B077G9NR3Q",
+    "barcode": "5038483447840",
+    "sku": "MF-520962",
+    "stock": "3",
+    "price": "120.00",
+    "discount": "95.00",
+    "products": []
+  },
+  {
+    "asin": "B08GMLTJM1",
+    "barcode": "6291107464466",
+    "sku": "GH-6JO6-WOZW",
+    "stock": "5",
+    "price": "60.00",
+    "products": []
+  },
+  {
+    "asin": "B0C1CBXGRF",
+    "barcode": "6281031292747",
+    "sku": "MF-2264946",
+    "stock": "1",
+    "price": "85.00",
+    "discount": "72.00",
+    "products": []
+  },
+  {
+    "asin": "B07PCFLHV5",
+    "barcode": "6295120018484",
+    "sku": "MF-1041863",
+    "stock": "0",
+    "price": "60.00",
+    "products": []
+  },
+  {
+    "asin": "B0BR2NSN3J",
+    "barcode": "6298044111187",
+    "sku": "MF-HIT400MLX2",
+    "stock": "6",
+    "price": "65.00",
+    "discount": "37.99",
+    "products": []
+  },
+  {
+    "asin": "B07MTL8ZXC",
+    "barcode": "6295120012376",
+    "sku": "MF-1027900",
+    "stock": "2",
+    "price": "50.00",
+    "discount": "39.17",
+    "products": []
+  },
+  {
+    "asin": "B0DV5M7D73",
+    "barcode": "6222021802003",
+    "sku": "MF-2238669",
+    "stock": "8",
+    "price": "55.00",
+    "discount": "39.17",
+    "products": []
+  },
+  {
+    "asin": "B077FZJ572",
+    "barcode": "6291105650984",
+    "sku": "VC-9BCE-FE6F",
+    "stock": "12",
+    "price": "50.00",
+    "products": []
+  },
+  {
+    "asin": "B0CVLDD7RN",
+    "barcode": "6291108422335",
+    "sku": "V5-I2ZW-Z653",
+    "stock": "12",
+    "price": "50.00",
+    "products": []
+  },
+  {
+    "asin": "B0CKJ7CBV7",
+    "barcode": "6291109985297",
+    "sku": "JJ-TCXT-27OV",
+    "stock": "6",
+    "price": "80.00",
+    "discount": "33.99",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411677429873",
+        "title": "Selpak Comfort Facial Tissue 150 Sheets 2 Ply, Pack Of 4",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675147993201",
+            "sku": "JJ-TCXT-27OV",
+            "barcode": null,
+            "price": "33.99",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B07PCMTSWN",
+    "barcode": "6291105650106",
+    "sku": "QU-HBQQ-MAO6",
+    "stock": "8",
+    "price": "50.00",
+    "products": []
+  },
+  {
+    "asin": "B07PKDJKVL",
+    "barcode": "10900035835",
+    "sku": "PU-4KG0-DD4G",
+    "stock": "12",
+    "price": "150.00",
+    "products": []
+  },
+  {
+    "asin": "B09CDR83CX",
+    "barcode": "10900146494",
+    "sku": "R6-JBP6-I4S3",
+    "stock": "11",
+    "price": "99.00",
+    "products": []
+  },
+  {
+    "asin": "B07PBCTBF1",
+    "barcode": "6001106110420",
+    "sku": "MF-588811",
+    "stock": "3",
+    "price": "35.00",
+    "products": []
+  },
+  {
+    "asin": "B0B5FLQ9FX",
+    "barcode": "6295120048467",
+    "sku": "MF-1882705",
+    "stock": "24",
+    "price": "55.00",
+    "discount": "47.00",
+    "products": []
+  },
+  {
+    "asin": "B078CRB5WY",
+    "barcode": "8901023017971",
+    "sku": "WC-NDU3-JZTR",
+    "stock": "11",
+    "price": "60.00",
+    "products": []
+  },
+  {
+    "asin": "B07MLSTTLW",
+    "barcode": "6294017716335",
+    "sku": "W8-R9RF-0D0H",
+    "stock": "12",
+    "price": "60.00",
+    "products": []
+  },
+  {
+    "asin": "B01CBSBI8Q",
+    "barcode": "8853301015097",
+    "sku": "MF-2163533",
+    "stock": "3",
+    "price": "55.00",
+    "discount": "42.17",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411668156529",
+        "title": "Whiskas Grilled Salmon Dry Cat Food, Bag of 1.2Kg",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675129905265",
+            "sku": "MF-2163533",
+            "barcode": null,
+            "price": "42.17",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B07NXZGXS2",
+    "barcode": "8853301000017",
+    "sku": "MF-1409839",
+    "stock": "2",
+    "price": "90.00",
+    "discount": "73.70",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411668254833",
+        "title": "Whiskas Chicken Dry Cat Food, Bag of 3Kg",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675130003569",
+            "sku": "MF-1409839",
+            "barcode": null,
+            "price": "73.70",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B000OZEY3A",
+    "barcode": "8856976000016",
+    "sku": "FBC-325273",
+    "stock": "0",
+    "price": "33.00",
+    "discount": "22.57",
+    "products": []
+  },
+  {
+    "asin": "B08DRFYJRY",
+    "barcode": "8858741714678",
+    "sku": "FlexWinterBox",
+    "stock": "12",
+    "price": "120.00",
+    "products": []
+  },
+  {
+    "asin": "B0075A7VJQ",
+    "barcode": "8856976000597",
+    "sku": "FBC-1683472",
+    "stock": "36",
+    "price": "19.00",
+    "discount": "16.70",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411664715889",
+        "title": "Double A Premium A4 Printing Paper White 80GSM 100 PCS",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675126300785",
+            "sku": "FBC-1683472",
+            "barcode": null,
+            "price": "16.70",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B08VHBKDN9",
+    "barcode": "8901324044706",
+    "sku": "HM-0JDU-PZSV",
+    "stock": "12",
+    "price": "60.00",
+    "products": []
+  },
+  {
+    "asin": "B019OZVV6I",
+    "barcode": "638458968315",
+    "sku": "L6-TS5I-GSL6",
+    "stock": "11",
+    "price": "55.00",
+    "products": []
+  },
+  {
+    "asin": "B0D5RDK8SZ",
+    "barcode": "8901324040227",
+    "sku": "6O-VKY1-HS3C",
+    "stock": "12",
+    "price": "50.00",
+    "products": []
+  },
+  {
+    "asin": "B00006JNNH",
+    "barcode": "21200716737",
+    "sku": "LQ-YTCP-29D7",
+    "stock": "12",
+    "price": "150.00",
+    "products": [
+      {
+        "id": "gid://shopify/Product/15411677397105",
+        "title": "Post-It 655-5Uc Ultra Colors Notes, Mixed Colors. 3X5in (76mmx127mm), Pastel Colors - Sticky Notes For Note Taking, To Do Lists & Reminders. Clean Removal, Recyclable. 100 Sheets/Pad, 5 Pads/Pack",
+        "status": "DRAFT",
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/67675147960433",
+            "sku": "LQ-YTCP-29D7",
+            "barcode": null,
+            "price": "150.00",
+            "inventoryQuantity": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "asin": "B073ZBTFN4",
+    "barcode": "4549526600487",
+    "sku": "MA-9TIW-80BH",
+    "stock": "12",
+    "price": "120.00",
+    "products": []
+  },
+  {
+    "asin": "B002VLA5SI",
+    "barcode": "21200523595",
+    "sku": "OB-HXHL-HWB3",
+    "stock": "12",
+    "price": "35.00",
+    "discount": "29.99",
+    "products": []
+  },
+  {
+    "asin": "B07ZTWDZD2",
+    "barcode": "6291103654328",
+    "sku": "MF-1642377",
+    "stock": "3",
+    "price": "28.00",
+    "discount": "19.90",
+    "products": []
+  }
+]

@@ -1,0 +1,80 @@
+<section class="qc-wrap qc-section qc-hero" data-slideshow>{% for block in section.blocks %}<article class="qc-hero-slide" data-slide{% unless forloop.first %} hidden{% endunless %} {{ block.shopify_attributes }}><div class="qc-hero-copy"><span class="qc-eyebrow">{{ block.settings.eyebrow | escape }}</span>{% if forloop.first %}<h1>{{ block.settings.heading | escape }}</h1>{% else %}<h2 class="qc-hero-title">{{ block.settings.heading | escape }}</h2>{% endif %}<p>{{ block.settings.text | escape }}</p><a class="qc-button" href="{{ block.settings.link | default: routes.all_products_collection_url }}">{{ block.settings.label | escape }} <span aria-hidden="true">↗</span></a><span class="qc-delivery-chip">{% render 'qc-icon', name: 'truck' %}{{ section.settings.chip | escape }}</span></div><div class="qc-hero-art">{% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 1400 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '480, 800, 1000, 1400', sizes: '(min-width: 750px) 45vw, 90vw' }}{% else %}<div class="qc-hero-illustration">{% render 'qc-icon', name: 'bag' %}<span>{{ section.settings.art_text | escape }}</span></div>{% endif %}<span class="qc-floating-badge">{% render 'qc-icon', name: 'leaf' %}{{ section.settings.badge | escape }}</span></div></article>{% endfor %}{% if section.blocks.size > 1 %}<div class="qc-slide-controls"><button data-slide-prev aria-label="{{ 'qc.previous' | t }}">←</button><button data-slide-pause aria-label="{{ 'qc.pause' | t }}">Ⅱ</button><button data-slide-next aria-label="{{ 'qc.next' | t }}">→</button></div>{% endif %}</section>
+{% schema %}
+{
+  "name": "Next-day hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "chip",
+      "label": "Delivery chip",
+      "default": "Order today, delivered tomorrow"
+    },
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Floating badge",
+      "default": "A little fresher. A lot easier."
+    },
+    {
+      "type": "text",
+      "id": "art_text",
+      "label": "Placeholder artwork text",
+      "default": "The everyday basket"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Eyebrow",
+          "default": "YOUR DUBAI EVERYDAY, SORTED"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Good things. Fresh starts. Next-day delivery."
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Fresh groceries and everyday essentials. One thoughtfully packed basket, delivered across Dubai."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Button label",
+          "default": "Fill your basket"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button link"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Hero image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Next-day hero",
+      "blocks": [
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

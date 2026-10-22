@@ -1,0 +1,25 @@
+{% doc %}
+Product actions shared by cards and the product page.
+@param {product} item - Product to show actions for
+@param {boolean} [compact] - Show compact card actions
+{% enddoc %}
+<div class="dc-product-tools" data-product-tools data-product-id="{{ item.id }}" data-product-handle="{{ item.handle }}" data-product-title="{{ item.title | escape }}" data-product-max="{{ item.metafields.custom.max_qty.value | default: 0 }}" data-product-preorder="{{ item.metafields.custom.preorder.value | default: false }}">
+  <button type="button" data-save="wishlist" aria-pressed="false" aria-label="{{ 'commerce_experience.save_product' | t: title: item.title | escape }}">♡ <span>{{ 'commerce_experience.wishlist' | t }}</span></button>
+  <button type="button" data-save="compare" aria-pressed="false">{{ 'commerce_experience.compare' | t }}</button>
+  {% if compact %}<button type="button" data-quick-view="{{ item.handle }}">{{ 'commerce_experience.quick_view' | t }}</button>{% endif %}
+</div>
+{% unless compact %}
+  <p class="dc-caption">{{ 'commerce_experience.delivery_promise' | t }} · {{ 'commerce_experience.vat' | t }} <span>{% raw %}{{VAT_RATE_TBC}}{% endraw %}</span></p>
+  <p class="dc-caption">{{ 'commerce_experience.max_quantity' | t }} {{ item.metafields.custom.max_qty.value | default: '—' }}</p>
+  {% if item.metafields.custom.preorder.value %}
+    <details class="dc-request"><summary>{{ 'commerce_experience.preorder' | t }}</summary><p>{{ 'commerce_experience.preorder_copy' | t }}</p><p>{% raw %}{{RESERVATION_PERIOD_TBC}} · {{PREORDER_PRICE_RULE_TBC}}{% endraw %}</p>
+      {% form 'contact' %}{{ form.errors | default_errors }}{% if form.posted_successfully? %}<p role="status">{{ 'commerce_experience.request_received' | t }}</p>{% endif %}<input type="hidden" name="contact[request_type]" value="Pre-order request — no payment"><input type="hidden" name="contact[product]" value="{{ item.handle }}"><label>{{ 'commerce_experience.email' | t }}<input type="email" name="contact[email]" autocomplete="email" required></label><button class="button" type="submit">{{ 'commerce_experience.request_reservation' | t }}</button>{% endform %}
+    </details>
+  {% endif %}
+  {% unless item.available %}
+    <details class="dc-request"><summary>{{ 'commerce_experience.notify_me' | t }}</summary>
+      {% form 'contact' %}{{ form.errors | default_errors }}{% if form.posted_successfully? %}<p role="status">{{ 'commerce_experience.request_received' | t }}</p>{% endif %}<input type="hidden" name="contact[request_type]" value="Stock notification request"><input type="hidden" name="contact[product]" value="{{ item.handle }}"><label>{{ 'commerce_experience.email' | t }}<input type="email" name="contact[email]" required autocomplete="email"></label><label>{{ 'commerce_experience.phone' | t }}<input type="tel" name="contact[phone]" autocomplete="tel"></label><label>{{ 'commerce_experience.channel' | t }}<select name="contact[channel]"><option>Email</option><option>SMS</option><option>WhatsApp</option></select></label><label><input type="checkbox" name="contact[notification_consent]" value="yes" required> {{ 'commerce_experience.notify_consent' | t }}</label><p class="dc-caption">{{ 'commerce_experience.notify_note' | t }}</p><button class="button" type="submit">{{ 'commerce_experience.send_request' | t }}</button>{% endform %}
+    </details>
+  {% endunless %}
+  <details class="dc-request"><summary>{{ 'commerce_experience.reviews' | t }}</summary><div>{{ item.metafields.reviews.rating | metafield_tag }}</div><p>{{ 'commerce_experience.review_note' | t }}</p></details>
+{% endunless %}

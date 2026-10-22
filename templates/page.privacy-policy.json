@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-policy",
+      "settings": {
+        "heading": "Privacy Policy",
+        "content": "<p>FINAL WORDING REQUIRED. Describe data collected, purpose/legal basis, Shopify and service providers, consent, retention, international processing, rights and contact details.</p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

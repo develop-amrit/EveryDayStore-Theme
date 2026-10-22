@@ -1,0 +1,10 @@
+﻿{% doc %}Image-led category tile; artwork always comes from Shopify collections.
+@param {object} category - Collection or navigation link object.
+@param {string} title - Merchant category title.{% enddoc %}
+{% assign category_image = category.image | default: category.featured_image %}
+<span class="qc-category-art" aria-hidden="true">
+  {% if category_image != blank %}
+    {{ category_image | image_url: width: 160 | image_tag: loading: 'lazy', widths: '80, 160', sizes: '56px', alt: '' }}
+  {% else %}{% render 'qc-category-icon', handle: category.handle %}{% endif %}
+</span>
+<span class="qc-category-name">{{ title | escape }}</span>

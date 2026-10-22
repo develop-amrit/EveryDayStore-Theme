@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {}
+    },
+    "discovery_help": {
+      "type": "commerce-recovery",
+      "blocks": {
+        "d0": {
+          "type": "department",
+          "settings": {
+            "title": "Grocery",
+            "description": "Cupboard staples and shelf-stable essentials.",
+            "link": "/pages/departments#grocery"
+          }
+        },
+        "d1": {
+          "type": "department",
+          "settings": {
+            "title": "Baby Products",
+            "description": "Useful supplies for everyday care.",
+            "link": "/pages/departments#baby-products"
+          }
+        },
+        "d2": {
+          "type": "department",
+          "settings": {
+            "title": "Bath & Body",
+            "description": "Personal care for the daily routine.",
+            "link": "/pages/departments#bath-body"
+          }
+        },
+        "d3": {
+          "type": "department",
+          "settings": {
+            "title": "Home",
+            "description": "Household refills and practical organisers.",
+            "link": "/pages/departments#home"
+          }
+        }
+      },
+      "block_order": [
+        "d0",
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "discovery_help"
+  ]
+}

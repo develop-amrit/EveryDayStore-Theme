@@ -1,0 +1,18 @@
+<section class="qc-wrap qc-section"><h2>{{ 'qc.reviews' | t }}</h2>{% if product.metafields.reviews.rating.value != blank %}<p class="qc-rating">{{ product.metafields.reviews.rating.value.rating }} / {{ product.metafields.reviews.rating.value.scale_max }} · {{ product.metafields.reviews.rating_count.value | default: 0 }}</p>{% else %}<p>{{ 'qc.review_empty' | t }}</p>{% endif %}{% for block in section.blocks %}{% render block %}{% endfor %}{% if settings.reviews_endpoint != blank or request.design_mode %}<details><summary>{{ 'qc.review_submit' | t }}</summary><form method="post" action="{{ settings.reviews_endpoint | default: routes.root_url }}" class="qc-form" data-review-form data-product-handle="{{ product.handle | escape }}"><label>{{ 'qc.review_name' | t }}<input name="name" required maxlength="80"></label><label>{{ 'qc.email' | t }}<input name="email" type="email" required autocomplete="email"></label><label>{{ 'qc.review_rating' | t }}<select name="rating">{% for rating in (1..5) %}<option value="{{ rating }}">{{ rating }}</option>{% endfor %}</select></label><label>{{ 'qc.review_title' | t }}<input name="title" maxlength="120" required></label><label>{{ 'qc.review_body' | t }}<textarea name="body" maxlength="3000" required></textarea></label><label class="qc-check"><input type="checkbox" name="consent" required>{{ 'qc.review_consent' | t }}</label><small>{{ 'qc.review_notice' | t }}</small><button class="qc-button"{% if settings.reviews_endpoint == blank %} disabled{% endif %}>{{ 'qc.review_submit' | t }}</button><p role="status">{% if settings.reviews_endpoint == blank %}{{ 'qc.review_backend' | t }}{% endif %}</p></form></details>{% endif %}</section>
+{% schema %}
+{
+  "name": "product reviews",
+  "settings": [],
+  "presets": [
+    {
+      "name": "product reviews"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ]
+}
+{% endschema %}
+

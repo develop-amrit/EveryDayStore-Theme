@@ -1,0 +1,16 @@
+# Delivery scheduling contract — backend not supplied
+
+Single Dubai warehouse, in-house fleet, Asia/Dubai timezone, standard next-day. Business capacity/cut-off/holidays are merchant decisions, not hardcoded guarantees. Configure slots_endpoint to an HTTPS backend base URL or same-origin signed Shopify app proxy. No keys in the theme.
+
+GET {base}/slots?date=YYYY-MM-DD&zone=zone-label returns {slots:[{id,label,date,starts_at,ends_at,remaining}],version}. Dates/instants are ISO 8601 with explicit offsets; backend is authoritative. remaining is a non-negative integer. Return full slots with remaining:0 or omit them. Theme disables full/past/mismatched-date slots; server must still reject forged IDs.
+
+POST {base}/reservations: {slot_id,date,zone,cart_token,items:[{id,quantity}],idempotency_key}. items identify variants, never prices. Backend authenticates app-proxy/session origin, retrieves/validates cart/product state through its trusted integration, calculates its own fingerprint, and atomically reserves one capacity unit for a cart with a short lease. Do not trust browser slot counts or claimed identity. Return {ok:true,reservation_id,expires_at,proof,cart_fingerprint}; reservation proof must be bound to cart/session, slot, zone, variant quantities, expiry and policy version. Theme writes delivery_date, delivery_slot, delivery_zone, delivery_reservation, delivery_reservation_expires, delivery_proof, delivery_cart_fingerprint and delivery_mock to cart attributes; note is the Shopify cart note.
+
+409 = full/conflicting slot or changed cart; 410 = expired; 429 = rate limit. Return generic safe messages and a refreshed availability result. Release superseded/expired reservations. Recompute after line/quantity/zone changes; TTL renewals require a fresh atomic capacity check. Idempotency prevents duplicate reservations on retries. Do not reserve capacity permanently on page view or picker selection.
+
+Checkout enforcement: select a supported public scheduling/validation app for Basic; custom Function apps require Plus. A validation Function must verify current cart and address against a backend-signed reservation using an app-managed public verification key and the platform-supported inputs/time/configuration for the selected API version. It cannot call arbitrary network APIs. The actual app must confirm input/crypto/runtime support or use its supported reservation-check mechanism. Never treat a user-editable cart attribute or unsigned capacity count as proof. Handle accelerated checkouts and order edits. Commit a valid reservation when the order is created, deduplicate webhook IDs, release cancellations/expiry, reconcile failed/late orders, and test concurrent checkouts. Do not promise oversell-proof capacity until this is installed and tested.
+
+Preview mock: enabled only when the merchant setting is on AND Shopify design mode or localhost is active. Slots are visibly PREVIEW ONLY, have no backend booking, and block checkout; no mock proof can be used in production.
+
+Terms: theme saves terms_accepted=yes and terms_version after the required checkbox. Direct/accelerated checkout can bypass theme validation. A checkout validation app must require the current policy acceptance; cart JavaScript is only UX. Settings > Policies supplies legal links, not a universal required-acceptance checkbox.
+

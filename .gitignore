@@ -1,0 +1,9 @@
+product-list/
+_backup_original/
+_live_snapshot/
+node_modules/
+.shopify/
+qa/*.har
+tools/category-samples-raw.json
+tools/inventory-data-raw.json
+tools/inventory-data-rows.json

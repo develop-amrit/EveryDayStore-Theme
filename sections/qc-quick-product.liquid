@@ -1,0 +1,12 @@
+<div data-main-product="{{ product.handle | escape }}" data-quick-product-content>{% if product.available or product.metafields.custom.show_when_sold_out.value == true %}<h2>{{ product.title | escape }}</h2>{% render 'qc-option-context', product: product, section_id: section.id %}<a class="qc-text-link" href="{{ product.url }}">{{ 'qc.variant_more' | t }}</a>{% else %}<p>{{ 'qc.product_unavailable' | t }}</p>{% endif %}</div>
+{% schema %}
+{
+  "name": "quick product",
+  "settings": [],
+  "presets": [
+    {
+      "name": "quick product"
+    }
+  ]
+}
+{% endschema %}

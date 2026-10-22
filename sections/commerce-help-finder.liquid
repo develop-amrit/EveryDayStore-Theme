@@ -1,0 +1,20 @@
+<commerce-help-finder class="page-width dc-help-finder" hidden>
+  <div class="dc-help-finder__heading">
+    <label for="HelpSearch-{{ section.id }}">{{ section.settings.label | escape }}</label>
+    <p>{{ section.settings.hint | escape }}</p>
+  </div>
+  <div class="dc-help-finder__field">
+    <input id="HelpSearch-{{ section.id }}" type="search" autocomplete="off" placeholder="{{ section.settings.placeholder | escape }}" data-help-input>
+    <button class="button button--secondary" type="button" data-help-reset aria-label="{{ 'general.search.reset' | t }}">{{ section.settings.reset_label | escape }}</button>
+  </div>
+  <p class="dc-help-finder__status" role="status" aria-live="polite" data-help-status data-label="{{ section.settings.results | escape }}"></p>
+  <div class="dc-help-finder__empty" data-help-empty hidden>
+    <h2>{{ section.settings.empty_heading | escape }}</h2>
+    <p>{{ section.settings.empty_text | escape }}</p>
+    <a class="button" href="{{ pages['contact'].url }}">{{ section.settings.contact_label | escape }}</a>
+  </div>
+</commerce-help-finder>
+<script src="{{ 'commerce-help-finder.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+{"name":"Commerce help finder","limit":1,"settings":[{"type":"text","id":"reset_label","label":"Reset button","default":"Reset"},{"type":"text","id":"label","label":"Search label","default":"Find an answer"},{"type":"text","id":"hint","label":"Hint","default":"Search questions and answers about shopping, delivery or your order."},{"type":"text","id":"placeholder","label":"Placeholder","default":"Try delivery, payment or returns"},{"type":"text","id":"results","label":"Result count ([count] and [total])","default":"[count] of [total] answers shown"},{"type":"text","id":"empty_heading","label":"No-results heading","default":"Let’s try another way."},{"type":"text","id":"empty_text","label":"No-results description","default":"Try a shorter phrase, reset the search, or send the team your question."},{"type":"text","id":"contact_label","label":"Contact button","default":"Ask a question"}],"presets":[{"name":"Commerce help finder"}]}
+{% endschema %}

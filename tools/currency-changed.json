@@ -1,0 +1,20 @@
+[
+  "sections\\cart-live-region-text.liquid",
+  "sections\\featured-product.liquid",
+  "sections\\main-cart-footer.liquid",
+  "sections\\main-cart-items.liquid",
+  "sections\\main-product.liquid",
+  "sections\\qc-announcement.liquid",
+  "sections\\qc-product-tile.liquid",
+  "snippets\\cart-drawer.liquid",
+  "snippets\\commerce-runtime.liquid",
+  "snippets\\facets.liquid",
+  "snippets\\price.liquid",
+  "snippets\\qc-cart-contents.liquid",
+  "snippets\\qc-delivery-tiers.liquid",
+  "snippets\\qc-product-card.liquid",
+  "snippets\\qc-variant-price.liquid",
+  "snippets\\quick-order-list-row.liquid",
+  "snippets\\quick-order-list.liquid",
+  "snippets\\unit-price.liquid"
+]

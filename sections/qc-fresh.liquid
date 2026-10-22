@@ -1,0 +1,85 @@
+<section class="qc-section qc-wrap qc-reveal"><div class="qc-section-heading"><h2>{{ section.settings.heading | escape }}</h2></div><div data-tabs><div class="qc-tabs" role="tablist" aria-label="{{ section.settings.heading | escape }}">{% for block in section.blocks %}<button id="tab-{{ section.id }}-{{ block.id }}" role="tab" aria-controls="panel-{{ section.id }}-{{ block.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</button>{% endfor %}</div>{% for block in section.blocks %}<div id="panel-{{ section.id }}-{{ block.id }}" role="tabpanel" aria-labelledby="tab-{{ section.id }}-{{ block.id }}" tabindex="0"{% unless forloop.first %} hidden{% endunless %}><div class="qc-products qc-rail" tabindex="0" data-product-section>{% assign tab_collection = block.settings.collection %}{% if forloop.first and tab_collection == blank %}{% assign tab_collection = section.settings.collection %}{% endif %}{% render 'qc-product-list', collection: tab_collection, limit: section.settings.limit %}</div>{% if tab_collection != blank %}<a class="qc-text-link" href="{{ block.settings.view_all | default: tab_collection.url }}">{{ 'qc.view_all' | t }} {{ block.settings.heading | escape }} ↗</a>{% endif %}</div>{% endfor %}</div></section>
+{% schema %}
+{
+  "name": "Fresh collection tabs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A fresher kind of everyday"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "limit",
+      "label": "Number of products",
+      "min": 4,
+      "max": 24,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "url",
+      "id": "view_all",
+      "label": "View all link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Collection tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Fresh picks"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "url",
+          "id": "view_all",
+          "label": "View all link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Fresh collection tabs",
+      "blocks": [
+        {
+          "type": "tab",
+          "settings": {
+            "heading": "Fruit & veg"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "heading": "Dairy favourites"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "heading": "Bakery"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+

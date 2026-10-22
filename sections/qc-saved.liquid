@@ -1,0 +1,29 @@
+<section class="qc-wrap qc-section" data-saved-page="{{ section.settings.kind }}"><h1>{% if section.settings.kind == 'compare' %}{{ 'qc.compare_title' | t }}{% else %}{{ 'qc.wishlist_title' | t }}{% endif %}</h1><p data-saved-notice role="status"></p><div class="qc-products qc-grid" data-saved-products></div><a class="qc-text-link" href="{{ routes.all_products_collection_url }}">{{ 'qc.choose_products' | t }} ↗</a></section>
+{% schema %}
+{
+  "name": "saved",
+  "settings": [
+    {
+      "type": "select",
+      "id": "kind",
+      "label": "List type",
+      "options": [
+        {
+          "value": "wishlist",
+          "label": "Wishlist"
+        },
+        {
+          "value": "compare",
+          "label": "Comparison"
+        }
+      ],
+      "default": "wishlist"
+    }
+  ],
+  "presets": [
+    {
+      "name": "saved"
+    }
+  ]
+}
+{% endschema %}

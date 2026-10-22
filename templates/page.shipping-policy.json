@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-policy",
+      "settings": {
+        "heading": "Shipping Policy",
+        "content": "<p>FINAL WORDING REQUIRED. Confirm Dubai service areas, next-day cut-off, holidays, capacity, time-slot rules, delivery attempts, instructions and fee tiers.</p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

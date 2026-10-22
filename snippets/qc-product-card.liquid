@@ -1,0 +1,36 @@
+{% doc %}@param {product} product - Real Shopify product.{% enddoc %}
+{% if product.available or product.metafields.custom.show_when_sold_out.value == true %}
+  {% assign variant = product.selected_or_first_available_variant %}
+  {% assign card_title = product.metafields.custom.card_title.value | default: product.title | remove_first: '[TEST] ' %}
+  <article class="qc-card" data-product-id="{{ product.id }}" data-product-handle="{{ product.handle | escape }}" data-variant-id="{{ variant.id }}">
+    <a class="qc-card-image" href="{{ product.url }}" aria-label="{{ product.title | escape }}">
+      {% if product.featured_image %}
+        {{ product.featured_image | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '180, 360, 540, 750, 1000', sizes: '(min-width: 990px) 240px, 44vw' }}
+      {% else %}{% render 'qc-product-placeholder', product: product %}{% endif %}
+      {% if variant.compare_at_price > variant.price %}
+        {% assign discount = variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round %}
+        <span class="qc-discount">{{ discount }}% {{ 'qc.off' | t }}</span>
+      {% endif %}
+    </a>
+    <button class="qc-card-wishlist" type="button" data-wishlist="{{ product.handle | escape }}" aria-label="{{ 'qc.wishlist' | t }}" aria-pressed="false">{% render 'qc-icon', name: 'heart' %}</button>
+    <div class="qc-card-copy">
+      {% if product.vendor != shop.name and product.vendor != blank %}<span class="qc-card-vendor">{{ product.vendor | escape }}</span>{% endif %}
+      <h3><a href="{{ product.url }}" title="{{ product.title | escape }}">{{ card_title | escape }}</a></h3>
+      <div class="qc-card-meta">
+        <p class="qc-card-size">{% if product.metafields.custom.pack_size.value != blank %}{{ product.metafields.custom.pack_size.value | escape }}{% elsif variant.weight > 0 %}{{ variant.weight | weight_with_unit }}{% elsif product.has_only_default_variant == false %}{{ variant.title | escape }}{% endif %}</p>
+        <label class="qc-card-compare"><input type="checkbox" data-compare="{{ product.handle | escape }}"><span>{{ 'qc.compare' | t }}</span></label>
+      </div>
+      <div class="qc-card-bottom">
+        <div class="qc-price"><strong>{{ variant.price | money_without_currency | prepend: ' ' | prepend: shop.currency }}</strong>{% if variant.compare_at_price > variant.price %}<s>{{ variant.compare_at_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}</s>{% endif %}</div>
+        <div data-card-controls>{% if product.available %}<button class="qc-add" type="button" data-add{% if product.variants.size > 1 %} data-choose{% endif %}>{% if product.variants.size == 1 %}{{ 'qc.add' | t }} +{% else %}{{ 'qc.choose' | t }}{% endif %}</button>{% else %}<button class="qc-add" disabled>{{ 'qc.out' | t }}</button>{% endif %}</div>
+      </div>
+    </div>
+    {% if product.variants.size > 1 %}<template data-variants><div data-quick-product-url="{{ product.url }}"><p>{{ 'qc.loading' | t }}</p><a class="qc-text-link" href="{{ product.url }}">{{ 'qc.variant_more' | t }}</a></div></template>{% endif %}
+    {% unless product.available %}{% render 'qc-restock', product: product %}{% endunless %}
+  </article>
+{% endif %}
+
+
+
+
+

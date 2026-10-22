@@ -1,0 +1,10 @@
+_backup_original/**
+_build-homepage.cjs
+_finish-homepage.cjs
+_verify-homepage.cjs
+HOMEPAGE-GUIDE.md
+AGENTS.md
+_polish-homepage.cjs
+tools/**
+docs/**
+product-list/**

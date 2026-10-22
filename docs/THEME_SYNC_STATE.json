@@ -1,0 +1,84 @@
+{
+  "store": "3djevx-mu.myshopify.com",
+  "verified_on": "2026-10-22",
+  "batch": "compact-navigation-2026-10-21",
+  "targets": [
+    {
+      "name": "codex-edits",
+      "id": "189489545329",
+      "role_at_check": "MAIN",
+      "status": "applied_and_verified",
+      "pending_files": []
+    },
+    {
+      "name": "codex-edits2",
+      "id": "189518545009",
+      "role_at_check": "UNPUBLISHED",
+      "status": "applied_and_verified",
+      "pending_files": []
+    }
+  ],
+  "files": [
+    {
+      "filename": "assets/qc-home.js",
+      "sha256": "07e14ca48ba520c12b42a779d32c9c6272798b1ce015ca366a7e8794046f2b4d"
+    },
+    {
+      "filename": "assets/qc-storefront.css",
+      "sha256": "5116f56043762eb62d7ec9ef49e0fc9df656da770af544ca91e9bfdd6a343623"
+    },
+    {
+      "filename": "assets/qc-category-sidebar.css",
+      "sha256": "d34dabeff218aafa78d0505da7a67b22cd68a7d2cc555d0315464e5adeb424b1"
+    },
+    {
+      "filename": "assets/qc-category-sidebar.js",
+      "sha256": "8333183fe608e9d49f2b88c1c48a7b8a3d356a03903dbd12ff45b98aa5d000dc"
+    },
+    {
+      "filename": "snippets/qc-collection-sidebar.liquid",
+      "sha256": "62d673b7c949a476d76615d73fa3aa91f3299eca1ee84db439d830c2589fff3c"
+    },
+    {
+      "filename": "sections/qc-header.liquid",
+      "sha256": "f35dc4730a942f58811ce49290d81afeb028de6ce870a096a1beee869d14de8b"
+    },
+    {
+      "filename": "sections/qc-predictive.liquid",
+      "sha256": "9f5aaeda97643941896d7cfcae37e83ab8d756c23e1da35050376f932be38314"
+    },
+    {
+      "filename": "sections/qc-catalog.liquid",
+      "sha256": "4b7665c13c8a4ec55a9c787aef7a96118b1b1fa2eb0a8a0fcba043b93a15eb71"
+    },
+    {
+      "filename": "snippets/qc-cart-contents.liquid",
+      "sha256": "863be9b9cbef7f2b07e7546d7128b60f8b40023ed34b9fdaa8c251eddf8218fa"
+    },
+    {
+      "filename": "locales/en.default.json",
+      "sha256": "e26679355c5c03294065ca33b2c0b815a3971004227767f96d91de87de8f2f53"
+    },
+    {
+      "filename": "templates/index.json",
+      "sha256": "28d4c2acefa7081181707f6bad99c702fa7f217135c23390ef3c21cc6b647939"
+    },
+    {
+      "filename": "snippets/qc-menu.liquid",
+      "sha256": "6b739a64104e7d65fb0629af363c36601120e8f13bbcc02a1bbe9cb8a3819380"
+    },
+    {
+      "filename": "assets/qc-storefront.js",
+      "sha256": "0387fcedf89dad9ea75359e66599b1ccde94016039a5fa524b710f1fe36abca8"
+    }
+  ],
+  "automatic_background_sync": false,
+  "catalogue_import": {
+    "products": 85,
+    "published": 67,
+    "draft": 18,
+    "store_wide": true,
+    "report": "docs/PRODUCT_IMPORT_REPORT.md"
+  },
+  "navigation_refresh": "docs/COMPACT_NAVIGATION.md"
+}

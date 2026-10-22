@@ -1,0 +1,12 @@
+<section class="qc-wrap qc-section qc-tracking"><h1>{{ 'qc.track_order' | t }}</h1><p>{{ 'qc.verification_notice' | t }}</p><form class="qc-form" data-tracking-start method="post" action="{{ routes.root_url }}"><label>{{ 'qc.order_number' | t }}<input name="order_number" required maxlength="50" autocomplete="off"></label><label>{{ 'qc.order_contact' | t }}<input name="contact" required maxlength="150" autocomplete="off"></label><label class="qc-check"><input type="checkbox" name="consent" required>{{ 'qc.verification_consent' | t }}</label><button class="qc-button"{% if settings.tracking_endpoint == blank %} disabled{% endif %}>{{ 'qc.send_code' | t }}</button><p role="status">{% if settings.tracking_endpoint == blank %}{{ 'qc.tracking_disconnected' | t }}{% endif %}</p></form><form class="qc-form" data-tracking-verify method="post" action="{{ routes.root_url }}" hidden><label>{{ 'qc.verification_code' | t }}<input name="code" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code" required></label><button class="qc-button">{{ 'qc.verify' | t }}</button><p role="status"></p></form><div data-tracking-result></div><a class="qc-text-link" href="{{ routes.account_url }}">{{ 'qc.account_orders' | t }}</a></section>
+{% schema %}
+{
+  "name": "tracking",
+  "settings": [],
+  "presets": [
+    {
+      "name": "tracking"
+    }
+  ]
+}
+{% endschema %}

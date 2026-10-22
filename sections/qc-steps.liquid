@@ -1,0 +1,79 @@
+<section class="qc-section qc-wrap qc-reveal"><div class="qc-steps">{% for block in section.blocks %}<article {{ block.shopify_attributes }}><span class="qc-step-icon">{% render 'qc-icon', name: block.settings.icon %}<small>0{{ forloop.index }}</small></span><div><h2>{{ block.settings.heading | escape }}</h2><p>{{ block.settings.text | escape }}</p></div></article>{% endfor %}</div></section>
+{% schema %}
+{
+  "name": "How it works",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Order today"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Description",
+          "default": "Pick your everyday favourites."
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "bag",
+              "label": "Basket"
+            },
+            {
+              "value": "leaf",
+              "label": "Freshness"
+            },
+            {
+              "value": "truck",
+              "label": "Delivery"
+            }
+          ],
+          "default": "bag"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "How it works",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "heading": "Order today",
+            "text": "Your favourites, a few taps away.",
+            "icon": "bag"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "heading": "We pack with care",
+            "text": "Picked thoughtfully. Packed properly.",
+            "icon": "leaf"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "heading": "At your door tomorrow",
+            "text": "A next-day delivery to your Dubai address.",
+            "icon": "truck"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

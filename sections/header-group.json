@@ -1,0 +1,47 @@
+{
+  "name": "Header",
+  "type": "header",
+  "sections": {
+    "announcement": {
+      "type": "qc-announcement",
+      "blocks": {
+        "delivery": {
+          "type": "message",
+          "settings": {
+            "text": "Dubai essentials, delivered next day."
+          }
+        },
+        "fees": {
+          "type": "message",
+          "settings": {
+            "text": "Free delivery from",
+            "threshold": true
+          }
+        },
+        "fee_tiers": {
+          "type": "message",
+          "settings": {
+            "fees": true,
+            "text": "Delivery fee tiers"
+          }
+        }
+      },
+      "block_order": [
+        "delivery",
+        "fees",
+        "fee_tiers"
+      ],
+      "settings": {}
+    },
+    "header": {
+      "type": "qc-header",
+      "settings": {
+        "wordmark": "everyday"
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}

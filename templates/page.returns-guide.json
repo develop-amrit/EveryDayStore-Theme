@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "commerce-editorial",
+      "settings": {
+        "heading": "Delivery & Returns",
+        "primary": true,
+        "text": "<p>Our Dubai delivery and returns approach, together in one place.</p>",
+        "art": "parcel",
+        "kicker": "A clear plan for every order",
+        "note": "Pre-launch policy preview. Final operating details and policy approval are still pending.",
+        "link": "/pages/contact",
+        "label": "Contact the team",
+        "tone": "forest"
+      }
+    },
+    "steps": {
+      "type": "commerce-steps",
+      "settings": {
+        "heading": "From our warehouse to your door.",
+        "intro": "Planned for launch: one Dubai warehouse, our delivery team, and clear order updates."
+      },
+      "blocks": {
+        "s0": {
+          "type": "step",
+          "settings": {
+            "title": "Confirm your address",
+            "text": "Delivery is planned for Dubai only. Active service areas must be confirmed before checkout."
+          }
+        },
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Choose an available date",
+            "text": "Next-day delivery, Dubai only. Optional scheduled slots are subject to capacity. Cut-off: CUTOFF_TIME_TBC. Same-day and express delivery are unavailable."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "Follow the handover",
+            "text": "Order updates will reflect packing, dispatch and delivery. Proof-of-delivery arrangements are being confirmed."
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1",
+        "s2"
+      ]
+    },
+    "questions": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "Delivery, returns and the unexpected.",
+        "intro": "These are working business rules for review, not final published terms."
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "What delivery fees are planned?",
+            "answer": "<p>Below AED 49: AED 5.99. AED 49–98.99: AED 3.99. AED 99 and above: free delivery. No minimum order value is planned. Final checkout configuration and threshold treatment are being verified.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Can I return an item?",
+            "answer": "<p>Return unopened and unused items within 7 days. Perishables are not returnable. Eligible returns receive free pickup; refunds follow inspection. Refund timing: REFUND_TIMING_TBC.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "How will return collection work?",
+            "answer": "<p>Approved eligible returns are planned for free collection by our delivery team. Standard refunds follow warehouse receipt and inspection. The payment provider and refund processing times are not yet finalised.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "What if something is missing, wrong or damaged?",
+            "answer": "<p>Contact the team with your order details and a description. Missing items are intended to be refunded; wrong items replaced without extra delivery fees. Damaged or defective items are reviewed for an appropriate resolution.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "Can I cancel an order?",
+            "answer": "<p>Cancel within 6 hours through AI support only. AI support must be connected before ordering opens.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "Will an unavailable item be substituted?",
+            "answer": "<p>No substitution is planned without your approval. The team would contact you about alternatives; if unresolved, the remaining order would proceed with a refund for the unavailable item under the final policy.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ]
+    },
+    "browse": {
+      "type": "commerce-stories",
+      "settings": {
+        "heading": "For the everyday in between.",
+        "layout": "banners"
+      },
+      "blocks": {
+        "s0": {
+          "type": "story",
+          "settings": {
+            "title": "A little order for your desk.",
+            "copy": "Stationery, paper and practical supplies for the working day.",
+            "label": "Explore office supplies",
+            "link": "/pages/departments#office-supplies",
+            "art": "office",
+            "tone": "olive"
+          }
+        },
+        "s1": {
+          "type": "story",
+          "settings": {
+            "title": "A fresh start at the sink.",
+            "copy": "Make space for the care essentials that belong in your daily routine.",
+            "label": "Browse personal care",
+            "link": "/pages/departments#bath-body",
+            "art": "wash",
+            "tone": "cream"
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1"
+      ]
+    },
+    "rates": {
+      "type": "commerce-delivery-rates",
+      "settings": {},
+      "blocks": {
+        "r0": {
+          "type": "rate",
+          "settings": {
+            "range": "Below AED 49",
+            "fee": "AED 5.99"
+          }
+        },
+        "r1": {
+          "type": "rate",
+          "settings": {
+            "range": "AED 49–98.99",
+            "fee": "AED 3.99"
+          }
+        },
+        "r2": {
+          "type": "rate",
+          "settings": {
+            "range": "AED 99 and above",
+            "fee": "Free"
+          }
+        }
+      },
+      "block_order": [
+        "r0",
+        "r1",
+        "r2"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "steps",
+    "rates",
+    "questions",
+    "browse"
+  ]
+}

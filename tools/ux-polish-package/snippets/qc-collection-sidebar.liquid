@@ -1,0 +1,44 @@
+{% doc %}
+Collection navigation from the merchant's three-level catalogue menu.
+@param {linklist} menu - Catalogue menu.
+@param {collection} current_collection - Displayed collection.
+{% enddoc %}
+{% assign active_department = blank %}
+{% assign active_group = blank %}
+{% for department in menu.links %}
+  {% if department.url == current_collection.url %}{% assign active_department = department %}{% endif %}
+  {% for group in department.links %}
+    {% if group.url == current_collection.url %}{% assign active_department = department %}{% assign active_group = group %}{% endif %}
+    {% for leaf in group.links %}
+      {% if leaf.url == current_collection.url %}{% assign active_department = department %}{% assign active_group = group %}{% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+<aside class="qc-collection-sidebar" data-category-sidebar>
+  <h2 class="qc-sidebar-heading">{{ 'qc.categories' | t }}</h2>
+  <nav aria-label="{{ 'qc.browse_categories' | t }}">
+    {% if active_department != blank and active_department.links != blank %}
+      <a class="qc-sidebar-context" href="{{ active_department.url }}">{% render 'qc-category-label', category: active_department.object, title: active_department.title %}</a>
+      {% assign nearby = active_department.links %}
+      {% assign overview = active_department %}
+      {% if active_group.links != blank %}
+        <a class="qc-sidebar-parent" href="{{ active_department.url }}"><span aria-hidden="true">←</span> {{ active_department.title | escape }}</a>
+        {% assign nearby = active_group.links %}
+        {% assign overview = active_group %}
+      {% endif %}
+      <ul class="qc-sidebar-groups qc-sidebar-nearby" role="list">
+        <li><a class="qc-sidebar-overview" href="{{ overview.url }}"{% if overview.url == current_collection.url %} aria-current="page"{% endif %}>{{ 'qc.view_all' | t }} {{ overview.title | escape }}</a></li>
+        {% for category in nearby %}<li><a href="{{ category.url }}"{% if category.url == current_collection.url %} aria-current="page"{% endif %}>{{ category.title | escape }}</a></li>{% endfor %}
+      </ul>
+      <details class="qc-sidebar-switcher"><summary>{{ 'qc.change_department' | t }} <span aria-hidden="true">⌄</span></summary>
+    {% endif %}
+    <div class="qc-sidebar-departments">
+      {% for department in menu.links %}
+        <a class="qc-sidebar-direct" href="{{ department.url }}"{% if department.url == current_collection.url %} aria-current="page"{% endif %}>{% render 'qc-category-label', category: department.object, title: department.title %}</a>
+      {% else %}
+        <a class="qc-sidebar-direct" href="{{ routes.all_products_collection_url }}"{% if current_collection.handle == 'all' %} aria-current="page"{% endif %}>{% render 'qc-icon', name: 'grid' %}{{ 'qc.view_all' | t }}</a>
+      {% endfor %}
+    </div>
+    {% if active_department != blank and active_department.links != blank %}</details>{% endif %}
+  </nav>
+</aside>

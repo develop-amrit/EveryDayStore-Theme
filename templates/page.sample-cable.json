@@ -1,0 +1,98 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-essentials",
+      "settings": {
+        "heading": "Explore the selection",
+        "limit": 8
+      }
+    },
+    "shopping_guides": {
+      "type": "commerce-stories",
+      "settings": {
+        "heading": "A little thought before you add.",
+        "layout": "guides"
+      },
+      "blocks": {
+        "s0": {
+          "type": "story",
+          "settings": {
+            "title": "A little order for your desk.",
+            "copy": "Stationery, paper and practical supplies for the working day.",
+            "label": "Explore office supplies",
+            "link": "/pages/departments#office-supplies",
+            "art": "office",
+            "tone": "olive"
+          }
+        },
+        "s1": {
+          "type": "story",
+          "settings": {
+            "title": "Make room for the routine.",
+            "copy": "Compare pack sizes and storage space. The right everyday staple is one that fits your home.",
+            "label": "Explore Home",
+            "link": "/pages/departments#home",
+            "art": "towels",
+            "tone": "cream"
+          }
+        },
+        "s2": {
+          "type": "story",
+          "settings": {
+            "title": "Pack the small things.",
+            "copy": "Keep everyday essentials organised with a useful pouch and a place for the small things.",
+            "label": "Explore home essentials",
+            "link": "/pages/departments#home",
+            "art": "pouch",
+            "tone": "sand"
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1",
+        "s2"
+      ]
+    },
+    "buying_notes": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "Before choosing a cable.",
+        "intro": "Check both ends, not just the name."
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "Will it fit my device?",
+            "answer": "<p>Match the connector at each end to your device and charger. USB-C and USB-A are different connector types.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "What charging details matter?",
+            "answer": "<p>Look for the manufacturer’s supported power rating, your charger output and your device requirements. No charging speed is claimed for this sample.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "How much length do I need?",
+            "answer": "<p>Consider the distance between your socket, charger and device, including space to use the device comfortably.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "buying_notes",
+    "shopping_guides"
+  ]
+}

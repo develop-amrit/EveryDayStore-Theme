@@ -1,0 +1,30 @@
+<header class="dc-header section-header">
+  <div class="page-width dc-header__top">
+    <a href="{{ routes.root_url }}" class="dc-wordmark">{{ section.settings.wordmark | escape }}<span></span></a>
+    <a data-feature="delivery" class="dc-location" href="{{ pages['delivery'].url }}"><strong>{{ section.settings.location | escape }}</strong><span>{{ section.settings.location_note | escape }}</span></a>
+    {% if settings.predictive_search_enabled %}<predictive-search class="dc-search-host" data-loading-text="{{ 'accessibility.loading' | t }}">{% else %}<search-form class="dc-search-host">{% endif %}
+    <form class="dc-search" action="{{ routes.search_url }}" method="get" role="search">
+      <label class="visually-hidden" for="DcSearch-{{ section.id }}">{{ 'general.search.search' | t }}</label>
+      <input id="DcSearch-{{ section.id }}" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ section.settings.search_hint | escape }}" {% if settings.predictive_search_enabled %}role="combobox" aria-expanded="false" aria-controls="predictive-search-results" aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"{% endif %}>
+      <input type="hidden" name="type" value="product">
+      <input type="hidden" name="options[prefix]" value="last">
+      <button type="reset" class="reset__button{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}"><span aria-hidden="true">×</span></button>
+      <button type="submit" aria-label="{{ 'general.search.search' | t }}">{% render 'commerce-icon', name: 'search' %}</button>
+      {% if settings.predictive_search_enabled %}<div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>{% render 'loading-spinner', class: 'predictive-search__loading-state' %}</div><span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>{% endif %}
+    </form>
+    {% if settings.predictive_search_enabled %}</predictive-search>{% else %}</search-form>{% endif %}
+    <div class="dc-header__actions">
+
+      <a class="dc-desktop-wishlist" href="{{ pages['wishlist'].url | default: routes.all_products_collection_url }}" data-feature="wishlist">{{ 'commerce_experience.wishlist' | t }}</a>
+      {% if shop.customer_accounts_enabled %}<a href="{{ routes.account_url }}" aria-label="{{ 'customer.account.title' | t }}">{% render 'commerce-icon', name: 'account' %}<span>{{ 'customer.account.title' | t }}</span></a>{% endif %}
+      <a href="{{ routes.cart_url }}" id="cart-icon-bubble" class="dc-cart-link" aria-label="{{ 'templates.cart.cart' | t }}">{% render 'commerce-cart-indicator' %}</a>
+    </div>
+  </div>
+  <nav class="page-width dc-header__nav" aria-label="{{ 'commerce.departments' | t }}">
+    <a href="{{ routes.all_products_collection_url }}">{{ 'commerce.shop_all' | t }}</a>
+    {% for block in section.blocks %}<a href="{{ block.settings.link }}"{% if request.path == block.settings.link %} aria-current="page"{% endif %} {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>{% endfor %}
+  </nav>
+</header>
+{% schema %}
+{"name":"Commerce header","settings":[{"type":"text","id":"wordmark","label":"Working wordmark","default":"everyday"},{"type":"text","id":"location","label":"Location","default":"Dubai"},{"type":"text","id":"location_note","label":"Location note","default":"Delivery areas coming soon"},{"type":"text","id":"search_hint","label":"Search placeholder","default":"Search your everyday essentials"}],"blocks":[{"type":"link","name":"Department","settings":[{"type":"text","id":"label","label":"Label"},{"type":"url","id":"link","label":"Link"}]}],"max_blocks":10}
+{% endschema %}

@@ -1,0 +1,22 @@
+{% doc %}
+Renders collection navigation and available product-type filters.
+@param {collection} category - Current collection
+@param {linklist} [menu] - Optional two-level category menu
+{% enddoc %}
+<aside class="dc-category-nav" aria-label="{{ 'commerce_mapping.category_navigation' | t }}">
+  <nav>
+    <a class="dc-category-nav__all" href="{{ routes.all_products_collection_url }}"{% if category.handle == 'all' %} aria-current="page"{% endif %}>{{ 'commerce.shop_all' | t }}</a>
+    {% if menu.links.size > 0 %}
+      {% for link in menu.links %}
+        <details{% if link.active or link.child_active %} open{% endif %}><summary><a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title | escape }}</a></summary>
+          {% for child in link.links %}<a class="dc-category-nav__child" href="{{ child.url }}"{% if child.active %} aria-current="page"{% endif %}>{{ child.title | escape }}</a>{% endfor %}
+        </details>
+      {% endfor %}
+    {% else %}
+      {% assign category_names = 'Grocery|Baby Products|Gifting|Bath & Body|Home|Pet|HORECA|Office Supplies' | split: '|' %}
+      {% assign category_handles = 'grocery|baby-products|gifting|bath-body|home|pet|horeca|office-supplies' | split: '|' %}
+      {% for name in category_names %}{% assign category_handle = category_handles[forloop.index0] %}{% assign destination = collections[category_handle] %}<a href="{% if destination != blank %}{{ destination.url }}{% else %}{{ pages['departments'].url }}#{{ category_handle }}{% endif %}"{% if category.handle == category_handle %} aria-current="page"{% endif %}>{{ name | escape }}</a>{% endfor %}
+    {% endif %}
+  </nav>
+  {% for filter in category.filters %}{% if filter.param_name == 'filter.p.product_type' %}<div class="dc-category-nav__types"><h3>{{ 'commerce_mapping.subcategories' | t }}</h3>{% for value in filter.values %}{% if value.active %}<a href="{{ value.url_to_remove }}" aria-current="true">{{ value.label | escape }} ({{ value.count }})</a>{% elsif value.count > 0 %}<a href="{{ value.url_to_add }}">{{ value.label | escape }} ({{ value.count }})</a>{% else %}<span aria-disabled="true">{{ value.label | escape }} (0)</span>{% endif %}{% endfor %}</div>{% endif %}{% endfor %}
+</aside>

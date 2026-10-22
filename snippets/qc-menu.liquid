@@ -1,0 +1,49 @@
+﻿{% doc %}Visible top-level categories with merchant-managed nested navigation.
+@param {boolean} [mobile] - Render the full nested drawer navigation.{% enddoc %}
+{% if mobile %}
+  <nav class="qc-menu-tree" aria-label="{{ 'qc.categories' | t }}">
+    {% for link in settings.qc_catalog_menu.links %}
+      {% if link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
+      {% if link.links != blank %}
+        <details><summary>{{ link.title | escape }}</summary><div class="qc-mega-panel">
+          <a href="{{ link.url }}">{{ 'qc.view_all' | t }} {{ link.title | escape }}</a>
+          {% for child in link.links %}<div><a href="{{ child.url }}">{{ child.title | escape }}</a>
+            {% if child.links != blank %}<ul role="list">{% for leaf in child.links %}<li><a href="{{ leaf.url }}">{{ leaf.title | escape }}</a></li>{% endfor %}</ul>{% endif %}
+          </div>{% endfor %}
+        </div></details>
+      {% else %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endif %}
+    {% else %}
+      {% for collection in collections %}<a href="{{ collection.url }}">{{ collection.title | escape }}</a>
+      {% else %}<a href="{{ routes.all_products_collection_url }}">{{ 'qc.view_all' | t }}</a>{% endfor %}
+    {% endfor %}
+  </nav>
+{% else %}
+  <nav class="qc-top-categories" aria-label="{{ 'qc.categories' | t }}">
+    <a class="qc-category-explore" href="{{ routes.all_products_collection_url }}">
+      {% render 'qc-icon', name: 'grid' %}<span>{{ 'qc.choose_products' | t }}</span>
+    </a>
+    <div class="qc-category-items">
+      {% for link in settings.qc_catalog_menu.links %}
+        {% if link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
+        {% if link.links != blank %}
+          <details class="qc-category-node"{% if link.active or link.child_active %} data-current-department{% endif %}>
+            <summary><span class="qc-nav-icon" aria-hidden="true">{% render 'qc-category-icon', handle: link.object.handle %}</span><span class="qc-category-name">{{ link.title | escape }}</span></summary>
+            <div class="qc-category-submenu">
+              <a class="qc-category-submenu-title" href="{{ link.url }}"><span class="qc-category-name">{{ link.title | escape }}</span><span class="qc-category-view">{{ 'qc.view_all' | t }}</span></a>
+              <div class="qc-category-submenu-grid">
+                {% for child in link.links %}<div><a href="{{ child.url }}"><strong>{{ child.title | escape }}</strong></a>
+                </div>{% endfor %}
+              </div>
+            </div>
+          </details>
+          <a class="qc-category-tile qc-category-mobile" href="{{ link.url }}"{% if link.active or link.child_active %} aria-current="page"{% endif %}><span class="qc-nav-icon" aria-hidden="true">{% render 'qc-category-icon', handle: link.object.handle %}</span><span class="qc-category-name">{{ link.title | escape }}</span></a>
+        {% else %}
+          <a class="qc-category-tile" href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{% render 'qc-category-label', category: link.object, title: link.title %}</a>
+        {% endif %}
+      {% else %}
+        {% for collection in collections %}<a class="qc-category-tile" href="{{ collection.url }}">{% render 'qc-category-label', category: collection, title: collection.title %}</a>
+        {% else %}<a class="qc-category-tile" href="{{ routes.all_products_collection_url }}">{% assign category_title = 'qc.categories' | t %}{% render 'qc-category-label', title: category_title %}</a>{% endfor %}
+      {% endfor %}
+    </div>
+  </nav>
+{% endif %}

@@ -1,0 +1,147 @@
+{
+  "images": {
+    "B000OZEY3A/B000OZEY3A_06.jpg": {
+      "url": "https://cdn.shopify.com/s/files/1/0784/5622/5905/files/B000OZEY3A_06.jpg?v=1792584237",
+      "fileId": "gid://shopify/MediaImage/46221064339569",
+      "filename": "B000OZEY3A_06.jpg",
+      "alt": "Double A - Printer Copy Paper, Size A4, GSM 80, 500 Pages Ream - White"
+    },
+    "B000OZEY3A/B000OZEY3A_07.jpg": {
+      "url": "https://cdn.shopify.com/s/files/1/0784/5622/5905/files/B000OZEY3A_07.jpg?v=1792584243",
+      "fileId": "gid://shopify/MediaImage/46221068927089",
+      "filename": "B000OZEY3A_07.jpg",
+      "alt": "Double A - Printer Copy Paper, Size A4, GSM 80, 500 Pages Ream - White"
+    },
+    "B000OZEY3A/B000OZEY3A_08.jpg": {
+      "url": "https://cdn.shopify.com/s/files/1/0784/5622/5905/files/B000OZEY3A_08.jpg?v=1792584246",
+      "fileId": "gid://shopify/MediaImage/46221072040049",
+      "filename": "B000OZEY3A_08.jpg",
+      "alt": "Double A - Printer Copy Paper, Size A4, GSM 80, 500 Pages Ream - White"
+    },
+    "B000OZEY3A/B000OZEY3A_09.jpg": {
+      "url": "https://cdn.shopify.com/s/files/1/0784/5622/5905/files/B000OZEY3A_09.jpg?v=1792584250",
+      "fileId": "gid://shopify/MediaImage/46221074825329",
+      "filename": "B000OZEY3A_09.jpg",
+      "alt": "Double A - Printer Copy Paper, Size A4, GSM 80, 500 Pages Ream - White"
+    },
+    "B000OZEY3A/B000OZEY3A_10.jpg": {
+      "url": "https://cdn.shopify.com/s/files/1/0784/5622/5905/files/B000OZEY3A_10.jpg?v=1792584255",
+      "fileId": "gid://shopify/MediaImage/46221076660337",
+      "filename": "B000OZEY3A_10.jpg",
+      "alt": "Double A - Printer Copy Paper, Size A4, GSM 80, 500 Pages Ream - White"
+    },
+    "B000OZEY3A/B000OZEY3A_11.jpg": {
+      "url": "https://cdn.shopify.com/s/files/1/0784/5622/5905/files/B000OZEY3A_11.jpg?v=1792584259",
+      "fileId": "gid://shopify/MediaImage/46221077250161",
+      "filename": "B000OZEY3A_11.jpg",
+      "alt": "Double A - Printer Copy Paper, Size A4, GSM 80, 500 Pages Ream - White"
+    },
+    "B000OZEY3A/B000OZEY3A_12.jpg": {
+      "url": "https://cdn.shopify.com/s/files/1/0784/5622/5905/files/B000OZEY3A_12.jpg?v=1792584262",
+      "fileId": "gid://shopify/MediaImage/46221077905521",
+      "filename": "B000OZEY3A_12.jpg",
+      "alt": "Double A - Printer Copy Paper, Size A4, GSM 80, 500 Pages Ream - White"
+    },
+    "B000OZEY3A/B000OZEY3A_13.jpg": {
+      "url": "https://cdn.shopify.com/s/files/1/0784/5622/5905/files/B000OZEY3A_13.jpg?v=1792584265",
+      "fileId": "gid://shopify/MediaImage/46221078626417",
+      "filename": "B000OZEY3A_13.jpg",
+      "alt": "Double A - Printer Copy Paper, Size A4, GSM 80, 500 Pages Ream - White"
+    }
+  },
+  "products": {
+    "B000OZEY3A": {
+      "id": "gid://shopify/Product/15411677560945",
+      "handle": "double-a-everyday-a4-printing-paper-white-80gsm-500-pcs",
+      "status": "ACTIVE",
+      "variants": {
+        "nodes": [
+          {
+            "id": "gid://shopify/ProductVariant/67675148124273",
+            "sku": "MF-325273",
+            "barcode": "8856976000016",
+            "price": "30.70",
+            "compareAtPrice": "38.00",
+            "inventoryQuantity": 11,
+            "inventoryItem": {
+              "id": "gid://shopify/InventoryItem/69660091187313",
+              "tracked": true
+            }
+          }
+        ],
+        "pageInfo": {
+          "hasNextPage": false,
+          "endCursor": "eyJsYXN0X2lkIjo2NzY3NTE0ODEyNDI3MywibGFzdF92YWx1ZSI6MX0="
+        }
+      },
+      "media": {
+        "nodes": [
+          {
+            "id": "gid://shopify/MediaImage/46221040255089",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221043859569",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221048119409",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221052084337",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221056245873",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221064339569",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221068927089",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221072040049",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221074825329",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221076660337",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221077250161",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221077905521",
+            "status": "READY"
+          },
+          {
+            "id": "gid://shopify/MediaImage/46221078626417",
+            "status": "READY"
+          }
+        ],
+        "pageInfo": {
+          "hasNextPage": false,
+          "endCursor": "eyJsYXN0X2lkIjo0NjIyMTA3ODYyNjQxNywibGFzdF92YWx1ZSI6IjEzIn0="
+        }
+      },
+      "stage": "published",
+      "updatedExisting": true,
+      "sourceStock": 11,
+      "price": "30.70",
+      "compareAtPrice": "38.00",
+      "imageCount": 13,
+      "identityIssue": null
+    }
+  },
+  "errors": []
+}

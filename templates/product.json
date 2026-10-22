@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-product",
+      "settings": {}
+    },
+    "related": {
+      "type": "qc-recommendations",
+      "settings": {
+        "heading": "A few thoughtful alternatives",
+        "intent": "related"
+      }
+    },
+    "complementary": {
+      "type": "qc-recommendations",
+      "settings": {
+        "heading": "Make it a useful little bundle",
+        "intent": "complementary"
+      }
+    },
+    "reviews": {
+      "type": "qc-product-reviews",
+      "settings": {}
+    },
+    "recent": {
+      "type": "qc-recent",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "related",
+    "complementary",
+    "reviews",
+    "recent"
+  ]
+}

@@ -1,0 +1,114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Tell us what you need.",
+        "heading_size": "h2",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "contact_help": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "Let’s get you to the right place.",
+        "intro": "A few details make an enquiry easier to understand."
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "Asking about a product?",
+            "answer": "<p>Include the product name or page link, and the size, pack or compatibility detail you want to check. The current illustrated products are samples, not live stock.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Asking about delivery?",
+            "answer": "<p>Tell us the Dubai area you have in mind. Delivery coverage and timings are still being finalised; this preview does not confirm serviceability.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Something on the site isn’t working?",
+            "answer": "<p>Tell us which page you were on and what you expected to happen. Your device and browser name are useful too.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "What should I leave out of my message?",
+            "answer": "<p>Please do not send card numbers, passwords or one-time login codes. A product link and a clear description are enough to begin.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2",
+        "q3"
+      ]
+    },
+    "discover": {
+      "type": "commerce-stories",
+      "settings": {
+        "heading": "For the everyday in between.",
+        "layout": "banners"
+      },
+      "blocks": {
+        "s0": {
+          "type": "story",
+          "settings": {
+            "title": "A little order for your desk.",
+            "copy": "Stationery, paper and practical supplies for the working day.",
+            "label": "Explore office supplies",
+            "link": "/pages/departments#office-supplies",
+            "art": "office",
+            "tone": "olive"
+          }
+        },
+        "s1": {
+          "type": "story",
+          "settings": {
+            "title": "A fresh start at the sink.",
+            "copy": "Make space for the care essentials that belong in your daily routine.",
+            "label": "Browse personal care",
+            "link": "/pages/departments#bath-body",
+            "art": "wash",
+            "tone": "cream"
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "form",
+    "contact_help",
+    "discover"
+  ]
+}

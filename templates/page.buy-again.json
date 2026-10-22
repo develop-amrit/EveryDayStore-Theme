@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-buy-again",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

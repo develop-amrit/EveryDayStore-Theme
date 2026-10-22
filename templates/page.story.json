@@ -1,0 +1,163 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "commerce-editorial",
+      "settings": {
+        "heading": "Life has a lot of little lists.",
+        "primary": true,
+        "text": "<p>Something for the kitchen. Something for the changing bag. Something to keep your phone going. We are bringing those small everyday needs together.</p>",
+        "art": "pouch",
+        "kicker": "Our idea",
+        "note": "Working brand preview. Name, launch assortment and service details are still being finalised.",
+        "link": "/pages/departments",
+        "label": "Explore departments",
+        "tone": "forest"
+      }
+    },
+    "principles": {
+      "type": "commerce-stories",
+      "settings": {
+        "heading": "A little thought before you add.",
+        "layout": "guides"
+      },
+      "blocks": {
+        "s0": {
+          "type": "story",
+          "settings": {
+            "title": "A little order for your desk.",
+            "copy": "Stationery, paper and practical supplies for the working day.",
+            "label": "Explore office supplies",
+            "link": "/pages/departments#office-supplies",
+            "art": "office",
+            "tone": "olive"
+          }
+        },
+        "s1": {
+          "type": "story",
+          "settings": {
+            "title": "Make room for the routine.",
+            "copy": "Compare pack sizes and storage space. The right everyday staple is one that fits your home.",
+            "label": "Explore Home",
+            "link": "/pages/departments#home",
+            "art": "towels",
+            "tone": "cream"
+          }
+        },
+        "s2": {
+          "type": "story",
+          "settings": {
+            "title": "Pack the small things.",
+            "copy": "Keep everyday essentials organised with a useful pouch and a place for the small things.",
+            "label": "Explore home essentials",
+            "link": "/pages/departments#home",
+            "art": "pouch",
+            "tone": "sand"
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1",
+        "s2"
+      ]
+    },
+    "story": {
+      "type": "commerce-editorial",
+      "settings": {
+        "heading": "Useful is the whole idea.",
+        "text": "<p>A broad store should still feel simple. Clear pack details, understandable choices and useful departments are the foundation we are building for Dubai.</p><p>From a household refill to a thoughtful gift or supplies for the working day, the aim is to bring everyday lists together in one place.</p>",
+        "art": "towels",
+        "tone": "cream",
+        "kicker": "Made for everyday shopping",
+        "link": "/pages/departments",
+        "label": "Meet the departments"
+      }
+    },
+    "moments": {
+      "type": "commerce-stories",
+      "settings": {
+        "heading": "What does your day need?",
+        "layout": "banners"
+      },
+      "blocks": {
+        "s0": {
+          "type": "story",
+          "settings": {
+            "title": "The cupboard top-up.",
+            "copy": "From breakfast staples to the little things you reach for every day.",
+            "label": "Explore pantry",
+            "link": "/pages/departments#grocery",
+            "art": "oats",
+            "tone": "cream"
+          }
+        },
+        "s1": {
+          "type": "story",
+          "settings": {
+            "title": "Small care. Big part of the day.",
+            "copy": "A place for baby-care essentials, alongside the rest of your household list.",
+            "label": "Explore baby care",
+            "link": "/pages/departments#baby-products",
+            "art": "wipes",
+            "tone": "sand"
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1"
+      ]
+    },
+    "questions": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "What we’re building towards.",
+        "intro": ""
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "Why one store for different categories?",
+            "answer": "<p>Everyday shopping rarely follows a single category. Baby essentials, a household refill and supplies for your desk can belong on the same list.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "What does useful mean here?",
+            "answer": "<p>Products with clear information, understandable pack or variant choices and a known fulfilment route. The final selection still needs catalogue approval.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Is this store open for orders?",
+            "answer": "<p>Not yet. This is the working storefront for review. Product data and the operating setup will be confirmed before opening.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "principles",
+    "story",
+    "moments",
+    "questions"
+  ]
+}

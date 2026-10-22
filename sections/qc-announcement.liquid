@@ -1,0 +1,60 @@
+<div class="qc-announcement" data-announcement><div class="qc-wrap">{% for block in section.blocks %}<span data-message{% unless forloop.first %} hidden{% endunless %} {{ block.shopify_attributes }}>{% if block.settings.fees %}{% assign lower = settings.qc_mid_threshold | default: 49 | times: 100 | money_without_currency | prepend: ' ' | prepend: shop.currency %}{% assign upper = settings.qc_free_delivery | default: 99 | times: 100 | money_without_currency | prepend: ' ' | prepend: shop.currency %}{% assign low_fee = settings.qc_fee_low | default: '5.99' | times: 100 | round | money_without_currency | prepend: ' ' | prepend: shop.currency %}{% assign mid_fee = settings.qc_fee_mid | default: '3.99' | times: 100 | round | money_without_currency | prepend: ' ' | prepend: shop.currency %}{{ 'qc.delivery_below' | t: threshold: lower, fee: low_fee }} · {{ 'qc.delivery_middle' | t: threshold: lower, fee: mid_fee }} · {{ 'qc.delivery_free' | t: threshold: upper }}{% else %}{{ block.settings.text | escape }}{% if block.settings.threshold %} {{ settings.qc_free_delivery | default: 50 | times: 100 | money_without_currency | prepend: ' ' | prepend: shop.currency }}{% endif %}{% endif %}</span>{% endfor %}<button type="button" data-dismiss aria-label="{{ 'qc.close' | t }}">×</button></div></div>
+{% schema %}
+{
+  "name": "Announcement bar",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "message",
+      "name": "Message",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Message",
+          "default": "Order today. Delivered next day."
+        },
+        {
+          "type": "checkbox",
+          "id": "threshold",
+          "label": "Append free delivery threshold",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "fees",
+          "label": "Show all delivery fee tiers",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Announcement bar",
+      "blocks": [
+        {
+          "type": "message",
+          "settings": {
+            "text": "Dubai essentials, delivered next day."
+          }
+        },
+        {
+          "type": "message",
+          "settings": {
+            "text": "Free delivery on orders from",
+            "threshold": true
+          }
+        },
+        {
+          "type": "message",
+          "settings": {
+            "text": "One useful basket. So many everyday favourites."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

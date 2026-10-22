@@ -1,0 +1,72 @@
+{% assign show_sidebar = false %}
+{% if template.name == 'collection' and section.settings.show_category_sidebar != false %}{% assign show_sidebar = true %}{% endif %}
+{% if show_sidebar %}{{ 'qc-category-sidebar.css' | asset_url | stylesheet_tag }}{% endif %}
+<section class="qc-wrap qc-section{% if show_sidebar %} qc-collection-layout{% endif %}">
+  {% if show_sidebar %}
+    {% assign sidebar_menu = section.settings.sidebar_menu | default: settings.qc_catalog_menu %}
+    {% render 'qc-collection-sidebar', menu: sidebar_menu, current_collection: collection %}
+  {% endif %}
+  <div class="qc-catalog-content">
+    <h1>{% if template.name == 'search' %}{{ 'qc.search' | t }}{% else %}{{ collection.title | escape }}{% endif %}</h1>
+    {% if template.name == 'search' %}
+      <form class="qc-inline-search" action="{{ routes.search_url }}" role="search"><label>{{ 'qc.search' | t }}<input name="q" type="search" value="{{ search.terms | escape }}"></label><input name="type" type="hidden" value="product"><button class="qc-button">{{ 'qc.search' | t }}</button></form>
+      {% assign source = search %}
+    {% else %}
+      {% if collection.description != blank %}<div class="qc-prose">{{ collection.description }}</div>{% endif %}
+      {% assign source = collection %}
+    {% endif %}
+    {% if show_sidebar %}<details class="qc-collection-filters" open><summary>{{ 'qc.filter_sort' | t }}</summary>{% endif %}{% render 'qc-filters', results: source %}{% if show_sidebar %}</details>{% endif %}
+    {% assign shown = 0 %}
+    {% if template.name == 'search' %}
+      {% paginate search.results by section.settings.limit %}
+        <div class="qc-products qc-grid">
+          {% for item in search.results %}{% if item.object_type == 'product' %}{% if item.available or item.metafields.custom.show_when_sold_out.value == true %}{% render 'qc-product-card', product: item %}{% assign shown = shown | plus: 1 %}{% endif %}{% endif %}{% endfor %}
+          {% if shown == 0 %}<p class="qc-empty">{{ 'qc.search_empty' | t }}</p>{% endif %}
+        </div>
+        {% render 'pagination', paginate: paginate %}
+      {% endpaginate %}
+    {% else %}
+      {% paginate collection.products by section.settings.limit %}
+        <div class="qc-products qc-grid">
+          {% for item in collection.products %}{% if item.available or item.metafields.custom.show_when_sold_out.value == true %}{% render 'qc-product-card', product: item %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}
+          {% if shown == 0 %}<div class="qc-empty"><h2>{{ 'qc.empty_collection' | t }}</h2><p>{{ 'qc.category_empty_help' | t }}</p></div>{% endif %}
+        </div>
+        {% render 'pagination', paginate: paginate %}
+      {% endpaginate %}
+    {% endif %}
+  </div>
+</section>
+{% if show_sidebar %}<script src="{{ 'qc-category-sidebar.js' | asset_url }}" defer></script>{% endif %}
+{% schema %}
+{
+  "name": "catalog",
+  "settings": [
+    {
+      "type": "range",
+      "id": "limit",
+      "label": "Products per page",
+      "min": 12,
+      "max": 48,
+      "step": 12,
+      "default": 24
+    },
+    {
+      "type": "checkbox",
+      "id": "show_category_sidebar",
+      "label": "Show category sidebar",
+      "default": true
+    },
+    {
+      "type": "link_list",
+      "id": "sidebar_menu",
+      "label": "Sidebar menu",
+      "info": "Uses the Storefront and delivery catalogue menu when left blank."
+    }
+  ],
+  "presets": [
+    {
+      "name": "catalog"
+    }
+  ]
+}
+{% endschema %}

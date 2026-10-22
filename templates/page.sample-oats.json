@@ -1,0 +1,98 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-essentials",
+      "settings": {
+        "heading": "Explore the selection",
+        "limit": 8
+      }
+    },
+    "shopping_guides": {
+      "type": "commerce-stories",
+      "settings": {
+        "heading": "A little thought before you add.",
+        "layout": "guides"
+      },
+      "blocks": {
+        "s0": {
+          "type": "story",
+          "settings": {
+            "title": "A little order for your desk.",
+            "copy": "Stationery, paper and practical supplies for the working day.",
+            "label": "Explore office supplies",
+            "link": "/pages/departments#office-supplies",
+            "art": "office",
+            "tone": "olive"
+          }
+        },
+        "s1": {
+          "type": "story",
+          "settings": {
+            "title": "Make room for the routine.",
+            "copy": "Compare pack sizes and storage space. The right everyday staple is one that fits your home.",
+            "label": "Explore Home",
+            "link": "/pages/departments#home",
+            "art": "towels",
+            "tone": "cream"
+          }
+        },
+        "s2": {
+          "type": "story",
+          "settings": {
+            "title": "Pack the small things.",
+            "copy": "Keep everyday essentials organised with a useful pouch and a place for the small things.",
+            "label": "Explore home essentials",
+            "link": "/pages/departments#home",
+            "art": "pouch",
+            "tone": "sand"
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1",
+        "s2"
+      ]
+    },
+    "buying_notes": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "Know your pantry staple.",
+        "intro": "Read the label before making it part of your routine."
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "What should I compare?",
+            "answer": "<p>Check the product type, net weight, ingredients, allergen statement and preparation instructions on the final pack.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Are dietary claims confirmed?",
+            "answer": "<p>No dietary, gluten-free or allergen claims are made for this illustrated sample. Use approved manufacturer information for the real product.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "How should I store it?",
+            "answer": "<p>Follow the actual pack’s storage guidance and date markings. Final product information will be added with the catalogue.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "buying_notes",
+    "shopping_guides"
+  ]
+}

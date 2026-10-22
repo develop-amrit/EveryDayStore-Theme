@@ -1,0 +1,19 @@
+{%- capture fact_rows -%}
+  {%- for block in section.blocks -%}
+    {%- assign field = product.metafields.commerce[block.settings.key] -%}
+    {%- if field != blank -%}
+      <div class="dc-product-facts__row" {{ block.shopify_attributes }}><dt>{{ block.settings.label | escape }}</dt><dd>{{ field | metafield_tag }}</dd></div>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{% if fact_rows != blank %}
+<section class="page-width dc-section dc-product-facts" aria-labelledby="Facts-{{ section.id }}">
+  <h2 id="Facts-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+  <dl class="dc-product-facts__list">{{ fact_rows }}</dl>
+</section>
+{% elsif request.design_mode %}
+<section class="page-width dc-section dc-product-facts"><h2>{{ section.settings.heading | escape }}</h2><p>Add approved commerce product metafields to show specification rows here. Empty rows stay hidden on the storefront.</p></section>
+{% endif %}
+{% schema %}
+{"name":"Commerce product facts","enabled_on":{"templates":["product"]},"settings":[{"type":"text","id":"heading","label":"Heading","default":"The details that matter."}],"blocks":[{"type":"fact","name":"Product fact","settings":[{"type":"text","id":"label","label":"Row label"},{"type":"text","id":"key","label":"Metafield key in commerce namespace","info":"Use an approved single-line or multi-line text metafield; for example pack_size."}]}],"max_blocks":12,"presets":[{"name":"Commerce product facts"}]}
+{% endschema %}

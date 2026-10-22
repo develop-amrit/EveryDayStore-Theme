@@ -1,0 +1,13 @@
+<section class="qc-wrap qc-section" data-main-product="{{ product.handle | escape }}">{% if product.available or product.metafields.custom.show_when_sold_out.value == true %}{% assign current_variant = product.selected_or_first_available_variant %}<div class="qc-product-layout"><div class="qc-gallery">{% for image in product.images %}{% if forloop.first %}{{ image | image_url: width: 1400 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '400, 700, 1000, 1400', sizes: '(min-width: 990px) 50vw, 100vw' }}{% else %}{{ image | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '300, 600, 1000', sizes: '(min-width: 990px) 25vw, 50vw' }}{% endif %}{% else %}{% render 'qc-product-placeholder', product: product %}{% endfor %}</div><div class="qc-product-details"><p class="qc-eyebrow">{{ product.vendor | escape }}</p><h1>{{ product.metafields.custom.card_title.value | default: product.title | remove_first: '[TEST] ' | escape }}</h1>{% render 'qc-option-context', product: product, section_id: section.id %}<div class="qc-product-actions"><button type="button" data-wishlist="{{ product.handle | escape }}" aria-pressed="false">♡ {{ 'qc.wishlist' | t }}</button><label><input type="checkbox" data-compare="{{ product.handle | escape }}">{{ 'qc.compare' | t }}</label></div>{% unless product.available %}{% render 'qc-restock', product: product %}{% endunless %}<h2>{{ 'qc.product_description' | t }}</h2><div class="qc-prose">{{ product.description }}</div><dl class="qc-specs">{% for entry in product.metafields.custom.specifications.value %}<dt>{{ entry.first | escape }}</dt><dd>{{ entry.last | escape }}</dd>{% endfor %}</dl></div></div>{% else %}<h1>{{ 'qc.product_unavailable' | t }}</h1><p>{{ 'qc.availability_hidden' | t }}</p><a href="{{ routes.all_products_collection_url }}">{{ 'qc.choose_products' | t }}</a>{% endif %}</section>
+{% schema %}
+{
+  "name": "product",
+  "settings": [],
+  "presets": [
+    {
+      "name": "product"
+    }
+  ]
+}
+{% endschema %}
+

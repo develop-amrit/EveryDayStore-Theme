@@ -1,0 +1,5 @@
+{
+  "set": "mutation ImportProduct($input:ProductSetInput!,$identifier:ProductSetIdentifiers){productSet(input:$input,identifier:$identifier,synchronous:true){product{id handle status variants(first:2){nodes{id sku barcode price compareAtPrice inventoryQuantity inventoryItem{id tracked}}pageInfo{hasNextPage endCursor}}media(first:20){nodes{id status}pageInfo{hasNextPage endCursor}}}userErrors{message field}}}",
+  "activate": "mutation ActivateImportedProduct($product:ProductUpdateInput!){productUpdate(product:$product){product{id status}userErrors{message}}}",
+  "publish": "mutation PublishImportedProduct($id:ID!,$input:[PublicationInput!]!){publishablePublish(id:$id,input:$input){userErrors{message}}}"
+}

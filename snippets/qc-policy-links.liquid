@@ -1,0 +1,2 @@
+{% doc %}Shopify policies with explicitly draft-page fallbacks.{% enddoc %}
+<a href="{{ shop.privacy_policy.url | default: '/pages/privacy-policy' }}">{{ 'qc.privacy' | t }}</a><a href="{{ shop.terms_of_service.url | default: '/pages/terms-conditions' }}">{{ 'qc.terms_link' | t }}</a><a href="{{ shop.refund_policy.url | default: '/pages/refund-policy' }}">{{ 'qc.refund' | t }}</a><a href="{{ shop.shipping_policy.url | default: '/pages/shipping-policy' }}">{{ 'qc.shipping_policy' | t }}</a>

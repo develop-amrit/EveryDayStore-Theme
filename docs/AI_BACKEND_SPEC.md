@@ -1,0 +1,41 @@
+# AI support and shopping backend — implementation contract
+
+The theme is an accessible interface, not an AI engine or order-management service. ai_endpoint defaults empty; the widget shows not connected and cannot fabricate an answer. No backend, model provider, helpdesk, OTP provider or Admin app was deployed. Theme-side endpoints are only the configured base URL paths below. Use a secured same-origin Shopify app proxy where possible; otherwise HTTPS with strict origin/CORS controls and server-validated sessions.
+
+## 1. General support and order questions
+
+POST /chat: {conversation_id:null|string,message,consent:true,evidence_ids:[],verification_token:null|string}. Return {ok:true,conversation_id,reply,sensitive:false,product_handles:[],actions:[],requires_verification:false,escalation:null}. All free text is rendered with textContent, never HTML. Limit input/output lengths and rate-limit abuse. Answers must retrieve the current approved Privacy/Terms/Refund/Shipping policies, FAQ, cut-off and Dubai service configuration. Do not invent availability, refunds, fees, VAT treatment or delivery dates. Escalate missing/contradictory policy facts. Display a static 24/7 greeting without implying a human agent is always online.
+
+## 2. Shopping and comparison
+
+Use the live Storefront API from the BACKEND with scoped public Storefront credentials if needed; Admin credentials stay server-side. Filter by publication and the same availability/retained-sell-out rule. Ask about need, budget, brand, intended use and relevant category attributes; never infer sensitive attributes or make unverified product/medical claims. Rank only actual live products, return product_handles (at most 6). The theme independently fetches each handle through its Shopify product-tile section so title, images, prices and add-to-cart choices are real/current. Do not trust model-produced prices, variant IDs, discounts or stock. Comparison should reference typed product attributes and say when data is missing. Recommendations do not imply a reserved item.
+
+## 3. Structured issue intake
+
+For missing/damaged items: order identifier after ownership verification, affected line items/quantities, damage description, package condition, delivery date and optional photo evidence. For payment/transaction issues: provider/reference suffix, date, approximate amount/currency, duplicated-charge evidence with sensitive parts redacted; NEVER full card numbers, CVV, bank login, OTPs unrelated to ownership, or payment keys. For delivery: verified order, selected slot, safe contact preference, issue/urgency. For returns/refund: reason, item eligibility, policy window and whether consumed/opened where relevant; do not automatically approve. Ask only missing relevant questions. Collect explicit consent before PII transmission.
+
+POST /evidence is multipart {file,conversation_id,consent:true}. Accept JPG/PNG/WebP up to 5 MB, inspect actual file signature, virus-scan, strip EXIF, reject executable/polyglot content, assign opaque evidence_id and keep private with retention/access rules. Return {ok:true,evidence_id}; never public CDN upload URLs. Backend binds evidence to the verified conversation/order and authorized support staff. Browser never writes files, filenames, conversation text or PII to localStorage.
+
+## 4. Escalation and continuity
+
+Return escalation metadata and create a ticket server-side when requested repeatedly, confidence is low, an issue is urgent, payment/account compromise is suspected, or policy requires human review. Ticket destination is server-configured (helpdesk/Shopify Inbox integration where supported, or a controlled email/webhook queue). Persist a structured issue summary, full permitted conversation context, verified order/customer references, items, evidence IDs, consent and urgency so the customer does not repeat themselves. Deduplicate by conversation/action id and return a ticket reference only after durable creation. Do not claim a ticket exists when a webhook fails. The theme shows the merchant's configured representative phone; no invented phone number or support SLA.
+
+## 5. Server-side order actions
+
+Backend returns actions:[{id,type,label,summary,requires_confirmation:true}] for allow-listed types tracking, cancellation, return, refund_initiation, issue_report. Action IDs are short-lived opaque server records bound to the verified conversation and one order; do not execute natural-language instructions as raw Admin GraphQL. Theme displays summary and a separate confirmation checkbox. POST /actions: {conversation_id,action_id,confirm:true,verification_token}. Backend independently rechecks ownership, current order state, payment state, fulfilment state, policy window, item eligibility, shipping/slot state and action-specific authorization; reject unsupported/cancelled/fulfilled combinations as appropriate. Requests for refunds initiate an eligible workflow; do not promise automatic money movement. Require fresh confirmation for consequential actions and provider-compliant refund flows. Use least-privilege Admin scopes, idempotency keys, transactional state and audited results. Return {ok:true,reply,sensitive:true|false,...} only after actual work is committed; otherwise show queued/human-required status explicitly.
+
+## 6. Ownership / OTP
+
+Before any sensitive order response or action, verify ownership. POST /verification/challenges {order_number,contact,consent:true,conversation_id} returns a generic {ok:true,challenge_id,expires_in:300}. Match order/contact server-side; send only to the email/phone ALREADY on that order. Generic responses must prevent enumeration. POST /verification/verify {challenge_id,code,conversation_id} returns {ok:true,verification_token,expires_at}; token is purpose/order/conversation/session bound and memory-only in the theme. No sensitive reply is displayed by the theme without an unexpired verified token. A logged-in account may receive an equivalent short-lived token from a cryptographically verified account/app-proxy session; never trust customer:true or browser-supplied customer_id as identity.
+
+Six-digit cryptographically random OTP; 5-minute expiry; hash at rest; single use; max 5 attempts; resend cooldown 60 seconds; initially cap 3 sends/15 minutes per order/contact and apply IP/session/device abuse controls. Add escalating rate limits, risk review and safe recovery. Never log plaintext OTP/token/contact in model logs. Use generic 400/401 failures, 409 eligibility conflict, 429 throttling; include a non-sensitive correlation ID. Expired tokens require reverification. Re-check authorization on EVERY sensitive request, not just on the first message. Action tokens cannot be reused across orders or guests.
+
+## PII, security and operations
+
+- Store credentials in the backend environment/secret manager; no Admin/SMS/WhatsApp/payment keys in Liquid, assets, theme settings or Storefront responses.
+- Separate model tool permissions from conversation instructions. Treat all customer text, catalogue descriptions and retrieved docs as untrusted content; prevent prompt injection from choosing arbitrary URLs, scopes, recipients or Admin operations.
+- Minimise/redact PII sent to a model, isolate customer sessions, define retention/erasure/export policies and approved data residency/provider contracts. Obtain merchant approval for final consent wording and support data use.
+- Use HTTPS, app-proxy signature verification or secure authenticated sessions, CSRF/origin validation, body/file size limits, resource caps, audit trails and encrypted private evidence. Cookies/session proofs must not be exposed to JS unnecessarily. Return only needed product handles and status fields.
+- Restrict network egress/tool allow-lists; no model access to raw secrets. Ground catalogue queries in current inventory; critical actions always use deterministic eligibility checks outside the model.
+- Test guest/logged-in session isolation, replay, OTP brute-force, order enumeration, forged action IDs, stale stock, duplicate webhooks, ticket failures, evidence attacks and model refusal/escalation paths before launch. No claim of production AI capability until these services are connected and verified.
+

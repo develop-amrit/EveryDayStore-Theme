@@ -1,0 +1,75 @@
+<section class="qc-section qc-wrap qc-reveal"><div class="qc-promos">{% for block in section.blocks %}<a class="qc-promo" href="{{ block.settings.collection.url | default: routes.all_products_collection_url }}" {{ block.shopify_attributes }}><div><span class="qc-eyebrow">{{ block.settings.eyebrow | escape }}</span><h2>{{ block.settings.heading | escape }}</h2><p>{{ block.settings.text | escape }}</p><span class="qc-text-link">{{ block.settings.label | escape }} ↗</span></div>{% if block.settings.image %}{{ block.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '180, 360, 540, 750, 1000', sizes: '(min-width: 990px) 25vw, 50vw' }}{% elsif block.settings.collection.featured_image %}{{ block.settings.collection.featured_image | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '180, 360, 540, 750, 1000', sizes: '(min-width: 990px) 25vw, 50vw' }}{% else %}{{ 'collection-1' | placeholder_svg_tag: 'qc-placeholder' }}{% endif %}</a>{% endfor %}</div></section>
+{% schema %}
+{
+  "name": "Collection promo tiles",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "promo",
+      "name": "Promo tile",
+      "settings": [
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Eyebrow",
+          "default": "THE CUPBOARD EDIT"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Small top-up. Big difference."
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Description",
+          "default": "Make space for your daily favourites."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Link label",
+          "default": "Explore the edit"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Collection promo tiles",
+      "blocks": [
+        {
+          "type": "promo",
+          "settings": {
+            "eyebrow": "THE PANTRY EDIT",
+            "heading": "Good mornings start here.",
+            "text": "Stock the shelf for a better breakfast.",
+            "label": "Explore pantry"
+          }
+        },
+        {
+          "type": "promo",
+          "settings": {
+            "eyebrow": "HOME, TAKEN CARE OF",
+            "heading": "Little helpers. Lighter days.",
+            "text": "The practical things that keep your home happy.",
+            "label": "Discover home essentials"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

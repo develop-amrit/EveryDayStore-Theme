@@ -1,0 +1,26 @@
+{
+  "name": "Footer",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "qc-footer",
+      "settings": {
+        "wordmark": "everyday"
+      },
+      "blocks": {
+        "help": {
+          "type": "links",
+          "settings": {
+            "heading": "Here to help"
+          }
+        }
+      },
+      "block_order": [
+        "help"
+      ]
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

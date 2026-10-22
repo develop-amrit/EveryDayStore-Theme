@@ -1,0 +1,9 @@
+{% doc %}Homepage dialogs and translated JS configuration.{% enddoc %}
+<dialog id="qc-cart" class="qc-cart-dialog" aria-labelledby="qc-cart-title"><div class="qc-dialog-heading"><h2 id="qc-cart-title">{{ 'qc.cart' | t }}</h2><button data-dialog-close aria-label="{{ 'qc.close' | t }}">×</button></div><div data-cart-host>{% render 'qc-cart-contents' %}</div><p class="qc-status" role="status" data-cart-status></p></dialog>
+<dialog id="qc-variants" class="qc-variant-dialog" aria-label="{{ 'qc.choose_variant' | t }}"><button class="qc-dialog-close" data-dialog-close aria-label="{{ 'qc.close' | t }}">×</button><div data-variant-host></div></dialog><p class="visually-hidden" role="status" data-qc-status></p>
+{% capture qc_cart_config %}{"root":{{ routes.root_url | json }},"predictive":{{ routes.predictive_search_url | json }},"cart":{{ cart | json }}}{% endcapture %}
+<script type="application/json" id="qc-config">{{ qc_cart_config | replace: '<', '\u003c' }}</script>
+<script type="application/json" id="qc-labels">{"overlap":{{ 'qc.overlap' | t | json }},"refresh_error":{{ 'qc.refresh_error' | t | json }},"add":{{ 'qc.add' | t | json }},"choose":{{ 'qc.choose' | t | json }},"increase":{{ 'qc.increase' | t | json }},"decrease":{{ 'qc.decrease' | t | json }},"error":{{ 'qc.error' | t | json }},"updated":{{ 'qc.updated' | t | json }},"search_empty":{{ 'qc.search_empty' | t | json }},"search_loading":{{ 'qc.search_loading' | t | json }},"search_all":{{ 'qc.search_all' | t | json }},"ended":{{ 'qc.ended' | t | json }},"days":{{ 'qc.days' | t | json }},"hours":{{ 'qc.hours' | t | json }},"time_minutes":{{ 'qc.time_minutes' | t | json }},"seconds":{{ 'qc.seconds' | t | json }},"pause":{{ 'qc.pause' | t | json }},"play":{{ 'qc.play' | t | json }}}</script>
+
+
+

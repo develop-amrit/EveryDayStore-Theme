@@ -1,0 +1,23 @@
+{% assign shown = 0 %}
+{% if predictive_search.performed %}{% assign candidates = predictive_search.resources.products %}{% assign terms = predictive_search.terms %}{% else %}{% assign candidates = search.results %}{% assign terms = search.terms %}{% endif %}
+{% capture matches %}
+  {% for item in candidates limit: 50 %}
+    {% if item.available or item.metafields.custom.show_when_sold_out.value == true %}
+      {% assign display_title = item.metafields.custom.card_title.value | default: item.title | remove_first: '[TEST] ' %}
+      <a href="{{ item.url }}">{% if item.featured_image %}{{ item.featured_image | image_url: width: 96 | image_tag: loading: 'lazy', widths: '48, 96', sizes: '48px', alt: '' }}{% endif %}<span>{{ display_title | escape }}{% unless item.available %} · {{ 'qc.out' | t }}{% endunless %}</span></a>
+      {% assign shown = shown | plus: 1 %}{% if shown >= 5 %}{% break %}{% endif %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+<div data-predictive-results data-result-count="{{ shown }}">{{ matches }}{% if shown == 0 %}<p>{{ 'qc.search_empty' | t }}</p>{% endif %}<a href="{{ routes.search_url }}?type=product&amp;q={{ terms | url_encode }}">{{ 'qc.search_all' | t }}</a></div>
+{% schema %}
+{
+  "name": "predictive",
+  "settings": [],
+  "presets": [
+    {
+      "name": "predictive"
+    }
+  ]
+}
+{% endschema %}

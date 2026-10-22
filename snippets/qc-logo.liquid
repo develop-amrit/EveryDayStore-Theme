@@ -1,0 +1,2 @@
+{% doc %}Existing logo with the current editable wordmark as fallback.{% enddoc %}
+{% if settings.logo != blank %}{{ settings.logo | image_url: width: 360 | image_tag: widths: '90, 180, 360', sizes: '140px', class: 'qc-logo-image', alt: shop.name }}{% else %}<span class="qc-wordmark">{{ wordmark | default: shop.name | escape }}<i aria-hidden="true"></i></span>{% endif %}

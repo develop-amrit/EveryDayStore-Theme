@@ -1,0 +1,15 @@
+[environments.codex-edits]
+store = "3djevx-mu.myshopify.com"
+theme = "189489545329"
+
+[environments.sample-sections]
+store = "3djevx-mu.myshopify.com"
+theme = "189504290929"
+
+[environments.catalogue]
+store = "3djevx-mu.myshopify.com"
+theme = "189518545009"
+
+[environments.codex-edits2]
+store = "3djevx-mu.myshopify.com"
+theme = "189518545009"

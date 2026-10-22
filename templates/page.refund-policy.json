@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-policy",
+      "settings": {
+        "heading": "Refund Policy",
+        "content": "<p>FINAL WORDING REQUIRED. Confirm eligibility by category, reporting windows, evidence, approved returns, refund method and timing. Do not promise an unapproved refund policy.</p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

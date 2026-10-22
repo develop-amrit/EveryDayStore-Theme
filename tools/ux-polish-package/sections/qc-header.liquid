@@ -1,0 +1,21 @@
+<header class="qc-header"><div class="qc-wrap qc-header-row"><a class="qc-logo" href="{{ routes.root_url }}">{% render 'qc-logo', wordmark: section.settings.wordmark %}</a>{% render 'qc-area-picker' %}<form class="qc-search" action="{{ routes.search_url }}" role="search"><label class="visually-hidden" for="qc-search">{{ 'qc.search' | t }}</label>{% render 'qc-icon', name: 'search' %}<input type="search" id="qc-search" name="q" placeholder="{{ 'qc.search_hint' | t }}" autocomplete="off" aria-expanded="false" aria-controls="qc-suggestions" data-search><input type="hidden" name="type" value="product"><button aria-label="{{ 'qc.search' | t }}">↗</button><div id="qc-suggestions" class="qc-suggestions" hidden></div></form><div class="qc-header-actions"><a href="{{ pages['wishlist'].url | default: '/pages/wishlist' }}" aria-label="{{ 'qc.wishlist' | t }}">♡</a><button type="button" data-categories-open aria-label="{{ 'qc.categories' | t }}">{% render 'qc-icon', name: 'grid' %}</button>{% if shop.customer_accounts_enabled %}<a href="{{ routes.account_url }}" aria-label="{{ 'qc.account' | t }}">{% render 'qc-icon', name: 'account' %}</a>{% endif %}<a href="{{ routes.cart_url }}" data-cart-open aria-label="{{ 'qc.cart' | t }}">{% render 'qc-icon', name: 'cart' %}<span data-cart-count>{{ cart.item_count }}</span><span class="qc-header-basket-copy" data-basket-summary{% if cart.item_count == 0 %} hidden{% endif %}><span data-basket-total>{{ cart.total_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}</span></span></a></div></div><div class="qc-wrap">{% render 'qc-menu' %}</div></header><nav class="qc-mobile-tabs" aria-label="{{ 'commerce.mobile_nav' | t }}"><a href="{{ routes.root_url }}" {% if request.page_type == 'index' %}aria-current="page"{% endif %}>{% render 'qc-icon', name: 'home' %}{{ 'qc.home' | t }}</a><a href="{{ pages['categories'].url | default: '/pages/categories' }}" data-categories-open>{% render 'qc-icon', name: 'grid' %}{{ 'qc.categories' | t }}</a><a href="{{ routes.search_url }}" data-search-focus>{% render 'qc-icon', name: 'search' %}{{ 'qc.search_short' | t }}</a><a href="{{ routes.cart_url }}" data-cart-open>{% render 'qc-icon', name: 'cart' %}{{ 'qc.cart_short' | t }} <span data-cart-count>{{ cart.item_count }}</span></a></nav>
+<a class="qc-basket-summary" href="{{ routes.cart_url }}" data-cart-open data-basket-summary{% if cart.item_count == 0 %} hidden{% endif %}><span><span data-basket-count data-one="{{ 'qc.item_one' | t }}" data-other="{{ 'qc.item_other' | t }}">{{ cart.item_count }} {% if cart.item_count == 1 %}{{ 'qc.item_one' | t }}{% else %}{{ 'qc.item_other' | t }}{% endif %}</span><strong data-basket-total>{{ cart.total_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}</strong></span><span>{{ 'qc.view_basket' | t }} <span aria-hidden="true">↗</span></span></a>
+{% schema %}
+{
+  "name": "Quick commerce header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "wordmark",
+      "label": "Existing wordmark",
+      "default": "everyday"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quick commerce header"
+    }
+  ]
+}
+{% endschema %}
+

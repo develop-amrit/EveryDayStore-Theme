@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "commerce-editorial",
+      "settings": {
+        "heading": "A little help goes a long way.",
+        "primary": true,
+        "text": "<p>Find the right starting point for products, delivery and order questions. The store is currently a preview, with launch details still taking shape.</p>",
+        "art": "wash",
+        "kicker": "Help centre",
+        "note": "",
+        "link": "/pages/contact",
+        "label": "Send an enquiry",
+        "tone": "cream"
+      }
+    },
+    "shopping": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "Shopping & products.",
+        "intro": ""
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "What can I buy here?",
+            "answer": "<p>The planned departments are Grocery, Baby Products, Gifting, Bath &amp; Body, Home, Pet, HORECA and Office Supplies. Fresh perishables are outside the current launch scope. Approved products will replace the illustrative samples.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Why don’t samples have an Add button?",
+            "answer": "<p>They are design examples, not stock records or offers for sale. Prices, specifications and availability must be approved first.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "How do I choose the right variant?",
+            "answer": "<p>Review the selected size, pack and other options on the product page before adding it. Availability and price can differ by variant; approved listings will carry the final details.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Will fresh groceries be available?",
+            "answer": "<p>Fresh perishables are excluded from the current launch scope.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2",
+        "q3"
+      ]
+    },
+    "delivery": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "Delivery & payment.",
+        "intro": ""
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "Which areas are covered?",
+            "answer": "<p>The launch plan covers Dubai with next-day delivery from one warehouse and our own fleet. Exact service areas, cutoff times, operating days and slots still need confirmation. See Delivery &amp; Returns for the planned fee tiers.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Can I pay now?",
+            "answer": "<p>Ordering is not open. Payment methods will be available only after the approved provider setup is complete.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Will cash on delivery be available?",
+            "answer": "<p>No. The launch plan uses online payment and excludes cash on delivery. Available payment methods will be shown once provider setup is complete.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2"
+      ]
+    },
+    "orders": {
+      "type": "commerce-questions",
+      "settings": {
+        "heading": "Orders & support.",
+        "intro": ""
+      },
+      "blocks": {
+        "q0": {
+          "type": "question",
+          "settings": {
+            "question": "Where will I find order updates?",
+            "answer": "<p>The order-status link in your confirmation email will be the starting point once ordering opens. Delivery is planned through our own fleet; dispatch updates and notifications still need to be connected and tested.</p>"
+          }
+        },
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Can I cancel or return an order?",
+            "answer": "<p>The proposed approach includes a six-hour cancellation window and eligible seven-day returns. Exceptions and final terms remain under review. Read the combined <a href='/pages/delivery'>Delivery &amp; Returns preview</a> before launch.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "How do I contact the store?",
+            "answer": "<p>Use the contact form for an enquiry. Support ownership, operating hours and response expectations remain to be confirmed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2"
+      ]
+    },
+    "browse": {
+      "type": "commerce-stories",
+      "settings": {
+        "heading": "For the everyday in between.",
+        "layout": "banners"
+      },
+      "blocks": {
+        "s0": {
+          "type": "story",
+          "settings": {
+            "title": "A little order for your desk.",
+            "copy": "Stationery, paper and practical supplies for the working day.",
+            "label": "Explore office supplies",
+            "link": "/pages/departments#office-supplies",
+            "art": "office",
+            "tone": "olive"
+          }
+        },
+        "s1": {
+          "type": "story",
+          "settings": {
+            "title": "A fresh start at the sink.",
+            "copy": "Make space for the care essentials that belong in your daily routine.",
+            "label": "Browse personal care",
+            "link": "/pages/departments#bath-body",
+            "art": "wash",
+            "tone": "cream"
+          }
+        }
+      },
+      "block_order": [
+        "s0",
+        "s1"
+      ]
+    },
+    "finder": {
+      "type": "commerce-help-finder",
+      "settings": {}
+    },
+    "support_shell": {
+      "type": "commerce-feature-page",
+      "settings": {
+        "feature": "support",
+        "heading": "AI support"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "finder",
+    "shopping",
+    "delivery",
+    "orders",
+    "browse",
+    "support_shell"
+  ]
+}

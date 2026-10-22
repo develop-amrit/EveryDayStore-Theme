@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "qc-tracking",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

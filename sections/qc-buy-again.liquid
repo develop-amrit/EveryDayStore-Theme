@@ -1,0 +1,12 @@
+<section class="qc-wrap qc-section"><h1>{{ 'qc.buy_again' | t }}</h1>{% if customer %}<a class="qc-button" href="{{ routes.account_url }}">{{ 'qc.account_orders' | t }}</a><div data-backend-orders></div>{% paginate customer.orders by 10 %}{% for order in customer.orders %}<details class="qc-panel"><summary>{{ order.name | escape }} · {{ order.created_at | date: format: 'date' }}</summary><a class="qc-text-link" href="{{ order.customer_url }}">{{ 'qc.account_orders' | t }}</a>{% render 'qc-order-timeline', order: order %}<div class="qc-products qc-rail" tabindex="0">{% for item in order.line_items limit: 8 %}{% if item.product != blank %}{% render 'qc-product-card', product: item.product %}{% endif %}{% endfor %}</div><button type="button" class="qc-button" data-reorder data-order-id="{{ order.id }}">{{ 'qc.reorder' | t }}</button>{% capture reorder_lines %}[{% for item in order.line_items %}{"id":{{ item.variant_id | json }},"handle":{{ item.product.handle | json }},"quantity":{{ item.quantity }},"title":{{ item.title | json }}}{% unless forloop.last %},{% endunless %}{% endfor %}]{% endcapture %}<script type="application/json" data-order-items="{{ order.id }}">{{ reorder_lines | replace: '<', '\u003c' }}</script><p role="status"></p></details>{% else %}<p class="qc-integration-note">{{ 'qc.account_integration' | t }}</p>{% endfor %}{% render 'pagination', paginate: paginate %}{% endpaginate %}{% else %}<p>{{ 'qc.sign_in' | t }}</p><a class="qc-button" href="{{ routes.account_login_url }}">{{ 'qc.account' | t }}</a>{% endif %}</section>
+{% schema %}
+{
+  "name": "buy again",
+  "settings": [],
+  "presets": [
+    {
+      "name": "buy again"
+    }
+  ]
+}
+{% endschema %}

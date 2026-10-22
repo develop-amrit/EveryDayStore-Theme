@@ -1,0 +1,25 @@
+<section class="qc-wrap qc-section qc-policy-draft"><span class="qc-tag">{{ 'qc.policy_draft' | t }}</span><h1>{{ page.title | default: section.settings.heading | escape }}</h1><p>{{ 'qc.policy_notice' | t }}</p><div class="qc-prose">{{ section.settings.content }}{{ page.content }}</div><p>{{ 'qc.policy_contact' | t }}</p><a class="qc-text-link" href="{{ pages['contact'].url | default: '/pages/contact' }}">{{ 'qc.ai_human' | t }}</a></section>
+{% schema %}
+{
+  "name": "policy",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Draft policy heading",
+      "default": "Policy draft"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Draft working notes",
+      "default": "<p>FINAL WORDING REQUIRED. Confirm business identity, scope, conditions and support details before publishing.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "policy"
+    }
+  ]
+}
+{% endschema %}
