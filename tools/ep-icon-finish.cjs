@@ -1,0 +1,1 @@
+const b=require('./ep-build.cjs');let s=b.read('snippets/ep-icon.liquid').replace("{% case name %}","{% case name %}{% when 'basket', 'bottle', 'soap', 'paw', 'pencil' %}{% render 'ep-department-icon', name: name %}");b.write('snippets/ep-icon.liquid',s);b.commit('Homepage fix 6: wire distinct department SVG icons');
