@@ -5,7 +5,7 @@ const write=(p,s)=>fs.writeFileSync(p,s);
 const save=(p,o)=>write(p,JSON.stringify(o,null,2)+'\n');
 function commit(message){cp.execFileSync('git',['-c','safe.directory=D:/shopify-store-editor','-c','user.name=Codex','-c','user.email=codex@localhost','-c','core.autocrlf=false','add','-A'],{stdio:'pipe'});cp.execFileSync('git',['-c','safe.directory=D:/shopify-store-editor','-c','user.name=Codex','-c','user.email=codex@localhost','commit','-m',message,'--quiet'],{stdio:'pipe'});}
 function log(s){fs.appendFileSync('WORKLOG.md','\n'+s+'\n');}
-const phase=process.argv[2];
+const phase=require.main===module?process.argv[2]:undefined;
 if(phase==='audit'){
  const index=json('templates/index.json'),schema=json('config/settings_schema.json'),data=json('config/settings_data.json');
  let report='# Homepage audit — 22 October 2026\n\nBaseline commit: fdc8b90. All source files retained.\n\n## Homepage sections\n\n';

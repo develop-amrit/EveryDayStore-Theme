@@ -1,8 +1,77 @@
 {
   "name": "Footer",
   "type": "footer",
-  "sections": {},
+  "sections": {
+    "footer": {
+      "type": "qc-footer",
+      "blocks": {
+        "shop": {
+          "type": "links",
+          "settings": {
+            "heading": "Shop",
+            "menu": "catalogue"
+          }
+        },
+        "help": {
+          "type": "links",
+          "settings": {
+            "heading": "Help",
+            "menu": "main-menu"
+          }
+        }
+      },
+      "block_order": [
+        "shop",
+        "help"
+      ],
+      "settings": {}
+    },
+    "bottom_nav": {
+      "type": "ep-bottom-nav",
+      "settings": {},
+      "blocks": {
+        "home": {
+          "type": "item",
+          "settings": {
+            "icon": "home",
+            "label": "Home",
+            "link": "/"
+          }
+        },
+        "categories": {
+          "type": "item",
+          "settings": {
+            "icon": "grid",
+            "label": "Categories",
+            "link": "/collections"
+          }
+        },
+        "cart": {
+          "type": "item",
+          "settings": {
+            "icon": "cart",
+            "label": "Cart",
+            "link": "/cart"
+          }
+        },
+        "deals": {
+          "type": "item",
+          "settings": {
+            "icon": "tag",
+            "label": "Deals"
+          }
+        }
+      },
+      "block_order": [
+        "home",
+        "categories",
+        "deals",
+        "cart"
+      ]
+    }
+  },
   "order": [
-    "footer"
+    "footer",
+    "bottom_nav"
   ]
 }

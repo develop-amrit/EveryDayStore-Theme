@@ -1,7 +1,130 @@
 {
   "name": "Header",
   "type": "header",
-  "sections": {},
+  "sections": {
+    "announcement": {
+      "type": "qc-announcement",
+      "blocks": {
+        "b0": {
+          "type": "message",
+          "settings": {
+            "text": "Dubai essentials, delivered next day."
+          }
+        },
+        "b1": {
+          "type": "message",
+          "settings": {
+            "text": "Free delivery on orders from",
+            "threshold": true
+          }
+        },
+        "b2": {
+          "type": "message",
+          "settings": {
+            "text": "One useful basket. So many everyday favourites."
+          }
+        },
+        "fees": {
+          "type": "message",
+          "settings": {
+            "text": "Delivery fee tiers",
+            "fees": true
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "fees"
+      ],
+      "settings": {}
+    },
+    "header": {
+      "type": "qc-header",
+      "settings": {
+        "delivery_text": "Delivery tomorrow",
+        "wishlist_link": "/pages/wishlist",
+        "rotating_terms": "Milk\nDiapers\nChocolates\nShampoo\nFlowers\nCoffee"
+      },
+      "blocks": {
+        "all": {
+          "type": "tab",
+          "settings": {
+            "label": "All",
+            "link": "/",
+            "icon": "grid"
+          }
+        },
+        "tab0": {
+          "type": "tab",
+          "settings": {
+            "label": "Grocery",
+            "link": "/collections/grocery",
+            "icon": "bag"
+          }
+        },
+        "tab1": {
+          "type": "tab",
+          "settings": {
+            "label": "Baby Products",
+            "link": "/collections/baby-products",
+            "icon": "heart"
+          }
+        },
+        "tab2": {
+          "type": "tab",
+          "settings": {
+            "label": "Gifting",
+            "link": "/collections/gifting",
+            "icon": "heart"
+          }
+        },
+        "tab3": {
+          "type": "tab",
+          "settings": {
+            "label": "Bath & Body",
+            "link": "/collections/bath-and-body",
+            "icon": "leaf"
+          }
+        },
+        "tab4": {
+          "type": "tab",
+          "settings": {
+            "label": "Home",
+            "link": "/collections/home",
+            "icon": "home"
+          }
+        },
+        "tab5": {
+          "type": "tab",
+          "settings": {
+            "label": "Pet",
+            "link": "/collections/pet",
+            "icon": "heart"
+          }
+        },
+        "tab6": {
+          "type": "tab",
+          "settings": {
+            "label": "Office Supplies",
+            "link": "/collections/office-supplies",
+            "icon": "bag"
+          }
+        }
+      },
+      "block_order": [
+        "all",
+        "tab0",
+        "tab1",
+        "tab2",
+        "tab3",
+        "tab4",
+        "tab5",
+        "tab6"
+      ]
+    }
+  },
   "order": [
     "announcement",
     "header"

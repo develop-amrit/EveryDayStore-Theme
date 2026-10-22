@@ -179,3 +179,7 @@ Render all seven department groups from the existing catalogue menu tree. A merc
 ## Homepage correction 5
 
 Reserve a compare-at line on every price block so product names align. Use a light brand-tint sale pill and money_without_trailing_zeros for current and compare-at prices.
+
+## Build helper correction
+
+Importing the shared build helper with a numeric correction argument accidentally ran its old phase-1 CLI branch locally. Restored header/footer group JSON from the just-verified remote snapshot and guarded CLI phases with require.main === module. No deployment occurred during this local-only error.
