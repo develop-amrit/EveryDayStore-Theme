@@ -258,8 +258,8 @@
       }
     {% endstyle %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-    <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+    {% if request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'base.css' | asset_url }}">{% else %}{{ 'base.css' | asset_url | stylesheet_tag }}{% endif %}
+    {% unless request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">{% endunless %}
 
     {%- if false -%}
       {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
@@ -269,12 +269,12 @@
       {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
     {%- endif -%}
 
-    {%- unless settings.type_body_font.system? -%}
+    {%- unless settings.type_body_font.system? or request.page_type == 'index' -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
       {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
-    {%- unless settings.type_header_font.system? -%}
+    {%- unless settings.type_header_font.system? or request.page_type == 'index' -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
       {% comment %}theme-check-enable AssetPreload{% endcomment %}
@@ -285,7 +285,7 @@
       <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {%- if settings.predictive_search_enabled -%}
+    {%- if settings.predictive_search_enabled and request.page_type != 'index' -%}
       <link
         rel="stylesheet"
         href="{{ 'component-predictive-search.css' | asset_url }}"
@@ -304,7 +304,7 @@
   
 
 <script src="{{ 'qc-home.js' | asset_url }}" defer></script><script src="{{ 'qc-storefront.js' | asset_url }}" defer></script><script src="{{ 'qc-catalog.js' | asset_url }}" defer></script><script src="{{ 'qc-delivery.js' | asset_url }}" defer></script><script src="{{ 'qc-account.js' | asset_url }}" defer></script><script src="{{ 'qc-assistant.js' | asset_url }}" defer></script><script src="{{ 'qc-privacy.js' | asset_url }}" defer></script>
-{{ 'ep-mobile.css' | asset_url | stylesheet_tag }}
+{% if request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'ep-mobile.css' | asset_url }}">{% else %}{{ 'ep-mobile.css' | asset_url | stylesheet_tag }}{% endif %}
 <script src="{{ 'ep-mobile.js' | asset_url }}" defer></script>
     {{ content_for_header }}
 </head>
