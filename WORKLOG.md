@@ -757,3 +757,7 @@ Listing-only control is 72×32 visually with a 44px hit area, expanding to a 96p
 ## CatFix 6: Make add and quantity controls optimistic
 
 Shared variant state immediately renders steppers, projected real-price subtotals and count badges. Writes are serialized; stepper changes debounce 300ms, stay editable during requests and reconcile from Shopify. Errors revert to confirmed cart quantities and show Shopify’s message in a toast and inline status. No loading spinner is shown over ADD.
+
+## CatFix 7: Reserve pill clearance and label free delivery
+
+Grid and rail both reserve 52px pill +24px + safe area. Zero estimated delivery renders Free, while paid fees still use ep-money.
