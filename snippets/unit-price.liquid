@@ -16,6 +16,6 @@
     <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
   {%- endunless -%}
   <span class="price-item price-item--last">
-    {{ price | unit_price_with_measurement: measurement }}
+    {% render 'ep-money', amount: price %}<span aria-hidden="true">/</span>{% if measurement.reference_value != 1 %}{{ measurement.reference_value }}{% endif %}{{ measurement.reference_unit }}
   </span>
 </small>

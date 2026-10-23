@@ -169,18 +169,18 @@
                                 {{ 'products.product.price.regular_price' | t }}
                               </span>
                               <s class="cart-item__old-price product-option">
-                                {{- item.original_price | money_without_currency | prepend: ' ' | prepend: shop.currency -}}
+                                {% assign ep_money_amount = item.original_price %}{% render 'ep-money', amount: ep_money_amount %}
                               </s>
                               <span class="visually-hidden">
                                 {{ 'products.product.price.sale_price' | t }}
                               </span>
                               <strong class="cart-item__final-price product-option">
-                                {{ item.final_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                                {% assign ep_money_amount = item.final_price %}{% render 'ep-money', amount: ep_money_amount %}
                               </strong>
                             </div>
                           {%- else -%}
                             <div class="product-option">
-                              {{ item.original_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                              {% assign ep_money_amount = item.original_price %}{% render 'ep-money', amount: ep_money_amount %}
                             </div>
                           {%- endif -%}
 
@@ -251,18 +251,18 @@
                                   {{ 'products.product.price.regular_price' | t }}
                                 </span>
                                 <s class="cart-item__old-price price price--end">
-                                  {{ item.original_line_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                                  {% assign ep_money_amount = item.original_line_price %}{% render 'ep-money', amount: ep_money_amount %}
                                 </s>
                                 <span class="visually-hidden">
                                   {{ 'products.product.price.sale_price' | t }}
                                 </span>
                                 <span class="price price--end">
-                                  {{ item.final_line_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                                  {% assign ep_money_amount = item.final_line_price %}{% render 'ep-money', amount: ep_money_amount %}
                                 </span>
                               </div>
                             {%- else -%}
                               <span class="price price--end">
-                                {{ item.original_line_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                                {% assign ep_money_amount = item.original_line_price %}{% render 'ep-money', amount: ep_money_amount %}
                               </span>
                             {%- endif -%}
 
@@ -274,7 +274,7 @@
                             {%- endif -%}
                           </div>
                         </td>
-                        {%- liquid
+                        {% liquid
                           assign has_qty_rules = false
                           if item.variant.quantity_rule.increment > 1 or item.variant.quantity_rule.min > 1 or item.variant.quantity_rule.max != null
                             assign has_qty_rules = true
@@ -445,7 +445,7 @@
                                     <ul class="list-unstyled">
                                       <li>
                                         <span>{{ item.variant.quantity_rule.min }}+</span>
-                                        <span>{{ item.variant.price | money_without_currency | prepend: ' ' | prepend: shop.currency }}/ea</span>
+                                        <span>{% assign ep_money_amount = item.variant.price %}{% render 'ep-money', amount: ep_money_amount %}/ea</span>
                                       </li>
                                       {%- for price_break in item.variant.quantity_price_breaks -%}
                                         <li>
@@ -453,7 +453,7 @@
                                             {{- price_break.minimum_quantity -}}
                                             <span aria-hidden="true">+</span></span
                                           >
-                                          <span>{{ price_break.price | money_without_currency | prepend: ' ' | prepend: shop.currency }}/ea</span>
+                                          <span>{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}/ea</span>
                                         </li>
                                       {%- endfor -%}
                                     </ul>
@@ -519,7 +519,7 @@
                   <li class="discounts__discount discounts__discount--end">
                     {{- 'icon-discount.svg' | inline_asset_content -}}
                     {{ discount.title | escape }}
-                    (-{{ discount.total_allocated_amount | money_without_currency | prepend: ' ' | prepend: shop.currency }})
+                    (-{% assign ep_money_amount = discount.total_allocated_amount %}{% render 'ep-money', amount: ep_money_amount %})
                   </li>
                 {%- endfor -%}
               </ul>
@@ -528,7 +528,7 @@
 
           <div class="totals" role="status">
             <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
-            <p class="totals__total-value">{{ cart.total_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}</p>
+            <p class="totals__total-value">{% assign ep_money_amount = cart.total_price %}{% render 'ep-money', amount: ep_money_amount %}</p>
           </div>
 
           <small class="tax-note caption-large rte">

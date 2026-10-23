@@ -1,5 +1,5 @@
 {% if section.blocks.size > 0 or request.design_mode %}
-<section class="qc-section qc-wrap qc-reveal"><div class="qc-section-heading"><h2>{{ section.settings.heading | escape }}</h2></div><div class="qc-review-rail" tabindex="0">{% for block in section.blocks %}<figure class="qc-review" {{ block.shopify_attributes }}><blockquote>{{ block.settings.quote | escape }}</blockquote><figcaption><strong>{{ block.settings.name | escape }}</strong><span>{{ block.settings.area | escape }}</span></figcaption></figure>{% else %}{% if request.design_mode %}<p class="qc-empty">{{ 'qc.reviews_empty' | t }}</p>{% endif %}{% endfor %}</div></section>
+<section class="qc-section qc-wrap qc-reveal"><div class="qc-section-heading"><h2>{% render 'ep-money-copy', text: section.settings.heading %}</h2></div><div class="qc-review-rail" tabindex="0">{% for block in section.blocks %}<figure class="qc-review" {{ block.shopify_attributes }}><blockquote>{% render 'ep-money-copy', text: block.settings.quote %}</blockquote><figcaption><strong>{% render 'ep-money-copy', text: block.settings.name %}</strong><span>{% render 'ep-money-copy', text: block.settings.area %}</span></figcaption></figure>{% else %}{% if request.design_mode %}<p class="qc-empty">{{ 'qc.reviews_empty' | t }}</p>{% endif %}{% endfor %}</div></section>
 {% endif %}
 {% schema %}
 {

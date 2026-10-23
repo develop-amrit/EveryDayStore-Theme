@@ -92,7 +92,7 @@ if (!customElements.get('price-per-item')) {
         if (volumePricing) {
           volumePricing.querySelectorAll('li').forEach(li => {
             const qty = parseInt(li.querySelector('span:first-child').textContent);
-            const price = (li.querySelector('span:not(:first-child):last-child').dataset.text);
+            const price = li.querySelector('span:not(:first-child):last-child').innerHTML;
             this.qtyPricePairs.push([qty, price]);
           });
         }

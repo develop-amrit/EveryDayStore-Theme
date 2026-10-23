@@ -58,7 +58,7 @@
       {%- endif -%}
     </div>
 
-    {%- assign item_price = item.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+    {% capture item_price %}{% assign ep_money_amount = item.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
     {%- if item.compare_at_price -%}
       <dl class="variant-item__discounted-prices">
         <dt class="visually-hidden">
@@ -66,7 +66,7 @@
         </dt>
         <dd>
           <s class="variant-item__old-price price price--end">
-            {{ item.compare_at_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+            {% assign ep_money_amount = item.compare_at_price %}{% render 'ep-money', amount: ep_money_amount %}
           </s>
         </dd>
         <dt class="visually-hidden">
@@ -74,7 +74,7 @@
         </dt>
         <dd class="price">
           {%- if variant.quantity_price_breaks.size > 0 -%}
-            {%- liquid
+            {% liquid
               assign volume_pricing_array = variant.quantity_price_breaks | sort: 'quantity' | reverse
             -%}
             <price-per-item
@@ -84,14 +84,14 @@
             >
               <div class="price-per-item">
                 {%- if cart_qty < volume_pricing_array.last.minimum_quantity -%}
-                  {%- assign variant_price = variant.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+                  {% capture variant_price %}{% assign ep_money_amount = variant.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                   <span class="price-per-item--current price">
                     {{- 'sections.quick_order_list.each' | t: money: variant_price -}}
                   </span>
                 {%- else -%}
                   {%- for price_break in volume_pricing_array -%}
                     {%- if cart_qty >= price_break.minimum_quantity -%}
-                      {%- assign price_break_price = price_break.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+                      {% capture price_break_price %}{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                       <span class="price-per-item--current price">
                         {{- 'sections.quick_order_list.each' | t: money: price_break_price -}}
                       </span>
@@ -110,7 +110,7 @@
       </dl>
     {%- else -%}
       {%- if variant.quantity_price_breaks.size > 0 -%}
-        {%- liquid
+        {% liquid
           assign volume_pricing_array = variant.quantity_price_breaks | sort: 'quantity' | reverse
         -%}
         <price-per-item
@@ -120,14 +120,14 @@
         >
           <div class="price-per-item">
             {%- if cart_qty < volume_pricing_array.last.minimum_quantity -%}
-              {%- assign variant_price = variant.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+              {% capture variant_price %}{% assign ep_money_amount = variant.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
               <span class="price-per-item--current price">
                 {{- 'sections.quick_order_list.each' | t: money: variant_price -}}
               </span>
             {%- else -%}
               {%- for price_break in volume_pricing_array -%}
                 {%- if cart_qty >= price_break.minimum_quantity -%}
-                  {%- assign price_break_price = price_break.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+                  {% capture price_break_price %}{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                   <span class="price-per-item--current price">
                     {{- 'sections.quick_order_list.each' | t: money: price_break_price -}}
                   </span>
@@ -153,12 +153,12 @@
     {%- render 'loading-spinner' -%}
     {% comment %} TODO: enable theme-check once `line_items_for` is accepted as valid filter {% endcomment %}
     {% # theme-check-disable %}
-    <span class="price">{{ cart | line_items_for: item | sum: 'original_line_price' | money_without_currency | prepend: ' ' | prepend: shop.currency }}</span>
+    <span class="price">{% assign ep_money_amount = cart | line_items_for: item | sum: 'original_line_price' %}{% render 'ep-money', amount: ep_money_amount %}</span>
     {% # theme-check-enable %}
   </td>
 
   <td class="variant-item__quantity">
-    {%- liquid
+    {% liquid
       assign check_against_inventory = true
       if variant.inventory_management != 'shopify' or variant.inventory_policy == 'continue'
         assign check_against_inventory = false
@@ -246,7 +246,7 @@
                   <ul class="list-unstyled">
                     <li>
                       <span>{{ variant.quantity_rule.min }}+</span>
-                      {%- assign price = variant.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+                      {% capture price %}{% assign ep_money_amount = variant.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                       <span>{{ 'sections.quick_order_list.each' | t: money: price }}</span>
                     </li>
                     {%- for price_break in variant.quantity_price_breaks -%}
@@ -255,7 +255,7 @@
                           {{- price_break.minimum_quantity -}}
                           <span aria-hidden="true">+</span></span
                         >
-                        {%- assign price = price_break.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+                        {% capture price %}{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                         <span> {{ 'sections.quick_order_list.each' | t: money: price }}</span>
                       </li>
                     {%- endfor -%}
@@ -320,7 +320,7 @@
       </div>
     </quantity-popover>
   </td>
-  {%- assign item_price = item.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+  {% capture item_price %}{% assign ep_money_amount = item.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
   <td class="variant-item__price small-hide medium-hide">
     {%- if item.compare_at_price -%}
       <dl class="variant-item__discounted-prices">
@@ -329,7 +329,7 @@
         </dt>
         <dd>
           <s class="variant-item__old-price price price--end">
-            {{ item.compare_at_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+            {% assign ep_money_amount = item.compare_at_price %}{% render 'ep-money', amount: ep_money_amount %}
           </s>
         </dd>
         <dt class="visually-hidden">
@@ -337,7 +337,7 @@
         </dt>
         <dd class="price">
           {%- if variant.quantity_price_breaks.size > 0 -%}
-            {%- liquid
+            {% liquid
               assign volume_pricing_array = variant.quantity_price_breaks | sort: 'quantity' | reverse
             -%}
             <price-per-item
@@ -347,14 +347,14 @@
             >
               <div class="price-per-item">
                 {%- if cart_qty < volume_pricing_array.last.minimum_quantity -%}
-                  {%- assign variant_price = variant.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+                  {% capture variant_price %}{% assign ep_money_amount = variant.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                   <span class="price-per-item--current price">
                     {{- 'sections.quick_order_list.each' | t: money: variant_price -}}
                   </span>
                 {%- else -%}
                   {%- for price_break in volume_pricing_array -%}
                     {%- if cart_qty >= price_break.minimum_quantity -%}
-                      {%- assign price_break_price = price_break.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+                      {% capture price_break_price %}{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                       <span class="price-per-item--current price">
                         {{- 'sections.quick_order_list.each' | t: money: price_break_price -}}
                       </span>
@@ -373,7 +373,7 @@
       </dl>
     {%- else -%}
       {%- if variant.quantity_price_breaks.size > 0 -%}
-        {%- liquid
+        {% liquid
           assign volume_pricing_array = variant.quantity_price_breaks | sort: 'quantity' | reverse
         -%}
         <price-per-item
@@ -383,14 +383,14 @@
         >
           <div class="price-per-item">
             {%- if cart_qty < volume_pricing_array.last.minimum_quantity -%}
-              {%- assign variant_price = variant.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+              {% capture variant_price %}{% assign ep_money_amount = variant.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
               <span class="price-per-item--current price">
                 {{- 'sections.quick_order_list.each' | t: money: variant_price -}}
               </span>
             {%- else -%}
               {%- for price_break in volume_pricing_array -%}
                 {%- if cart_qty >= price_break.minimum_quantity -%}
-                  {%- assign price_break_price = price_break.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+                  {% capture price_break_price %}{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                   <span class="price-per-item--current price">
                     {{- 'sections.quick_order_list.each' | t: money: price_break_price -}}
                   </span>
@@ -415,7 +415,7 @@
     {%- render 'loading-spinner' -%}
     {% comment %} TODO: enable theme-check once `line_items_for` is accepted as valid filter {% endcomment %}
     {% # theme-check-disable %}
-    <span class="price">{{ cart | line_items_for: item | sum: 'original_line_price' | money_without_currency | prepend: ' ' | prepend: shop.currency }}</span>
+    <span class="price">{% assign ep_money_amount = cart | line_items_for: item | sum: 'original_line_price' %}{% render 'ep-money', amount: ep_money_amount %}</span>
     {% # theme-check-enable %}
   </td>
 </tr>
@@ -436,16 +436,16 @@
     <ul>
       <li>
         <span>{{ variant.quantity_rule.min }}</span>
-        {%- assign price = variant.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
-        <span data-text="{{ price }}">{{ price }}</span>
+        {% capture price %}{% assign ep_money_amount = variant.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
+        <span data-text="{% render 'ep-money-text', amount: variant.price %}">{{ price }}</span>
       </li>
       {%- for price_break in variant.quantity_price_breaks -%}
-        {%- assign price_break_price = price_break.price | money_without_currency | prepend: ' ' | prepend: shop.currency -%}
+        {% capture price_break_price %}{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
         <li>
           <span>
             {{- price_break.minimum_quantity -}}
           </span>
-          <span data-text="{{ price_break_price }}">{{- price_break.price | money_without_currency | prepend: ' ' | prepend: shop.currency }}</span>
+          <span data-text="{% render 'ep-money-text', amount: price_break.price %}">{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}</span>
         </li>
       {%- endfor -%}
     </ul>

@@ -103,7 +103,7 @@ Renders storefront dialogs, configuration and cart status using the existing com
 }
 }</script>
 <div class="dc-sticky-cart" data-sticky-cart {% if cart.item_count == 0 %}hidden{% endif %}>
-  <button type="button" data-open-cart><span data-cart-count>{{ cart.item_count }}</span> {{ 'commerce_experience.items' | t }} · <strong data-cart-total>{{ cart.total_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}</strong><span>{{ 'commerce_experience.view_basket' | t }} →</span></button>
+  <button type="button" data-open-cart><span data-cart-count>{{ cart.item_count }}</span> {{ 'commerce_experience.items' | t }} · <strong data-cart-total>{% assign ep_money_amount = cart.total_price %}{% render 'ep-money', amount: ep_money_amount %}</strong><span>{{ 'commerce_experience.view_basket' | t }} →</span></button>
   <div class="dc-free-progress" role="progressbar" aria-label="{{ 'commerce_experience.free_progress' | t }}" aria-valuemin="0" aria-valuemax="9900" aria-valuenow="{{ cart.total_price | at_most: 9900 }}"><span data-progress-fill style="transform:scaleX({{ cart.total_price | times: 1.0 | divided_by: 9900 | at_most: 1 }})"></span></div>
   <p data-delivery-status aria-live="polite"></p>
 </div>

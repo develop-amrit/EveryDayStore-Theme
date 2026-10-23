@@ -38,7 +38,7 @@
     const products=tiles.map(tile=>{try{return JSON.parse($('[data-product-meta]',tile).textContent);}catch{return null;}}).filter(Boolean);
     const head=document.createElement('thead'),row=document.createElement('tr'),blank=document.createElement('th');blank.scope='col';blank.textContent=t('specs');row.append(blank);
     products.forEach(p=>{const th=document.createElement('th');th.scope='col';const a=document.createElement('a');a.href=root+'products/'+encodeURIComponent(p.handle);a.textContent=p.title;const remove=document.createElement('button');remove.type='button';remove.dataset.compareRemove=p.handle;remove.textContent=t('compare_remove');th.append(a,remove);row.append(th);});head.append(row);table.append(head);
-    const body=document.createElement('tbody');['price','pack','specs','features','attributes'].forEach(key=>{const tr=document.createElement('tr'),th=document.createElement('th');th.scope='row';th.textContent=t(key);tr.append(th);products.forEach(p=>{const td=document.createElement('td');td.textContent=text(p[key]);tr.append(td);});body.append(tr);});table.append(body);return table;
+    const body=document.createElement('tbody');['price','pack','specs','features','attributes'].forEach(key=>{const tr=document.createElement('tr'),th=document.createElement('th');th.scope='row';th.textContent=t(key);tr.append(th);products.forEach(p=>{const td=document.createElement('td');if(key==='price'&&Number.isFinite(p.priceCents))td.innerHTML=window.epMoney(p.priceCents);else td.textContent=text(p[key]);tr.append(td);});body.append(tr);});table.append(body);return table;
   }
   let renderGeneration=0;
   async function savedPages(){

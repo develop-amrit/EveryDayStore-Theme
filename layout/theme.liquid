@@ -30,7 +30,7 @@
 
     {% render 'meta-tags' %}
 
-{% if request.page_type == 'index' %}<script src="{{ 'ep-home-core.js' | asset_url }}" defer></script>{% else %}<script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
+<script id="ep-currency-config" type="application/json">{"code":{{ localization.country.currency.iso_code | default: shop.currency | json }},"sample":{{ 123456789 | money_without_currency | json }}}</script><script src="{{ 'ep-currency.js' | asset_url }}" defer></script>{% if request.page_type == 'index' %}<script src="{{ 'ep-home-core.js' | asset_url }}" defer></script>{% else %}<script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'cart-disclosure-modal.js' | asset_url }}" defer="defer"></script>
@@ -46,7 +46,7 @@
 
 
 
-    {%- liquid
+    {% liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
@@ -105,12 +105,12 @@
       }
 
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+        --font-body-family: "EP Dirham", {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+        --font-heading-family: "EP Dirham", {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 

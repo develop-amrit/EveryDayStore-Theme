@@ -1,4 +1,8 @@
-{% doc %}Shopify numeric money format with the active currency code; only whole-amount decimals are removed.
-@param {number} value - Price in cents.
+{% doc %}Visible dirham price, with an ISO name for screen readers.
+@param {number} [amount] - Price in cents.
+@param {number} [value] - Backward compatible price in cents.
+@param {string} [class] - Optional CSS class.
 {% enddoc %}
-{%- assign amount = value | money_without_currency -%}{%- assign remainder = value | modulo: 100 -%}{%- if remainder == 0 -%}{%- assign tail = amount | slice: -3, 3 -%}{%- if tail == '.00' or tail == ',00' -%}{%- assign length = amount.size | minus: 3 -%}{%- assign amount = amount | slice: 0, length -%}{%- endif -%}{%- endif -%}{{- localization.country.currency.iso_code | default: shop.currency }} {{ amount }}
+{%- assign cents = amount | default: value | default: 0 -%}
+{%- capture formatted -%}{% render 'ep-money-number', amount: cents %}{%- endcapture -%}
+<span class="ep-money {{ class | escape }}"><span class="ep-dh" aria-hidden="true">&#x20C3;</span>&#x202F;<span class="visually-hidden">AED </span>{{ formatted }}</span>

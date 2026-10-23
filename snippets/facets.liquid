@@ -16,7 +16,7 @@
 {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
 {{ 'component-swatch.css' | asset_url | stylesheet_tag }}
 
-{%- liquid
+{% liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
   assign total_active_values = 0
   assign default_presentation = 'text'
@@ -98,7 +98,7 @@
                       <facet-remove>
                         <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
                           <span class="active-facets__button-inner button button--tertiary">
-                            {{ min | default: 0 | money_without_currency | prepend: ' ' | prepend: shop.currency }} - {{ max | default: filter.range_max | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                            {% assign ep_money_amount = min | default: 0 %}{% render 'ep-money', amount: ep_money_amount %} - {% assign ep_money_amount = max | default: filter.range_max %}{% render 'ep-money', amount: ep_money_amount %}
                             <span class="svg-wrapper">
                               {{- 'icon-close-small.svg' | inline_asset_content -}}
                             </span>
@@ -184,7 +184,7 @@
                       {%- endif -%}
                       <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                         <legend class="visually-hidden">{{ filter.label | escape }}</legend>
-                        {%- liquid
+                        {% liquid
                           assign sorted_values = filter.values
                           # Keep the selected values grouped together when operator is AND
                           if filter.operator == 'AND'
@@ -320,7 +320,7 @@
                       class="{% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
                     >
                       <div class="{% if filter_type == 'horizontal' %}facets__header{% else %}facets__header-vertical{% endif %}">
-                        {%- assign max_price_amount = filter.range_max | money_without_currency | prepend: ' ' | prepend: shop.currency | strip_html | escape -%}
+                        {% capture max_price_amount %}{% assign ep_money_amount = filter.range_max %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                         <span class="facets__selected">
                           {{- 'products.facets.max_price' | t: price: max_price_amount -}}
                         </span>
@@ -364,7 +364,7 @@
                     <facet-remove>
                       <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
                         <span class="active-facets__button-inner button button--tertiary">
-                          {{ min | default: 0 | money_without_currency | prepend: ' ' | prepend: shop.currency }} - {{ max | default: filter.range_max | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                          {% assign ep_money_amount = min | default: 0 %}{% render 'ep-money', amount: ep_money_amount %} - {% assign ep_money_amount = max | default: filter.range_max %}{% render 'ep-money', amount: ep_money_amount %}
                           <span class="svg-wrapper">
                             {{- 'icon-close-small.svg' | inline_asset_content -}}
                           </span>
@@ -556,7 +556,7 @@
                             {%- endif -%}
                           </button>
                           <ul class="{{ visual_layout_class }} mobile-facets__list list-unstyled" role="list">
-                            {%- liquid
+                            {% liquid
                               assign sorted_values = filter.values
                               # Keep the selected values grouped together when operator is AND
                               if filter.operator == 'AND'
@@ -693,7 +693,7 @@
                             {{ filter.label | escape }}
                           </button>
 
-                          {%- assign max_price_amount = filter.range_max | money_without_currency | prepend: ' ' | prepend: shop.currency | strip_html | escape -%}
+                          {% capture max_price_amount %}{% assign ep_money_amount = filter.range_max %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                           <p class="mobile-facets__info">
                             {{ 'products.facets.max_price' | t: price: max_price_amount }}
                           </p>
@@ -810,7 +810,7 @@
           <facet-remove>
             <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
               <span class="active-facets__button-inner button button--tertiary">
-                {{ min | default: 0 | money_without_currency | prepend: ' ' | prepend: shop.currency }} - {{ max | default: filter.range_max | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                {% assign ep_money_amount = min | default: 0 %}{% render 'ep-money', amount: ep_money_amount %} - {% assign ep_money_amount = max | default: filter.range_max %}{% render 'ep-money', amount: ep_money_amount %}
                 <span class="svg-wrapper">
                   {{- 'icon-close-small.svg' | inline_asset_content -}}
                 </span>
@@ -923,7 +923,7 @@
                 <facet-remove>
                   <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
                     <span class="active-facets__button-inner button button--tertiary">
-                      {{ min | default: 0 | money_without_currency | prepend: ' ' | prepend: shop.currency }} - {{ max | default: filter.range_max | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                      {% assign ep_money_amount = min | default: 0 %}{% render 'ep-money', amount: ep_money_amount %} - {% assign ep_money_amount = max | default: filter.range_max %}{% render 'ep-money', amount: ep_money_amount %}
                       <span class="svg-wrapper">
                         {{- 'icon-close-small.svg' | inline_asset_content -}}
                       </span>

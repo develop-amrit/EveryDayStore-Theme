@@ -1,1 +1,1 @@
-{{ 'sections.cart.new_estimated_total' | t }}: {{ cart.total_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+{{ 'sections.cart.new_estimated_total' | t }}: {% assign ep_money_amount = cart.total_price %}{% render 'ep-money', amount: ep_money_amount %}

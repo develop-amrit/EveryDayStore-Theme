@@ -374,3 +374,15 @@ Screenshots: qa/polish-top-375.png, qa/polish-after-375.png, qa/polish-after-128
 
 
 Supplementary final browser checks: Escape and backdrop both retain the 200ms closing state before closing; Tab from title reaches close control. Native Dawn search clear resets the query, predictive results show AED and compare-at prices, announcement dismissal persists through reload. Product and collection pages each have exactly one header/footer and zero tabs. JavaScript-disabled homepage exposes all 52 second-level tiles, 131 image sources and the native area select fallback. Supplementary errors: zero. See qa/polish-supplement.json.
+
+## Dirham 1: Shared font and Liquid money rendering
+
+Added exact owner-supplied U+20C3 WOFF and SVG, visible ep-money, numeric ep-money-number, and plain ep-money-text helpers. Migrated QC and retained Dawn visible money outputs, price captures, cart discounts/totals, delivery tiers/progress, unit prices and gift card balance. Numeric price-range form values remain numeric; JSON and data attributes stay plain ISO text. Gift card document loads the small standalone currency stylesheet. No legacy customer templates exist in this theme; hosted account behavior will be checked during QA.
+
+## Dirham 2: JavaScript and attribute safety
+
+Added early shared epMoney/epMoneyText helpers using the Shopify numeric format sample; QC basket totals and compare prices use HTML, plain metadata uses ISO text. Dawn quantity pricing now consumes the server-rendered visible span while its data-text stays plain. Restored numeric range-input values and bounds (ISO prefixes would break filtering). Added EP Dirham first in theme font variables. Checkout currency business validation remains the ISO AED comparison, as required.
+
+## Dirham 3: Merchant copy and storefront coverage
+
+Visible escaped EP/QC text settings now pass through ep-money-copy, replacing AED only when followed by a number; URLs, alt/title/ARIA/input/data fields remain untouched. Currency configuration/helper loads on all theme pages before the cart runtime. Numeric price filter inputs retain numeric values and visible labels use the symbol; these are intentionally not prefixed with AED because Dawn range validation requires numbers. Metadata, structured_data, Shopify checkout and notification/email formats remain ISO/plain. Added checkout/email guidance to MERCHANT_TODO.

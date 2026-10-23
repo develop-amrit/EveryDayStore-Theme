@@ -34,3 +34,6 @@ The new panel uses Baby Products plus Gifting, Grocery, Bath & Body, Home, Pet a
 
 ## Image-less published Diapers & Wipes products
 The collection currently has 34 published products without images and three draft products with images. Theme auto mode does not expose draft products. Upload a collection image or set the category/campaign image override; the designed Soon tile remains in place until then. No collection is hidden or unlinked.
+
+## Dirham symbol and platform limits
+Store HTML formats may stay `AED {{amount}}`; theme-rendered visible prices use the supplied dirham font. Keep email money formats `AED {{amount}}`, since email clients do not load theme fonts. Shopify checkout keeps AED because it does not load theme fonts. Shopify-hosted customer account/order pages likewise cannot load storefront theme assets; verify those separately in the account customization surface. Classic customer templates are not present in this theme. No checkout or email code was changed.

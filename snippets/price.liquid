@@ -12,7 +12,7 @@
   Usage:
   {% render 'price', product: product %}
 {% endcomment %}
-{%- liquid
+{% liquid
   if use_variant
     assign target = product.selected_or_first_available_variant
   elsif placeholder
@@ -26,13 +26,31 @@
   assign price_min = product.price_min
   assign price_max = product.price_max
   assign available = target.available | default: false
-  assign money_price = price | money_without_currency | prepend: ' ' | prepend: shop.currency
-  assign money_price_min = price_min | money_without_currency | prepend: ' ' | prepend: shop.currency
-  assign money_price_max = price_max | money_without_currency | prepend: ' ' | prepend: shop.currency
+  assign ep_money_amount = price
+  capture money_price
+    render 'ep-money', amount: ep_money_amount
+  endcapture
+  assign ep_money_amount = price_min
+  capture money_price_min
+    render 'ep-money', amount: ep_money_amount
+  endcapture
+  assign ep_money_amount = price_max
+  capture money_price_max
+    render 'ep-money', amount: ep_money_amount
+  endcapture
   if settings.currency_code_enabled
-    assign money_price = price | money_without_currency | prepend: ' ' | prepend: shop.currency
-    assign money_price_min = price_min | money_without_currency | prepend: ' ' | prepend: shop.currency
-    assign money_price_max = price_max | money_without_currency | prepend: ' ' | prepend: shop.currency
+    assign ep_money_amount = price
+    capture money_price
+      render 'ep-money', amount: ep_money_amount
+    endcapture
+    assign ep_money_amount = price_min
+    capture money_price_min
+      render 'ep-money', amount: ep_money_amount
+    endcapture
+    assign ep_money_amount = price_max
+    capture money_price_max
+      render 'ep-money', amount: ep_money_amount
+    endcapture
   endif
 
   if target == product and product.price_varies
@@ -68,9 +86,9 @@
               <span>
                 <s class="price-item price-item--regular variant-item__old-price">
                   {% if settings.currency_code_enabled %}
-                    {{ compare_at_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                    {% assign ep_money_amount = compare_at_price %}{% render 'ep-money', amount: ep_money_amount %}
                   {% else %}
-                    {{ compare_at_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                    {% assign ep_money_amount = compare_at_price %}{% render 'ep-money', amount: ep_money_amount %}
                   {% endif %}
                 </s>
               </span>
@@ -96,9 +114,9 @@
           <span>
             <s class="price-item price-item--regular">
               {% if settings.currency_code_enabled %}
-                {{ compare_at_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                {% assign ep_money_amount = compare_at_price %}{% render 'ep-money', amount: ep_money_amount %}
               {% else %}
-                {{ compare_at_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}
+                {% assign ep_money_amount = compare_at_price %}{% render 'ep-money', amount: ep_money_amount %}
               {% endif %}
             </s>
           </span>

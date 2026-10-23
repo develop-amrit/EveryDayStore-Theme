@@ -1,0 +1,13 @@
+{% doc %}Numeric money format only; whole amounts omit their fractional zeroes.
+@param {number} amount - Price in cents.
+{% enddoc %}
+{%- assign formatted = amount | money_without_currency -%}
+{%- assign remainder = amount | modulo: 100 -%}
+{%- if remainder == 0 -%}
+  {%- assign tail = formatted | slice: -3, 3 -%}
+  {%- if tail == '.00' or tail == ',00' -%}
+    {%- assign size = formatted.size | minus: 3 -%}
+    {%- assign formatted = formatted | slice: 0, size -%}
+  {%- endif -%}
+{%- endif -%}
+{{- formatted -}}

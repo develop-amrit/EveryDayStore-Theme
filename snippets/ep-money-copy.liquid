@@ -1,0 +1,11 @@
+{% doc %}Merchant visible text, escaped before replacing AED amounts with accessible symbols.
+@param {string} text - Visible text only, never attributes.
+{% enddoc %}
+{%- assign parts = text | escape | split: 'AED ' -%}
+{{- parts.first -}}
+{%- for part in parts offset: 1 -%}
+  {%- assign first = part | slice: 0, 1 -%}
+  {%- if first != blank and '0123456789' contains first -%}
+    <span class="ep-dh" aria-hidden="true">&#x20C3;</span>&#x202F;<span class="visually-hidden">AED </span>{{- part -}}
+  {%- else -%}AED {{ part }}{%- endif -%}
+{%- endfor -%}

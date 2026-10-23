@@ -21,7 +21,7 @@
         <label class="qc-card-compare"><input type="checkbox" data-compare="{{ product.handle | escape }}"><span>{{ 'qc.compare' | t }}</span></label>
       </div>
       <div class="qc-card-bottom">
-        <div class="qc-price"><strong>{{ variant.price | money_without_currency | prepend: ' ' | prepend: shop.currency }}</strong>{% if variant.compare_at_price > variant.price %}<s>{{ variant.compare_at_price | money_without_currency | prepend: ' ' | prepend: shop.currency }}</s>{% endif %}</div>
+        <div class="qc-price"><strong>{% assign ep_money_amount = variant.price %}{% render 'ep-money', amount: ep_money_amount %}</strong>{% if variant.compare_at_price > variant.price %}<s>{% assign ep_money_amount = variant.compare_at_price %}{% render 'ep-money', amount: ep_money_amount %}</s>{% endif %}</div>
         <div data-card-controls>{% if product.available %}<button class="qc-add" type="button" data-add{% if product.variants.size > 1 %} data-choose{% endif %}>{% if product.variants.size == 1 %}{{ 'qc.add' | t }} +{% else %}{{ 'qc.choose' | t }}{% endif %}</button>{% else %}<button class="qc-add" disabled>{{ 'qc.out' | t }}</button>{% endif %}</div>
       </div>
     </div>

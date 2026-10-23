@@ -1,4 +1,4 @@
-<section class="qc-section qc-wrap qc-reveal"><div class="qc-steps">{% for block in section.blocks %}<article {{ block.shopify_attributes }}><span class="qc-step-icon">{% render 'qc-icon', name: block.settings.icon %}<small>0{{ forloop.index }}</small></span><div><h2>{{ block.settings.heading | escape }}</h2><p>{{ block.settings.text | escape }}</p></div></article>{% endfor %}</div></section>
+<section class="qc-section qc-wrap qc-reveal"><div class="qc-steps">{% for block in section.blocks %}<article {{ block.shopify_attributes }}><span class="qc-step-icon">{% render 'qc-icon', name: block.settings.icon %}<small>0{{ forloop.index }}</small></span><div><h2>{% render 'ep-money-copy', text: block.settings.heading %}</h2><p>{% render 'ep-money-copy', text: block.settings.text %}</p></div></article>{% endfor %}</div></section>
 {% schema %}
 {
   "name": "How it works",
