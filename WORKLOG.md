@@ -745,3 +745,7 @@ Product column now flows in the page. Only the photo rail scrolls independently;
 ## CatFix 3: Hide configured internal content
 
 Removed automatic More collections. Added section and global prefix/hidden-handle settings, defaulting to [TEST] and the four requested handles. Product rails/grids, collection cards/recommendations and native predictive results use a shared safety predicate; real menu categories are retained.
+
+## CatFix 4: Default listings to in-stock inventory
+
+Fresh listing URLs canonicalize in the head to filter.v.availability=1; explicit ep_stock=all opts out. The chip toggles via instant section updates and URL/history state. Recommendations and homepage rails are in-stock only; sold-out cards retain a disabled control and muted price/image when all stock is requested.

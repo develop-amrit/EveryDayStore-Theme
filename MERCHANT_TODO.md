@@ -47,3 +47,6 @@ Current Categories QA: Shopify exposes Availability and Price facets. Vendor/Bra
 
 ## CatFix internal content safety net
 Set every [TEST] product to Draft and every [TEST] collection to Unpublished in Admin. Theme title-prefix/handle filters are only a safety net, not a substitute for catalogue cleanup. Real department/child collections remain in the menus even when empty. The automatic More collections block was removed as requested.
+
+## Inventory audit
+Check inventory and collection assignments: the owner found 27 of 518 Diapers & Wipes products in stock, and the parent Baby Products collection’s first 250 products out of stock. Listings default to Shopify availability=1, and suggestions/home rails skip unavailable products. Do not infer inventory from theme placeholders; correct stock in Admin.
