@@ -773,3 +773,7 @@ Sort selection submits immediately and closes using the existing 200ms sheet tra
 ## CatFix 10: Keep truly empty categories friendly
 
 Truly empty collections omit the filter/count row. Filter-empty states keep controls and Clear. Suggestions fetch the parent with native availability=1 rather than scanning its out-of-stock first 50; fallback scans genuine discounted in-stock candidates. All use the same internal-content safety predicate and skip homepage-hide.
+
+## CatFix 11: Centre active rail items with real image fallbacks
+
+Parent rail images use collection image then the first real non-internal product photo, with a 24px coming-soon icon otherwise. Active links are centred on initial load and after instant switching; rail stays mounted.
