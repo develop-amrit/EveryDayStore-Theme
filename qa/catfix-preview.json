@@ -1,0 +1,67 @@
+{
+  "errors": [],
+  "pages": [
+    {
+      "path": "/collections",
+      "url": "/collections?pb=0",
+      "title": "Categories – EverydayyPlus",
+      "bg": "color(srgb 0.998431 0.992157 0.951373)",
+      "field": "rgb(255, 255, 255)",
+      "bodyTest": 0,
+      "more": false,
+      "cards": 0,
+      "oos": 0,
+      "overflow": false,
+      "inner": null
+    },
+    {
+      "path": "/collections/baby-products-diapers-and-wipes",
+      "url": "/collections/baby-products-diapers-and-wipes?pb=0&filter.v.availability=1",
+      "title": "Diapers & Wipes – EverydayyPlus",
+      "bg": "color(srgb 0.998431 0.992157 0.951373)",
+      "field": "rgb(255, 255, 255)",
+      "bodyTest": 0,
+      "more": false,
+      "cards": 18,
+      "oos": 0,
+      "overflow": false,
+      "inner": {
+        "max": "none",
+        "overflow": "visible"
+      },
+      "count": "18 products",
+      "stock": "true"
+    },
+    {
+      "path": "/collections/baby-products-diapers-and-wipes?ep_stock=all",
+      "url": "/collections/baby-products-diapers-and-wipes?ep_stock=all&pb=0",
+      "title": "Diapers & Wipes – EverydayyPlus",
+      "bg": "color(srgb 0.998431 0.992157 0.951373)",
+      "field": "rgb(255, 255, 255)",
+      "bodyTest": 0,
+      "more": false,
+      "cards": 23,
+      "oos": 23,
+      "overflow": false,
+      "inner": {
+        "max": "none",
+        "overflow": "visible"
+      },
+      "count": "518 products",
+      "stock": "false"
+    },
+    {
+      "path": "/",
+      "url": "/?pb=0",
+      "title": "EverydayyPlus",
+      "bg": "color(srgb 0.998431 0.992157 0.951373)",
+      "field": "rgb(255, 255, 255)",
+      "bodyTest": 0,
+      "more": false,
+      "cards": 0,
+      "oos": 0,
+      "overflow": false,
+      "inner": null
+    }
+  ]
+}

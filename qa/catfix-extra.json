@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "name": "Empty department child: no facets, real in-stock suggestions",
+      "pass": true,
+      "evidence": {
+        "href": "/collections/gifting-hampers-and-gift-sets",
+        "suggestions": 6
+      }
+    },
+    {
+      "name": "Third-level parent image or 24px icon and active rail",
+      "pass": true,
+      "evidence": {
+        "active": "Pantry Staples",
+        "top": 213,
+        "photo": true
+      }
+    },
+    {
+      "name": "Area picker remains usable with title focus and persisted selection",
+      "pass": true,
+      "evidence": "Dubai Marina"
+    },
+    {
+      "name": "Other templates: cream header, white search and policy URLs",
+      "pass": true,
+      "evidence": [
+        {
+          "path": "/cart",
+          "header": "color(srgb 0.998431 0.992157 0.951373)",
+          "search": "rgb(255, 255, 255)",
+          "theme": "#fffdf3",
+          "badPolicies": 0
+        },
+        {
+          "path": "/search",
+          "header": "color(srgb 0.998431 0.992157 0.951373)",
+          "search": "rgb(255, 255, 255)",
+          "theme": "#fffdf3",
+          "badPolicies": 0
+        },
+        {
+          "path": "/products/pampers-ultimate-comfort-taped-diapers-size-3-6-10kg-lotion-infused-with-aloe-vera-and-vitamin-e-x1000-leak-locks-technology-for-leakage-protection-248-count",
+          "header": "color(srgb 0.998431 0.992157 0.951373)",
+          "search": "rgb(255, 255, 255)",
+          "theme": "#fffdf3",
+          "badPolicies": 0
+        },
+        {
+          "path": "/pages/contact",
+          "header": "color(srgb 0.998431 0.992157 0.951373)",
+          "search": "rgb(255, 255, 255)",
+          "theme": "#fffdf3",
+          "badPolicies": 0
+        },
+        {
+          "path": "/does-not-exist",
+          "header": "color(srgb 0.998431 0.992157 0.951373)",
+          "search": "rgb(255, 255, 255)",
+          "theme": "#fffdf3",
+          "badPolicies": 0
+        }
+      ]
+    },
+    {
+      "name": "Reduced motion disables header/sheet animation",
+      "pass": true,
+      "evidence": {
+        "animation": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "webkit slim search focus and cream header",
+      "pass": true,
+      "evidence": "color(srgb 0.998431 0.992157 0.951373)"
+    },
+    {
+      "name": "firefox slim search focus and cream header",
+      "pass": true,
+      "evidence": "color(srgb 0.998431 0.992157 0.951373)"
+    }
+  ],
+  "errors": []
+}

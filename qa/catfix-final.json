@@ -1,0 +1,171 @@
+{
+  "checks": [
+    {
+      "name": "Actual product and history restoration of loaded pages",
+      "pass": true,
+      "evidence": {
+        "product": {
+          "url": "https://3djevx-mu.myshopify.com/products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23",
+          "header": "color(srgb 0.998431 0.992157 0.951373)"
+        },
+        "restored": {
+          "scroll": 1482,
+          "pages": "2",
+          "navigation": "back_forward"
+        }
+      }
+    },
+    {
+      "name": "Baby Store is not marked Soon",
+      "pass": true,
+      "evidence": {
+        "image": 1
+      }
+    },
+    {
+      "name": "Final layout 360 /",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": null
+      }
+    },
+    {
+      "name": "Final layout 360 /collections",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": null
+      }
+    },
+    {
+      "name": "Final layout 360 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": "visible"
+      }
+    },
+    {
+      "name": "Final layout 375 /",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": null
+      }
+    },
+    {
+      "name": "Final layout 375 /collections",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": null
+      }
+    },
+    {
+      "name": "Final layout 375 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": "visible"
+      }
+    },
+    {
+      "name": "Final layout 414 /",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": null
+      }
+    },
+    {
+      "name": "Final layout 414 /collections",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": null
+      }
+    },
+    {
+      "name": "Final layout 414 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": "visible"
+      }
+    },
+    {
+      "name": "Final layout 1280 /",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": null
+      }
+    },
+    {
+      "name": "Final layout 1280 /collections",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": null
+      }
+    },
+    {
+      "name": "Final layout 1280 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "whiteSearch": "rgb(255, 255, 255)",
+        "tests": 0,
+        "inner": "visible"
+      }
+    }
+  ],
+  "errors": []
+}

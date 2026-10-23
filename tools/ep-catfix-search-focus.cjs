@@ -1,0 +1,2 @@
+const b=require('./ep-catfix-common.cjs');let p='tools/ep-src/ep-browse.js';b.write(p,b.read(p).replace("if(value)input.focus({preventScroll:true});", "if(value){const zone=$('.ep-search-zone',header);zone.style.visibility='visible';zone.style.transitionProperty='max-height, opacity';zone.getBoundingClientRect();input.focus({preventScroll:true});}else $('.ep-search-zone',header).style.visibility='';"));
+b.css('.ep-browse-page .ep-search-zone{transition-property:max-height,opacity!important}');

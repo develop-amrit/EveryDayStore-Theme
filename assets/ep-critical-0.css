@@ -41,6 +41,7 @@ html{scroll-padding-bottom:9rem}
 main :is(a,button,input,summary,select,textarea){scroll-margin-block:2rem 10rem}
 .qc-home{--qc-ink: var(--dc-forest);--qc-olive: var(--dc-olive);--qc-cream: var(--dc-cream);--qc-sand: var(--dc-sand);--qc-rust: var(--dc-rust);--qc-paper: var(--dc-paper);--qc-soft: color-mix(in srgb,var(--qc-ink) 4%,var(--qc-paper));--qc-line: color-mix(in srgb,var(--qc-ink) 15%,var(--qc-paper));--qc-muted: color-mix(in srgb,var(--qc-ink) 78%,var(--qc-paper));--qc-space-1: 4px;--qc-space-2: 8px;--qc-space-3: 12px;--qc-space-4: 16px;--qc-space-6: 24px;--qc-space-8: 32px;--qc-space-12: 48px;--qc-radius: 16px;--qc-radius-lg: 28px;--qc-shadow: 0 12px 40px color-mix(in srgb,var(--qc-ink) 10%,transparent);--qc-speed: .22s;--qc-ease: cubic-bezier(.2,.7,.3,1);color:var(--qc-ink);background:var(--qc-paper);font-family:var(--font-body-family);font-size:15px;line-height:1.5;letter-spacing:0px}
 .qc-home *{box-sizing:border-box}
+.qc-home [hidden]{display:none!important}
 .qc-home :is(button,input,select){font:inherit}
 .qc-home button{cursor:pointer}
 .qc-home a,.qc-home button{color:inherit}
@@ -66,6 +67,8 @@ main :is(a,button,input,summary,select,textarea){scroll-margin-block:2rem 10rem}
 .qc-search>button{min-width:44px;min-height:44px;background:none;border:0px;font-size:20px}
 .qc-delivery-chip{display:flex;gap:8px;align-items:center;font-size:11px;margin-block-start:20px;font-weight:650}
 .qc-delivery-chip .qc-icon{width:19px}
+.qc-step-icon{position:relative;display:grid;place-items:center;min-width:54px;height:54px;border-radius:16px;background:var(--qc-cream)}
+.qc-step-icon>small{position:absolute;inset-inline-end:-5px;inset-block-start:-6px;background:var(--qc-ink);color:var(--qc-cream);border-radius:50%;width:22px;height:22px;text-align:center;font-size:9px;padding:4px}
 .qc-stepper{display:inline-flex;align-items:center;background:var(--qc-ink);color:var(--qc-cream);border-radius:8px;min-height:44px}
 .qc-stepper button{border:0px;background:none;color:inherit;min-width:44px;min-height:44px;padding:0 6px}
 .qc-stepper span{min-width:15px;text-align:center;font-size:12px}
@@ -105,8 +108,3 @@ main :is(a,button,input,summary,select,textarea){scroll-margin-block:2rem 10rem}
 @keyframes qc-bounce{50%{transform:translateY(-5px) scale(1.08)}}
 @media(prefers-reduced-motion:reduce){.qc-home *,.qc-home :before,.qc-home :after{animation:auto ease 0s 1 normal none running none!important;transition:none!important;scroll-behavior:auto!important}}
 .qc-search input{font-size:16px}
-.qc-search>button{flex-shrink:0}
-.qc-variant-dialog p{font-size:13px}
-.qc-progress>span{animation:qc-progress .4s var(--qc-ease)}
-@keyframes qc-skeleton{to{transform:translate(100%)}}
-@keyframes qc-progress{0%{transform:scaleX(0)}}

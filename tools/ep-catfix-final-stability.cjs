@@ -1,0 +1,3 @@
+const b=require('./ep-catfix-common.cjs');let p='tools/ep-src/ep-browse.js',s=b.read(p);s=s.replaceAll("$('[data-collection-products]>.ep-card',source).filter", "[...source.querySelectorAll('[data-collection-products]>.ep-card')].filter");b.write(p,s);
+p='tools/ep-polish-critical.cjs';s=b.read(p).replace("selector.includes(':root')||", "selector.includes(':root')||selector.includes('ep-')||");b.write(p,s);
+b.log('Additional QA fixed the recommendation array conversion (string replacement had collapsed a dollar sign). Critical CSS now includes all EP component states, including later-inserted/hidden content, to prevent first-paint changes when the consolidated stylesheet arrives.');

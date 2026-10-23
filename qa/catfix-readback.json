@@ -1,0 +1,10 @@
+{
+  "role": "UNPUBLISHED",
+  "files": 93,
+  "mismatches": [
+    "config/settings_data.json"
+  ],
+  "settingsSemanticMatch": true,
+  "matchedThemeFiles": 92,
+  "settingsNote": "Shopify-generated file formatting differs; parsed settings JSON is identical, including preserved merchant settings."
+}

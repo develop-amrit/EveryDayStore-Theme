@@ -1,0 +1,70 @@
+[
+  {
+    "width": 360,
+    "shifts": [
+      {
+        "value": 0.002395491242474001,
+        "time": 1275.3000000044703,
+        "sources": [
+          {
+            "html": "<span class=\"ep-banner-art ep-auto-well ep-image-js ep-loading\"><picture>\n\n<noscript><img src=\"//3djevx-mu.myshopify.com/cdn/shop/files/B0DM1JJ16W_01.jpg?v=1792727346&amp;width=600\" alt=\"Pampers Premium Care Pant Style Baby Diapers S 26 Count | No Marks Design | Voted India’s #1 Softest Diaper | All in 1 diaper with 360 Cottony Softness\" srcset=\"//",
+            "before": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "after": {
+              "x": 202,
+              "y": 754,
+              "width": 112.46875,
+              "height": 58,
+              "top": 754,
+              "right": 314.46875,
+              "bottom": 812,
+              "left": 202
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 414,
+    "shifts": [
+      {
+        "value": 0.0014315735890851197,
+        "time": 2290.89999999851,
+        "sources": [
+          {
+            "html": "<span class=\"ep-banner-art ep-auto-well ep-image-js ep-loading\"><picture>\n\n<noscript><img src=\"//3djevx-mu.myshopify.com/cdn/shop/files/B0DM1JJ16W_01.jpg?v=1792727346&amp;width=600\" alt=\"Pampers Premium Care Pant Style Baby Diapers S 26 Count | No Marks Design | Voted India’s #1 Softest Diaper | All in 1 diaper with 360 Cottony Softness\" srcset=\"//",
+            "before": {
+              "x": 244.84375,
+              "y": 805.625,
+              "width": 145.15625,
+              "height": 6.375,
+              "top": 805.625,
+              "right": 390,
+              "bottom": 812,
+              "left": 244.84375
+            },
+            "after": {
+              "x": 234,
+              "y": 755,
+              "width": 133,
+              "height": 57,
+              "top": 755,
+              "right": 367,
+              "bottom": 812,
+              "left": 234
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

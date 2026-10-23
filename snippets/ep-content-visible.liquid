@@ -1,11 +1,11 @@
-{% doc %}Theme safety net for merchant-marked internal content. Emits 1 or 0.
+{%- doc -%}Theme safety net for merchant-marked internal content. Emits 1 or 0.
 @param {object} item - Product or collection.
 @param {string} [kind] - collection for handle exclusions.
 @param {string} [hide_prefix] - Optional section prefix, blank disables.
 @param {string} [hidden_handles] - Optional collection handles.
 @param {string} [title] - Link label fallback.
 @param {string} [handle] - Link handle fallback.
-{% enddoc %}
+{%- enddoc -%}
 {%- assign prefix = hide_prefix -%}{%- if prefix == nil -%}{%- assign prefix = settings.ep_hidden_title_prefix -%}{%- endif -%}
 {%- assign label = item.title | default: title -%}{%- assign start = label | slice: 0, prefix.size -%}
 {%- assign visible = true -%}{%- if prefix != blank and start == prefix -%}{%- assign visible = false -%}{%- endif -%}

@@ -1,6 +1,6 @@
 <section class="ep-categories-page ep-wrap color-{{ section.settings.color_scheme }}" aria-labelledby="ep-categories-title">
 <h1 class="visually-hidden" id="ep-categories-title">{{ 'epc.categories' | t }}</h1>
-{% for block in section.blocks %}{% if block.type == 'group' %}
+{% for block in section.blocks %}{% if block.type == 'group' %}{% capture ep_visible %}{% render 'ep-content-visible', item: block.settings.department, kind: 'collection', title: block.settings.heading, hide_prefix: section.settings.hide_title_prefix, hidden_handles: section.settings.hidden_collection_handles %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}
   {% assign group_links = block.settings.menu.links %}
   {% if block.settings.department != blank %}{% assign group_links = blank %}{% for parent in block.settings.menu.links %}{% if parent.object.id == block.settings.department.id %}{% assign group_links = parent.links %}{% break %}{% endif %}{% endfor %}{% endif %}
   {% if group_links != blank %}<section class="ep-directory-group" aria-labelledby="ep-department-{{ block.id }}" {{ block.shopify_attributes }}>

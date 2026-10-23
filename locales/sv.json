@@ -1061,5 +1061,17 @@
     "alt": "Alternative text",
     "promo": "Collection promo banner",
     "page_size_info": "Products load in batches of 24."
+  },
+  "epcf": {
+    "hide_prefix": "Hide collections and products whose title starts with",
+    "hidden_handles": "Hidden collection handles",
+    "internal_content": "Internal content",
+    "in_stock": "In stock",
+    "free": "Free",
+    "see_all": "See all",
+    "price_up": "Price ↑",
+    "price_down": "Price ↓",
+    "newest": "Newest",
+    "oldest": "Oldest"
   }
 }

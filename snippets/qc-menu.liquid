@@ -2,13 +2,13 @@
 @param {boolean} [mobile] - Render the full nested drawer navigation.{% enddoc %}
 {% if mobile %}
   <nav class="qc-menu-tree" aria-label="{{ 'qc.categories' | t }}">
-    {% for link in settings.qc_catalog_menu.links %}
+    {% for link in settings.qc_catalog_menu.links %}{% assign ep_link_handle = link.url | split: '/' | last | split: '?' | first %}{% capture ep_visible %}{% render 'ep-content-visible', item: link.object, kind: 'collection', title: link.title, handle: ep_link_handle %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}
       {% if request.page_type != 'index' and link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
       {% if link.links != blank %}
         <details><summary>{{ link.title | escape }}</summary><div class="qc-mega-panel">
           <a href="{{ link.url }}">{{ 'qc.view_all' | t }} {{ link.title | escape }}</a>
-          {% for child in link.links %}<div><a href="{{ child.url }}">{{ child.title | escape }}</a>
-            {% if child.links != blank %}<ul role="list">{% for leaf in child.links %}<li><a href="{{ leaf.url }}">{{ leaf.title | escape }}</a></li>{% endfor %}</ul>{% endif %}
+          {% for child in link.links %}{% assign ep_link_handle = child.url | split: '/' | last | split: '?' | first %}{% capture ep_visible %}{% render 'ep-content-visible', item: child.object, kind: 'collection', title: child.title, handle: ep_link_handle %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}<div><a href="{{ child.url }}">{{ child.title | escape }}</a>
+            {% if child.links != blank %}<ul role="list">{% for leaf in child.links %}{% assign ep_link_handle = leaf.url | split: '/' | last | split: '?' | first %}{% capture ep_visible %}{% render 'ep-content-visible', item: leaf.object, kind: 'collection', title: leaf.title, handle: ep_link_handle %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}<li><a href="{{ leaf.url }}">{{ leaf.title | escape }}</a></li>{% endfor %}</ul>{% endif %}
           </div>{% endfor %}
         </div></details>
       {% else %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endif %}
@@ -23,7 +23,7 @@
       {% render 'qc-icon', name: 'grid' %}<span>{{ 'qc.choose_products' | t }}</span>
     </a>
     <div class="qc-category-items">
-      {% for link in settings.qc_catalog_menu.links %}
+      {% for link in settings.qc_catalog_menu.links %}{% assign ep_link_handle = link.url | split: '/' | last | split: '?' | first %}{% capture ep_visible %}{% render 'ep-content-visible', item: link.object, kind: 'collection', title: link.title, handle: ep_link_handle %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}
         {% if request.page_type != 'index' and link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
         {% if link.links != blank %}
           <details class="qc-category-node"{% if link.active or link.child_active %} data-current-department{% endif %}>
@@ -31,7 +31,7 @@
             <div class="qc-category-submenu">
               <a class="qc-category-submenu-title" href="{{ link.url }}"><span class="qc-category-name">{{ link.title | escape }}</span><span class="qc-category-view">{{ 'qc.view_all' | t }}</span></a>
               <div class="qc-category-submenu-grid">
-                {% for child in link.links %}<div><a href="{{ child.url }}"><strong>{{ child.title | escape }}</strong></a>
+                {% for child in link.links %}{% assign ep_link_handle = child.url | split: '/' | last | split: '?' | first %}{% capture ep_visible %}{% render 'ep-content-visible', item: child.object, kind: 'collection', title: child.title, handle: ep_link_handle %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}<div><a href="{{ child.url }}"><strong>{{ child.title | escape }}</strong></a>
                 </div>{% endfor %}
               </div>
             </div>

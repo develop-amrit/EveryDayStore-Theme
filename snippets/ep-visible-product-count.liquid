@@ -1,0 +1,5 @@
+{%- doc -%}Exact theme-visible count for small native filtered result sets; larger sets retain native count.
+@param {collection} collection - Filtered collection.
+@param {section} section - Current section settings.
+{%- enddoc -%}
+{%- assign count = collection.products_count -%}{%- if count <= 50 -%}{%- for item in collection.products -%}{%- capture visible -%}{% render 'ep-content-visible', item: item, hide_prefix: section.settings.hide_title_prefix %}{%- endcapture -%}{%- if visible == '0' -%}{%- assign count = count | minus: 1 -%}{%- endif -%}{%- endfor -%}{%- endif -%}{{- count -}}

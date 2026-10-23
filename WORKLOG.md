@@ -785,3 +785,19 @@ Opening search focuses synchronously inside the click handler for iOS. Input is 
 ## CatFix 13: Polish directory headings and store artwork
 
 See all sits beside each heading with the shared dashed-rule style. Auto artwork no longer treats an out-of-stock collection as empty: it uses the first real product photo or collection featured image while counts still come from all_products_count. Uploaded artwork remains highest priority.
+
+CatFix integration: optimistic state uses a dedicated UI event rather than publishing speculative line data to Dawn consumers; native cart events still reconcile. Shared skeletons use the same card/image/name/pack geometry. Legacy predictive, navigation text and all EP image candidate loops receive the internal-content predicate. Small filtered result counts subtract safety-hidden products; larger sets retain Shopify native counts until Admin cleanup.
+
+Before deployment, remote baseline check found merchant edits only in settings_data.json. Changed-file-only deployment is used for this batch to preserve untouched remote templates/group JSON; remote theme settings are merged before adding the two new safety-net values.
+
+Preview QA caught a leading newline emitted by untrimmed Liquid doc tags in the visibility helper; trimmed doc delimiters now make its exact 0/1 guard reliable. Fixed recommendation NodeList queries, preserved all-stock pagination state, shortened price sort labels and retained one continuous cream panel tint. Temporary diagnostic comment removed.
+
+Additional QA fixed the recommendation array conversion (string replacement had collapsed a dollar sign). Critical CSS now includes all EP component states, including later-inserted/hidden content, to prevent first-paint changes when the consolidated stylesheet arrives.
+
+Lighthouse mobile preview observation: Performance 74, Accessibility 100, Best practices 79, SEO 92; LCP 3.49s, CLS 0. Earlier ≥80 / <2.5s performance gates remain open. Largest paint was the consent paragraph after Shopify privacy initialization; current category fixes and consent behaviour were preserved.
+
+## CatFix 14: Integrate and verify category fixes
+
+Deployed only to verified-unpublished 189582049393 using changed-file-only guard. Preserved merchant remote settings. All 42 checks passed across the interaction, extra-browser and final-layout runs; no console errors. Final 360/375/414/1280 homepage, Categories and listing viewport checks all measured CLS 0 with no horizontal overflow. Theme Check: 0 errors, 15 inherited/retained-file warnings, individually documented in docs/CATFIX_QA.md. Shopify skill validation attempted but its bundled dependency is missing; official CLI validation completed.
+
+Final QA and exact theme-file manifest: docs/CATFIX_QA.md and docs/CATFIX_CHANGED_FILES.md. Merchant follow-ups: MERCHANT_TODO.md. Empty-category suggestions, stock toggle/infinite scroll, optimistic mutations/debounce/error rollback, history-only restore, area save, predictive search and headless WebKit/Firefox search focus verified. No publication.

@@ -1,0 +1,374 @@
+{
+  "checks": [
+    {
+      "name": "Default stock, window scrolling and test guard",
+      "pass": true,
+      "evidence": {
+        "count": "18 products",
+        "cards": 18,
+        "overflow": "visible",
+        "rail": "sticky",
+        "cls": 0
+      }
+    },
+    {
+      "name": "Slim search focuses, predicts, and closes cleanly",
+      "pass": true,
+      "evidence": "ount\n\n⃃ \nAED\n 274.08\n\nPampers Rash Protection Taped Diapers, Size 1, 2-5kg, +50% Aloe Vera Lotion for Rash Protection, 3x Fortified Layers for Leakage Protection, Jumbo Box, 136 Count\n\n⃃ \nAED\n 195\nSee all results\n10 results: 6 suggestions, 4 products"
+    },
+    {
+      "name": "Stock toggle stays in department; out-of-stock presentation",
+      "pass": true,
+      "evidence": {
+        "url": "https://3djevx-mu.myshopify.com/collections/baby-products-diapers-and-wipes?pb=0&ep_stock=all",
+        "count": 23,
+        "opacity": "0.45"
+      }
+    },
+    {
+      "name": "Viewport infinite scroll preserves all-stock mode",
+      "pass": true,
+      "evidence": {
+        "page": "2",
+        "cards": 47,
+        "window": 3045
+      }
+    },
+    {
+      "name": "Sort applies immediately, white filter button, 16px inputs",
+      "pass": true,
+      "evidence": {
+        "color": "rgb(255, 255, 255)",
+        "height": 48,
+        "inputs": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ]
+      }
+    },
+    {
+      "name": "Instant sibling navigation keeps rail node and back/forward",
+      "pass": true,
+      "evidence": {
+        "url": "https://3djevx-mu.myshopify.com/collections/baby-products-diapers-and-wipes?sort_by=price-ascending&ep_stock=all",
+        "active": "Diapers & Wipes"
+      }
+    },
+    {
+      "name": "Fresh visit ignores stored scroll",
+      "pass": true,
+      "evidence": {
+        "scroll": 0,
+        "page": "1"
+      }
+    },
+    {
+      "name": "Optimistic add, debounce, badge/pill, remove",
+      "pass": true,
+      "evidence": {
+        "writes": [
+          {
+            "type": "add",
+            "data": "{\"items\":[{\"id\":67800335515761,\"quantity\":1}],\"sections\":[\"qc-cart\"],\"sections_url\":\"/\"}"
+          },
+          {
+            "type": "change",
+            "data": "{\"id\":\"67800335515761:596b558d296c95c1e018ad078bfffb62\",\"quantity\":3,\"sections\":[\"qc-cart\"],\"sections_url\":\"/\"}"
+          },
+          {
+            "type": "change",
+            "data": "{\"id\":\"67800335515761:596b558d296c95c1e018ad078bfffb62\",\"quantity\":0,\"sections\":[\"qc-cart\"],\"sections_url\":\"/\"}"
+          }
+        ],
+        "padding": "76px"
+      }
+    },
+    {
+      "name": "Shopify error rolls optimistic state back with toast",
+      "pass": true,
+      "evidence": "Inventory limit reached"
+    },
+    {
+      "name": "Layout 360 /collections",
+      "pass": true,
+      "evidence": {
+        "width": 360,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 360 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "width": 360,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 360 /",
+      "pass": true,
+      "evidence": {
+        "width": 360,
+        "overflow": false,
+        "cls": 0.002395491242474001,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 375 /collections",
+      "pass": true,
+      "evidence": {
+        "width": 375,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 375 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "width": 375,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 375 /",
+      "pass": true,
+      "evidence": {
+        "width": 375,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 414 /collections",
+      "pass": true,
+      "evidence": {
+        "width": 414,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 414 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "width": 414,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 414 /",
+      "pass": true,
+      "evidence": {
+        "width": 414,
+        "overflow": false,
+        "cls": 0.0014315735890851197,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 1280 /collections",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 1280 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    },
+    {
+      "name": "Layout 1280 /",
+      "pass": true,
+      "evidence": {
+        "width": 1280,
+        "overflow": false,
+        "cls": 0,
+        "header": "color(srgb 0.998431 0.992157 0.951373)",
+        "search": "rgb(255, 255, 255)",
+        "tests": 0,
+        "more": false
+      }
+    }
+  ],
+  "errors": [],
+  "layouts": [
+    {
+      "path": "/collections",
+      "width": 360,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/collections/baby-products-diapers-and-wipes",
+      "width": 360,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/",
+      "width": 360,
+      "overflow": false,
+      "cls": 0.002395491242474001,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/collections",
+      "width": 375,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/collections/baby-products-diapers-and-wipes",
+      "width": 375,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/",
+      "width": 375,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/collections",
+      "width": 414,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/collections/baby-products-diapers-and-wipes",
+      "width": 414,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/",
+      "width": 414,
+      "overflow": false,
+      "cls": 0.0014315735890851197,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/collections",
+      "width": 1280,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/collections/baby-products-diapers-and-wipes",
+      "width": 1280,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "overflow": false,
+      "cls": 0,
+      "header": "color(srgb 0.998431 0.992157 0.951373)",
+      "search": "rgb(255, 255, 255)",
+      "tests": 0,
+      "more": false
+    }
+  ]
+}
