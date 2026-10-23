@@ -17,7 +17,7 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    <title>{% if request.page_type == 'list-collections' %}{{ 'epc.categories' | t }} – EverydayyPlus{% else %}
+    <title>{% if template.suffix == 'ep-deals' %}{{ 'eps.best_deals' | t }} – {{ shop.name }}{% elsif request.page_type == 'list-collections' %}{{ 'epc.categories' | t }} – EverydayyPlus{% else %}
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
@@ -311,7 +311,7 @@
 <style>{{ 'ep-site.css' | inline_asset_content }}</style>
 </head>
 
-  <body class="qc-home ep-page{% if request.page_type == 'collection' or request.page_type == 'list-collections' %} ep-browse-page{% endif %}{% if request.page_type == 'collection' %} ep-listing-page{% endif %}{% if request.page_type == 'index' %} ep-home-panel{% endif %} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="qc-home ep-page{% if request.page_type == 'collection' or request.page_type == 'list-collections' %} ep-browse-page{% endif %}{% if request.page_type == 'collection' %} ep-listing-page{% endif %}{% if template.suffix == 'ep-deals' %} ep-deals-page{% endif %}{% if request.page_type == 'index' %} ep-home-panel{% endif %} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>

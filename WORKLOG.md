@@ -815,3 +815,7 @@ Shared 250-product scan skips unavailable, homepage-hide and internal products, 
 ## Site 3: Restore contrast on filled buttons
 
 Filled Dawn/QC/EP button families use brand ink on brand; secondary/outline buttons use brand on white. QA includes computed visible-button text/background equality checks across affected templates, including 404. Native unstyled and icon/ADD/stepper controls retain their component treatments.
+
+## Site 4: Rebuild Deals on shared listing components
+
+Deals uses the rail-free collection layout, native stock/filter/sort sheets, 24-record infinite fetches and only real discounted products. View parameter survives sort/filter/pagination, title is Best deals, Deals navigation remains visible/active, and cart pill sits above it. Price/MRP rows reserve their own height sitewide.
