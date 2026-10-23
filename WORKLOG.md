@@ -835,3 +835,7 @@ Product now has a square scroll-snap gallery, dots/fullscreen zoom, real variant
 ## Site 8: Use full-strength brand cream headers
 
 Header, pinned header/search surround, listing heading edge and homepage panel use full #FEFAE0 through the shared accent token. Search stays white with a subtle border; all theme-color tags match.
+
+## Site 9: Load responsive images before they enter view
+
+First-six card priority is server-rendered; other native lazy images warm within 400px. Removed delayed homepage data-src gating while retaining skeleton/fade classes and fixed wells. Cards and category tiles use 120–480 srcsets and accurate listing/rail sizes. Promo bubble is eager/fixed-size and stays hidden until a real image loads; product pages hide it.
