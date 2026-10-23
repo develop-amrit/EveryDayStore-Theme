@@ -1,0 +1,8 @@
+{%- doc -%}A real available, image-bearing candidate, or no output.
+@param {product} product - Candidate.
+@param {string} used_handles - Comma-delimited selected handles.
+@param {array} excluded_tags - Tags omitted by merchant.
+@param {boolean} eager - Above-fold image.
+@param {boolean} high_priority - Primary picture.
+{%- enddoc -%}
+{%- assign marker = product.handle | prepend: ',' | append: ',' -%}{%- assign allowed = true -%}{%- unless product.available and product.featured_image -%}{%- assign allowed = false -%}{%- endunless -%}{%- if used_handles contains marker -%}{%- assign allowed = false -%}{%- endif -%}{%- for tag in excluded_tags -%}{%- assign tag = tag | strip -%}{%- if tag != blank and product.tags contains tag -%}{%- assign allowed = false -%}{%- endif -%}{%- endfor -%}{%- capture visible -%}{% render 'ep-content-visible', item: product %}{%- endcapture -%}{%- if visible == '0' -%}{%- assign allowed = false -%}{%- endif -%}{%- if allowed -%}{%- assign loading = 'lazy' -%}{%- if eager -%}{%- assign loading = 'eager' -%}{%- endif -%}{%- assign priority = 'auto' -%}{%- if high_priority -%}{%- assign priority = 'high' -%}{%- endif -%}<span class="ep-cluster-item" data-ep-cluster-product="{{ product.handle }}">{{ product.featured_image | image_url: width: 480, format: 'webp' | image_tag: loading: loading, fetchpriority: priority, widths: '120, 180, 240, 360, 480', sizes: '(min-width:990px) 100px, 22vw', alt: product.title }}</span>{%- endif -%}

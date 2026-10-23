@@ -839,3 +839,7 @@ Header, pinned header/search surround, listing heading edge and homepage panel u
 ## Site 9: Load responsive images before they enter view
 
 First-six card priority is server-rendered; other native lazy images warm within 400px. Removed delayed homepage data-src gating while retaining skeleton/fade classes and fixed wells. Cards and category tiles use 120–480 srcsets and accurate listing/rail sizes. Promo bubble is eager/fixed-size and stays hidden until a real image loads; product pages hide it.
+
+## Site 10: Choose unique available panel imagery
+
+Auto clusters choose only available image-bearing real products, skip homepage-hide/internal records, share used handles across Baby plus all category blocks, and fill from real department children when needed. Each category block gains a Product for image picker; uploaded artwork still wins. Bath & Body collection-condition cleanup is recorded as an owner task.
