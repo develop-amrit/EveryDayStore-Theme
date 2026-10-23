@@ -769,3 +769,7 @@ New session namespace and full path/query key avoid stale inner-scroll snapshots
 ## CatFix 9: Improve sort and filter sheets
 
 Sort selection submits immediately and closes using the existing 200ms sheet transition; no apply button. Chip names the active native sort. Primary filters button is white 15px/700 on brand with 48px height. All sheet inputs are 16px; native vendor/product-type facets render when configured.
+
+## CatFix 10: Keep truly empty categories friendly
+
+Truly empty collections omit the filter/count row. Filter-empty states keep controls and Clear. Suggestions fetch the parent with native availability=1 rather than scanning its out-of-stock first 50; fallback scans genuine discounted in-stock candidates. All use the same internal-content safety predicate and skip homepage-hide.
