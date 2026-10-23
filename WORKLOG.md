@@ -805,3 +805,9 @@ Final QA and exact theme-file manifest: docs/CATFIX_QA.md and docs/CATFIX_CHANGE
 ## Site 1: Keep category browsing in one history entry
 
 Category rail/chip/filter/sort updates replace the listing history state. Different-department fetch fallback replaces the document. A shared entry record preserves the original non-listing URL/scroll, marks in-site entries, ignores stale records for direct landings and supplies the slim back arrow. Product visits remain normal navigation; history/bfcache restoration stays enabled. Removed category popstate rerendering.
+
+Site baseline: remote product/search/404/cart/deals JSON was read before editing; no semantic merchant template differences found. Existing review-theme settings and untouched homepage composition retained.
+
+## Site 2: Restore in-stock homepage rails and grids
+
+Shared 250-product scan skips unavailable, homepage-hide and internal products, deduplicates child fallback and fills the requested limit from real department children when primary yields fewer than four. Sections hide only if the combined real in-stock count stays below four. Care grid uses the same rule. Baby inventory and optional automated in-stock collection remain owner tasks.
