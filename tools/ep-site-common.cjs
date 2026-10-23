@@ -1,0 +1,1 @@
+const b=require('./ep-build.cjs'),fs=require('fs');module.exports={...b,edit:(p,fn)=>b.write(p,fn(b.read(p))),css:s=>fs.appendFileSync('tools/ep-site.css',s+'\n'),done:(n,title,note)=>{b.log('## Site '+n+': '+title+'\n\n'+note);b.commit('Site '+n+': '+title);}};

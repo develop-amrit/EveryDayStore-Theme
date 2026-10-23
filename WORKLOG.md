@@ -801,3 +801,7 @@ Lighthouse mobile preview observation: Performance 74, Accessibility 100, Best p
 Deployed only to verified-unpublished 189582049393 using changed-file-only guard. Preserved merchant remote settings. All 42 checks passed across the interaction, extra-browser and final-layout runs; no console errors. Final 360/375/414/1280 homepage, Categories and listing viewport checks all measured CLS 0 with no horizontal overflow. Theme Check: 0 errors, 15 inherited/retained-file warnings, individually documented in docs/CATFIX_QA.md. Shopify skill validation attempted but its bundled dependency is missing; official CLI validation completed.
 
 Final QA and exact theme-file manifest: docs/CATFIX_QA.md and docs/CATFIX_CHANGED_FILES.md. Merchant follow-ups: MERCHANT_TODO.md. Empty-category suggestions, stock toggle/infinite scroll, optimistic mutations/debounce/error rollback, history-only restore, area save, predictive search and headless WebKit/Firefox search focus verified. No publication.
+
+## Site 1: Keep category browsing in one history entry
+
+Category rail/chip/filter/sort updates replace the listing history state. Different-department fetch fallback replaces the document. A shared entry record preserves the original non-listing URL/scroll, marks in-site entries, ignores stale records for direct landings and supplies the slim back arrow. Product visits remain normal navigation; history/bfcache restoration stays enabled. Removed category popstate rerendering.
