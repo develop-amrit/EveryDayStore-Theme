@@ -1073,5 +1073,28 @@
     "price_down": "Price ↓",
     "newest": "Newest",
     "oldest": "Oldest"
+  },
+  "eps": {
+    "best_deals": "Best deals",
+    "search": "Search",
+    "pages": "Pages",
+    "results_for": "{{ count }} results for “{{ query }}”",
+    "no_results": "No results for “{{ query }}”",
+    "search_end": "That’s all the results",
+    "bestsellers": "Popular essentials",
+    "popular_menu": "Popular searches menu",
+    "product_page": "Product details",
+    "product_card": "Product card fragment",
+    "recent": "Recently viewed products",
+    "zoom_image": "Zoom image {{ number }}",
+    "zoom_gallery": "Product image viewer",
+    "delivery": "Delivery",
+    "free_over": "Free over",
+    "delivery_info": "Delivery fees",
+    "about": "About this product",
+    "read_more": "Read more",
+    "read_less": "Read less",
+    "product_for_image": "Product for image",
+    "recovery": "Find your everyday essentials"
   }
 }

@@ -847,3 +847,7 @@ Auto clusters choose only available image-bearing real products, skip homepage-h
 ## Site 11: Add real products to the empty basket
 
 Cart page offers an editable in-stock EP rail with working compact ADD controls. Template-held images stay inert until the empty-state rail is needed; native cart updates reveal/hide it without a reload. Existing basket, shipping, terms and checkout remain unchanged.
+
+## Site 12: Record sitewide merchant follow-ups
+
+Added hosted-account branding, Baby stock/optional automated collection, Bath & Body conditions and remaining test-record cleanup to MERCHANT_TODO.md. Added localized storefront/editor strings for all new components; no catalogue records, menus, inventory or hosted pages were mutated.

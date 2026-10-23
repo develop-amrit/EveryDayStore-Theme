@@ -57,3 +57,9 @@ The current stock-filtered Diapers & Wipes preview has 27 native results, includ
 Search & Discovery currently exposes Availability and Price. To add Brand (and optionally Product type): open Apps → Shopify Search & Discovery → Filters → Add filter, select Product vendor / Product type, and save. The sheets show these automatically once supplied by Shopify.
 
 Homepage rails use in-stock products only. If a department’s first 50 Liquid candidates are all unavailable, its rail hides until the collection is reordered or stock is corrected. The department and all real category links remain visible.
+
+## Sitewide owner tasks
+- Brand the Shopify-hosted sign-in page in Admin → Settings → Customer accounts (logo and colours); storefront theme code cannot change that hosted page.
+- Check Baby Products inventory: its first 250 products are unavailable. Optionally create “Baby care – in stock” with Inventory stock > 0 plus the Baby tag/type and select it for the homepage rail. Child-collection fallback now keeps the rail useful.
+- Fix Bath & Body collection conditions: it includes baby diaper pants (Huggies DryNites/Pampers). Retag/reassign products so Care and Bath & Body imagery reflect genuine bath/body products. Each homepage panel block now has a Product for image picker.
+- Set remaining [TEST] products to Draft and [TEST] collections to Unpublished. Theme safety filters do not remove them from Admin, inventory totals or every external sales channel.
