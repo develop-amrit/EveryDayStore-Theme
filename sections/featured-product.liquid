@@ -351,7 +351,7 @@
                               <span>{{ product.selected_or_first_available_variant.quantity_rule.min }}+</span>
                               {% capture price %}{% assign ep_money_amount = product.selected_or_first_available_variant.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                               <span data-text="{% render 'ep-money-text', amount: product.selected_or_first_available_variant.price %}">
-                                {{ 'sections.quick_order_list.each' | t: money: price -}}
+                                {{ 'sections.quick_order_list.each_html' | t: money: price -}}
                               </span>
                             </li>
                             {%- for price_break in product.selected_or_first_available_variant.quantity_price_breaks -%}
@@ -363,7 +363,7 @@
                                 >
                                 {% capture price %}{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                                 <span data-text="{% render 'ep-money-text', amount: price_break.price %}">
-                                  {{ 'sections.quick_order_list.each' | t: money: price -}}
+                                  {{ 'sections.quick_order_list.each_html' | t: money: price -}}
                                 </span>
                               </li>
                             {%- endfor -%}

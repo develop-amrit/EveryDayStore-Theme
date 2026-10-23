@@ -177,7 +177,8 @@
         "note": "Galima kiekybinė kainodara",
         "minimum": "{{ quantity }}+",
         "price_range": "{{ minimum }}–{{ maximum }}",
-        "price_at_each_html": "po {{ price }}/vnt."
+        "price_at_each_html": "po {{ price }}/vnt.",
+        "price_range_html": "{{ minimum }}–{{ maximum }}"
       },
       "taxes_included": "Mokesčiai įtraukti.",
       "duties_included": "Muito mokesčiai įtraukti.",
@@ -221,7 +222,8 @@
       "filter_selected_accessibility": "{{ type }} (pasirinkta filtrų: {{ count }})",
       "show_more": "Rodyti daugiau",
       "show_less": "Rodyti mažiau",
-      "filter_and_operator_subtitle": "Atitikti visas"
+      "filter_and_operator_subtitle": "Atitikti visas",
+      "max_price_html": "Didžiausia kaina yra {{ price }}"
     }
   },
   "templates": {
@@ -398,7 +400,8 @@
       "remove_all_single_item_confirmation": "Pašalinti 1 prekę iš krepšelio?",
       "min_error": "Nustatytas mažiausias šios prekės kiekis: {{ min }}",
       "max_error": "Nustatytas didžiausias šios prekės kiekis: {{ max }}",
-      "step_error": "Galima pridėti tik po {{ step }} vnt. šios prekės"
+      "step_error": "Galima pridėti tik po {{ step }} vnt. šios prekės",
+      "each_html": "{{ money }}/vnt."
     }
   },
   "localization": {
@@ -993,7 +996,12 @@
     "view_basket": "View basket",
     "filter_sort": "Filter & sort",
     "change_department": "Change department",
-    "next_day_promise": "Order today, delivered next day"
+    "next_day_promise": "Order today, delivered next day",
+    "until_free_html": "Add {{ amount }} for free delivery",
+    "free_next_tier_html": "Add {{ amount }} to reduce delivery to {{ fee }}",
+    "delivery_below_html": "Below {{ threshold }}: {{ fee }}",
+    "delivery_middle_html": "From {{ threshold }}: {{ fee }}",
+    "delivery_free_html": "From {{ threshold }}: free"
   },
   "ep": {
     "see_all": "See all",
@@ -1040,6 +1048,7 @@
     "show_all_count": "Show all {{ count }}",
     "show_less": "Show less",
     "browse_catalogue": "Browse full catalogue",
-    "shop_now": "Shop now →"
+    "shop_now": "Shop now →",
+    "from_price_html": "From {{ price }}"
   }
 }

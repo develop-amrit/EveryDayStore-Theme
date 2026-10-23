@@ -1,0 +1,23 @@
+{
+  "errors": [],
+  "cartRefresh": {
+    "symbols": 4,
+    "basket": "\n<span class=\"ep-money \"><span class=\"ep-dh\" aria-hidden=\"true\">⃃</span> <span class=\"visually-hidden\">AED </span>\n120</span>\n"
+  },
+  "richText": {
+    "symbol": 1,
+    "title": "AED 99"
+  },
+  "/pages/delivery-guide": {
+    "status": 404,
+    "symbols": 1
+  },
+  "/pages/returns-guide": {
+    "status": 404,
+    "symbols": 1
+  },
+  "/gift_cards/preview": {
+    "status": 404,
+    "symbols": 1
+  }
+}

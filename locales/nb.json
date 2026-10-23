@@ -174,7 +174,8 @@
         "note": "Volumprissetting er tilgjengelig",
         "minimum": "{{ quantity }}+",
         "price_range": "{{ minimum }}–{{ maximum }}",
-        "price_at_each_html": "til {{ price }}/pr. stk"
+        "price_at_each_html": "til {{ price }}/pr. stk",
+        "price_range_html": "{{ minimum }}–{{ maximum }}"
       },
       "product_variants": "Produktvarianter",
       "taxes_included": "Inkludert avgifter.",
@@ -213,7 +214,8 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }} filtre valgt)",
       "show_more": "Vis mer",
       "show_less": "Vis færre",
-      "filter_and_operator_subtitle": "Match alle"
+      "filter_and_operator_subtitle": "Match alle",
+      "max_price_html": "Den høyeste prisen er {{ price }}"
     }
   },
   "templates": {
@@ -374,7 +376,8 @@
       "remove_all_single_item_confirmation": "Vil du fjerne én vare fra handlekurven?",
       "min_error": "Denne varen har et minimumsantall på {{ min }}",
       "max_error": "Denne varen har et maksimumsantall på {{ max }}",
-      "step_error": "Du kan bare legge til denne varen i multipler av {{ step }}"
+      "step_error": "Du kan bare legge til denne varen i multipler av {{ step }}",
+      "each_html": "{{ money }}/stk."
     }
   },
   "localization": {
@@ -969,7 +972,12 @@
     "view_basket": "View basket",
     "filter_sort": "Filter & sort",
     "change_department": "Change department",
-    "next_day_promise": "Order today, delivered next day"
+    "next_day_promise": "Order today, delivered next day",
+    "until_free_html": "Add {{ amount }} for free delivery",
+    "free_next_tier_html": "Add {{ amount }} to reduce delivery to {{ fee }}",
+    "delivery_below_html": "Below {{ threshold }}: {{ fee }}",
+    "delivery_middle_html": "From {{ threshold }}: {{ fee }}",
+    "delivery_free_html": "From {{ threshold }}: free"
   },
   "ep": {
     "see_all": "See all",
@@ -1016,6 +1024,7 @@
     "show_all_count": "Show all {{ count }}",
     "show_less": "Show less",
     "browse_catalogue": "Browse full catalogue",
-    "shop_now": "Shop now →"
+    "shop_now": "Shop now →",
+    "from_price_html": "From {{ price }}"
   }
 }

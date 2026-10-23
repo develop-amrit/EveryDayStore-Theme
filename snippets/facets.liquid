@@ -322,7 +322,7 @@
                       <div class="{% if filter_type == 'horizontal' %}facets__header{% else %}facets__header-vertical{% endif %}">
                         {% capture max_price_amount %}{% assign ep_money_amount = filter.range_max %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                         <span class="facets__selected">
-                          {{- 'products.facets.max_price' | t: price: max_price_amount -}}
+                          {{- 'products.facets.max_price_html' | t: price: max_price_amount -}}
                         </span>
                         {%- if filter_type != 'vertical' -%}
                           <facet-remove>
@@ -695,7 +695,7 @@
 
                           {% capture max_price_amount %}{% assign ep_money_amount = filter.range_max %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
                           <p class="mobile-facets__info">
-                            {{ 'products.facets.max_price' | t: price: max_price_amount }}
+                            {{ 'products.facets.max_price_html' | t: price: max_price_amount }}
                           </p>
 
                           <price-range class="facets__price">

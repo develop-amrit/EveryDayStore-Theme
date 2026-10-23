@@ -175,7 +175,8 @@
         "note": "수량별 가격 책정 사용 가능",
         "minimum": "{{ quantity }}+",
         "price_range": "{{ minimum }} ~ {{ maximum }}",
-        "price_at_each_html": "개당 {{ price }}"
+        "price_at_each_html": "개당 {{ price }}",
+        "price_range_html": "{{ minimum }} ~ {{ maximum }}"
       },
       "taxes_included": "세금이 포함된 가격입니다.",
       "duties_included": "관세가 포함된 가격입니다.",
@@ -213,7 +214,8 @@
       "filter_selected_accessibility": "{{ type }}({{ count }}개 필터 선택됨)",
       "show_more": "자세히 표시",
       "show_less": "간단히 표시",
-      "filter_and_operator_subtitle": "모두 일치"
+      "filter_and_operator_subtitle": "모두 일치",
+      "max_price_html": "최고가는 {{ price }}입니다."
     }
   },
   "templates": {
@@ -374,7 +376,8 @@
       "remove_all_single_item_confirmation": "카트에서 1개의 품목을 제거하시겠습니까?",
       "min_error": "이 품목의 최소 개수는 {{ min }}개입니다.",
       "max_error": "이 품목은 최대 개수는 {{ max }}개입니다.",
-      "step_error": "이 품목은 {{ step }}개 단위로만 추가할 수 있습니다."
+      "step_error": "이 품목은 {{ step }}개 단위로만 추가할 수 있습니다.",
+      "each_html": "개당 {{ money }}"
     }
   },
   "localization": {
@@ -969,7 +972,12 @@
     "view_basket": "View basket",
     "filter_sort": "Filter & sort",
     "change_department": "Change department",
-    "next_day_promise": "Order today, delivered next day"
+    "next_day_promise": "Order today, delivered next day",
+    "until_free_html": "Add {{ amount }} for free delivery",
+    "free_next_tier_html": "Add {{ amount }} to reduce delivery to {{ fee }}",
+    "delivery_below_html": "Below {{ threshold }}: {{ fee }}",
+    "delivery_middle_html": "From {{ threshold }}: {{ fee }}",
+    "delivery_free_html": "From {{ threshold }}: free"
   },
   "ep": {
     "see_all": "See all",
@@ -1016,6 +1024,7 @@
     "show_all_count": "Show all {{ count }}",
     "show_less": "Show less",
     "browse_catalogue": "Browse full catalogue",
-    "shop_now": "Shop now →"
+    "shop_now": "Shop now →",
+    "from_price_html": "From {{ price }}"
   }
 }

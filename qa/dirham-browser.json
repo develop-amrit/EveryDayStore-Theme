@@ -1,0 +1,226 @@
+{
+  "errors": [],
+  "consoleMessages": [
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Unsafe attempt to load URL https://cdn.shopify.com/shopifycloud/customer-authentication-web/production/sprite-86bf53.svg from frame with URL https://shopify.com/authentication/78456225905/login Domains, protocols and ports must match.\n",
+    "Unsafe attempt to load URL https://cdn.shopify.com/shopifycloud/customer-authentication-web/production/sprite-86bf53.svg from frame with URL https://shopify.com/authentication/78456225905/login Domains, protocols and ports must match.\n",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Origin mismatch for message event MessageEvent"
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "theme": 189582049393,
+      "symbols": 93,
+      "visibleLegacy": [],
+      "fontLoaded": true,
+      "font": [
+        {
+          "family": "EP Dirham",
+          "status": "loaded"
+        },
+        {
+          "family": "EP Dirham",
+          "status": "loaded"
+        }
+      ],
+      "leakedAttributes": [],
+      "overflow": false
+    },
+    {
+      "path": "/collections/baby-products",
+      "status": 200,
+      "theme": 189582049393,
+      "symbols": 6,
+      "visibleLegacy": [],
+      "fontLoaded": true,
+      "font": [
+        {
+          "family": "EP Dirham",
+          "status": "loaded"
+        }
+      ],
+      "leakedAttributes": [],
+      "overflow": false
+    },
+    {
+      "path": "/collections/all",
+      "status": 200,
+      "theme": 189582049393,
+      "symbols": 38,
+      "visibleLegacy": [],
+      "fontLoaded": true,
+      "font": [
+        {
+          "family": "EP Dirham",
+          "status": "loaded"
+        }
+      ],
+      "leakedAttributes": [],
+      "overflow": false
+    },
+    {
+      "path": "/collections/all?view=ep-deals",
+      "status": 200,
+      "theme": 189582049393,
+      "symbols": 38,
+      "visibleLegacy": [],
+      "fontLoaded": true,
+      "font": [
+        {
+          "family": "EP Dirham",
+          "status": "loaded"
+        }
+      ],
+      "leakedAttributes": [],
+      "overflow": false
+    },
+    {
+      "path": "/products/pampers-premium-care-pant-style-baby-diapers-s-26-count-no-marks-design-voted-india-s-1-softest-diaper-all-in-1-diaper-with-360-cottony-softness-b0dm1jj16w",
+      "status": 200,
+      "theme": 189582049393,
+      "symbols": 6,
+      "visibleLegacy": [],
+      "fontLoaded": true,
+      "font": [
+        {
+          "family": "EP Dirham",
+          "status": "loaded"
+        }
+      ],
+      "leakedAttributes": [],
+      "overflow": false
+    },
+    {
+      "path": "/search?q=Pampers&type=product",
+      "status": 200,
+      "theme": 189582049393,
+      "symbols": 34,
+      "visibleLegacy": [],
+      "fontLoaded": true,
+      "font": [
+        {
+          "family": "EP Dirham",
+          "status": "loaded"
+        }
+      ],
+      "leakedAttributes": [],
+      "overflow": false
+    },
+    {
+      "path": "/cart",
+      "status": 200,
+      "theme": 189582049393,
+      "symbols": 11,
+      "visibleLegacy": [],
+      "fontLoaded": true,
+      "font": [
+        {
+          "family": "EP Dirham",
+          "status": "loaded"
+        }
+      ],
+      "leakedAttributes": [],
+      "overflow": false
+    },
+    {
+      "path": "/pages/nonexistent-dirham-qa",
+      "status": 404,
+      "theme": 189582049393,
+      "symbols": 6,
+      "visibleLegacy": [],
+      "fontLoaded": true,
+      "font": [
+        {
+          "family": "EP Dirham",
+          "status": "loaded"
+        }
+      ],
+      "leakedAttributes": [],
+      "overflow": false
+    }
+  ],
+  "predictive": {
+    "symbols": 5
+  },
+  "drawer": {
+    "symbols": 103,
+    "theme": 189582049393,
+    "visibleLegacy": [],
+    "fontLoaded": true,
+    "font": [
+      {
+        "family": "EP Dirham",
+        "status": "loaded"
+      },
+      {
+        "family": "EP Dirham",
+        "status": "loaded"
+      }
+    ],
+    "leakedAttributes": [],
+    "overflow": false
+  },
+  "productMeta": "AED",
+  "productJsonLd": [],
+  "account": {
+    "url": "https://shopify.com/authentication/78456225905/login",
+    "themeHeader": 0
+  },
+  "format": {
+    "whole": "AED 47",
+    "decimal": "AED 42.33",
+    "group": "AED 1,234,567.89",
+    "html": "<span class=\"ep-money\"><span class=\"ep-dh\" aria-hidden=\"true\">&#x20C3;</span>&#x202F;<span class=\"visually-hidden\">AED </span>42.33</span>"
+  },
+  "alignment": [
+    {
+      "size": "11.4px",
+      "vertical": "-0.228px",
+      "color": "rgb(40, 54, 24)",
+      "font": "\"EP Dirham\""
+    },
+    {
+      "size": "11.4px",
+      "vertical": "-0.228px",
+      "color": "rgb(40, 54, 24)",
+      "font": "\"EP Dirham\""
+    },
+    {
+      "size": "13.3px",
+      "vertical": "-0.266px",
+      "color": "rgb(40, 54, 24)",
+      "font": "\"EP Dirham\""
+    },
+    {
+      "size": "13.3px",
+      "vertical": "-0.266px",
+      "color": "rgb(40, 54, 24)",
+      "font": "\"EP Dirham\""
+    },
+    {
+      "size": "15.2px",
+      "vertical": "-0.304px",
+      "color": "rgb(40, 54, 24)",
+      "font": "\"EP Dirham\""
+    },
+    {
+      "size": "15.2px",
+      "vertical": "-0.304px",
+      "color": "rgb(40, 54, 24)",
+      "font": "\"EP Dirham\""
+    },
+    {
+      "size": "22.8px",
+      "vertical": "-0.456px",
+      "color": "rgb(40, 54, 24)",
+      "font": "\"EP Dirham\""
+    },
+    {
+      "size": "22.8px",
+      "vertical": "-0.456px",
+      "color": "rgb(40, 54, 24)",
+      "font": "\"EP Dirham\""
+    }
+  ]
+}

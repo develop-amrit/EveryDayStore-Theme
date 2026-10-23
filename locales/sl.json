@@ -177,7 +177,8 @@
         "note": "Na voljo je količinski popust",
         "minimum": "{{ quantity }} in več",
         "price_range": "{{ minimum }}–{{ maximum }}",
-        "price_at_each_html": "po ceni {{ price }}/kos"
+        "price_at_each_html": "po ceni {{ price }}/kos",
+        "price_range_html": "{{ minimum }}–{{ maximum }}"
       },
       "taxes_included": "Davki vključeni.",
       "duties_included": "Dajatve vključene.",
@@ -221,7 +222,8 @@
       "filter_selected_accessibility": "{{ type }} (št. izbranih filtrov: {{ count }})",
       "show_more": "Prikaži več",
       "show_less": "Prikaži manj",
-      "filter_and_operator_subtitle": "Ustreza vsem"
+      "filter_and_operator_subtitle": "Ustreza vsem",
+      "max_price_html": "Najvišja cena je {{ price }}"
     }
   },
   "templates": {
@@ -398,7 +400,8 @@
       "remove_all_single_item_confirmation": "Ali želite iz košarice odstraniti 1 izdelek?",
       "min_error": "Ta artikel ima najmanj {{ min }}",
       "max_error": "Ta artikel ima največ {{ max }}",
-      "step_error": "Ta artikel lahko dodate samo v korakih po {{ step }}."
+      "step_error": "Ta artikel lahko dodate samo v korakih po {{ step }}.",
+      "each_html": "{{ money }}/kos"
     }
   },
   "localization": {
@@ -993,7 +996,12 @@
     "view_basket": "View basket",
     "filter_sort": "Filter & sort",
     "change_department": "Change department",
-    "next_day_promise": "Order today, delivered next day"
+    "next_day_promise": "Order today, delivered next day",
+    "until_free_html": "Add {{ amount }} for free delivery",
+    "free_next_tier_html": "Add {{ amount }} to reduce delivery to {{ fee }}",
+    "delivery_below_html": "Below {{ threshold }}: {{ fee }}",
+    "delivery_middle_html": "From {{ threshold }}: {{ fee }}",
+    "delivery_free_html": "From {{ threshold }}: free"
   },
   "ep": {
     "see_all": "See all",
@@ -1040,6 +1048,7 @@
     "show_all_count": "Show all {{ count }}",
     "show_less": "Show less",
     "browse_catalogue": "Browse full catalogue",
-    "shop_now": "Shop now →"
+    "shop_now": "Shop now →",
+    "from_price_html": "From {{ price }}"
   }
 }

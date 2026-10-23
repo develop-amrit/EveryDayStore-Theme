@@ -9,10 +9,15 @@ const config={root:'/',predictive:'/search/suggest',cart:{item_count:0,total_pri
 const basketCount={dataset:{one:'item',other:'items'}},basketTotal={},basketSummary={};
 const query=s=>({'#qc-cart':dialog,'#qc-variants':dialog,'#qc-suggestions':suggestions,'#qc-search':input,'[data-qc-status]':{textContent:''}}[s]||null);
 const all=s=>({'[data-basket-count]':[basketCount],'[data-basket-total]':[basketTotal],'[data-basket-summary]':[basketSummary]}[s]||[]);
-const document={body:{classList:classes},activeElement:null,hidden:false,querySelector:query,querySelectorAll:all,getElementById(id){return{textContent:JSON.stringify(id==='qc-config'?config:labels.qc)};},addEventListener(name,fn){(events[name]??=[]).push(fn);}};
+const document={body:{classList:classes},activeElement:null,hidden:false,querySelector:query,querySelectorAll:all,getElementById(id){return{textContent:JSON.stringify(id==='qc-config'?config:id==='ep-currency-config'?{code:'AED',sample:'1,234,567.89'}:labels.qc)};},addEventListener(name,fn){(events[name]??=[]).push(fn);}};
 const context={document,window:{addEventListener(){}},matchMedia:()=>({matches:true,addEventListener(){}}),URLSearchParams,Intl,AbortController,WeakSet,WeakMap,CustomEvent:class{},setInterval(){},clearInterval(){},setTimeout(fn){const id=++timerId;timers.set(id,fn);return id;},clearTimeout(id){timers.delete(id);},requestAnimationFrame:fn=>fn(),fetch:async url=>{requests.push(url);return{ok:true,text:async()=>requests.length===1?'empty':'available'};},DOMParser:class{parseFromString(html){return{querySelector:()=>({dataset:{resultCount:html==='empty'?'0':'2'},childNodes:html==='empty'?[]:['matching-product-one','matching-product-two']})};}}};
-vm.runInNewContext(fs.readFileSync('assets/qc-home.js','utf8'),context);
-assert.equal(basketCount.textContent,'0 items');assert.equal(basketSummary.hidden,true);assert.match(basketTotal.textContent,/AED/);
+Object.assign(context,{Node:{TEXT_NODE:3},NodeFilter:{SHOW_TEXT:4},MutationObserver:class{observe(){}}});
+document.createTreeWalker=()=>({nextNode:()=>null});
+vm.createContext(context);
+vm.runInContext(fs.readFileSync('assets/ep-currency.js','utf8'),context);
+vm.runInContext(fs.readFileSync('assets/qc-home.js','utf8'),context);
+assert.equal(basketCount.textContent,'0 items');assert.equal(basketSummary.hidden,true);assert.match(basketTotal.innerHTML,/class="ep-dh"/);
+assert.equal(context.window.epMoneyText(4700),'AED 47');assert.equal(context.window.epMoneyText(4233),'AED 42.33');
 async function run(){
   for(const handler of events.input)handler({target:input});
   await [...timers.values()].at(-1)();

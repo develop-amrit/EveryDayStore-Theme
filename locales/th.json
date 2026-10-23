@@ -174,7 +174,8 @@
         "note": "การกำหนดราคาตามปริมาณพร้อมใช้งาน",
         "minimum": "{{ quantity }}+",
         "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "ราคา {{ price }}/หน่วย"
+        "price_at_each_html": "ราคา {{ price }}/หน่วย",
+        "price_range_html": "{{ minimum }} - {{ maximum }}"
       },
       "product_variants": "ตัวเลือกสินค้า",
       "taxes_included": "รวมภาษีแล้ว",
@@ -213,7 +214,8 @@
       "filter_selected_accessibility": "{{ type }} (เลือกตัวกรองแล้ว {{ count }} รายการ)",
       "show_more": "แสดงมากขึ้น",
       "show_less": "แสดงน้อยลง",
-      "filter_and_operator_subtitle": "ที่ตรงกันทั้งหมด"
+      "filter_and_operator_subtitle": "ที่ตรงกันทั้งหมด",
+      "max_price_html": "ราคาสูงสุดคือ {{ price }}"
     }
   },
   "templates": {
@@ -374,7 +376,8 @@
       "remove_all_single_item_confirmation": "ต้องการลบ 1 รายการออกจากตะกร้าสินค้าหรือไม่",
       "min_error": "สินค้านี้มีจำนวนขั้นต่ำที่ {{ min }} รายการ",
       "max_error": "สินค้านี้มีจำนวนสูงสุดที่ {{ max }} รายการ",
-      "step_error": "คุณสามารถเพิ่มสินค้านี้ได้ทีละ {{ step }} รายการในแต่ละครั้งเท่านั้น"
+      "step_error": "คุณสามารถเพิ่มสินค้านี้ได้ทีละ {{ step }} รายการในแต่ละครั้งเท่านั้น",
+      "each_html": "{{ money }}/หน่วย"
     }
   },
   "localization": {
@@ -969,7 +972,12 @@
     "view_basket": "View basket",
     "filter_sort": "Filter & sort",
     "change_department": "Change department",
-    "next_day_promise": "Order today, delivered next day"
+    "next_day_promise": "Order today, delivered next day",
+    "until_free_html": "Add {{ amount }} for free delivery",
+    "free_next_tier_html": "Add {{ amount }} to reduce delivery to {{ fee }}",
+    "delivery_below_html": "Below {{ threshold }}: {{ fee }}",
+    "delivery_middle_html": "From {{ threshold }}: {{ fee }}",
+    "delivery_free_html": "From {{ threshold }}: free"
   },
   "ep": {
     "see_all": "See all",
@@ -1016,6 +1024,7 @@
     "show_all_count": "Show all {{ count }}",
     "show_less": "Show less",
     "browse_catalogue": "Browse full catalogue",
-    "shop_now": "Shop now →"
+    "shop_now": "Shop now →",
+    "from_price_html": "From {{ price }}"
   }
 }

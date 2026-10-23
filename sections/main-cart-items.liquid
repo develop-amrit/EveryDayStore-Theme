@@ -389,7 +389,7 @@
                                   <li>
                                     <span>{{ item.variant.quantity_rule.min }}+</span>
                                     {% capture price %}{% assign ep_money_amount = item.variant.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
-                                    <span> {{ 'sections.quick_order_list.each' | t: money: price }}</span>
+                                    <span> {{ 'sections.quick_order_list.each_html' | t: money: price }}</span>
                                   </li>
                                   {%- for price_break in item.variant.quantity_price_breaks -%}
                                     <li>
@@ -398,7 +398,7 @@
                                         <span aria-hidden="true">+</span></span
                                       >
                                       {% capture price %}{% assign ep_money_amount = price_break.price %}{% render 'ep-money', amount: ep_money_amount %}{% endcapture %}
-                                      <span> {{ 'sections.quick_order_list.each' | t: money: price }}</span>
+                                      <span> {{ 'sections.quick_order_list.each_html' | t: money: price }}</span>
                                     </li>
                                   {%- endfor -%}
                                 </ul>

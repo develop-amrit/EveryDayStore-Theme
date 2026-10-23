@@ -175,7 +175,8 @@
         "note": "提供批發價",
         "minimum": "{{ quantity }}+",
         "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "{{ price }}/每項"
+        "price_at_each_html": "{{ price }}/每項",
+        "price_range_html": "{{ minimum }} - {{ maximum }}"
       },
       "taxes_included": "已包含稅額。",
       "duties_included": "已包含關稅。",
@@ -213,7 +214,8 @@
       "filter_selected_accessibility": "{{ type }} (已選取 {{ count }} 個篩選條件)",
       "show_more": "顯示更多內容",
       "show_less": "顯示較少內容",
-      "filter_and_operator_subtitle": "完全符合"
+      "filter_and_operator_subtitle": "完全符合",
+      "max_price_html": "最高價格為 {{ price }}"
     }
   },
   "templates": {
@@ -374,7 +376,8 @@
       "remove_all_single_item_confirmation": "是否要從您的購物車移除 1 個品項？",
       "min_error": "此品項下限為 {{ min }}",
       "max_error": "此品項上限為 {{ max }}",
-      "step_error": "只能以 {{ step }} 為增量新增此品項"
+      "step_error": "只能以 {{ step }} 為增量新增此品項",
+      "each_html": "{{ money }}/每項"
     }
   },
   "localization": {
@@ -969,7 +972,12 @@
     "view_basket": "View basket",
     "filter_sort": "Filter & sort",
     "change_department": "Change department",
-    "next_day_promise": "Order today, delivered next day"
+    "next_day_promise": "Order today, delivered next day",
+    "until_free_html": "Add {{ amount }} for free delivery",
+    "free_next_tier_html": "Add {{ amount }} to reduce delivery to {{ fee }}",
+    "delivery_below_html": "Below {{ threshold }}: {{ fee }}",
+    "delivery_middle_html": "From {{ threshold }}: {{ fee }}",
+    "delivery_free_html": "From {{ threshold }}: free"
   },
   "ep": {
     "see_all": "See all",
@@ -1016,6 +1024,7 @@
     "show_all_count": "Show all {{ count }}",
     "show_less": "Show less",
     "browse_catalogue": "Browse full catalogue",
-    "shop_now": "Shop now →"
+    "shop_now": "Shop now →",
+    "from_price_html": "From {{ price }}"
   }
 }

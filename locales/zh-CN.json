@@ -175,7 +175,8 @@
         "note": "提供批量定价",
         "minimum": "{{ quantity }}+",
         "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "{{ price }}/件"
+        "price_at_each_html": "{{ price }}/件",
+        "price_range_html": "{{ minimum }} - {{ maximum }}"
       },
       "taxes_included": "已含税费。",
       "duties_included": "已含关税。",
@@ -213,7 +214,8 @@
       "filter_selected_accessibility": "{{ type }}（已选择 {{ count }} 个筛选条件）",
       "show_more": "显示更多内容",
       "show_less": "隐藏部分内容",
-      "filter_and_operator_subtitle": "匹配全部"
+      "filter_and_operator_subtitle": "匹配全部",
+      "max_price_html": "最高价格为 {{ price }}"
     }
   },
   "templates": {
@@ -374,7 +376,8 @@
       "remove_all_single_item_confirmation": "从购物车中删除 1 件商品？",
       "min_error": "此商品的最小值为 {{ min }}",
       "max_error": "此商品的最大值为 {{ max }}",
-      "step_error": "您只能以 {{ step }} 为增量来添加此商品"
+      "step_error": "您只能以 {{ step }} 为增量来添加此商品",
+      "each_html": "{{ money }}/件"
     }
   },
   "localization": {
@@ -969,7 +972,12 @@
     "view_basket": "View basket",
     "filter_sort": "Filter & sort",
     "change_department": "Change department",
-    "next_day_promise": "Order today, delivered next day"
+    "next_day_promise": "Order today, delivered next day",
+    "until_free_html": "Add {{ amount }} for free delivery",
+    "free_next_tier_html": "Add {{ amount }} to reduce delivery to {{ fee }}",
+    "delivery_below_html": "Below {{ threshold }}: {{ fee }}",
+    "delivery_middle_html": "From {{ threshold }}: {{ fee }}",
+    "delivery_free_html": "From {{ threshold }}: free"
   },
   "ep": {
     "see_all": "See all",
@@ -1016,6 +1024,7 @@
     "show_all_count": "Show all {{ count }}",
     "show_less": "Show less",
     "browse_catalogue": "Browse full catalogue",
-    "shop_now": "Shop now →"
+    "shop_now": "Shop now →",
+    "from_price_html": "From {{ price }}"
   }
 }

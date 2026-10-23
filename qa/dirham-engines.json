@@ -1,0 +1,92 @@
+[
+  {
+    "engine": "chromium",
+    "mobile": false,
+    "theme": 189582049393,
+    "loaded": true,
+    "status": [
+      "loaded",
+      "loaded"
+    ],
+    "body": "\"EP Dirham\", \"Avenir Next\", Avenir, Arial, sans-serif",
+    "number": "\"EP Dirham\", \"Avenir Next\", Avenir, Arial, sans-serif",
+    "overflow": false,
+    "symbols": 85,
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "mobile": true,
+    "theme": 189582049393,
+    "loaded": true,
+    "status": [
+      "loaded",
+      "loaded"
+    ],
+    "body": "\"EP Dirham\", \"Avenir Next\", Avenir, Arial, sans-serif",
+    "number": "\"EP Dirham\", \"Avenir Next\", Avenir, Arial, sans-serif",
+    "overflow": false,
+    "symbols": 85,
+    "errors": []
+  },
+  {
+    "engine": "firefox",
+    "mobile": false,
+    "theme": 189582049393,
+    "loaded": true,
+    "status": [
+      "loaded",
+      "loaded"
+    ],
+    "body": "\"EP Dirham\", \"Avenir Next\", Avenir, Arial, sans-serif",
+    "number": "\"EP Dirham\", \"Avenir Next\", Avenir, Arial, sans-serif",
+    "overflow": false,
+    "symbols": 85,
+    "errors": []
+  },
+  {
+    "engine": "firefox",
+    "mobile": true,
+    "theme": 189582049393,
+    "loaded": true,
+    "status": [
+      "loaded",
+      "loaded"
+    ],
+    "body": "\"EP Dirham\", \"Avenir Next\", Avenir, Arial, sans-serif",
+    "number": "\"EP Dirham\", \"Avenir Next\", Avenir, Arial, sans-serif",
+    "overflow": false,
+    "symbols": 85,
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "mobile": false,
+    "theme": 189582049393,
+    "loaded": true,
+    "status": [
+      "unloaded",
+      "loaded"
+    ],
+    "body": "EP Dirham, Avenir Next, Avenir, Arial, sans-serif",
+    "number": "EP Dirham, Avenir Next, Avenir, Arial, sans-serif",
+    "overflow": false,
+    "symbols": 85,
+    "errors": []
+  },
+  {
+    "engine": "webkit",
+    "mobile": true,
+    "theme": 189582049393,
+    "loaded": true,
+    "status": [
+      "unloaded",
+      "loaded"
+    ],
+    "body": "EP Dirham, Avenir Next, Avenir, Arial, sans-serif",
+    "number": "EP Dirham, Avenir Next, Avenir, Arial, sans-serif",
+    "overflow": false,
+    "symbols": 85,
+    "errors": []
+  }
+]

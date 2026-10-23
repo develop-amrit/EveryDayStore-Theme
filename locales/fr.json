@@ -176,7 +176,8 @@
         "note": "La tarification basée sur le volume est disponible",
         "minimum": "{{ quantity }} ou plus",
         "price_range": "{{ minimum }} - {{ maximum }}",
-        "price_at_each_html": "à {{ price }}/pièce"
+        "price_at_each_html": "à {{ price }}/pièce",
+        "price_range_html": "{{ minimum }} - {{ maximum }}"
       },
       "taxes_included": "Taxes incluses.",
       "duties_included": "Frais de douane inclus.",
@@ -217,7 +218,8 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }} filtres sélectionnés)",
       "show_more": "Afficher plus",
       "show_less": "Afficher moins",
-      "filter_and_operator_subtitle": "Tout associer"
+      "filter_and_operator_subtitle": "Tout associer",
+      "max_price_html": "Le prix le plus élevé est de {{ price }}"
     }
   },
   "templates": {
@@ -386,7 +388,8 @@
       "remove_all_single_item_confirmation": "Supprimer 1 article de votre panier ?",
       "min_error": "Cet article a un minimum de {{ min }}",
       "max_error": "Cet article a un maximum de {{ max }}",
-      "step_error": "Vous pouvez ajouter cet article uniquement par incréments de {{ step }}"
+      "step_error": "Vous pouvez ajouter cet article uniquement par incréments de {{ step }}",
+      "each_html": "{{ money }}/pièce"
     }
   },
   "localization": {
@@ -981,7 +984,12 @@
     "view_basket": "View basket",
     "filter_sort": "Filter & sort",
     "change_department": "Change department",
-    "next_day_promise": "Order today, delivered next day"
+    "next_day_promise": "Order today, delivered next day",
+    "until_free_html": "Add {{ amount }} for free delivery",
+    "free_next_tier_html": "Add {{ amount }} to reduce delivery to {{ fee }}",
+    "delivery_below_html": "Below {{ threshold }}: {{ fee }}",
+    "delivery_middle_html": "From {{ threshold }}: {{ fee }}",
+    "delivery_free_html": "From {{ threshold }}: free"
   },
   "ep": {
     "see_all": "See all",
@@ -1028,6 +1036,7 @@
     "show_all_count": "Show all {{ count }}",
     "show_less": "Show less",
     "browse_catalogue": "Browse full catalogue",
-    "shop_now": "Shop now →"
+    "shop_now": "Shop now →",
+    "from_price_html": "From {{ price }}"
   }
 }

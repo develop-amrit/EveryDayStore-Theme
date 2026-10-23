@@ -386,3 +386,163 @@ Added early shared epMoney/epMoneyText helpers using the Shopify numeric format 
 ## Dirham 3: Merchant copy and storefront coverage
 
 Visible escaped EP/QC text settings now pass through ep-money-copy, replacing AED only when followed by a number; URLs, alt/title/ARIA/input/data fields remain untouched. Currency configuration/helper loads on all theme pages before the cart runtime. Numeric price filter inputs retain numeric values and visible labels use the symbol; these are intentionally not prefixed with AED because Dawn range validation requires numbers. Metadata, structured_data, Shopify checkout and notification/email formats remain ISO/plain. Added checkout/email guidance to MERCHANT_TODO.
+
+QA integration: baseline discrepancy was BOM/line-ending normalization only in qc-category-label, with no merchant content change. Restored its BOM. Updated the UX harness to execute the real early currency helper before QC initialization. Added a text-node-only fallback for merchant rich text (FAQ/help/page descriptions), preserving all HTML attributes and metadata; primary price components still render the Liquid snippet.
+
+Dirham QA correction: Shopify escapes interpolation parameters for translation keys without the _html suffix. Added localized _html aliases for money-bearing free-delivery/tier, facet, quantity-price and price-range messages, retaining existing wording and original plain-text keys. This prevents HTML appearing as text and the resulting cart width expansion.
+
+
+
+## Dirham 4: Final verification and delivery (23 October 2026)
+
+Target 189582049393 remains UNPUBLISHED. All 94 deployable changed/new files match Shopify API read-back exactly. No live theme, checkout, emails, catalogue records or store currency settings were modified; no theme copy or publication. Deployment guard reread WORKLOG and queried the current unpublished role before every successful push.
+
+Theme Check: **0 errors, 14 retained warnings**. Same legacy orphaned snippets, non-home unused/name/complexity and pre-existing object inference warnings documented in the prior batch; no new currency warning. Bundled skill validator was attempted on the complete changed-file set but cannot load @shopify/theme-check-common. Official Shopify CLI plus schema/reference/JS checks and the updated cart/UX harness passed.
+
+Browser checks: homepage, Baby Products, populated All collection, Deals view, product, search, cart, cart drawer and 404 show no visible AED/Dhs prices or escaped HTML. No markup or symbol leaked into tested ARIA/title/alt/placeholder/value/data attributes. Product Open Graph currency remains AED; structured_data rendering and meta-tags source remain unchanged. Predictive suggestions show symbol prices. Add and cart quantity section refresh show symbols and original test quantities were restored. Original price-filter numeric values/bounds intentionally remain numeric to preserve filtering. Shared unit and retained Dawn quick-add/cart/notification/quantity pricing code uses ep-money.
+
+All six engine checks passed: desktop/mobile Chromium, Firefox and WebKit, no page errors or horizontal overflow. Font loaded in each engine, and body/digits retain Avenir with EP Dirham first. These are browser-engine/mobile-emulation checks, not physical iPhone/Android or macOS Safari runs. Symbol alignment visually inspected at 12/14/16/24px; final font-size .95em, vertical-align -.02em, font-weight 400, narrow non-breaking space, digits tabular. Compare-at strike crosses both glyph and number; colour inherits. Accessible HTML hides the glyph and exposes AED before the digits; no claim of a physical screen-reader session. A transient cart screenshot taken during its existing 250ms opening animation initially looked offset/translucent; after waiting 350ms the dialog is opaque at left 0/right 390 with no internal overflow. No unrelated cart layout change was made.
+
+Merchant text settings use Liquid ep-money-copy. Rich HTML text uses a text-node-only progressive enhancement which skips metadata, scripts, native options, inputs, ARIA-hidden content and attributes. A test rich-text paragraph converted its visible AED 99 but preserved title="AED 99". The native no-JS primary product/cart prices still use server snippets; arbitrary rich-text conversions require JS. HTML-enabled translation aliases preserve wording across locales and prevent escaped spans in free-delivery messages, ranges and From tags.
+
+Limits: /account redirects to Shopify-hosted authentication with no theme header, confirming account/order pages cannot load these assets. Existing hosted auth sprite/origin warnings and the intentional 404 network error were recorded separately; theme page errors are zero. All 608 public products checked across three product JSON pages currently have one variant, so a real multi-variant switch/quick-options scenario cannot be demonstrated without merchant data; relevant server snippets and update paths are migrated and syntax checked. Gift-card template balance and document font were updated, title stays plain AED, but /gift_cards/preview returns 404; no real issued gift card/authenticated order was available for runtime QA. No fake variant, order, gift card or price was created. Physical-device and real gift-card/account review remain manual. The requested gift-card/checkout/email limits are in MERCHANT_TODO.md. Lighthouse was not rerun for this currency-only request; previous performance results are historical.
+
+Artifacts: qa/dirham-browser.json, qa/dirham-engines.json, qa/dirham-updates.json, qa/dirham-theme-check.json, qa/dirham-remote-readback.json and currency screenshots. Currency code and face are in assets/ep-currency.js and assets/ep-dirham.css; the face is also bundled in ep-mobile.css and inlined in homepage critical CSS. ep-dirham.svg uses the exact supplied path. No new framework/dependency in storefront code. Full deployable manifest: docs/DIRHAM_CHANGED_FILES.md.
+
+### Files changed in this request
+
+- MERCHANT_TODO.md
+- WORKLOG.md
+- assets/ep-currency.js
+- assets/ep-dirham.css
+- assets/ep-dirham.svg
+- assets/ep-final.js
+- assets/ep-home-commerce.js
+- assets/ep-mobile.css
+- assets/price-per-item.js
+- assets/qc-catalog.js
+- assets/qc-home.js
+- docs/DIRHAM_CHANGED_FILES.md
+- layout/theme.liquid
+- locales/bg.json
+- locales/cs.json
+- locales/da.json
+- locales/de.json
+- locales/el.json
+- locales/en.default.json
+- locales/es.json
+- locales/fi.json
+- locales/fr.json
+- locales/hr.json
+- locales/hu.json
+- locales/id.json
+- locales/it.json
+- locales/ja.json
+- locales/ko.json
+- locales/lt.json
+- locales/nb.json
+- locales/nl.json
+- locales/pl.json
+- locales/pt-BR.json
+- locales/pt-PT.json
+- locales/ro.json
+- locales/ru.json
+- locales/sk.json
+- locales/sl.json
+- locales/sv.json
+- locales/th.json
+- locales/tr.json
+- locales/vi.json
+- locales/zh-CN.json
+- locales/zh-TW.json
+- qa/dirham-alignment.png
+- qa/dirham-audit.txt
+- qa/dirham-browser.json
+- qa/dirham-cart-390.png
+- qa/dirham-chromium-desktop.png
+- qa/dirham-chromium-mobile.png
+- qa/dirham-engines.json
+- qa/dirham-firefox-desktop.png
+- qa/dirham-firefox-mobile.png
+- qa/dirham-home-390.png
+- qa/dirham-product-390.png
+- qa/dirham-remaining-money.txt
+- qa/dirham-remote-readback.json
+- qa/dirham-theme-check.json
+- qa/dirham-updates.json
+- qa/dirham-webkit-desktop.png
+- qa/dirham-webkit-mobile.png
+- sections/cart-live-region-text.liquid
+- sections/ep-banner-carousel.liquid
+- sections/ep-bottom-nav.liquid
+- sections/ep-brand-tiles.liquid
+- sections/ep-campaign.liquid
+- sections/ep-category-grid.liquid
+- sections/ep-category-panel.liquid
+- sections/ep-deals.liquid
+- sections/ep-promo-banner.liquid
+- sections/ep-search-links.liquid
+- sections/ep-store-grid.liquid
+- sections/ep-themed-grid.liquid
+- sections/featured-product.liquid
+- sections/main-cart-footer.liquid
+- sections/main-cart-items.liquid
+- sections/main-product.liquid
+- sections/qc-announcement.liquid
+- sections/qc-brands.liquid
+- sections/qc-categories.liquid
+- sections/qc-essentials.liquid
+- sections/qc-faq.liquid
+- sections/qc-footer.liquid
+- sections/qc-fresh.liquid
+- sections/qc-hero.liquid
+- sections/qc-product-tile.liquid
+- sections/qc-products.liquid
+- sections/qc-promos.liquid
+- sections/qc-recommendations.liquid
+- sections/qc-reviews.liquid
+- sections/qc-steps.liquid
+- sections/qc-trust.liquid
+- snippets/cart-drawer.liquid
+- snippets/commerce-runtime.liquid
+- snippets/ep-critical-css.liquid
+- snippets/ep-from-price.liquid
+- snippets/ep-money-copy.liquid
+- snippets/ep-money-number.liquid
+- snippets/ep-money-text.liquid
+- snippets/ep-money.liquid
+- snippets/ep-price.liquid
+- snippets/facets.liquid
+- snippets/price-facet.liquid
+- snippets/price.liquid
+- snippets/product-variant-picker.liquid
+- snippets/qc-cart-contents.liquid
+- snippets/qc-category-label.liquid
+- snippets/qc-delivery-tiers.liquid
+- snippets/qc-product-card.liquid
+- snippets/qc-variant-price.liquid
+- snippets/quick-order-list-row.liquid
+- snippets/quick-order-list.liquid
+- snippets/unit-price.liquid
+- templates/gift_card.liquid
+- tools/check-ux-polish.cjs
+- tools/ep-bundle.cjs
+- tools/ep-dirham-cart-layout.cjs
+- tools/ep-dirham-copy.cjs
+- tools/ep-dirham-engines.cjs
+- tools/ep-dirham-final-qa.cjs
+- tools/ep-dirham-finish-tools.cjs
+- tools/ep-dirham-last.cjs
+- tools/ep-dirham-liquid.cjs
+- tools/ep-dirham-qa.cjs
+- tools/ep-dirham-report.cjs
+- tools/ep-dirham-runtime.cjs
+- tools/ep-dirham-translations.cjs
+- tools/ep-dirham-updates.cjs
+- tools/ep-dirham-variants-audit.cjs
+- tools/ep-src/ep-final.js
+
+Preview: https://3djevx-mu.myshopify.com/?preview_theme_id=189582049393 . Owner review: Admin → Online Store → Themes → everyday-homepage-review. Never published.
+
+
+Additional manifest entry after report generation: docs/EP_HOMEPAGE_STATE.json. All work remains on theme 189582049393; final read-back is 94/94, no mismatches.
