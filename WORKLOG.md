@@ -843,3 +843,7 @@ First-six card priority is server-rendered; other native lazy images warm within
 ## Site 10: Choose unique available panel imagery
 
 Auto clusters choose only available image-bearing real products, skip homepage-hide/internal records, share used handles across Baby plus all category blocks, and fill from real department children when needed. Each category block gains a Product for image picker; uploaded artwork still wins. Bath & Body collection-condition cleanup is recorded as an owner task.
+
+## Site 11: Add real products to the empty basket
+
+Cart page offers an editable in-stock EP rail with working compact ADD controls. Template-held images stay inert until the empty-state rail is needed; native cart updates reveal/hide it without a reload. Existing basket, shipping, terms and checkout remain unchanged.

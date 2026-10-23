@@ -1,8 +1,14 @@
-<section class="qc-wrap qc-section qc-cart-page"><h1>{{ 'qc.cart' | t }}</h1><div data-cart-host>{% render 'qc-cart-contents' %}</div><p role="status" data-cart-status-page></p></section>
+<section class="qc-wrap qc-section qc-cart-page"><h1>{{ 'qc.cart' | t }}</h1><div data-cart-host>{% render 'qc-cart-contents' %}</div><p role="status" data-cart-status-page></p><section class="ep-section" data-empty-cart-suggestions{% if cart.item_count > 0 %} hidden{% endif %}><h2>{{ 'eps.bestsellers' | t }}</h2>{% capture cards %}{% render 'ep-stock-cards', collection: section.settings.bestsellers, limit: 8, variant: 'compact' %}{% endcapture %}<template data-empty-cart-template>{{ cards }}</template><div class="ep-rail"></div><noscript>{% if cart.item_count == 0 %}<div class="ep-rail">{{ cards }}</div>{% endif %}</noscript></section></section>
 {% schema %}
 {
   "name": "cart page",
-  "settings": [],
+  "settings": [
+    {
+      "type": "collection",
+      "id": "bestsellers",
+      "label": "t:eps.bestsellers"
+    }
+  ],
   "presets": [
     {
       "name": "cart page"

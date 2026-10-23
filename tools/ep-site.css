@@ -6,3 +6,4 @@ ep-product{display:block}.ep-product-layout{padding-inline:0;display:grid;gap:0}
 .ep-recovery-search{margin-block:16px 24px;max-width:700px}.ep-recovery-search input{font-size:16px!important}.ep-recovery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.ep-recovery-grid .ep-panel-category{min-height:115px}
 :root{--ep-accent-soft:#FEFAE0}.ep-page .ep-header .qc-search{background:#fff!important;border:1px solid rgba(0,0,0,.06)}
 .ep-bottom-promo[hidden]{display:none!important}.ep-promo-art{width:52px;height:52px;aspect-ratio:1}.ep-gallery-image.ep-image-js{position:relative}.ep-product-page .ep-product-bar .ep-price{min-height:32px}
+[data-empty-cart-suggestions][hidden]{display:none!important}[data-empty-cart-suggestions] h2{font-size:18px}

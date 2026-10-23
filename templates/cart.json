@@ -2,7 +2,9 @@
   "sections": {
     "main": {
       "type": "qc-cart-page",
-      "settings": {}
+      "settings": {
+        "bestsellers": "all"
+      }
     }
   },
   "order": [
