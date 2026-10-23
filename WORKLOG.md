@@ -753,3 +753,7 @@ Fresh listing URLs canonicalize in the head to filter.v.availability=1; explicit
 ## CatFix 5: Use compact listing ADD and inline prices
 
 Listing-only control is 72×32 visually with a 44px hit area, expanding to a 96px stepper. Homepage card geometry is unchanged. Filled brand price and compare-at share one line. Pack-size helper removes only all-zero decimal fractions from tokens and preserves 1.5 L.
+
+## CatFix 6: Make add and quantity controls optimistic
+
+Shared variant state immediately renders steppers, projected real-price subtotals and count badges. Writes are serialized; stepper changes debounce 300ms, stay editable during requests and reconcile from Shopify. Errors revert to confirmed cart quantities and show Shopify’s message in a toast and inline status. No loading spinner is shown over ADD.
