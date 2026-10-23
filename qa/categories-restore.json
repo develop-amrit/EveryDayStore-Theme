@@ -1,0 +1,23 @@
+{
+  "before": {
+    "scroll": 850,
+    "key": "ep-collection:/collections/all",
+    "store": {
+      "pages": 2,
+      "scroll": 850,
+      "window": 0,
+      "rail": 0
+    }
+  },
+  "after": {
+    "scroll": 850,
+    "pages": 2,
+    "cards": 48,
+    "store": {
+      "pages": 2,
+      "scroll": 850,
+      "window": 0,
+      "rail": 0
+    }
+  }
+}

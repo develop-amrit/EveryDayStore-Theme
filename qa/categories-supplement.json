@@ -1,0 +1,37 @@
+{
+  "errors": [],
+  "backReferrer": "/collections",
+  "backTo": "/collections",
+  "catalogue": {
+    "configured": 123,
+    "missing": [],
+    "directoryLinks": 70,
+    "thirdLevelLinks": 84
+  },
+  "empty": {
+    "heading": "Coming soon to Feeding & Nursing",
+    "recommendations": 6,
+    "rail": 10,
+    "banner": 0
+  },
+  "end": {
+    "cards": 24,
+    "next": "/collections/pampers?page=2",
+    "text": "Load more"
+  },
+  "fallback": {
+    "url": "/collections/baby-products-feeding-and-nursing",
+    "content": "Coming soon to Feeding & Nursing"
+  },
+  "nojs": {
+    "cards": 24,
+    "more": 1,
+    "rail": 10,
+    "imageSources": 23,
+    "directory": 63
+  },
+  "allCollections": {
+    "count": 133,
+    "missing": []
+  }
+}

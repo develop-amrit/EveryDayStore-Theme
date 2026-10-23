@@ -1,0 +1,12 @@
+const b=require('./ep-build.cjs');let p='tools/ep-src/ep-browse.js',s=b.read(p);
+s=s.replace("this.onShow=e=>{if(!e.persisted)this.restore();else this.indicator(false);};","this.onShow=e=>{if(e.persisted)this.indicator(false);};");
+s=s.replace('this.restoring=false;this.watch();}','this.restoring=false;this.save();this.watch();}');
+s=s.replace('if(!sentinel?.dataset.next)return;','if(!sentinel?.dataset.next||this.failed)return;');
+s=s.replace('if(this.loading||this.switching)return;','if(this.loading||this.switching||this.failed)return;');
+s=s.replace("}catch{this.observer?.disconnect();const link=", "}catch{this.failed=true;this.observer?.disconnect();const link=");
+s=s.replace('this.pages=1;this.currentUrl=url.href;','this.pages=1;this.failed=false;this.currentUrl=url.href;');
+s=s.replace("this.sync=()=>this.render(window.QCCart?.get());", "this.sync=event=>{const cart=event?.cartData||event?.detail?.cart||window.QCCart?.get();if(cart?.item_count!==undefined)this.render(cart);else if(!this.refreshing)this.refreshing=window.QCCart?.refresh().finally(()=>this.refreshing=null);};");
+b.write(p,s);
+p='snippets/qc-cart-contents.liquid';s=b.read(p);s=s.replace('<a href="{{ shop.terms_of_service.url | default: \'/pages/terms-conditions\' }}">{{ \'qc.terms_link\' | t }}</a>',"{% if shop.terms_of_service.body != blank %}<a href=\"{{ shop.terms_of_service.url }}\">{{ 'qc.terms_link' | t }}</a>{% else %}{{ 'qc.terms_link' | t }}{% endif %}");b.write(p,s);
+p='snippets/ep-category-menu-tile.liquid';s=b.read(p).replace('</span><span class="ep-tile-label">',"{% if tile_image and link.object.all_products_count == 0 and section.settings.show_coming_soon != false %}<span class=\"ep-soon-pill\">{{ 'ep.soon' | t }}</span>{% endif %}</span><span class=\"ep-tile-label\">");b.write(p,s);
+b.log('Categories QA: all requested widths pass without page/grid overflow. Same-department switch makes zero document requests and retains the same rail node and scroll offset; third-level chips, native sort and zero-result price filters pass. Fixed duplicate pageshow restoration overwriting the saved offset, stopped infinite retry loops after failed appends, and made the cart pill consume native pubsub cartData as well as QC events. Terms text now remains without a broken link while the actual policy is missing; checkbox/checkout enforcement remains intact.');

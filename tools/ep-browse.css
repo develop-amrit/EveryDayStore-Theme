@@ -9,3 +9,5 @@
 @media(prefers-reduced-motion:reduce){.ep-collection *,.ep-categories-page *,.ep-cart-pill,.ep-cart-pill *,.ep-browse-page .ep-header *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .ep-browse-sentinel{position:absolute;top:0;inset-inline-start:0;width:1px;height:1px;pointer-events:none}@media(max-width:989px){.ep-browse-page .ep-header{box-shadow:none;transition:box-shadow 150ms var(--ep-ease)}.ep-browse-page .ep-header.ep-slim-shadow{box-shadow:0 3px 12px #00000014}}.ep-collection.is-switching .ep-recommendations,.ep-collection.is-switching .ep-empty-category{display:none}
+
+.ep-soon-art svg,.ep-tile .ep-soon-art svg{padding:0!important;fill:none!important}.ep-collection-sentinel .ep-load-more{display:none}.ep-browse-ready .ep-collection-sentinel .ep-load-more{display:flex}

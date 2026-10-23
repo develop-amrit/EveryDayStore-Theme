@@ -1,0 +1,323 @@
+{
+  "errors": [],
+  "widths": [
+    {
+      "page": "directory",
+      "width": 360,
+      "overflow": false,
+      "slim": "flex",
+      "slimHeight": 56,
+      "columns": "74.5px 74.5px 74.5px 74.5px",
+      "announcement": "none",
+      "icon": {
+        "width": 24,
+        "padding": "0px",
+        "opacity": "0.6"
+      }
+    },
+    {
+      "page": "directory",
+      "width": 375,
+      "overflow": false,
+      "slim": "flex",
+      "slimHeight": 56,
+      "columns": "78.25px 78.25px 78.25px 78.25px",
+      "announcement": "none",
+      "icon": {
+        "width": 24,
+        "padding": "0px",
+        "opacity": "0.6"
+      }
+    },
+    {
+      "page": "directory",
+      "width": 414,
+      "overflow": false,
+      "slim": "flex",
+      "slimHeight": 56,
+      "columns": "88px 88px 88px 88px",
+      "announcement": "none",
+      "icon": {
+        "width": 24,
+        "padding": "0px",
+        "opacity": "0.6"
+      }
+    },
+    {
+      "page": "directory",
+      "width": 768,
+      "overflow": false,
+      "slim": "flex",
+      "slimHeight": 56,
+      "columns": "111.656px 111.672px 111.656px 111.672px 111.672px 111.656px",
+      "announcement": "none",
+      "icon": {
+        "width": 24,
+        "padding": "0px",
+        "opacity": "0.6"
+      }
+    },
+    {
+      "page": "directory",
+      "width": 1280,
+      "overflow": false,
+      "slim": "none",
+      "slimHeight": 0,
+      "columns": "135.25px 135.25px 135.25px 135.25px 135.25px 135.25px 135.25px 135.25px",
+      "announcement": "block",
+      "icon": {
+        "width": 24,
+        "padding": "0px",
+        "opacity": "0.6"
+      }
+    },
+    {
+      "page": "listing",
+      "width": 360,
+      "overflow": false,
+      "rail": 80,
+      "columns": "128px 128px",
+      "cards": 24,
+      "bottom": "none",
+      "compare": 0,
+      "breadcrumb": "Home›Baby Products›Diapers & Wipes",
+      "gridOverflow": false
+    },
+    {
+      "page": "listing",
+      "width": 375,
+      "overflow": false,
+      "rail": 80,
+      "columns": "135.5px 135.5px",
+      "cards": 24,
+      "bottom": "none",
+      "compare": 0,
+      "breadcrumb": "Home›Baby Products›Diapers & Wipes",
+      "gridOverflow": false
+    },
+    {
+      "page": "listing",
+      "width": 414,
+      "overflow": false,
+      "rail": 80,
+      "columns": "155px 155px",
+      "cards": 24,
+      "bottom": "none",
+      "compare": 0,
+      "breadcrumb": "Home›Baby Products›Diapers & Wipes",
+      "gridOverflow": false
+    },
+    {
+      "page": "listing",
+      "width": 768,
+      "overflow": false,
+      "rail": 80,
+      "columns": "213.328px 213.328px 213.328px",
+      "cards": 24,
+      "bottom": "none",
+      "compare": 0,
+      "breadcrumb": "Home›Baby Products›Diapers & Wipes",
+      "gridOverflow": false
+    },
+    {
+      "page": "listing",
+      "width": 1280,
+      "overflow": false,
+      "rail": 200,
+      "columns": "236px 236px 236px 236px",
+      "cards": 24,
+      "bottom": "none",
+      "compare": 0,
+      "breadcrumb": "Home›Baby Products›Diapers & Wipes",
+      "gridOverflow": false
+    }
+  ],
+  "directory": {
+    "title": "Categories – EverydayyPlus",
+    "groups": [
+      "Baby Products",
+      "Gifting",
+      "Grocery",
+      "Bath & Body",
+      "Home",
+      "Pet",
+      "Office Supplies",
+      "More collections"
+    ],
+    "tiles": 63,
+    "collapse": 0,
+    "active": "Categories",
+    "hrefs": [
+      "/collections/baby-products",
+      "/collections/baby-products-diapers-and-wipes",
+      "/collections/baby-products-baby-food-and-formula",
+      "/collections/baby-products-bath-skincare-and-grooming",
+      "/collections/baby-products-nursery-and-bedding",
+      "/collections/baby-products-feeding-and-nursing",
+      "/collections/baby-products-health-and-safety",
+      "/collections/baby-products-baby-gear-and-travel",
+      "/collections/baby-products-baby-toys",
+      "/collections/baby-products-maternity-and-postpartum",
+      "/collections/gifting",
+      "/collections/gifting-chocolates-and-treats",
+      "/collections/gifting-flowers-and-bouquets",
+      "/collections/gifting-hampers-and-gift-sets",
+      "/collections/gifting-soft-toys-and-gifts",
+      "/collections/gifting-fragrances-and-candles",
+      "/collections/gifting-gift-cards-and-personalized-gifts",
+      "/collections/gifting-balloons-and-decorations",
+      "/collections/grocery",
+      "/collections/grocery-pantry-staples",
+      "/collections/grocery-breakfast-and-spreads",
+      "/collections/grocery-snacks-and-confectionery",
+      "/collections/grocery-canned-packaged-and-ready-foods",
+      "/collections/grocery-beverages",
+      "/collections/grocery-dairy-and-eggs",
+      "/collections/grocery-baby-food",
+      "/collections/grocery-healthy-and-specialty-foods",
+      "/collections/grocery-fresh-produce",
+      "/collections/grocery-frozen-foods",
+      "/collections/bath-and-body",
+      "/collections/bath-and-body-bath-and-body-care",
+      "/collections/bath-and-body-skincare-and-face-care",
+      "/collections/bath-and-body-hair-care",
+      "/collections/bath-and-body-fragrances-and-deodorants",
+      "/collections/bath-and-body-personal-hygiene",
+      "/collections/bath-and-body-mens-grooming-and-shaving",
+      "/collections/bath-and-body-sexual-wellness",
+      "/collections/bath-and-body-makeup-and-cosmetics",
+      "/collections/home",
+      "/collections/home-cleaning-and-laundry",
+      "/collections/home-cleaning-tools-and-pest-control",
+      "/collections/home-paper-and-household-essentials",
+      "/collections/home-food-storage-and-wraps",
+      "/collections/home-home-fragrance",
+      "/collections/home-storage-and-organization",
+      "/collections/home-kitchen-and-cookware",
+      "/collections/home-disposables",
+      "/collections/home-bathroom-essentials",
+      "/collections/pet",
+      "/collections/pet-dogs",
+      "/collections/pet-cats",
+      "/collections/pet-other-pets",
+      "/collections/office-supplies",
+      "/collections/office-supplies-paper-and-notebooks",
+      "/collections/office-supplies-writing-and-stationery",
+      "/collections/office-supplies-desk-essentials",
+      "/collections/office-supplies-filing-and-organization",
+      "/collections/office-supplies-mailing-and-packaging",
+      "/collections/office-supplies-presentation-supplies",
+      "/collections/ordering-test-diapers",
+      "/collections/ordering-test",
+      "/collections/ordering-test-changing-mats",
+      "/collections/ordering-test-in-stock",
+      "/collections/ordering-test-nappy-pants",
+      "/collections/ordering-test-training-pants",
+      "/collections/everyday-diaper-essentials",
+      "/collections/frontpage",
+      "/collections/nappy-pants",
+      "/collections/newborn-nappies",
+      "/collections/pampers"
+    ]
+  },
+  "area": {
+    "open": true,
+    "focus": "H2"
+  },
+  "search": {
+    "symbols": 5,
+    "focus": "qc-search",
+    "closed": true
+  },
+  "instant": {
+    "documents": 0,
+    "kept": "yes",
+    "scrollBefore": 35,
+    "scrollAfter": 35,
+    "url": "/collections/baby-products-feeding-and-nursing",
+    "title": "Feeding & Nursing – EverydayyPlus",
+    "emptyHeading": "Coming soon to Feeding & Nursing",
+    "recommendations": 6,
+    "back": "Diapers & Wipes"
+  },
+  "thirdLevel": {
+    "active": "Pantry Staples",
+    "chips": [
+      {
+        "text": "All",
+        "active": false
+      },
+      {
+        "text": "Rice",
+        "active": true
+      },
+      {
+        "text": "Pasta",
+        "active": false
+      },
+      {
+        "text": "Noodles",
+        "active": false
+      },
+      {
+        "text": "Flour",
+        "active": false
+      },
+      {
+        "text": "Pulses, Beans & Lentils",
+        "active": false
+      },
+      {
+        "text": "Oils & Ghee",
+        "active": false
+      },
+      {
+        "text": "Sugar & Sweeteners",
+        "active": false
+      },
+      {
+        "text": "Salt, Spices & Seasonings",
+        "active": false
+      }
+    ]
+  },
+  "sort": {
+    "url": "?sort_by=price-ascending",
+    "symbols": 33
+  },
+  "filters": {
+    "fieldsets": [
+      "Availability",
+      "Price"
+    ],
+    "preview": "Show 0 results",
+    "empty": "No matches for these filters",
+    "badge": "1"
+  },
+  "infinite": {
+    "initial": 24,
+    "loaded": 48,
+    "restored": {
+      "cards": 48,
+      "scroll": 0
+    }
+  },
+  "pill": {
+    "visible": true,
+    "text": "Cart · 1 item\n⃃ \nAED\n60\n›",
+    "symbol": 1,
+    "bottom": "16px",
+    "hiddenInDrawer": true,
+    "home": {
+      "visible": true,
+      "promo": "none",
+      "link": "/collections"
+    }
+  },
+  "policies": [
+    "/policies/privacy-policy"
+  ],
+  "reduced": {
+    "animations": 0
+  }
+}

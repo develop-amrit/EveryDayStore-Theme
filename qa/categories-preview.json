@@ -1,0 +1,57 @@
+{
+  "errors": [],
+  "pages": [
+    {
+      "path": "/collections",
+      "status": 200,
+      "theme": 189582049393,
+      "title": "Collections – EverydayyPlus",
+      "overflow": false,
+      "headers": [
+        "Baby Products",
+        "Gifting",
+        "Grocery",
+        "Bath & Body",
+        "Home",
+        "Pet",
+        "Office Supplies",
+        "More collections"
+      ],
+      "tiles": 63,
+      "cards": 0,
+      "bottom": "flex",
+      "body": "qc-home ep-page gradient qc-motion"
+    },
+    {
+      "path": "/collections/all",
+      "status": 200,
+      "theme": 189582049393,
+      "title": "Products – EverydayyPlus",
+      "slim": 56,
+      "overflow": false,
+      "headers": [],
+      "tiles": 0,
+      "cards": 24,
+      "next": "/collections/all?page=2",
+      "area": "Choose area\n",
+      "bottom": "none",
+      "body": "qc-home ep-page ep-browse-page ep-listing-page gradient qc-motion"
+    },
+    {
+      "path": "/collections/baby-products-diapers-and-wipes",
+      "status": 200,
+      "theme": 189582049393,
+      "title": "Diapers & Wipes – EverydayyPlus",
+      "slim": 56,
+      "overflow": false,
+      "headers": [],
+      "tiles": 0,
+      "cards": 24,
+      "rail": 80,
+      "next": "/collections/baby-products-diapers-and-wipes?page=2",
+      "area": "Choose area\n",
+      "bottom": "none",
+      "body": "qc-home ep-page ep-browse-page ep-listing-page gradient qc-motion"
+    }
+  ]
+}

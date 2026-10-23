@@ -1,0 +1,3 @@
+const b=require('./ep-build.cjs');let p='tools/ep-browse.css';b.write(p,b.read(p)+'\n.ep-soon-art svg,.ep-tile .ep-soon-art svg{padding:0!important;fill:none!important}.ep-collection-sentinel .ep-load-more{display:none}.ep-browse-ready .ep-collection-sentinel .ep-load-more{display:flex}\n');
+p='sections/ep-collection.liquid';b.write(p,b.read(p).replace('<h1 title=', '<h1 tabindex="-1" title='));
+b.log('Browser integration: Shopify uses request.page_type list-collections (hyphen), not list_collections; corrected directory slim-header/title detection. Diagnosed the 8px Soon icon: SVG was a 24px border box with inherited 8px image padding on all sides. Removed padding specifically from Soon SVGs, preserving 24px art at 60% brand colour.');
