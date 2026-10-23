@@ -737,3 +737,7 @@ Ready for owner review in Admin → Online Store → Themes → everyday-homepag
 ## CatFix 1: Unify cream header backgrounds
 
 All rendered theme headers and pinned states use the existing ep-accent-soft token, search wells stay white, and listing title rows share the tint. Status-bar #fffdf3 is the rounded sRGB result of the existing FEFAE0 40%/white tint. Announcement remains the existing separate dark strip.
+
+## CatFix 2: Use document scrolling for listings
+
+Product column now flows in the page. Only the photo rail scrolls independently; infinite observer uses the viewport with a 600px margin. Switches return the window to the grid start and leave the rail node mounted.
