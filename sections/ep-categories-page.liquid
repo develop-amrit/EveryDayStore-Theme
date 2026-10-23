@@ -9,9 +9,6 @@
     <div class="ep-tiles">{% for pass in (1..2) %}{% for link in group_links %}{% assign show_tile = false %}{% if pass == 1 %}{% if link.object.all_products_count > 0 %}{% assign show_tile = true %}{% endif %}{% else %}{% unless link.object.all_products_count > 0 %}{% assign show_tile = true %}{% endunless %}{% endif %}{% if show_tile %}{% render 'ep-category-menu-tile', link: link, section: section, group_heading: block.settings.heading, icon: block.settings.icon, tint: block.settings.tint %}{% endif %}{% endfor %}{% endfor %}</div>
   </section>{% endif %}
 {% endif %}{% endfor %}
-{% capture mapped %}|{% for department in section.settings.catalogue_menu.links %}{{ department.object.handle }}|{% for child in department.links %}{{ child.object.handle }}|{% for leaf in child.links %}{{ leaf.object.handle }}|{% endfor %}{% endfor %}{% endfor %}{% endcapture %}
-{% capture remaining %}{% paginate collections by 250 %}{% for extra in collections %}{% capture key %}|{{ extra.handle }}|{% endcapture %}{% unless mapped contains key %}{% render 'ep-directory-extra', collection: extra %}{% endunless %}{% endfor %}{% endpaginate %}{% endcapture %}
-{% assign remaining = remaining | strip %}{% if remaining != blank %}<section class="ep-directory-group" aria-labelledby="ep-more-categories"><h2 id="ep-more-categories">{{ 'epc.more_collections' | t }}</h2><div class="ep-tiles">{{ remaining }}</div></section>{% endif %}
 </section>
 
 {% schema %}
@@ -59,6 +56,18 @@
       "id": "exclude_tags",
       "label": "t:ep.polish_exclude_products_tagged",
       "default": "homepage-hide"
+    },
+    {
+      "type": "text",
+      "id": "hide_title_prefix",
+      "label": "t:epcf.hide_prefix",
+      "default": "[TEST]"
+    },
+    {
+      "type": "textarea",
+      "id": "hidden_collection_handles",
+      "label": "t:epcf.hidden_handles",
+      "default": "frontpage, home-page, in-stock, all"
     }
   ],
   "blocks": [

@@ -195,7 +195,9 @@
     "qc_fee_mid": "3.99",
     "qc_account_mode": "new",
     "qc_catalog_menu": "catalogue",
-    "qc_cod": true
+    "qc_cod": true,
+    "ep_hidden_title_prefix": "[TEST]",
+    "ep_hidden_collection_handles": "frontpage, home-page, in-stock, all"
   },
   "presets": {
     "Dawn": {

@@ -45,7 +45,7 @@
               </a>
             </li>
           {%- endfor -%}
-          {%- for collection in predictive_search.resources.collections -%}
+          {%- for collection in predictive_search.resources.collections -%}{% capture ep_visible %}{% render 'ep-content-visible', item: collection, kind: 'collection' %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}
             <li
               id="predictive-search-option-collection-{{ forloop.index }}"
               class="predictive-search__list-item"
@@ -129,7 +129,7 @@
               role="group"
               aria-labelledby="predictive-search-products"
             >
-              {%- for product in predictive_search.resources.products -%}
+              {%- for product in predictive_search.resources.products -%}{% capture ep_visible %}{% render 'ep-content-visible', item: product %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}
                 <li
                   id="predictive-search-option-product-{{ forloop.index }}"
                   class="predictive-search__list-item"

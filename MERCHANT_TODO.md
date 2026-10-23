@@ -44,3 +44,6 @@ In Shopify Search & Discovery, enable storefront Availability, Price and Vendor/
 Categories directory groups reuse the catalogue menu with a department source; keep each department’s second-level and third-level menu links configured. Unmapped real collections remain visible under More collections. No collection is hidden because it is empty.
 
 Current Categories QA: Shopify exposes Availability and Price facets. Vendor/Brand is not enabled yet; enable that facet in Search & Discovery to make it appear automatically. Optional promo artwork is not configured, so collection banners correctly remain hidden.
+
+## CatFix internal content safety net
+Set every [TEST] product to Draft and every [TEST] collection to Unpublished in Admin. Theme title-prefix/handle filters are only a safety net, not a substitute for catalogue cleanup. Real department/child collections remain in the menus even when empty. The automatic More collections block was removed as requested.

@@ -20,7 +20,7 @@
     {% if template.name == 'search' %}
       {% paginate search.results by section.settings.limit %}
         <div class="qc-products qc-grid">
-          {% for item in search.results %}{% if item.object_type == 'product' %}{% if item.available or item.metafields.custom.show_when_sold_out.value == true %}{% render 'qc-product-card', product: item %}{% assign shown = shown | plus: 1 %}{% endif %}{% endif %}{% endfor %}
+          {% for item in search.results %}{% capture ep_visible %}{% render 'ep-content-visible', item: item, hide_prefix: section.settings.hide_title_prefix, hidden_handles: section.settings.hidden_collection_handles %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}{% if item.object_type == 'product' %}{% if item.available or item.metafields.custom.show_when_sold_out.value == true %}{% render 'qc-product-card', product: item %}{% assign shown = shown | plus: 1 %}{% endif %}{% endif %}{% endfor %}
           {% if shown == 0 %}<p class="qc-empty">{{ 'qc.search_empty' | t }}</p>{% endif %}
         </div>
         {% render 'pagination', paginate: paginate %}
@@ -28,7 +28,7 @@
     {% else %}
       {% paginate collection.products by page_size %}
         <div class="qc-products qc-grid">
-          {% for item in collection.products %}{% if item.available or item.metafields.custom.show_when_sold_out.value == true %}{% render 'qc-product-card', product: item %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}
+          {% for item in collection.products %}{% capture ep_visible %}{% render 'ep-content-visible', item: item, hide_prefix: section.settings.hide_title_prefix, hidden_handles: section.settings.hidden_collection_handles %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}{% if item.available or item.metafields.custom.show_when_sold_out.value == true %}{% render 'qc-product-card', product: item %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}
           {% if shown == 0 %}<div class="qc-empty"><h2>{{ 'qc.empty_collection' | t }}</h2><p>{{ 'qc.category_empty_help' | t }}</p></div>{% endif %}
         </div>
         {% render 'pagination', paginate: paginate %}

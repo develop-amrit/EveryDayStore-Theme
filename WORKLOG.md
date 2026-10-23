@@ -741,3 +741,7 @@ All rendered theme headers and pinned states use the existing ep-accent-soft tok
 ## CatFix 2: Use document scrolling for listings
 
 Product column now flows in the page. Only the photo rail scrolls independently; infinite observer uses the viewport with a 600px margin. Switches return the window to the grid start and leave the rail node mounted.
+
+## CatFix 3: Hide configured internal content
+
+Removed automatic More collections. Added section and global prefix/hidden-handle settings, defaulting to [TEST] and the four requested handles. Product rails/grids, collection cards/recommendations and native predictive results use a shared safety predicate; real menu categories are retained.

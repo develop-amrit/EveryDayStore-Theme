@@ -1674,5 +1674,22 @@
         "default": false
       }
     ]
+  },
+  {
+    "name": "t:epcf.internal_content",
+    "settings": [
+      {
+        "type": "text",
+        "id": "ep_hidden_title_prefix",
+        "label": "t:epcf.hide_prefix",
+        "default": "[TEST]"
+      },
+      {
+        "type": "textarea",
+        "id": "ep_hidden_collection_handles",
+        "label": "t:epcf.hidden_handles",
+        "default": "frontpage, home-page, in-stock, all"
+      }
+    ]
   }
 ]
