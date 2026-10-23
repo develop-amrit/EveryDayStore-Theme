@@ -5,3 +5,5 @@ b.write('assets/ep-browse.js',esbuild.transformSync(shared+s.slice(split),{loade
 b.write('assets/ep-collection.js',esbuild.transformSync(shared+s.slice(s.indexOf('  const cache=new Map();'),split)+'})();',{loader:'js',minify:true,target:'es2020',treeShaking:true}).code);
 b.write('assets/ep-browse.css',esbuild.transformSync(b.read('tools/ep-browse.css'),{loader:'css',minify:true}).code);
 console.log('Shared browse JS '+fs.statSync('assets/ep-browse.js').size+' bytes; collection-only JS '+fs.statSync('assets/ep-collection.js').size+' bytes; CSS '+fs.statSync('assets/ep-browse.css').size+' bytes');
+
+b.write('assets/ep-catfix.css',esbuild.transformSync(b.read('tools/ep-catfix.css'),{loader:'css',minify:true}).code);

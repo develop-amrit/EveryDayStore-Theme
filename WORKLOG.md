@@ -733,3 +733,7 @@ Preview Categories: https://3djevx-mu.myshopify.com/collections?preview_theme_id
 Preview listing: https://3djevx-mu.myshopify.com/collections/baby-products-diapers-and-wipes?preview_theme_id=189582049393
 Ready for owner review in Admin → Online Store → Themes → everyday-homepage-review. Do not publish automatically.
 
+
+## CatFix 1: Unify cream header backgrounds
+
+All rendered theme headers and pinned states use the existing ep-accent-soft token, search wells stay white, and listing title rows share the tint. Status-bar #fffdf3 is the rounded sRGB result of the existing FEFAE0 40%/white tint. Announcement remains the existing separate dark strip.

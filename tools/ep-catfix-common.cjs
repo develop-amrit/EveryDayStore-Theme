@@ -1,0 +1,1 @@
+const b=require('./ep-build.cjs');module.exports={...b,css:s=>b.write('tools/ep-catfix.css',(require('fs').existsSync('tools/ep-catfix.css')?b.read('tools/ep-catfix.css'):'')+'\n'+s+'\n'),finish:(n,title,note)=>{b.log('## CatFix '+n+': '+title+'\n\n'+note);b.commit('CatFix '+n+': '+title);}};

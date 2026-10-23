@@ -1,0 +1,7 @@
+const b=require('./ep-catfix-common.cjs');
+b.css(`.ep-page ep-header.ep-header,.ep-page ep-header.ep-header.ep-pinned,.ep-page .ep-slim-row,.ep-page .ep-search-zone,.ep-page .ep-collection-heading{background:var(--ep-accent-soft)!important}.ep-page .ep-header .qc-search{background:#fff!important}.ep-page .ep-collection-heading{max-width:none}.ep-collection-heading>:is(h1,nav){max-width:calc(var(--page-width,1320px) - 32px);margin-inline:auto}.ep-browse-page{--qc-ease:var(--ep-ease)}@media(prefers-reduced-motion:no-preference){.ep-header{transition:box-shadow 150ms var(--ep-ease)}}`);
+for(const p of ['layout/theme.liquid','layout/password.liquid','templates/gift_card.liquid'])b.write(p,b.read(p).replace(/<meta name="theme-color" content="[^"]*">/,'<meta name="theme-color" content="#fffdf3">'));
+let p='tools/ep-bundle.cjs';b.write(p,b.read(p).replace("'tools/ep-browse.css'","'tools/ep-browse.css','tools/ep-catfix.css'"));
+p='snippets/ep-critical-css.liquid';b.write(p,b.read(p)+"\n<style>{{ 'ep-catfix.css' | inline_asset_content }}</style>\n");
+p='tools/ep-categories-build.cjs';b.write(p,b.read(p)+"\nb.write('assets/ep-catfix.css',esbuild.transformSync(b.read('tools/ep-catfix.css'),{loader:'css',minify:true}).code);\n");
+b.finish(1,'Unify cream header backgrounds','All rendered theme headers and pinned states use the existing ep-accent-soft token, search wells stay white, and listing title rows share the tint. Status-bar #fffdf3 is the rounded sRGB result of the existing FEFAE0 40%/white tint. Announcement remains the existing separate dark strip.');
