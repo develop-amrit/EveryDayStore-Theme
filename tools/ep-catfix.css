@@ -14,3 +14,5 @@
 .qc-home .ep-browse-sheet .ep-sheet-apply{color:#fff!important;font-size:15px;font-weight:700;min-height:48px}.ep-browse-sheet input{font-size:16px!important}.ep-filter-chip[data-ep-sheet^=ep-sort]{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 .ep-browse-page .ep-header input[type=search]{font-size:16px!important}
+
+.ep-directory-heading{display:flex;align-items:center;gap:12px;margin-block-end:6px}.ep-directory-heading h2{font-size:18px;font-weight:700;line-height:1.25;display:flex;align-items:center;gap:12px;flex:1;margin:0}.ep-directory-heading h2:after{content:"";height:1px;flex:1;border-block-start:1px dashed #d5d8ce}.ep-directory-heading .ep-department-all{font-size:14px;color:var(--ep-brand);text-decoration:none;min-height:44px;flex:none}.ep-directory-heading .ep-department-all:hover{text-decoration:none}

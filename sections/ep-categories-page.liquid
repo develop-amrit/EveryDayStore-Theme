@@ -4,8 +4,8 @@
   {% assign group_links = block.settings.menu.links %}
   {% if block.settings.department != blank %}{% assign group_links = blank %}{% for parent in block.settings.menu.links %}{% if parent.object.id == block.settings.department.id %}{% assign group_links = parent.links %}{% break %}{% endif %}{% endfor %}{% endif %}
   {% if group_links != blank %}<section class="ep-directory-group" aria-labelledby="ep-department-{{ block.id }}" {{ block.shopify_attributes }}>
-    <h2 id="ep-department-{{ block.id }}">{{ block.settings.heading | escape }}</h2>
-    {% assign department_url = block.settings.department.url | default: block.settings.link %}{% if department_url != blank %}<a class="ep-department-all" href="{{ department_url }}">{{ 'epc.see_department' | t: department: block.settings.heading }}</a>{% endif %}
+    <div class="ep-directory-heading"><h2 id="ep-department-{{ block.id }}">{{ block.settings.heading | escape }}</h2>
+    {% assign department_url = block.settings.department.url | default: block.settings.link %}{% if department_url != blank %}<a class="ep-department-all" href="{{ department_url }}">{{ 'epcf.see_all' | t }} ›</a>{% endif %}</div>
     <div class="ep-tiles">{% for pass in (1..2) %}{% for link in group_links %}{% assign show_tile = false %}{% if pass == 1 %}{% if link.object.all_products_count > 0 %}{% assign show_tile = true %}{% endif %}{% else %}{% unless link.object.all_products_count > 0 %}{% assign show_tile = true %}{% endunless %}{% endif %}{% if show_tile %}{% render 'ep-category-menu-tile', link: link, section: section, group_heading: block.settings.heading, icon: block.settings.icon, tint: block.settings.tint %}{% endif %}{% endfor %}{% endfor %}</div>
   </section>{% endif %}
 {% endif %}{% endfor %}

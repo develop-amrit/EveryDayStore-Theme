@@ -781,3 +781,7 @@ Parent rail images use collection image then the first real non-internal product
 ## CatFix 12: Focus mobile search within the tap handler
 
 Opening search focuses synchronously inside the click handler for iOS. Input is 16px; Esc and clear close the field and return focus to the search icon, retaining Dawn predictive results.
+
+## CatFix 13: Polish directory headings and store artwork
+
+See all sits beside each heading with the shared dashed-rule style. Auto artwork no longer treats an out-of-stock collection as empty: it uses the first real product photo or collection featured image while counts still come from all_products_count. Uploaded artwork remains highest priority.
