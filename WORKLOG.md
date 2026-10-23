@@ -831,3 +831,7 @@ Product now has a square scroll-snap gallery, dots/fullscreen zoom, real variant
 ## Site 7: Replace 404 department text with category blocks
 
 404 retains its now-visible Continue shopping button and has an editable six-block panel plus accessible search. Uses existing real department collections and shared auto imagery; old recovery section file is retained.
+
+## Site 8: Use full-strength brand cream headers
+
+Header, pinned header/search surround, listing heading edge and homepage panel use full #FEFAE0 through the shared accent token. Search stays white with a subtle border; all theme-color tags match.
