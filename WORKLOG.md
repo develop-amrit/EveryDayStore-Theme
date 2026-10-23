@@ -761,3 +761,7 @@ Shared variant state immediately renders steppers, projected real-price subtotal
 ## CatFix 7: Reserve pill clearance and label free delivery
 
 Grid and rail both reserve 52px pill +24px + safe area. Zero estimated delivery renders Free, while paid fees still use ep-money.
+
+## CatFix 8: Restore state only on history traversal
+
+New session namespace and full path/query key avoid stale inner-scroll snapshots. Normal visits start at the document top; browser back_forward, persisted pageshow and popstate restore loaded pages and window offset.
