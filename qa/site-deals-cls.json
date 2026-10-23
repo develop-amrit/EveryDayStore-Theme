@@ -1,0 +1,47 @@
+{
+  "shifts": [
+    {
+      "value": 0.00047779998779296873,
+      "time": 950.6000000014901,
+      "scroll": 0,
+      "sources": [
+        {
+          "html": "<div class=\"ep-collection-sentinel\" data-collection-sentinel=\"\" data-next=\"/collections/all?filter.v.availability=1&amp;page=2&amp;view=ep-deals\" data-page=\"1\" aria-live=\"polite\"><a class=\"ep-load-more\" data-ep-load-more=\"\" href=\"/collections/all?fil",
+          "before": {
+            "x": 56,
+            "y": 868.84375,
+            "width": 168,
+            "height": 31.15625,
+            "top": 868.84375,
+            "right": 224,
+            "bottom": 900,
+            "left": 56
+          },
+          "after": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        }
+      ]
+    }
+  ],
+  "scroll": 0,
+  "rect": {
+    "x": 56,
+    "y": 1695.25,
+    "width": 168,
+    "height": 84,
+    "top": 1695.25,
+    "right": 224,
+    "bottom": 1779.25,
+    "left": 56
+  },
+  "html": "<div class=\"ep-collection-sentinel\" data-collection-sentinel=\"\" data-next=\"/collections/all?filter.v.availability=1&amp;page=5&amp;view=ep-deals\" data-page=\"4\" aria-live=\"polite\"><a class=\"ep-load-more\" data-ep-load-more=\"\" href=\"/collections/all?filter.v.availability=1&amp;page=5&amp;view=ep-deals\">Load more</a></div>",
+  "cards": 32
+}

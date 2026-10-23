@@ -1,0 +1,75 @@
+{
+  "checks": [
+    {
+      "name": "Direct search link back returns Home through stock redirect",
+      "pass": true,
+      "evidence": "https://3djevx-mu.myshopify.com/"
+    },
+    {
+      "name": "Home search submission back returns Home",
+      "pass": true,
+      "evidence": "https://3djevx-mu.myshopify.com/?pb=0"
+    },
+    {
+      "name": "Native best-selling availability request /cart",
+      "pass": true,
+      "evidence": {
+        "url": "https://3djevx-mu.myshopify.com/collections/all?sort_by=best-selling&filter.v.availability=1&section_id=ep-stock-fragment",
+        "count": 8,
+        "available": true,
+        "titles": [
+          "Comfort Fabric Softener with Lavender Blossom Scent, 2.9 Litres",
+          "Persil Sensitive Automatic Liquid Detergent 3Litre",
+          "Galaxy Jewels, Assorted Chocolate Gift Box, Individually Wrapped Miniatures with Pralines, 300g",
+          "Noor, Sunflower Oil, 1.5L pack of 2",
+          "AFIA S/F OIL 1.5LX2 PT.JUG/H(SP)",
+          "Afia Sunflower Oil 0.75Litre Net",
+          "Parachute Coconut Oil 975ml",
+          "Samyang Buldak Korean Hot Spicy Chicken Stir-Fried Ramyun Noodles 4.94 oz (Pack of 5)"
+        ]
+      }
+    },
+    {
+      "name": "Native best-selling availability request /search?q=zzqxynothing",
+      "pass": true,
+      "evidence": {
+        "url": "https://3djevx-mu.myshopify.com/collections/all?sort_by=best-selling&filter.v.availability=1&section_id=ep-stock-fragment",
+        "count": 8,
+        "available": true,
+        "titles": [
+          "Comfort Fabric Softener with Lavender Blossom Scent, 2.9 Litres",
+          "Persil Sensitive Automatic Liquid Detergent 3Litre",
+          "Galaxy Jewels, Assorted Chocolate Gift Box, Individually Wrapped Miniatures with Pralines, 300g",
+          "Noor, Sunflower Oil, 1.5L pack of 2",
+          "AFIA S/F OIL 1.5LX2 PT.JUG/H(SP)",
+          "Afia Sunflower Oil 0.75Litre Net",
+          "Parachute Coconut Oil 975ml",
+          "Samyang Buldak Korean Hot Spicy Chicken Stir-Fried Ramyun Noodles 4.94 oz (Pack of 5)"
+        ]
+      }
+    },
+    {
+      "name": "Sale price and MRP share one line 375",
+      "pass": true,
+      "evidence": {
+        "delta": 0.0078125,
+        "overlap": false,
+        "nameTop": 397.5,
+        "mrpBottom": 385.3125,
+        "display": "flex"
+      }
+    },
+    {
+      "name": "Sale price and MRP share one line 1280",
+      "pass": true,
+      "evidence": {
+        "delta": 0.0078125,
+        "overlap": false,
+        "nameTop": 680,
+        "mrpBottom": 668.796875,
+        "display": "flex"
+      }
+    }
+  ],
+  "errors": []
+}

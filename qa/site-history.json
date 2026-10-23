@@ -1,0 +1,131 @@
+{
+  "checks": [
+    {
+      "name": "Home → Gifting → three rail taps → back arrow → Home",
+      "pass": true,
+      "evidence": [
+        {
+          "url": "/collections/gifting-flowers-and-bouquets",
+          "history": 3,
+          "state": {
+            "epListingEntry": {
+              "url": "https://3djevx-mu.myshopify.com/?pb=0",
+              "scrollY": 0,
+              "fromSite": true
+            },
+            "epFromSite": true,
+            "epCollection": true
+          },
+          "rail": true
+        },
+        {
+          "url": "/collections/gifting-chocolates-and-treats",
+          "history": 3,
+          "state": {
+            "epListingEntry": {
+              "url": "https://3djevx-mu.myshopify.com/?pb=0",
+              "scrollY": 0,
+              "fromSite": true
+            },
+            "epFromSite": true,
+            "epCollection": true
+          },
+          "rail": true
+        },
+        {
+          "url": "/collections/gifting-hampers-and-gift-sets",
+          "history": 3,
+          "state": {
+            "epListingEntry": {
+              "url": "https://3djevx-mu.myshopify.com/?pb=0",
+              "scrollY": 0,
+              "fromSite": true
+            },
+            "epFromSite": true,
+            "epCollection": true
+          },
+          "rail": true
+        }
+      ]
+    },
+    {
+      "name": "Home → Gifting → three rail taps → browser back → Home",
+      "pass": true,
+      "evidence": [
+        {
+          "url": "/collections/gifting-flowers-and-bouquets",
+          "history": 4,
+          "state": {
+            "epListingEntry": {
+              "url": "https://3djevx-mu.myshopify.com/?pb=0",
+              "scrollY": 0,
+              "fromSite": true
+            },
+            "epFromSite": true,
+            "epCollection": true
+          },
+          "rail": true
+        },
+        {
+          "url": "/collections/gifting-chocolates-and-treats",
+          "history": 4,
+          "state": {
+            "epListingEntry": {
+              "url": "https://3djevx-mu.myshopify.com/?pb=0",
+              "scrollY": 0,
+              "fromSite": true
+            },
+            "epFromSite": true,
+            "epCollection": true
+          },
+          "rail": true
+        },
+        {
+          "url": "/collections/gifting-hampers-and-gift-sets",
+          "history": 4,
+          "state": {
+            "epListingEntry": {
+              "url": "https://3djevx-mu.myshopify.com/?pb=0",
+              "scrollY": 0,
+              "fromSite": true
+            },
+            "epFromSite": true,
+            "epCollection": true
+          },
+          "rail": true
+        }
+      ]
+    },
+    {
+      "name": "Categories → Diapers → Baby Food → back → Categories",
+      "pass": true,
+      "evidence": "https://3djevx-mu.myshopify.com/collections?pb=0"
+    },
+    {
+      "name": "Home → Diapers → product → back restores scroll → back → Home",
+      "pass": true,
+      "evidence": {
+        "before": 441,
+        "after": 441
+      }
+    },
+    {
+      "name": "Direct listing back arrow goes Home",
+      "pass": true,
+      "evidence": "https://3djevx-mu.myshopify.com/"
+    },
+    {
+      "name": "Filter and sort replacements back to entry",
+      "pass": true,
+      "evidence": "https://3djevx-mu.myshopify.com/?pb=0"
+    },
+    {
+      "name": "Different-department links replace listing entry",
+      "pass": true,
+      "evidence": {
+        "history": 8
+      }
+    }
+  ],
+  "errors": []
+}

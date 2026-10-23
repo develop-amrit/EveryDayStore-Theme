@@ -1,0 +1,17 @@
+<div data-ep-stock-fragment>{% paginate collection.products by 24 %}{% assign shown = 0 %}{% for product in collection.products %}{% capture allowed %}{% render 'ep-content-visible', item: product %}{% endcapture %}{% if product.available and allowed == '1' %}{% unless product.tags contains 'homepage-hide' %}{% assign eager = false %}{% if shown < 6 %}{% assign eager = true %}{% endif %}{% render 'ep-card', product: product, variant: 'compact', eager: eager %}{% assign shown = shown | plus: 1 %}{% if shown >= 8 %}{% break %}{% endif %}{% endunless %}{% endif %}{% endfor %}{% endpaginate %}</div>
+{% schema %}
+{
+  "name": "t:eps.stock_suggestions",
+  "settings": [],
+  "presets": [
+    {
+      "name": "t:eps.stock_suggestions"
+    }
+  ],
+  "enabled_on": {
+    "templates": [
+      "collection"
+    ]
+  }
+}
+{% endschema %}

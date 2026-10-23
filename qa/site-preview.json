@@ -1,0 +1,128 @@
+{
+  "pages": [
+    {
+      "path": "/?pb=0",
+      "title": "EverydayyPlus",
+      "errors": null,
+      "cards": 54,
+      "homeCards": [
+        {
+          "title": "Baby care",
+          "cards": 4,
+          "oos": 0
+        },
+        {
+          "title": "Grocery essentials",
+          "cards": 8,
+          "oos": 0
+        },
+        {
+          "title": "Best deals",
+          "cards": 10,
+          "oos": 0
+        },
+        {
+          "title": "Home essentials, sorted",
+          "cards": 12,
+          "oos": 0
+        },
+        {
+          "title": "Care for every day",
+          "cards": 12,
+          "oos": 0
+        },
+        {
+          "title": "Desk and school essentials",
+          "cards": 8,
+          "oos": 0
+        }
+      ],
+      "overflow": false,
+      "header": "rgb(254, 250, 224)",
+      "query": "",
+      "columns": null,
+      "nav": "flex",
+      "buttonProblems": [
+        "Sign me up ↗"
+      ]
+    },
+    {
+      "path": "/collections/all?pb=0&view=ep-deals&filter.v.availability=1",
+      "title": "Best deals – EverydayyPlus",
+      "errors": null,
+      "cards": 10,
+      "homeCards": [],
+      "overflow": false,
+      "header": "rgb(254, 250, 224)",
+      "query": "",
+      "columns": "167.5px 167.5px",
+      "nav": "flex",
+      "buttonProblems": []
+    },
+    {
+      "path": "/search?pb=0&q=diapers&filter.v.availability=1",
+      "title": "Search: 31 results found for \"diapers\" – EverydayyPlus",
+      "errors": null,
+      "cards": 15,
+      "homeCards": [],
+      "overflow": false,
+      "header": "rgb(254, 250, 224)",
+      "query": "diapers",
+      "columns": "167.5px 167.5px",
+      "nav": "flex",
+      "buttonProblems": []
+    },
+    {
+      "path": "/products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23?pb=0",
+      "title": "Huggies Wonder Dry Pants, Double Extra Large (XXL) Size Diapers, 22 Co – EverydayyPlus",
+      "errors": null,
+      "cards": 7,
+      "homeCards": [
+        {
+          "title": "Similar products",
+          "cards": 7,
+          "oos": 0
+        }
+      ],
+      "overflow": false,
+      "header": "rgb(254, 250, 224)",
+      "query": "",
+      "columns": null,
+      "nav": "none",
+      "buttonProblems": []
+    },
+    {
+      "path": "/cart?pb=0",
+      "title": "Your Shopping Cart – EverydayyPlus",
+      "errors": null,
+      "cards": 8,
+      "homeCards": [
+        {
+          "title": "Popular essentials",
+          "cards": 8,
+          "oos": 0
+        }
+      ],
+      "overflow": false,
+      "header": "rgb(254, 250, 224)",
+      "query": "",
+      "columns": null,
+      "nav": "flex",
+      "buttonProblems": []
+    },
+    {
+      "path": "/not-a-real-page?pb=0",
+      "title": "404 Not Found – EverydayyPlus",
+      "errors": null,
+      "cards": 0,
+      "homeCards": [],
+      "overflow": false,
+      "header": "rgb(254, 250, 224)",
+      "query": "",
+      "columns": null,
+      "nav": "flex",
+      "buttonProblems": []
+    }
+  ],
+  "errors": []
+}

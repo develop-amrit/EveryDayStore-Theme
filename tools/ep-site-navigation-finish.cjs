@@ -1,0 +1,4 @@
+const b=require('./ep-site-common.cjs');b.edit('tools/ep-src/ep-browse.js',s=>s.replace('offset=mobile.matches?56:0','offset=mobile.matches?(document.querySelector(\'ep-header\')?.offsetHeight||56):0'));
+b.edit('sections/ep-bottom-nav.liquid',s=>s.replace('{% if active_item %}',"{% if request.page_type == 'search' %}{% assign active_item = false %}{% endif %}{% if active_item %}"));
+b.edit('sections/ep-product.liquid',s=>s.replace('data-ep-option="{{ value.id }}"', 'data-ep-option="{{ value.id }}" data-option-product-url="{{ value.product_url }}"'));
+b.edit('tools/ep-src/ep-site.js',s=>s.replace('async option(button){if(this.loading)return;',"async option(button){if(this.loading)return;if(button.dataset.optionProductUrl){const sibling=new URL(button.dataset.optionProductUrl,location.origin);if(sibling.origin===location.origin&&sibling.pathname!==this.dataset.url){location.replace(sibling);return;}}"));

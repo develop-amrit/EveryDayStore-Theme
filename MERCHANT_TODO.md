@@ -2,7 +2,7 @@
 
 **First: Add Terms of service, Refund policy and Shipping policy in Admin → Settings → Policies.** The cart’s terms checkbox depends on the Terms of service policy. Homepage policy row correctly shows existing policies only.
 
-1. **Currency formatting:** Admin → Settings → Store details → Store defaults → Currency display → Change currency formatting: set all four fields (HTML with currency, HTML without currency, Email with currency, Email without currency) to `AED {{amount}}`. Keep Show currency codes off. The homepage uses the active currency code with Shopify’s numeric money filter until these store formats are corrected.
+1. **Currency formatting:** Admin → Settings → Store details → Store defaults → Currency display → Change currency formatting: set all four fields (HTML with currency, HTML without currency, Email with currency, Email without currency) to `AED {{amount}}`. Keep Show currency codes off. Visible storefront prices use the embedded dirham symbol with Shopify’s numeric money filter; email and checkout formats keep AED.
 
 2. **Menus:** Admin → Content → Menus: move Baby Products and Gifting above Grocery in Shop/catalogue and Trending searches Categories menus. Create Help with Delivery areas, Order cut-off, FAQs (/#ep-home-faq), Returns and Contact (/pages/contact); create/publish delivery and cut-off content or select an existing real policy URL, then assign Footer → Help menu. Do not use missing /pages/* policy URLs.
 3. **Policies:** fill missing policies in Admin → Settings → Policies. Homepage displays only policies with content using their /policies/ URLs.
@@ -56,7 +56,7 @@ The current stock-filtered Diapers & Wipes preview has 27 native results, includ
 
 Search & Discovery currently exposes Availability and Price. To add Brand (and optionally Product type): open Apps → Shopify Search & Discovery → Filters → Add filter, select Product vendor / Product type, and save. The sheets show these automatically once supplied by Shopify.
 
-Homepage rails use in-stock products only. If a department’s first 50 Liquid candidates are all unavailable, its rail hides until the collection is reordered or stock is corrected. The department and all real category links remain visible.
+Homepage rails/grids scan up to 250 real products and use in-stock child-collection fallback if fewer than four are found. They hide only if the combined available count stays below four. Real category links remain visible even when empty.
 
 ## Sitewide owner tasks
 - Brand the Shopify-hosted sign-in page in Admin → Settings → Customer accounts (logo and colours); storefront theme code cannot change that hosted page.

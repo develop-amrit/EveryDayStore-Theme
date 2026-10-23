@@ -6,6 +6,6 @@
 {%- for part in parts offset: 1 -%}
   {%- assign first = part | slice: 0, 1 -%}
   {%- if first != blank and '0123456789' contains first -%}
-    <span class="ep-dh" aria-hidden="true">&#x20C3;</span>&#x202F;<span class="visually-hidden">AED </span>{{- part -}}
+    <span class="ep-dh-slot" aria-hidden="true"><span class="ep-dh">&#x20C3;</span></span>&#x202F;<span class="visually-hidden">AED </span>{{- part -}}
   {%- else -%}AED {{ part }}{%- endif -%}
 {%- endfor -%}

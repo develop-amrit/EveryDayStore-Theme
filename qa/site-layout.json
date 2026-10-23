@@ -1,0 +1,937 @@
+{
+  "checks": [
+    {
+      "name": "360 /",
+      "pass": true,
+      "evidence": {
+        "url": "/?pb=0",
+        "title": "EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Home"
+        ],
+        "product": null,
+        "panel": [
+          "aptamil-advance-2-follow-on-formula-milk-from-6-12-months-easy-to-use-pack-800g-b0cvnd16k9",
+          "aptamil-advance-junior-3-growing-up-formula-milk-from-1-3-years-easy-to-use-pack-800g-b0cvn97jmp",
+          "aptamil-pepti-junior-infant-formula-milk-from-birth-to-12-months-allergy-management-easy-to-use-pack-b07pt5pcm1",
+          "lindt-lindor-milk-chocolate-assorted-with-melting-filling-200g-b0198hm8ic",
+          "galaxy-jewels-assorted-chocolate-gift-box-individually-wrapped-miniatures-175g-b0h467cs2v",
+          "noor-sunflower-oil-1-5l-pack-of-2-b08dvdqzv7",
+          "dettol-sensitive-bathing-soap-lavender-white-musk-scent-120g-x-4-b09lcnykh5",
+          "comfort-fabric-softener-with-lavender-blossom-scent-2-9-litres-b0fsf5q86k",
+          "persil-sensitive-automatic-liquid-detergent-3litre-b07mtzzxtb",
+          "10-pcs-pet-puppy-toys-gift-set-ball-rope-and-chew-squeaky-for-dog-cat-b07mlsttlw",
+          "whiskas-chicken-dry-cat-food-bag-of-3kg",
+          "scotch-double-sided-tape-permanent-glue-alternative-for-scrapbooking-crafts-and-gift-wrapping-1-2-in-b002vla5si",
+          "nataraj-621-hb-hexagonal-pencils-with-eraser-tips-48-assorted-pieces-graphite-writing-and-drawing-pe-b0d5rdk8sz"
+        ]
+      }
+    },
+    {
+      "name": "360 /collections",
+      "pass": true,
+      "evidence": {
+        "url": "/collections?pb=0",
+        "title": "Categories – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Categories"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "360 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "url": "/collections/baby-products-diapers-and-wipes?pb=0&filter.v.availability=1",
+        "title": "Diapers & Wipes – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "128px 128px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "360 /collections/all?view=ep-deals",
+      "pass": true,
+      "evidence": {
+        "url": "/collections/all?pb=0&view=ep-deals&filter.v.availability=1",
+        "title": "Best deals – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "160px 160px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Deals"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "360 /search?q=diapers",
+      "pass": true,
+      "evidence": {
+        "url": "/search?pb=0&q=diapers&filter.v.availability=1",
+        "title": "Search: 37 results found for \"diapers\" – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "diapers",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "160px 160px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "360 /search?q=zzqxynothing",
+      "pass": true,
+      "evidence": {
+        "url": "/search?pb=0&q=zzqxynothing&filter.v.availability=1",
+        "title": "Search: 0 results found for \"zzqxynothing\" – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "zzqxynothing",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "repeat(2, minmax(0px, 1fr))",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "360 /products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23",
+      "pass": true,
+      "evidence": {
+        "url": "/products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23?pb=0",
+        "title": "Huggies Wonder Dry Pants, Double Extra Large (XXL) Size Diapers, 22 Co – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": {
+          "nameTop": 497,
+          "priceTop": 550,
+          "images": 7
+        },
+        "panel": []
+      }
+    },
+    {
+      "name": "360 /cart",
+      "pass": true,
+      "evidence": {
+        "url": "/cart?pb=0",
+        "title": "Your Shopping Cart – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Cart0"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "360 /not-a-real-page",
+      "pass": true,
+      "evidence": {
+        "url": "/not-a-real-page?pb=0",
+        "title": "404 Not Found – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "375 /",
+      "pass": true,
+      "evidence": {
+        "url": "/?pb=0",
+        "title": "EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Home"
+        ],
+        "product": null,
+        "panel": [
+          "aptamil-advance-2-follow-on-formula-milk-from-6-12-months-easy-to-use-pack-800g-b0cvnd16k9",
+          "aptamil-advance-junior-3-growing-up-formula-milk-from-1-3-years-easy-to-use-pack-800g-b0cvn97jmp",
+          "aptamil-pepti-junior-infant-formula-milk-from-birth-to-12-months-allergy-management-easy-to-use-pack-b07pt5pcm1",
+          "lindt-lindor-milk-chocolate-assorted-with-melting-filling-200g-b0198hm8ic",
+          "galaxy-jewels-assorted-chocolate-gift-box-individually-wrapped-miniatures-175g-b0h467cs2v",
+          "noor-sunflower-oil-1-5l-pack-of-2-b08dvdqzv7",
+          "dettol-sensitive-bathing-soap-lavender-white-musk-scent-120g-x-4-b09lcnykh5",
+          "comfort-fabric-softener-with-lavender-blossom-scent-2-9-litres-b0fsf5q86k",
+          "persil-sensitive-automatic-liquid-detergent-3litre-b07mtzzxtb",
+          "10-pcs-pet-puppy-toys-gift-set-ball-rope-and-chew-squeaky-for-dog-cat-b07mlsttlw",
+          "whiskas-chicken-dry-cat-food-bag-of-3kg",
+          "scotch-double-sided-tape-permanent-glue-alternative-for-scrapbooking-crafts-and-gift-wrapping-1-2-in-b002vla5si",
+          "nataraj-621-hb-hexagonal-pencils-with-eraser-tips-48-assorted-pieces-graphite-writing-and-drawing-pe-b0d5rdk8sz"
+        ]
+      }
+    },
+    {
+      "name": "375 /collections",
+      "pass": true,
+      "evidence": {
+        "url": "/collections?pb=0",
+        "title": "Categories – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Categories"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "375 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "url": "/collections/baby-products-diapers-and-wipes?pb=0&filter.v.availability=1",
+        "title": "Diapers & Wipes – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "135.5px 135.5px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "375 /collections/all?view=ep-deals",
+      "pass": true,
+      "evidence": {
+        "url": "/collections/all?pb=0&view=ep-deals&filter.v.availability=1",
+        "title": "Best deals – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "167.5px 167.5px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Deals"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "375 /search?q=diapers",
+      "pass": true,
+      "evidence": {
+        "url": "/search?pb=0&q=diapers&filter.v.availability=1",
+        "title": "Search: 37 results found for \"diapers\" – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "diapers",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "167.5px 167.5px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "375 /search?q=zzqxynothing",
+      "pass": true,
+      "evidence": {
+        "url": "/search?pb=0&q=zzqxynothing&filter.v.availability=1",
+        "title": "Search: 0 results found for \"zzqxynothing\" – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "zzqxynothing",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "repeat(2, minmax(0px, 1fr))",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "375 /products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23",
+      "pass": true,
+      "evidence": {
+        "url": "/products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23?pb=0",
+        "title": "Huggies Wonder Dry Pants, Double Extra Large (XXL) Size Diapers, 22 Co – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": {
+          "nameTop": 512,
+          "priceTop": 565,
+          "images": 7
+        },
+        "panel": []
+      }
+    },
+    {
+      "name": "375 /cart",
+      "pass": true,
+      "evidence": {
+        "url": "/cart?pb=0",
+        "title": "Your Shopping Cart – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Cart0"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "375 /not-a-real-page",
+      "pass": true,
+      "evidence": {
+        "url": "/not-a-real-page?pb=0",
+        "title": "404 Not Found – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "414 /",
+      "pass": true,
+      "evidence": {
+        "url": "/?pb=0",
+        "title": "EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Home"
+        ],
+        "product": null,
+        "panel": [
+          "aptamil-advance-2-follow-on-formula-milk-from-6-12-months-easy-to-use-pack-800g-b0cvnd16k9",
+          "aptamil-advance-junior-3-growing-up-formula-milk-from-1-3-years-easy-to-use-pack-800g-b0cvn97jmp",
+          "aptamil-pepti-junior-infant-formula-milk-from-birth-to-12-months-allergy-management-easy-to-use-pack-b07pt5pcm1",
+          "lindt-lindor-milk-chocolate-assorted-with-melting-filling-200g-b0198hm8ic",
+          "galaxy-jewels-assorted-chocolate-gift-box-individually-wrapped-miniatures-175g-b0h467cs2v",
+          "noor-sunflower-oil-1-5l-pack-of-2-b08dvdqzv7",
+          "dettol-sensitive-bathing-soap-lavender-white-musk-scent-120g-x-4-b09lcnykh5",
+          "comfort-fabric-softener-with-lavender-blossom-scent-2-9-litres-b0fsf5q86k",
+          "persil-sensitive-automatic-liquid-detergent-3litre-b07mtzzxtb",
+          "10-pcs-pet-puppy-toys-gift-set-ball-rope-and-chew-squeaky-for-dog-cat-b07mlsttlw",
+          "whiskas-chicken-dry-cat-food-bag-of-3kg",
+          "scotch-double-sided-tape-permanent-glue-alternative-for-scrapbooking-crafts-and-gift-wrapping-1-2-in-b002vla5si",
+          "nataraj-621-hb-hexagonal-pencils-with-eraser-tips-48-assorted-pieces-graphite-writing-and-drawing-pe-b0d5rdk8sz"
+        ]
+      }
+    },
+    {
+      "name": "414 /collections",
+      "pass": true,
+      "evidence": {
+        "url": "/collections?pb=0",
+        "title": "Categories – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Categories"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "414 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "url": "/collections/baby-products-diapers-and-wipes?pb=0&filter.v.availability=1",
+        "title": "Diapers & Wipes – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "155px 155px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "414 /collections/all?view=ep-deals",
+      "pass": true,
+      "evidence": {
+        "url": "/collections/all?pb=0&view=ep-deals&filter.v.availability=1",
+        "title": "Best deals – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "187px 187px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Deals"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "414 /search?q=diapers",
+      "pass": true,
+      "evidence": {
+        "url": "/search?pb=0&q=diapers&filter.v.availability=1",
+        "title": "Search: 37 results found for \"diapers\" – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "diapers",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "187px 187px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "414 /search?q=zzqxynothing",
+      "pass": true,
+      "evidence": {
+        "url": "/search?pb=0&q=zzqxynothing&filter.v.availability=1",
+        "title": "Search: 0 results found for \"zzqxynothing\" – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "zzqxynothing",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "repeat(2, minmax(0px, 1fr))",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "414 /products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23",
+      "pass": true,
+      "evidence": {
+        "url": "/products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23?pb=0",
+        "title": "Huggies Wonder Dry Pants, Double Extra Large (XXL) Size Diapers, 22 Co – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": {
+          "nameTop": 551,
+          "priceTop": 604,
+          "images": 7
+        },
+        "panel": []
+      }
+    },
+    {
+      "name": "414 /cart",
+      "pass": true,
+      "evidence": {
+        "url": "/cart?pb=0",
+        "title": "Your Shopping Cart – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [
+          "Cart0"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "414 /not-a-real-page",
+      "pass": true,
+      "evidence": {
+        "url": "/not-a-real-page?pb=0",
+        "title": "404 Not Found – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "flex",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "1280 /",
+      "pass": true,
+      "evidence": {
+        "url": "/?pb=0",
+        "title": "EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [
+          "Home"
+        ],
+        "product": null,
+        "panel": [
+          "aptamil-advance-2-follow-on-formula-milk-from-6-12-months-easy-to-use-pack-800g-b0cvnd16k9",
+          "aptamil-advance-junior-3-growing-up-formula-milk-from-1-3-years-easy-to-use-pack-800g-b0cvn97jmp",
+          "aptamil-pepti-junior-infant-formula-milk-from-birth-to-12-months-allergy-management-easy-to-use-pack-b07pt5pcm1",
+          "lindt-lindor-milk-chocolate-assorted-with-melting-filling-200g-b0198hm8ic",
+          "galaxy-jewels-assorted-chocolate-gift-box-individually-wrapped-miniatures-175g-b0h467cs2v",
+          "noor-sunflower-oil-1-5l-pack-of-2-b08dvdqzv7",
+          "dettol-sensitive-bathing-soap-lavender-white-musk-scent-120g-x-4-b09lcnykh5",
+          "comfort-fabric-softener-with-lavender-blossom-scent-2-9-litres-b0fsf5q86k",
+          "persil-sensitive-automatic-liquid-detergent-3litre-b07mtzzxtb",
+          "10-pcs-pet-puppy-toys-gift-set-ball-rope-and-chew-squeaky-for-dog-cat-b07mlsttlw",
+          "whiskas-chicken-dry-cat-food-bag-of-3kg",
+          "scotch-double-sided-tape-permanent-glue-alternative-for-scrapbooking-crafts-and-gift-wrapping-1-2-in-b002vla5si",
+          "nataraj-621-hb-hexagonal-pencils-with-eraser-tips-48-assorted-pieces-graphite-writing-and-drawing-pe-b0d5rdk8sz"
+        ]
+      }
+    },
+    {
+      "name": "1280 /collections",
+      "pass": true,
+      "evidence": {
+        "url": "/collections?pb=0",
+        "title": "Categories – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [
+          "Categories"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "1280 /collections/baby-products-diapers-and-wipes",
+      "pass": true,
+      "evidence": {
+        "url": "/collections/baby-products-diapers-and-wipes?pb=0&filter.v.availability=1",
+        "title": "Diapers & Wipes – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "236px 236px 236px 236px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "1280 /collections/all?view=ep-deals",
+      "pass": true,
+      "evidence": {
+        "url": "/collections/all?pb=0&view=ep-deals&filter.v.availability=1",
+        "title": "Best deals – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "286px 286px 286px 286px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [
+          "Deals"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "1280 /search?q=diapers",
+      "pass": true,
+      "evidence": {
+        "url": "/search?pb=0&q=diapers&filter.v.availability=1",
+        "title": "Search: 37 results found for \"diapers\" – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "diapers",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "286px 286px 286px 286px",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "1280 /search?q=zzqxynothing",
+      "pass": true,
+      "evidence": {
+        "url": "/search?pb=0&q=zzqxynothing&filter.v.availability=1",
+        "title": "Search: 0 results found for \"zzqxynothing\" – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "zzqxynothing",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": "repeat(4, minmax(0px, 1fr))",
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "1280 /products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23",
+      "pass": true,
+      "evidence": {
+        "url": "/products/huggies-wonder-dry-pants-double-extra-large-xxl-size-diapers-22-count-b08s48pv23?pb=0",
+        "title": "Huggies Wonder Dry Pants, Double Extra Large (XXL) Size Diapers, 22 Co – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": {
+          "nameTop": 269,
+          "priceTop": 337,
+          "images": 7
+        },
+        "panel": []
+      }
+    },
+    {
+      "name": "1280 /cart",
+      "pass": true,
+      "evidence": {
+        "url": "/cart?pb=0",
+        "title": "Your Shopping Cart – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [
+          "Cart0"
+        ],
+        "product": null,
+        "panel": []
+      }
+    },
+    {
+      "name": "1280 /not-a-real-page",
+      "pass": true,
+      "evidence": {
+        "url": "/not-a-real-page?pb=0",
+        "title": "404 Not Found – EverydayyPlus",
+        "overflow": false,
+        "cls": 0,
+        "shifts": [],
+        "header": "rgb(254, 250, 224)",
+        "query": "",
+        "errors": null,
+        "buttons": [],
+        "overlaps": 0,
+        "columns": null,
+        "compare": 0,
+        "homeOos": 0,
+        "nav": "none",
+        "active": [],
+        "product": null,
+        "panel": []
+      }
+    }
+  ],
+  "errors": []
+}

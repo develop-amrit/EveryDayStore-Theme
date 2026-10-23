@@ -1,4 +1,17 @@
 <div data-ep-product-fragment>{% capture allowed %}{% render 'ep-content-visible', item: product %}{% endcapture %}{% if allowed == '1' and product.available %}{% render 'ep-card', product: product, variant: 'compact' %}{% endif %}</div>
 {% schema %}
-{"name":"t:eps.product_card","settings":[],"presets":[{"name":"t:eps.product_card"}]}
+{
+  "name": "t:eps.product_card",
+  "settings": [],
+  "presets": [
+    {
+      "name": "t:eps.product_card"
+    }
+  ],
+  "enabled_on": {
+    "templates": [
+      "product"
+    ]
+  }
+}
 {% endschema %}

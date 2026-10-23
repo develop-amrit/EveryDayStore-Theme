@@ -3630,6 +3630,11 @@
     "read_more": "Read more",
     "read_less": "Read less",
     "product_for_image": "Product for image",
-    "recovery": "Find your everyday essentials"
+    "recovery": "Find essentials",
+    "go_to_slide": "Go to image {{ number }}",
+    "apply_filters": "Apply filters",
+    "delivery_tomorrow": "Delivery tomorrow",
+    "to": "to",
+    "stock_suggestions": "In-stock suggestions"
   }
 }

@@ -851,3 +851,46 @@ Cart page offers an editable in-stock EP rail with working compact ADD controls.
 ## Site 12: Record sitewide merchant follow-ups
 
 Added hosted-account branding, Baby stock/optional automated collection, Bath & Body conditions and remaining test-record cleanup to MERCHANT_TODO.md. Added localized storefront/editor strings for all new components; no catalogue records, menus, inventory or hosted pages were mutated.
+
+Site integration: the shared history initializer runs inline before stock canonicalization, so direct links cannot inherit a stale listing entry. Product variant swaps preserve selected-image IDs, and search Clear retains the query. Shopify schema/doc validation corrections applied before preview deployment.
+
+Preview pass: Baby care is visible, all homepage cards in stock; Deals/search are 2 columns and product name/price fit the first screen. The computed-button audit found an inherited newsletter submit contrast issue; fixed. Set Bath & Body panel Product for image to a confirmed active/in-stock Dettol bathing soap, avoiding diaper pants while owner repairs collection conditions. Explicit product picker is a single-image override, and all auto choices remain deduplicated. Entry metadata keeps the in-site flag across department replacements and restores the entry page scroll on back.
+
+Integration data checks: discount-only homepage rail retains its real compare-at predicate; Deals hides the native All-products count and uses Apply filters so the theme-only view never claims a false deal count. Empty basket cards render in the initial HTML when empty, avoiding a client-insertion shift.
+
+QA integration: all six back paths plus department replacement passed. Fixed an initial search heading height change, load-more sentinel height change and pre-centering rail paint. The dirham glyph stays inline inside a fixed em-width slot so the embedded font loading cannot change price/copy width; the slot explicitly inherits compare-at strike-through. Product delivery sheets now reuse the shared sheet module on pages without a collection controller.
+
+Visual finishing: chose the already verified available Noor sunflower-oil product for Grocery’s image picker, so Grocery and Gifting no longer look like duplicate chocolate tins. Fixed desktop rail-free grid specificity for Deals/search, which also removed the automatic-loader sentinel shift. First six priorities count rendered cards after internal/discount filters.
+
+Final guard pass: fixed initial nav-space variables per template/breakpoint so the cookie banner does not move when ResizeObserver discovers a hidden nav/product bar. Kept the logo/icon row on one line. Non-existent option combinations hide prices and retain option_values in the URL instead of inventing a zero price.
+
+Recovery panel now shares the configured Grocery/Bath product choices and unique-product tracking of the homepage panel. Recently viewed rechecks actual privacy consent after asynchronous card fetches before showing personalized content.
+
+Visual review correction: prior geometry QA only tested the price parent, so it missed overflowing MRP text. Listing/product price display is now explicitly flex (legacy two-row grid removed), and QA includes the actual MRP bounds. Mobile navigation stays visible on Deals/search under 990px and hides on desktop per the inherited responsive rule.
+
+Image-size finishing: each auto-image placement now supplies its real slot size (campaign, store, slide, brand tile and 52px bubble), preserving the requested responsive 120–480 srcset. The shared dirham asset also carries the fixed glyph slot for standalone gift-card markup.
+
+Suggestion ranking uses Shopify’s native best-selling order with availability=1 via a shared section fragment for empty-cart and no-results rails. Real server-rendered in-stock fallback remains if the request fails, and focused controls are never replaced. No sales rank or count is fabricated.
+
+Final component scoping: compact suggestion rails keep their reserved two-line price layout even inside search pages; listing grids/product info use the explicit inline row. Gallery dots retain 44px targets and scroll if there are many images. Charset remains first in head, ahead of the early history initializer.
+
+Direct-search back guard preserves the original entry flag through the availability canonicalization redirect, so direct preview/search links return Home instead of mistaking that internal redirect for a prior in-site page.
+
+Editor scope: product/search/collection-only components and API fragments are limited to their valid template types, preventing nil-product/collection presets from being added to the homepage.
+
+Section-setting parity verified: the 250-product helper honors each rail/grid title-prefix and child-handle override, soft background settings render, and empty editor grids retain editor-only placeholders. Storefront still hides sections below the four-product threshold.
+
+Repeated-session CLS diagnosis: the server-rendered cookie banner was visible before Shopify read saved consent, then disappeared for returning visitors. It now starts hidden and is revealed by the same existing Customer Privacy API decision (or its existing error path). Consent choices/tracking behaviour are unchanged. Fixed-size icons do not flex-shrink while surrounding controls initialize.
+
+Final cold-load header correction: delivery-trigger geometry is now also in the inline site CSS. The deferred homepage stylesheet previously changed its line layout after first paint. Hidden area labels remain hidden before custom-element initialization.
+
+## Site 13: Verify sitewide fixes and review theme
+
+66 browser checks passed, including all six back paths, cross-department replacement, direct search, product/empty-cart add/remove, fee Free state, live consent-gated recently viewed, native best-selling suggestions and WebKit/Firefox smoke. Final 36 viewport measurements at 360/375/414/1280 returned CLS 0 with no overflow, MRP/name overlap or console errors; four final 404 checks also measured CLS 0.
+
+Theme Check: 0 errors, 15 inherited/retained warnings, individually justified in docs/SITE_QA.md. Structural checks: 93 JSON files, 109 schemas, references, translations and JS syntax. Full skill-validator attempt is recorded; its missing bundled dependency is bypassed by official CLI validation, not hidden. All 100 changed remote theme files match source; target remains UNPUBLISHED. No other theme writes, copy or publication.
+
+All 608 active catalogue products were audited: none has multiple variants, so live multi-variant switching is not applicable; the option-value implementation is in place without creating test products. Earlier Lighthouse/JS performance gates remain documented separately, not claimed passed here.
+
+Files, details and previews: docs/SITE_CHANGED_FILES.md and docs/SITE_QA.md. Owner actions remain in MERCHANT_TODO.md. Product/search/Deals/404/cart and shared chrome are ready for review in Admin → Online Store → Themes.
+

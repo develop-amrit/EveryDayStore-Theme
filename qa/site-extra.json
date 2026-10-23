@@ -1,0 +1,208 @@
+{
+  "checks": [
+    {
+      "name": "Final 404 panel 360",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "handles": [
+          "lindt-lindor-milk-chocolate-assorted-with-melting-filling-200g-b0198hm8ic",
+          "galaxy-jewels-assorted-chocolate-gift-box-individually-wrapped-miniatures-175g-b0h467cs2v",
+          "noor-sunflower-oil-1-5l-pack-of-2-b08dvdqzv7",
+          "dettol-sensitive-bathing-soap-lavender-white-musk-scent-120g-x-4-b09lcnykh5",
+          "comfort-fabric-softener-with-lavender-blossom-scent-2-9-litres-b0fsf5q86k",
+          "persil-sensitive-automatic-liquid-detergent-3litre-b07mtzzxtb",
+          "10-pcs-pet-puppy-toys-gift-set-ball-rope-and-chew-squeaky-for-dog-cat-b07mlsttlw",
+          "whiskas-chicken-dry-cat-food-bag-of-3kg",
+          "scotch-double-sided-tape-permanent-glue-alternative-for-scrapbooking-crafts-and-gift-wrapping-1-2-in-b002vla5si",
+          "nataraj-621-hb-hexagonal-pencils-with-eraser-tips-48-assorted-pieces-graphite-writing-and-drawing-pe-b0d5rdk8sz"
+        ],
+        "blocks": 6
+      }
+    },
+    {
+      "name": "Final 404 panel 375",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "handles": [
+          "lindt-lindor-milk-chocolate-assorted-with-melting-filling-200g-b0198hm8ic",
+          "galaxy-jewels-assorted-chocolate-gift-box-individually-wrapped-miniatures-175g-b0h467cs2v",
+          "noor-sunflower-oil-1-5l-pack-of-2-b08dvdqzv7",
+          "dettol-sensitive-bathing-soap-lavender-white-musk-scent-120g-x-4-b09lcnykh5",
+          "comfort-fabric-softener-with-lavender-blossom-scent-2-9-litres-b0fsf5q86k",
+          "persil-sensitive-automatic-liquid-detergent-3litre-b07mtzzxtb",
+          "10-pcs-pet-puppy-toys-gift-set-ball-rope-and-chew-squeaky-for-dog-cat-b07mlsttlw",
+          "whiskas-chicken-dry-cat-food-bag-of-3kg",
+          "scotch-double-sided-tape-permanent-glue-alternative-for-scrapbooking-crafts-and-gift-wrapping-1-2-in-b002vla5si",
+          "nataraj-621-hb-hexagonal-pencils-with-eraser-tips-48-assorted-pieces-graphite-writing-and-drawing-pe-b0d5rdk8sz"
+        ],
+        "blocks": 6
+      }
+    },
+    {
+      "name": "Final 404 panel 414",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "handles": [
+          "lindt-lindor-milk-chocolate-assorted-with-melting-filling-200g-b0198hm8ic",
+          "galaxy-jewels-assorted-chocolate-gift-box-individually-wrapped-miniatures-175g-b0h467cs2v",
+          "noor-sunflower-oil-1-5l-pack-of-2-b08dvdqzv7",
+          "dettol-sensitive-bathing-soap-lavender-white-musk-scent-120g-x-4-b09lcnykh5",
+          "comfort-fabric-softener-with-lavender-blossom-scent-2-9-litres-b0fsf5q86k",
+          "persil-sensitive-automatic-liquid-detergent-3litre-b07mtzzxtb",
+          "10-pcs-pet-puppy-toys-gift-set-ball-rope-and-chew-squeaky-for-dog-cat-b07mlsttlw",
+          "whiskas-chicken-dry-cat-food-bag-of-3kg",
+          "scotch-double-sided-tape-permanent-glue-alternative-for-scrapbooking-crafts-and-gift-wrapping-1-2-in-b002vla5si",
+          "nataraj-621-hb-hexagonal-pencils-with-eraser-tips-48-assorted-pieces-graphite-writing-and-drawing-pe-b0d5rdk8sz"
+        ],
+        "blocks": 6
+      }
+    },
+    {
+      "name": "Final 404 panel 1280",
+      "pass": true,
+      "evidence": {
+        "cls": 0,
+        "overflow": false,
+        "handles": [
+          "lindt-lindor-milk-chocolate-assorted-with-melting-filling-200g-b0198hm8ic",
+          "galaxy-jewels-assorted-chocolate-gift-box-individually-wrapped-miniatures-175g-b0h467cs2v",
+          "noor-sunflower-oil-1-5l-pack-of-2-b08dvdqzv7",
+          "dettol-sensitive-bathing-soap-lavender-white-musk-scent-120g-x-4-b09lcnykh5",
+          "comfort-fabric-softener-with-lavender-blossom-scent-2-9-litres-b0fsf5q86k",
+          "persil-sensitive-automatic-liquid-detergent-3litre-b07mtzzxtb",
+          "10-pcs-pet-puppy-toys-gift-set-ball-rope-and-chew-squeaky-for-dog-cat-b07mlsttlw",
+          "whiskas-chicken-dry-cat-food-bag-of-3kg",
+          "scotch-double-sided-tape-permanent-glue-alternative-for-scrapbooking-crafts-and-gift-wrapping-1-2-in-b002vla5si",
+          "nataraj-621-hb-hexagonal-pencils-with-eraser-tips-48-assorted-pieces-graphite-writing-and-drawing-pe-b0d5rdk8sz"
+        ],
+        "blocks": 6
+      }
+    },
+    {
+      "name": "Recently viewed shows another real product only with preference consent",
+      "pass": true,
+      "evidence": [
+        "/products/pampers-ultimate-comfort-taped-diapers-size-3-6-10kg-lotion-infused-with-aloe-vera-and-vitamin-e-x1000-leak-locks-technology-for-leakage-protection-248-count-b0dkt9g5mz"
+      ]
+    },
+    {
+      "name": "First six rendered search/deal cards have eager, responsive images",
+      "pass": true,
+      "evidence": [
+        {
+          "path": "/search?q=diapers",
+          "imgs": [
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B0DNJFVQ8J_01.jpg?format=webp&v=1792695042&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DNJFVQ8J_01.jpg?format=webp&v=1792695042&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DNJFVQ8J_01.jpg?format=webp&v=1792695042&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DNJFVQ8J_01.jpg?format=webp&v=1792695042&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DNJFVQ8J_01.jpg?format=webp&v=1792695042&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B0DKT6Z2Q9_01.jpg?format=webp&v=1792694977&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DKT6Z2Q9_01.jpg?format=webp&v=1792694977&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DKT6Z2Q9_01.jpg?format=webp&v=1792694977&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DKT6Z2Q9_01.jpg?format=webp&v=1792694977&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DKT6Z2Q9_01.jpg?format=webp&v=1792694977&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B0DKT5CWGG_01.jpg?format=webp&v=1792694946&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DKT5CWGG_01.jpg?format=webp&v=1792694946&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DKT5CWGG_01.jpg?format=webp&v=1792694946&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DKT5CWGG_01.jpg?format=webp&v=1792694946&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B0DKT5CWGG_01.jpg?format=webp&v=1792694946&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B08FB8349G_01.jpg?format=webp&v=1792694655&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B08FB8349G_01.jpg?format=webp&v=1792694655&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B08FB8349G_01.jpg?format=webp&v=1792694655&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B08FB8349G_01.jpg?format=webp&v=1792694655&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B08FB8349G_01.jpg?format=webp&v=1792694655&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B08FBBDK4M_01.jpg?format=webp&v=1792694692&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B08FBBDK4M_01.jpg?format=webp&v=1792694692&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B08FBBDK4M_01.jpg?format=webp&v=1792694692&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B08FBBDK4M_01.jpg?format=webp&v=1792694692&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B08FBBDK4M_01.jpg?format=webp&v=1792694692&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B0FMXY4K2Q_01.jpg?format=webp&v=1792695073&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B0FMXY4K2Q_01.jpg?format=webp&v=1792695073&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B0FMXY4K2Q_01.jpg?format=webp&v=1792695073&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B0FMXY4K2Q_01.jpg?format=webp&v=1792695073&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B0FMXY4K2Q_01.jpg?format=webp&v=1792695073&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            }
+          ]
+        },
+        {
+          "path": "/collections/all?view=ep-deals",
+          "imgs": [
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B0B5FLQ9FX_01.jpg?format=webp&v=1792583923&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B0B5FLQ9FX_01.jpg?format=webp&v=1792583923&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B0B5FLQ9FX_01.jpg?format=webp&v=1792583923&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B0B5FLQ9FX_01.jpg?format=webp&v=1792583923&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B0B5FLQ9FX_01.jpg?format=webp&v=1792583923&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B01MG3FCVJ_01.jpg?format=webp&v=1792580767&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B01MG3FCVJ_01.jpg?format=webp&v=1792580767&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B01MG3FCVJ_01.jpg?format=webp&v=1792580767&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B01MG3FCVJ_01.jpg?format=webp&v=1792580767&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B01MG3FCVJ_01.jpg?format=webp&v=1792580767&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B07NF7BFSG_01.jpg?format=webp&v=1792580665&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B07NF7BFSG_01.jpg?format=webp&v=1792580665&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B07NF7BFSG_01.jpg?format=webp&v=1792580665&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B07NF7BFSG_01.jpg?format=webp&v=1792580665&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B07NF7BFSG_01.jpg?format=webp&v=1792580665&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B0CTZXD8XH_01.jpg?format=webp&v=1792580778&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B0CTZXD8XH_01.jpg?format=webp&v=1792580778&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B0CTZXD8XH_01.jpg?format=webp&v=1792580778&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B0CTZXD8XH_01.jpg?format=webp&v=1792580778&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B0CTZXD8XH_01.jpg?format=webp&v=1792580778&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B0BQ77LN5D_01.jpg?format=webp&v=1792580733&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B0BQ77LN5D_01.jpg?format=webp&v=1792580733&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B0BQ77LN5D_01.jpg?format=webp&v=1792580733&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B0BQ77LN5D_01.jpg?format=webp&v=1792580733&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B0BQ77LN5D_01.jpg?format=webp&v=1792580733&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            },
+            {
+              "loading": "eager",
+              "srcset": "//3djevx-mu.myshopify.com/cdn/shop/files/B08L4P93FT_01.jpg?format=webp&v=1792580846&width=120 120w, //3djevx-mu.myshopify.com/cdn/shop/files/B08L4P93FT_01.jpg?format=webp&v=1792580846&width=180 180w, //3djevx-mu.myshopify.com/cdn/shop/files/B08L4P93FT_01.jpg?format=webp&v=1792580846&width=240 240w, //3djevx-mu.myshopify.com/cdn/shop/files/B08L4P93FT_01.jpg?format=webp&v=1792580846&width=360 360w, //3djevx-mu.myshopify.com/cdn/shop/files/B08L4P93FT_01.jpg?format=webp&v=1792580846&width=480 480w",
+              "sizes": "(min-width:990px) 240px, (min-width:750px) 30vw, 45vw",
+              "complete": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reduced motion disables gallery/sheet effects",
+      "pass": true,
+      "evidence": {
+        "animation": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "webkit back navigation and product/search smoke",
+      "pass": true,
+      "evidence": {
+        "history": 3,
+        "searchOpen": true
+      }
+    },
+    {
+      "name": "firefox back navigation and product/search smoke",
+      "pass": true,
+      "evidence": {
+        "history": 2,
+        "searchOpen": true
+      }
+    }
+  ],
+  "errors": []
+}

@@ -5,4 +5,4 @@
 {% enddoc %}
 {%- assign cents = amount | default: value | default: 0 -%}
 {%- capture formatted -%}{% render 'ep-money-number', amount: cents %}{%- endcapture -%}
-<span class="ep-money {{ class | escape }}"><span class="ep-dh" aria-hidden="true">&#x20C3;</span>&#x202F;<span class="visually-hidden">AED </span>{{ formatted }}</span>
+<span class="ep-money {{ class | escape }}"><span class="ep-dh-slot" aria-hidden="true"><span class="ep-dh">&#x20C3;</span></span>&#x202F;<span class="visually-hidden">AED </span>{{ formatted }}</span>

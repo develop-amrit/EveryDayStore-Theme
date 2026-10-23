@@ -10,3 +10,5 @@ body.qc-home :is(h1,h2,h3,h4,h5,h6,button,input,select,textarea) {font-family:in
 h1,h2,h3,h4,h5,h6,.h0,.h1,.h2,.h3 {font-family:"EP Dirham",var(--font-heading-family,var(--font-body-family,"Avenir Next",Avenir,Arial,sans-serif))}
 .ep-dh {font-family:"EP Dirham";font-weight:400;font-style:normal;display:inline;font-size:.95em;line-height:1;font-feature-settings:normal;-webkit-font-smoothing:antialiased;vertical-align:-.02em}
 .ep-money {white-space:nowrap;font-variant-numeric:tabular-nums}
+.ep-dh-slot{display:inline-block;width:1.1em;text-align:center;white-space:nowrap}
+s .ep-dh-slot,del .ep-dh-slot{text-decoration:line-through}

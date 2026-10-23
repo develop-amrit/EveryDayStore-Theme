@@ -856,7 +856,8 @@
             "title": "Grocery",
             "collection": "grocery",
             "tint": "green",
-            "icon": "basket"
+            "icon": "basket",
+            "product": "noor-sunflower-oil-1-5l-pack-of-2-b08dvdqzv7"
           }
         },
         "category2": {
@@ -865,7 +866,8 @@
             "title": "Bath & Body",
             "collection": "bath-and-body",
             "tint": "pink",
-            "icon": "soap"
+            "icon": "soap",
+            "product": "dettol-sensitive-bathing-soap-lavender-white-musk-scent-120g-x-4-b09lcnykh5"
           }
         },
         "category3": {
