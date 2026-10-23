@@ -777,3 +777,7 @@ Truly empty collections omit the filter/count row. Filter-empty states keep cont
 ## CatFix 11: Centre active rail items with real image fallbacks
 
 Parent rail images use collection image then the first real non-internal product photo, with a 24px coming-soon icon otherwise. Active links are centred on initial load and after instant switching; rail stays mounted.
+
+## CatFix 12: Focus mobile search within the tap handler
+
+Opening search focuses synchronously inside the click handler for iOS. Input is 16px; Esc and clear close the field and return focus to the search icon, retaining Dawn predictive results.

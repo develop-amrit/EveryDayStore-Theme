@@ -12,3 +12,5 @@
 @media(max-width:989px){.ep-listing-page.ep-pill-space [data-collection-content],.ep-listing-page.ep-pill-space [data-collection-rail]{padding-block-end:calc(76px + env(safe-area-inset-bottom))!important}}
 
 .qc-home .ep-browse-sheet .ep-sheet-apply{color:#fff!important;font-size:15px;font-weight:700;min-height:48px}.ep-browse-sheet input{font-size:16px!important}.ep-filter-chip[data-ep-sheet^=ep-sort]{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.ep-browse-page .ep-header input[type=search]{font-size:16px!important}
