@@ -811,3 +811,7 @@ Site baseline: remote product/search/404/cart/deals JSON was read before editing
 ## Site 2: Restore in-stock homepage rails and grids
 
 Shared 250-product scan skips unavailable, homepage-hide and internal products, deduplicates child fallback and fills the requested limit from real department children when primary yields fewer than four. Sections hide only if the combined real in-stock count stays below four. Care grid uses the same rule. Baby inventory and optional automated in-stock collection remain owner tasks.
+
+## Site 3: Restore contrast on filled buttons
+
+Filled Dawn/QC/EP button families use brand ink on brand; secondary/outline buttons use brand on white. QA includes computed visible-button text/background equality checks across affected templates, including 404. Native unstyled and icon/ADD/stepper controls retain their component treatments.

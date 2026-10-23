@@ -1,1 +1,2 @@
 /* Sitewide component refinements, built into ep-site.css. */
+.ep-page :is(.button,.btn,.qc-button,.ep-btn,.ep-cta,.ep-sheet-apply){color:var(--ep-brand-ink)!important;background-color:var(--ep-brand)}.ep-page :is(.button--secondary,.button--tertiary,.btn-outline,.qc-button--secondary,.qc-button-secondary,.ep-see-all){color:var(--ep-brand)!important;background-color:#fff}.ep-page :is(.button,.btn,.qc-button,.ep-btn):disabled{color:#556049!important;background:#edf0e8!important}
