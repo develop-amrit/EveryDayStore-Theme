@@ -37,3 +37,8 @@ The collection currently has 34 published products without images and three draf
 
 ## Dirham symbol and platform limits
 Store HTML formats may stay `AED {{amount}}`; theme-rendered visible prices use the supplied dirham font. Keep email money formats `AED {{amount}}`, since email clients do not load theme fonts. Shopify checkout keeps AED because it does not load theme fonts. Shopify-hosted customer account/order pages likewise cannot load storefront theme assets; verify those separately in the account customization surface. Classic customer templates are not present in this theme. No checkout or email code was changed.
+
+## Categories and collection browser
+In Admin → Settings → Custom data → Collections, create definitions first: `custom.promo_image` (File, images only), `custom.promo_link` (URL), `custom.promo_alt` (single-line text). Then select a collection, upload/select its promo image and fill the optional link/alt. The collection browser reads these fields; metafields win over a matching section Promo banner block. Banner is hidden without uploaded artwork, never auto-generated. Optional banner image: 1200×600, 2:1.
+In Shopify Search & Discovery, enable storefront Availability, Price and Vendor/Brand filters if not already enabled. The browser uses real `collection.filters`; it cannot create these filters in theme code.
+Categories directory groups reuse the catalogue menu with a department source; keep each department’s second-level and third-level menu links configured. Unmapped real collections remain visible under More collections. No collection is hidden because it is empty.

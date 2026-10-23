@@ -1,0 +1,4 @@
+{% doc %}Keep real collections outside configured menus reachable from the directory.
+@param {collection} collection - Real Shopify collection.
+{% enddoc %}
+{% assign image = collection.image | default: collection.featured_image %}<a class="ep-tile ep-tint-cream" href="{{ collection.url }}"><span class="ep-tile-art">{% if image %}{% assign alt = image.alt | default: collection.title %}{% capture image_markup %}{{ image | image_url: width: 270 | image_tag: loading: 'lazy', widths: '90, 180, 270', sizes: '(min-width:990px) 120px, 23vw', alt: alt }}{% endcapture %}{% render 'ep-deferred-image', image_markup: image_markup %}{% else %}{% render 'ep-soon', icon: 'grid' %}{% endif %}</span><span class="ep-tile-label">{{ collection.title | escape }}</span></a>

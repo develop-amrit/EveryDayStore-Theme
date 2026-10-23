@@ -16,9 +16,9 @@
       {% assign source = collection %}
     {% endif %}
     {% if show_sidebar %}<details class="qc-collection-filters" open><summary>{{ 'qc.filter_sort' | t }}</summary>{% endif %}{% render 'qc-filters', results: source %}{% if show_sidebar %}</details>{% endif %}
-    {% assign shown = 0 %}
+    {% assign page_size = section.settings.limit | default: 24 | at_least: 24 %}{% assign shown = 0 %}
     {% if template.name == 'search' %}
-      {% paginate search.results by section.settings.limit %}
+      {% paginate search.results by page_size %}
         <div class="qc-products qc-grid">
           {% for item in search.results %}{% if item.object_type == 'product' %}{% if item.available or item.metafields.custom.show_when_sold_out.value == true %}{% render 'qc-product-card', product: item %}{% assign shown = shown | plus: 1 %}{% endif %}{% endif %}{% endfor %}
           {% if shown == 0 %}<p class="qc-empty">{{ 'qc.search_empty' | t }}</p>{% endif %}
@@ -26,7 +26,7 @@
         {% render 'pagination', paginate: paginate %}
       {% endpaginate %}
     {% else %}
-      {% paginate collection.products by section.settings.limit %}
+      {% paginate collection.products by page_size %}
         <div class="qc-products qc-grid">
           {% for item in collection.products %}{% if item.available or item.metafields.custom.show_when_sold_out.value == true %}{% render 'qc-product-card', product: item %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}
           {% if shown == 0 %}<div class="qc-empty"><h2>{{ 'qc.empty_collection' | t }}</h2><p>{{ 'qc.category_empty_help' | t }}</p></div>{% endif %}

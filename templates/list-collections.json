@@ -1,26 +1,214 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
-      "type": "main-list-collections",
+      "type": "ep-categories-page",
       "settings": {
-        "title": "Collections",
-        "sort": "alphabetical",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "columns_mobile": "2"
-      }
+        "show_coming_soon": true,
+        "exclude_tags": "",
+        "catalogue_menu": "catalogue"
+      },
+      "blocks": {
+        "group0": {
+          "type": "group",
+          "settings": {
+            "heading": "Grocery",
+            "menu": "catalogue",
+            "department": "grocery",
+            "link": "/collections/grocery",
+            "icon": "basket",
+            "tint": "green"
+          }
+        },
+        "group1": {
+          "type": "group",
+          "settings": {
+            "heading": "Baby Products",
+            "menu": "catalogue",
+            "department": "baby-products",
+            "link": "/collections/baby-products",
+            "icon": "bottle",
+            "tint": "blue"
+          }
+        },
+        "group2": {
+          "type": "group",
+          "settings": {
+            "heading": "Gifting",
+            "menu": "catalogue",
+            "department": "gifting",
+            "link": "/collections/gifting",
+            "icon": "gift",
+            "tint": "cream"
+          }
+        },
+        "group3": {
+          "type": "group",
+          "settings": {
+            "heading": "Bath & Body",
+            "menu": "catalogue",
+            "department": "bath-and-body",
+            "link": "/collections/bath-and-body",
+            "icon": "soap",
+            "tint": "pink"
+          }
+        },
+        "group4": {
+          "type": "group",
+          "settings": {
+            "heading": "Home",
+            "menu": "catalogue",
+            "department": "home",
+            "link": "/collections/home",
+            "icon": "home",
+            "tint": "lilac"
+          }
+        },
+        "group5": {
+          "type": "group",
+          "settings": {
+            "heading": "Pet",
+            "menu": "catalogue",
+            "department": "pet",
+            "link": "/collections/pet",
+            "icon": "paw",
+            "tint": "peach"
+          }
+        },
+        "group6": {
+          "type": "group",
+          "settings": {
+            "heading": "Office Supplies",
+            "menu": "catalogue",
+            "department": "office-supplies",
+            "link": "/collections/office-supplies",
+            "icon": "pencil",
+            "tint": "cream"
+          }
+        }
+      },
+      "block_order": [
+        "group1",
+        "group2",
+        "group0",
+        "group3",
+        "group4",
+        "group5",
+        "group6"
+      ]
+    },
+    "stores": {
+      "type": "ep-store-grid",
+      "settings": {
+        "title": "Shop by store",
+        "exclude_tags": "homepage-hide"
+      },
+      "blocks": {
+        "store0": {
+          "type": "store",
+          "settings": {
+            "label": "Baby Store",
+            "collection": "baby-products",
+            "tint": "blue",
+            "link": "/collections/baby-products"
+          }
+        },
+        "store1": {
+          "type": "store",
+          "settings": {
+            "label": "Gift Store",
+            "collection": "gifting",
+            "tint": "accent",
+            "link": "/collections/gifting"
+          }
+        },
+        "store2": {
+          "type": "store",
+          "settings": {
+            "label": "Pantry Store",
+            "collection": "grocery",
+            "tint": "green",
+            "link": "/collections/grocery"
+          }
+        },
+        "store3": {
+          "type": "store",
+          "settings": {
+            "label": "Home Store",
+            "collection": "home",
+            "tint": "lilac",
+            "link": "/collections/home"
+          }
+        },
+        "store4": {
+          "type": "store",
+          "settings": {
+            "label": "Bath & Body",
+            "collection": "bath-and-body",
+            "tint": "pink",
+            "link": "/collections/bath-and-body"
+          }
+        },
+        "store5": {
+          "type": "store",
+          "settings": {
+            "label": "Pet Store",
+            "collection": "pet",
+            "tint": "peach",
+            "link": "/collections/pet"
+          }
+        },
+        "store6": {
+          "type": "store",
+          "settings": {
+            "label": "Office Store",
+            "collection": "office-supplies",
+            "tint": "cream",
+            "link": "/collections/office-supplies"
+          }
+        },
+        "store7": {
+          "type": "store",
+          "settings": {
+            "label": "Deals",
+            "collection": "all",
+            "tint": "brand",
+            "link": "/collections/all?view=ep-deals"
+          }
+        }
+      },
+      "block_order": [
+        "store0",
+        "store1",
+        "store2",
+        "store3",
+        "store4",
+        "store5",
+        "store6",
+        "store7"
+      ]
+    },
+    "trending": {
+      "type": "ep-search-links",
+      "settings": {
+        "title": "Trending searches"
+      },
+      "blocks": {
+        "categories": {
+          "type": "group",
+          "settings": {
+            "heading": "Categories",
+            "menu": "catalogue"
+          }
+        }
+      },
+      "block_order": [
+        "categories"
+      ]
     }
   },
   "order": [
-    "main"
+    "main",
+    "stores",
+    "trending"
   ]
 }

@@ -1,0 +1,8 @@
+{% doc %}A collection sidebar link; never hides an empty collection.
+@param {collection} target - Linked collection.
+@param {string} label - Label.
+@param {string} icon - Department icon.
+@param {boolean} active - Current second-level item.
+{% enddoc %}
+{% assign image = target.image %}{% if image == blank %}{% for product in target.products %}{% if product.featured_image %}{% assign image = product.featured_image %}{% break %}{% endif %}{% endfor %}{% endif %}
+<a class="ep-rail-item" data-ep-collection-link href="{{ target.url }}"{% if active %} aria-current="page"{% endif %}><span class="ep-rail-photo">{% if image %}{% assign alt = image.alt | default: label %}{% capture image_markup %}{{ image | image_url: width: 112 | image_tag: loading: 'lazy', widths: '56, 112', sizes: '48px', alt: alt }}{% endcapture %}{% render 'ep-deferred-image', image_markup: image_markup %}{% else %}<span class="ep-soon-art">{% render 'ep-icon', name: icon %}</span>{% endif %}</span><span class="ep-rail-label">{{ label | escape }}</span>{% if target.all_products_count == 0 %}<small>{{ 'ep.soon' | t }}</small>{% endif %}</a>

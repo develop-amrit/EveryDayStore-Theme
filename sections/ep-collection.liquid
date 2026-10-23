@@ -1,0 +1,129 @@
+{% assign catalogue = section.settings.menu | default: settings.qc_catalog_menu %}{% assign department = blank %}{% assign second = blank %}
+{% for parent in catalogue.links %}{% if parent.type == 'collection_link' %}{% if parent.object.id == collection.id %}{% assign department = parent %}{% endif %}{% for child in parent.links %}{% if child.object.id == collection.id %}{% assign department = parent %}{% assign second = child %}{% endif %}{% for leaf in child.links %}{% if leaf.object.id == collection.id %}{% assign department = parent %}{% assign second = child %}{% endif %}{% endfor %}{% endfor %}{% endif %}{% endfor %}
+{% assign department_title = department.title | default: collection.title %}{% assign department_icon = 'grid' %}{% for style in section.blocks %}{% if style.type == 'department' and style.settings.collection.id == department.object.id %}{% assign department_icon = style.settings.icon %}{% endif %}{% endfor %}
+{% assign active_count = 0 %}{% for filter in collection.filters %}{% assign active_count = active_count | plus: filter.active_values.size %}{% if filter.type == 'price_range' %}{% if filter.min_value.value or filter.max_value.value %}{% assign active_count = active_count | plus: 1 %}{% endif %}{% endif %}{% endfor %}
+<ep-collection class="ep-collection color-{{ section.settings.color_scheme }}" data-section="{{ section.id }}" data-department="{{ department.object.id }}" data-url="{{ collection.url }}" data-page-title="{{ collection.title | escape }} – {{ shop.name | escape }}" data-loading="{{ 'epc.loading' | t }}">
+<div class="ep-collection-heading ep-wrap" data-collection-head><h1 title="{{ collection.title | escape }}">{{ collection.title | escape }}</h1><nav class="ep-breadcrumb" aria-label="{{ 'epc.breadcrumb' | t }}"><a href="{{ routes.root_url }}">{{ 'epc.home' | t }}</a><span aria-hidden="true">›</span>{% if department != blank %}{% unless department.object.id == collection.id %}<a href="{{ department.url }}" data-ep-collection-link>{{ department.title | escape }}</a><span aria-hidden="true">›</span>{% endunless %}{% if second != blank and second.object.id != collection.id %}<a href="{{ second.url }}" data-ep-collection-link>{{ second.title | escape }}</a><span aria-hidden="true">›</span>{% endif %}{% endif %}<strong aria-current="page">{{ collection.title | escape }}</strong></nav></div>
+<div class="ep-collection-layout ep-wrap{% if department == blank %} ep-no-rail{% endif %}">
+{% if department != blank %}<aside class="ep-collection-rail" aria-label="{{ department.title | escape }}" data-collection-rail><span class="ep-rail-indicator" aria-hidden="true"></span>{% assign all_active = false %}{% if department.object.id == collection.id %}{% assign all_active = true %}{% endif %}{% assign all_label = 'epc.all' | t %}{% render 'ep-collection-rail-item', target: department.object, label: all_label, icon: department_icon, active: all_active %}{% for child in department.links %}{% assign active = false %}{% if child.object.id == second.object.id %}{% assign active = true %}{% endif %}{% render 'ep-collection-rail-item', target: child.object, label: child.title, icon: department_icon, active: active %}{% endfor %}</aside>{% endif %}
+<div class="ep-collection-content" data-collection-content tabindex="-1">
+{% if second.links != blank %}<nav class="ep-subcategory-chips" aria-label="{{ second.title | escape }}"><a href="{{ second.url }}" data-ep-collection-link{% if second.object.id == collection.id %} aria-current="page"{% endif %}>{{ 'epc.all' | t }}</a>{% for leaf in second.links %}<a href="{{ leaf.url }}" data-ep-collection-link{% if leaf.object.id == collection.id %} aria-current="page"{% endif %}>{{ leaf.title | escape }}</a>{% endfor %}</nav>{% endif %}
+{% render 'ep-collection-filters', collection: collection, active_count: active_count, id: section.id %}
+{% assign promo_image = collection.metafields.custom.promo_image.value %}{% assign promo_link = collection.metafields.custom.promo_link.value %}{% assign promo_alt = collection.metafields.custom.promo_alt.value %}{% if promo_image == blank %}{% for block in section.blocks %}{% if block.type == 'promo' and block.settings.collection.id == collection.id %}{% assign promo_image = block.settings.image %}{% assign promo_link = block.settings.link %}{% assign promo_alt = block.settings.alt %}{% break %}{% endif %}{% endfor %}{% endif %}
+{% if promo_image %}{% assign promo_alt = promo_alt | default: promo_image.alt | default: collection.title %}{% if promo_link %}<a class="ep-collection-promo ep-auto-well" href="{{ promo_link }}">{% else %}<div class="ep-collection-promo ep-auto-well">{% endif %}{% capture image_markup %}{{ promo_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '360, 600, 900, 1200', sizes: '(min-width:990px) 900px, 75vw', alt: promo_alt }}{% endcapture %}{% render 'ep-deferred-image', image_markup: image_markup %}{% if promo_link %}</a>{% else %}</div>{% endif %}{% endif %}
+{% paginate collection.products by 24 %}
+<div class="ep-collection-products" data-collection-products>{% for product in collection.products %}{% render 'ep-card', product: product, variant: 'grid' %}{% endfor %}</div>
+{% if collection.products_count == 0 %}<div class="ep-empty-category">{% if active_count > 0 %}<h2>{{ 'epc.no_matches' | t }}</h2><a data-ep-clear href="{{ collection.url }}">{{ 'epc.clear_filters' | t }}</a>{% else %}<span class="ep-empty-icon">{% render 'ep-icon', name: department_icon %}</span><h2>{{ 'epc.coming_collection' | t: collection: collection.title }}</h2><p>{{ 'epc.empty_department' | t: department: department_title }}</p>{% endif %}</div>{% if active_count == 0 %}{% assign recommendations = department.object %}{% if recommendations.products_count == 0 or recommendations == blank %}{% assign recommendations = section.settings.deals_collection %}{% assign deals_fallback = true %}{% endif %}<div class="ep-collection-products ep-recommendations">{% assign recommended_count = 0 %}{% for product in recommendations.products limit: 50 %}{% if product.tags contains 'homepage-hide' %}{% continue %}{% endif %}{% if deals_fallback %}{% assign variant = product.selected_or_first_available_variant %}{% unless variant.compare_at_price > variant.price %}{% continue %}{% endunless %}{% endif %}{% render 'ep-card', product: product, variant: 'grid' %}{% assign recommended_count = recommended_count | plus: 1 %}{% if recommended_count >= 6 %}{% break %}{% endif %}{% endfor %}</div>{% endif %}{% endif %}
+<div class="ep-collection-sentinel" data-collection-sentinel data-next="{{ paginate.next.url }}" data-page="{{ paginate.current_page }}" aria-live="polite">{% if paginate.next %}<a class="ep-load-more" data-ep-load-more href="{{ paginate.next.url }}">{{ 'epc.load_more' | t }}</a>{% else %}{% if collection.products_count > 0 %}<span>{{ 'epc.everything' | t: collection: collection.title }}</span><button type="button" data-ep-grid-top>{{ 'qc.top' | t }}</button>{% endif %}{% endif %}</div>
+<noscript>{% if paginate.next %}<a href="{{ paginate.next.url }}">{{ 'epc.load_more' | t }}</a>{% endif %}</noscript>
+{% endpaginate %}
+</div></div></ep-collection>
+
+{% schema %}
+{
+  "name": "t:epc.collection_section",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "t:epc.catalogue_menu"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:epc.page_size_info"
+    },
+    {
+      "type": "collection",
+      "id": "deals_collection",
+      "label": "t:epc.deals_collection"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "department",
+      "name": "t:epc.department_style",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:epc.collection"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:ep.polish_parent_category_icon",
+          "options": [
+            {
+              "value": "basket",
+              "label": "t:ep.polish_basket"
+            },
+            {
+              "value": "bottle",
+              "label": "t:ep.polish_bottle"
+            },
+            {
+              "value": "gift",
+              "label": "t:ep.polish_gift"
+            },
+            {
+              "value": "soap",
+              "label": "t:ep.polish_soap"
+            },
+            {
+              "value": "home",
+              "label": "t:ep.polish_home"
+            },
+            {
+              "value": "paw",
+              "label": "t:ep.polish_paw"
+            },
+            {
+              "value": "pencil",
+              "label": "t:ep.polish_pencil"
+            }
+          ],
+          "default": "basket"
+        }
+      ]
+    },
+    {
+      "type": "promo",
+      "name": "t:epc.promo",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:epc.collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:epc.image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:epc.link"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "t:epc.alt"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:epc.collection_section"
+    }
+  ]
+}
+{% endschema %}

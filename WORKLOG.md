@@ -546,3 +546,17 @@ Preview: https://3djevx-mu.myshopify.com/?preview_theme_id=189582049393 . Owner 
 
 
 Additional manifest entry after report generation: docs/EP_HOMEPAGE_STATE.json. All work remains on theme 189582049393; final read-back is 94/94, no mismatches.
+
+## Categories 1: Repair pagination and shared navigation
+
+Baseline c20e0ca preserved. Target remains 189582049393 only. Replaced draft policy fallbacks with published shop.policies on every shared footer/cart policy path; Help assignment now works everywhere. Homepage catalogue button is a real /collections link. Legacy catalog defaults to at least 24; new listing explicitly paginates 24. Dedicated Categories composition reuses the seven menu groups, Shop by store and Trending searches. Bottom-nav Categories now points to /collections. No collection or menu entry deleted.
+
+## Categories 2: Directory and collection section architecture
+
+Added merchant-editable department groups and a More collections area for real collections outside the catalogue menu, preserving all collection reachability. New collection section discovers department/second-level ancestry from existing menu links, keeps all siblings, exposes third-level chips, real facet/sort forms, optional collection promo metafields/blocks, explicit 24-product pagination and friendly empty/recommendation states. Header reuses one existing area picker and Dawn predictive search, with a slim mobile proxy row. Removed the unused catalogue modal; only the /collections link remains.
+
+## Categories 3: Progressive collection browsing and cart pill
+
+Added a vanilla custom-element browser with same-department Section Rendering updates, history/popstate, prefetch, 8s navigation fallback, 24-product infinite appends, native link/no-JS fallbacks and session restoration. Sidebar stays mounted and keeps scroll. Native facet/sort sheets update result counts and reset pages. Shared cart pill subscribes to cart events, preserves dirham/ARIA text formats, reserves mobile space, hides the promo bubble and hides while cart dialog is open. Collection pages hide bottom navigation; Categories and other pages retain it. Styles are mobile first and reduced-motion aware.
+
+Preflight: fixed Shopify’s 25-character section-name limit (Categories directory / Collection browser). Promo definitions, values and filter setup are merchant tasks; no Admin metafield or catalogue mutation was made.

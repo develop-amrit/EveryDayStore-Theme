@@ -21,7 +21,7 @@
     "bottom_nav": {
       "type": "ep-bottom-nav",
       "settings": {
-        "categories_link": "/#shop-by-category"
+        "categories_link": "/collections"
       },
       "blocks": {
         "home": {
@@ -37,7 +37,7 @@
           "settings": {
             "icon": "grid",
             "label": "Categories",
-            "link": "/#shop-by-category"
+            "link": "/collections"
           }
         },
         "cart": {

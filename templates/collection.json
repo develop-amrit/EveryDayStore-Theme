@@ -1,8 +1,72 @@
 {
   "sections": {
     "main": {
-      "type": "qc-catalog",
-      "settings": {}
+      "type": "ep-collection",
+      "settings": {
+        "menu": "catalogue",
+        "deals_collection": "all",
+        "color_scheme": "scheme-1"
+      },
+      "blocks": {
+        "group1": {
+          "type": "department",
+          "settings": {
+            "collection": "baby-products",
+            "icon": "bottle"
+          }
+        },
+        "group2": {
+          "type": "department",
+          "settings": {
+            "collection": "gifting",
+            "icon": "gift"
+          }
+        },
+        "group0": {
+          "type": "department",
+          "settings": {
+            "collection": "grocery",
+            "icon": "basket"
+          }
+        },
+        "group3": {
+          "type": "department",
+          "settings": {
+            "collection": "bath-and-body",
+            "icon": "soap"
+          }
+        },
+        "group4": {
+          "type": "department",
+          "settings": {
+            "collection": "home",
+            "icon": "home"
+          }
+        },
+        "group5": {
+          "type": "department",
+          "settings": {
+            "collection": "pet",
+            "icon": "paw"
+          }
+        },
+        "group6": {
+          "type": "department",
+          "settings": {
+            "collection": "office-supplies",
+            "icon": "pencil"
+          }
+        }
+      },
+      "block_order": [
+        "group1",
+        "group2",
+        "group0",
+        "group3",
+        "group4",
+        "group5",
+        "group6"
+      ]
     }
   },
   "order": [

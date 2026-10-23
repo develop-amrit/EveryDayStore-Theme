@@ -1,5 +1,5 @@
 const fs=require('fs'),cp=require('child_process');
-for(const file of ['tools/ep-bundle.cjs','tools/ep-polish-build.cjs','tools/ep-polish-runtime.cjs','tools/check-storefront.cjs','tools/check-ux-polish.cjs','tools/cart-smoke.cjs'])cp.execFileSync(process.execPath,[file],{stdio:'inherit'});
+for(const file of ['tools/ep-categories-build.cjs','tools/ep-bundle.cjs','tools/ep-polish-build.cjs','tools/ep-polish-runtime.cjs','tools/check-storefront.cjs','tools/check-ux-polish.cjs','tools/cart-smoke.cjs'])cp.execFileSync(process.execPath,[file],{stdio:'inherit'});
 const match=fs.readFileSync('WORKLOG.md','utf8').match(/^WORK_THEME_ID: (\d+)$/m);
 if(!match||match[1]!=='189582049393'||match[1]==='189489545329')throw Error('Unexpected or live WORK_THEME_ID');
 const list=JSON.parse(cp.execSync('shopify theme list --store 3djevx-mu.myshopify.com --json --no-input',{encoding:'utf8'}));
