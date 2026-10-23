@@ -819,3 +819,7 @@ Filled Dawn/QC/EP button families use brand ink on brand; secondary/outline butt
 ## Site 4: Rebuild Deals on shared listing components
 
 Deals uses the rail-free collection layout, native stock/filter/sort sheets, 24-record infinite fetches and only real discounted products. View parameter survives sort/filter/pagination, title is Best deals, Deals navigation remains visible/active, and cart pill sits above it. Price/MRP rows reserve their own height sitewide.
+
+## Site 5: Rebuild search with listing cards and sheets
+
+Search now uses one pre-filled slim-header predictive field, native result count and facets, shared 2-column cards, real pagination/infinite loading and skeletons. Collection matches from the configured catalogue menu and page matches appear as chips; no-results offers configured menu links and real in-stock best sellers. Bottom navigation stays visible with no active destination.

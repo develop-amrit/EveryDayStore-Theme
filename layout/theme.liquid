@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
-  <head><script>{{ 'ep-history.js' | inline_asset_content }}</script>{% if request.page_type == 'collection' and template.suffix != 'ep-deals' %}<script>(()=>{const u=new URL(location.href);if(!u.searchParams.has('filter.v.availability')&&u.searchParams.get('ep_stock')!=='all'){document.documentElement.style.visibility='hidden';u.searchParams.set('filter.v.availability','1');u.searchParams.delete('page');location.replace(u.href);}})();</script>{% endif %}
+  <head><script>{{ 'ep-history.js' | inline_asset_content }}</script>{% if request.page_type == 'collection' or request.page_type == 'search' %}<script>(()=>{const u=new URL(location.href);if(!u.searchParams.has('filter.v.availability')&&u.searchParams.get('ep_stock')!=='all'){document.documentElement.style.visibility='hidden';u.searchParams.set('filter.v.availability','1');u.searchParams.delete('page');location.replace(u.href);}})();</script>{% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -306,12 +306,12 @@
 
 {% if request.page_type == 'index' %}<script src="{{ 'ep-home-commerce.js' | asset_url }}" defer></script>{% else %}<script src="{{ 'qc-home.js' | asset_url }}" defer></script><script src="{{ 'qc-storefront.js' | asset_url }}" defer></script><script src="{{ 'qc-catalog.js' | asset_url }}" defer></script><script src="{{ 'qc-delivery.js' | asset_url }}" defer></script><script src="{{ 'qc-account.js' | asset_url }}" defer></script><script src="{{ 'qc-assistant.js' | asset_url }}" defer></script><script src="{{ 'qc-privacy.js' | asset_url }}" defer></script>{% endif %}
 {% if request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'ep-mobile.css' | asset_url }}" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="{{ 'ep-mobile.css' | asset_url }}"></noscript>{% render 'ep-critical-css' %}{% else %}{{ 'ep-mobile.css' | asset_url | stylesheet_tag }}{% endif %}
-<script src="{{ 'ep-mobile.js' | asset_url }}" defer></script><script src="{{ 'ep-browse.js' | asset_url }}" defer></script><script src="{{ 'ep-site.js' | asset_url }}" defer></script>{% if request.page_type == 'collection' %}<script src="{{ 'ep-collection.js' | asset_url }}" defer></script>{% endif %}{% if request.page_type == 'collection' or request.page_type == 'list-collections' %}<script src="{{ 'ep-polish.js' | asset_url }}" defer></script>{% endif %}
+<script src="{{ 'ep-mobile.js' | asset_url }}" defer></script><script src="{{ 'ep-browse.js' | asset_url }}" defer></script><script src="{{ 'ep-site.js' | asset_url }}" defer></script>{% if request.page_type == 'collection' or request.page_type == 'search' %}<script src="{{ 'ep-collection.js' | asset_url }}" defer></script>{% endif %}{% if request.page_type == 'collection' or request.page_type == 'list-collections' or request.page_type == 'search' or request.page_type == 'product' %}<script src="{{ 'ep-polish.js' | asset_url }}" defer></script>{% endif %}
     {{ content_for_header }}
 <style>{{ 'ep-site.css' | inline_asset_content }}</style>
 </head>
 
-  <body class="qc-home ep-page{% if request.page_type == 'collection' or request.page_type == 'list-collections' %} ep-browse-page{% endif %}{% if request.page_type == 'collection' %} ep-listing-page{% endif %}{% if template.suffix == 'ep-deals' %} ep-deals-page{% endif %}{% if request.page_type == 'index' %} ep-home-panel{% endif %} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="qc-home ep-page{% if request.page_type == 'collection' or request.page_type == 'list-collections' or request.page_type == 'search' or request.page_type == 'product' %} ep-browse-page{% endif %}{% if request.page_type == 'collection' or request.page_type == 'search' %} ep-listing-page{% endif %}{% if request.page_type == 'search' %} ep-search-page{% endif %}{% if request.page_type == 'product' %} ep-product-page{% endif %}{% if template.suffix == 'ep-deals' %} ep-deals-page{% endif %}{% if request.page_type == 'index' %} ep-home-panel{% endif %} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>

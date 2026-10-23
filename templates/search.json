@@ -1,8 +1,11 @@
 {
   "sections": {
     "main": {
-      "type": "qc-catalog",
-      "settings": {}
+      "type": "ep-search",
+      "settings": {
+        "search_menu": "catalogue",
+        "bestsellers": "all"
+      }
     }
   },
   "order": [
