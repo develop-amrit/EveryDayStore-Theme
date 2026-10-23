@@ -1,0 +1,4 @@
+{% doc %}Strip only fractional zeroes from numeric tokens, retaining real decimals.
+@param {string} value - Pack-size value.
+{% enddoc %}
+{%- assign words = value | append: '' | split: ' ' -%}{%- for word in words -%}{%- assign parts = word | split: '.' -%}{%- assign fraction = parts[1] -%}{%- assign nonzero = fraction | remove: '0' -%}{%- if parts.size == 2 and fraction != blank and nonzero == blank -%}{{- parts.first | escape -}}{%- else -%}{{- word | escape -}}{%- endif -%}{%- unless forloop.last %} {% endunless -%}{%- endfor -%}

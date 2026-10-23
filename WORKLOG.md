@@ -749,3 +749,7 @@ Removed automatic More collections. Added section and global prefix/hidden-handl
 ## CatFix 4: Default listings to in-stock inventory
 
 Fresh listing URLs canonicalize in the head to filter.v.availability=1; explicit ep_stock=all opts out. The chip toggles via instant section updates and URL/history state. Recommendations and homepage rails are in-stock only; sold-out cards retain a disabled control and muted price/image when all stock is requested.
+
+## CatFix 5: Use compact listing ADD and inline prices
+
+Listing-only control is 72×32 visually with a 44px hit area, expanding to a 96px stepper. Homepage card geometry is unchanged. Filled brand price and compare-at share one line. Pack-size helper removes only all-zero decimal fractions from tokens and preserves 1.5 L.
