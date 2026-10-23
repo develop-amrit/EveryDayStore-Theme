@@ -5,7 +5,7 @@
   "work_theme_name": "everyday-homepage-review",
   "role": "UNPUBLISHED",
   "live_theme_id": "189489545329",
-  "code_readback_files": 94,
+  "code_readback_files": 76,
   "code_readback_passed": true,
   "theme_check_errors": 0,
   "theme_check_warnings": 14,
@@ -15,9 +15,9 @@
   "published": false,
   "worklog": "WORKLOG.md",
   "merchant_todo": "MERCHANT_TODO.md",
-  "next_work": "Owner review of unpublished 189582049393. Hosted accounts/checkout stay ISO; real gift card and physical-device review remain manual. Merchant policies/tagging/artwork tasks remain.",
-  "latest_batch": "Dirham symbol across theme-rendered storefront pages",
-  "latest_code_readback_files": 94,
+  "next_work": "Owner preview/editor review of unpublished 189582049393. Enable Vendor/Brand in Search & Discovery; optional promo definitions/art and earlier merchant tasks remain.",
+  "latest_batch": "Categories directory and standard collection browser",
+  "latest_code_readback_files": 76,
   "latest_json_readback_files": 0,
   "lighthouse": {
     "scores": {
@@ -37,18 +37,18 @@
   },
   "deals_url": "/collections/all?view=ep-deals",
   "help_menu_pending": true,
-  "latest_readback_total": 94,
+  "latest_readback_total": 76,
   "homepage_qa_passed": true,
   "homepage_qa_file": "qa/polish-browser.json",
   "full_catalogue_links_verified": 123,
   "brand_tiles": 7,
   "missing_requested_vendor": "Ferrero Rocher",
-  "lighthouse_scope": "Historical Polish 12 measurements only; not rerun for the currency-only request.",
+  "lighthouse_scope": "Historical Polish 12 measurements only; not rerun for currency/Categories batches.",
   "cls_gate_passed": true,
   "new_javascript_budget_passed": false,
   "new_homepage_js_minified_bytes": 15595,
   "category_mobile_height_px": 2119,
-  "latest_readback_file": "qa/dirham-remote-readback.json",
+  "latest_readback_file": "qa/categories-remote-readback.json",
   "dirham": {
     "qa_file": "qa/dirham-browser.json",
     "engines_file": "qa/dirham-engines.json",
@@ -61,5 +61,17 @@
     "hosted_accounts_theme_editable": false,
     "multivariant_source_available": false,
     "public_products_checked": 608
+  },
+  "categories": {
+    "qa_file": "qa/categories-browser.json",
+    "all_collections_reachable": 133,
+    "missing_collections": 0,
+    "initial_products": 24,
+    "loaded_qa": 48,
+    "restored_scroll_px": 850,
+    "normal_page_errors": 0,
+    "normal_console_errors": 0,
+    "brand_facet_pending": true,
+    "promo_art_configured": false
   }
 }

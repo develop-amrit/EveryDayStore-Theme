@@ -225,7 +225,7 @@
     "focus": "H2"
   },
   "search": {
-    "symbols": 5,
+    "symbols": 6,
     "focus": "qc-search",
     "closed": true
   },
@@ -299,7 +299,7 @@
     "loaded": 48,
     "restored": {
       "cards": 48,
-      "scroll": 0
+      "scroll": 850
     }
   },
   "pill": {

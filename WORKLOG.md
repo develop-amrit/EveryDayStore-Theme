@@ -566,3 +566,170 @@ Browser integration: Shopify uses request.page_type list-collections (hyphen), n
 Categories QA: all requested widths pass without page/grid overflow. Same-department switch makes zero document requests and retains the same rail node and scroll offset; third-level chips, native sort and zero-result price filters pass. Fixed duplicate pageshow restoration overwriting the saved offset, stopped infinite retry loops after failed appends, and made the cart pill consume native pubsub cartData as well as QC events. Terms text now remains without a broken link while the actual policy is missing; checkbox/checkout enforcement remains intact.
 
 Restoration regression fixed and verified separately: loaded 48 cards and right-grid scroll offset 850px before opening a product; back navigation restores exactly 48 cards, page count 2 and 850px. Native page=N fallback states now retain their own page count/session key.
+
+Split shared slim-header/cart-pill JS from the collection-only browser bundle: other pages do not download the collection switching/filter/infinite-scroll implementation.
+
+Title/breadcrumb rows now scroll away with the right grid through a bounded 64px scroll-linked offset, while the rail sticks under the slim header and keeps its independent scroll. Instant switching resets the grid and heading without scrolling the whole document. Reduced motion keeps the static heading.
+
+Reserved cart-pill clearance inside the independently scrolling product pane as well as the document, so the last product/end controls can scroll fully above the pill and safe area.
+
+## Categories 4: Final QA and unpublished delivery
+
+Work only on 189582049393 (everyday-homepage-review), still UNPUBLISHED. Guard reread WORKLOG and verified the unpublished role before every push. All 76 changed/new deployable files match remote checksums, and the final local checksum set was checked again. Never published, created a theme or wrote to either codex-edits theme. Other page templates are unchanged; the retained shared catalog Search pagination uses its original setting. The existing theme-only Deals alternate view is retained as the separately authorized discounted campaign view; shared slim chrome, cart pill and listing-nav behavior apply there too.
+
+### QA matrix
+
+| Check | Result |
+|---|---|
+| Bugs | PASS: explicit paginate collection.products by 24, 24 cards per load, no numbered listing pager. Shared policy rows use shop.policies; only real Privacy policy currently exists. Removed the cart terms URL fallback while preserving the checkbox. Homepage Soon SVGs are 24px, padding 0, opacity .6; Browse full catalogue is an /collections anchor and old popup is removed. |
+| Slim header | PASS: 56px below 990 at 360/375/414/768, announcement hidden, back/logo/area/search present. Normal header retained at 1280. Area dialog opens with H2 focus; search field opens, focuses, shows dirham-priced predictive results and closes on Esc. Same-site back returns to /collections. Header shadow activates with grid/document scroll. |
+| Directory | PASS: title Categories – EverydayyPlus, visually hidden H1, Baby Products/Gifting/Grocery/Bath & Body/Home/Pet/Office Supplies in order, no collapse. 4/6/8 columns. 63 tiles (52 second-level plus 11 real collections outside menus); department and third-level links complete the catalogue. Shop by store and Trending reused. Categories active. |
+| Collection reachability | PASS: all 123 configured catalogue destinations reachable. Public collection snapshot: 133 real collections, zero missing from the directory/parent/chip graph. More collections deliberately includes legacy/test collections rather than hiding them. |
+| Breadcrumb/rail | PASS: single-line breadcrumb, 80px mobile/tablet rail, 200px desktop, root All first, empty siblings kept, active second-level parent for Rice, third-level All/Rice/Pasta/etc chips present. Active indicator and rail retained during switches. |
+| Instant switching | PASS: zero document requests for same-department click, same rail node retained, scroll 35→35, URL/title/H1 update and back works. Forced Section Rendering 503 falls back to normal navigation. Request timeout is bounded at 8 seconds. Prefetch is pointerdown/touchstart. |
+| Banner | PASS hidden when no art. Promo image/link/alt metafield and per-collection block branches are implemented; positive uploaded-art editor test is manual because no campaign image was configured. No auto-generated banner. |
+| Grid | PASS: 2 columns at 360/375/414, 3 at 768, 4 at 1280; no Compare controls or page/grid overflow. Shared ep-card/ep-money, real compare-at/discount data, title fallback for products with no image. |
+| Infinite scroll | PASS: 24→48 cards. Opening product/back restores 48 cards and exactly 850px grid offset. Native page=2 starts at page 2 with 24 cards and its own session key. Five-product Changing & Bed Mats reaches end message; grid Back to top reaches 0. |
+| Filter/sort | PASS native price sort URL/state, Availability and Price sheets, dynamic Show 0 results, No matches for these filters, count badge 1, instant Clear. Vendor/Brand requires enabling the native facet in Search & Discovery; code support and merchant task are present, no fake brand options. |
+| Empty category | PASS: Feeding & Nursing message, rail retained, 6 genuine department recommendations. Filter-empty state uses Clear instead. Unknown department hides rail and expands grid. |
+| Cart pill/nav | PASS: nav hidden on listings, retained on Categories/other pages. Pill shows one item, updates to 2 items and real subtotal, uses dirham symbol, hides in drawer/when emptied and hides homepage promo bubble. Listing pill bottom 16px plus safe area; end controls have 51.2px clearance. Space reserved in document and nested grid. |
+| Motion | PASS: reduced-motion probe reports 0 animations/transitions. Press 120ms, switching/indicator/sheets/pill 200ms, shadow 150ms; existing shared loading shimmer remains reused. Title/breadcrumb scroll offset bounded 0–64 with the grid, resets at top, and stays static in reduced motion. |
+| Console/check | PASS: zero page and console errors in normal directory/list/home pass. Official Theme Check 0 errors, 14 existing warnings; local JSON/schema/reference/JS and cart/UX smoke checks pass. |
+
+Warnings: same preserved orphaned legacy snippets (including unused ep-tile), existing non-home variable/unused assigns, facets complexity and qc-logo/scheme_classes inference from the earlier batch. None introduced by the new sections. Bundled Shopify skill full-theme validation was attempted but cannot load @shopify/theme-check-common; official CLI is the successful fallback. Fresh interactive theme-editor add/reorder/every-setting and physical-device checks were not claimed. Availability/Price backend facets are live; Brand setup and optional promo definitions/art remain owner tasks. No new product, collection, price, review or menu data created.
+
+Shared header/cart code is 3583 bytes minified; collection-only code 9160 bytes loads only on collection routes. Category CSS is merged into ep-mobile.css and included in homepage critical styles below Shopify’s 15KB inline-asset limit. Source: tools/ep-src/ep-browse.js and tools/ep-browse.css; tools/ep-categories-build.cjs generates assets. No framework added. Lighthouse was not requested/rerun for this batch; prior homepage scores are historical.
+
+Artifacts: qa/categories-browser.json, categories-supplement.json, categories-restore.json, categories-end.json, categories-pill.json, categories-console.json, categories-theme-check.json, categories-remote-readback.json; screenshots categories-directory-375.png, categories-listing-375.png, categories-listing-1280.png. Full theme file manifest: docs/CATEGORIES_CHANGED_FILES.md. MERCHANT_TODO.md updated for promo definitions/images, Search & Discovery Brand and preserving menu links; stale Diapers image audit marked historical.
+
+### Files changed
+
+- MERCHANT_TODO.md
+- WORKLOG.md
+- assets/ep-browse.css
+- assets/ep-browse.js
+- assets/ep-collection.js
+- assets/ep-mobile.css
+- assets/ep-polish.js
+- docs/CATEGORIES_CHANGED_FILES.md
+- docs/EP_HOMEPAGE_STATE.json
+- layout/theme.liquid
+- locales/bg.json
+- locales/cs.json
+- locales/cs.schema.json
+- locales/da.json
+- locales/da.schema.json
+- locales/de.json
+- locales/de.schema.json
+- locales/el.json
+- locales/en.default.json
+- locales/en.default.schema.json
+- locales/es.json
+- locales/es.schema.json
+- locales/fi.json
+- locales/fi.schema.json
+- locales/fr.json
+- locales/fr.schema.json
+- locales/hr.json
+- locales/hu.json
+- locales/id.json
+- locales/it.json
+- locales/it.schema.json
+- locales/ja.json
+- locales/ja.schema.json
+- locales/ko.json
+- locales/ko.schema.json
+- locales/lt.json
+- locales/nb.json
+- locales/nb.schema.json
+- locales/nl.json
+- locales/nl.schema.json
+- locales/pl.json
+- locales/pl.schema.json
+- locales/pt-BR.json
+- locales/pt-BR.schema.json
+- locales/pt-PT.json
+- locales/pt-PT.schema.json
+- locales/ro.json
+- locales/ru.json
+- locales/sk.json
+- locales/sl.json
+- locales/sv.json
+- locales/sv.schema.json
+- locales/th.json
+- locales/th.schema.json
+- locales/tr.json
+- locales/tr.schema.json
+- locales/vi.json
+- locales/zh-CN.json
+- locales/zh-CN.schema.json
+- locales/zh-TW.json
+- locales/zh-TW.schema.json
+- qa/categories-all-375.png
+- qa/categories-browser.json
+- qa/categories-console.json
+- qa/categories-diapers-375.png
+- qa/categories-directory-375.png
+- qa/categories-end.json
+- qa/categories-listing-1280.png
+- qa/categories-listing-375.png
+- qa/categories-pill.json
+- qa/categories-preview.json
+- qa/categories-remote-readback.json
+- qa/categories-restore.json
+- qa/categories-supplement.json
+- qa/categories-theme-check.json
+- sections/ep-categories-page.liquid
+- sections/ep-category-grid.liquid
+- sections/ep-collection.liquid
+- sections/footer-group.json
+- sections/qc-catalog.liquid
+- sections/qc-footer.liquid
+- sections/qc-header.liquid
+- snippets/ep-card.liquid
+- snippets/ep-cart-pill.liquid
+- snippets/ep-category-menu-tile.liquid
+- snippets/ep-collection-filters.liquid
+- snippets/ep-collection-rail-item.liquid
+- snippets/ep-critical-css.liquid
+- snippets/ep-directory-extra.liquid
+- snippets/qc-cart-contents.liquid
+- snippets/qc-policy-links.liquid
+- snippets/qc-storefront-runtime.liquid
+- templates/collection.json
+- templates/list-collections.json
+- tools/ep-browse.css
+- tools/ep-bundle.cjs
+- tools/ep-categories-build.cjs
+- tools/ep-categories-console-qa.cjs
+- tools/ep-categories-corrections.cjs
+- tools/ep-categories-end-qa.cjs
+- tools/ep-categories-finish-integration.cjs
+- tools/ep-categories-heading-scroll.cjs
+- tools/ep-categories-icon-audit.cjs
+- tools/ep-categories-integrate.cjs
+- tools/ep-categories-last-css.cjs
+- tools/ep-categories-pill-qa.cjs
+- tools/ep-categories-pill-spacing.cjs
+- tools/ep-categories-polish.cjs
+- tools/ep-categories-preflight.cjs
+- tools/ep-categories-preview.cjs
+- tools/ep-categories-qa.cjs
+- tools/ep-categories-report.cjs
+- tools/ep-categories-restore-qa.cjs
+- tools/ep-categories-runtime-fixes.cjs
+- tools/ep-categories-schema.json
+- tools/ep-categories-session-fix.cjs
+- tools/ep-categories-setup.cjs
+- tools/ep-categories-shadow.cjs
+- tools/ep-categories-split.cjs
+- tools/ep-categories-supplement.cjs
+- tools/ep-mobile-source.css
+- tools/ep-push.cjs
+- tools/ep-src/ep-browse.js
+- tools/ep-src/ep-polish.js
+
+Preview Categories: https://3djevx-mu.myshopify.com/collections?preview_theme_id=189582049393
+Preview listing: https://3djevx-mu.myshopify.com/collections/baby-products-diapers-and-wipes?preview_theme_id=189582049393
+Ready for owner review in Admin → Online Store → Themes → everyday-homepage-review. Do not publish automatically.
+

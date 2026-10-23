@@ -306,7 +306,7 @@
 
 {% if request.page_type == 'index' %}<script src="{{ 'ep-home-commerce.js' | asset_url }}" defer></script>{% else %}<script src="{{ 'qc-home.js' | asset_url }}" defer></script><script src="{{ 'qc-storefront.js' | asset_url }}" defer></script><script src="{{ 'qc-catalog.js' | asset_url }}" defer></script><script src="{{ 'qc-delivery.js' | asset_url }}" defer></script><script src="{{ 'qc-account.js' | asset_url }}" defer></script><script src="{{ 'qc-assistant.js' | asset_url }}" defer></script><script src="{{ 'qc-privacy.js' | asset_url }}" defer></script>{% endif %}
 {% if request.page_type == 'index' %}<link rel="stylesheet" href="{{ 'ep-mobile.css' | asset_url }}" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="{{ 'ep-mobile.css' | asset_url }}"></noscript>{% render 'ep-critical-css' %}{% else %}{{ 'ep-mobile.css' | asset_url | stylesheet_tag }}{% endif %}
-<script src="{{ 'ep-mobile.js' | asset_url }}" defer></script><script src="{{ 'ep-browse.js' | asset_url }}" defer></script>{% if request.page_type == 'collection' or request.page_type == 'list-collections' %}<script src="{{ 'ep-polish.js' | asset_url }}" defer></script>{% endif %}
+<script src="{{ 'ep-mobile.js' | asset_url }}" defer></script><script src="{{ 'ep-browse.js' | asset_url }}" defer></script>{% if request.page_type == 'collection' %}<script src="{{ 'ep-collection.js' | asset_url }}" defer></script>{% endif %}{% if request.page_type == 'collection' or request.page_type == 'list-collections' %}<script src="{{ 'ep-polish.js' | asset_url }}" defer></script>{% endif %}
     {{ content_for_header }}
 </head>
 

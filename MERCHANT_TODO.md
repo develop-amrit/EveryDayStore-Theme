@@ -30,10 +30,10 @@ Ferrero Rocher was skipped because that exact vendor is absent; the catalogue us
 Tag intimate and sexual-wellness products `homepage-hide` in Admin, or reorder the Care/Bath & Body collection so these products are not first. Homepage rails, grids and auto-image collections skip the configured tags; collection/search pages keep all products. The theme does not tag catalogue products automatically.
 
 ## Category panel and menu cleanup
-The new panel uses Baby Products plus Gifting, Grocery, Bath & Body, Home, Pet and Office Supplies. Upload transparent product clusters to replace auto images if desired. To remove All Products from footer Shop and Trending searches, delete it in Admin → Content → Menus. Theme code preserves menu links and does not edit Admin menus.
+The new panel uses Baby Products plus Gifting, Grocery, Bath & Body, Home, Pet and Office Supplies. Upload transparent product clusters to replace auto images if desired. The earlier optional All Products menu cleanup is superseded by the Categories rule to retain collection links; no menu deletion was performed. Theme code preserves menu links and does not edit Admin menus.
 
 ## Image-less published Diapers & Wipes products
-The collection currently has 34 published products without images and three draft products with images. Theme auto mode does not expose draft products. Upload a collection image or set the category/campaign image override; the designed Soon tile remains in place until then. No collection is hidden or unlinked.
+Historical audit (22 October): published Diapers & Wipes products then lacked images. The current 23 October catalogue now supplies real product photos, and the category tile uses that fallback successfully. An uploaded collection/category image remains optional. Draft products are never exposed. No collection is hidden or unlinked.
 
 ## Dirham symbol and platform limits
 Store HTML formats may stay `AED {{amount}}`; theme-rendered visible prices use the supplied dirham font. Keep email money formats `AED {{amount}}`, since email clients do not load theme fonts. Shopify checkout keeps AED because it does not load theme fonts. Shopify-hosted customer account/order pages likewise cannot load storefront theme assets; verify those separately in the account customization surface. Classic customer templates are not present in this theme. No checkout or email code was changed.
@@ -42,3 +42,5 @@ Store HTML formats may stay `AED {{amount}}`; theme-rendered visible prices use 
 In Admin → Settings → Custom data → Collections, create definitions first: `custom.promo_image` (File, images only), `custom.promo_link` (URL), `custom.promo_alt` (single-line text). Then select a collection, upload/select its promo image and fill the optional link/alt. The collection browser reads these fields; metafields win over a matching section Promo banner block. Banner is hidden without uploaded artwork, never auto-generated. Optional banner image: 1200×600, 2:1.
 In Shopify Search & Discovery, enable storefront Availability, Price and Vendor/Brand filters if not already enabled. The browser uses real `collection.filters`; it cannot create these filters in theme code.
 Categories directory groups reuse the catalogue menu with a department source; keep each department’s second-level and third-level menu links configured. Unmapped real collections remain visible under More collections. No collection is hidden because it is empty.
+
+Current Categories QA: Shopify exposes Availability and Price facets. Vendor/Brand is not enabled yet; enable that facet in Search & Discovery to make it appear automatically. Optional promo artwork is not configured, so collection banners correctly remain hidden.
