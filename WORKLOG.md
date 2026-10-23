@@ -765,3 +765,7 @@ Grid and rail both reserve 52px pill +24px + safe area. Zero estimated delivery 
 ## CatFix 8: Restore state only on history traversal
 
 New session namespace and full path/query key avoid stale inner-scroll snapshots. Normal visits start at the document top; browser back_forward, persisted pageshow and popstate restore loaded pages and window offset.
+
+## CatFix 9: Improve sort and filter sheets
+
+Sort selection submits immediately and closes using the existing 200ms sheet transition; no apply button. Chip names the active native sort. Primary filters button is white 15px/700 on brand with 48px height. All sheet inputs are 16px; native vendor/product-type facets render when configured.
