@@ -823,3 +823,7 @@ Deals uses the rail-free collection layout, native stock/filter/sort sheets, 24-
 ## Site 5: Rebuild search with listing cards and sheets
 
 Search now uses one pre-filled slim-header predictive field, native result count and facets, shared 2-column cards, real pagination/infinite loading and skeletons. Collection matches from the configured catalogue menu and page matches appear as chips; no-results offers configured menu links and real in-stock best sellers. Bottom navigation stays visible with no active destination.
+
+## Site 6: Rebuild product gallery and sticky purchase bar
+
+Product now has a square scroll-snap gallery, dots/fullscreen zoom, real variant option pills using Section Rendering (no capped variant enumeration), clear info/pack/dirham prices, saved area trigger, fee sheet, expandable description/specs, gallery wishlist and 48px ADD/stepper. Related/complementary use real in-stock EP cards and hide when empty; reviews hide without actual ratings. Recently viewed requires consent and another real viewed product. Product bottom nav/promo is replaced by the sticky bar and pill clearance.

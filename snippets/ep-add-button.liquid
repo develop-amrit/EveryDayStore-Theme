@@ -2,10 +2,11 @@
 Accessible add control with a real initial cart quantity.
 @param {product} product - Product.
 @param {variant} item - Selected variant.
-@param {string} style - plus or add.
+@param {string} style - plus, add, listing or product.
+@param {boolean} [direct] - Add the explicitly selected variant on its product page.
 {% enddoc %}
 {% assign initial_qty = 0 %}{% for line in cart.items %}{% if line.variant_id == item.id and line.properties == empty and line.selling_plan_allocation == blank %}{% assign initial_qty = line.quantity %}{% break %}{% endif %}{% endfor %}
 <ep-add-button class="ep-controls" data-style="{{ style }}" data-variant="{{ item.id }}" data-quantity="{{ initial_qty }}" data-title="{{ product.title | escape }}" data-unit-price="{{ item.price }}" data-auto-open="{{ settings.ep_open_cart }}" data-add-label="{{ 'ep.add_product' | t: title: product.title | escape }}" data-increase-label="{{ 'ep.increase_product' | t: title: product.title | escape }}" data-decrease-label="{{ 'ep.decrease_product' | t: title: product.title | escape }}">
-{% unless product.available %}<button class="ep-sold" disabled><span class="ep-add-face">{{ 'ep.sold_out' | t }}</span></button>{% else %}{% if product.has_only_default_variant or product.variants.size == 1 %}<button type="button" data-ep-add aria-label="{{ 'ep.add_product' | t: title: product.title | escape }}"><span class="ep-add-face">{% if style == 'plus' %}<span aria-hidden="true">+</span>{% else %}{{ 'ep.add' | t }}{% endif %}</span></button>{% else %}<a href="{{ product.url }}" aria-label="{{ 'ep.choose_product' | t: title: product.title | escape }}"><span class="ep-add-face">{{ 'ep.choose' | t }}</span></a>{% endif %}{% endunless %}
+{% assign can_add = product.available %}{% if direct %}{% assign can_add = item.available %}{% endif %}{% unless can_add %}<button class="ep-sold" disabled><span class="ep-add-face">{{ 'ep.sold_out' | t }}</span></button>{% else %}{% if product.has_only_default_variant or product.variants.size == 1 or direct %}<button type="button" data-ep-add aria-label="{{ 'ep.add_product' | t: title: product.title | escape }}"><span class="ep-add-face">{% if style == 'plus' %}<span aria-hidden="true">+</span>{% else %}{{ 'ep.add' | t }}{% endif %}</span></button>{% else %}<a href="{{ product.url }}" aria-label="{{ 'ep.choose_product' | t: title: product.title | escape }}"><span class="ep-add-face">{{ 'ep.choose' | t }}</span></a>{% endif %}{% endunless %}
 <span class="visually-hidden" data-ep-quantity-live aria-live="polite"></span>
 </ep-add-button>

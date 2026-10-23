@@ -1,13 +1,13 @@
 {
   "sections": {
     "main": {
-      "type": "qc-product",
+      "type": "ep-product",
       "settings": {}
     },
     "related": {
       "type": "qc-recommendations",
       "settings": {
-        "heading": "A few thoughtful alternatives",
+        "heading": "Similar products",
         "intent": "related"
       }
     },
@@ -23,7 +23,7 @@
       "settings": {}
     },
     "recent": {
-      "type": "qc-recent",
+      "type": "ep-recent",
       "settings": {}
     }
   },
