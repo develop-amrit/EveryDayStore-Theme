@@ -827,3 +827,7 @@ Search now uses one pre-filled slim-header predictive field, native result count
 ## Site 6: Rebuild product gallery and sticky purchase bar
 
 Product now has a square scroll-snap gallery, dots/fullscreen zoom, real variant option pills using Section Rendering (no capped variant enumeration), clear info/pack/dirham prices, saved area trigger, fee sheet, expandable description/specs, gallery wishlist and 48px ADD/stepper. Related/complementary use real in-stock EP cards and hide when empty; reviews hide without actual ratings. Recently viewed requires consent and another real viewed product. Product bottom nav/promo is replaced by the sticky bar and pill clearance.
+
+## Site 7: Replace 404 department text with category blocks
+
+404 retains its now-visible Continue shopping button and has an editable six-block panel plus accessible search. Uses existing real department collections and shared auto imagery; old recovery section file is retained.

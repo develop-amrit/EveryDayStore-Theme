@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -14,48 +5,74 @@
       "settings": {}
     },
     "discovery_help": {
-      "type": "commerce-recovery",
+      "type": "ep-recovery",
+      "settings": {
+        "heading": "Explore everyday essentials"
+      },
       "blocks": {
-        "d0": {
-          "type": "department",
+        "category0": {
+          "type": "category",
+          "settings": {
+            "title": "Gifting",
+            "collection": "gifting",
+            "tint": "cream",
+            "icon": "gift"
+          }
+        },
+        "category1": {
+          "type": "category",
           "settings": {
             "title": "Grocery",
-            "description": "Cupboard staples and shelf-stable essentials.",
-            "link": "/pages/departments#grocery"
+            "collection": "grocery",
+            "tint": "green",
+            "icon": "basket"
           }
         },
-        "d1": {
-          "type": "department",
-          "settings": {
-            "title": "Baby Products",
-            "description": "Useful supplies for everyday care.",
-            "link": "/pages/departments#baby-products"
-          }
-        },
-        "d2": {
-          "type": "department",
+        "category2": {
+          "type": "category",
           "settings": {
             "title": "Bath & Body",
-            "description": "Personal care for the daily routine.",
-            "link": "/pages/departments#bath-body"
+            "collection": "bath-and-body",
+            "tint": "pink",
+            "icon": "soap"
           }
         },
-        "d3": {
-          "type": "department",
+        "category3": {
+          "type": "category",
           "settings": {
             "title": "Home",
-            "description": "Household refills and practical organisers.",
-            "link": "/pages/departments#home"
+            "collection": "home",
+            "tint": "lilac",
+            "icon": "home"
+          }
+        },
+        "category4": {
+          "type": "category",
+          "settings": {
+            "title": "Pet",
+            "collection": "pet",
+            "tint": "peach",
+            "icon": "paw"
+          }
+        },
+        "category5": {
+          "type": "category",
+          "settings": {
+            "title": "Office Supplies",
+            "collection": "office-supplies",
+            "tint": "cream",
+            "icon": "pencil"
           }
         }
       },
       "block_order": [
-        "d0",
-        "d1",
-        "d2",
-        "d3"
-      ],
-      "settings": {}
+        "category0",
+        "category1",
+        "category2",
+        "category3",
+        "category4",
+        "category5"
+      ]
     }
   },
   "order": [
