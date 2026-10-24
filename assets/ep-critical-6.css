@@ -16,7 +16,7 @@
 .ep-cart-pill svg{width:20px;height:20px;flex:0 0 auto}
 .ep-cart-pill strong{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0px}
 .ep-cart-pill [data-ep-pill-total]{margin-inline-start:auto;flex:0 0 auto;font-weight:700}
-.ep-has-cart-pill .ep-bottom-promo{display:none}
+
 .ep-pill-space{padding-bottom:calc(var(--ep-nav-height,64px) + 88px + env(safe-area-inset-bottom))!important}
 @media(min-width:750px){.ep-directory-group .ep-tiles{grid-template-columns:repeat(6,minmax(0px,1fr))}}
 @media(min-width:750px){.ep-collection-products,.ep-loading-cards{grid-template-columns:repeat(3,minmax(0px,1fr))}}
