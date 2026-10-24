@@ -109,7 +109,7 @@
       if(!committed){try{await refresh();}catch{/* Keep the original error visible. */}}
       if(committed){
         try{cart=await request('cart.js');syncCards();}catch{/* The write succeeded; do not encourage a second add. */}
-        const message=labels.refresh_error||labels.error;announce(message);$('[data-cart-status]').textContent=message;
+        const message=labels.refresh_error||labels.error;showFeedback(message);
         if(!quiet&&!cartDialog.open)open(cartDialog,trigger);
         return {ok:true,refreshFailed:true};
       }
@@ -120,7 +120,7 @@
   }
   document.addEventListener('click',e=>{
     const target=e.target.closest('button,a');if(!target)return;
-    if(target.matches('[data-cart-open]')){e.preventDefault();open(cartDialog,target);refresh().catch(()=>{$('[data-cart-status]').textContent=labels.error;});}
+    if(target.matches('[data-cart-open]')){e.preventDefault();open(cartDialog,target);refresh().catch(()=>showFeedback(labels.error));}
     else if(target.matches('[data-dialog-close]'))close(target.closest('dialog'));
     else if(target.matches('[data-add]')){
       const card=target.closest('.qc-card');
