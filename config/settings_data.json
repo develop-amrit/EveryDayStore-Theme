@@ -173,7 +173,7 @@
     "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
-    "cart_drawer_collection": "",
+    "cart_drawer_collection": "all",
     "cart_color_scheme": "scheme-1",
     "sections": {
       "main-password-header": {
@@ -197,7 +197,8 @@
     "qc_catalog_menu": "catalogue",
     "qc_cod": true,
     "ep_hidden_title_prefix": "[TEST]",
-    "ep_hidden_collection_handles": "frontpage, home-page, in-stock, all"
+    "ep_hidden_collection_handles": "frontpage, home-page, in-stock",
+    "ep_show_sold_out_catalogue": true
   },
   "presets": {
     "Dawn": {

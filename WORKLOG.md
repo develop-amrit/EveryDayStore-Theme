@@ -894,3 +894,23 @@ All 608 active catalogue products were audited: none has multiple variants, so l
 
 Files, details and previews: docs/SITE_CHANGED_FILES.md and docs/SITE_QA.md. Owner actions remain in MERCHANT_TODO.md. Product/search/Deals/404/cart and shared chrome are ready for review in Admin → Online Store → Themes.
 
+## New-store catalogue visibility, 2026-10-24
+
+Owner now targets everydayyplus-8ksmkrmq.myshopify.com. Its live theme is
+EveryDayStore-Theme/main (191136825619), linked to this repository's main branch.
+Remote settings/index match repository HEAD e3a2a8a. The old store's theme IDs are
+not deployment targets for this fix. No theme role switch or publication.
+
+Completed the source workbook import: 486 products and 3,801 matched image
+references verified; 178 merchant activations preserved, 308 remain drafts.
+The storefront issue is missing migrated department collections plus zero-stock
+products being suppressed. Prepared dynamic all-collection mappings and a
+configurable sold-out catalogue display on fix/new-store-catalogue. Sold-out
+purchase buttons stay disabled; no quantities or product statuses are fabricated.
+
+Validation: 11 local Liquid/controller integration checks, Theme Check 0 errors
+and 15 existing warnings, JS syntax and diff checks. Bundled theme validator has
+a missing dependency; official Theme Check passes. See
+docs/NEW_STORE_CATALOGUE_FIX.md. Live GitHub main is not updated without the
+owner's override of AGENTS.md's unpublished-only deployment restriction.
+
