@@ -33,6 +33,6 @@ In-stock product photograph for the navigation promo, without availability label
 {% endfor %}
 {% if promo_product != nil %}
   <span data-promo-product="{{ promo_product.handle }}">
-    {% render 'ep-auto-image', image_sizes: '52px', image: promo_product.featured_image, title: title, eager: true %}
+    {% render 'ep-auto-image', image_sizes: '52px', image: promo_product.featured_image, collection: nil, title: title, eager: true %}
   </span>
 {% endif %}
