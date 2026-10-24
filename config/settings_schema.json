@@ -1691,9 +1691,5 @@
         "default": "frontpage, home-page, in-stock"
       }
     ]
-  },
-  {
-    "name": "Catalogue visibility",
-    "settings": []
   }
 ]

@@ -1050,7 +1050,8 @@
     "browse_catalogue": "Browse full catalogue",
     "shop_now": "Shop now →",
     "from_price_html": "From {{ price }}",
-    "shopping_with": "Shopping with {{ shop_name }}"
+    "shopping_with": "Shopping with {{ shop_name }}",
+    "stock_limit": "Only __COUNT__ left in stock"
   },
   "epc": {
     "categories": "Categories",
