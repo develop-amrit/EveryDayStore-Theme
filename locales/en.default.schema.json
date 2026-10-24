@@ -3564,7 +3564,8 @@
     "polish_image_override": "Image override",
     "polish_tint": "Tint",
     "polish_empty_category_icon": "Empty category icon",
-    "polish_section_anchor": "Section anchor"
+    "polish_section_anchor": "Section anchor",
+    "promo_fallback_collection": "Promo fallback department"
   },
   "epc": {
     "categories": "Categories",

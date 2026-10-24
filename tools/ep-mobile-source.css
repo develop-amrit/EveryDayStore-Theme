@@ -80,3 +80,5 @@ body.ep-home-panel{--qc-ease:var(--ep-ease)}.ep-page .ep-offer .ep-soon-art{disp
 @media(prefers-reduced-motion:no-preference){.ep-browse-ready .ep-collection-heading{height:calc(64px - var(--ep-heading-scroll,0px));padding-block:0;overflow:hidden}.ep-browse-ready .ep-collection-heading :is(h1,.ep-breadcrumb){transform:translateY(calc(6px - var(--ep-heading-scroll,0px)))}body .ep-browse-ready .ep-collection-content{max-height:calc(100dvh - var(--ep-browse-header) - 76px + var(--ep-heading-scroll,0px))}}
 
 @media(max-width:989px){.ep-listing-page.ep-pill-space [data-collection-content]{padding-block-end:calc(88px + env(safe-area-inset-bottom))}}
+
+.ep-stepper button:disabled,.qc-stepper button:disabled{opacity:.4;cursor:not-allowed;transform:none!important}

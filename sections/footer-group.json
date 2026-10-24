@@ -21,7 +21,8 @@
     "bottom_nav": {
       "type": "ep-bottom-nav",
       "settings": {
-        "categories_link": "/collections"
+        "categories_link": "/collections",
+        "promo_fallback_collection": "gifting"
       },
       "blocks": {
         "home": {
