@@ -1,6 +1,6 @@
 <!doctype html>
-<html class="js" lang="{{ request.locale.iso_code }}">
-  <head><meta charset="utf-8"><script>{{ 'ep-history.js' | inline_asset_content }}</script>{% if request.page_type == 'collection' or request.page_type == 'search' %}<script>(()=>{const u=new URL(location.href);if(!u.searchParams.has('filter.v.availability')&&u.searchParams.get('ep_stock')!=='all'){document.documentElement.style.visibility='hidden';u.searchParams.set('filter.v.availability','1');u.searchParams.delete('page');location.replace(u.href);}})();</script>{% endif %}
+<html class="js" lang="{{ request.locale.iso_code }}" data-ep-show-sold-out="{{ settings.ep_show_sold_out_catalogue | default: false }}">
+  <head><meta charset="utf-8"><script>{{ 'ep-history.js' | inline_asset_content }}</script>{% unless settings.ep_show_sold_out_catalogue %}{% if request.page_type == 'collection' or request.page_type == 'search' %}<script>(()=>{const u=new URL(location.href);if(!u.searchParams.has('filter.v.availability')&&u.searchParams.get('ep_stock')!=='all'){document.documentElement.style.visibility='hidden';u.searchParams.set('filter.v.availability','1');u.searchParams.delete('page');location.replace(u.href);}})();</script>{% endif %}{% endunless %}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#fefae0">

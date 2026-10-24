@@ -1688,7 +1688,19 @@
         "type": "textarea",
         "id": "ep_hidden_collection_handles",
         "label": "t:epcf.hidden_handles",
-        "default": "frontpage, home-page, in-stock, all"
+        "default": "frontpage, home-page, in-stock"
+      }
+    ]
+  },
+  {
+    "name": "Catalogue visibility",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "ep_show_sold_out_catalogue",
+        "label": "Show sold out products in the catalogue",
+        "info": "Keep products visible when stock is unavailable. Sold out purchase buttons stay disabled.",
+        "default": false
       }
     ]
   }
