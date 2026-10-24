@@ -194,7 +194,7 @@
     "qc_fee_low": "5.99",
     "qc_fee_mid": "3.99",
     "qc_account_mode": "new",
-    "qc_catalog_menu": "catalogue",
+    "qc_catalog_menu": "everyday-catalogue",
     "qc_cod": true,
     "ep_hidden_title_prefix": "[TEST]",
     "ep_hidden_collection_handles": "frontpage, home-page, in-stock",
