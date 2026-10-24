@@ -11,6 +11,11 @@
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   const cartDialog = $('#qc-cart'), variantDialog = $('#qc-variants');
+  const stockText=JSON.parse(document.querySelector('#ep-labels')?.textContent||'{}').stock_limit;
+  let toastTimer;
+  const clearFeedback=()=>{clearTimeout(toastTimer);const el=document.querySelector('.ep-cart-toast');if(el){el.hidden=true;el.textContent='';}const status=document.querySelector('[data-cart-status]');if(status)status.textContent='';};
+  const showFeedback=(message,max)=>{clearFeedback();let el=document.querySelector('.ep-cart-toast');if(!el){el=document.createElement('p');el.className='ep-cart-toast';el.setAttribute('role','alert');document.body.append(el);}el.textContent=Number.isFinite(max)&&stockText&&/stock|availab|inventory|only [0-9]/i.test(message)?stockText.replace('__COUNT__',max):message;el.hidden=false;toastTimer=setTimeout(clearFeedback,3000);};
+  window.EPCartFeedback={clear:clearFeedback,show:showFeedback};
   function announce(message) { $('[data-qc-status]').textContent = message; }
   function open(dialog, trigger) {
     if (!dialog || dialog.open) return;
@@ -85,6 +90,7 @@
     if(key && cartDialog.open){const replacement=$$('[data-line-key]',cartDialog).find(n=>n.dataset.lineKey===key);(replacement||$('[data-dialog-close]',cartDialog)).focus();}
   }
   async function mutate(path,payload,{show=false,trigger,quiet=false}={}) {
+    clearFeedback();
     if(busy)return {ok:false,error:labels.error};
     busy=true;const locked=$$('[data-add]:not(:disabled),[data-line-key]:not(:disabled)');locked.forEach(n=>n.disabled=true);let committed=false;const card=trigger?.closest('.qc-card');
     card?.setAttribute('aria-busy','true');cartDialog.setAttribute('aria-busy','true');
@@ -108,10 +114,9 @@
         return {ok:true,refreshFailed:true};
       }
       if(quiet)return {ok:false,error:error.message||labels.error};
-      announce(error.message||labels.error);$('[data-cart-status]').textContent=error.message||labels.error;
-      if(!cartDialog.open && !variantDialog.open)open(cartDialog,trigger);
+      showFeedback(error.message||labels.error,trigger?.hasAttribute('data-max')?Number(trigger.dataset.max):undefined);
       return {ok:false,error:error.message||labels.error};
-    } finally{locked.forEach(n=>{if(n.isConnected)n.disabled=false;});busy=false;card?.removeAttribute('aria-busy');cartDialog.removeAttribute('aria-busy');}
+    } finally{locked.forEach(n=>{if(n.isConnected)n.disabled=n.hasAttribute('data-max')&&Number(n.dataset.quantity)>Number(n.dataset.max);});busy=false;card?.removeAttribute('aria-busy');cartDialog.removeAttribute('aria-busy');}
   }
   document.addEventListener('click',e=>{
     const target=e.target.closest('button,a');if(!target)return;
