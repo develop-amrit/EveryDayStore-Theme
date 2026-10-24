@@ -3,7 +3,7 @@
     "main": {
       "type": "ep-collection",
       "settings": {
-        "menu": "catalogue",
+        "menu": "everyday-catalogue",
         "deals_collection": "all",
         "color_scheme": "scheme-1"
       },

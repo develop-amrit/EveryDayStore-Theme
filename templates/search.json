@@ -3,7 +3,7 @@
     "main": {
       "type": "ep-search",
       "settings": {
-        "search_menu": "catalogue",
+        "search_menu": "everyday-catalogue",
         "bestsellers": "all"
       }
     }
