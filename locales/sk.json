@@ -1019,7 +1019,7 @@
     "search_for": "Search for “{{ term }}”",
     "search_products": "Search products",
     "error": "We could not update your basket. Please try again.",
-    "page_title": "EverydayyPlus — everyday essentials delivered next day in Dubai",
+    "page_title": "{{ shop_name }} — everyday essentials delivered next day in Dubai",
     "go_slide": "Go to slide {{ number }}",
     "ad": "Ad",
     "deals": "Deals",
@@ -1049,7 +1049,8 @@
     "show_less": "Show less",
     "browse_catalogue": "Browse full catalogue",
     "shop_now": "Shop now →",
-    "from_price_html": "From {{ price }}"
+    "from_price_html": "From {{ price }}",
+    "shopping_with": "Shopping with {{ shop_name }}"
   },
   "epc": {
     "categories": "Categories",
@@ -1124,6 +1125,8 @@
     "apply_filters": "Apply filters",
     "delivery_tomorrow": "Delivery tomorrow",
     "to": "to",
-    "stock_suggestions": "In-stock suggestions"
+    "stock_suggestions": "In-stock suggestions",
+    "no_deals": "No deals right now. Check back soon.",
+    "biggest_discount": "Biggest discount"
   }
 }

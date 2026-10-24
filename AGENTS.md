@@ -1,5 +1,7 @@
 # EverydayStore theme workflow
 
+Active batch exception: the owner explicitly approved “Update GitHub main after validation” for fix/catalogue-restore. After tests, check newer main commits and update connected main through GitHub only. No direct live-theme uploads or publication. This exception supersedes the branch-only rule below for this batch.
+
 Target: everydayyplus-8ksmkrmq.myshopify.com. Source of truth: private GitHub develop-amrit/EveryDayStore-Theme. Connected main deploys immediately to live theme 191136825619.
 
 - Pull main before new work; work on a feature/fix branch. Never commit or push to main, force-push, merge, publish or switch theme roles. Push the review branch and open a PR; the owner merges.

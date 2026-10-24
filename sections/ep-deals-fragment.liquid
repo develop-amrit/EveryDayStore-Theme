@@ -1,0 +1,4 @@
+{% paginate collection.products by 250 %}<div data-ep-deals-fragment data-next="{{ paginate.next.url }}">{% render 'ep-discount-cards', products: collection.products, limit: 250, variant: 'compact' %}</div>{% endpaginate %}
+{% schema %}
+{"name":"Deals cards fragment","enabled_on":{"templates":["collection"]},"settings":[],"presets":[{"name":"Deals cards fragment"}]}
+{% endschema %}

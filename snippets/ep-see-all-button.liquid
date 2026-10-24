@@ -3,4 +3,4 @@ Full-width collection link.
 @param {string} link_url - Destination.
 @param {string} [label] - Optional label.
 {% enddoc %}
-{% if link_url != blank %}<a class="ep-see-all" href="{{ link_url }}">{% if label != blank %}{{ label | escape }}{% else %}{{ 'ep.see_all' | t }}{% endif %}<span aria-hidden="true">&nbsp;›</span></a>{% endif %}
+{% if link_url != blank %}<a class="ep-see-all" href="{% render 'ep-stock-url', url: link_url %}">{% if label != blank %}{{ label | escape }}{% else %}{{ 'ep.see_all' | t }}{% endif %}<span aria-hidden="true">&nbsp;›</span></a>{% endif %}

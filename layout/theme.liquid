@@ -16,7 +16,7 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    <title>{% if template.suffix == 'ep-deals' %}{{ 'eps.best_deals' | t }} – {{ shop.name }}{% elsif request.page_type == 'list-collections' %}{{ 'epc.categories' | t }} – EverydayyPlus{% else %}
+    <title>{% if template.suffix == 'ep-deals' %}{{ 'eps.best_deals' | t }} – {{ shop.name }}{% elsif request.page_type == 'list-collections' %}{{ 'epc.categories' | t }} – {{ shop.name | escape }}{% else %}
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
