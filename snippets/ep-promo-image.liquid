@@ -1,0 +1,38 @@
+{% doc %}
+In-stock product photograph for the navigation promo, without availability labels.
+@param {collection} collection - Promo collection.
+@param {collection} fallback_collection - Gifting fallback chosen by the merchant.
+@param {string} [exclude_tags] - Comma-separated excluded product tags.
+@param {string} title - Image alt fallback.
+{% enddoc %}
+{% assign promo_product = nil %}
+{% assign excluded_tags = exclude_tags | default: 'homepage-hide' | split: ',' %}
+{% for pass in (1..3) %}
+  {% case pass %}
+    {% when 1 %}{% assign source = collection %}
+    {% when 2 %}{% assign source = fallback_collection %}
+    {% when 3 %}{% assign source = collections.all %}
+  {% endcase %}
+  {% if source != blank %}
+    {% paginate source.products by 250 %}
+      {% for candidate in source.products limit: 250 %}
+        {% unless candidate.available and candidate.featured_image %}{% continue %}{% endunless %}
+        {% capture visible %}{% render 'ep-content-visible', item: candidate %}{% endcapture %}
+        {% if visible == '0' %}{% continue %}{% endif %}
+        {% assign excluded = false %}
+        {% for tag in excluded_tags %}
+          {% assign cleaned = tag | strip %}
+          {% if cleaned != blank and candidate.tags contains cleaned %}{% assign excluded = true %}{% endif %}
+        {% endfor %}
+        {% if excluded %}{% continue %}{% endif %}
+        {% assign promo_product = candidate %}{% break %}
+      {% endfor %}
+    {% endpaginate %}
+  {% endif %}
+  {% if promo_product != nil %}{% break %}{% endif %}
+{% endfor %}
+{% if promo_product != nil %}
+  <span data-promo-product="{{ promo_product.handle }}">
+    {% render 'ep-auto-image', image_sizes: '52px', image: promo_product.featured_image, title: title, eager: true %}
+  </span>
+{% endif %}
