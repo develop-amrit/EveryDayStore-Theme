@@ -198,7 +198,7 @@
     "qc_cod": true,
     "ep_hidden_title_prefix": "[TEST]",
     "ep_hidden_collection_handles": "frontpage, home-page, in-stock",
-    "ep_show_sold_out_catalogue": true
+    "ep_show_sold_out_catalogue": false
   },
   "presets": {
     "Dawn": {

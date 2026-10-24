@@ -2,4 +2,7 @@
 @param {collection} collection - Filtered collection.
 @param {section} section - Current section settings.
 {%- enddoc -%}
-{%- assign count = collection.products_count -%}{%- if count <= 50 -%}{%- for item in collection.products -%}{%- capture visible -%}{% render 'ep-content-visible', item: item, hide_prefix: section.settings.hide_title_prefix %}{%- endcapture -%}{%- if visible == '0' -%}{%- assign count = count | minus: 1 -%}{%- endif -%}{%- endfor -%}{%- endif -%}{{- count -}}
+{%- assign stock_count = nil -%}
+{%- for facet in collection.filters -%}{%- if facet.param_name == 'filter.v.availability' -%}{%- for value in facet.values -%}{%- if value.value == '1' -%}{%- assign stock_count = value.count -%}{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}
+{%- if stock_count == nil -%}{%- assign stock_count = 0 -%}{%- assign items = collection.products | default: collection.results -%}{%- for item in items limit: 250 -%}{%- if item.available -%}{%- assign stock_count = stock_count | plus: 1 -%}{%- endif -%}{%- endfor -%}{%- endif -%}
+{{- stock_count -}}

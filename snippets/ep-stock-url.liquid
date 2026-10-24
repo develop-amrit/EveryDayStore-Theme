@@ -1,0 +1,13 @@
+{%- doc -%}Stock-only collection/search URL, preserving existing query parameters.
+@param {string} url - Merchant or Shopify URL.
+{%- enddoc -%}
+{%- assign stock_url = url | replace: 'filter.v.availability=0', 'filter.v.availability=1' -%}
+{%- assign first_character = stock_url | slice: 0 -%}
+{%- if first_character == '/' -%}
+  {%- if stock_url contains '/collections/' or stock_url contains '/search?' -%}
+    {%- unless stock_url contains 'filter.v.availability=1' -%}
+      {%- if stock_url contains '?' -%}{%- assign stock_url = stock_url | append: '&filter.v.availability=1' -%}{%- else -%}{%- assign stock_url = stock_url | append: '?filter.v.availability=1' -%}{%- endif -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endif -%}
+{{- stock_url | escape -}}

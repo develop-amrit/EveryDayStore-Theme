@@ -1,0 +1,12 @@
+{%- doc -%}Whether a collection has an eligible in-stock product in a 250-product scan.
+@param {collection} collection - Collection to scan.
+@param {string} [exclude_tags] - Comma separated tags to skip.
+{%- enddoc -%}
+{%- assign has_stock = false -%}{%- assign excluded_tags = exclude_tags | default: 'homepage-hide' | split: ',' -%}
+{%- if collection != blank -%}{%- paginate collection.products by 250 -%}{%- for candidate in collection.products limit: 250 -%}
+{%- unless candidate.available -%}{%- continue -%}{%- endunless -%}
+{%- capture visible -%}{% render 'ep-content-visible', item: candidate %}{%- endcapture -%}{%- if visible == '0' -%}{%- continue -%}{%- endif -%}
+{%- assign excluded = false -%}{%- for tag in excluded_tags -%}{%- assign tag = tag | strip -%}{%- if tag != blank and candidate.tags contains tag -%}{%- assign excluded = true -%}{%- endif -%}{%- endfor -%}
+{%- unless excluded -%}{%- assign has_stock = true -%}{%- break -%}{%- endunless -%}
+{%- endfor -%}{%- endpaginate -%}{%- endif -%}
+{%- if has_stock -%}1{%- else -%}0{%- endif -%}

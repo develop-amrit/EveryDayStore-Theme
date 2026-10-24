@@ -1694,14 +1694,6 @@
   },
   {
     "name": "Catalogue visibility",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "ep_show_sold_out_catalogue",
-        "label": "Show sold out products in the catalogue",
-        "info": "Keep products visible when stock is unavailable. Sold out purchase buttons stay disabled.",
-        "default": false
-      }
-    ]
+    "settings": []
   }
 ]
