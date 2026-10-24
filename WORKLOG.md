@@ -914,3 +914,15 @@ a missing dependency; official Theme Check passes. See
 docs/NEW_STORE_CATALOGUE_FIX.md. Live GitHub main is not updated without the
 owner's override of AGENTS.md's unpublished-only deployment restriction.
 
+
+## New-store category routing correction, 2026-10-24
+
+Owner requested correction of mixed department content following the previously
+authorized merge into GitHub main. Reverified new-store live theme 191136825619;
+no old-store IDs, direct theme uploads, role switches, or publication are used.
+Read-only pull of the six affected live theme files matched GitHub main before
+changes. Preserve the sold-out setting and product statuses, stock, and prices.
+
+Restore department bindings, create tag-driven collections and an owned category
+menu, remove sibling/vendor cross-category fallbacks, and show sparse categories.
+See docs/CATEGORY_ROUTING_FIX.md and the local catalogue_organisation evidence.
