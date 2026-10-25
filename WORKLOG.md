@@ -930,3 +930,4 @@ See docs/CATEGORY_ROUTING_FIX.md and the local catalogue_organisation evidence.
 Fix3 1: Route shopper-facing catalogue links to /collections; preserve Deals and internal product sources. Reports stay in D:/ep-reports. Current Admin audit: 486 ACTIVE/published, 88 in stock; no publishing writes needed.
 Fix3 2: Baby Basket equal cards, reserved two-line titles, square photos, lowest eligible in-stock price and nonempty Shop now fallback; shared translations added.
 Fix3 3 and 5: Four verified vendor photo tiles (stock-independent brand imagery); friendly vendor empty states and server-rendered in-stock department/store suggestions, unique max eight. HUGGIES is the catalogue's exact vendor spelling.
+Fix3 4: Clear filters preserves forced availability through ep-stock-url; hide reset and count when availability is the only filter; search price ranges counted.
