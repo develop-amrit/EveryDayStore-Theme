@@ -61,7 +61,7 @@
           "type": "promo_bubble",
           "settings": {
             "label": "Festive",
-            "link": "/#festive",
+            "link": "/pages/festive",
             "collection": "gifting-chocolates-and-treats",
             "alt": "Explore festive gifts",
             "pulse": false

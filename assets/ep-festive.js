@@ -1,0 +1,1 @@
+(()=>{"use strict";function a(){for(const e of document.querySelectorAll("[data-ep-countdown]")){const t=Math.max(0,Math.floor(Number(e.dataset.time)-Date.now()/1e3));if(!t){e.hidden=!0;continue}e.textContent=e.dataset.label.replace("__EVENT__",e.dataset.event).replace("__DAYS__",Math.floor(t/86400)).replace("__HOURS__",Math.floor(t%86400/3600))}}a(),setInterval(a,6e4)})();

@@ -1179,6 +1179,8 @@
     "secure": "Secure checkout",
     "vat_title": "Prices & VAT",
     "refunds": "Refunds",
-    "help": "Need help?"
+    "help": "Need help?",
+    "festive_store": "Festive Store",
+    "vat_added": "VAT is added at checkout"
   }
 }
