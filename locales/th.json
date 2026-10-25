@@ -1181,6 +1181,7 @@
     "refunds": "Refunds",
     "help": "Need help?",
     "festive_store": "Festive Store",
-    "vat_added": "VAT is added at checkout"
+    "vat_added": "VAT is added at checkout",
+    "item_one": "{{ count }} item"
   }
 }
