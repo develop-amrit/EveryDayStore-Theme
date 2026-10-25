@@ -933,3 +933,4 @@ Fix3 3 and 5: Four verified vendor photo tiles (stock-independent brand imagery)
 Fix3 4: Clear filters preserves forced availability through ep-stock-url; hide reset and count when availability is the only filter; search price ranges counted.
 Fix3 6: Carousel slides require eligible stock, dots renumbered; stable available-first order for seasonal/store tiles, preserving every tile.
 Fix3 9: Threshold-driven free-delivery cart-pill nudge, add-only thumbnail toast, and Categories search trigger using existing predictive search. CSS rebuilt from source; reduced motion respected.
+Fix3 11: Preview caught duplicate collection custom-element registration from an unsplit rebuild; rebuilt through canonical ep-categories-build.cjs. Split new component CSS into its own inline asset to keep each below the 15KB inline budget. Theme Check 0 errors; retained ep-from-price is now unused (one extra preservation warning).
