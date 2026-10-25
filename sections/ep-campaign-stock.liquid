@@ -1,0 +1,5 @@
+{% comment %}Internal section-rendering response: available-variant prices, never a storefront price setting.{% endcomment %}
+{% paginate collection.products by 250 %}<div data-ep-campaign-stock data-next="{{ paginate.next.url }}" hidden>{% for candidate in collection.products %}{% unless candidate.available %}{% continue %}{% endunless %}{% capture allowed %}{% render 'ep-content-visible', item: candidate %}{% endcapture %}{% unless allowed == '1' %}{% continue %}{% endunless %}{% assign minimum = nil %}{% for item in candidate.variants %}{% if item.available %}{% if minimum == nil or item.price < minimum %}{% assign minimum = item.price %}{% endif %}{% endif %}{% endfor %}{% if minimum != nil %}<data data-ep-candidate data-tags="{{ candidate.tags | json | escape }}" value="{{ minimum }}"></data>{% endif %}{% endfor %}</div>{% endpaginate %}
+{% schema %}
+{"name":"t:ep.everyday_campaign","settings":[],"enabled_on":{"templates":["collection"]}}
+{% endschema %}
