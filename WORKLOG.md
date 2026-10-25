@@ -939,3 +939,4 @@ Fix3 7 and 8: collection-images-plan-3.csv has zero new suitable photos; 52 real
 Fix3 10: Re-read all 486 products: zero Draft, zero ACTIVE unpublished; 486 ACTIVE Online Store products and 88 with stock. publish-plan.csv has headers only because no candidates exist; no product writes and no skip candidates.
 Fix3 11 follow-up: No-JS filter resets retain availability, Baby Basket uses minimum across all available variants; preview suite passes 19 component checks with zero console/page errors.
 Fix3 5 refinement: Global suggestions hydrate from Shopify's best-selling sort while retaining server fallback products and department picks. Replace only equal card counts to preserve geometry, and never replace a focused card.
+Fix3 8: Verified every collection title and all three menu depths after the single apostrophe repair; no remaining audited mojibake. Menu item IDs, nesting, resource links and handles retained.
