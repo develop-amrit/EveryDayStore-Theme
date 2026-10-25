@@ -932,3 +932,4 @@ Fix3 2: Baby Basket equal cards, reserved two-line titles, square photos, lowest
 Fix3 3 and 5: Four verified vendor photo tiles (stock-independent brand imagery); friendly vendor empty states and server-rendered in-stock department/store suggestions, unique max eight. HUGGIES is the catalogue's exact vendor spelling.
 Fix3 4: Clear filters preserves forced availability through ep-stock-url; hide reset and count when availability is the only filter; search price ranges counted.
 Fix3 6: Carousel slides require eligible stock, dots renumbered; stable available-first order for seasonal/store tiles, preserving every tile.
+Fix3 9: Threshold-driven free-delivery cart-pill nudge, add-only thumbnail toast, and Categories search trigger using existing predictive search. CSS rebuilt from source; reduced motion respected.
