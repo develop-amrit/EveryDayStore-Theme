@@ -34,7 +34,7 @@
     if (!config.checkoutReady) return 'setup';
     if (!cart.items?.length) return 'empty';
     if (cart.currency !== 'AED') return 'currency';
-    if (!activeZone(zones, cart.attributes?.delivery_zone)) return 'zone';
+    if (!activeZone(zones, cart.attributes?.['Delivery area'])) return 'zone';
     return null;
   }
   return { deliveryFee, deliveryProgress, productQuantity, canAdd, activeZone, eligibleSlots, checkoutProblem };

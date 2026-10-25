@@ -11,7 +11,7 @@
   const dateInDubai=instant=>{const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Dubai',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(instant));const value=type=>parts.find(p=>p.type===type).value;return `${value('year')}-${value('month')}-${value('day')}`;};
   const tomorrow=()=>dateInDubai(Date.now()+86400000);
   const fingerprint=data=>data.items.map(item=>`${item.variant_id}:${item.quantity}:${item.selling_plan_allocation?.selling_plan.id||''}:${JSON.stringify(Object.fromEntries(Object.entries(item.properties||{}).sort()))}`).sort().join('|');
-  function area(){const selected=$('[data-area]')?.value;if(selected)return selected;try{return localStorage.getItem('qc-dubai-area')||'';}catch{return '';}}
+  function area(){const selected=cart.attributes?.['Delivery area']||$('ep-area-picker')?.value||$('[data-area]')?.value;if(selected)return selected;try{return localStorage.getItem('qc-dubai-area')||'';}catch{return '';}}
   function zoneMessage(){const selected=area();if(!selected)return t('select_area');if(!zones.length)return t('zone_unverified');return zones.some(z=>z?.active===true&&z.city==='Dubai'&&z.country==='AE'&&(z.label===selected||z.id===selected))?t('zone_supported'):t('zone_unsupported');}
   function syncZone(){const value=zoneMessage();$$('[data-zone-status]').forEach(el=>el.textContent=value);}
   function update(payload){
@@ -47,7 +47,7 @@
     if(target.matches('[data-terms]')&&!target.checked){update({attributes:{terms_accepted:'',terms_version:''}}).catch(()=>notify(t('error')));}
     if(target.matches('[data-delivery-date]'))loadSlots(target.closest('form'));
     if(target.matches('[data-area]')){
-      syncZone();update({attributes:{...clearReservation(),delivery_zone:target.value}}).then(()=>window.QCCart.refresh()).catch(()=>notify(t('error')));
+      syncZone();update({attributes:{...clearReservation(),'Delivery area':target.value}}).then(()=>window.QCCart.refresh()).catch(()=>notify(t('error')));
     }
   });
   document.addEventListener('submit',async event=>{
@@ -62,24 +62,41 @@
       if(mock)reservation={reservation_id:'preview-only',expires_at:date+'T00:00:00+04:00',proof:'',cart_fingerprint:fingerprint(current)};
       else reservation=await api('slots','reservations',{slot_id:id,date,zone:area(),cart_token:current.token,items:current.items.map(i=>({id:i.variant_id,quantity:i.quantity})),idempotency_key:crypto.randomUUID()});
       if(!mock&&(reservation.ok!==true||typeof reservation.reservation_id!=='string'||typeof reservation.proof!=='string'||!reservation.proof||!Number.isFinite(Date.parse(reservation.expires_at))||Date.parse(reservation.expires_at)<=Date.now()||reservation.cart_fingerprint!==fingerprint(current)))throw new Error(t('slot_expired'));
-      await update({note,attributes:{delivery_date:date,delivery_slot:id,delivery_zone:area(),delivery_reservation:reservation.reservation_id,delivery_reservation_expires:reservation.expires_at,delivery_proof:reservation.proof,delivery_cart_fingerprint:fingerprint(current),delivery_mock:mock?'true':''}});
+      await update({note,attributes:{delivery_date:date,delivery_slot:id,'Delivery area':area(),delivery_reservation:reservation.reservation_id,delivery_reservation_expires:reservation.expires_at,delivery_proof:reservation.proof,delivery_cart_fingerprint:fingerprint(current),delivery_mock:mock?'true':''}});
       await window.QCCart.refresh();notify(mock?t('slot_mock'):t('slot_saved'));
     }catch(error){status(form,error.message);notify(error.message);}finally{form.removeAttribute('aria-busy');}
   });
+  let checkoutBusy=false;
+  document.addEventListener('invalid',event=>{const terms=event.target;if(!terms.matches('[data-terms]')||!terms.closest('[data-checkout-form]'))return;event.preventDefault();const label=terms.closest('label'),form=terms.closest('form');label?.classList.add('ep-terms-highlight');status(form,t('terms_block'));terms.focus();setTimeout(()=>label?.classList.remove('ep-terms-highlight'),2000);},true);
+  const checkoutButtons=()=>$$('[data-ep-checkout],[data-checkout-form] [name=checkout]:not(input)');
+  const lockCheckout=locked=>{checkoutButtons().forEach(button=>{if(locked){if(!button.classList.contains('is-checkout-loading'))button.dataset.epWasDisabled=String(button.disabled);button.disabled=true;button.classList.add('is-checkout-loading');button.setAttribute('aria-busy','true');}else if(button.classList.contains('is-checkout-loading')){button.disabled=button.dataset.epWasDisabled==='true';button.classList.remove('is-checkout-loading');button.removeAttribute('aria-busy');delete button.dataset.epWasDisabled;}});};
   document.addEventListener('submit',async event=>{
-    const form=event.target.closest('[data-checkout-form]');if(!form||form.dataset.checkoutReady==='true')return;event.preventDefault();
-    if(!$('[data-terms]',form).checked){status(form,t('terms_block'));return;}
+    const form=event.target.closest('[data-checkout-form]');if(!form)return;event.preventDefault();if(checkoutBusy)return;
+    if(!area()){const trigger=$('ep-area-picker .ep-area-trigger');if(trigger)trigger.click();else status(form,t('select_area'));return;}
+    const terms=$('[data-terms]',form);if(!terms?.checked){status(form,t('terms_block'));const label=terms?.closest('label');label?.classList.add('ep-terms-highlight');terms?.scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});terms?.focus({preventScroll:true});setTimeout(()=>label?.classList.remove('ep-terms-highlight'),2000);return;}
     if(mock||cart.attributes?.delivery_mock==='true'){status(form,t('slot_mock'));return;}
     if(config.require_booking&&(!cart.attributes?.delivery_reservation||!cart.attributes?.delivery_proof||!Number.isFinite(Date.parse(cart.attributes.delivery_reservation_expires))||Date.parse(cart.attributes.delivery_reservation_expires)<=Date.now())){status(form,t('booking_required'));return;}
-    const button=$('[name=checkout]',form);button.disabled=true;
-    try{await update({attributes:{terms_accepted:'yes',terms_version:config.terms_version}});form.dataset.checkoutReady='true';button.disabled=false;form.requestSubmit(button);}catch(error){status(form,error.message);button.disabled=false;}
+    checkoutBusy=true;lockCheckout(true);form.setAttribute('aria-busy','true');
+    try{
+      if(window.EPCartPage?.flush)await window.EPCartPage.flush();
+      await updating.catch(()=>{});
+      const latest=window.QCCart.get(),note=$('[data-ep-rider-note]')?.value??$('[data-delivery-form] [name=note]')?.value??latest.note??'';
+      const current=await update({note,attributes:{'Delivery area':area(),'Delivery instructions':latest.attributes?.['Delivery instructions']||'',terms_accepted:'yes',terms_version:config.terms_version}});
+      if(!current.attributes?.['Delivery area'])throw Error(t('select_area'));
+      let intent=$('input[data-ep-checkout-intent]',form);if(!intent){intent=document.createElement('input');intent.type='hidden';intent.name='checkout';intent.value='1';intent.dataset.epCheckoutIntent='';form.append(intent);}
+      // Submit Shopify's original cart form after persistence. The explicit
+      // hidden checkout intent remains successful while both buttons are locked.
+      HTMLFormElement.prototype.submit.call(form);
+    }catch(error){status(form,error.message);checkoutBusy=false;lockCheckout(false);form.removeAttribute('aria-busy');}
   });
+  addEventListener('pageshow',()=>{checkoutBusy=false;lockCheckout(false);$$('[data-checkout-form]').forEach(form=>{form.removeAttribute('aria-busy');delete form.dataset.checkoutReady;});});
   document.addEventListener('qc:cart-updated',event=>{
     cart=event.detail.cart;
     if(cart.attributes?.delivery_cart_fingerprint&&cart.attributes.delivery_cart_fingerprint!==fingerprint(cart)){
       update({attributes:clearReservation()}).then(()=>window.QCCart.refresh()).then(()=>notify(t('slot_changed'))).catch(()=>notify(t('error')));
     }
     init();
+    queueMicrotask(()=>{if(checkoutBusy)lockCheckout(true);});
   });
   document.addEventListener('shopify:section:load',init);
   init();
