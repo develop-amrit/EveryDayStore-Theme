@@ -7,7 +7,7 @@ Target store: everydayyplus-8ksmkrmq.myshopify.com. Theme source: develop-amrit/
 3. **Deals:** the restored compare-at product is currently out of stock, so the stock-only Deals page can correctly remain empty. Add genuine discounts only when supported by merchant pricing data. The additional draft product asin-b0h467cs2v was deliberately excluded at the owner's request.
 4. **Catalogue hygiene:** set any remaining [TEST] products to Draft and test collections to Unpublished. Theme exclusions are a safety net. Keep all real categories, including empty ones, linked in everyday-catalogue.
 5. **Bath & Body assignments:** review conditions and catalogue tags; the reference catalogue includes diaper pants and baby products in this department. The approved image fallback consequently uses a Huggies photo. Correct the catalogue or provide an appropriate real product-photo override through GitHub. Do not alter product tags without merchant review.
-6. **Missing collection photos:** collections without a permitted source product photo retain homepage icons and Categories/listing Soon labels. Upload genuine product photos as products become available; no illustration or invented product image is needed. Seven additional collection photos were sourced for the second fix batch; 52 real collections still have no suitable source product photo. The exact outstanding handles are in D:\ep-reports\collection-images-skipped-2.json, outside the repository.
+6. **Missing collection photos:** collections without a permitted source product photo retain homepage icons and Categories/listing Soon labels. Upload genuine product photos as products become available; no illustration or invented product image is needed. Seven additional collection photos were sourced for the second fix batch; 52 real collections still have no suitable source product photo. The exact outstanding handles are in D:\ep-reports\collection-images-skipped-3.json, outside the repository.
 7. **Help menu and content:** create a Help menu with Delivery areas, Order cut-off, FAQs, Returns and Contact. Use existing real page/policy URLs, then assign the menu through the GitHub theme configuration workflow. Do not link to missing /pages/* policy URLs.
 8. **Social media:** supply the real social URLs in theme configuration through GitHub. Social icons stay hidden when URLs are blank; WhatsApp can also supply the area-picker contact link.
 9. **Currency formatting:** keep HTML and email money formats as AED {{amount}} and Show currency codes off. Visible theme prices use the dirham font; checkout, email and Shopify-hosted account pages keep AED because they do not load theme fonts.
@@ -33,3 +33,10 @@ Uploaded images take precedence. Use real product photos or permitted product cl
 | Festive promo bubble | Product/campaign photo | 200×200 |
 
 Detailed change logs, exports, plans and QA evidence remain in D:\ep-reports, outside this repository.
+
+## Fix Prompt 3 audit
+
+- All 486 products were already ACTIVE and published to Online Store at the audit; 88 had stock. No status or publication writes were necessary. The rejected extra compare-at update remains excluded.
+- One catalogue menu apostrophe was repaired; collection handles and links were preserved.
+- No further suitable product photos were found under the permitted own/child/matching-parent rules. The 52 outstanding real collection handles are listed in D:/ep-reports/collection-images-skipped-3.json. Provide matching real product photography when available; existing photos were preserved.
+- Brand tile product photos may show sold-out products as brand imagery; their vendor pages offer stocked alternatives.

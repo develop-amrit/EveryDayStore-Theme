@@ -7,7 +7,7 @@
         "subtitle": "Baby care, gifts, groceries and home essentials in one basket.",
         "eyebrow": "YOUR DUBAI EVERYDAY, SORTED",
         "button_label": "Start shopping",
-        "link": "/collections/all",
+        "link": "/collections",
         "highlight": "Free delivery over AED 99",
         "art_text": "The everyday basket",
         "badge": "Order today, delivered tomorrow",
@@ -443,34 +443,48 @@
       "type": "ep-brand-tiles",
       "settings": {
         "accessible_title": "Featured brands",
-        "exclude_tags": "homepage-hide"
+        "exclude_tags": "homepage-hide",
+        "title": "Featured brands"
       },
       "blocks": {
         "brand0": {
           "type": "tile",
           "settings": {
-            "vendor": "Aptamil",
-            "caption": "Formula for every stage",
-            "product": "",
+            "vendor": "Pampers",
+            "caption": "Diapers and pants",
+            "product": "asin-b000nvo0de",
             "collection": "all",
             "ad": false,
-            "alt": "Aptamil",
-            "link": "/collections/vendors?q=Aptamil"
+            "alt": "Pampers",
+            "link": "/collections/vendors?q=Pampers"
           }
         },
         "brand1": {
           "type": "tile",
           "settings": {
+            "vendor": "HUGGIES",
+            "caption": "Wipes and diapers",
+            "product": "asin-b00cqwe3ks",
+            "collection": "all",
+            "ad": false,
+            "alt": "Huggies",
+            "link": "/collections/vendors?q=HUGGIES",
+            "title": "Huggies"
+          }
+        },
+        "brand2": {
+          "type": "tile",
+          "settings": {
             "vendor": "Johnson's Baby",
             "caption": "Gentle bath time",
-            "product": "",
+            "product": "asin-b07p5zlst7",
             "collection": "all",
             "ad": false,
             "alt": "Johnson's Baby",
             "link": "/collections/vendors?q=Johnson's%20Baby"
           }
         },
-        "brand2": {
+        "brand3": {
           "type": "tile",
           "settings": {
             "vendor": "Lindt",
@@ -481,64 +495,13 @@
             "alt": "Lindt",
             "link": "/collections/vendors?q=Lindt"
           }
-        },
-        "brand3": {
-          "type": "tile",
-          "settings": {
-            "vendor": "Brooke Bond",
-            "caption": "Your daily cup",
-            "product": "",
-            "collection": "all",
-            "ad": false,
-            "alt": "Brooke Bond",
-            "link": "/collections/vendors?q=Brooke%20Bond"
-          }
-        },
-        "brand4": {
-          "type": "tile",
-          "settings": {
-            "vendor": "Air Wick",
-            "caption": "A fresher home",
-            "product": "",
-            "collection": "all",
-            "ad": false,
-            "alt": "Air Wick",
-            "link": "/collections/vendors?q=Air%20Wick"
-          }
-        },
-        "brand5": {
-          "type": "tile",
-          "settings": {
-            "vendor": "Whiskas",
-            "caption": "Dinner for the cat",
-            "product": "",
-            "collection": "all",
-            "ad": false,
-            "alt": "Whiskas",
-            "link": "/collections/vendors?q=Whiskas"
-          }
-        },
-        "brand6": {
-          "type": "tile",
-          "settings": {
-            "vendor": "Pilot",
-            "caption": "Pens that just write",
-            "product": "",
-            "collection": "all",
-            "ad": false,
-            "alt": "Pilot",
-            "link": "/collections/vendors?q=Pilot"
-          }
         }
       },
       "block_order": [
         "brand0",
         "brand1",
         "brand2",
-        "brand3",
-        "brand4",
-        "brand5",
-        "brand6"
+        "brand3"
       ]
     },
     "essentials": {

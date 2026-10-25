@@ -3,7 +3,7 @@
 <a href="{{ routes.root_url }}"{% if template.name == 'index' %} aria-current="page"{% endif %}>{% render 'commerce-icon', name:'home' %}{{ 'commerce.home' | t }}</a>
 <a href="{{ pages['departments'].url }}"{% if page.handle == 'departments' or template.name == 'collection' or template.name == 'product' or page.handle == 'product-preview' %} aria-current="location"{% endif %}>{% render 'commerce-icon', name:'shop' %}{{ 'commerce_experience.categories' | t }}</a>
 <a data-search-overlay href="{{ routes.search_url }}"{% if template.name == 'search' %} aria-current="page"{% endif %}>{% render 'commerce-icon', name:'search' %}{{ 'general.search.search' | t }}</a>
-<a href="{{ pages['wishlist'].url | default: routes.all_products_collection_url }}" data-feature="wishlist">{% render 'commerce-icon', name:'heart' %}{{ 'commerce_experience.wishlist' | t }}</a>
+<a href="{{ pages['wishlist'].url | default: routes.collections_url }}" data-feature="wishlist">{% render 'commerce-icon', name:'heart' %}{{ 'commerce_experience.wishlist' | t }}</a>
 <a href="{{ routes.cart_url }}"{% if template.name == 'cart' %} aria-current="page"{% endif %}>{% render 'commerce-icon', name:'cart' %}{{ 'commerce.basket' | t }}</a>
 </nav>
 {% schema %}

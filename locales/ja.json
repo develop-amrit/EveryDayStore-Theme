@@ -1105,5 +1105,16 @@
     "stock_suggestions": "In-stock suggestions",
     "no_deals": "No deals right now. Check back soon.",
     "biggest_discount": "Biggest discount"
+  },
+  "ep3": {
+    "shop_now": "Shop now ›",
+    "brand_empty": "{{ brand }} is out of stock right now",
+    "brand_help": "We'll have it back soon. Meanwhile, these are popular.",
+    "popular": "Popular right now",
+    "popular_department": "These are popular in {{ department }}",
+    "add_free": "Add __AMOUNT__ for free delivery",
+    "free_unlocked": "Free delivery unlocked ✓",
+    "added": "Added to basket",
+    "category_search": "Search {{ departments }} departments and {{ count }} categories"
   }
 }

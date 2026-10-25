@@ -15,13 +15,13 @@
     {% if settings.predictive_search_enabled %}</predictive-search>{% else %}</search-form>{% endif %}
     <div class="dc-header__actions">
 
-      <a class="dc-desktop-wishlist" href="{{ pages['wishlist'].url | default: routes.all_products_collection_url }}" data-feature="wishlist">{{ 'commerce_experience.wishlist' | t }}</a>
+      <a class="dc-desktop-wishlist" href="{{ pages['wishlist'].url | default: routes.collections_url }}" data-feature="wishlist">{{ 'commerce_experience.wishlist' | t }}</a>
       {% if shop.customer_accounts_enabled %}<a href="{{ routes.account_url }}" aria-label="{{ 'customer.account.title' | t }}">{% render 'commerce-icon', name: 'account' %}<span>{{ 'customer.account.title' | t }}</span></a>{% endif %}
       <a href="{{ routes.cart_url }}" id="cart-icon-bubble" class="dc-cart-link" aria-label="{{ 'templates.cart.cart' | t }}">{% render 'commerce-cart-indicator' %}</a>
     </div>
   </div>
   <nav class="page-width dc-header__nav" aria-label="{{ 'commerce.departments' | t }}">
-    <a href="{{ routes.all_products_collection_url }}">{{ 'commerce.shop_all' | t }}</a>
+    <a href="{{ routes.collections_url }}">{{ 'commerce.shop_all' | t }}</a>
     {% for block in section.blocks %}<a href="{{ block.settings.link }}"{% if request.path == block.settings.link %} aria-current="page"{% endif %} {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>{% endfor %}
   </nav>
 </header>

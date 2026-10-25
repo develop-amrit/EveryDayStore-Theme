@@ -14,12 +14,12 @@
       {% else %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endif %}
     {% else %}
       {% for collection in collections %}<a href="{{ collection.url }}">{{ collection.title | escape }}</a>
-      {% else %}<a href="{{ routes.all_products_collection_url }}">{{ 'qc.view_all' | t }}</a>{% endfor %}
+      {% else %}<a href="{{ routes.collections_url }}">{{ 'qc.view_all' | t }}</a>{% endfor %}
     {% endfor %}
   </nav>
 {% else %}
   <nav class="qc-top-categories" aria-label="{{ 'qc.categories' | t }}">
-    <a class="qc-category-explore" href="{{ routes.all_products_collection_url }}">
+    <a class="qc-category-explore" href="{{ routes.collections_url }}">
       {% render 'qc-icon', name: 'grid' %}<span>{{ 'qc.choose_products' | t }}</span>
     </a>
     <div class="qc-category-items">
@@ -42,7 +42,7 @@
         {% endif %}
       {% else %}
         {% for collection in collections %}<a class="qc-category-tile" href="{{ collection.url }}">{% render 'qc-category-label', category: collection, title: collection.title %}</a>
-        {% else %}<a class="qc-category-tile" href="{{ routes.all_products_collection_url }}">{% assign category_title = 'qc.categories' | t %}{% render 'qc-category-label', title: category_title %}</a>{% endfor %}
+        {% else %}<a class="qc-category-tile" href="{{ routes.collections_url }}">{% assign category_title = 'qc.categories' | t %}{% render 'qc-category-label', title: category_title %}</a>{% endfor %}
       {% endfor %}
     </div>
   </nav>
