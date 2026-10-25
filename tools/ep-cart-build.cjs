@@ -1,0 +1,2 @@
+const fs=require('fs'),esbuild=require('./ep-qa/node_modules/esbuild');
+for(const [source,target,loader]of [['tools/ep-src/ep-cart-shared.js','assets/ep-cart-shared.js','js'],['tools/ep-src/ep-cart-page.js','assets/ep-cart-page.js','js'],['tools/ep-src/ep-festive.js','assets/ep-festive.js','js'],['tools/ep-cart-festive.css','assets/ep-cart-festive.css','css']]){if(fs.existsSync(source))fs.writeFileSync(target,esbuild.transformSync(fs.readFileSync(source,'utf8'),{loader,minify:true,target:'es2020'}).code);}

@@ -1,0 +1,4 @@
+{% doc %}Delivery estimate in cents from the existing merchant fee tiers.
+@param {number} subtotal - Cart total in cents.
+{% enddoc %}
+{%- assign threshold = settings.qc_free_delivery | default: 99 | times: 100 -%}{%- assign middle = settings.qc_mid_threshold | default: 49 | times: 100 -%}{%- assign fee = settings.qc_fee_low | default: '5.99' | times: 100 | round -%}{%- if subtotal >= threshold -%}{%- assign fee = 0 -%}{%- elsif subtotal >= middle -%}{%- assign fee = settings.qc_fee_mid | default: '3.99' | times: 100 | round -%}{%- endif -%}{{- fee -}}
