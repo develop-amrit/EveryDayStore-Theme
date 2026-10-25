@@ -928,3 +928,4 @@ menu, remove sibling/vendor cross-category fallbacks, and show sparse categories
 See docs/CATEGORY_ROUTING_FIX.md and the local catalogue_organisation evidence.
 
 Fix3 1: Route shopper-facing catalogue links to /collections; preserve Deals and internal product sources. Reports stay in D:/ep-reports. Current Admin audit: 486 ACTIVE/published, 88 in stock; no publishing writes needed.
+Fix3 2: Baby Basket equal cards, reserved two-line titles, square photos, lowest eligible in-stock price and nonempty Shop now fallback; shared translations added.
