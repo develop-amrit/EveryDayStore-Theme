@@ -1,4 +1,4 @@
 {% doc %}Shared server/client delivery threshold progress.
-@param {cart} cart - Current cart.
+@param {object} cart - Current cart.
 {% enddoc %}
 {% assign threshold = settings.qc_free_delivery | default: 99 | times: 100 %}{% assign remaining = threshold | minus: cart.total_price | at_least: 0 %}{% assign progress = 100 %}{% if threshold > 0 %}{% assign progress = cart.total_price | times: 100.0 | divided_by: threshold | at_most: 100 %}{% endif %}<div class="ep-delivery-progress" data-ep-delivery-progress style="--ep-progress:{{ progress }}%"><p data-ep-until-free>{% if remaining > 0 %}{% capture amount %}{% render 'ep-money', amount: remaining %}{% endcapture %}{{ 'ep4.add_free_html' | t: amount: amount }}{% else %}{{ 'ep4.free_unlocked' | t }}{% endif %}</p><div class="ep-delivery-progress-track" role="progressbar" aria-label="{{ 'qc.free' | t }}" aria-valuenow="{{ progress | round }}" aria-valuemin="0" aria-valuemax="100"><span></span></div></div>
