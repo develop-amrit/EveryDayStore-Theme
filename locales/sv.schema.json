@@ -3637,5 +3637,16 @@
     "delivery_tomorrow": "Delivery tomorrow",
     "to": "to",
     "stock_suggestions": "In-stock suggestions"
+  },
+  "ep4": {
+    "festive_section": "Festive Store hero",
+    "payment_section": "Payment options",
+    "show_countdown": "Show upcoming event countdown",
+    "event": "Event",
+    "event_date": "Event date",
+    "secure_text": "Secure checkout text",
+    "prices_text": "Prices and VAT text",
+    "contact_email": "Contact email",
+    "in_stock_brands": "Show only brands with stock"
   }
 }

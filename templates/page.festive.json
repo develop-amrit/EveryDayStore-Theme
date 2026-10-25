@@ -1,0 +1,266 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ep-festive-hero",
+      "settings": {
+        "title": "Festive Store",
+        "subtitle": "Gifts, sweets and home décor for the season",
+        "button_label": "Shop gifts",
+        "link": "/collections/gifting",
+        "collection": "gifting",
+        "show_countdown": true
+      },
+      "blocks": {
+        "diwali": {
+          "type": "event",
+          "settings": {
+            "name": "Diwali",
+            "date": "2026-11-08"
+          }
+        },
+        "national": {
+          "type": "event",
+          "settings": {
+            "name": "UAE National Day",
+            "date": "2026-12-02"
+          }
+        }
+      },
+      "block_order": [
+        "diwali",
+        "national"
+      ]
+    },
+    "seasonal": {
+      "type": "ep-themed-grid",
+      "settings": {
+        "title": "Shop the season",
+        "subtitle": "Gifts, treats and home touches for Diwali and the season ahead",
+        "background": "#FFFFFF",
+        "anchor": "festive",
+        "exclude_tags": "homepage-hide",
+        "see_all_link": ""
+      },
+      "blocks": {
+        "tile0": {
+          "type": "tile",
+          "settings": {
+            "title": "Chocolates & treats",
+            "collection": "gifting-chocolates-and-treats",
+            "link": "/collections/gifting-chocolates-and-treats"
+          }
+        },
+        "tile1": {
+          "type": "tile",
+          "settings": {
+            "title": "Gift hampers",
+            "collection": "gifting-hampers-and-gift-sets",
+            "link": "/collections/gifting-hampers-and-gift-sets"
+          }
+        },
+        "tile2": {
+          "type": "tile",
+          "settings": {
+            "title": "Home fragrance",
+            "collection": "home-home-fragrance",
+            "link": "/collections/home-home-fragrance"
+          }
+        },
+        "tile3": {
+          "type": "tile",
+          "settings": {
+            "title": "Cleaning before guests",
+            "collection": "home-cleaning-and-laundry",
+            "link": "/collections/home-cleaning-and-laundry"
+          }
+        },
+        "tile4": {
+          "type": "tile",
+          "settings": {
+            "title": "Snacks for guests",
+            "collection": "grocery-snacks-and-confectionery",
+            "link": "/collections/grocery-snacks-and-confectionery"
+          }
+        },
+        "tile5": {
+          "type": "tile",
+          "settings": {
+            "title": "Tea & coffee",
+            "collection": "grocery-beverages-tea-and-coffee",
+            "link": "/collections/grocery-beverages-tea-and-coffee"
+          }
+        },
+        "strip": {
+          "type": "strip",
+          "settings": {
+            "title": "Gifting edit",
+            "subtitle": "Treats and thoughtful finds, delivered tomorrow",
+            "collection": "gifting",
+            "link": "/collections/gifting"
+          }
+        }
+      },
+      "block_order": [
+        "tile0",
+        "tile1",
+        "tile2",
+        "tile3",
+        "tile4",
+        "tile5",
+        "strip"
+      ]
+    },
+    "hampers": {
+      "type": "ep-product-rail",
+      "settings": {
+        "title": "Gift hampers & sets",
+        "collection": "gifting-hampers-and-gift-sets",
+        "products_to_show": 10,
+        "card_variant": "compact",
+        "see_all_link": "/collections/gifting-hampers-and-gift-sets",
+        "exclude_tags": "homepage-hide"
+      }
+    },
+    "chocolates": {
+      "type": "ep-product-rail",
+      "settings": {
+        "title": "Chocolates & sweets",
+        "collection": "gifting-chocolates-and-treats",
+        "products_to_show": 10,
+        "card_variant": "compact",
+        "see_all_link": "/collections/gifting-chocolates-and-treats",
+        "exclude_tags": "homepage-hide"
+      }
+    },
+    "hosting": {
+      "type": "ep-product-rail",
+      "settings": {
+        "title": "Host essentials",
+        "collection": "grocery-snacks-and-confectionery",
+        "products_to_show": 10,
+        "card_variant": "compact",
+        "see_all_link": "/collections/grocery-snacks-and-confectionery",
+        "exclude_tags": "homepage-hide"
+      }
+    },
+    "brands": {
+      "type": "ep-brand-tiles",
+      "settings": {
+        "accessible_title": "Featured brands",
+        "exclude_tags": "homepage-hide",
+        "title": "Featured brands",
+        "in_stock_only": true
+      },
+      "blocks": {
+        "brand0": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Pampers",
+            "caption": "Diapers and pants",
+            "product": "asin-b000nvo0de",
+            "collection": "all",
+            "ad": false,
+            "alt": "Pampers",
+            "link": "/collections/vendors?q=Pampers"
+          }
+        },
+        "brand1": {
+          "type": "tile",
+          "settings": {
+            "vendor": "HUGGIES",
+            "caption": "Wipes and diapers",
+            "product": "asin-b00cqwe3ks",
+            "collection": "all",
+            "ad": false,
+            "alt": "Huggies",
+            "link": "/collections/vendors?q=HUGGIES",
+            "title": "Huggies"
+          }
+        },
+        "brand2": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Johnson's Baby",
+            "caption": "Gentle bath time",
+            "product": "asin-b07p5zlst7",
+            "collection": "all",
+            "ad": false,
+            "alt": "Johnson's Baby",
+            "link": "/collections/vendors?q=Johnson's%20Baby"
+          }
+        },
+        "brand3": {
+          "type": "tile",
+          "settings": {
+            "vendor": "Lindt",
+            "caption": "Chocolate for gifting",
+            "product": "asin-b0198hm8ic",
+            "collection": "all",
+            "ad": false,
+            "alt": "Lindt",
+            "link": "/collections/vendors?q=Lindt"
+          }
+        }
+      },
+      "block_order": [
+        "brand0",
+        "brand1",
+        "brand2",
+        "brand3"
+      ]
+    },
+    "trust": {
+      "type": "qc-trust",
+      "blocks": {
+        "b0": {
+          "type": "item",
+          "settings": {
+            "heading": "Next-day delivery",
+            "text": "Made for your Dubai routine",
+            "icon": "truck"
+          }
+        },
+        "b1": {
+          "type": "item",
+          "settings": {
+            "heading": "Quality guaranteed",
+            "text": "Carefully selected essentials",
+            "icon": "leaf"
+          }
+        },
+        "b2": {
+          "type": "item",
+          "settings": {
+            "heading": "Easy returns",
+            "text": "Support when you need it",
+            "icon": "check"
+          }
+        },
+        "b3": {
+          "type": "item",
+          "settings": {
+            "heading": "Secure payments",
+            "text": "Checkout with confidence",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "seasonal",
+    "hampers",
+    "chocolates",
+    "hosting",
+    "brands",
+    "trust"
+  ]
+}

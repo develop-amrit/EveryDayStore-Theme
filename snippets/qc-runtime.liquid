@@ -9,3 +9,5 @@
 
 
 <script type="application/json" id="ep-labels">{"added":{{ 'ep3.added' | t | json }},"stock_limit":{{ 'ep.stock_limit' | t: count: '__COUNT__' | json }},"error":{{ 'ep.error' | t | json }},"search_for":{{ 'ep.search_for' | t: term: '__TERM__' | json }}}</script>
+
+<script type="application/json" id="ep-cart-settings">{"threshold":{{ settings.qc_free_delivery | default: 99 | times: 100 | json }},"middle":{{ settings.qc_mid_threshold | default: 49 | times: 100 | json }},"feeLow":{{ settings.qc_fee_low | default: '5.99' | times: 100 | round | json }},"feeMiddle":{{ settings.qc_fee_mid | default: '3.99' | times: 100 | round | json }},"text":{"items":{{ 'ep4.items' | t: count: '__COUNT__' | json }},"itemOne":{{ 'ep4.item_one' | t: count: '__COUNT__' | json }},"addFree":{{ 'ep4.add_free' | t | json }},"unlocked":{{ 'ep4.free_unlocked' | t | json }},"freeShort":{{ 'ep4.free_short' | t | json }}}}</script>

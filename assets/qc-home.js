@@ -76,7 +76,7 @@
     const key=previouslyFocused?.dataset.lineKey;
     const nextCart=await request('cart.js');
     let html=sections?.['qc-cart'];
-    if(!html){const response=await fetch(root+'?sections=qc-cart',{headers:{Accept:'application/json'}});if(!response.ok)throw new Error(labels.error);html=(await response.json())['qc-cart'];}
+    if(!html){const response=await fetch(location.pathname+'?sections=qc-cart');if(!response.ok)throw new Error(labels.error);html=(await response.json())['qc-cart'];}
     if(!html)throw new Error(labels.error);
     const parsed=new DOMParser().parseFromString(html,'text/html');
     const rendered=$('[data-cart-render]',parsed);
@@ -84,7 +84,7 @@
     if(sequence!==refreshSequence)return;
     cart=nextCart;
     $$('[data-cart-host]').forEach(host=>host.replaceChildren(rendered.cloneNode(true)));
-    document.dispatchEvent(new CustomEvent('qc:cart-updated',{detail:{cart}}));
+    document.dispatchEvent(new CustomEvent('qc:cart-updated',{detail:{cart,cartView:parsed.querySelector('[data-ep-cart-page-render]')}}));
     if(typeof publish==='function'&&typeof PUB_SUB_EVENTS!=='undefined')publish(PUB_SUB_EVENTS.cartUpdate,{source:'qc-cart',cartData:cart});
     syncCards();
     if(key && cartDialog.open){const replacement=$$('[data-line-key]',cartDialog).find(n=>n.dataset.lineKey===key);(replacement||$('[data-dialog-close]',cartDialog)).focus();}
@@ -95,7 +95,7 @@
     busy=true;const locked=$$('[data-add]:not(:disabled),[data-line-key]:not(:disabled)');locked.forEach(n=>n.disabled=true);let committed=false;const card=trigger?.closest('.qc-card');
     card?.setAttribute('aria-busy','true');cartDialog.setAttribute('aria-busy','true');
     try {
-      const data=await request(path,{method:'POST',body:JSON.stringify({...payload,sections:['qc-cart'],sections_url:root})});
+      const data=await request(path,{method:'POST',body:JSON.stringify({...payload,sections:['qc-cart'],sections_url:location.pathname})});
       committed=true;
       await refresh(data.sections);
       if(variantDialog.open)close(variantDialog);
@@ -201,7 +201,7 @@
     $$('[data-countdown]').forEach(node=>{const end=Date.parse(node.dataset.countdown);if(!Number.isFinite(end)){node.hidden=true;return;}let remaining=Math.max(0,Math.floor((end-Date.now())/1000));const span=$('span',node);if(!remaining){span.textContent=labels.ended;return;}const d=Math.floor(remaining/86400),h=Math.floor(remaining%86400/3600),m=Math.floor(remaining%3600/60),s=remaining%60;span.textContent=`${d}${labels.days} ${h}${labels.hours} ${m}${labels.time_minutes} ${s}${labels.seconds}`;});
   },1000);
   window.QCDialogs={open,close};
-  window.QCCart={change:(id,quantity,options={})=>mutate('cart/change.js',{id,quantity},options),get:()=>cart,add:(items,options={})=>mutate('cart/add.js',{items},options),refresh,open:trigger=>open(cartDialog,trigger)};
+  window.QCCart={isBusy:()=>busy,update:(payload,options={})=>mutate('cart/update.js',payload,options),change:(id,quantity,options={})=>mutate('cart/change.js',{id,quantity},options),get:()=>cart,add:(items,options={})=>mutate('cart/add.js',{items},options),refresh,open:trigger=>open(cartDialog,trigger)};
   document.addEventListener('qc:content',e=>init(e.detail?.scope||document));
   document.addEventListener('shopify:section:load',e=>init(e.target));
   document.addEventListener('shopify:section:unload',e=>observers.get(e.target)?.disconnect());

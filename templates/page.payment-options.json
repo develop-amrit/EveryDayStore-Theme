@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "ep-payment-options",
+      "settings": {
+        "title": "Ways to pay",
+        "secure_text": "Payments are processed by Shopify's secure checkout. We never see or store your full card details.",
+        "prices_text": "All prices are in AED.",
+        "contact_email": "wasanaryan123@gmail.com"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,4 +1,4 @@
 {% doc %}Designed parent-category illustration for an empty collection.
 @param {boolean} [show_badge] - Optional badge visibility.
 @param {string} [icon] - Parent outline icon.
-{% enddoc %}<span class="ep-soon-art" aria-hidden="true">{% assign category_icon = icon | default: 'basket' %}{% render 'ep-icon', name: category_icon %}</span>{% unless show_badge == false %}{% unless template.name == 'index' %}<span class="ep-soon-pill">{{ 'ep.soon' | t }}</span>{% endunless %}{% endunless %}
+{% enddoc %}<span class="ep-soon-art" aria-hidden="true">{% assign category_icon = icon | default: 'basket' %}{% render 'ep-icon', name: category_icon %}</span>{% unless show_badge == false %}{% unless template.name == 'index' or template.suffix == 'festive' %}<span class="ep-soon-pill">{{ 'ep.soon' | t }}</span>{% endunless %}{% endunless %}

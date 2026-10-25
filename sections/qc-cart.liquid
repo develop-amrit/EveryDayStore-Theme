@@ -1,4 +1,4 @@
-{% render 'qc-cart-contents' %}
+{% render 'qc-cart-contents' %}{% if request.page_type == 'cart' %}{% render 'ep-cart-view' %}{% endif %}
 {% schema %}
 {
   "name": "Cart content",

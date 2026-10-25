@@ -36,7 +36,8 @@
         "subtitle": "Gifts, treats and home touches for Diwali and the season ahead",
         "background": "#FFFFFF",
         "anchor": "festive",
-        "exclude_tags": "homepage-hide"
+        "exclude_tags": "homepage-hide",
+        "see_all_link": "/pages/festive"
       },
       "blocks": {
         "tile0": {
@@ -93,7 +94,7 @@
             "title": "Gifting edit",
             "subtitle": "Treats and thoughtful finds, delivered tomorrow",
             "collection": "gifting",
-            "link": "/collections/gifting"
+            "link": "/pages/festive"
           }
         }
       },
@@ -720,7 +721,8 @@
         "subtitle": "Snacks, sweets and home essentials for the long weekend",
         "background": "#FFFFFF",
         "anchor": "national-day",
-        "exclude_tags": "homepage-hide"
+        "exclude_tags": "homepage-hide",
+        "see_all_link": "/pages/festive"
       },
       "blocks": {
         "tile0": {
@@ -777,7 +779,7 @@
             "title": "Hosting made easy",
             "subtitle": "Home essentials for the long weekend",
             "collection": "home",
-            "link": "/collections/home"
+            "link": "/pages/festive"
           }
         }
       },
