@@ -76,7 +76,7 @@
     const key=previouslyFocused?.dataset.lineKey;
     const nextCart=await request('cart.js');
     let html=sections?.['qc-cart'];
-    if(!html){const response=await fetch(location.pathname+'?sections=qc-cart',{headers:{Accept:'application/json'}});if(!response.ok)throw new Error(labels.error);html=(await response.json())['qc-cart'];}
+    if(!html){const response=await fetch(location.pathname+'?sections=qc-cart');if(!response.ok)throw new Error(labels.error);html=(await response.json())['qc-cart'];}
     if(!html)throw new Error(labels.error);
     const parsed=new DOMParser().parseFromString(html,'text/html');
     const rendered=$('[data-cart-render]',parsed);
