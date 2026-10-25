@@ -942,3 +942,4 @@ Fix3 5 refinement: Global suggestions hydrate from Shopify's best-selling sort w
 Fix3 8: Verified every collection title and all three menu depths after the single apostrophe repair; no remaining audited mojibake. Menu item IDs, nesting, resource links and handles retained.
 Fix3 3 label refinement: Merchant-editable brand display title preserves Huggies casing while using the actual HUGGIES vendor query and own product photo.
 Fix3 4 follow-up: Search filter-empty state has a visible reset link preserving query and stock; only shopper filters trigger it. Vendor resets verified to preserve the vendor query.
+Fix3 2 visual correction: Remove inherited percentage card widths inside the new three-column grid and override legacy span display/padding. Photos and titles now fill each equal card; From sits above the price. QA now checks tile widths, not only equal heights.
