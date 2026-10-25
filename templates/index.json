@@ -468,7 +468,8 @@
             "collection": "all",
             "ad": false,
             "alt": "HUGGIES",
-            "link": "/collections/vendors?q=HUGGIES"
+            "link": "/collections/vendors?q=HUGGIES",
+            "title": "Huggies"
           }
         },
         "brand2": {

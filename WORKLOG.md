@@ -940,3 +940,4 @@ Fix3 10: Re-read all 486 products: zero Draft, zero ACTIVE unpublished; 486 ACTI
 Fix3 11 follow-up: No-JS filter resets retain availability, Baby Basket uses minimum across all available variants; preview suite passes 19 component checks with zero console/page errors.
 Fix3 5 refinement: Global suggestions hydrate from Shopify's best-selling sort while retaining server fallback products and department picks. Replace only equal card counts to preserve geometry, and never replace a focused card.
 Fix3 8: Verified every collection title and all three menu depths after the single apostrophe repair; no remaining audited mojibake. Menu item IDs, nesting, resource links and handles retained.
+Fix3 3 label refinement: Merchant-editable brand display title preserves Huggies casing while using the actual HUGGIES vendor query and own product photo.
