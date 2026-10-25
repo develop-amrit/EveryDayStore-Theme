@@ -36,7 +36,7 @@ Collection navigation from the merchant's three-level catalogue menu.
       {% for department in menu.links %}
         <a class="qc-sidebar-direct" href="{{ department.url }}"{% if department.url == current_collection.url %} aria-current="page"{% endif %}>{% render 'qc-category-label', category: department.object, title: department.title %}</a>
       {% else %}
-        <a class="qc-sidebar-direct" href="{{ routes.all_products_collection_url }}"{% if current_collection.handle == 'all' %} aria-current="page"{% endif %}>{% render 'qc-icon', name: 'grid' %}{{ 'qc.view_all' | t }}</a>
+        <a class="qc-sidebar-direct" href="{{ routes.collections_url }}"{% if current_collection.handle == 'all' %} aria-current="page"{% endif %}>{% render 'qc-icon', name: 'grid' %}{{ 'qc.view_all' | t }}</a>
       {% endfor %}
     </div>
     {% if active_department != blank and active_department.links != blank %}</details>{% endif %}

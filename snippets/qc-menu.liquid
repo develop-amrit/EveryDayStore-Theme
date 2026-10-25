@@ -3,7 +3,7 @@
 {% if mobile %}
   <nav class="qc-menu-tree" aria-label="{{ 'qc.categories' | t }}">
     {% for link in settings.qc_catalog_menu.links %}{% assign ep_link_handle = link.url | split: '/' | last | split: '?' | first %}{% capture ep_visible %}{% render 'ep-content-visible', item: link.object, kind: 'collection', title: link.title, handle: ep_link_handle %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}
-      {% if request.page_type != 'index' and link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
+      {% if request.page_type != 'index' and link.url == routes.collections_url %}{% continue %}{% endif %}
       {% if link.links != blank %}
         <details><summary>{{ link.title | escape }}</summary><div class="qc-mega-panel">
           <a href="{{ link.url }}">{{ 'qc.view_all' | t }} {{ link.title | escape }}</a>
@@ -14,17 +14,17 @@
       {% else %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endif %}
     {% else %}
       {% for collection in collections %}<a href="{{ collection.url }}">{{ collection.title | escape }}</a>
-      {% else %}<a href="{{ routes.all_products_collection_url }}">{{ 'qc.view_all' | t }}</a>{% endfor %}
+      {% else %}<a href="{{ routes.collections_url }}">{{ 'qc.view_all' | t }}</a>{% endfor %}
     {% endfor %}
   </nav>
 {% else %}
   <nav class="qc-top-categories" aria-label="{{ 'qc.categories' | t }}">
-    <a class="qc-category-explore" href="{{ routes.all_products_collection_url }}">
+    <a class="qc-category-explore" href="{{ routes.collections_url }}">
       {% render 'qc-icon', name: 'grid' %}<span>{{ 'qc.choose_products' | t }}</span>
     </a>
     <div class="qc-category-items">
       {% for link in settings.qc_catalog_menu.links %}{% assign ep_link_handle = link.url | split: '/' | last | split: '?' | first %}{% capture ep_visible %}{% render 'ep-content-visible', item: link.object, kind: 'collection', title: link.title, handle: ep_link_handle %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}
-        {% if request.page_type != 'index' and link.url == routes.all_products_collection_url %}{% continue %}{% endif %}
+        {% if request.page_type != 'index' and link.url == routes.collections_url %}{% continue %}{% endif %}
         {% if link.links != blank %}
           <details class="qc-category-node"{% if link.active or link.child_active %} data-current-department{% endif %}>
             <summary><span class="qc-nav-icon" aria-hidden="true">{% render 'qc-category-icon', handle: link.object.handle %}</span><span class="qc-category-name">{{ link.title | escape }}</span></summary>
@@ -42,7 +42,7 @@
         {% endif %}
       {% else %}
         {% for collection in collections %}<a class="qc-category-tile" href="{{ collection.url }}">{% render 'qc-category-label', category: collection, title: collection.title %}</a>
-        {% else %}<a class="qc-category-tile" href="{{ routes.all_products_collection_url }}">{% assign category_title = 'qc.categories' | t %}{% render 'qc-category-label', title: category_title %}</a>{% endfor %}
+        {% else %}<a class="qc-category-tile" href="{{ routes.collections_url }}">{% assign category_title = 'qc.categories' | t %}{% render 'qc-category-label', title: category_title %}</a>{% endfor %}
       {% endfor %}
     </div>
   </nav>

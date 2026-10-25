@@ -5,7 +5,7 @@ Renders collection navigation and available product-type filters.
 {% enddoc %}
 <aside class="dc-category-nav" aria-label="{{ 'commerce_mapping.category_navigation' | t }}">
   <nav>
-    <a class="dc-category-nav__all" href="{{ routes.all_products_collection_url }}"{% if category.handle == 'all' %} aria-current="page"{% endif %}>{{ 'commerce.shop_all' | t }}</a>
+    <a class="dc-category-nav__all" href="{{ routes.collections_url }}"{% if category.handle == 'all' %} aria-current="page"{% endif %}>{{ 'commerce.shop_all' | t }}</a>
     {% if menu.links.size > 0 %}
       {% for link in menu.links %}
         <details{% if link.active or link.child_active %} open{% endif %}><summary><a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title | escape }}</a></summary>
