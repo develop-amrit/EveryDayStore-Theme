@@ -8,14 +8,16 @@
       "type": "qc-recommendations",
       "settings": {
         "heading": "Similar products",
-        "intent": "related"
+        "intent": "related",
+        "fallback_collection": "all"
       }
     },
     "complementary": {
       "type": "qc-recommendations",
       "settings": {
         "heading": "Make it a useful little bundle",
-        "intent": "complementary"
+        "intent": "complementary",
+        "fallback_collection": "all"
       }
     },
     "reviews": {

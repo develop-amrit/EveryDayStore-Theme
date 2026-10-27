@@ -308,7 +308,7 @@
         "group4": {
           "type": "group",
           "settings": {
-            "heading": "Home",
+            "heading": "Home Products",
             "menu": "everyday-catalogue",
             "department": "home",
             "link": "/collections/home",
@@ -340,11 +340,11 @@
         }
       },
       "block_order": [
-        "group1",
-        "group2",
         "group0",
-        "group3",
         "group4",
+        "group1",
+        "group3",
+        "group2",
         "group5",
         "group6"
       ]
@@ -424,8 +424,9 @@
           "settings": {
             "label": "Deals",
             "collection": "all",
-            "tint": "brand",
-            "link": "/collections/all?view=ep-deals"
+            "tint": "cream",
+            "link": "/collections/all?view=ep-deals",
+            "image": "shopify://shop_images/ep-category-ep-deals-art-v6.webp"
           }
         }
       },
@@ -623,13 +624,6 @@
             "answer": "<p>Order today for next-day delivery in supported Dubai areas. Your available delivery date is confirmed during checkout.</p>"
           }
         },
-        "b1": {
-          "type": "question",
-          "settings": {
-            "question": "What is the order cut-off time?",
-            "answer": "<p>Check the delivery information shown at checkout for the current cut-off. Orders received after the applicable cut-off move to the next available delivery day.</p>"
-          }
-        },
         "b2": {
           "type": "question",
           "settings": {
@@ -641,7 +635,7 @@
           "type": "question",
           "settings": {
             "question": "Is Cash on Delivery available?",
-            "answer": "<p>Cash on Delivery is available only when it is offered as a payment method at checkout. Otherwise, choose one of the secure online payment methods shown there.</p>"
+            "answer": "<p>Yes. Pay in cash or by card to the rider on delivery.</p>"
           }
         },
         "b4": {
@@ -656,25 +650,17 @@
           "type": "question",
           "settings": {
             "question": "What if something is not right with my order?",
-            "answer": "<p>Please contact our support team using the contact page with your order number and details. Our published returns policy explains eligibility and the next steps.</p>"
-          }
-        },
-        "bnpl": {
-          "type": "question",
-          "settings": {
-            "question": "Can I pay in instalments?",
-            "answer": "<p>Eligible instalment options are offered only if an approved provider is available at checkout. Provider eligibility and terms apply.</p>"
+            "answer": "<p>Contact us so we can help with your order.</p>",
+            "refund_link": true
           }
         }
       },
       "block_order": [
         "b0",
-        "b1",
         "b2",
         "b3",
         "b4",
-        "b5",
-        "bnpl"
+        "b5"
       ],
       "settings": {}
     },
@@ -838,7 +824,7 @@
         "category3": {
           "type": "category",
           "settings": {
-            "title": "Home",
+            "title": "Home Products",
             "collection": "home",
             "tint": "lilac",
             "icon": "home"
@@ -864,10 +850,10 @@
         }
       },
       "block_order": [
-        "category0",
         "category1",
-        "category2",
         "category3",
+        "category2",
+        "category0",
         "category4",
         "category5"
       ]
