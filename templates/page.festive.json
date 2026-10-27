@@ -8,7 +8,8 @@
         "button_label": "Shop gifts",
         "link": "/collections/gifting",
         "collection": "gifting",
-        "show_countdown": true
+        "show_countdown": true,
+        "image": "shopify://shop_images/ep-category-ep-festive-art-v6.webp"
       },
       "blocks": {
         "diwali": {
@@ -149,7 +150,17 @@
         "accessible_title": "Featured brands",
         "exclude_tags": "homepage-hide",
         "title": "Featured brands",
-        "in_stock_only": true
+        "in_stock_only": true,
+        "festive_only": true,
+        "festive_collections": [
+          "gifting",
+          "gifting-chocolates-and-treats",
+          "gifting-hampers-and-gift-sets",
+          "home-home-fragrance",
+          "home-cleaning-and-laundry",
+          "grocery-snacks-and-confectionery",
+          "grocery-beverages-tea-and-coffee"
+        ]
       },
       "blocks": {
         "brand0": {

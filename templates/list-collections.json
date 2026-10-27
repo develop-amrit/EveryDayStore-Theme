@@ -55,7 +55,7 @@
         "group4": {
           "type": "group",
           "settings": {
-            "heading": "Home",
+            "heading": "Home Products",
             "menu": "everyday-catalogue",
             "department": "home",
             "link": "/collections/home",
@@ -87,11 +87,11 @@
         }
       },
       "block_order": [
-        "group1",
-        "group2",
         "group0",
-        "group3",
         "group4",
+        "group1",
+        "group3",
+        "group2",
         "group5",
         "group6"
       ]

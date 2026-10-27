@@ -1183,5 +1183,24 @@
     "festive_store": "Festive Store",
     "vat_added": "VAT is added at checkout",
     "item_one": "{{ count }} item"
+  },
+  "ep6": {
+    "carousel": "Carousel",
+    "grocery_brands": "Grocery brands",
+    "slide_number": "Slide {{ number }} of {{ count }}",
+    "pause": "Pause slideshow",
+    "play": "Play slideshow",
+    "products": "{{ count }} products",
+    "shop_brand": "Shop {{ vendor }} ›",
+    "grocery_experience": "Grocery slideshow and free-scroll rail",
+    "brand_slide": "Brand slide",
+    "vendor": "Vendor name",
+    "refund_link": "Link to cancellation and refund policy",
+    "fallback_collection": "Fallback collection",
+    "festive_only": "Use only festive collection brands",
+    "festive_collections": "Festive collections",
+    "days": "days",
+    "hours": "hrs",
+    "minutes": "min"
   }
 }

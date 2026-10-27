@@ -1,13 +1,13 @@
 <section class="ep-categories-page ep-wrap color-{{ section.settings.color_scheme }}" aria-labelledby="ep-categories-title">
 <h1 class="visually-hidden" id="ep-categories-title">{{ 'epc.categories' | t }}</h1>
 {% assign category_count = 0 %}{% assign department_count = 0 %}{% for group in section.blocks %}{% if group.type == 'group' %}{% assign department_count = department_count | plus: 1 %}{% for parent in group.settings.menu.links %}{% if parent.object.id == group.settings.department.id %}{% assign category_count = category_count | plus: parent.links.size %}{% endif %}{% endfor %}{% endif %}{% endfor %}<button class="ep-category-search" type="button" data-ep-category-search>{% render 'ep-icon', name: 'search' %}<span>{{ 'ep3.category_search' | t: departments: department_count, count: category_count }}</span></button>
-{% for block in section.blocks %}{% if block.type == 'group' %}{% capture ep_visible %}{% render 'ep-content-visible', item: block.settings.department, kind: 'collection', title: block.settings.heading, hide_prefix: section.settings.hide_title_prefix, hidden_handles: section.settings.hidden_collection_handles %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}
+{% assign rendered_groups = 0 %}{% for block in section.blocks %}{% if block.type == 'group' %}{% capture ep_visible %}{% render 'ep-content-visible', item: block.settings.department, kind: 'collection', title: block.settings.heading, hide_prefix: section.settings.hide_title_prefix, hidden_handles: section.settings.hidden_collection_handles %}{% endcapture %}{% if ep_visible == '0' %}{% continue %}{% endif %}
   {% assign group_links = block.settings.menu.links %}
   {% if block.settings.department != blank %}{% assign group_links = blank %}{% for parent in block.settings.menu.links %}{% if parent.object.id == block.settings.department.id %}{% assign group_links = parent.links %}{% break %}{% endif %}{% endfor %}{% endif %}
   {% if block.settings.department != blank or group_links != blank %}<section class="ep-directory-group" aria-labelledby="ep-department-{{ block.id }}" {{ block.shopify_attributes }}>
     <div class="ep-directory-heading"><h2 id="ep-department-{{ block.id }}">{{ block.settings.heading | escape }}</h2>
     {% assign department_url = block.settings.department.url | default: block.settings.link %}{% if department_url != blank %}<a class="ep-department-all" href="{% render 'ep-stock-url', url: department_url %}">{{ 'epcf.see_all' | t }} ›</a>{% endif %}</div>
-    <div class="ep-tiles">{% for pass in (1..2) %}{% for link in group_links %}{% assign show_tile = false %}{% if pass == 1 %}{% if link.object.all_products_count > 0 %}{% assign show_tile = true %}{% endif %}{% else %}{% unless link.object.all_products_count > 0 %}{% assign show_tile = true %}{% endunless %}{% endif %}{% if show_tile %}{% render 'ep-category-menu-tile', link: link, section: section, group_heading: block.settings.heading, icon: block.settings.icon, tint: block.settings.tint %}{% endif %}{% endfor %}{% endfor %}</div>
+    {% assign eager_tiles = false %}{% if rendered_groups < 2 %}{% assign eager_tiles = true %}{% endif %}{% assign rendered_groups = rendered_groups | plus: 1 %}{% assign grocery_experience = false %}{% if block.settings.department.handle == 'grocery' and block.settings.grocery_experience %}{% assign grocery_experience = true %}{% render 'ep-grocery-brands', department: block.settings.department, links: group_links, section: section %}{% endif %}<div class="ep-tiles{% if grocery_experience %} ep-grocery-categories{% endif %}"{% if grocery_experience %} data-grocery-rail{% endif %}>{% for pass in (1..2) %}{% for link in group_links %}{% assign show_tile = false %}{% if pass == 1 %}{% if link.object.all_products_count > 0 %}{% assign show_tile = true %}{% endif %}{% else %}{% unless link.object.all_products_count > 0 %}{% assign show_tile = true %}{% endunless %}{% endif %}{% if show_tile %}{% render 'ep-category-menu-tile', link: link, section: section, group_heading: block.settings.heading, icon: block.settings.icon, tint: block.settings.tint, eager: eager_tiles %}{% endif %}{% endfor %}{% endfor %}</div>
   </section>{% endif %}
 {% endif %}{% endfor %}
 </section>
@@ -164,6 +164,12 @@
             }
           ],
           "default": "cream"
+        },
+        {
+          "type": "checkbox",
+          "id": "grocery_experience",
+          "label": "t:ep6.grocery_experience",
+          "default": true
         }
       ]
     },
@@ -187,6 +193,23 @@
           "label": "t:ep.image"
         }
       ]
+    },
+    {
+      "type": "brand_slide",
+      "name": "t:ep6.brand_slide",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "text",
+          "id": "vendor",
+          "label": "t:ep6.vendor"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:ep.image"
+        }
+      ]
     }
   ],
   "presets": [
@@ -196,34 +219,34 @@
         {
           "type": "group",
           "settings": {
-            "heading": "Baby Products",
-            "menu": "everyday-catalogue",
-            "department": "baby-products",
-            "link": "/collections/baby-products",
-            "icon": "bottle",
-            "tint": "blue"
-          }
-        },
-        {
-          "type": "group",
-          "settings": {
-            "heading": "Gifting",
-            "menu": "everyday-catalogue",
-            "department": "gifting",
-            "link": "/collections/gifting",
-            "icon": "gift",
-            "tint": "cream"
-          }
-        },
-        {
-          "type": "group",
-          "settings": {
             "heading": "Grocery",
             "menu": "everyday-catalogue",
             "department": "grocery",
             "link": "/collections/grocery",
             "icon": "basket",
             "tint": "green"
+          }
+        },
+        {
+          "type": "group",
+          "settings": {
+            "heading": "Home Products",
+            "menu": "everyday-catalogue",
+            "department": "home",
+            "link": "/collections/home",
+            "icon": "home",
+            "tint": "lilac"
+          }
+        },
+        {
+          "type": "group",
+          "settings": {
+            "heading": "Baby Products",
+            "menu": "everyday-catalogue",
+            "department": "baby-products",
+            "link": "/collections/baby-products",
+            "icon": "bottle",
+            "tint": "blue"
           }
         },
         {
@@ -240,12 +263,12 @@
         {
           "type": "group",
           "settings": {
-            "heading": "Home",
+            "heading": "Gifting",
             "menu": "everyday-catalogue",
-            "department": "home",
-            "link": "/collections/home",
-            "icon": "home",
-            "tint": "lilac"
+            "department": "gifting",
+            "link": "/collections/gifting",
+            "icon": "gift",
+            "tint": "cream"
           }
         },
         {

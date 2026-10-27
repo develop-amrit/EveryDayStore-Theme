@@ -10,4 +10,5 @@
     {%- endunless -%}
   {%- endif -%}
 {%- endif -%}
+{%- if stock_url contains '/search?' -%}{%- unless stock_url contains 'options[fields]' or stock_url contains 'options%5Bfields%5D' -%}{%- assign stock_url = stock_url | append: '&options[fields]=title,vendor,product_type,tag&options[prefix]=last' -%}{%- endunless -%}{%- endif -%}
 {{- stock_url | escape -}}

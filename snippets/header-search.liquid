@@ -61,7 +61,7 @@
                 autocapitalize="off"
                 spellcheck="false"
               {%- endif -%}
-            >
+            ><input type="hidden" name="options[fields]" value="title,vendor,product_type,tag"><input type="hidden" name="options[prefix]" value="last">
             <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
             <input type="hidden" name="options[prefix]" value="last">
             <button

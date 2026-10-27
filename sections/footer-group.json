@@ -64,7 +64,8 @@
             "link": "/pages/festive",
             "collection": "gifting-chocolates-and-treats",
             "alt": "Explore festive gifts",
-            "pulse": false
+            "pulse": false,
+            "image": "shopify://shop_images/ep-category-ep-festive-art-v6.webp"
           }
         }
       },

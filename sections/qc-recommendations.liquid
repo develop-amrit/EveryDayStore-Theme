@@ -1,4 +1,4 @@
-{% capture cards %}{% if recommendations.performed %}{% assign related = recommendations.products %}{% elsif section.settings.intent == 'complementary' %}{% assign related = product.metafields.custom.complementary_products.value %}{% else %}{% assign related = product.metafields.custom.related_products.value %}{% endif %}{% for item in related limit: 8 %}{% capture allowed %}{% render 'ep-content-visible', item: item %}{% endcapture %}{% if item.available and item.id != product.id and allowed == '1' %}{% unless item.tags contains 'homepage-hide' %}{% render 'ep-card', product: item, variant: 'compact' %}{% endunless %}{% endif %}{% endfor %}{% if related == blank and section.settings.intent == 'related' %}{% assign source = product.collections.first %}{% render 'ep-stock-cards', collection: source, limit: 8, variant: 'compact', exclude_id: product.id %}{% endif %}{% endcapture %}<section class="ep-section ep-wrap ep-related" data-recommendations data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&amp;product_id={{ product.id }}&amp;limit=8&amp;intent={{ section.settings.intent }}"><h2>{{ section.settings.heading | escape }}</h2><div class="ep-rail">{{ cards }}</div></section>
+{% capture cards %}{% if section.settings.intent == 'related' %}{% render 'ep-related-cards', product: product, fallback: section.settings.fallback_collection %}{% else %}{% if recommendations.performed %}{% assign related = recommendations.products %}{% elsif section.settings.intent == 'complementary' %}{% assign related = product.metafields.custom.complementary_products.value %}{% else %}{% assign related = product.metafields.custom.related_products.value %}{% endif %}{% for item in related limit: 8 %}{% capture allowed %}{% render 'ep-content-visible', item: item %}{% endcapture %}{% if item.available and item.id != product.id and allowed == '1' %}{% unless item.tags contains 'homepage-hide' %}{% render 'ep-card', product: item, variant: 'compact' %}{% endunless %}{% endif %}{% endfor %}{% if related == blank and section.settings.intent == 'related' %}{% assign source = product.collections.first %}{% render 'ep-stock-cards', collection: source, limit: 8, variant: 'compact', exclude_id: product.id %}{% endif %}{% endif %}{% endcapture %}{% assign card_count = cards | split: 'class="ep-card ' | size | minus: 1 %}{% if card_count >= 2 %}<section class="ep-section ep-wrap ep-related" data-recommendations data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&amp;product_id={{ product.id }}&amp;limit=8&amp;intent={{ section.settings.intent }}"><h2>{{ section.settings.heading | escape }}</h2><div class="ep-rail">{{ cards }}</div></section>{% endif %}
 {% schema %}
 {
   "name": "recommendations",
@@ -24,6 +24,11 @@
         }
       ],
       "default": "related"
+    },
+    {
+      "type": "collection",
+      "id": "fallback_collection",
+      "label": "t:ep6.fallback_collection"
     }
   ],
   "presets": [
