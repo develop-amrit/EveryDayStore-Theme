@@ -171,8 +171,9 @@
           "settings": {
             "label": "Deals",
             "collection": "all",
-            "tint": "brand",
-            "link": "/collections/all?view=ep-deals"
+            "tint": "cream",
+            "link": "/collections/all?view=ep-deals",
+            "image": "shopify://shop_images/ep-category-ep-deals-art-v6.webp"
           }
         }
       },
