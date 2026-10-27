@@ -1,0 +1,3 @@
+{%- doc -%}Readable shopper query from the theme's field-scoped native search.
+@param {string} terms - Shopify search terms.
+{%- enddoc -%}{%- assign plain_terms = terms -%}{%- if plain_terms contains '(title:"' -%}{%- assign plain_terms = plain_terms | split: 'title:"' | last | split: '"' | first -%}{%- endif -%}{{- plain_terms -}}

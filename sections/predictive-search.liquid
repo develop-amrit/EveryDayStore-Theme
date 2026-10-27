@@ -1,4 +1,4 @@
-{% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+{% capture ep_search_terms %}{% render 'ep-search-terms', terms: predictive_search.terms %}{% endcapture %}{% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
 <div id="predictive-search-results" role="listbox">
   {%- if predictive_search.performed -%}{% assign ep_products_count = 0 %}{% for product in predictive_search.resources.products %}{% unless product.available %}{% continue %}{% endunless %}{% capture ep_visible %}{% render 'ep-content-visible', item: product %}{% endcapture %}{% if ep_visible == '1' %}{% assign ep_products_count = ep_products_count | plus: 1 %}{% endif %}{% endfor %}{% assign ep_collections_count = 0 %}{% for collection in predictive_search.resources.collections %}{% capture ep_visible %}{% render 'ep-content-visible', item: collection, kind: 'collection' %}{% endcapture %}{% if ep_visible == '1' %}{% assign ep_collections_count = ep_collections_count | plus: 1 %}{% endif %}{% endfor %}
     {% assign first_column_results_size = predictive_search.resources.queries.size
@@ -247,7 +247,7 @@
       {% liquid
         assign total_results = ep_products_count | plus: first_column_results_size
         if total_results == 0
-          echo 'templates.search.no_results' | t: terms: predictive_search.terms
+          echo 'templates.search.no_results' | t: terms: ep_search_terms
         else
           echo 'templates.search.results_with_count' | t: count: total_results | append: ': '
           if predictive_search.resources.queries.size > 0

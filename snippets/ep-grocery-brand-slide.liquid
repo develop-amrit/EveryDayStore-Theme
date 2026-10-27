@@ -1,0 +1,10 @@
+{% doc %}One real stocked Grocery vendor slide.
+@param {string} vendor - Display vendor.
+@param {string} vendor_key - Case-folded vendor.
+@param {product[]} products - Unique eligible products.
+@param {number} count - Stocked product count.
+@param {number} index - Slide index.
+@param {image} [image] - Merchant image override.
+{% enddoc %}
+{% assign tints = 'blue,green,lilac,cream,pink,peach' | split: ',' %}{% assign tint_index = index | modulo: 6 %}
+<a class="ep-grocery-slide ep-tint-{{ tints[tint_index] }}" data-grocery-slide href="{{ routes.collections_url }}/vendors?q={{ vendor | url_encode }}&amp;filter.v.availability=1"><span class="ep-grocery-brand-copy"><strong>{{ vendor | escape }}</strong><span>{{ 'ep6.products' | t: count: count }}</span><span class="ep-grocery-brand-cta">{{ 'ep6.shop_brand' | t: vendor: vendor }}</span></span><span class="ep-grocery-brand-images">{% if image %}{{ image | image_url: width: 360 | image_tag: loading: 'eager', decoding: 'async', widths: '120, 180, 240, 360', sizes: '45vw', alt: vendor }}{% else %}{% assign shown = 0 %}{% for product in products %}{% assign key = product.vendor | strip | downcase %}{% if key == vendor_key and product.featured_image != blank %}{{ product.featured_image | image_url: width: 240 | image_tag: loading: 'eager', decoding: 'async', widths: '120, 180, 240', sizes: '22vw', alt: product.title }}{% assign shown = shown | plus: 1 %}{% if shown == 3 %}{% break %}{% endif %}{% endif %}{% endfor %}{% endif %}</span></a>

@@ -9,7 +9,7 @@
   <div class="qc-catalog-content">
     <h1>{% if template.name == 'search' %}{{ 'qc.search' | t }}{% else %}{{ collection.title | escape }}{% endif %}</h1>
     {% if template.name == 'search' %}
-      <form class="qc-inline-search" action="{{ routes.search_url }}" role="search"><label>{{ 'qc.search' | t }}<input name="q" type="search" value="{{ search.terms | escape }}"></label><input name="type" type="hidden" value="product"><button class="qc-button">{{ 'qc.search' | t }}</button></form>
+      <form class="qc-inline-search" action="{{ routes.search_url }}" role="search"><label>{{ 'qc.search' | t }}<input name="q" type="search" value="{{ search.terms | escape }}"><input type="hidden" name="options[fields]" value="title,vendor,product_type,tag"><input type="hidden" name="options[prefix]" value="last"></label><input name="type" type="hidden" value="product"><button class="qc-button">{{ 'qc.search' | t }}</button></form>
       {% assign source = search %}
     {% else %}
       {% if collection.description != blank %}<div class="qc-prose">{{ collection.description }}</div>{% endif %}
