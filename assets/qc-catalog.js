@@ -7,6 +7,12 @@
   const writeList=(key,values)=>{try{localStorage.setItem('qc:'+key,JSON.stringify(values));}catch{notify(t('save_error'));}};
   let wishlist=readList('wishlist'),compare=readList('compare'),wishlistBusy=false,wishlistSynced=false;
   const cache=new Map(),loaded=new WeakSet();
+  const wishPage=()=>document.querySelector('[data-ep-wishlist-page]');
+  const wishLabels=()=>JSON.parse(wishPage()?.querySelector('[data-wishlist-labels]')?.textContent||'{}');
+  let wishUndoTimer;
+  async function savedCard(handle){try{const response=await fetch(root+'products/'+encodeURIComponent(handle)+'.js');if(!response.ok)throw Error('missing');await response.json();const html=await fetch(root+'products/'+encodeURIComponent(handle)+'?section_id=ep-wishlist-card');if(!html.ok)throw Error('missing');const doc=new DOMParser().parseFromString(await html.text(),'text/html');return doc.querySelector('[data-ep-wishlist-fragment]');}catch{return null;}}
+  function wishUndo(previous){let node=document.querySelector('.ep-wishlist-undo');if(!node){node=document.createElement('div');node.className='ep-wishlist-undo';node.setAttribute('role','status');document.body.append(node);}clearTimeout(wishUndoTimer);const labels=wishLabels();node.replaceChildren(document.createTextNode(labels.removed+' · '));const button=document.createElement('button');button.type='button';button.textContent=labels.undo;button.onclick=()=>{node.hidden=true;saveWishlist(previous)};node.append(button);node.hidden=false;wishUndoTimer=setTimeout(()=>node.hidden=true,4000);}
+
   async function productTile(handle){
     if(!valid(handle))return null;
     if(!cache.has(handle))cache.set(handle,(async()=>{
@@ -18,7 +24,8 @@
     const result=await cache.get(handle);return result?.cloneNode(true)||null;
   }
   function sync(){
-    $$('[data-wishlist]').forEach(button=>{const on=wishlist.includes(button.dataset.wishlist);button.setAttribute('aria-pressed',String(on));if(!button.querySelector('svg'))button.textContent=on?'♥':'♡';});
+    $$('[data-wishlist]').forEach(button=>{const on=wishlist.includes(button.dataset.wishlist);button.setAttribute('aria-pressed',String(on));if(!button.hasAttribute('data-wishlist-remove')&&!button.querySelector('svg'))button.textContent=on?'♥':'♡';});
+    $$('[data-wishlist-count]').forEach(n=>{n.textContent=wishlist.length;n.hidden=!wishlist.length;});
     $$('[data-compare]').forEach(input=>input.checked=compare.includes(input.dataset.compare));
     const tray=$('[data-compare-tray]');if(tray){tray.hidden=!compare.length;$('[data-compare-count]',tray).textContent=`${compare.length} / 4`;}
   }
@@ -28,7 +35,9 @@
       if(config.customer&&config.endpoints.wishlist){const result=await api('wishlist','',{handles:next});if(result.ok!==true)throw new Error(t('save_error'));}
       else writeList('wishlist',next);
       wishlistSynced=Boolean(config.customer&&config.endpoints.wishlist);
-      wishlist=next;notify(config.customer&&config.endpoints.wishlist?t('saved_account'):t('saved_device'));sync();await savedPages();
+      const previous=wishlist,removed=wishPage()&&previous.some(h=>!next.includes(h));
+      if(removed){const handle=previous.find(h=>!next.includes(h)),card=document.querySelector('[data-ep-wishlist-fragment] [data-wishlist="'+handle+'"]')?.closest('[data-ep-wishlist-fragment]');if(card&&!matchMedia('(prefers-reduced-motion: reduce)').matches){card.style.height=card.offsetHeight+'px';card.classList.add('is-removing');await new Promise(r=>setTimeout(r,200));}}
+      wishlist=next;if(removed)wishUndo(previous);else notify(config.customer&&config.endpoints.wishlist?t('saved_account'):t('saved_device'));sync();await savedPages();
     }catch(error){notify(error.message);}finally{wishlistBusy=false;}
   }
   function text(value){if(value==null||value==='')return t('no_value');if(Array.isArray(value))return value.map(text).join(', ');if(typeof value==='object')return Object.entries(value).map(([key,v])=>`${key}: ${text(v)}`).join(' · ');return String(value);}
@@ -45,7 +54,10 @@
     const generation=++renderGeneration;
     for(const page of $$('[data-saved-page]')){
       const kind=page.dataset.savedPage,handles=kind==='compare'?compare:wishlist,host=$('[data-saved-products]',page);host.setAttribute('aria-busy','true');
-      const tiles=(await Promise.all(handles.map(productTile))).filter(Boolean);if(generation!==renderGeneration)return;
+      const wishlistPage=page.hasAttribute('data-ep-wishlist-page');
+      const results=await Promise.all(handles.map(wishlistPage?savedCard:productTile)),tiles=results.filter(Boolean);if(generation!==renderGeneration)return;
+      if(wishlistPage){host.replaceChildren();results.forEach((tile,i)=>{if(tile)host.append(tile);else{const item=document.createElement('div'),button=document.createElement('button');item.className='ep-card';item.append(document.createTextNode(wishLabels().unavailable+' '+handles[i]));button.type='button';button.dataset.wishlist=handles[i];button.dataset.wishlistRemove='';button.textContent=wishLabels().remove;item.append(button);host.append(item);}});page.querySelector('[data-wishlist-empty]').hidden=handles.length>0;page.querySelector('[data-wishlist-total]').textContent=(handles.length===1?wishLabels().one:wishLabels().many).replace('__COUNT__',handles.length);host.removeAttribute('aria-busy');document.dispatchEvent(new CustomEvent('qc:content',{detail:{scope:host}}));continue;}
+
       host.replaceChildren();if(!tiles.length){const p=document.createElement('p');p.className='qc-empty';p.textContent=t(kind==='compare'?'compare_empty':'wishlist_empty');host.append(p);}
       else if(kind==='compare'){host.classList.remove('qc-grid');host.classList.add('qc-comparison-scroll');host.tabIndex=0;host.append(compareTable(tiles));}
       else tiles.forEach(tile=>{const card=$('.qc-card',tile);if(card)host.append(card);});

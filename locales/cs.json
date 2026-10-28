@@ -799,7 +799,10 @@
     "payment": "Payment methods",
     "social": "Follow us",
     "review_note": "Reviews are supplied by the store.",
-    "count": "{{ count }} items",
+    "count": {
+      "one": "{{ count }} item",
+      "other": "{{ count }} items"
+    },
     "details": "View product",
     "step": "Step",
     "promo": "Explore collection",
@@ -1067,7 +1070,10 @@
     "breadcrumb": "Breadcrumb",
     "sort": "Sort",
     "filters": "Filters",
-    "product_count": "{{ count }} products",
+    "product_count": {
+      "one": "{{ count }} product",
+      "other": "{{ count }} products"
+    },
     "apply_sort": "Apply sort",
     "clear_filters": "Clear filters",
     "show_results": "Show {{ count }} results",
@@ -1143,7 +1149,10 @@
   },
   "ep4": {
     "basket": "Your basket",
-    "items": "{{ count }} items",
+    "items": {
+      "one": "{{ count }} item",
+      "other": "{{ count }} items"
+    },
     "saving_html": "You're saving {{ amount }} on this order",
     "change": "Change",
     "add_free_html": "Add {{ amount }} more for free delivery",
@@ -1214,7 +1223,10 @@
     "slide_number": "Slide {{ number }} of {{ count }}",
     "pause": "Pause slideshow",
     "play": "Play slideshow",
-    "products": "{{ count }} products",
+    "products": {
+      "one": "{{ count }} product",
+      "other": "{{ count }} products"
+    },
     "shop_brand": "Shop {{ vendor }} ›",
     "grocery_experience": "Grocery slideshow and free-scroll rail",
     "brand_slide": "Brand slide",
@@ -1226,5 +1238,27 @@
     "days": "days",
     "hours": "hrs",
     "minutes": "min"
+  },
+  "ep7": {
+    "wishlist_title": "Your wishlist",
+    "wishlist_empty": "No saved items yet",
+    "wishlist_hint": "Tap ♡ on any product to save it here",
+    "browse": "Browse categories",
+    "item_one": "__COUNT__ item",
+    "item_many": "__COUNT__ items",
+    "remove": "Remove",
+    "removed": "Removed from wishlist",
+    "undo": "Undo",
+    "unavailable": "This saved product is currently unavailable.",
+    "contact_title": "Contact us",
+    "email_us": "Email us",
+    "order_help": "Order help",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "phone": "Phone (optional)",
+    "send": "Send message",
+    "success": "Thanks — we’ll reply by email soon.",
+    "sending": "Sending…"
   }
 }

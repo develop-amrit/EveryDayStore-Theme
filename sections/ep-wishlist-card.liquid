@@ -1,0 +1,2 @@
+<div data-ep-wishlist-fragment>{% render 'ep-card', product: product, variant: 'grid', allow_unavailable: true %}<button type="button" data-wishlist-remove data-wishlist="{{ product.handle | escape }}" class="ep-wishlist-remove">{{ 'ep7.remove' | t }}</button></div>
+{% schema %}{"name":"Wishlist card","settings":[],"enabled_on":{"templates":["product"]}}{% endschema %}
