@@ -8,8 +8,7 @@
         "button_label": "Shop gifts",
         "link": "/collections/gifting",
         "collection": "gifting",
-        "show_countdown": true,
-        "image": "shopify://shop_images/ep-category-ep-festive-art-v6.webp"
+        "show_countdown": true
       },
       "blocks": {
         "diwali": {
