@@ -37,7 +37,7 @@
       wishlistSynced=Boolean(config.customer&&config.endpoints.wishlist);
       const previous=wishlist,removed=wishPage()&&previous.some(h=>!next.includes(h));
       if(removed){const handle=previous.find(h=>!next.includes(h)),card=document.querySelector('[data-ep-wishlist-fragment] [data-wishlist="'+handle+'"]')?.closest('[data-ep-wishlist-fragment]');if(card&&!matchMedia('(prefers-reduced-motion: reduce)').matches){card.style.height=card.offsetHeight+'px';card.classList.add('is-removing');await new Promise(r=>setTimeout(r,200));}}
-      wishlist=next;if(removed)wishUndo(previous);else notify(config.customer&&config.endpoints.wishlist?t('saved_account'):t('saved_device'));sync();await savedPages();
+      wishlist=next;if(!removed)notify(config.customer&&config.endpoints.wishlist?t('saved_account'):t('saved_device'));sync();await savedPages();if(removed)wishUndo(previous);
     }catch(error){notify(error.message);}finally{wishlistBusy=false;}
   }
   function text(value){if(value==null||value==='')return t('no_value');if(Array.isArray(value))return value.map(text).join(', ');if(typeof value==='object')return Object.entries(value).map(([key,v])=>`${key}: ${text(v)}`).join(' · ');return String(value);}

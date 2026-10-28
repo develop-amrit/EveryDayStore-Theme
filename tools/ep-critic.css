@@ -13,3 +13,5 @@ body:has(ep-collection [data-collection-sentinel][data-next]:not([data-next=""])
 @media(prefers-reduced-motion:no-preference){.ep-wishlist [data-ep-wishlist-fragment]{transition:height 200ms var(--ep-ease),opacity 200ms var(--ep-ease)}.ep-wishlist .is-removing{height:0!important;opacity:0}}
 
 .ep-contact select{appearance:none;padding-inline-end:44px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23283618' stroke-width='1.75'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}@media(max-width:989px){.ep-contact-route .ep-slim-logo,.ep-contact-route .ep-slim-area,.ep-wishlist-route .ep-slim-logo,.ep-wishlist-route .ep-slim-area{display:none}.ep-contact-route .ep-page-header-title,.ep-wishlist-route .ep-page-header-title{display:block;flex:1;font-size:18px;line-height:1.25}}
+
+.ep-wishlist .ep-card--sold-out .ep-image-link img{opacity:.45!important}
