@@ -425,8 +425,7 @@
             "label": "Deals",
             "collection": "all",
             "tint": "cream",
-            "link": "/collections/all?view=ep-deals",
-            "image": "shopify://shop_images/ep-category-ep-deals-art-v6.webp"
+            "link": "/collections/all?view=ep-deals"
           }
         }
       },
